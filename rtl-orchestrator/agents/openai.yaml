@@ -1,0 +1,3 @@
+interface:
+  display_name: "RTL Orchestrator"
+  short_description: "route rtl tasks across ingest, parse, index, qa, labeling, and generation skills"

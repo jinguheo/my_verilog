@@ -1,0 +1,6 @@
+cmd/gen-rtl/main.go
+internal/spec/
+internal/reference/
+internal/plan/
+internal/generate/
+internal/validate/

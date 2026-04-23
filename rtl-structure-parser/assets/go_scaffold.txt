@@ -1,0 +1,5 @@
+cmd/parse-rtl/main.go
+internal/parsers/
+internal/normalize/
+internal/ir/
+internal/diagnostics/

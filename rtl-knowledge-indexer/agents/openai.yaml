@@ -1,0 +1,3 @@
+interface:
+  display_name: "RTL Knowledge Indexer"
+  short_description: "index normalized rtl intermediate representations into relational, graph, and vector stores for module lookup,"

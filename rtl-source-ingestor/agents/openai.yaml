@@ -1,0 +1,3 @@
+interface:
+  display_name: "RTL Source Ingestor"
+  short_description: "ingest public or internal verilog and systemverilog repositories into a reproducible source snapshot and compi"

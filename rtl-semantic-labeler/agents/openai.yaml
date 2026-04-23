@@ -1,0 +1,3 @@
+interface:
+  display_name: "RTL Semantic Labeler"
+  short_description: "propose and maintain semantic labels, summaries, protocol tags, and design-intent metadata for rtl modules and"

@@ -1,0 +1,6 @@
+cmd/ingest-repo/main.go
+internal/gitx/
+internal/license/
+internal/filelist/
+internal/manifest/
+internal/types/

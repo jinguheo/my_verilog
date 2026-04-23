@@ -1,0 +1,3 @@
+interface:
+  display_name: "RTL Structure Parser"
+  short_description: "parse verilog and systemverilog source snapshots into a normalized rtl intermediate representation using tree-"

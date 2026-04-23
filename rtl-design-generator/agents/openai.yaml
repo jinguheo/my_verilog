@@ -1,0 +1,3 @@
+interface:
+  display_name: "RTL Design Generator"
+  short_description: "turn natural-language rtl requests into structured specs, retrieve relevant reference modules, plan microarchi"

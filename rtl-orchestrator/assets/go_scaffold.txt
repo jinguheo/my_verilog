@@ -1,0 +1,20 @@
+cmd/
+  orchestrator/
+    main.go
+internal/
+  orchestrator/
+    service.go
+    dispatch.go
+    contracts.go
+  intent/
+    classify.go
+  pipeline/
+    workflow.go
+    trace.go
+  clients/
+    ingestor.go
+    parser.go
+    indexer.go
+    qa.go
+    labeler.go
+    generator.go

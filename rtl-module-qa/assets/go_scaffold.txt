@@ -1,0 +1,5 @@
+cmd/rtl-qa/main.go
+internal/qa/
+internal/retrieval/
+internal/formatter/
+internal/confidence/

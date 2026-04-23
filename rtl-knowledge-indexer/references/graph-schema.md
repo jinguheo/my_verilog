@@ -1,0 +1,7 @@
+# Graph Model
+
+## Nodes
+Module, Port, Signal, Instance, Version, Label
+
+## Edges
+MODULE_INSTANTIATES, INSTANCE_OF, MODULE_HAS_PORT, SIGNAL_CONNECTS, MODULE_HAS_LABEL, MODULE_VERSION_OF
