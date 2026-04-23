@@ -1,0 +1,626 @@
+[
+  {
+    "query": "spi controller",
+    "parser_lsp": [
+      {
+        "name": "ibex_controller",
+        "project": "ibex",
+        "score": 11,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "ibex_id_stage",
+        "project": "ibex",
+        "score": 1,
+        "why": "symbol/path/port string match"
+      }
+    ],
+    "ontology_db": [
+      {
+        "name": "ibex_controller",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:controller",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "adc_ctrl",
+        "project": "opentitan",
+        "score": 6.5,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "protocol:tlul",
+          "protocol:uart",
+          "role:arbiter",
+          "role:controller",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "adc_ctrl_bind",
+        "project": "opentitan",
+        "score": 6.5,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "protocol:tlul",
+          "role:controller"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "adc_ctrl_core",
+        "project": "opentitan",
+        "score": 6.5,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "protocol:tlul",
+          "role:arbiter",
+          "role:controller",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "adc_ctrl_cov_bind",
+        "project": "opentitan",
+        "score": 6.5,
+        "labels": [
+          "project:opentitan",
+          "role:controller"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "adc_ctrl_fsm",
+        "project": "opentitan",
+        "score": 6.5,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "role:controller",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "adc_ctrl_intr",
+        "project": "opentitan",
+        "score": 6.5,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "role:arbiter",
+          "role:controller",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "aes_err_injection_bind",
+        "project": "opentitan",
+        "score": 6.5,
+        "labels": [
+          "project:opentitan",
+          "role:controller",
+          "role:crypto"
+        ],
+        "why": "ontology label"
+      }
+    ],
+    "difference": {
+      "parser_lsp": "소스 심볼, 파일명, 포트명처럼 현재 열려 있거나 파싱 가능한 문자열 중심으로 찾음",
+      "ontology_db": "모듈, 포트, 인스턴스, 라벨, evidence, graph 관계를 함께 사용해 의도와 역할 중심으로 찾음"
+    }
+  },
+  {
+    "query": "fifo resettable",
+    "parser_lsp": [
+      {
+        "name": "ibex_fetch_fifo",
+        "project": "ibex",
+        "score": 9,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "prim_fifo_sync_bind_fpv",
+        "project": "ibex",
+        "score": 9,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "dmi_cdc",
+        "project": "opentitan",
+        "score": 2,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "dm_csrs",
+        "project": "opentitan",
+        "score": 1,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "ibex_prefetch_buffer",
+        "project": "ibex",
+        "score": 1,
+        "why": "symbol/path/port string match"
+      }
+    ],
+    "ontology_db": [
+      {
+        "name": "ibex_fetch_fifo",
+        "project": "ibex",
+        "score": 19.0,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:fifo",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "dm_csrs",
+        "project": "opentitan",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "protocol:tlul",
+          "role:arbiter",
+          "role:controller",
+          "role:crypto",
+          "role:fifo",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "dm_top",
+        "project": "opentitan",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "protocol:tlul",
+          "role:arbiter",
+          "role:fifo",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "dmi_cdc",
+        "project": "opentitan",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "role:arbiter",
+          "role:controller",
+          "role:fifo",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "ibex_counter",
+        "project": "ibex",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:fifo",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "ibex_prefetch_buffer",
+        "project": "ibex",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:controller",
+          "role:fifo",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "prim_fifo_sync_bind_fpv",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:controller",
+          "role:fifo",
+          "role:memory"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "SimDTM",
+        "project": "opentitan",
+        "score": 6.5,
+        "labels": [
+          "project:opentitan",
+          "role:arbiter",
+          "runtime:clocked",
+          "runtime:resettable"
+        ],
+        "why": "ontology label"
+      }
+    ],
+    "difference": {
+      "parser_lsp": "소스 심볼, 파일명, 포트명처럼 현재 열려 있거나 파싱 가능한 문자열 중심으로 찾음",
+      "ontology_db": "모듈, 포트, 인스턴스, 라벨, evidence, graph 관계를 함께 사용해 의도와 역할 중심으로 찾음"
+    }
+  },
+  {
+    "query": "ibex decoder",
+    "parser_lsp": [
+      {
+        "name": "ibex_cs_registers",
+        "project": "ibex",
+        "score": 52,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "ibex_id_stage",
+        "project": "ibex",
+        "score": 34,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "ibex_controller",
+        "project": "ibex",
+        "score": 21,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "ibex_pmp",
+        "project": "ibex",
+        "score": 17,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "ibex_ex_block",
+        "project": "ibex",
+        "score": 16,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "ibex_if_stage",
+        "project": "ibex",
+        "score": 15,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "instantiates",
+        "project": "ibex",
+        "score": 13,
+        "why": "symbol/path/port string match"
+      },
+      {
+        "name": "ibex_alu",
+        "project": "ibex",
+        "score": 11,
+        "why": "symbol/path/port string match"
+      }
+    ],
+    "ontology_db": [
+      {
+        "name": "ibex_alu",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:memory",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "ibex_branch_predict",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "ibex_controller",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:controller",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "ibex_counter",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:fifo",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "ibex_cs_registers",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "ibex_csr",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "ibex_dummy_instr",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:controller",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "module name, ontology label"
+      },
+      {
+        "name": "ibex_ex_block",
+        "project": "ibex",
+        "score": 12.5,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:controller",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "module name, ontology label"
+      }
+    ],
+    "difference": {
+      "parser_lsp": "소스 심볼, 파일명, 포트명처럼 현재 열려 있거나 파싱 가능한 문자열 중심으로 찾음",
+      "ontology_db": "모듈, 포트, 인스턴스, 라벨, evidence, graph 관계를 함께 사용해 의도와 역할 중심으로 찾음"
+    }
+  },
+  {
+    "query": "crypto memory",
+    "parser_lsp": [],
+    "ontology_db": [
+      {
+        "name": "adc_ctrl_intr",
+        "project": "opentitan",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "role:arbiter",
+          "role:controller",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "dm_csrs",
+        "project": "opentitan",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:opentitan",
+          "protocol:tlul",
+          "role:arbiter",
+          "role:controller",
+          "role:crypto",
+          "role:fifo",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "ibex_cs_registers",
+        "project": "ibex",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "ibex_csr",
+        "project": "ibex",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "ibex_dummy_instr",
+        "project": "ibex",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:controller",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "ibex_multdiv_fast",
+        "project": "ibex",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:controller",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "ibex_multdiv_slow",
+        "project": "ibex",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:controller",
+          "role:crypto",
+          "role:memory",
+          "runtime:clocked",
+          "runtime:resettable",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      },
+      {
+        "name": "ibex_pmp",
+        "project": "ibex",
+        "score": 13.0,
+        "labels": [
+          "cpu:ibex",
+          "project:ibex",
+          "role:arbiter",
+          "role:crypto",
+          "role:memory",
+          "structure:hierarchical"
+        ],
+        "why": "ontology label"
+      }
+    ],
+    "difference": {
+      "parser_lsp": "소스 심볼, 파일명, 포트명처럼 현재 열려 있거나 파싱 가능한 문자열 중심으로 찾음",
+      "ontology_db": "모듈, 포트, 인스턴스, 라벨, evidence, graph 관계를 함께 사용해 의도와 역할 중심으로 찾음"
+    }
+  }
+]

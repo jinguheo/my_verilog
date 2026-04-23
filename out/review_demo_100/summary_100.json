@@ -1,0 +1,63 @@
+{
+  "sample_files": 100,
+  "modules": 57,
+  "ports": 1009,
+  "instances": 251,
+  "label_proposals": 362,
+  "graph_nodes": 70,
+  "graph_edges": 415,
+  "projects": {
+    "opentitan": 29,
+    "ibex": 28
+  },
+  "top_labels": [
+    [
+      "role:memory",
+      44
+    ],
+    [
+      "cpu:ibex",
+      43
+    ],
+    [
+      "structure:hierarchical",
+      41
+    ],
+    [
+      "runtime:resettable",
+      39
+    ],
+    [
+      "runtime:clocked",
+      38
+    ],
+    [
+      "role:arbiter",
+      37
+    ],
+    [
+      "project:opentitan",
+      29
+    ],
+    [
+      "role:controller",
+      29
+    ],
+    [
+      "project:ibex",
+      28
+    ],
+    [
+      "role:crypto",
+      11
+    ],
+    [
+      "protocol:tlul",
+      8
+    ],
+    [
+      "protocol:uart",
+      8
+    ]
+  ]
+}

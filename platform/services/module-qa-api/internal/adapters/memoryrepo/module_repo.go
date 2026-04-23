@@ -1,0 +1,6 @@
+package memoryrepo
+import ("context"; "strings"; "github.com/example/verilog-module-qa-api/internal/domain")
+type moduleRepo struct { items map[string]domain.Module }
+func NewModuleRepository() domain.ModuleRepository { return &moduleRepo{items: map[string]domain.Module{"uart_rx":{Name:"uart_rx",Summary:"UART receive datapath that samples serial input and reconstructs bytes.",Project:"opentitan",FilePath:"hw/ip/uart/rtl/uart_rx.sv",Labels:[]string{"uart","clocked","resettable"},Confidence:0.89},"fifo_sync":{Name:"fifo_sync",Summary:"Single-clock FIFO with parameterized buffering behavior.",Project:"demo",FilePath:"rtl/fifo_sync.sv",Labels:[]string{"fifo","clocked","resettable"},Confidence:0.78}}} }
+func (r *moduleRepo) Search(ctx context.Context, q string) ([]domain.SearchResult, error) { q=strings.ToLower(strings.TrimSpace(q)); out:=[]domain.SearchResult{}; for _,item:= range r.items { hay:=strings.ToLower(item.Name+" "+item.Summary+" "+strings.Join(item.Labels," ")); if q=="" || strings.Contains(hay,q) { out=append(out, domain.SearchResult{Name:item.Name,Summary:item.Summary,Project:item.Project,Labels:item.Labels,Confidence:item.Confidence}) } }; return out,nil }
+func (r *moduleRepo) GetByName(ctx context.Context, name string) (*domain.Module, error) { item,ok:=r.items[name]; if !ok { return nil,nil }; cp:=item; return &cp,nil }

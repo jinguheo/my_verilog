@@ -1,0 +1,66 @@
+{
+  "label_groups": {
+    "protocol": [
+      "uart",
+      "i2c",
+      "spi",
+      "apb",
+      "axi_lite",
+      "gpio"
+    ],
+    "role": [
+      "fifo",
+      "arbiter",
+      "controller",
+      "memory",
+      "counter",
+      "decoder",
+      "encoder",
+      "register_file",
+      "adapter",
+      "bridge",
+      "core",
+      "pipeline",
+      "alu",
+      "decoder_stage",
+      "csr"
+    ],
+    "runtime": [
+      "clocked",
+      "resettable",
+      "hierarchical",
+      "parameterized",
+      "synthesizable"
+    ],
+    "project": [
+      "opentitan_ip",
+      "ibex_core",
+      "sv_feature_test",
+      "rtllm_task"
+    ],
+    "verification": [
+      "has_testbench",
+      "verified_reference",
+      "parser_fixture"
+    ],
+    "quality": [
+      "approved",
+      "proposed",
+      "deprecated"
+    ]
+  },
+  "promotion_states": [
+    "proposed",
+    "reviewed",
+    "approved",
+    "deprecated"
+  ],
+  "review_actions": [
+    "accept",
+    "reject",
+    "merge",
+    "rename",
+    "split",
+    "deprecate"
+  ]
+}

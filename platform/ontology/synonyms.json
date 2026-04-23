@@ -1,0 +1,8 @@
+{
+  "csr": "register_file",
+  "cfg_reg_block": "register_file",
+  "serial": "uart",
+  "serial_bus": "spi",
+  "buffer": "fifo",
+  "controller_block": "controller"
+}

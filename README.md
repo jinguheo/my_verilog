@@ -1,35 +1,55 @@
-# Verilog Skills Workspace
+# Verilog RTL Ontology Workspace
 
-This workspace contains 6 independent skills for a Verilog/SystemVerilog knowledge and design system.
+This workspace builds a small ontology-first knowledge layer from public RTL repositories.
 
-## Included skills
-- rtl-source-ingestor
-- rtl-structure-parser
-- rtl-knowledge-indexer
-- rtl-module-qa
-- rtl-semantic-labeler
-- rtl-design-generator
+Primary entry point:
 
-## Install on Windows
-1. Create the target folder if needed:
-   - `D:\MyWork\verilog`
-2. Extract this zip into `D:\MyWork\verilog`
-3. Open PowerShell in `D:\MyWork\verilog`
-4. Run one of these:
-   - `./setup_git.ps1`
-   - or `setup_git.bat`
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\workflow.ps1 -Step status
+```
 
-## Recommended repo layout
-This archive already contains the recommended layout.
-Each skill folder includes:
-- `SKILL.md`
-- `agents/openai.yaml`
-- `references/*`
-- `assets/*`
+## Main Workflows
 
-## Suggested next steps
-- Review each `SKILL.md`
-- Add orchestration docs if you want a top-level coordinator
-- Add Go service code beside each skill, or in a sibling `services/` folder
+Quick review demo:
 
-- rtl-orchestrator: dispatch and sequence the six rtl skills for end-to-end workflows
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\workflow.ps1 -Step demo
+```
+
+Generate full OpenTitan + Ibex ontology artifacts:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\workflow.ps1 -Step seed
+```
+
+Run Docker runtime, schema load, seed generation, and Neo4j load:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\workflow.ps1 -Step full
+```
+
+## Important Paths
+
+```text
+dbs/        public RTL source repositories
+platform/   executable pipeline, schema, services, and UI
+out/        generated artifacts
+docs/       operator-facing workflow documentation
+workflow.ps1 root workflow launcher
+```
+
+## Operator Docs
+
+- [Workflow Guide](docs/README.md)
+- [Operator Checklist](docs/OPERATOR_CHECKLIST.md)
+- [Workflow Map](docs/WORKFLOW_MAP.md)
+
+## Review Console
+
+After running `workflow.ps1 -Step demo`, open:
+
+```text
+http://localhost:8765/platform/ui/review-console/index.html
+```
+
+The console shows ontology summary, label review queue, parser/LSP vs knowledge DB search contrast, graph visualization, and module cards.

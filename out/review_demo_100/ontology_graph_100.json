@@ -1,0 +1,2712 @@
+{
+  "nodes": [
+    {
+      "id": "opentitan:adc_ctrl_cov_bind:0",
+      "type": "module",
+      "label": "adc_ctrl_cov_bind",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\ip\\adc_ctrl\\dv\\cov\\adc_ctrl_cov_bind.sv",
+      "ports": 0,
+      "instances": 0
+    },
+    {
+      "id": "label:project:opentitan",
+      "type": "label",
+      "label": "project:opentitan"
+    },
+    {
+      "id": "label:role:controller",
+      "type": "label",
+      "label": "role:controller"
+    },
+    {
+      "id": "opentitan:debug_rom:1",
+      "type": "module",
+      "label": "debug_rom",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\debug_rom\\debug_rom.sv",
+      "ports": 5,
+      "instances": 0
+    },
+    {
+      "id": "label:role:arbiter",
+      "type": "label",
+      "label": "role:arbiter"
+    },
+    {
+      "id": "label:role:memory",
+      "type": "label",
+      "label": "role:memory"
+    },
+    {
+      "id": "label:runtime:clocked",
+      "type": "label",
+      "label": "runtime:clocked"
+    },
+    {
+      "id": "label:runtime:resettable",
+      "type": "label",
+      "label": "runtime:resettable"
+    },
+    {
+      "id": "ibex:ibex_alu:2",
+      "type": "module",
+      "label": "ibex_alu",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_alu.sv",
+      "ports": 21,
+      "instances": 43
+    },
+    {
+      "id": "label:cpu:ibex",
+      "type": "label",
+      "label": "cpu:ibex"
+    },
+    {
+      "id": "label:project:ibex",
+      "type": "label",
+      "label": "project:ibex"
+    },
+    {
+      "id": "label:structure:hierarchical",
+      "type": "label",
+      "label": "structure:hierarchical"
+    },
+    {
+      "id": "ibex:riscv_instr_gen_tb_top:3",
+      "type": "module",
+      "label": "riscv_instr_gen_tb_top",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\vendor\\google_riscv-dv\\test\\riscv_instr_gen_tb_top.sv",
+      "ports": 0,
+      "instances": 0
+    },
+    {
+      "id": "opentitan:adc_ctrl_bind:4",
+      "type": "module",
+      "label": "adc_ctrl_bind",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\ip\\adc_ctrl\\dv\\sva\\adc_ctrl_bind.sv",
+      "ports": 0,
+      "instances": 0
+    },
+    {
+      "id": "label:protocol:tlul",
+      "type": "label",
+      "label": "protocol:tlul"
+    },
+    {
+      "id": "opentitan:debug_rom_one_scratch:5",
+      "type": "module",
+      "label": "debug_rom_one_scratch",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\debug_rom\\debug_rom_one_scratch.sv",
+      "ports": 5,
+      "instances": 0
+    },
+    {
+      "id": "ibex:ibex_branch_predict:6",
+      "type": "module",
+      "label": "ibex_branch_predict",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_branch_predict.sv",
+      "ports": 7,
+      "instances": 1
+    },
+    {
+      "id": "opentitan:dm_csrs:7",
+      "type": "module",
+      "label": "dm_csrs",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\src\\dm_csrs.sv",
+      "ports": 47,
+      "instances": 4
+    },
+    {
+      "id": "label:role:crypto",
+      "type": "label",
+      "label": "role:crypto"
+    },
+    {
+      "id": "label:role:fifo",
+      "type": "label",
+      "label": "role:fifo"
+    },
+    {
+      "id": "ibex:ibex_controller:8",
+      "type": "module",
+      "label": "ibex_controller",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_controller.sv",
+      "ports": 65,
+      "instances": 6
+    },
+    {
+      "id": "opentitan:tb:9",
+      "type": "module",
+      "label": "tb",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\ip\\adc_ctrl\\dv\\tb.sv",
+      "ports": 0,
+      "instances": 6
+    },
+    {
+      "id": "label:protocol:uart",
+      "type": "label",
+      "label": "protocol:uart"
+    },
+    {
+      "id": "opentitan:adc_ctrl:10",
+      "type": "module",
+      "label": "adc_ctrl",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\ip\\adc_ctrl\\rtl\\adc_ctrl.sv",
+      "ports": 12,
+      "instances": 3
+    },
+    {
+      "id": "opentitan:dm_sba:11",
+      "type": "module",
+      "label": "dm_sba",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\src\\dm_sba.sv",
+      "ports": 28,
+      "instances": 2
+    },
+    {
+      "id": "ibex:ibex_counter:12",
+      "type": "module",
+      "label": "ibex_counter",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_counter.sv",
+      "ports": 9,
+      "instances": 1
+    },
+    {
+      "id": "opentitan:adc_ctrl_core:13",
+      "type": "module",
+      "label": "adc_ctrl_core",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\ip\\adc_ctrl\\rtl\\adc_ctrl_core.sv",
+      "ports": 15,
+      "instances": 3
+    },
+    {
+      "id": "opentitan:dm_top:14",
+      "type": "module",
+      "label": "dm_top",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\src\\dm_top.sv",
+      "ports": 34,
+      "instances": 3
+    },
+    {
+      "id": "ibex:ibex_cs_registers:15",
+      "type": "module",
+      "label": "ibex_cs_registers",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_cs_registers.sv",
+      "ports": 73,
+      "instances": 35
+    },
+    {
+      "id": "opentitan:adc_ctrl_fsm:16",
+      "type": "module",
+      "label": "adc_ctrl_fsm",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\ip\\adc_ctrl\\rtl\\adc_ctrl_fsm.sv",
+      "ports": 24,
+      "instances": 15
+    },
+    {
+      "id": "opentitan:dmi_jtag_tap:17",
+      "type": "module",
+      "label": "dmi_jtag_tap",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\src\\dmi_bscane_tap.sv",
+      "ports": 17,
+      "instances": 2
+    },
+    {
+      "id": "ibex:ibex_csr:18",
+      "type": "module",
+      "label": "ibex_csr",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_csr.sv",
+      "ports": 6,
+      "instances": 0
+    },
+    {
+      "id": "opentitan:adc_ctrl_intr:19",
+      "type": "module",
+      "label": "adc_ctrl_intr",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\ip\\adc_ctrl\\rtl\\adc_ctrl_intr.sv",
+      "ports": 17,
+      "instances": 2
+    },
+    {
+      "id": "opentitan:dmi_cdc:20",
+      "type": "module",
+      "label": "dmi_cdc",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\src\\dmi_cdc.sv",
+      "ports": 20,
+      "instances": 4
+    },
+    {
+      "id": "opentitan:interface:21",
+      "type": "module",
+      "label": "interface",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\src\\dmi_jtag.sv",
+      "ports": 20,
+      "instances": 9
+    },
+    {
+      "id": "ibex:ibex_dummy_instr:22",
+      "type": "module",
+      "label": "ibex_dummy_instr",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_dummy_instr.sv",
+      "ports": 10,
+      "instances": 2
+    },
+    {
+      "id": "ibex:prim_alert_rxtx_async_bind_fpv:23",
+      "type": "module",
+      "label": "prim_alert_rxtx_async_bind_fpv",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\vendor\\lowrisc_ip\\ip\\prim\\fpv\\tb\\prim_alert_rxtx_async_bind_fpv.sv",
+      "ports": 0,
+      "instances": 1
+    },
+    {
+      "id": "opentitan:dmi_jtag_tap:24",
+      "type": "module",
+      "label": "dmi_jtag_tap",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\src\\dmi_jtag_tap.sv",
+      "ports": 20,
+      "instances": 7
+    },
+    {
+      "id": "ibex:ibex_ex_block:25",
+      "type": "module",
+      "label": "ibex_ex_block",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_ex_block.sv",
+      "ports": 29,
+      "instances": 3
+    },
+    {
+      "id": "ibex:prim_alert_rxtx_async_fatal_bind_fpv:26",
+      "type": "module",
+      "label": "prim_alert_rxtx_async_fatal_bind_fpv",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\vendor\\lowrisc_ip\\ip\\prim\\fpv\\tb\\prim_alert_rxtx_async_fatal_bind_fpv.sv",
+      "ports": 0,
+      "instances": 1
+    },
+    {
+      "id": "opentitan:aes_cov_bind:27",
+      "type": "module",
+      "label": "aes_cov_bind",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\ip\\aes\\dv\\cov\\aes_cov_bind.sv",
+      "ports": 0,
+      "instances": 0
+    },
+    {
+      "id": "opentitan:dm_csrs_sva:28",
+      "type": "module",
+      "label": "dm_csrs_sva",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\sva\\dm_csrs_sva.sv",
+      "ports": 6,
+      "instances": 0
+    },
+    {
+      "id": "ibex:ibex_fetch_fifo:29",
+      "type": "module",
+      "label": "ibex_fetch_fifo",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_fetch_fifo.sv",
+      "ports": 18,
+      "instances": 1
+    },
+    {
+      "id": "opentitan:dm_sba_sva:30",
+      "type": "module",
+      "label": "dm_sba_sva",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\sva\\dm_sba_sva.sv",
+      "ports": 4,
+      "instances": 0
+    },
+    {
+      "id": "ibex:ibex_icache:31",
+      "type": "module",
+      "label": "ibex_icache",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_icache.sv",
+      "ports": 49,
+      "instances": 8
+    },
+    {
+      "id": "opentitan:dm_top_sva:32",
+      "type": "module",
+      "label": "dm_top_sva",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\sva\\dm_top_sva.sv",
+      "ports": 3,
+      "instances": 1
+    },
+    {
+      "id": "ibex:ibex_id_stage:33",
+      "type": "module",
+      "label": "ibex_id_stage",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_id_stage.sv",
+      "ports": 118,
+      "instances": 12
+    },
+    {
+      "id": "ibex:prim_alert_rxtx_bind_fpv:34",
+      "type": "module",
+      "label": "prim_alert_rxtx_bind_fpv",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\vendor\\lowrisc_ip\\ip\\prim\\fpv\\tb\\prim_alert_rxtx_bind_fpv.sv",
+      "ports": 0,
+      "instances": 1
+    },
+    {
+      "id": "opentitan:aes_err_injection_bind:35",
+      "type": "module",
+      "label": "aes_err_injection_bind",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\ip\\aes\\dv\\err_injection_if\\aes_err_injection_bind.sv",
+      "ports": 0,
+      "instances": 0
+    },
+    {
+      "id": "opentitan:boot_rom:36",
+      "type": "module",
+      "label": "boot_rom",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\boot_rom.sv",
+      "ports": 4,
+      "instances": 0
+    },
+    {
+      "id": "ibex:ibex_if_stage:37",
+      "type": "module",
+      "label": "ibex_if_stage",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_if_stage.sv",
+      "ports": 67,
+      "instances": 12
+    },
+    {
+      "id": "ibex:prim_alert_rxtx_fatal_bind_fpv:38",
+      "type": "module",
+      "label": "prim_alert_rxtx_fatal_bind_fpv",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\vendor\\lowrisc_ip\\ip\\prim\\fpv\\tb\\prim_alert_rxtx_fatal_bind_fpv.sv",
+      "ports": 0,
+      "instances": 1
+    },
+    {
+      "id": "opentitan:dp_ram:39",
+      "type": "module",
+      "label": "dp_ram",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\dp_ram.sv",
+      "ports": 16,
+      "instances": 1
+    },
+    {
+      "id": "ibex:ibex_load_store_unit:40",
+      "type": "module",
+      "label": "ibex_load_store_unit",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_load_store_unit.sv",
+      "ports": 35,
+      "instances": 14
+    },
+    {
+      "id": "ibex:instantiates:41",
+      "type": "module",
+      "label": "instantiates",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_lockstep.sv",
+      "ports": 61,
+      "instances": 8
+    },
+    {
+      "id": "opentitan:tb_jtag_dmi:42",
+      "type": "module",
+      "label": "tb_jtag_dmi",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\jtag_dmi\\tb_jtag_dmi.sv",
+      "ports": 0,
+      "instances": 4
+    },
+    {
+      "id": "ibex:ibex_multdiv_fast:43",
+      "type": "module",
+      "label": "ibex_multdiv_fast",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_multdiv_fast.sv",
+      "ports": 24,
+      "instances": 3
+    },
+    {
+      "id": "ibex:ibex_multdiv_slow:44",
+      "type": "module",
+      "label": "ibex_multdiv_slow",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_multdiv_slow.sv",
+      "ports": 24,
+      "instances": 7
+    },
+    {
+      "id": "opentitan:SimJTAG:45",
+      "type": "module",
+      "label": "SimJTAG",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\SimJTAG.sv",
+      "ports": 11,
+      "instances": 0
+    },
+    {
+      "id": "ibex:ibex_pmp:46",
+      "type": "module",
+      "label": "ibex_pmp",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_pmp.sv",
+      "ports": 8,
+      "instances": 3
+    },
+    {
+      "id": "opentitan:tb_test_env:47",
+      "type": "module",
+      "label": "tb_test_env",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\tb_test_env.sv",
+      "ports": 5,
+      "instances": 9
+    },
+    {
+      "id": "ibex:ibex_prefetch_buffer:48",
+      "type": "module",
+      "label": "ibex_prefetch_buffer",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_prefetch_buffer.sv",
+      "ports": 18,
+      "instances": 1
+    },
+    {
+      "id": "opentitan:tb_top:49",
+      "type": "module",
+      "label": "tb_top",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\tb_top.sv",
+      "ports": 0,
+      "instances": 2
+    },
+    {
+      "id": "ibex:ibex_register_file_ff:50",
+      "type": "module",
+      "label": "ibex_register_file_ff",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_register_file_ff.sv",
+      "ports": 12,
+      "instances": 0
+    },
+    {
+      "id": "ibex:prim_esc_rxtx_bind_fpv:51",
+      "type": "module",
+      "label": "prim_esc_rxtx_bind_fpv",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\vendor\\lowrisc_ip\\ip\\prim\\fpv\\tb\\prim_esc_rxtx_bind_fpv.sv",
+      "ports": 0,
+      "instances": 1
+    },
+    {
+      "id": "opentitan:tb_top_verilator:52",
+      "type": "module",
+      "label": "tb_top_verilator",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\tb_top_verilator.sv",
+      "ports": 5,
+      "instances": 6
+    },
+    {
+      "id": "ibex:ibex_register_file_fpga:53",
+      "type": "module",
+      "label": "ibex_register_file_fpga",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_register_file_fpga.sv",
+      "ports": 12,
+      "instances": 0
+    },
+    {
+      "id": "opentitan:SimDTM:54",
+      "type": "module",
+      "label": "SimDTM",
+      "project": "opentitan",
+      "path": "D:\\MyWork\\verilog\\dbs\\opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\unused\\SimDTM.sv",
+      "ports": 12,
+      "instances": 0
+    },
+    {
+      "id": "ibex:ibex_register_file_latch:55",
+      "type": "module",
+      "label": "ibex_register_file_latch",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\rtl\\ibex_register_file_latch.sv",
+      "ports": 13,
+      "instances": 3
+    },
+    {
+      "id": "ibex:prim_fifo_sync_bind_fpv:56",
+      "type": "module",
+      "label": "prim_fifo_sync_bind_fpv",
+      "project": "ibex",
+      "path": "D:\\MyWork\\verilog\\dbs\\ibex\\vendor\\lowrisc_ip\\ip\\prim\\fpv\\tb\\prim_fifo_sync_bind_fpv.sv",
+      "ports": 0,
+      "instances": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": "opentitan:adc_ctrl_cov_bind:0",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_cov_bind:0",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom:1",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom:1",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom:1",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom:1",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom:1",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_alu:2",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_alu:2",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_alu:2",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_alu:2",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_alu:2",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:riscv_instr_gen_tb_top:3",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:riscv_instr_gen_tb_top:3",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_bind:4",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_bind:4",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_bind:4",
+      "target": "label:protocol:tlul",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_bind:4",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom_one_scratch:5",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom_one_scratch:5",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom_one_scratch:5",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom_one_scratch:5",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:debug_rom_one_scratch:5",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_branch_predict:6",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_branch_predict:6",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_branch_predict:6",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_branch_predict:6",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_branch_predict:6",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_branch_predict:6",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:protocol:tlul",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:role:fifo",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs:7",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_controller:8",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_controller:8",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_controller:8",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_controller:8",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_controller:8",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_controller:8",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_controller:8",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_controller:8",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb:9",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb:9",
+      "target": "label:protocol:tlul",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb:9",
+      "target": "label:protocol:uart",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb:9",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb:9",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb:9",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb:9",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb:9",
+      "type": "INSTANTIATES",
+      "instance": "dut",
+      "target": "opentitan:adc_ctrl:10"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:protocol:tlul",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:protocol:uart",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl:10",
+      "type": "INSTANTIATES",
+      "instance": "u_adc_ctrl_core",
+      "target": "opentitan:adc_ctrl_core:13"
+    },
+    {
+      "source": "opentitan:dm_sba:11",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba:11",
+      "target": "label:protocol:tlul",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba:11",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba:11",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba:11",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba:11",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba:11",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba:11",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_counter:12",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_counter:12",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_counter:12",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_counter:12",
+      "target": "label:role:fifo",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_counter:12",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_counter:12",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_counter:12",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_counter:12",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "target": "label:protocol:tlul",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "type": "INSTANTIATES",
+      "instance": "u_adc_ctrl_fsm",
+      "target": "opentitan:adc_ctrl_fsm:16"
+    },
+    {
+      "source": "opentitan:adc_ctrl_core:13",
+      "type": "INSTANTIATES",
+      "instance": "u_adc_ctrl_intr",
+      "target": "opentitan:adc_ctrl_intr:19"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "target": "label:protocol:tlul",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "target": "label:role:fifo",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "type": "INSTANTIATES",
+      "instance": "i_dm_csrs",
+      "target": "opentitan:dm_csrs:7"
+    },
+    {
+      "source": "opentitan:dm_top:14",
+      "type": "INSTANTIATES",
+      "instance": "i_dm_sba",
+      "target": "opentitan:dm_sba:11"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mstatus_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mepc_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mie_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mscratch_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mcause_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mtval_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mtvec_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_dcsr_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_depc_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_dscratch0_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_dscratch1_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mstack_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mstack_epc_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_mstack_cause_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_pmp_cfg_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_pmp_addr_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_pmp_mseccfg",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "mcycle_counter_i",
+      "target": "ibex:ibex_counter:12"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "minstret_counter_i",
+      "target": "ibex:ibex_counter:12"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "mcounters_variable_i",
+      "target": "ibex:ibex_counter:12"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_tselect_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_tmatch_control_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_tmatch_value_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_cpuctrlsts_ic_scr_key_valid_q_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "ibex:ibex_cs_registers:15",
+      "type": "INSTANTIATES",
+      "instance": "u_cpuctrlsts_part_csr",
+      "target": "ibex:ibex_csr:18"
+    },
+    {
+      "source": "opentitan:adc_ctrl_fsm:16",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_fsm:16",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_fsm:16",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_fsm:16",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_fsm:16",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_fsm:16",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:17",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:17",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:17",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:17",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:17",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:17",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_csr:18",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_csr:18",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_csr:18",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_csr:18",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_csr:18",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_csr:18",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_intr:19",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_intr:19",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_intr:19",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_intr:19",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_intr:19",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_intr:19",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_intr:19",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_intr:19",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:adc_ctrl_intr:19",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_cdc:20",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_cdc:20",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_cdc:20",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_cdc:20",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_cdc:20",
+      "target": "label:role:fifo",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_cdc:20",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_cdc:20",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_cdc:20",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "type": "INSTANTIATES",
+      "instance": "i_dmi_jtag_tap",
+      "target": "opentitan:dmi_jtag_tap:17"
+    },
+    {
+      "source": "opentitan:interface:21",
+      "type": "INSTANTIATES",
+      "instance": "i_dmi_cdc",
+      "target": "opentitan:dmi_cdc:20"
+    },
+    {
+      "source": "ibex:ibex_dummy_instr:22",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_dummy_instr:22",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_dummy_instr:22",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_dummy_instr:22",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_dummy_instr:22",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_dummy_instr:22",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_dummy_instr:22",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_dummy_instr:22",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_dummy_instr:22",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_bind_fpv:23",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_bind_fpv:23",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_bind_fpv:23",
+      "target": "label:protocol:uart",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_bind_fpv:23",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_bind_fpv:23",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_bind_fpv:23",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:24",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:24",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:24",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:24",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:24",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:24",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dmi_jtag_tap:24",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "type": "INSTANTIATES",
+      "instance": "alu_i",
+      "target": "ibex:ibex_alu:2"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "type": "INSTANTIATES",
+      "instance": "multdiv_i",
+      "target": "ibex:ibex_multdiv_slow:44"
+    },
+    {
+      "source": "ibex:ibex_ex_block:25",
+      "type": "INSTANTIATES",
+      "instance": "multdiv_i",
+      "target": "ibex:ibex_multdiv_fast:43"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_fatal_bind_fpv:26",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_fatal_bind_fpv:26",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_fatal_bind_fpv:26",
+      "target": "label:protocol:uart",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_fatal_bind_fpv:26",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_fatal_bind_fpv:26",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_async_fatal_bind_fpv:26",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:aes_cov_bind:27",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:aes_cov_bind:27",
+      "target": "label:protocol:uart",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:aes_cov_bind:27",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs_sva:28",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs_sva:28",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs_sva:28",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs_sva:28",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs_sva:28",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_csrs_sva:28",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_fetch_fifo:29",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_fetch_fifo:29",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_fetch_fifo:29",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_fetch_fifo:29",
+      "target": "label:role:fifo",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_fetch_fifo:29",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_fetch_fifo:29",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_fetch_fifo:29",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_fetch_fifo:29",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba_sva:30",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba_sva:30",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba_sva:30",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_sba_sva:30",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_icache:31",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_icache:31",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_icache:31",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_icache:31",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_icache:31",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_icache:31",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_icache:31",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top_sva:32",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top_sva:32",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top_sva:32",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top_sva:32",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dm_top_sva:32",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_id_stage:33",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_id_stage:33",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_id_stage:33",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_id_stage:33",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_id_stage:33",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_id_stage:33",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_id_stage:33",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_id_stage:33",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_id_stage:33",
+      "type": "INSTANTIATES",
+      "instance": "controller_i",
+      "target": "ibex:ibex_controller:8"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_bind_fpv:34",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_bind_fpv:34",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_bind_fpv:34",
+      "target": "label:protocol:uart",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_bind_fpv:34",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_bind_fpv:34",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_bind_fpv:34",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:aes_err_injection_bind:35",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:aes_err_injection_bind:35",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:aes_err_injection_bind:35",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:boot_rom:36",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:boot_rom:36",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:boot_rom:36",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:boot_rom:36",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "type": "INSTANTIATES",
+      "instance": "icache_i",
+      "target": "ibex:ibex_icache:31"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "type": "INSTANTIATES",
+      "instance": "prefetch_buffer_i",
+      "target": "ibex:ibex_prefetch_buffer:48"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "type": "INSTANTIATES",
+      "instance": "dummy_instr_i",
+      "target": "ibex:ibex_dummy_instr:22"
+    },
+    {
+      "source": "ibex:ibex_if_stage:37",
+      "type": "INSTANTIATES",
+      "instance": "branch_predict_i",
+      "target": "ibex:ibex_branch_predict:6"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_fatal_bind_fpv:38",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_fatal_bind_fpv:38",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_fatal_bind_fpv:38",
+      "target": "label:protocol:uart",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_fatal_bind_fpv:38",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_fatal_bind_fpv:38",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_alert_rxtx_fatal_bind_fpv:38",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dp_ram:39",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dp_ram:39",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dp_ram:39",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:dp_ram:39",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_load_store_unit:40",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_load_store_unit:40",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_load_store_unit:40",
+      "target": "label:protocol:tlul",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_load_store_unit:40",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_load_store_unit:40",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_load_store_unit:40",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_load_store_unit:40",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_load_store_unit:40",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_load_store_unit:40",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "type": "INSTANTIATES",
+      "instance": "register_file_shadow_i",
+      "target": "ibex:ibex_register_file_ff:50"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "type": "INSTANTIATES",
+      "instance": "register_file_shadow_i",
+      "target": "ibex:ibex_register_file_fpga:53"
+    },
+    {
+      "source": "ibex:instantiates:41",
+      "type": "INSTANTIATES",
+      "instance": "register_file_shadow_i",
+      "target": "ibex:ibex_register_file_latch:55"
+    },
+    {
+      "source": "opentitan:tb_jtag_dmi:42",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_jtag_dmi:42",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_jtag_dmi:42",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_jtag_dmi:42",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_jtag_dmi:42",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_fast:43",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_fast:43",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_fast:43",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_fast:43",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_fast:43",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_fast:43",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_fast:43",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_fast:43",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_slow:44",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_slow:44",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_slow:44",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_slow:44",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_slow:44",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_slow:44",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_slow:44",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_multdiv_slow:44",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:SimJTAG:45",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:SimJTAG:45",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:SimJTAG:45",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_pmp:46",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_pmp:46",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_pmp:46",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_pmp:46",
+      "target": "label:role:crypto",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_pmp:46",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_pmp:46",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "type": "INSTANTIATES",
+      "instance": "i_dm_top",
+      "target": "opentitan:dm_top:14"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "type": "INSTANTIATES",
+      "instance": "i_dm_top_sva",
+      "target": "opentitan:dm_top_sva:32"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "type": "INSTANTIATES",
+      "instance": "i_dm_csrs_sva",
+      "target": "opentitan:dm_csrs_sva:28"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "type": "INSTANTIATES",
+      "instance": "i_dm_sba_sva",
+      "target": "opentitan:dm_sba_sva:30"
+    },
+    {
+      "source": "opentitan:tb_test_env:47",
+      "type": "INSTANTIATES",
+      "instance": "i_sim_jtag",
+      "target": "opentitan:SimJTAG:45"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "target": "label:role:fifo",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_prefetch_buffer:48",
+      "type": "INSTANTIATES",
+      "instance": "fifo_i",
+      "target": "ibex:ibex_fetch_fifo:29"
+    },
+    {
+      "source": "opentitan:tb_top:49",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top:49",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top:49",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top:49",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top:49",
+      "type": "INSTANTIATES",
+      "instance": "tb_test_env_i",
+      "target": "opentitan:tb_test_env:47"
+    },
+    {
+      "source": "ibex:ibex_register_file_ff:50",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_ff:50",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_ff:50",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_ff:50",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_ff:50",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_ff:50",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_esc_rxtx_bind_fpv:51",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_esc_rxtx_bind_fpv:51",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_esc_rxtx_bind_fpv:51",
+      "target": "label:protocol:uart",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_esc_rxtx_bind_fpv:51",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_esc_rxtx_bind_fpv:51",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top_verilator:52",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top_verilator:52",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top_verilator:52",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top_verilator:52",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top_verilator:52",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top_verilator:52",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:tb_top_verilator:52",
+      "type": "INSTANTIATES",
+      "instance": "i_dm_top",
+      "target": "opentitan:dm_top:14"
+    },
+    {
+      "source": "opentitan:tb_top_verilator:52",
+      "type": "INSTANTIATES",
+      "instance": "i_sim_jtag",
+      "target": "opentitan:SimJTAG:45"
+    },
+    {
+      "source": "ibex:ibex_register_file_fpga:53",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_fpga:53",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_fpga:53",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_fpga:53",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_fpga:53",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_fpga:53",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:SimDTM:54",
+      "target": "label:project:opentitan",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:SimDTM:54",
+      "target": "label:role:arbiter",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:SimDTM:54",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "opentitan:SimDTM:54",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_latch:55",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_latch:55",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_latch:55",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_latch:55",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_latch:55",
+      "target": "label:runtime:clocked",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_latch:55",
+      "target": "label:runtime:resettable",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:ibex_register_file_latch:55",
+      "target": "label:structure:hierarchical",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_fifo_sync_bind_fpv:56",
+      "target": "label:cpu:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_fifo_sync_bind_fpv:56",
+      "target": "label:project:ibex",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_fifo_sync_bind_fpv:56",
+      "target": "label:role:controller",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_fifo_sync_bind_fpv:56",
+      "target": "label:role:fifo",
+      "type": "HAS_LABEL"
+    },
+    {
+      "source": "ibex:prim_fifo_sync_bind_fpv:56",
+      "target": "label:role:memory",
+      "type": "HAS_LABEL"
+    }
+  ]
+}
