@@ -1,0 +1,19 @@
+{
+  "easy": 50,
+  "medium": 50,
+  "hard": 50,
+  "total": 150,
+  "projects": {
+    "ibex": 53,
+    "opentitan": 97
+  },
+  "types": {
+    "exact_name": 50,
+    "label_plus_ports": 21,
+    "parent_child": 17,
+    "path_plus_port": 12,
+    "reverse_graph": 20,
+    "multi_hop": 15,
+    "semantic_bridge": 15
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "by_mode": {
+    "baseline": {
+      "count": 150,
+      "hit_at_1": 0.1533,
+      "hit_at_3": 0.3533,
+      "mrr": 0.254,
+      "weighted_hit_at_1": 0.1356,
+      "by_difficulty": {
+        "easy": {
+          "count": 50,
+          "hit_at_1": 0.3,
+          "hit_at_3": 0.72,
+          "mrr": 0.4753
+        },
+        "hard": {
+          "count": 50,
+          "hit_at_1": 0.14,
+          "hit_at_3": 0.24,
+          "mrr": 0.208
+        },
+        "medium": {
+          "count": 50,
+          "hit_at_1": 0.02,
+          "hit_at_3": 0.1,
+          "mrr": 0.0787
+        }
+      }
+    },
+    "kg": {
+      "count": 150,
+      "hit_at_1": 0.2333,
+      "hit_at_3": 0.42,
+      "mrr": 0.3392,
+      "weighted_hit_at_1": 0.2111,
+      "by_difficulty": {
+        "easy": {
+          "count": 50,
+          "hit_at_1": 0.42,
+          "hit_at_3": 0.84,
+          "mrr": 0.6153
+        },
+        "hard": {
+          "count": 50,
+          "hit_at_1": 0.22,
+          "hit_at_3": 0.34,
+          "mrr": 0.3053
+        },
+        "medium": {
+          "count": 50,
+          "hit_at_1": 0.06,
+          "hit_at_3": 0.08,
+          "mrr": 0.097
+        }
+      }
+    }
+  },
+  "proxy_verilogeval": {
+    "baseline": {
+      "status": "proxy_only",
+      "score_100": 23.55
+    },
+    "kg": {
+      "status": "proxy_only",
+      "score_100": 30.98
+    }
+  }
+}

@@ -1,5 +1,5 @@
 param(
-  [ValidateSet("demo", "seed", "review", "stack", "schema", "neo4j", "module-api", "vector-api", "generator", "full", "status")]
+  [ValidateSet("demo", "seed", "review", "benchmark", "stack", "schema", "neo4j", "module-api", "vector-api", "generator", "full", "status")]
   [string]$Step = "demo",
   [int]$Limit = 100,
   [int]$Port = 8765,
@@ -32,6 +32,9 @@ switch ($Step) {
   }
   "review" {
     Invoke-Step "prepare_review_candidates.ps1"
+  }
+  "benchmark" {
+    Invoke-Step "run_benchmark_eval.ps1"
   }
   "stack" {
     Invoke-Step "start_stack.ps1"

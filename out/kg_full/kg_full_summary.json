@@ -1,0 +1,47 @@
+{
+  "modules": 1544,
+  "ip_blocks": 38,
+  "labels": 8,
+  "ports": 20196,
+  "instance_edges": 14698,
+  "total_nodes": 21786,
+  "total_edges": 39060,
+  "projects": {
+    "opentitan": 1221,
+    "ibex": 323
+  },
+  "top_labels": [
+    [
+      "hierarchical",
+      1120
+    ],
+    [
+      "clocked",
+      1067
+    ],
+    [
+      "resettable",
+      1026
+    ],
+    [
+      "uart",
+      341
+    ],
+    [
+      "fifo",
+      268
+    ],
+    [
+      "spi",
+      163
+    ],
+    [
+      "apb",
+      48
+    ],
+    [
+      "i2c",
+      32
+    ]
+  ]
+}

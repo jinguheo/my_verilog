@@ -1,0 +1,164 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 2368 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+14 TL
+(RTL Knowledge Graph Evaluation Report) Tj
+T* () Tj
+T* (1. KG Construction Criteria) Tj
+T* (The KG was built from the full merged ontology seed and merged label set, not from a 100-file) Tj
+T* (sample.) Tj
+T* (Construction rules:) Tj
+T* (- Nodes: module, ip_block, label, port) Tj
+T* (- Edges: HAS_LABEL, HAS_PORT, INSTANTIATES) Tj
+T* (- Sources: out/merged_ontology_seed.jsonl and out/merged_labels.jsonl) Tj
+T* (- Projects: OpenTitan and Ibex) Tj
+T* (- Labels are inferred from module names, paths, ports, and instance clues) Tj
+T* () Tj
+T* (2. Full KG Summary) Tj
+T* (Modules: 1544) Tj
+T* (IP blocks: 38) Tj
+T* (Ports: 20196) Tj
+T* (Instance edges: 14698) Tj
+T* (Total nodes: 21786) Tj
+T* (Total edges: 39060) Tj
+T* (Projects: {'opentitan': 1221, 'ibex': 323}) Tj
+T* (Top labels: [['hierarchical', 1120], ['clocked', 1067], ['resettable', 1026], ['uart', 341],) Tj
+T* (['fifo', 268], ['spi', 163], ['apb', 48], ['i2c', 32]]) Tj
+T* () Tj
+T* (3. Baseline QA Benchmark) Tj
+T* (Question count: 150) Tj
+T* (Question types: {'exact_name': 50, 'label_plus_ports': 21, 'parent_child': 17,) Tj
+T* ('path_plus_port': 12, 'reverse_graph': 20, 'multi_hop': 15, 'semantic_bridge': 15}) Tj
+T* (Project mix: {'ibex': 53, 'opentitan': 97}) Tj
+T* () Tj
+T* (4. Baseline Retrieval Performance) Tj
+T* (baseline: hit@1=0.1533, hit@3=0.3533, mrr=0.254, weighted_hit@1=0.1356, proxy_score=23.55) Tj
+T* (baseline by difficulty: {'easy': {'count': 50, 'hit_at_1': 0.3, 'hit_at_3': 0.72, 'mrr':) Tj
+T* (0.4753}, 'hard': {'count': 50, 'hit_at_1': 0.14, 'hit_at_3': 0.24, 'mrr': 0.208}, 'medium':) Tj
+T* ({'count': 50, 'hit_at_1': 0.02, 'hit_at_3': 0.1, 'mrr': 0.0787}}) Tj
+T* (kg: hit@1=0.2333, hit@3=0.42, mrr=0.3392, weighted_hit@1=0.2111, proxy_score=30.98) Tj
+T* (kg by difficulty: {'easy': {'count': 50, 'hit_at_1': 0.42, 'hit_at_3': 0.84, 'mrr': 0.6153},) Tj
+T* ('hard': {'count': 50, 'hit_at_1': 0.22, 'hit_at_3': 0.34, 'mrr': 0.3053}, 'medium': {'count':) Tj
+T* (50, 'hit_at_1': 0.06, 'hit_at_3': 0.08, 'mrr': 0.097}}) Tj
+T* () Tj
+T* (5. Multi-Axis Question Set) Tj
+T* (Total questions: 175) Tj
+T* (Per level: {'L1': 35, 'L2': 35, 'L3': 35, 'L4': 35, 'L5': 35}) Tj
+T* (Per type: {'structure_understanding': 25, 'search_navigation': 25, 'comparison_similarity': 25,) Tj
+T* ('function_similarity': 25, 'generation_design': 25, 'code_explanation': 25,) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Length 2619 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+14 TL
+('documentation_summary': 25}) Tj
+T* (Matrix counts:) Tj
+T* (- L1: {'structure_understanding': 5, 'search_navigation': 5, 'comparison_similarity': 5,) Tj
+T* ('function_similarity': 5, 'generation_design': 5, 'code_explanation': 5,) Tj
+T* ('documentation_summary': 5}) Tj
+T* (- L2: {'structure_understanding': 5, 'search_navigation': 5, 'comparison_similarity': 5,) Tj
+T* ('function_similarity': 5, 'generation_design': 5, 'code_explanation': 5,) Tj
+T* ('documentation_summary': 5}) Tj
+T* (- L3: {'structure_understanding': 5, 'search_navigation': 5, 'comparison_similarity': 5,) Tj
+T* ('function_similarity': 5, 'generation_design': 5, 'code_explanation': 5,) Tj
+T* ('documentation_summary': 5}) Tj
+T* (- L4: {'structure_understanding': 5, 'search_navigation': 5, 'comparison_similarity': 5,) Tj
+T* ('function_similarity': 5, 'generation_design': 5, 'code_explanation': 5,) Tj
+T* ('documentation_summary': 5}) Tj
+T* (- L5: {'structure_understanding': 5, 'search_navigation': 5, 'comparison_similarity': 5,) Tj
+T* ('function_similarity': 5, 'generation_design': 5, 'code_explanation': 5,) Tj
+T* ('documentation_summary': 5}) Tj
+T* () Tj
+T* (6. Multi-Axis Retrieval Performance) Tj
+T* (baseline: hit@1=0.4343, hit@3=0.7086, mrr=0.563, weighted_hit@1=0.4297) Tj
+T* (By level:) Tj
+T* (L1: hit@1=0.3429, hit@3=0.6286, mrr=0.4533, count=35) Tj
+T* (L2: hit@1=0.5429, hit@3=0.8, mrr=0.6771, count=35) Tj
+T* (L3: hit@1=0.4571, hit@3=0.7714, mrr=0.5905, count=35) Tj
+T* (L4: hit@1=0.4857, hit@3=0.7429, mrr=0.6333, count=35) Tj
+T* (L5: hit@1=0.3429, hit@3=0.6, mrr=0.4605, count=35) Tj
+T* (By type:) Tj
+T* (code_explanation: hit@1=0.28, hit@3=0.6, mrr=0.4593, count=25) Tj
+T* (comparison_similarity: hit@1=0.72, hit@3=0.8, mrr=0.76, count=25) Tj
+T* (documentation_summary: hit@1=0.28, hit@3=0.56, mrr=0.4167, count=25) Tj
+T* (function_similarity: hit@1=0.32, hit@3=0.52, mrr=0.4133, count=25) Tj
+T* (generation_design: hit@1=0.4, hit@3=0.8, mrr=0.5933, count=25) Tj
+T* (search_navigation: hit@1=0.6, hit@3=0.96, mrr=0.72, count=25) Tj
+T* (structure_understanding: hit@1=0.44, hit@3=0.72, mrr=0.578, count=25) Tj
+T* () Tj
+T* (kg: hit@1=0.1486, hit@3=0.2743, mrr=0.2324, weighted_hit@1=0.1213) Tj
+T* (By level:) Tj
+T* (L1: hit@1=0.3143, hit@3=0.3714, mrr=0.3405, count=35) Tj
+T* (L2: hit@1=0.2286, hit@3=0.4, mrr=0.3248, count=35) Tj
+T* (L3: hit@1=0.0857, hit@3=0.2, mrr=0.1805, count=35) Tj
+T* (L4: hit@1=0.0857, hit@3=0.2857, mrr=0.1933, count=35) Tj
+T* (L5: hit@1=0.0286, hit@3=0.1143, mrr=0.1229, count=35) Tj
+T* (By type:) Tj
+T* (code_explanation: hit@1=0.08, hit@3=0.2, mrr=0.168, count=25) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 673 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+14 TL
+(comparison_similarity: hit@1=0.0, hit@3=0.04, mrr=0.0333, count=25) Tj
+T* (documentation_summary: hit@1=0.16, hit@3=0.28, mrr=0.2427, count=25) Tj
+T* (function_similarity: hit@1=0.16, hit@3=0.28, mrr=0.236, count=25) Tj
+T* (generation_design: hit@1=0.08, hit@3=0.28, mrr=0.2013, count=25) Tj
+T* (search_navigation: hit@1=0.44, hit@3=0.64, mrr=0.558, count=25) Tj
+T* (structure_understanding: hit@1=0.12, hit@3=0.2, mrr=0.1873, count=25) Tj
+T* () Tj
+T* (7. VerilogEval Status) Tj
+T* (Official verilogeval runner/package was not available in this workspace.) Tj
+T* (All score_100 numbers are proxy scores, not official VerilogEval scores.) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Type /Pages /Count 3 /Kids [ 3 0 R 5 0 R 7 0 R ] >>
+endobj
+9 0 obj
+<< /Type /Catalog /Pages 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000002499 00000 n 
+0000002625 00000 n 
+0000005296 00000 n 
+0000005422 00000 n 
+0000006146 00000 n 
+0000006272 00000 n 
+0000006343 00000 n 
+trailer
+<< /Size 10 /Root 9 0 R >>
+startxref
+6392
+%%EOF
