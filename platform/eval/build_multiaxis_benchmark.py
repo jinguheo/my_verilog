@@ -12,6 +12,7 @@ RESERVED = {
     "auto", "is", "tb", "to", "can", "contains", "checks", "values",
 }
 PATH_EXCLUDES = ["\\dv\\", "\\tb", "\\formal\\", "\\pre_sca\\", "\\lint\\", "\\fpv\\", "\\doc\\"]
+GENERIC_LABELS = {"clocked", "resettable", "hierarchical", "opentitan_ip", "ibex_core"}
 LEVELS = ["L1", "L2", "L3", "L4", "L5"]
 TYPES = [
     "structure_understanding",
@@ -75,7 +76,7 @@ def clean_modules(rows):
 
 
 def pick_label(module, default="hierarchical"):
-    labels = [l for l in module.get("labels", []) if l not in {"clocked", "resettable", "hierarchical"}]
+    labels = [l for l in module.get("labels", []) if l not in GENERIC_LABELS]
     return random.choice(labels) if labels else default
 
 
@@ -147,6 +148,139 @@ def choose_pairs(modules):
     return pairs
 
 
+def module_label_support(module, label, include_instances=True):
+    label_tokens = set(re.split(r"[_$]+", label.lower()))
+    name = module["name"].lower()
+    path_file = Path(module["path"]).name.lower()
+    ports = " ".join(p["name"].lower() for p in module.get("ports", []))
+    instances = " ".join(i["type"].lower() for i in module.get("instances", []))
+    if label in name or label in path_file or label_tokens.intersection(set(re.split(r"[^a-zA-Z0-9_]+", name + " " + path_file))):
+        return "name_or_file"
+    if label in ports or label_tokens.intersection(set(re.split(r"[^a-zA-Z0-9_]+", ports))):
+        return "interface"
+    if include_instances and (label in instances or label_tokens.intersection(set(re.split(r"[^a-zA-Z0-9_]+", instances)))):
+        return "child_graph"
+    return None
+
+
+def canonical_label_key(row, parent_counts=None):
+    label, module, support = row
+    support_rank = {"name_or_file": 0, "interface": 1, "child_graph": 2}
+    name = module["name"].lower()
+    path_file = Path(module["path"]).name.lower()
+    ports = " ".join(p["name"].lower() for p in module.get("ports", []))
+    instances = " ".join(i["type"].lower() for i in module.get("instances", []))
+    parent_count = (parent_counts or {}).get(module["name"], 0)
+    representativeness = 0.0
+    if name == label:
+        representativeness += 20.0
+    if label in name:
+        representativeness += 10.0
+    if label in path_file:
+        representativeness += 8.0
+    if label in ports:
+        representativeness += 6.0
+    if label in instances:
+        representativeness += 6.0
+    if label in module.get("labels", []):
+        representativeness += 5.0
+    representativeness += min(parent_count, 12) * 0.8
+    exact = 0 if name == label else 1
+    core_name = 0 if name.endswith(f"_{label}") or name.startswith(f"{label}_") else 1
+    return (
+        support_rank[support],
+        -representativeness,
+        exact,
+        core_name,
+        len(name),
+        module["project"],
+        module["name"],
+    )
+
+
+def strong_label_examples(modules, direct_only=False, parent_counts=None):
+    examples = []
+    for module in modules:
+        for label in module.get("labels", []):
+            if label in GENERIC_LABELS:
+                continue
+            support = module_label_support(module, label, include_instances=not direct_only)
+            if not support:
+                continue
+            examples.append((label, module, support))
+    examples.sort(key=lambda row: (row[0], canonical_label_key(row, parent_counts)))
+    return examples
+
+
+def strong_label_owners(modules, parent_counts=None):
+    by_label = defaultdict(list)
+    seen = defaultdict(set)
+    for label, module, _support in strong_label_examples(modules, parent_counts=parent_counts):
+        key = module["name"]
+        if key not in seen[label]:
+            by_label[label].append(module)
+            seen[label].add(key)
+    return by_label
+
+
+def representative_label_examples(modules, parent_counts=None):
+    by_label = defaultdict(list)
+    for row in strong_label_examples(modules, direct_only=True, parent_counts=parent_counts):
+        by_label[row[0]].append(row)
+    reps = [rows[0] for _label, rows in sorted(by_label.items())]
+    reps.sort(key=lambda row: (-len(by_label[row[0]]), row[0], canonical_label_key(row, parent_counts)))
+    return reps
+
+
+def shared_label_pairs(by_label, same_project=None):
+    rows = []
+    for label, owners in sorted(by_label.items()):
+        for i in range(len(owners)):
+            for j in range(i + 1, len(owners)):
+                a, b = owners[i], owners[j]
+                if same_project is True and a["project"] != b["project"]:
+                    continue
+                if same_project is False and a["project"] == b["project"]:
+                    continue
+                rows.append((label, a, b))
+    rows.sort(key=lambda row: (row[0], row[1]["project"], row[1]["name"], row[2]["project"], row[2]["name"]))
+    return rows
+
+
+def unique_by_name(rows):
+    out = []
+    seen = set()
+    for row in rows:
+        if row["name"] in seen:
+            continue
+        seen.add(row["name"])
+        out.append(row)
+    return out
+
+
+def graph_parent_priority(parent, child):
+    child_l = child.lower()
+    child_tokens = set(re.split(r"[_$]+", child_l))
+    inst_types = [i.get("type", "").lower() for i in parent.get("instances", [])]
+    inst_names = [i.get("name", "").lower() for i in parent.get("instances", [])]
+    ports = [p.get("name", "").lower() for p in parent.get("ports", [])]
+    hay_tokens = set(re.split(r"[^a-zA-Z0-9_]+", " ".join(inst_types + inst_names + ports + [parent["name"].lower(), parent["path"].lower()])))
+    exact_child_count = sum(1 for inst in inst_types if inst == child_l)
+    token_hits = len(child_tokens.intersection(hay_tokens))
+    return (
+        -exact_child_count,
+        -token_hits,
+        -len(parent.get("instances", [])),
+        -len(parent.get("ports", [])),
+        parent["project"],
+        parent["name"],
+    )
+
+
+def prioritized_parents(parents, child, limit):
+    return sorted(unique_by_name(parents), key=lambda parent: graph_parent_priority(parent, child))[:limit]
+
+
 def generate_questions(modules, per_cell):
     by_project, by_label, by_port, by_name, child_to_parents = build_indexes(modules)
     used = set()
@@ -155,6 +289,11 @@ def generate_questions(modules, per_cell):
     trusted = trustworthy_modules(sorted(modules, key=lambda m: (m["project"], m["name"])))
     complex_modules = sorted(modules, key=lambda m: (-len(m["instances"]), -len(m["ports"]), m["name"]))
     pairs = choose_pairs(complex_modules[:120])
+    parent_counts = {child: len(unique_by_name(parents)) for child, parents in child_to_parents.items()}
+    direct_label_examples = representative_label_examples(modules, parent_counts)
+    by_strong_label = strong_label_owners(modules, parent_counts)
+    same_project_label_pairs = shared_label_pairs(by_strong_label, same_project=True)
+    cross_project_label_pairs = shared_label_pairs(by_strong_label, same_project=False)
 
     # L1
     for m in trusted[:per_cell]:
@@ -173,11 +312,10 @@ def generate_questions(modules, per_cell):
         add_question(rows, used, "L1", "documentation_summary",
             f"Write a short design-note summary for module `{m['name']}` using only the current knowledge DB facts.",
             [m], ["summary", "labels", "ports"], "Single-module summary.")
-    for m in complex_modules[3*per_cell:4*per_cell]:
-        label = pick_label(m)
+    for label, m, support in direct_label_examples[:per_cell]:
         add_question(rows, used, "L1", "function_similarity",
             f"Which module is tagged as `{label}` and would be the most direct example of that function?",
-            [m], [f"label={label}"], "Single-label function lookup.")
+            [m], [f"label={label}", f"support={support}"], "Single-label function lookup with direct evidence.")
     for m in complex_modules[4*per_cell:5*per_cell]:
         add_question(rows, used, "L1", "generation_design",
             f"If you needed a very small wrapper around `{m['name']}`, which existing module should you inspect first as the reference block?",
@@ -210,14 +348,14 @@ def generate_questions(modules, per_cell):
         add_question(rows, used, "L2", "comparison_similarity",
             f"Which of `{a['name']}` and `{b['name']}` are structurally closer based on shared labels and interface shape?",
             [a, b], ["shared labels", "interface shape"], "Pairwise structural comparison.")
-    for label, owners in sorted(by_label.items(), key=lambda item: -len(item[1])):
+    for label, owners in sorted(by_strong_label.items(), key=lambda item: (-len(item[1]), item[0])):
         if Counter(r["type"] for r in rows if r["level"] == "L2")["function_similarity"] >= per_cell:
             break
         if len(owners) >= 2:
             chosen = owners[:2]
             add_question(rows, used, "L2", "function_similarity",
                 f"Find two modules that both behave like `{label}` blocks and explain the common function.",
-                chosen, [f"label={label}"], "Shared function via label.")
+                chosen, [f"label={label}", "strong label evidence"], "Shared function via grounded label.")
     for m in complex_modules[20:]:
         if Counter(r["type"] for r in rows if r["level"] == "L2")["generation_design"] >= per_cell:
             break
@@ -263,14 +401,12 @@ def generate_questions(modules, per_cell):
             add_question(rows, used, "L3", "comparison_similarity",
                 f"Compare `{a['name']}` and `{b['name']}` as candidate alternatives for the same subsystem role.",
                 [a, b], ["shared labels", "subsystem role"], "Alternative design comparison.")
-    for a, b in pairs[45:]:
+    for label, a, b in cross_project_label_pairs:
         if Counter(r["type"] for r in rows if r["level"] == "L3")["function_similarity"] >= per_cell:
             break
-        if a["project"] != b["project"] and set(a.get("labels", [])).intersection(set(b.get("labels", []))):
-            label = sorted(set(a.get("labels", [])).intersection(set(b.get("labels", []))))[0]
-            add_question(rows, used, "L3", "function_similarity",
-                f"Find cross-project modules that both implement a `{label}`-like function and explain the commonality.",
-                [a, b], [f"shared cross-project label {label}"], "Cross-project function similarity.")
+        add_question(rows, used, "L3", "function_similarity",
+            f"Find cross-project modules that both implement a `{label}`-like function and explain the commonality.",
+            [a, b], [f"shared cross-project label {label}"], "Cross-project function similarity.")
     for m in complex_modules[60:]:
         if Counter(r["type"] for r in rows if r["level"] == "L3")["generation_design"] >= per_cell:
             break
@@ -304,7 +440,9 @@ def generate_questions(modules, per_cell):
         if Counter(r["type"] for r in rows if r["level"] == "L4")["search_navigation"] >= per_cell:
             break
         if len(parents) >= 2:
-            chosen = parents[:2]
+            chosen = prioritized_parents(parents, child, 2)
+            if len(chosen) < 2:
+                continue
             add_question(rows, used, "L4", "search_navigation",
                 f"If the query starts from reused child `{child}`, which parent contexts should a graph-aware search inspect first?",
                 chosen, [f"shared child {child}"], "Graph-aware ambiguous navigation.")
@@ -315,14 +453,12 @@ def generate_questions(modules, per_cell):
             add_question(rows, used, "L4", "comparison_similarity",
                 f"Compare `{a['name']}` and `{b['name']}` as architectural wrappers, focusing on hierarchy, integration points, and likely subsystem boundaries.",
                 [a, b], ["wrapper architecture", "integration points"], "Architectural comparison.")
-    for a, b in pairs[120:]:
+    for label, a, b in same_project_label_pairs:
         if Counter(r["type"] for r in rows if r["level"] == "L4")["function_similarity"] >= per_cell:
             break
-        labels = sorted(set(a.get("labels", [])).intersection(set(b.get("labels", []))))
-        if len(labels) >= 2:
-            add_question(rows, used, "L4", "function_similarity",
-                f"Which two modules would you shortlist as functionally similar candidates for `{labels[0]}` / `{labels[1]}` behavior, and why?",
-                [a, b], [f"shared labels {labels[0]},{labels[1]}"], "Higher-level shortlist reasoning.")
+        add_question(rows, used, "L4", "function_similarity",
+            f"Which two modules would you shortlist as functionally similar candidates for `{label}` behavior, and why?",
+            [a, b], [f"shared grounded label {label}"], "Higher-level shortlist reasoning.")
     for m in complex_modules[130:]:
         if Counter(r["type"] for r in rows if r["level"] == "L4")["generation_design"] >= per_cell:
             break
@@ -356,7 +492,9 @@ def generate_questions(modules, per_cell):
         if Counter(r["type"] for r in rows if r["level"] == "L5")["search_navigation"] >= per_cell:
             break
         if len(parents) >= 3:
-            chosen = parents[:3]
+            chosen = prioritized_parents(parents, child, 3)
+            if len(chosen) < 3:
+                continue
             add_question(rows, used, "L5", "search_navigation",
                 f"For a graph query starting from shared child `{child}`, how should retrieval disambiguate among multiple parent contexts?",
                 chosen, [f"high fan-out child {child}"], "Requires graph disambiguation strategy.")
@@ -368,13 +506,12 @@ def generate_questions(modules, per_cell):
             add_question(rows, used, "L5", "comparison_similarity",
                 f"Make an architecture-level comparison between `{a['name']}` and `{b['name']}` to decide which is the better template for a new subsystem.",
                 [a, b], ["template selection", "architecture-level comparison"], "Template choice reasoning.")
-    for a, b in pairs[180:]:
+    for label, a, b in cross_project_label_pairs[per_cell:]:
         if Counter(r["type"] for r in rows if r["level"] == "L5")["function_similarity"] >= per_cell:
             break
-        if a["project"] != b["project"]:
-            add_question(rows, used, "L5", "function_similarity",
-                f"Across projects, which modules are the best semantic analogs between `{a['name']}` and `{b['name']}`, and where do they diverge functionally?",
-                [a, b], ["cross-project analogs"], "Cross-project analog reasoning.")
+        add_question(rows, used, "L5", "function_similarity",
+            f"Across projects, which modules are the best semantic analogs for `{label}` behavior between `{a['name']}` and `{b['name']}`, and where do they diverge functionally?",
+            [a, b], [f"cross-project analog label {label}"], "Cross-project analog reasoning.")
     for m in complex_modules[200:]:
         if Counter(r["type"] for r in rows if r["level"] == "L5")["generation_design"] >= per_cell:
             break
@@ -418,6 +555,9 @@ def fill_missing_cells(rows, modules, per_cell):
     trusted = trustworthy_modules(sorted(modules, key=lambda m: (m["project"], m["name"])))
     complex_modules = sorted(modules, key=lambda m: (-len(m["instances"]), -len(m["ports"]), m["name"]))
     pairs = choose_pairs(complex_modules[:160])
+    _by_project, _by_label, _by_port, _by_name, child_to_parents = build_indexes(modules)
+    parent_counts = {child: len(unique_by_name(parents)) for child, parents in child_to_parents.items()}
+    direct_label_examples = representative_label_examples(modules, parent_counts)
 
     for level in LEVELS:
         for qtype in TYPES:
@@ -436,9 +576,13 @@ def fill_missing_cells(rows, modules, per_cell):
                         prompt = f"In {level}, locate the module that should be found starting from anchor `{anchor}` and file `{Path(source['path']).name}`."
                         evidence = [f"anchor={anchor}", f"path={Path(source['path']).name}"]
                     elif qtype == "function_similarity":
-                        label = pick_label(source)
+                        if direct_label_examples:
+                            label, source, support = direct_label_examples[(cursor + len(level)) % len(direct_label_examples)]
+                            evidence = [f"label={label}", f"support={support}"]
+                        else:
+                            label = pick_label(source)
+                            evidence = [f"label={label}"]
                         prompt = f"In {level}, identify the module that best represents `{label}` behavior and justify it from the knowledge DB."
-                        evidence = [f"label={label}"]
                     elif qtype == "generation_design":
                         prompt = f"In {level}, write a generation/design prompt for extending `{source['name']}` while preserving its interface intent."
                         evidence = ["generation prompt", "interface intent"]

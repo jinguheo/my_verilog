@@ -373,7 +373,7 @@
       "prim_ascon_duplex_tb",
       "prim_ascon_duplex",
       "prim_ascon_duplex",
-      "prim_ascon_round_tb"
+      "ascon_core"
     ],
     "gold_rank": 1
   },
@@ -717,15 +717,15 @@
     "mode": "baseline",
     "id": "medium-parent-child-opentitan-top_earlgrey-pinmux_jtag_breakout",
     "gold": "top_earlgrey",
-    "prediction_top1": "pinmux_jtag_breakout",
+    "prediction_top1": "top_earlgrey",
     "prediction_top5": [
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "top_earlgrey"
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "chip_earlgrey_asic",
+      "chip_earlgrey_cw310",
+      "chip_earlgrey_cw340"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -745,15 +745,15 @@
     "mode": "baseline",
     "id": "medium-parent-child-opentitan-top_englishbreakfast-pinmux_jtag_breakout",
     "gold": "top_englishbreakfast",
-    "prediction_top1": "pinmux_jtag_breakout",
+    "prediction_top1": "top_englishbreakfast",
     "prediction_top5": [
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "top_englishbreakfast"
+      "top_englishbreakfast",
+      "top_earlgrey",
+      "chip_englishbreakfast_cw305",
+      "pinmux_strap_sampling",
+      "pinmux"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -776,10 +776,10 @@
     "prediction_top1": "top_darjeeling",
     "prediction_top5": [
       "top_darjeeling",
-      "uart_core",
-      "uart",
       "chip_darjeeling_asic",
-      "chip_darjeeling_verilator"
+      "chip_darjeeling_verilator",
+      "top_earlgrey",
+      "top_englishbreakfast"
     ],
     "gold_rank": 1
   },
@@ -805,9 +805,9 @@
     "prediction_top5": [
       "chip_darjeeling_asic",
       "chip_earlgrey_asic",
-      "chip_darjeeling_verilator",
       "chip_earlgrey_cw310",
-      "chip_earlgrey_cw340"
+      "chip_earlgrey_cw340",
+      "chip_englishbreakfast_cw305"
     ],
     "gold_rank": 1
   },
@@ -902,10 +902,10 @@
     "prediction_top1": "spi_device",
     "prediction_top5": [
       "spi_device",
-      "prim_racl_error_arb",
-      "prim_racl_error_arb",
       "spi_host",
-      "racl_ctrl"
+      "racl_ctrl",
+      "sram_ctrl",
+      "mbx"
     ],
     "gold_rank": 1
   },
@@ -930,10 +930,10 @@
     "prediction_top1": "sha3",
     "prediction_top5": [
       "sha3",
-      "sha3pad",
       "entropy_src_core",
       "kmac",
-      "ibex_icache"
+      "entropy_src_main_sm",
+      "kmac_app"
     ],
     "gold_rank": 1
   },
@@ -972,10 +972,10 @@
     "prediction_top1": "i2c_fifos",
     "prediction_top5": [
       "i2c_fifos",
+      "spi_host_data_fifos",
       "i2c_core",
-      "prim_fifo_async_sram_adapter",
-      "prim_fifo_async_sram_adapter",
-      "sram_ctrl"
+      "spi_tpm",
+      "otp_ctrl"
     ],
     "gold_rank": 1
   },
@@ -1015,8 +1015,8 @@
     "prediction_top5": [
       "otp_ctrl",
       "otp_ctrl",
-      "otp_ctrl_part_buf",
-      "otp_ctrl_part_buf",
+      "top_darjeeling",
+      "top_earlgrey",
       "otp_ctrl_part_buf"
     ],
     "gold_rank": 1
@@ -1042,10 +1042,10 @@
     "prediction_top1": "soc_proxy",
     "prediction_top5": [
       "soc_proxy",
-      "tlul_socket_m1",
+      "chip_darjeeling_asic",
       "soc_dbg_ctrl",
-      "top_darjeeling",
-      "chip_darjeeling_asic"
+      "chip_darjeeling_verilator",
+      "top_darjeeling"
     ],
     "gold_rank": 1
   },
@@ -1070,10 +1070,10 @@
     "prediction_top1": "i2c_core",
     "prediction_top5": [
       "i2c_core",
-      "i2c_fifos",
-      "spi_host_data_fifos",
-      "i2c_bus_monitor",
-      "i2c_controller_fsm"
+      "aes_cipher_core_tb",
+      "aes_core",
+      "rv_core_ibex",
+      "rv_core_ibex"
     ],
     "gold_rank": 1
   },
@@ -1114,8 +1114,8 @@
       "spi_host_data_fifos",
       "spi_host",
       "spi_host_command_queue",
-      "prim_fifo_sync",
-      "prim_fifo_sync"
+      "spi_tpm",
+      "i2c_fifos"
     ],
     "gold_rank": 1
   },
@@ -1154,10 +1154,10 @@
     "prediction_top1": "spi_host",
     "prediction_top5": [
       "spi_host",
-      "prim_racl_error_arb",
-      "prim_racl_error_arb",
       "spi_device",
-      "racl_ctrl"
+      "spi_host_command_queue",
+      "racl_ctrl",
+      "spi_host_window"
     ],
     "gold_rank": 1
   },
@@ -1182,10 +1182,10 @@
     "prediction_top1": "chip_darjeeling_verilator",
     "prediction_top5": [
       "chip_darjeeling_verilator",
-      "prim_clock_div",
       "chip_earlgrey_verilator",
-      "prim_clock_div",
-      "prim_clock_div"
+      "chip_darjeeling_asic",
+      "clkmgr",
+      "clkmgr"
     ],
     "gold_rank": 1
   },
@@ -1224,10 +1224,10 @@
     "prediction_top1": "spi_host_window",
     "prediction_top5": [
       "spi_host_window",
-      "tlul_adapter_reg_racl",
       "spi_host",
-      "tlul_adapter_racl",
-      "spi_device"
+      "spi_device",
+      "mbx_sysif",
+      "spi_host_command_queue"
     ],
     "gold_rank": 1
   },
@@ -1269,7 +1269,7 @@
       "spi_device",
       "spi_tpm",
       "spi_host",
-      "spid_status"
+      "io_clk"
     ],
     "gold_rank": 1
   },
@@ -1294,10 +1294,10 @@
     "prediction_top1": "usb_fs_nb_pe",
     "prediction_top5": [
       "usb_fs_nb_pe",
-      "usb_fs_nb_in_pe",
-      "usb_fs_nb_out_pe",
-      "usb_fs_tx",
-      "usb_fs_rx"
+      "ast",
+      "chip_earlgrey_asic",
+      "usb_clk",
+      "ast_clks_byp"
     ],
     "gold_rank": 1
   },
@@ -1337,9 +1337,9 @@
     "prediction_top5": [
       "ast",
       "ast",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf"
+      "ast_clks_byp",
+      "usb_clk",
+      "pwrmgr"
     ],
     "gold_rank": 1
   },
@@ -1365,8 +1365,8 @@
     "prediction_top5": [
       "spi_tpm",
       "spi_device",
-      "prim_edge_detector",
-      "prim_edge_detector",
+      "csrng_core",
+      "entropy_src_core",
       "spi_host"
     ],
     "gold_rank": 1
@@ -1403,141 +1403,141 @@
     "mode": "baseline",
     "id": "hard-reverse-ibex-ibex_cs_registers-ibex_csr",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
+      "ibex_cs_registers",
       "ibex_cs_registers",
       "ibex_ex_block",
-      "ibex_cs_registers"
+      "ibex_ex_block",
+      "ibex_id_stage"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-ast-ast_alert",
     "gold": "ast",
-    "prediction_top1": "ast_alert",
+    "prediction_top1": "ast",
     "prediction_top5": [
-      "ast_alert",
-      "ast_alert",
       "ast",
       "ast",
-      "ibex_ex_block"
+      "csrng_core",
+      "adc_ctrl",
+      "flash_ctrl"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-entropy_src_core-entropy_src_cntr_reg",
     "gold": "entropy_src_core",
-    "prediction_top1": "entropy_src_cntr_reg",
+    "prediction_top1": "entropy_src_core",
     "prediction_top5": [
-      "entropy_src_cntr_reg",
       "entropy_src_core",
+      "spi_host_command_queue",
       "entropy_src",
-      "entropy_src_tb",
-      "entropy_src_watermark_reg"
+      "ibex_ex_block",
+      "csrng_core"
     ],
-    "gold_rank": 2
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-clkmgr-clkmgr_root_ctrl",
     "gold": "clkmgr",
-    "prediction_top1": "clkmgr_root_ctrl",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "ibex_ex_block",
+      "ibex_ex_block"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-rv_core_ibex-rv_core_ibex_addr_trans",
     "gold": "rv_core_ibex",
-    "prediction_top1": "rv_core_ibex_addr_trans",
+    "prediction_top1": "rv_core_ibex",
     "prediction_top5": [
-      "rv_core_ibex_addr_trans",
-      "rv_core_ibex_addr_trans",
-      "rv_core_ibex_addr_trans",
       "rv_core_ibex",
-      "rv_core_ibex"
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "ibex_ex_block",
+      "ibex_ex_block"
     ],
-    "gold_rank": 4
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-clkmgr-clkmgr_meas_chk",
     "gold": "clkmgr",
-    "prediction_top1": "clkmgr_meas_chk",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "ibex_ex_block",
+      "ibex_ex_block"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-entropy_src_core-entropy_src_watermark_reg",
     "gold": "entropy_src_core",
-    "prediction_top1": "entropy_src_watermark_reg",
+    "prediction_top1": "entropy_src_core",
     "prediction_top5": [
-      "entropy_src_watermark_reg",
       "entropy_src_core",
       "entropy_src",
-      "entropy_src_cntr_reg",
-      "entropy_src_tb"
+      "ibex_ex_block",
+      "ibex_prefetch_buffer",
+      "csrng_core"
     ],
-    "gold_rank": 2
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-top_darjeeling-mbx",
     "gold": "top_darjeeling",
-    "prediction_top1": "mbx",
+    "prediction_top1": "top_darjeeling",
     "prediction_top5": [
-      "mbx",
+      "top_darjeeling",
       "mbx_imbx",
       "mbx_ombx",
-      "mbx_hostif",
-      "mbx_sysif"
+      "csrng_core",
+      "mbx_hostif"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-clkmgr-clkmgr_trans",
     "gold": "clkmgr",
-    "prediction_top1": "clkmgr_trans",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "ibex_ex_block",
+      "ibex_ex_block"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-pinmux_strap_sampling-pinmux_jtag_buf",
     "gold": "pinmux_strap_sampling",
-    "prediction_top1": "pinmux_jtag_buf",
+    "prediction_top1": "pinmux_strap_sampling",
     "prediction_top5": [
-      "pinmux_jtag_buf",
-      "pinmux_jtag_buf",
-      "pinmux_jtag_buf",
-      "pinmux_jtag_buf",
-      "pinmux_strap_sampling"
+      "pinmux_strap_sampling",
+      "pinmux_strap_sampling",
+      "pinmux_strap_sampling",
+      "ibex_ex_block",
+      "ibex_ex_block"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -1548,7 +1548,7 @@
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "spid_status",
+      "ibex_ex_block",
       "ibex_ex_block"
     ],
     "gold_rank": 1
@@ -1557,29 +1557,29 @@
     "mode": "baseline",
     "id": "hard-reverse-ibex-ibex_cs_registers-ibex_counter",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_counter",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_counter",
-      "ibex_counter",
+      "ibex_cs_registers",
+      "ibex_cs_registers",
       "ibex_ex_block",
       "ibex_ex_block",
-      "ibex_cs_registers"
+      "csrng_core"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-pinmux-prim_pad_attr",
     "gold": "pinmux",
-    "prediction_top1": "prim_pad_attr",
+    "prediction_top1": "pinmux",
     "prediction_top5": [
-      "prim_pad_attr",
-      "prim_pad_attr",
-      "prim_pad_attr",
-      "prim_pad_attr",
+      "pinmux",
+      "pinmux",
+      "pinmux",
+      "prim_pad_wrapper",
       "prim_pad_wrapper"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -1590,8 +1590,8 @@
       "rv_core_ibex",
       "rv_core_ibex",
       "rv_core_ibex",
-      "rv_core_ibex_peri",
-      "rv_core_ibex_peri"
+      "ibex_ex_block",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
@@ -1599,15 +1599,15 @@
     "mode": "baseline",
     "id": "hard-reverse-opentitan-ast_clks_byp-gfr_clk_mux2",
     "gold": "ast_clks_byp",
-    "prediction_top1": "gfr_clk_mux2",
+    "prediction_top1": "ast_clks_byp",
     "prediction_top5": [
-      "gfr_clk_mux2",
-      "gfr_clk_mux2",
       "ast_clks_byp",
       "ibex_ex_block",
-      "ibex_ex_block"
+      "ibex_ex_block",
+      "csrng_core",
+      "lc_ctrl"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -1616,10 +1616,10 @@
     "prediction_top1": "i2c_fifos",
     "prediction_top5": [
       "i2c_fifos",
-      "prim_fifo_async_sram_adapter",
-      "prim_fifo_async_sram_adapter",
-      "sram_ctrl",
-      "i2c_core"
+      "spi_tpm",
+      "otp_ctrl",
+      "otp_ctrl",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
@@ -1627,29 +1627,29 @@
     "mode": "baseline",
     "id": "hard-reverse-opentitan-otp_ctrl-otp_ctrl_part_buf",
     "gold": "otp_ctrl",
-    "prediction_top1": "otp_ctrl_part_buf",
+    "prediction_top1": "otp_ctrl",
     "prediction_top5": [
-      "otp_ctrl_part_buf",
-      "otp_ctrl_part_buf",
-      "otp_ctrl_part_buf",
+      "otp_ctrl",
+      "otp_ctrl",
+      "otp_ctrl_part_unbuf",
       "otp_ctrl_part_unbuf",
       "otp_ctrl_part_unbuf"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-reverse-opentitan-clkmgr_root_ctrl-prim_clock_gating_sync",
     "gold": "clkmgr_root_ctrl",
-    "prediction_top1": "prim_clock_gating_sync",
+    "prediction_top1": "clkmgr_root_ctrl",
     "prediction_top5": [
-      "prim_clock_gating_sync",
-      "prim_clock_gating_sync",
-      "prim_clock_gating",
-      "prim_clock_gating",
-      "prim_clock_gating"
+      "clkmgr_root_ctrl",
+      "clkmgr_root_ctrl",
+      "clkmgr_root_ctrl",
+      "clkmgr_root_ctrl",
+      "ibex_ex_block"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -1669,13 +1669,13 @@
     "mode": "baseline",
     "id": "hard-reverse-ibex-prim_sha2_32-prim_sha2",
     "gold": "prim_sha2_32",
-    "prediction_top1": "prim_sha2",
+    "prediction_top1": "ibex_ex_block",
     "prediction_top5": [
-      "prim_sha2",
-      "prim_sha2",
+      "ibex_ex_block",
+      "ibex_ex_block",
       "prim_sha2_32",
       "prim_sha2_32",
-      "ibex_ex_block"
+      "ibex_if_stage"
     ],
     "gold_rank": 3
   },
@@ -1683,13 +1683,13 @@
     "mode": "baseline",
     "id": "hard-multihop-opentitan-entropy_src_core",
     "gold": "entropy_src_core",
-    "prediction_top1": "prim_mubi4_sync",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "prim_mubi4_sync",
-      "prim_mubi4_sync",
       "clkmgr",
       "clkmgr",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr_trans",
+      "clkmgr_trans"
     ],
     "gold_rank": null
   },
@@ -1697,43 +1697,43 @@
     "mode": "baseline",
     "id": "hard-multihop-opentitan-clkmgr",
     "gold": "clkmgr",
-    "prediction_top1": "prim_clock_buf",
+    "prediction_top1": "spi_device",
     "prediction_top5": [
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-multihop-opentitan-ast_clks_byp",
-    "gold": "ast_clks_byp",
-    "prediction_top1": "prim_clock_buf",
-    "prediction_top5": [
-      "prim_clock_buf",
-      "ast_clks_byp",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf"
+      "spi_device",
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "aon_clk"
     ],
     "gold_rank": 2
   },
   {
     "mode": "baseline",
+    "id": "hard-multihop-opentitan-ast_clks_byp",
+    "gold": "ast_clks_byp",
+    "prediction_top1": "ast_clks_byp",
+    "prediction_top5": [
+      "ast_clks_byp",
+      "ast",
+      "ast",
+      "spi_device",
+      "aon_clk"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
     "id": "hard-multihop-opentitan-spi_device",
     "gold": "spi_device",
-    "prediction_top1": "prim_racl_error_arb",
+    "prediction_top1": "spi_device",
     "prediction_top5": [
-      "prim_racl_error_arb",
-      "prim_racl_error_arb",
-      "racl_ctrl",
       "spi_device",
-      "sram_ctrl"
+      "racl_ctrl",
+      "sram_ctrl",
+      "spi_host",
+      "mbx"
     ],
-    "gold_rank": 4
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -1744,8 +1744,8 @@
       "top_darjeeling",
       "top_earlgrey",
       "top_englishbreakfast",
-      "gpio",
-      "gpio"
+      "aes_sbox_masked_wrapper",
+      "prim_pad_wrapper"
     ],
     "gold_rank": 1
   },
@@ -1753,27 +1753,27 @@
     "mode": "baseline",
     "id": "hard-multihop-opentitan-top_earlgrey",
     "gold": "top_earlgrey",
-    "prediction_top1": "pinmux_jtag_breakout",
+    "prediction_top1": "top_earlgrey",
     "prediction_top5": [
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "top_earlgrey"
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "top_darjeeling",
+      "pinmux",
+      "pinmux"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-multihop-opentitan-dma",
     "gold": "dma",
-    "prediction_top1": "prim_flop",
+    "prediction_top1": "flash_ctrl_lcmgr",
     "prediction_top5": [
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop"
+      "flash_ctrl_lcmgr",
+      "flash_ctrl_lcmgr",
+      "flash_ctrl_lcmgr",
+      "otp_ctrl_dai",
+      "otp_ctrl_dai"
     ],
     "gold_rank": null
   },
@@ -1781,13 +1781,13 @@
     "mode": "baseline",
     "id": "hard-multihop-opentitan-ast",
     "gold": "ast",
-    "prediction_top1": "prim_clock_buf",
+    "prediction_top1": "spi_device",
     "prediction_top5": [
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf"
+      "spi_device",
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "pwrmgr"
     ],
     "gold_rank": null
   },
@@ -1799,9 +1799,9 @@
     "prediction_top5": [
       "otp_ctrl",
       "otp_ctrl",
-      "lc_ctrl",
-      "prim_lc_sync",
-      "flash_ctrl"
+      "flash_ctrl",
+      "flash_ctrl",
+      "otbn"
     ],
     "gold_rank": 1
   },
@@ -1815,7 +1815,7 @@
       "rv_core_ibex",
       "rv_core_ibex",
       "rv_core_ibex",
-      "prim_flop_2sync"
+      "pwrmgr"
     ],
     "gold_rank": 2
   },
@@ -1823,13 +1823,13 @@
     "mode": "baseline",
     "id": "hard-multihop-opentitan-usbdev",
     "gold": "usbdev",
-    "prediction_top1": "prim_fifo_sync",
+    "prediction_top1": "entropy_src_core",
     "prediction_top5": [
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "tlul_fifo_sync",
-      "prim_fifo_sync_cnt",
-      "prim_fifo_sync_cnt"
+      "entropy_src_core",
+      "hmac",
+      "flash_ctrl",
+      "flash_ctrl",
+      "otp_ctrl"
     ],
     "gold_rank": null
   },
@@ -1837,85 +1837,85 @@
     "mode": "baseline",
     "id": "hard-multihop-opentitan-flash_ctrl",
     "gold": "flash_ctrl",
-    "prediction_top1": "flash_ctrl_region_cfg",
+    "prediction_top1": "flash_ctrl",
     "prediction_top5": [
-      "flash_ctrl_region_cfg",
-      "flash_ctrl_region_cfg",
       "flash_ctrl",
       "flash_ctrl",
-      "flash_mp_data_region_sel"
+      "flash_phy",
+      "flash_phy",
+      "flash_phy"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-multihop-opentitan-otbn_alu_bignum",
     "gold": "otbn_alu_bignum",
-    "prediction_top1": "prim_onehot_mux",
+    "prediction_top1": "otbn_rf_bignum_ff",
     "prediction_top5": [
-      "prim_onehot_mux",
-      "prim_onehot_mux",
       "otbn_rf_bignum_ff",
       "otbn_alu_bignum",
-      "otbn_vec_shifter"
+      "otbn_vec_shifter",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
     ],
-    "gold_rank": 4
+    "gold_rank": 2
   },
   {
     "mode": "baseline",
     "id": "hard-multihop-opentitan-ibex_cs_registers",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "ibex_id_stage"
+      "prim_pad_wrapper",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-multihop-ibex-ibex_cs_registers",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "ibex_id_stage"
+      "prim_pad_wrapper",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-semantic-opentitan-entropy_src_core-prim_buf",
     "gold": "entropy_src_core",
-    "prediction_top1": "prim_buf",
+    "prediction_top1": "entropy_src_core",
     "prediction_top5": [
-      "prim_buf",
-      "prim_buf",
-      "prim_buf",
-      "prim_buf",
-      "prim_buf"
+      "entropy_src_core",
+      "pinmux_strap_sampling",
+      "pinmux_strap_sampling",
+      "pinmux_strap_sampling",
+      "pwrmgr"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-semantic-opentitan-clkmgr-clkmgr_trans",
     "gold": "clkmgr",
-    "prediction_top1": "clkmgr_trans",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "top_darjeeling",
+      "top_earlgrey"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -1924,10 +1924,10 @@
     "prediction_top1": "uart",
     "prediction_top5": [
       "uart",
-      "uart_core",
       "soc_proxy",
-      "alert_handler",
-      "alert_handler"
+      "uart_core",
+      "ac_range_check",
+      "adc_ctrl"
     ],
     "gold_rank": null
   },
@@ -1938,10 +1938,10 @@
     "prediction_top1": "top_darjeeling",
     "prediction_top5": [
       "top_darjeeling",
-      "soc_dbg_ctrl",
-      "soc_dbg_ctrl_decode",
       "uart_tx",
-      "usb_fs_tx"
+      "usb_fs_tx",
+      "usb_fs_tx_mux",
+      "top_earlgrey"
     ],
     "gold_rank": 1
   },
@@ -1963,13 +1963,13 @@
     "mode": "baseline",
     "id": "hard-semantic-opentitan-dma-prim_flop",
     "gold": "dma",
-    "prediction_top1": "prim_flop",
+    "prediction_top1": "flash_ctrl_lcmgr",
     "prediction_top5": [
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop"
+      "flash_ctrl_lcmgr",
+      "flash_ctrl_lcmgr",
+      "flash_ctrl_lcmgr",
+      "otp_ctrl_dai",
+      "otp_ctrl_dai"
     ],
     "gold_rank": null
   },
@@ -1977,71 +1977,71 @@
     "mode": "baseline",
     "id": "hard-semantic-opentitan-ast-ast_dft",
     "gold": "ast",
-    "prediction_top1": "ast_dft",
+    "prediction_top1": "ast",
     "prediction_top5": [
-      "ast_dft",
-      "ast_dft",
       "ast",
       "ast",
-      "ast_clks_byp"
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "usb_clk"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-semantic-opentitan-otp_ctrl-prim_lc_sender",
     "gold": "otp_ctrl",
-    "prediction_top1": "lc_ctrl_fsm",
+    "prediction_top1": "otp_ctrl",
     "prediction_top5": [
-      "lc_ctrl_fsm",
-      "lc_ctrl_signal_decode",
-      "lc_ctrl",
-      "prim_lc_and_hardened",
-      "prim_lc_or_hardened"
+      "otp_ctrl",
+      "otp_ctrl",
+      "pinmux_strap_sampling",
+      "pinmux_strap_sampling",
+      "pinmux_strap_sampling"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-semantic-opentitan-rv_core_ibex-tlul_err_resp",
     "gold": "rv_core_ibex",
-    "prediction_top1": "tlul_err_resp",
+    "prediction_top1": "usbdev",
     "prediction_top5": [
-      "tlul_err_resp",
       "usbdev",
       "rv_core_ibex",
       "rv_core_ibex",
-      "rv_core_ibex"
-    ],
-    "gold_rank": 3
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-semantic-opentitan-usbdev-usbdev_counter",
-    "gold": "usbdev",
-    "prediction_top1": "usbdev_counter",
-    "prediction_top5": [
-      "usbdev_counter",
-      "usbdev",
-      "usbdev_iomux",
-      "ibex_counter",
-      "ibex_counter"
+      "rv_core_ibex",
+      "aes_sbox_masked_wrapper"
     ],
     "gold_rank": 2
   },
   {
     "mode": "baseline",
+    "id": "hard-semantic-opentitan-usbdev-usbdev_counter",
+    "gold": "usbdev",
+    "prediction_top1": "usbdev",
+    "prediction_top5": [
+      "usbdev",
+      "uart_tx",
+      "usb_fs_tx",
+      "usb_fs_tx_mux",
+      "top_earlgrey"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
     "id": "hard-semantic-opentitan-flash_ctrl-tlul_rsp_intg_chk",
     "gold": "flash_ctrl",
-    "prediction_top1": "tlul_rsp_intg_chk",
+    "prediction_top1": "flash_ctrl",
     "prediction_top5": [
-      "tlul_rsp_intg_chk",
-      "tlul_cmd_intg_chk",
-      "tlul_rsp_intg_gen",
+      "flash_ctrl",
+      "flash_ctrl",
       "tlul_adapter_host",
+      "sram_ctrl",
       "tlul_adapter_tb_reqs"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -2050,10 +2050,10 @@
     "prediction_top1": "otbn_alu_bignum",
     "prediction_top5": [
       "otbn_alu_bignum",
-      "otbn_vec_shifter",
       "otbn",
       "otbn_loop_controller",
-      "otbn_controller"
+      "otbn_controller",
+      "otbn_rf_base"
     ],
     "gold_rank": 1
   },
@@ -2061,41 +2061,41 @@
     "mode": "baseline",
     "id": "hard-semantic-opentitan-ibex_cs_registers-ibex_csr",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "ibex_id_stage"
+      "ibex_id_stage",
+      "ibex_id_stage",
+      "ibex_if_stage"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-semantic-ibex-ibex_cs_registers-ibex_csr",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "ibex_id_stage"
+      "ibex_id_stage",
+      "ibex_id_stage",
+      "ibex_if_stage"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
     "id": "hard-semantic-opentitan-keymgr_dpe-prim_alert_sender",
     "gold": "keymgr_dpe",
-    "prediction_top1": "alert_handler",
+    "prediction_top1": "ac_range_check",
     "prediction_top5": [
-      "alert_handler",
-      "alert_handler",
       "ac_range_check",
       "adc_ctrl",
-      "aes"
+      "aes",
+      "ascon",
+      "clkmgr"
     ],
     "gold_rank": null
   },
@@ -2276,8 +2276,8 @@
       "ibex_if_stage",
       "ibex_if_stage",
       "ibex_id_stage",
-      "ibex_id_stage",
-      "ibex_wb_stage"
+      "ibex_wb_stage",
+      "ibex_id_stage"
     ],
     "gold_rank": 1
   },
@@ -2473,7 +2473,7 @@
       "prim_ascon_duplex_tb",
       "prim_ascon_duplex",
       "prim_ascon_duplex",
-      "prim_ascon_round_tb"
+      "ascon_core"
     ],
     "gold_rank": 1
   },
@@ -2817,15 +2817,15 @@
     "mode": "kg",
     "id": "medium-parent-child-opentitan-top_earlgrey-pinmux_jtag_breakout",
     "gold": "top_earlgrey",
-    "prediction_top1": "pinmux_jtag_breakout",
+    "prediction_top1": "top_earlgrey",
     "prediction_top5": [
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "top_earlgrey"
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "chip_earlgrey_asic",
+      "chip_earlgrey_cw310",
+      "chip_earlgrey_cw340"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -2845,15 +2845,15 @@
     "mode": "kg",
     "id": "medium-parent-child-opentitan-top_englishbreakfast-pinmux_jtag_breakout",
     "gold": "top_englishbreakfast",
-    "prediction_top1": "pinmux_jtag_breakout",
+    "prediction_top1": "top_englishbreakfast",
     "prediction_top5": [
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "top_englishbreakfast"
+      "top_englishbreakfast",
+      "top_earlgrey",
+      "chip_englishbreakfast_cw305",
+      "pinmux",
+      "pinmux"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -2878,8 +2878,8 @@
       "top_darjeeling",
       "chip_darjeeling_asic",
       "chip_darjeeling_verilator",
-      "uart",
-      "uart_core"
+      "top_earlgrey",
+      "top_englishbreakfast"
     ],
     "gold_rank": 1
   },
@@ -2905,9 +2905,9 @@
     "prediction_top5": [
       "chip_darjeeling_asic",
       "chip_earlgrey_asic",
-      "chip_darjeeling_verilator",
       "chip_earlgrey_cw310",
-      "chip_earlgrey_cw340"
+      "chip_earlgrey_cw340",
+      "chip_englishbreakfast_cw305"
     ],
     "gold_rank": 1
   },
@@ -3002,10 +3002,10 @@
     "prediction_top1": "spi_device",
     "prediction_top5": [
       "spi_device",
-      "prim_racl_error_arb",
-      "prim_racl_error_arb",
       "spi_host",
-      "racl_ctrl"
+      "racl_ctrl",
+      "sram_ctrl",
+      "mbx"
     ],
     "gold_rank": 1
   },
@@ -3030,10 +3030,10 @@
     "prediction_top1": "sha3",
     "prediction_top5": [
       "sha3",
-      "sha3pad",
       "entropy_src_core",
       "kmac",
-      "ibex_icache"
+      "entropy_src_main_sm",
+      "kmac_app"
     ],
     "gold_rank": 1
   },
@@ -3073,9 +3073,9 @@
     "prediction_top5": [
       "i2c_fifos",
       "i2c_core",
-      "prim_fifo_async_sram_adapter",
-      "prim_fifo_async_sram_adapter",
-      "prim_fifo_sync"
+      "spi_host_data_fifos",
+      "spi_tpm",
+      "otp_ctrl"
     ],
     "gold_rank": 1
   },
@@ -3115,8 +3115,8 @@
     "prediction_top5": [
       "otp_ctrl",
       "otp_ctrl",
-      "otp_ctrl_part_buf",
-      "otp_ctrl_part_buf",
+      "top_darjeeling",
+      "top_earlgrey",
       "otp_ctrl_part_buf"
     ],
     "gold_rank": 1
@@ -3142,8 +3142,8 @@
     "prediction_top1": "soc_proxy",
     "prediction_top5": [
       "soc_proxy",
-      "tlul_socket_m1",
       "chip_darjeeling_asic",
+      "chip_darjeeling_verilator",
       "soc_dbg_ctrl",
       "top_darjeeling"
     ],
@@ -3170,10 +3170,10 @@
     "prediction_top1": "i2c_core",
     "prediction_top5": [
       "i2c_core",
-      "i2c_fifos",
-      "i2c_bus_monitor",
-      "i2c_controller_fsm",
-      "i2c_target_fsm"
+      "aes_core",
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "rv_core_ibex"
     ],
     "gold_rank": 1
   },
@@ -3213,9 +3213,9 @@
     "prediction_top5": [
       "spi_host_data_fifos",
       "spi_host",
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "spi_host_command_queue"
+      "spi_host_command_queue",
+      "spi_tpm",
+      "spi_host_window"
     ],
     "gold_rank": 1
   },
@@ -3254,10 +3254,10 @@
     "prediction_top1": "spi_host",
     "prediction_top5": [
       "spi_host",
-      "prim_racl_error_arb",
-      "prim_racl_error_arb",
-      "racl_ctrl",
-      "spi_device"
+      "spi_device",
+      "spi_host_command_queue",
+      "spi_host_window",
+      "racl_ctrl"
     ],
     "gold_rank": 1
   },
@@ -3282,10 +3282,10 @@
     "prediction_top1": "chip_darjeeling_verilator",
     "prediction_top5": [
       "chip_darjeeling_verilator",
-      "prim_clock_div",
-      "prim_clock_div",
-      "prim_clock_div",
-      "chip_earlgrey_verilator"
+      "chip_earlgrey_verilator",
+      "chip_darjeeling_asic",
+      "clkmgr",
+      "clkmgr"
     ],
     "gold_rank": 1
   },
@@ -3324,10 +3324,10 @@
     "prediction_top1": "spi_host_window",
     "prediction_top5": [
       "spi_host_window",
-      "tlul_adapter_reg_racl",
       "spi_host",
-      "tlul_adapter_racl",
-      "tlul_adapter_host"
+      "spi_device",
+      "spi_host_command_queue",
+      "mbx_sysif"
     ],
     "gold_rank": 1
   },
@@ -3367,9 +3367,9 @@
     "prediction_top5": [
       "spi_p2s",
       "spi_device",
-      "spid_status",
       "spi_tpm",
-      "spid_jedec"
+      "spid_jedec",
+      "spid_status"
     ],
     "gold_rank": 1
   },
@@ -3394,10 +3394,10 @@
     "prediction_top1": "usb_fs_nb_pe",
     "prediction_top5": [
       "usb_fs_nb_pe",
-      "usb_fs_nb_in_pe",
-      "usb_fs_nb_out_pe",
-      "usb_fs_tx",
-      "usb_fs_rx"
+      "ast",
+      "usb_clk",
+      "chip_earlgrey_asic",
+      "usb_fs_tx"
     ],
     "gold_rank": 1
   },
@@ -3433,15 +3433,15 @@
     "mode": "kg",
     "id": "medium-parent-child-opentitan-ast-prim_clock_buf",
     "gold": "ast",
-    "prediction_top1": "prim_clock_buf",
+    "prediction_top1": "ast",
     "prediction_top5": [
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf"
+      "ast",
+      "ast",
+      "ast_clks_byp",
+      "usb_clk",
+      "spi_device"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -3464,10 +3464,10 @@
     "prediction_top1": "spi_tpm",
     "prediction_top5": [
       "spi_tpm",
-      "prim_edge_detector",
-      "prim_edge_detector",
       "spi_device",
-      "csrng_core"
+      "csrng_core",
+      "entropy_src_core",
+      "sensor_ctrl"
     ],
     "gold_rank": 1
   },
@@ -3503,141 +3503,141 @@
     "mode": "kg",
     "id": "hard-reverse-ibex-ibex_cs_registers-ibex_csr",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "ibex_ex_block"
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "ibex_id_stage"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-ast-ast_alert",
     "gold": "ast",
-    "prediction_top1": "ast_alert",
+    "prediction_top1": "ast",
     "prediction_top5": [
-      "ast_alert",
-      "ast_alert",
       "ast",
       "ast",
-      "alert_handler"
+      "adc_ctrl",
+      "flash_ctrl",
+      "flash_ctrl"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-entropy_src_core-entropy_src_cntr_reg",
     "gold": "entropy_src_core",
-    "prediction_top1": "entropy_src_cntr_reg",
+    "prediction_top1": "entropy_src_core",
     "prediction_top5": [
-      "entropy_src_cntr_reg",
       "entropy_src_core",
+      "spi_host_command_queue",
       "entropy_src",
-      "entropy_src_watermark_reg",
-      "entropy_src_tb"
+      "csrng_core",
+      "ast"
     ],
-    "gold_rank": 2
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-clkmgr-clkmgr_root_ctrl",
     "gold": "clkmgr",
-    "prediction_top1": "clkmgr_root_ctrl",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "top_darjeeling",
+      "top_earlgrey"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-rv_core_ibex-rv_core_ibex_addr_trans",
     "gold": "rv_core_ibex",
-    "prediction_top1": "rv_core_ibex_addr_trans",
+    "prediction_top1": "rv_core_ibex",
     "prediction_top5": [
-      "rv_core_ibex_addr_trans",
-      "rv_core_ibex_addr_trans",
-      "rv_core_ibex_addr_trans",
       "rv_core_ibex",
-      "rv_core_ibex"
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "ibex_ex_block",
+      "top_darjeeling"
     ],
-    "gold_rank": 4
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-clkmgr-clkmgr_meas_chk",
     "gold": "clkmgr",
-    "prediction_top1": "clkmgr_meas_chk",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "ibex_ex_block",
+      "ibex_ex_block"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-entropy_src_core-entropy_src_watermark_reg",
     "gold": "entropy_src_core",
-    "prediction_top1": "entropy_src_watermark_reg",
+    "prediction_top1": "entropy_src_core",
     "prediction_top5": [
-      "entropy_src_watermark_reg",
       "entropy_src_core",
       "entropy_src",
-      "entropy_src_cntr_reg",
-      "entropy_src_tb"
+      "ibex_prefetch_buffer",
+      "ibex_prefetch_buffer",
+      "csrng_core"
     ],
-    "gold_rank": 2
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-top_darjeeling-mbx",
     "gold": "top_darjeeling",
-    "prediction_top1": "mbx",
+    "prediction_top1": "top_darjeeling",
     "prediction_top5": [
-      "mbx",
+      "top_darjeeling",
       "mbx_imbx",
       "mbx_ombx",
       "mbx_hostif",
       "mbx_sysif"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-clkmgr-clkmgr_trans",
     "gold": "clkmgr",
-    "prediction_top1": "clkmgr_trans",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "ibex_ex_block",
+      "ibex_ex_block"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-pinmux_strap_sampling-pinmux_jtag_buf",
     "gold": "pinmux_strap_sampling",
-    "prediction_top1": "pinmux_jtag_buf",
+    "prediction_top1": "pinmux_strap_sampling",
     "prediction_top5": [
-      "pinmux_jtag_buf",
-      "pinmux_jtag_buf",
-      "pinmux_jtag_buf",
-      "pinmux_jtag_buf",
-      "pinmux_strap_sampling"
+      "pinmux_strap_sampling",
+      "pinmux_strap_sampling",
+      "pinmux_strap_sampling",
+      "top_englishbreakfast",
+      "pinmux"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -3648,8 +3648,8 @@
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "spid_status",
-      "clkmgr_byp"
+      "ibex_ex_block",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
@@ -3657,29 +3657,29 @@
     "mode": "kg",
     "id": "hard-reverse-ibex-ibex_cs_registers-ibex_counter",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_counter",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_counter",
-      "ibex_counter",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "ibex_ex_block"
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "rom_ctrl_fsm"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-pinmux-prim_pad_attr",
     "gold": "pinmux",
-    "prediction_top1": "prim_pad_attr",
+    "prediction_top1": "pinmux",
     "prediction_top5": [
-      "prim_pad_attr",
-      "prim_pad_attr",
-      "prim_pad_attr",
-      "prim_pad_attr",
+      "pinmux",
+      "pinmux",
+      "pinmux",
+      "prim_pad_wrapper",
       "prim_pad_wrapper"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -3690,8 +3690,8 @@
       "rv_core_ibex",
       "rv_core_ibex",
       "rv_core_ibex",
-      "rv_core_ibex_peri",
-      "rv_core_ibex_peri"
+      "ibex_ex_block",
+      "top_darjeeling"
     ],
     "gold_rank": 1
   },
@@ -3699,15 +3699,15 @@
     "mode": "kg",
     "id": "hard-reverse-opentitan-ast_clks_byp-gfr_clk_mux2",
     "gold": "ast_clks_byp",
-    "prediction_top1": "gfr_clk_mux2",
+    "prediction_top1": "ast_clks_byp",
     "prediction_top5": [
-      "gfr_clk_mux2",
-      "gfr_clk_mux2",
       "ast_clks_byp",
-      "prim_clock_mux2",
-      "prim_clock_mux2"
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "lc_ctrl",
+      "tlul_jtag_dtm"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -3716,10 +3716,10 @@
     "prediction_top1": "i2c_fifos",
     "prediction_top5": [
       "i2c_fifos",
-      "prim_fifo_async_sram_adapter",
-      "prim_fifo_async_sram_adapter",
-      "i2c_core",
-      "sram_ctrl"
+      "spi_tpm",
+      "otp_ctrl",
+      "otp_ctrl",
+      "kmac"
     ],
     "gold_rank": 1
   },
@@ -3727,29 +3727,29 @@
     "mode": "kg",
     "id": "hard-reverse-opentitan-otp_ctrl-otp_ctrl_part_buf",
     "gold": "otp_ctrl",
-    "prediction_top1": "otp_ctrl_part_buf",
+    "prediction_top1": "otp_ctrl",
     "prediction_top5": [
-      "otp_ctrl_part_buf",
-      "otp_ctrl_part_buf",
-      "otp_ctrl_part_buf",
+      "otp_ctrl",
+      "otp_ctrl",
+      "otp_ctrl_part_unbuf",
       "otp_ctrl_part_unbuf",
       "otp_ctrl_part_unbuf"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-reverse-opentitan-clkmgr_root_ctrl-prim_clock_gating_sync",
     "gold": "clkmgr_root_ctrl",
-    "prediction_top1": "prim_clock_gating_sync",
+    "prediction_top1": "clkmgr_root_ctrl",
     "prediction_top5": [
-      "prim_clock_gating_sync",
-      "prim_clock_gating_sync",
-      "prim_clock_gating",
-      "prim_clock_gating",
-      "prim_clock_gating"
+      "clkmgr_root_ctrl",
+      "clkmgr_root_ctrl",
+      "clkmgr_root_ctrl",
+      "clkmgr_root_ctrl",
+      "ast_clks_byp"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -3761,7 +3761,7 @@
       "clkmgr_meas_chk",
       "clkmgr_meas_chk",
       "clkmgr_meas_chk",
-      "prim_clock_inv"
+      "clkmgr"
     ],
     "gold_rank": 1
   },
@@ -3769,27 +3769,27 @@
     "mode": "kg",
     "id": "hard-reverse-ibex-prim_sha2_32-prim_sha2",
     "gold": "prim_sha2_32",
-    "prediction_top1": "prim_sha2",
+    "prediction_top1": "prim_sha2_32",
     "prediction_top5": [
-      "prim_sha2",
-      "prim_sha2",
       "prim_sha2_32",
       "prim_sha2_32",
-      "ibex_prefetch_buffer"
+      "ibex_ex_block",
+      "ibex_if_stage",
+      "ibex_ex_block"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-multihop-opentitan-entropy_src_core",
     "gold": "entropy_src_core",
-    "prediction_top1": "prim_mubi4_sync",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "prim_mubi4_sync",
-      "prim_mubi4_sync",
       "clkmgr",
       "clkmgr",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr_trans",
+      "clkmgr_trans"
     ],
     "gold_rank": null
   },
@@ -3797,83 +3797,83 @@
     "mode": "kg",
     "id": "hard-multihop-opentitan-clkmgr",
     "gold": "clkmgr",
-    "prediction_top1": "prim_clock_buf",
+    "prediction_top1": "spi_device",
     "prediction_top5": [
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf"
+      "spi_device",
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "aon_clk"
     ],
-    "gold_rank": null
+    "gold_rank": 2
   },
   {
     "mode": "kg",
     "id": "hard-multihop-opentitan-ast_clks_byp",
     "gold": "ast_clks_byp",
-    "prediction_top1": "prim_clock_buf",
+    "prediction_top1": "ast_clks_byp",
     "prediction_top5": [
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_flop_2sync"
+      "ast_clks_byp",
+      "ast",
+      "ast",
+      "aon_clk",
+      "aon_clk"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-multihop-opentitan-spi_device",
     "gold": "spi_device",
-    "prediction_top1": "prim_racl_error_arb",
+    "prediction_top1": "spi_device",
     "prediction_top5": [
-      "prim_racl_error_arb",
-      "prim_racl_error_arb",
-      "racl_ctrl",
       "spi_device",
-      "sram_ctrl"
+      "racl_ctrl",
+      "sram_ctrl",
+      "spi_host",
+      "mbx"
     ],
-    "gold_rank": 4
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-multihop-opentitan-top_darjeeling",
     "gold": "top_darjeeling",
-    "prediction_top1": "gpio",
+    "prediction_top1": "top_darjeeling",
     "prediction_top5": [
-      "gpio",
-      "gpio",
-      "gpio",
       "top_darjeeling",
-      "top_earlgrey"
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
     ],
-    "gold_rank": 4
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-multihop-opentitan-top_earlgrey",
     "gold": "top_earlgrey",
-    "prediction_top1": "pinmux_jtag_breakout",
+    "prediction_top1": "top_earlgrey",
     "prediction_top5": [
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "pinmux_jtag_breakout",
-      "top_earlgrey"
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "top_darjeeling",
+      "pinmux",
+      "pinmux"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-multihop-opentitan-dma",
     "gold": "dma",
-    "prediction_top1": "prim_flop",
+    "prediction_top1": "flash_ctrl_lcmgr",
     "prediction_top5": [
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop"
+      "flash_ctrl_lcmgr",
+      "flash_ctrl_lcmgr",
+      "flash_ctrl_lcmgr",
+      "otp_ctrl_dai",
+      "otp_ctrl_dai"
     ],
     "gold_rank": null
   },
@@ -3881,13 +3881,13 @@
     "mode": "kg",
     "id": "hard-multihop-opentitan-ast",
     "gold": "ast",
-    "prediction_top1": "prim_clock_buf",
+    "prediction_top1": "spi_device",
     "prediction_top5": [
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf",
-      "prim_clock_buf"
+      "spi_device",
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "pwrmgr"
     ],
     "gold_rank": null
   },
@@ -3899,9 +3899,9 @@
     "prediction_top5": [
       "otp_ctrl",
       "otp_ctrl",
-      "prim_lc_sync",
-      "prim_lc_sync",
-      "lc_ctrl"
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "rv_core_ibex"
     ],
     "gold_rank": 1
   },
@@ -3914,8 +3914,8 @@
       "rv_core_ibex",
       "rv_core_ibex",
       "rv_core_ibex",
-      "prim_flop_2sync",
-      "lc_ctrl"
+      "lc_ctrl",
+      "pwrmgr"
     ],
     "gold_rank": 1
   },
@@ -3923,13 +3923,13 @@
     "mode": "kg",
     "id": "hard-multihop-opentitan-usbdev",
     "gold": "usbdev",
-    "prediction_top1": "prim_fifo_sync",
+    "prediction_top1": "entropy_src_core",
     "prediction_top5": [
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "tlul_fifo_sync",
-      "prim_fifo_sync_cnt",
-      "prim_fifo_sync_cnt"
+      "entropy_src_core",
+      "hmac",
+      "flash_ctrl",
+      "flash_ctrl",
+      "otp_ctrl"
     ],
     "gold_rank": null
   },
@@ -3937,85 +3937,85 @@
     "mode": "kg",
     "id": "hard-multihop-opentitan-flash_ctrl",
     "gold": "flash_ctrl",
-    "prediction_top1": "flash_ctrl_region_cfg",
+    "prediction_top1": "flash_ctrl",
     "prediction_top5": [
-      "flash_ctrl_region_cfg",
-      "flash_ctrl_region_cfg",
       "flash_ctrl",
       "flash_ctrl",
-      "flash_mp_data_region_sel"
+      "flash_phy",
+      "flash_phy",
+      "flash_phy"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-multihop-opentitan-otbn_alu_bignum",
     "gold": "otbn_alu_bignum",
-    "prediction_top1": "prim_onehot_mux",
+    "prediction_top1": "otbn_rf_bignum_ff",
     "prediction_top5": [
-      "prim_onehot_mux",
-      "prim_onehot_mux",
       "otbn_rf_bignum_ff",
+      "otbn_vec_shifter",
+      "otbn_alu_bignum",
       "prim_pad_wrapper",
       "prim_pad_wrapper"
     ],
-    "gold_rank": null
+    "gold_rank": 3
   },
   {
     "mode": "kg",
     "id": "hard-multihop-opentitan-ibex_cs_registers",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "ibex_id_stage"
+      "prim_pad_wrapper",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-multihop-ibex-ibex_cs_registers",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "ibex_id_stage"
+      "prim_pad_wrapper",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-semantic-opentitan-entropy_src_core-prim_buf",
     "gold": "entropy_src_core",
-    "prediction_top1": "prim_buf",
+    "prediction_top1": "tlul_fifo_sync",
     "prediction_top5": [
-      "prim_buf",
-      "prim_buf",
-      "prim_buf",
-      "prim_buf",
-      "prim_buf"
+      "tlul_fifo_sync",
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "entropy_src_core"
     ],
-    "gold_rank": null
+    "gold_rank": 5
   },
   {
     "mode": "kg",
     "id": "hard-semantic-opentitan-clkmgr-clkmgr_trans",
     "gold": "clkmgr",
-    "prediction_top1": "clkmgr_trans",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr_trans",
-      "clkmgr"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "prim_fifo_async_sram_adapter",
+      "prim_fifo_async_sram_adapter"
     ],
-    "gold_rank": 5
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -4026,8 +4026,8 @@
       "uart",
       "kmac",
       "hmac",
-      "alert_handler",
-      "alert_handler"
+      "soc_proxy",
+      "flash_ctrl"
     ],
     "gold_rank": null
   },
@@ -4038,10 +4038,10 @@
     "prediction_top1": "top_darjeeling",
     "prediction_top5": [
       "top_darjeeling",
-      "soc_dbg_ctrl",
-      "soc_dbg_ctrl_decode",
       "uart_tx",
-      "usb_fs_tx"
+      "usb_fs_tx",
+      "usb_fs_tx_mux",
+      "top_earlgrey"
     ],
     "gold_rank": 1
   },
@@ -4054,8 +4054,8 @@
       "top_darjeeling",
       "top_earlgrey",
       "top_englishbreakfast",
-      "rv_core_ibex_peri",
-      "rv_core_ibex_peri"
+      "pwrmgr_cdc",
+      "pwrmgr_cdc"
     ],
     "gold_rank": 2
   },
@@ -4063,13 +4063,13 @@
     "mode": "kg",
     "id": "hard-semantic-opentitan-dma-prim_flop",
     "gold": "dma",
-    "prediction_top1": "prim_flop",
+    "prediction_top1": "prim_fifo_sync",
     "prediction_top5": [
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop"
+      "prim_fifo_sync",
+      "prim_fifo_sync",
+      "flash_ctrl",
+      "flash_ctrl",
+      "otp_ctrl"
     ],
     "gold_rank": null
   },
@@ -4077,71 +4077,71 @@
     "mode": "kg",
     "id": "hard-semantic-opentitan-ast-ast_dft",
     "gold": "ast",
-    "prediction_top1": "ast_dft",
+    "prediction_top1": "ast",
     "prediction_top5": [
-      "ast_dft",
-      "ast_dft",
       "ast",
       "ast",
-      "ast_clks_byp"
+      "prim_fifo_async_sram_adapter",
+      "pwrmgr_cdc",
+      "pwrmgr_cdc"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-semantic-opentitan-otp_ctrl-prim_lc_sender",
     "gold": "otp_ctrl",
-    "prediction_top1": "lc_ctrl_fsm",
+    "prediction_top1": "otp_ctrl",
     "prediction_top5": [
-      "lc_ctrl_fsm",
-      "lc_ctrl_signal_decode",
       "otp_ctrl",
       "otp_ctrl",
+      "rv_core_ibex",
+      "rv_core_ibex",
       "rv_core_ibex"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-semantic-opentitan-rv_core_ibex-tlul_err_resp",
     "gold": "rv_core_ibex",
-    "prediction_top1": "tlul_err_resp",
+    "prediction_top1": "usbdev",
     "prediction_top5": [
-      "tlul_err_resp",
       "usbdev",
       "rv_core_ibex",
       "rv_core_ibex",
-      "rv_core_ibex"
-    ],
-    "gold_rank": 3
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-usbdev-usbdev_counter",
-    "gold": "usbdev",
-    "prediction_top1": "usbdev_counter",
-    "prediction_top5": [
-      "usbdev_counter",
-      "usbdev",
-      "usbdev_iomux",
-      "ibex_counter",
-      "ibex_counter"
+      "rv_core_ibex",
+      "aes_sbox_masked_wrapper"
     ],
     "gold_rank": 2
   },
   {
     "mode": "kg",
+    "id": "hard-semantic-opentitan-usbdev-usbdev_counter",
+    "gold": "usbdev",
+    "prediction_top1": "usbdev",
+    "prediction_top5": [
+      "usbdev",
+      "uart_tx",
+      "usb_fs_tx",
+      "usb_fs_tx_mux",
+      "top_earlgrey"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
     "id": "hard-semantic-opentitan-flash_ctrl-tlul_rsp_intg_chk",
     "gold": "flash_ctrl",
-    "prediction_top1": "tlul_rsp_intg_chk",
+    "prediction_top1": "tlul_adapter_host",
     "prediction_top5": [
-      "tlul_rsp_intg_chk",
       "tlul_adapter_host",
+      "flash_ctrl",
+      "flash_ctrl",
       "tlul_adapter_tb_reqs",
-      "tlul_adapter_vh",
-      "tlul_cmd_intg_chk"
+      "tlul_adapter_vh"
     ],
-    "gold_rank": null
+    "gold_rank": 2
   },
   {
     "mode": "kg",
@@ -4150,10 +4150,10 @@
     "prediction_top1": "otbn_alu_bignum",
     "prediction_top5": [
       "otbn_alu_bignum",
-      "otbn_vec_shifter",
       "otbn",
-      "otbn_loop_controller",
-      "otbn_rf_base"
+      "prim_fifo_async_sram_adapter",
+      "pwrmgr_cdc",
+      "pwrmgr_cdc"
     ],
     "gold_rank": 1
   },
@@ -4161,29 +4161,29 @@
     "mode": "kg",
     "id": "hard-semantic-opentitan-ibex_cs_registers-ibex_csr",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
       "ibex_cs_registers",
       "ibex_cs_registers",
+      "prim_fifo_async_sram_adapter",
+      "prim_fifo_async_sram_adapter",
       "ibex_id_stage"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
     "id": "hard-semantic-ibex-ibex_cs_registers-ibex_csr",
     "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_csr",
+    "prediction_top1": "ibex_cs_registers",
     "prediction_top5": [
-      "ibex_csr",
-      "ibex_csr",
       "ibex_cs_registers",
       "ibex_cs_registers",
+      "prim_fifo_async_sram_adapter",
+      "rv_core_ibex",
       "rv_core_ibex"
     ],
-    "gold_rank": 3
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -4193,9 +4193,9 @@
     "prediction_top5": [
       "kmac",
       "hmac",
-      "alert_handler",
-      "alert_handler",
-      "flash_ctrl"
+      "flash_ctrl",
+      "flash_ctrl",
+      "otp_ctrl"
     ],
     "gold_rank": null
   }

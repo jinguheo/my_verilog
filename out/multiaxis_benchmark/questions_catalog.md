@@ -44,15 +44,15 @@
 ### function_similarity
 
 1. Which module is tagged as `fifo` and would be the most direct example of that function?
-   - gold: `rv_core_ibex`
-2. Which module is tagged as `uart` and would be the most direct example of that function?
-   - gold: `flash_ctrl`
-3. Which module is tagged as `hierarchical` and would be the most direct example of that function?
-   - gold: `otbn_alu_bignum`
-4. Which module is tagged as `uart` and would be the most direct example of that function?
-   - gold: `clkmgr`
-5. In L1, identify the module that best represents `apb` behavior and justify it from the knowledge DB.
-   - gold: `ibex_cs_registers`
+   - gold: `prim_fifo_sync`
+2. Which module is tagged as `spi` and would be the most direct example of that function?
+   - gold: `spi_host`
+3. Which module is tagged as `uart` and would be the most direct example of that function?
+   - gold: `uart`
+4. Which module is tagged as `i2c` and would be the most direct example of that function?
+   - gold: `i2c_core`
+5. In L1, identify the module that best represents `uart` behavior and justify it from the knowledge DB.
+   - gold: `uart`
 
 ### generation_design
 
@@ -136,16 +136,16 @@
 
 ### function_similarity
 
-1. Find two modules that both behave like `hierarchical` blocks and explain the common function.
-   - gold: `dmi_jtag_tap, dmi_cdc`
-2. Find two modules that both behave like `clocked` blocks and explain the common function.
-   - gold: `debug_rom, debug_rom_one_scratch`
-3. Find two modules that both behave like `resettable` blocks and explain the common function.
-   - gold: `debug_rom, debug_rom_one_scratch`
-4. Find two modules that both behave like `uart` blocks and explain the common function.
-   - gold: `top_englishbreakfast, rv_plic`
-5. Find two modules that both behave like `fifo` blocks and explain the common function.
-   - gold: `dmi_cdc, dm_csrs`
+1. Find two modules that both behave like `fifo` blocks and explain the common function.
+   - gold: `prim_fifo_sync, i2c_fifos`
+2. Find two modules that both behave like `spi` blocks and explain the common function.
+   - gold: `spi_host, spi_device`
+3. Find two modules that both behave like `uart` blocks and explain the common function.
+   - gold: `uart, uart_core`
+4. Find two modules that both behave like `i2c` blocks and explain the common function.
+   - gold: `i2c_core, i2c_fifos`
+5. In L2, identify the module that best represents `uart` behavior and justify it from the knowledge DB.
+   - gold: `uart`
 
 ### generation_design
 
@@ -229,16 +229,16 @@
 
 ### function_similarity
 
-1. In L3, identify the module that best represents `apb` behavior and justify it from the knowledge DB.
-   - gold: `ibex_cs_registers`
-2. In L3, identify the module that best represents `uart` behavior and justify it from the knowledge DB.
-   - gold: `keymgr_dpe`
-3. In L3, identify the module that best represents `apb` behavior and justify it from the knowledge DB.
-   - gold: `top_englishbreakfast`
-4. In L3, identify the module that best represents `uart` behavior and justify it from the knowledge DB.
-   - gold: `aes_core`
-5. In L3, identify the module that best represents `i2c` behavior and justify it from the knowledge DB.
-   - gold: `i2c_core`
+1. Find cross-project modules that both implement a `fifo`-like function and explain the commonality.
+   - gold: `ibex_fetch_fifo, csrng_cmd_stage`
+2. Find cross-project modules that both implement a `fifo`-like function and explain the commonality.
+   - gold: `ibex_fetch_fifo, csrng_core`
+3. Find cross-project modules that both implement a `fifo`-like function and explain the commonality.
+   - gold: `ibex_fetch_fifo, dev_entropy`
+4. Find cross-project modules that both implement a `fifo`-like function and explain the commonality.
+   - gold: `ibex_fetch_fifo, dm_csrs`
+5. Find cross-project modules that both implement a `fifo`-like function and explain the commonality.
+   - gold: `ibex_fetch_fifo, dmi_cdc`
 
 ### generation_design
 
@@ -297,15 +297,15 @@
 ### search_navigation
 
 1. If the query starts from reused child `prim_flop_2sync`, which parent contexts should a graph-aware search inspect first?
-   - gold: `dmi_cdc, chip_englishbreakfast_cw305`
+   - gold: `pwrmgr_cdc, ast_clks_byp`
 2. If the query starts from reused child `prim_buf`, which parent contexts should a graph-aware search inspect first?
-   - gold: `ibex_if_stage, ibex_if_stage`
+   - gold: `aes_masked_inverse_gf2p4, aes_masked_inverse_gf2p4_noreuse`
 3. If the query starts from reused child `prim_flop`, which parent contexts should a graph-aware search inspect first?
-   - gold: `pwrmgr_fsm, pwrmgr_fsm`
+   - gold: `dma, spi_device`
 4. If the query starts from reused child `prim_intr_hw`, which parent contexts should a graph-aware search inspect first?
-   - gold: `pwrmgr, gpio`
+   - gold: `usbdev, i2c_core`
 5. If the query starts from reused child `prim_lc_sync`, which parent contexts should a graph-aware search inspect first?
-   - gold: `rv_core_ibex, rv_core_ibex`
+   - gold: `otp_ctrl, pinmux_strap_sampling`
 
 ### comparison_similarity
 
@@ -322,16 +322,16 @@
 
 ### function_similarity
 
-1. Which two modules would you shortlist as functionally similar candidates for `clocked` / `hierarchical` behavior, and why?
-   - gold: `clkmgr, dma`
-2. Which two modules would you shortlist as functionally similar candidates for `clocked` / `hierarchical` behavior, and why?
-   - gold: `clkmgr, ast`
-3. Which two modules would you shortlist as functionally similar candidates for `clocked` / `hierarchical` behavior, and why?
-   - gold: `clkmgr, otp_ctrl`
-4. Which two modules would you shortlist as functionally similar candidates for `clocked` / `hierarchical` behavior, and why?
-   - gold: `clkmgr, usbdev`
-5. Which two modules would you shortlist as functionally similar candidates for `clocked` / `hierarchical` behavior, and why?
-   - gold: `clkmgr, rv_core_ibex`
+1. Which two modules would you shortlist as functionally similar candidates for `fifo` behavior, and why?
+   - gold: `ibex_fetch_fifo, ibex_prefetch_buffer`
+2. Which two modules would you shortlist as functionally similar candidates for `fifo` behavior, and why?
+   - gold: `ibex_fetch_fifo, prim_fifo_async_simple`
+3. Which two modules would you shortlist as functionally similar candidates for `fifo` behavior, and why?
+   - gold: `ibex_fetch_fifo, prim_fifo_async_sram_adapter`
+4. Which two modules would you shortlist as functionally similar candidates for `fifo` behavior, and why?
+   - gold: `ibex_fetch_fifo, prim_fifo_sync_cnt`
+5. Which two modules would you shortlist as functionally similar candidates for `fifo` behavior, and why?
+   - gold: `ibex_fetch_fifo, prim_generic_flash_bank`
 
 ### generation_design
 
@@ -390,15 +390,15 @@
 ### search_navigation
 
 1. For a graph query starting from shared child `prim_flop_2sync`, how should retrieval disambiguate among multiple parent contexts?
-   - gold: `dmi_cdc, chip_englishbreakfast_cw305, rv_plic`
+   - gold: `pwrmgr_cdc, ast_clks_byp, dev_entropy`
 2. For a graph query starting from shared child `prim_buf`, how should retrieval disambiguate among multiple parent contexts?
-   - gold: `ibex_if_stage, ibex_if_stage, ibex_load_store_unit`
+   - gold: `aes_masked_inverse_gf2p4, aes_masked_inverse_gf2p4_noreuse, ast_clks_byp`
 3. For a graph query starting from shared child `prim_flop`, how should retrieval disambiguate among multiple parent contexts?
-   - gold: `pwrmgr_fsm, pwrmgr_fsm, pwrmgr_fsm`
+   - gold: `dma, spi_device, otbn_instruction_fetch`
 4. For a graph query starting from shared child `prim_intr_hw`, how should retrieval disambiguate among multiple parent contexts?
-   - gold: `pwrmgr, gpio, flash_ctrl`
+   - gold: `usbdev, i2c_core, uart_core`
 5. For a graph query starting from shared child `prim_lc_sync`, how should retrieval disambiguate among multiple parent contexts?
-   - gold: `rv_core_ibex, rv_core_ibex, pwrmgr`
+   - gold: `otp_ctrl, pinmux_strap_sampling, lc_ctrl_fsm`
 
 ### comparison_similarity
 
@@ -415,16 +415,16 @@
 
 ### function_similarity
 
-1. In L5, identify the module that best represents `apb` behavior and justify it from the knowledge DB.
-   - gold: `ibex_cs_registers`
-2. In L5, identify the module that best represents `uart` behavior and justify it from the knowledge DB.
-   - gold: `keymgr_dpe`
-3. In L5, identify the module that best represents `apb` behavior and justify it from the knowledge DB.
-   - gold: `top_englishbreakfast`
-4. In L5, identify the module that best represents `uart` behavior and justify it from the knowledge DB.
-   - gold: `aes_core`
-5. In L5, identify the module that best represents `i2c` behavior and justify it from the knowledge DB.
-   - gold: `i2c_core`
+1. Across projects, which modules are the best semantic analogs for `fifo` behavior between `ibex_fetch_fifo` and `edn_ack_sm`, and where do they diverge functionally?
+   - gold: `ibex_fetch_fifo, edn_ack_sm`
+2. Across projects, which modules are the best semantic analogs for `fifo` behavior between `ibex_fetch_fifo` and `edn_main_sm`, and where do they diverge functionally?
+   - gold: `ibex_fetch_fifo, edn_main_sm`
+3. Across projects, which modules are the best semantic analogs for `fifo` behavior between `ibex_fetch_fifo` and `entropy_src`, and where do they diverge functionally?
+   - gold: `ibex_fetch_fifo, entropy_src`
+4. Across projects, which modules are the best semantic analogs for `fifo` behavior between `ibex_fetch_fifo` and `entropy_src_ack_sm`, and where do they diverge functionally?
+   - gold: `ibex_fetch_fifo, entropy_src_ack_sm`
+5. Across projects, which modules are the best semantic analogs for `fifo` behavior between `ibex_fetch_fifo` and `entropy_src_core`, and where do they diverge functionally?
+   - gold: `ibex_fetch_fifo, entropy_src_core`
 
 ### generation_design
 

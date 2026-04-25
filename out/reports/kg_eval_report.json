@@ -98,10 +98,10 @@
     "by_mode": {
       "baseline": {
         "count": 150,
-        "hit_at_1": 0.5733,
-        "hit_at_3": 0.6867,
-        "mrr": 0.6378,
-        "weighted_hit_at_1": 0.48,
+        "hit_at_1": 0.78,
+        "hit_at_3": 0.82,
+        "mrr": 0.8019,
+        "weighted_hit_at_1": 0.7511,
         "by_difficulty": {
           "easy": {
             "count": 50,
@@ -111,24 +111,24 @@
           },
           "hard": {
             "count": 50,
-            "hit_at_1": 0.16,
-            "hit_at_3": 0.5,
-            "mrr": 0.3363
+            "hit_at_1": 0.74,
+            "hit_at_3": 0.86,
+            "mrr": 0.7967
           },
           "medium": {
             "count": 50,
-            "hit_at_1": 0.56,
-            "hit_at_3": 0.56,
-            "mrr": 0.577
+            "hit_at_1": 0.6,
+            "hit_at_3": 0.6,
+            "mrr": 0.609
           }
         }
       },
       "kg": {
         "count": 150,
-        "hit_at_1": 0.58,
-        "hit_at_3": 0.7,
-        "mrr": 0.6446,
-        "weighted_hit_at_1": 0.4867,
+        "hit_at_1": 0.7933,
+        "hit_at_3": 0.8333,
+        "mrr": 0.8169,
+        "weighted_hit_at_1": 0.7644,
         "by_difficulty": {
           "easy": {
             "count": 50,
@@ -138,15 +138,15 @@
           },
           "hard": {
             "count": 50,
-            "hit_at_1": 0.16,
-            "hit_at_3": 0.5,
-            "mrr": 0.3257
+            "hit_at_1": 0.74,
+            "hit_at_3": 0.84,
+            "mrr": 0.7907
           },
           "medium": {
             "count": 50,
-            "hit_at_1": 0.58,
-            "hit_at_3": 0.6,
-            "mrr": 0.608
+            "hit_at_1": 0.64,
+            "hit_at_3": 0.66,
+            "mrr": 0.66
           }
         }
       }
@@ -154,18 +154,18 @@
     "proxy_verilogeval": {
       "baseline": {
         "status": "proxy_only",
-        "score_100": 58.39
+        "score_100": 78.54
       },
       "kg": {
         "status": "proxy_only",
-        "score_100": 59.29
+        "score_100": 79.9
       }
     }
   },
   "retrieval_metadata": {
     "modules_indexed": 732,
     "approved_labels": {
-      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+      "path": "out\\label_approval\\auto_approved_labels.jsonl",
       "module_labels_added": 24,
       "ip_context_labels_added": 69
     }
@@ -241,40 +241,40 @@
     "by_mode": {
       "baseline": {
         "count": 175,
-        "hit_at_1": 0.7829,
-        "hit_at_3": 0.8,
-        "mrr": 0.794,
-        "weighted_hit_at_1": 0.7677,
+        "hit_at_1": 0.8514,
+        "hit_at_3": 0.8629,
+        "mrr": 0.8686,
+        "weighted_hit_at_1": 0.8393,
         "by_level": {
           "L1": {
             "count": 35,
             "hit_at_1": 0.8571,
-            "hit_at_3": 0.8571,
-            "mrr": 0.8571
+            "hit_at_3": 0.8857,
+            "mrr": 0.8714
           },
           "L2": {
             "count": 35,
-            "hit_at_1": 0.8571,
-            "hit_at_3": 0.8571,
-            "mrr": 0.8571
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "L3": {
             "count": 35,
-            "hit_at_1": 0.7714,
-            "hit_at_3": 0.8286,
-            "mrr": 0.8057
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8857
           },
           "L4": {
             "count": 35,
             "hit_at_1": 0.6857,
             "hit_at_3": 0.7143,
-            "mrr": 0.7
+            "mrr": 0.7286
           },
           "L5": {
             "count": 35,
-            "hit_at_1": 0.7429,
-            "hit_at_3": 0.7429,
-            "mrr": 0.75
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8571
           }
         },
         "by_type": {
@@ -298,9 +298,9 @@
           },
           "function_similarity": {
             "count": 25,
-            "hit_at_1": 0.08,
-            "hit_at_3": 0.08,
-            "mrr": 0.08
+            "hit_at_1": 0.56,
+            "hit_at_3": 0.6,
+            "mrr": 0.66
           },
           "generation_design": {
             "count": 25,
@@ -310,42 +310,42 @@
           },
           "search_navigation": {
             "count": 25,
-            "hit_at_1": 0.44,
-            "hit_at_3": 0.52,
-            "mrr": 0.498
+            "hit_at_1": 0.6,
+            "hit_at_3": 0.6,
+            "mrr": 0.6
           },
           "structure_understanding": {
             "count": 25,
-            "hit_at_1": 0.96,
-            "hit_at_3": 1.0,
-            "mrr": 0.98
+            "hit_at_1": 0.8,
+            "hit_at_3": 0.84,
+            "mrr": 0.82
           }
         }
       },
       "kg": {
         "count": 175,
-        "hit_at_1": 0.7829,
-        "hit_at_3": 0.8171,
-        "mrr": 0.7988,
-        "weighted_hit_at_1": 0.7707,
+        "hit_at_1": 0.8514,
+        "hit_at_3": 0.8629,
+        "mrr": 0.8562,
+        "weighted_hit_at_1": 0.8423,
         "by_level": {
           "L1": {
             "count": 35,
             "hit_at_1": 0.8286,
             "hit_at_3": 0.8857,
-            "mrr": 0.8476
+            "mrr": 0.8524
           },
           "L2": {
+            "count": 35,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L3": {
             "count": 35,
             "hit_at_1": 0.8571,
             "hit_at_3": 0.8571,
             "mrr": 0.8571
-          },
-          "L3": {
-            "count": 35,
-            "hit_at_1": 0.7714,
-            "hit_at_3": 0.8571,
-            "mrr": 0.8152
           },
           "L4": {
             "count": 35,
@@ -355,9 +355,9 @@
           },
           "L5": {
             "count": 35,
-            "hit_at_1": 0.7429,
-            "hit_at_3": 0.7714,
-            "mrr": 0.7595
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8571
           }
         },
         "by_type": {
@@ -381,9 +381,9 @@
           },
           "function_similarity": {
             "count": 25,
-            "hit_at_1": 0.08,
-            "hit_at_3": 0.2,
-            "mrr": 0.12
+            "hit_at_1": 0.56,
+            "hit_at_3": 0.6,
+            "mrr": 0.58
           },
           "generation_design": {
             "count": 25,
@@ -393,15 +393,15 @@
           },
           "search_navigation": {
             "count": 25,
-            "hit_at_1": 0.44,
-            "hit_at_3": 0.52,
-            "mrr": 0.498
+            "hit_at_1": 0.6,
+            "hit_at_3": 0.6,
+            "mrr": 0.6
           },
           "structure_understanding": {
             "count": 25,
-            "hit_at_1": 1.0,
-            "hit_at_3": 1.0,
-            "mrr": 1.0
+            "hit_at_1": 0.84,
+            "hit_at_3": 0.84,
+            "mrr": 0.84
           }
         }
       }
@@ -410,7 +410,7 @@
   "multiaxis_metadata": {
     "modules_indexed": 732,
     "approved_labels": {
-      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+      "path": "out\\label_approval\\auto_approved_labels.jsonl",
       "module_labels_added": 24,
       "ip_context_labels_added": 69
     }

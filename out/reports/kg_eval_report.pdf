@@ -3,7 +3,7 @@
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 2 0 obj
-<< /Length 2411 >>
+<< /Length 2386 >>
 stream
 BT
 /F1 10 Tf
@@ -40,17 +40,17 @@ T* ('path_plus_port': 12, 'reverse_graph': 20, 'multi_hop': 15, 'semantic_bridge
 T* (Project mix: {'ibex': 55, 'opentitan': 95}) Tj
 T* () Tj
 T* (4. Baseline Retrieval Performance) Tj
-T* (baseline: hit@1=0.5733, hit@3=0.6867, mrr=0.6378, weighted_hit@1=0.48, proxy_score=58.39) Tj
+T* (baseline: hit@1=0.78, hit@3=0.82, mrr=0.8019, weighted_hit@1=0.7511, proxy_score=78.54) Tj
 T* (baseline by difficulty: {'easy': {'count': 50, 'hit_at_1': 1.0, 'hit_at_3': 1.0, 'mrr': 1.0},) Tj
-T* ('hard': {'count': 50, 'hit_at_1': 0.16, 'hit_at_3': 0.5, 'mrr': 0.3363}, 'medium': {'count':) Tj
-T* (50, 'hit_at_1': 0.56, 'hit_at_3': 0.56, 'mrr': 0.577}}) Tj
-T* (kg: hit@1=0.58, hit@3=0.7, mrr=0.6446, weighted_hit@1=0.4867, proxy_score=59.29) Tj
+T* ('hard': {'count': 50, 'hit_at_1': 0.74, 'hit_at_3': 0.86, 'mrr': 0.7967}, 'medium': {'count':) Tj
+T* (50, 'hit_at_1': 0.6, 'hit_at_3': 0.6, 'mrr': 0.609}}) Tj
+T* (kg: hit@1=0.7933, hit@3=0.8333, mrr=0.8169, weighted_hit@1=0.7644, proxy_score=79.9) Tj
 T* (kg by difficulty: {'easy': {'count': 50, 'hit_at_1': 1.0, 'hit_at_3': 1.0, 'mrr': 1.0}, 'hard':) Tj
-T* ({'count': 50, 'hit_at_1': 0.16, 'hit_at_3': 0.5, 'mrr': 0.3257}, 'medium': {'count': 50,) Tj
-T* ('hit_at_1': 0.58, 'hit_at_3': 0.6, 'mrr': 0.608}}) Tj
+T* ({'count': 50, 'hit_at_1': 0.74, 'hit_at_3': 0.84, 'mrr': 0.7907}, 'medium': {'count': 50,) Tj
+T* ('hit_at_1': 0.64, 'hit_at_3': 0.66, 'mrr': 0.66}}) Tj
 T* (Retrieval metadata: {'modules_indexed': 732, 'approved_labels': {'path':) Tj
-T* ('D:\\\\MyWork\\\\verilog\\\\out\\\\label_approval\\\\auto_approved_labels.jsonl', 'module_labels_added':) Tj
-T* (24, 'ip_context_labels_added': 69}}) Tj
+T* ('out\\\\label_approval\\\\auto_approved_labels.jsonl', 'module_labels_added': 24,) Tj
+T* ('ip_context_labels_added': 69}}) Tj
 T* () Tj
 T* (5. Multi-Axis Question Set) Tj
 ET
@@ -60,7 +60,7 @@ endobj
 << /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
 endobj
 4 0 obj
-<< /Length 2686 >>
+<< /Length 2672 >>
 stream
 BT
 /F1 10 Tf
@@ -89,27 +89,27 @@ T* ('function_similarity': 5, 'generation_design': 5, 'code_explanation': 5,) Tj
 T* ('documentation_summary': 5}) Tj
 T* () Tj
 T* (6. Multi-Axis Retrieval Performance) Tj
-T* (baseline: hit@1=0.7829, hit@3=0.8, mrr=0.794, weighted_hit@1=0.7677) Tj
+T* (baseline: hit@1=0.8514, hit@3=0.8629, mrr=0.8686, weighted_hit@1=0.8393) Tj
 T* (By level:) Tj
-T* (L1: hit@1=0.8571, hit@3=0.8571, mrr=0.8571, count=35) Tj
-T* (L2: hit@1=0.8571, hit@3=0.8571, mrr=0.8571, count=35) Tj
-T* (L3: hit@1=0.7714, hit@3=0.8286, mrr=0.8057, count=35) Tj
-T* (L4: hit@1=0.6857, hit@3=0.7143, mrr=0.7, count=35) Tj
-T* (L5: hit@1=0.7429, hit@3=0.7429, mrr=0.75, count=35) Tj
+T* (L1: hit@1=0.8571, hit@3=0.8857, mrr=0.8714, count=35) Tj
+T* (L2: hit@1=1.0, hit@3=1.0, mrr=1.0, count=35) Tj
+T* (L3: hit@1=0.8571, hit@3=0.8571, mrr=0.8857, count=35) Tj
+T* (L4: hit@1=0.6857, hit@3=0.7143, mrr=0.7286, count=35) Tj
+T* (L5: hit@1=0.8571, hit@3=0.8571, mrr=0.8571, count=35) Tj
 T* (By type:) Tj
 T* (code_explanation: hit@1=1.0, hit@3=1.0, mrr=1.0, count=25) Tj
 T* (comparison_similarity: hit@1=1.0, hit@3=1.0, mrr=1.0, count=25) Tj
 T* (documentation_summary: hit@1=1.0, hit@3=1.0, mrr=1.0, count=25) Tj
-T* (function_similarity: hit@1=0.08, hit@3=0.08, mrr=0.08, count=25) Tj
+T* (function_similarity: hit@1=0.56, hit@3=0.6, mrr=0.66, count=25) Tj
 T* (generation_design: hit@1=1.0, hit@3=1.0, mrr=1.0, count=25) Tj
-T* (search_navigation: hit@1=0.44, hit@3=0.52, mrr=0.498, count=25) Tj
-T* (structure_understanding: hit@1=0.96, hit@3=1.0, mrr=0.98, count=25) Tj
+T* (search_navigation: hit@1=0.6, hit@3=0.6, mrr=0.6, count=25) Tj
+T* (structure_understanding: hit@1=0.8, hit@3=0.84, mrr=0.82, count=25) Tj
 T* () Tj
-T* (kg: hit@1=0.7829, hit@3=0.8171, mrr=0.7988, weighted_hit@1=0.7707) Tj
+T* (kg: hit@1=0.8514, hit@3=0.8629, mrr=0.8562, weighted_hit@1=0.8423) Tj
 T* (By level:) Tj
-T* (L1: hit@1=0.8286, hit@3=0.8857, mrr=0.8476, count=35) Tj
-T* (L2: hit@1=0.8571, hit@3=0.8571, mrr=0.8571, count=35) Tj
-T* (L3: hit@1=0.7714, hit@3=0.8571, mrr=0.8152, count=35) Tj
+T* (L1: hit@1=0.8286, hit@3=0.8857, mrr=0.8524, count=35) Tj
+T* (L2: hit@1=1.0, hit@3=1.0, mrr=1.0, count=35) Tj
+T* (L3: hit@1=0.8571, hit@3=0.8571, mrr=0.8571, count=35) Tj
 ET
 endstream
 endobj
@@ -117,26 +117,26 @@ endobj
 << /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 1110 >>
+<< /Length 1082 >>
 stream
 BT
 /F1 10 Tf
 50 790 Td
 14 TL
 (L4: hit@1=0.7143, hit@3=0.7143, mrr=0.7143, count=35) Tj
-T* (L5: hit@1=0.7429, hit@3=0.7714, mrr=0.7595, count=35) Tj
+T* (L5: hit@1=0.8571, hit@3=0.8571, mrr=0.8571, count=35) Tj
 T* (By type:) Tj
 T* (code_explanation: hit@1=0.96, hit@3=1.0, mrr=0.9733, count=25) Tj
 T* (comparison_similarity: hit@1=1.0, hit@3=1.0, mrr=1.0, count=25) Tj
 T* (documentation_summary: hit@1=1.0, hit@3=1.0, mrr=1.0, count=25) Tj
-T* (function_similarity: hit@1=0.08, hit@3=0.2, mrr=0.12, count=25) Tj
+T* (function_similarity: hit@1=0.56, hit@3=0.6, mrr=0.58, count=25) Tj
 T* (generation_design: hit@1=1.0, hit@3=1.0, mrr=1.0, count=25) Tj
-T* (search_navigation: hit@1=0.44, hit@3=0.52, mrr=0.498, count=25) Tj
-T* (structure_understanding: hit@1=1.0, hit@3=1.0, mrr=1.0, count=25) Tj
+T* (search_navigation: hit@1=0.6, hit@3=0.6, mrr=0.6, count=25) Tj
+T* (structure_understanding: hit@1=0.84, hit@3=0.84, mrr=0.84, count=25) Tj
 T* () Tj
 T* (Multi-axis metadata: {'modules_indexed': 732, 'approved_labels': {'path':) Tj
-T* ('D:\\\\MyWork\\\\verilog\\\\out\\\\label_approval\\\\auto_approved_labels.jsonl', 'module_labels_added':) Tj
-T* (24, 'ip_context_labels_added': 69}}) Tj
+T* ('out\\\\label_approval\\\\auto_approved_labels.jsonl', 'module_labels_added': 24,) Tj
+T* ('ip_context_labels_added': 69}}) Tj
 T* () Tj
 T* (7. VerilogEval Status) Tj
 T* (Official verilogeval runner/package was not available in this workspace.) Tj
@@ -155,18 +155,18 @@ endobj
 endobj
 xref
 0 10
-0000000000 65535 f 
-0000000009 00000 n 
-0000000079 00000 n 
-0000002542 00000 n 
-0000002668 00000 n 
-0000005406 00000 n 
-0000005532 00000 n 
-0000006694 00000 n 
-0000006820 00000 n 
-0000006891 00000 n 
+0000000000 65535 f
+0000000009 00000 n
+0000000079 00000 n
+0000002517 00000 n
+0000002643 00000 n
+0000005367 00000 n
+0000005493 00000 n
+0000006627 00000 n
+0000006753 00000 n
+0000006824 00000 n
 trailer
 << /Size 10 /Root 9 0 R >>
 startxref
-6940
+6873
 %%EOF

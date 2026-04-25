@@ -9,24 +9,24 @@ This report compares two retrieval conditions:
 
 ### baseline
 
-- hit@1: 0.5733
-- hit@3: 0.6867
-- mrr: 0.6378
-- weighted hit@1: 0.48
-- proxy VerilogEval score (/100): 58.39
+- hit@1: 0.78
+- hit@3: 0.82
+- mrr: 0.8019
+- weighted hit@1: 0.7511
+- proxy VerilogEval score (/100): 78.54
 
 ### kg
 
-- hit@1: 0.58
-- hit@3: 0.7
-- mrr: 0.6446
-- weighted hit@1: 0.4867
-- proxy VerilogEval score (/100): 59.29
+- hit@1: 0.7933
+- hit@3: 0.8333
+- mrr: 0.8169
+- weighted hit@1: 0.7644
+- proxy VerilogEval score (/100): 79.9
 
 ## Retrieval Inputs
 
 - modules indexed: 732
-- approved labels: D:\MyWork\verilog\out\label_approval\auto_approved_labels.jsonl
+- approved labels: out\label_approval\auto_approved_labels.jsonl
 - module labels added: 24
 - IP context labels added: 69
 

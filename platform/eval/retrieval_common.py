@@ -17,8 +17,13 @@ STOPWORDS = {
     "from", "high", "how", "in", "into", "it", "its", "knowledge",
     "level", "like", "module", "modules", "of", "only", "or", "path",
     "ports", "project", "query", "return", "returned", "should", "short",
-    "summary", "terms", "the", "this", "top", "using", "what", "which",
-    "with", "write",
+    "summary", "terms", "that", "the", "this", "top", "using", "what",
+    "which", "with", "write",
+    "aware", "among", "best", "blocks", "centered", "child", "children",
+    "common", "contexts", "disambiguate", "first", "function", "graph",
+    "inspect", "itself", "multiple", "parent", "parents", "rather",
+    "represents", "retrieval", "retrieve", "retrieved", "reused", "search",
+    "shared", "shortlist", "starts", "than",
 }
 
 PATH_EXCLUDES = [
@@ -96,11 +101,11 @@ def normalized_path(path):
 def tokenize(text):
     out = []
     for raw in IDENT_RE.findall(str(text).lower()):
-        if len(raw) <= 1 or raw in STOPWORDS:
+        if len(raw) <= 1 or raw in STOPWORDS or raw in RESERVED:
             continue
         out.append(raw)
         for part in re.split(r"[_$]+", raw):
-            if len(part) > 1 and part not in STOPWORDS and part != raw:
+            if len(part) > 1 and part not in STOPWORDS and part not in RESERVED and part != raw:
                 out.append(part)
     return out
 
@@ -236,11 +241,13 @@ def module_features(module, child_to_parents):
         "instances_exact": {i.lower() for i in inst_types},
         "labels_exact": {l.lower() for l in labels},
         "parents_exact": {p.lower() for p in parents},
+        "path_tokens_exact": token_set(module.get("path", "")),
     }
 
 
 def attach_features(modules, child_to_parents):
-    for module in modules:
+    for idx, module in enumerate(modules):
+        module["_rank"] = idx
         module["_features"] = module_features(module, child_to_parents)
 
 
@@ -288,10 +295,13 @@ def add(reason_rows, amount, reason):
     return amount
 
 
-def field_overlap_score(fields, query_tokens, weights, idf, factor, reason_rows):
+def field_overlap_score(fields, query_tokens, weights, idf, factor, reason_rows, suppress_by_field=None):
     score = 0.0
+    suppress_by_field = suppress_by_field or {}
     for field, weight in weights.items():
         overlap = fields.get(field, set()).intersection(query_tokens)
+        if field in suppress_by_field:
+            overlap = overlap.difference(suppress_by_field[field])
         if not overlap:
             continue
         for token in overlap:
@@ -301,22 +311,59 @@ def field_overlap_score(fields, query_tokens, weights, idf, factor, reason_rows)
     return score
 
 
+def query_intent(question, child_anchors):
+    question_l = question.lower()
+    if child_anchors or re.search(r"\b(reused child|shared child|centered on child|starts from .*child|parent contexts|graph-aware|graph query)\b", question_l):
+        return "graph_navigation"
+    if re.search(r"\b(functionally similar|semantic analog|tagged as|behave like|represents .* behavior|same subsystem role|common function|implement .* function)\b", question_l):
+        return "function_similarity"
+    if "-like function" in question_l:
+        return "function_similarity"
+    return "general"
+
+
+def direct_label_support(features, label):
+    label_tokens = token_set(label)
+    fields = features["fields"]
+    if label in features["labels_exact"]:
+        if label_tokens.intersection(fields["name"]) or label_tokens.intersection(fields["path_file"]):
+            return "name_or_file"
+        if label_tokens.intersection(fields["ports"]):
+            return "interface"
+        if label_tokens.intersection(fields["instances"]):
+            return "child_graph"
+    return None
+
+
 def score_module(module, question, mode, idf, known_projects):
     features = module["_features"]
     fields = features["fields"]
     query_tokens = set(tokenize(question))
     expanded_tokens = expand_terms(query_tokens) if mode == "kg" else set()
     target_anchors, child_anchors, path_anchors = extract_anchors(question)
+    intent = query_intent(question, child_anchors)
+    child_tokens = set()
+    for anchor in child_anchors:
+        child_tokens.update(tokenize(anchor))
+    suppress_by_field = {}
+    if intent == "graph_navigation" and child_tokens:
+        suppress_by_field = {
+            "name": child_tokens,
+            "path": child_tokens,
+            "path_file": child_tokens,
+            "summary": child_tokens,
+            "parents": child_tokens,
+        }
     weights = KG_WEIGHTS if mode == "kg" else BASELINE_WEIGHTS
     reasons = []
     score = 0.0
 
-    score += field_overlap_score(fields, query_tokens, weights, idf, 1.0, reasons)
+    score += field_overlap_score(fields, query_tokens, weights, idf, 1.0, reasons, suppress_by_field)
     if expanded_tokens:
-        score += field_overlap_score(fields, expanded_tokens, weights, idf, 0.28, reasons)
+        score += field_overlap_score(fields, expanded_tokens, weights, idf, 0.28, reasons, suppress_by_field)
 
     name = features["name_exact"]
-    if name in target_anchors or name in query_tokens:
+    if name in target_anchors or (name in query_tokens and name not in child_anchors):
         score += add(reasons, 16.0, "module_name")
     if features["path_stem_exact"] in target_anchors and features["path_stem_exact"] != name:
         score += add(reasons, 8.0, "path_stem")
@@ -330,12 +377,26 @@ def score_module(module, question, mode, idf, known_projects):
             score += add(reasons, 5.5, f"instance:{anchor}")
         if anchor in features["labels_exact"] and mode == "kg":
             score += add(reasons, 2.5, f"label:{anchor}")
+        if mode == "kg" and intent == "function_similarity":
+            support = direct_label_support(features, anchor)
+            if support:
+                amount = 4.0 if anchor in GENERIC_LABELS else 18.0
+                score += add(reasons, amount, f"function_label:{anchor}")
+                if support == "name_or_file":
+                    score += add(reasons, 8.0, f"direct_label:{anchor}")
+                elif support == "interface":
+                    score += add(reasons, 4.0, f"interface_label:{anchor}")
+                elif support == "child_graph":
+                    score += add(reasons, 2.0, f"child_label:{anchor}")
+            elif anchor in GENERIC_LABELS and anchor in features["labels_exact"]:
+                score += add(reasons, 0.8, f"generic_label:{anchor}")
 
     for child in child_anchors:
         if child in features["instances_exact"]:
-            score += add(reasons, 10.0, f"child_instance:{child}")
+            amount = 30.0 if intent == "graph_navigation" else 10.0
+            score += add(reasons, amount, f"child_instance:{child}")
         if name == child:
-            score -= add(reasons, 5.0, "child_anchor_penalty")
+            score -= add(reasons, 80.0, "child_anchor_penalty")
 
     projects_in_query = known_projects.intersection(query_tokens)
     if projects_in_query:
@@ -344,7 +405,10 @@ def score_module(module, question, mode, idf, known_projects):
         else:
             score -= add(reasons, 1.2, "project_mismatch")
 
-    if mode == "kg" and {"parent", "wrapper", "hierarchy", "hierarchical"}.intersection(query_tokens):
+    if mode == "kg" and (
+        intent == "graph_navigation"
+        or {"parent", "wrapper", "hierarchy", "hierarchical"}.intersection(query_tokens)
+    ):
         if module.get("instances"):
             score += add(reasons, 0.8, "hierarchy_context")
         if features["parents_exact"]:

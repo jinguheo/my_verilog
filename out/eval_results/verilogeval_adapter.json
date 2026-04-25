@@ -2,8 +2,8 @@
   "status": "unavailable",
   "detail": "verilogeval package or runner was not available in this workspace; generated proxy-only score and adapter metadata.",
   "expected_inputs": {
-    "questions_jsonl": "D:\\MyWork\\verilog\\out\\eval_benchmark\\benchmark_all.jsonl",
-    "predictions_json": "D:\\MyWork\\verilog\\out\\eval_results\\predictions_for_verilogeval.json"
+    "questions_jsonl": "out\\eval_benchmark\\benchmark_all.jsonl",
+    "predictions_json": "out\\eval_results\\predictions_for_verilogeval.json"
   },
   "note": "Map each question to a model answer, then hand it to an external VerilogEval runner when available."
 }
