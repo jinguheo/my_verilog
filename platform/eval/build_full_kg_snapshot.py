@@ -4,6 +4,8 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from retrieval_common import apply_approved_labels, resolve_approved_labels_path
+
 
 def read_jsonl(path):
     rows = []
@@ -26,6 +28,7 @@ def main():
     ap.add_argument("--seed", required=True)
     ap.add_argument("--labels", required=True)
     ap.add_argument("--out-dir", required=True)
+    ap.add_argument("--approved-labels")
     args = ap.parse_args()
 
     out_dir = Path(args.out_dir)
@@ -33,6 +36,8 @@ def main():
     label_rows = read_jsonl(args.labels)
 
     modules = [row for row in seed_rows if row.get("entity_type") == "module"]
+    approved_path = resolve_approved_labels_path(args.seed, args.approved_labels)
+    approved_summary = apply_approved_labels(modules, approved_path)
     ip_blocks = [row for row in label_rows if row.get("entity_type") == "ip_block"]
     module_names = {m["name"] for m in modules}
 
@@ -115,6 +120,7 @@ def main():
         "total_edges": len(edges),
         "projects": dict(Counter(m["project"] for m in modules)),
         "top_labels": label_counter.most_common(20),
+        "approved_labels": approved_summary,
     }
 
     write_json(out_dir / "kg_full_nodes_edges.json", {"nodes": nodes, "edges": edges})

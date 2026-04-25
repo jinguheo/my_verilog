@@ -1,8 +1,16 @@
 . "$PSScriptRoot\_common.ps1"
 
+$seed = Join-Path $OutRoot "merged_ontology_seed.jsonl"
 $labels = Join-Path $OutRoot "merged_labels.jsonl"
-$reviewCandidates = Join-Path $OutRoot "review_candidates.jsonl"
+$labelApprovalOut = Join-Path $OutRoot "label_approval"
+$reviewCandidates = Join-Path $labelApprovalOut "review_queue.jsonl"
+Assert-PathExists $seed "Merged ontology seed"
 Assert-PathExists $labels "Merged labels"
 
-Invoke-PythonScript (Join-Path $IngestRoot "promote_reviewed_labels.py") @("--infile", $labels, "--outfile", $reviewCandidates)
-Write-Host "Review candidate file prepared."
+Invoke-PythonScript (Join-Path $IngestRoot "auto_approve_labels.py") @(
+  "--seed", $seed,
+  "--labels", $labels,
+  "--out-dir", $labelApprovalOut
+)
+Write-Host "Auto-approval completed."
+Write-Host "Review queue: $reviewCandidates"

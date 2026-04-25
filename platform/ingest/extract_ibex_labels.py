@@ -2,8 +2,12 @@
 import argparse, json, re
 from pathlib import Path
 
+COMMENT_RE = re.compile(r"//.*?$|/\*.*?\*/", re.MULTILINE | re.DOTALL)
 MODULE_RE = re.compile(r"\bmodule\s+([A-Za-z_][A-Za-z0-9_$]*)")
 ENDMODULE_RE = re.compile(r"\bendmodule\b")
+
+def strip_comments(text):
+    return COMMENT_RE.sub("", text)
 
 def find_modules(text):
     starts=[(m.start(),m.group(1)) for m in MODULE_RE.finditer(text)]
@@ -63,7 +67,7 @@ def main():
             for path in rtl_root.rglob("*"):
                 if path.suffix.lower() not in {".v", ".sv"}:
                     continue
-                text = path.read_text(encoding="utf-8", errors="ignore")
+                text = strip_comments(path.read_text(encoding="utf-8", errors="ignore"))
                 for module_name, body in find_modules(text):
                     row = {
                         "project": "ibex",

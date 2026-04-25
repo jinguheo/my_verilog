@@ -1,164 +1,14 @@
 #!/usr/bin/env python3
 import argparse
 import json
-import math
-import re
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
 
-EXPANSIONS = {
-    "serial": ["uart", "spi", "i2c", "rx", "tx", "mosi", "miso", "scl", "sda"],
-    "bus": ["spi", "i2c", "tlul", "uart"],
-    "controller": ["controller", "ctrl", "fsm", "state"],
-    "control": ["controller", "ctrl", "fsm", "state"],
-    "queue": ["fifo", "buffer"],
-    "buffer": ["fifo", "queue"],
-    "memory": ["memory", "ram", "rom", "regfile", "csr"],
-    "storage": ["memory", "ram", "rom", "regfile"],
-    "crypto": ["crypto", "aes", "hmac", "kmac", "csrng"],
-    "cryptographic": ["crypto", "aes", "hmac", "kmac"],
-    "wrapper": ["hierarchical", "wrapper", "parent"],
-    "parent": ["hierarchical", "wrapper"],
-    "sequential": ["clocked"],
-    "reset": ["resettable", "rst", "reset"],
-    "bridge": ["cdc", "async", "fifo"],
-    "synchronizes": ["cdc", "sync", "async"],
-    "timer": ["counter", "timer"],
-    "register": ["reg", "regfile", "csr", "register"],
-    "bank": ["regfile", "csr", "register"],
-    "cpu": ["ibex", "core", "rv32"],
-    "pipeline": ["ibex", "stage", "decoder", "alu"],
-}
+from retrieval_common import prepare_retrieval, rank_of, read_jsonl, retrieve, write_json
 
 
-def read_jsonl(path):
-    rows = []
-    with open(path, "r", encoding="utf-8") as fp:
-        for line in fp:
-            line = line.strip()
-            if line:
-                rows.append(json.loads(line))
-    return rows
-
-
-def write_json(path, payload):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w", encoding="utf-8") as fp:
-        json.dump(payload, fp, ensure_ascii=False, indent=2)
-
-
-def tokenize(text):
-    return [t for t in re.split(r"[^a-zA-Z0-9_]+", text.lower()) if len(t) > 1]
-
-
-def load_modules(seed_path):
-    modules = []
-    for row in read_jsonl(seed_path):
-        if row.get("entity_type") != "module":
-            continue
-        modules.append(row)
-    return modules
-
-
-def build_reverse_graph(modules):
-    child_to_parents = defaultdict(list)
-    for module in modules:
-        for inst in module.get("instances", []):
-            child_to_parents[inst["type"]].append(module["name"])
-    return child_to_parents
-
-
-def baseline_doc(module):
-    parts = [
-        module["name"],
-        module["project"],
-        module["path"],
-        " ".join(p["name"] for p in module.get("ports", [])),
-        " ".join(i["type"] + " " + i.get("name", "") for i in module.get("instances", [])),
-    ]
-    return " ".join(parts).lower()
-
-
-def kg_doc(module, child_to_parents):
-    reverse = " ".join(child_to_parents.get(module["name"], []))
-    parts = [
-        baseline_doc(module),
-        " ".join(module.get("labels", [])),
-        module.get("summary", ""),
-        reverse,
-    ]
-    return " ".join(parts).lower()
-
-
-def expand_terms(tokens):
-    out = set(tokens)
-    for token in list(tokens):
-        out.update(EXPANSIONS.get(token, []))
-    return list(out)
-
-
-def score_text(query_tokens, document, exact_name):
-    score = 0.0
-    reasons = []
-    joined = " ".join(query_tokens)
-    if exact_name and exact_name.lower() in document:
-        score += 10.0
-        reasons.append("exact_name")
-    for token in query_tokens:
-        if token in document:
-            score += 1.0
-            reasons.append(token)
-    if joined and joined in document:
-        score += 2.0
-        reasons.append("phrase")
-    return score, sorted(set(reasons))
-
-
-def retrieve(question, modules, child_to_parents, mode, k=5):
-    q = question["question"]
-    tokens = tokenize(q)
-    if mode == "kg":
-        tokens = expand_terms(tokens)
-    results = []
-    exact_name = None
-    if question["type"] == "exact_name":
-        exact_name = question["gold_modules"][0]
-    for module in modules:
-        document = kg_doc(module, child_to_parents) if mode == "kg" else baseline_doc(module)
-        score, reasons = score_text(tokens, document, exact_name)
-        if mode == "kg":
-            label_tokens = set(t for label in module.get("labels", []) for t in tokenize(label))
-            overlap = len(label_tokens.intersection(tokens))
-            score += overlap * 1.8
-            if overlap:
-                reasons.append("label_overlap")
-            if module["name"] in child_to_parents and any(token in {"parent", "wrapper"} for token in tokens):
-                score += 0.8
-        else:
-            port_tokens = set(tokenize(" ".join(p["name"] for p in module.get("ports", []))))
-            inst_tokens = set(tokenize(" ".join(i["type"] for i in module.get("instances", []))))
-            score += len(port_tokens.intersection(tokens)) * 0.5
-            score += len(inst_tokens.intersection(tokens)) * 0.5
-        if score > 0:
-            results.append({
-                "name": module["name"],
-                "project": module["project"],
-                "score": round(score, 3),
-                "reasons": reasons[:8],
-            })
-    results.sort(key=lambda r: (-r["score"], r["project"], r["name"]))
-    return results[:k]
-
-
-def rank_of(gold, results):
-    for idx, row in enumerate(results, start=1):
-        if row["name"] == gold:
-            return idx
-    return None
-
-
-def difficulty_weight(d):
-    return {"easy": 1.0, "medium": 1.5, "hard": 2.0}[d]
+def difficulty_weight(difficulty):
+    return {"easy": 1.0, "medium": 1.5, "hard": 2.0}[difficulty]
 
 
 def aggregate(question_rows, runs_by_mode):
@@ -172,13 +22,13 @@ def aggregate(question_rows, runs_by_mode):
         for row, run in zip(question_rows, runs):
             rank = run["gold_rank"]
             diff = row["difficulty"]
-            w = difficulty_weight(diff)
-            weighted_total += w
+            weight = difficulty_weight(diff)
+            weighted_total += weight
             by_diff[diff]["count"] += 1
             if rank == 1:
                 hit1 += 1
                 by_diff[diff]["hit1"] += 1
-                weighted += w
+                weighted += weight
             if rank is not None and rank <= 3:
                 hit3 += 1
                 by_diff[diff]["hit3"] += 1
@@ -186,12 +36,12 @@ def aggregate(question_rows, runs_by_mode):
                 rr = 1.0 / rank
                 mrr += rr
                 by_diff[diff]["mrr"] += rr
-        n = len(runs)
+        total = len(runs)
         report["by_mode"][mode] = {
-            "count": n,
-            "hit_at_1": round(hit1 / n, 4),
-            "hit_at_3": round(hit3 / n, 4),
-            "mrr": round(mrr / n, 4),
+            "count": total,
+            "hit_at_1": round(hit1 / total, 4),
+            "hit_at_3": round(hit3 / total, 4),
+            "mrr": round(mrr / total, 4),
             "weighted_hit_at_1": round(weighted / weighted_total, 4) if weighted_total else 0.0,
             "by_difficulty": {
                 diff: {
@@ -208,9 +58,9 @@ def aggregate(question_rows, runs_by_mode):
             "status": "proxy_only",
             "score_100": round(
                 100.0 * (
-                    0.45 * report["by_mode"][mode]["weighted_hit_at_1"] +
-                    0.35 * report["by_mode"][mode]["hit_at_3"] +
-                    0.20 * report["by_mode"][mode]["mrr"]
+                    0.45 * report["by_mode"][mode]["weighted_hit_at_1"]
+                    + 0.35 * report["by_mode"][mode]["hit_at_3"]
+                    + 0.20 * report["by_mode"][mode]["mrr"]
                 ),
                 2,
             ),
@@ -218,13 +68,13 @@ def aggregate(question_rows, runs_by_mode):
     return report
 
 
-def build_markdown(report, adapter_status):
+def build_markdown(report, adapter_status, retrieval_metadata):
     lines = [
         "# Retrieval Benchmark Report",
         "",
         "This report compares two retrieval conditions:",
         "",
-        "- `kg`: uses labels, summaries, reverse graph hints, and query expansion.",
+        "- `kg`: uses field-aware module facts, labels, summaries, reverse graph hints, query expansion, and approved label context when available.",
         "- `baseline`: uses parser/LSP style file-local clues such as module name, path, ports, and instances.",
         "",
         "## Aggregate",
@@ -242,6 +92,13 @@ def build_markdown(report, adapter_status):
             "",
         ])
     lines.extend([
+        "## Retrieval Inputs",
+        "",
+        f"- modules indexed: {retrieval_metadata['modules_indexed']}",
+        f"- approved labels: {retrieval_metadata['approved_labels']['path'] or 'not found'}",
+        f"- module labels added: {retrieval_metadata['approved_labels']['module_labels_added']}",
+        f"- IP context labels added: {retrieval_metadata['approved_labels']['ip_context_labels_added']}",
+        "",
         "## VerilogEval Adapter",
         "",
         f"- status: {adapter_status['status']}",
@@ -258,18 +115,24 @@ def main():
     ap.add_argument("--seed", required=True)
     ap.add_argument("--benchmark", required=True)
     ap.add_argument("--out-dir", required=True)
+    ap.add_argument("--approved-labels")
     args = ap.parse_args()
 
     out_dir = Path(args.out_dir)
-    modules = load_modules(args.seed)
     questions = read_jsonl(args.benchmark)
-    child_to_parents = build_reverse_graph(modules)
+    modules, idf_by_mode, known_projects, approved_summary = prepare_retrieval(
+        args.seed,
+        args.approved_labels,
+    )
+    for question in questions:
+        question["_idf"] = idf_by_mode
+        question["_known_projects"] = known_projects
 
     runs_by_mode = {"baseline": [], "kg": []}
     for question in questions:
         gold = question["gold_modules"][0]
         for mode in runs_by_mode:
-            topk = retrieve(question, modules, child_to_parents, mode, k=5)
+            topk = retrieve(question, modules, mode, k=5)
             runs_by_mode[mode].append({
                 "id": question["id"],
                 "difficulty": question["difficulty"],
@@ -279,6 +142,10 @@ def main():
             })
 
     report = aggregate(questions, runs_by_mode)
+    retrieval_metadata = {
+        "modules_indexed": len(modules),
+        "approved_labels": approved_summary,
+    }
     adapter_status = {
         "status": "unavailable",
         "detail": "verilogeval package or runner was not available in this workspace; generated proxy-only score and adapter metadata.",
@@ -306,14 +173,17 @@ def main():
             })
 
     write_json(out_dir / "retrieval_report.json", report)
+    write_json(out_dir / "retrieval_metadata.json", retrieval_metadata)
     write_json(out_dir / "verilogeval_adapter.json", adapter)
     write_json(out_dir / "predictions_for_verilogeval.json", predictions)
     write_json(out_dir / "detailed_runs.json", runs_by_mode)
     with open(out_dir / "retrieval_report.md", "w", encoding="utf-8") as fp:
-        fp.write(build_markdown(report, adapter_status))
+        fp.write(build_markdown(report, adapter_status, retrieval_metadata))
     print(json.dumps({
         "status": "ok",
         "out_dir": str(out_dir),
+        "modules_indexed": len(modules),
+        "approved_labels": approved_summary,
         "baseline_hit_at_1": report["by_mode"]["baseline"]["hit_at_1"],
         "kg_hit_at_1": report["by_mode"]["kg"]["hit_at_1"],
         "baseline_proxy_score": report["proxy_verilogeval"]["baseline"]["score_100"],

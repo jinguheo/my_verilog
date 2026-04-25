@@ -2,11 +2,11 @@
   "kg_summary": {
     "modules": 1544,
     "ip_blocks": 38,
-    "labels": 8,
+    "labels": 14,
     "ports": 20196,
     "instance_edges": 14698,
-    "total_nodes": 21786,
-    "total_edges": 39060,
+    "total_nodes": 21792,
+    "total_edges": 39268,
     "projects": {
       "opentitan": 1221,
       "ibex": 323
@@ -34,7 +34,15 @@
       ],
       [
         "spi",
-        163
+        164
+      ],
+      [
+        "crypto",
+        93
+      ],
+      [
+        "controller",
+        57
       ],
       [
         "apb",
@@ -43,8 +51,29 @@
       [
         "i2c",
         32
+      ],
+      [
+        "ibex_core",
+        30
+      ],
+      [
+        "counter",
+        13
+      ],
+      [
+        "timer",
+        13
+      ],
+      [
+        "alu",
+        1
       ]
-    ]
+    ],
+    "approved_labels": {
+      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+      "module_labels_added": 32,
+      "ip_context_labels_added": 176
+    }
   },
   "benchmark_summary": {
     "easy": 50,
@@ -52,8 +81,8 @@
     "hard": 50,
     "total": 150,
     "projects": {
-      "ibex": 53,
-      "opentitan": 97
+      "ibex": 55,
+      "opentitan": 95
     },
     "types": {
       "exact_name": 50,
@@ -69,55 +98,55 @@
     "by_mode": {
       "baseline": {
         "count": 150,
-        "hit_at_1": 0.1533,
-        "hit_at_3": 0.3533,
-        "mrr": 0.254,
-        "weighted_hit_at_1": 0.1356,
+        "hit_at_1": 0.5733,
+        "hit_at_3": 0.6867,
+        "mrr": 0.6378,
+        "weighted_hit_at_1": 0.48,
         "by_difficulty": {
           "easy": {
             "count": 50,
-            "hit_at_1": 0.3,
-            "hit_at_3": 0.72,
-            "mrr": 0.4753
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "hard": {
             "count": 50,
-            "hit_at_1": 0.14,
-            "hit_at_3": 0.24,
-            "mrr": 0.208
+            "hit_at_1": 0.16,
+            "hit_at_3": 0.5,
+            "mrr": 0.3363
           },
           "medium": {
             "count": 50,
-            "hit_at_1": 0.02,
-            "hit_at_3": 0.1,
-            "mrr": 0.0787
+            "hit_at_1": 0.56,
+            "hit_at_3": 0.56,
+            "mrr": 0.577
           }
         }
       },
       "kg": {
         "count": 150,
-        "hit_at_1": 0.2333,
-        "hit_at_3": 0.42,
-        "mrr": 0.3392,
-        "weighted_hit_at_1": 0.2111,
+        "hit_at_1": 0.58,
+        "hit_at_3": 0.7,
+        "mrr": 0.6446,
+        "weighted_hit_at_1": 0.4867,
         "by_difficulty": {
           "easy": {
             "count": 50,
-            "hit_at_1": 0.42,
-            "hit_at_3": 0.84,
-            "mrr": 0.6153
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "hard": {
             "count": 50,
-            "hit_at_1": 0.22,
-            "hit_at_3": 0.34,
-            "mrr": 0.3053
+            "hit_at_1": 0.16,
+            "hit_at_3": 0.5,
+            "mrr": 0.3257
           },
           "medium": {
             "count": 50,
-            "hit_at_1": 0.06,
-            "hit_at_3": 0.08,
-            "mrr": 0.097
+            "hit_at_1": 0.58,
+            "hit_at_3": 0.6,
+            "mrr": 0.608
           }
         }
       }
@@ -125,12 +154,20 @@
     "proxy_verilogeval": {
       "baseline": {
         "status": "proxy_only",
-        "score_100": 23.55
+        "score_100": 58.39
       },
       "kg": {
         "status": "proxy_only",
-        "score_100": 30.98
+        "score_100": 59.29
       }
+    }
+  },
+  "retrieval_metadata": {
+    "modules_indexed": 732,
+    "approved_labels": {
+      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+      "module_labels_added": 24,
+      "ip_context_labels_added": 69
     }
   },
   "multiaxis_summary": {
@@ -204,170 +241,178 @@
     "by_mode": {
       "baseline": {
         "count": 175,
-        "hit_at_1": 0.4343,
-        "hit_at_3": 0.7086,
-        "mrr": 0.563,
-        "weighted_hit_at_1": 0.4297,
+        "hit_at_1": 0.7829,
+        "hit_at_3": 0.8,
+        "mrr": 0.794,
+        "weighted_hit_at_1": 0.7677,
         "by_level": {
           "L1": {
             "count": 35,
-            "hit_at_1": 0.3429,
-            "hit_at_3": 0.6286,
-            "mrr": 0.4533
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8571
           },
           "L2": {
             "count": 35,
-            "hit_at_1": 0.5429,
-            "hit_at_3": 0.8,
-            "mrr": 0.6771
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8571
           },
           "L3": {
             "count": 35,
-            "hit_at_1": 0.4571,
-            "hit_at_3": 0.7714,
-            "mrr": 0.5905
+            "hit_at_1": 0.7714,
+            "hit_at_3": 0.8286,
+            "mrr": 0.8057
           },
           "L4": {
             "count": 35,
-            "hit_at_1": 0.4857,
-            "hit_at_3": 0.7429,
-            "mrr": 0.6333
+            "hit_at_1": 0.6857,
+            "hit_at_3": 0.7143,
+            "mrr": 0.7
           },
           "L5": {
             "count": 35,
-            "hit_at_1": 0.3429,
-            "hit_at_3": 0.6,
-            "mrr": 0.4605
+            "hit_at_1": 0.7429,
+            "hit_at_3": 0.7429,
+            "mrr": 0.75
           }
         },
         "by_type": {
           "code_explanation": {
             "count": 25,
-            "hit_at_1": 0.28,
-            "hit_at_3": 0.6,
-            "mrr": 0.4593
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "comparison_similarity": {
             "count": 25,
-            "hit_at_1": 0.72,
-            "hit_at_3": 0.8,
-            "mrr": 0.76
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "documentation_summary": {
             "count": 25,
-            "hit_at_1": 0.28,
-            "hit_at_3": 0.56,
-            "mrr": 0.4167
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "function_similarity": {
             "count": 25,
-            "hit_at_1": 0.32,
-            "hit_at_3": 0.52,
-            "mrr": 0.4133
+            "hit_at_1": 0.08,
+            "hit_at_3": 0.08,
+            "mrr": 0.08
           },
           "generation_design": {
             "count": 25,
-            "hit_at_1": 0.4,
-            "hit_at_3": 0.8,
-            "mrr": 0.5933
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "search_navigation": {
             "count": 25,
-            "hit_at_1": 0.6,
-            "hit_at_3": 0.96,
-            "mrr": 0.72
+            "hit_at_1": 0.44,
+            "hit_at_3": 0.52,
+            "mrr": 0.498
           },
           "structure_understanding": {
             "count": 25,
-            "hit_at_1": 0.44,
-            "hit_at_3": 0.72,
-            "mrr": 0.578
+            "hit_at_1": 0.96,
+            "hit_at_3": 1.0,
+            "mrr": 0.98
           }
         }
       },
       "kg": {
         "count": 175,
-        "hit_at_1": 0.1486,
-        "hit_at_3": 0.2743,
-        "mrr": 0.2324,
-        "weighted_hit_at_1": 0.1213,
+        "hit_at_1": 0.7829,
+        "hit_at_3": 0.8171,
+        "mrr": 0.7988,
+        "weighted_hit_at_1": 0.7707,
         "by_level": {
           "L1": {
             "count": 35,
-            "hit_at_1": 0.3143,
-            "hit_at_3": 0.3714,
-            "mrr": 0.3405
+            "hit_at_1": 0.8286,
+            "hit_at_3": 0.8857,
+            "mrr": 0.8476
           },
           "L2": {
             "count": 35,
-            "hit_at_1": 0.2286,
-            "hit_at_3": 0.4,
-            "mrr": 0.3248
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8571
           },
           "L3": {
             "count": 35,
-            "hit_at_1": 0.0857,
-            "hit_at_3": 0.2,
-            "mrr": 0.1805
+            "hit_at_1": 0.7714,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8152
           },
           "L4": {
             "count": 35,
-            "hit_at_1": 0.0857,
-            "hit_at_3": 0.2857,
-            "mrr": 0.1933
+            "hit_at_1": 0.7143,
+            "hit_at_3": 0.7143,
+            "mrr": 0.7143
           },
           "L5": {
             "count": 35,
-            "hit_at_1": 0.0286,
-            "hit_at_3": 0.1143,
-            "mrr": 0.1229
+            "hit_at_1": 0.7429,
+            "hit_at_3": 0.7714,
+            "mrr": 0.7595
           }
         },
         "by_type": {
           "code_explanation": {
             "count": 25,
-            "hit_at_1": 0.08,
-            "hit_at_3": 0.2,
-            "mrr": 0.168
+            "hit_at_1": 0.96,
+            "hit_at_3": 1.0,
+            "mrr": 0.9733
           },
           "comparison_similarity": {
             "count": 25,
-            "hit_at_1": 0.0,
-            "hit_at_3": 0.04,
-            "mrr": 0.0333
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "documentation_summary": {
             "count": 25,
-            "hit_at_1": 0.16,
-            "hit_at_3": 0.28,
-            "mrr": 0.2427
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "function_similarity": {
             "count": 25,
-            "hit_at_1": 0.16,
-            "hit_at_3": 0.28,
-            "mrr": 0.236
+            "hit_at_1": 0.08,
+            "hit_at_3": 0.2,
+            "mrr": 0.12
           },
           "generation_design": {
             "count": 25,
-            "hit_at_1": 0.08,
-            "hit_at_3": 0.28,
-            "mrr": 0.2013
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           },
           "search_navigation": {
             "count": 25,
             "hit_at_1": 0.44,
-            "hit_at_3": 0.64,
-            "mrr": 0.558
+            "hit_at_3": 0.52,
+            "mrr": 0.498
           },
           "structure_understanding": {
             "count": 25,
-            "hit_at_1": 0.12,
-            "hit_at_3": 0.2,
-            "mrr": 0.1873
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
           }
         }
       }
+    }
+  },
+  "multiaxis_metadata": {
+    "modules_indexed": 732,
+    "approved_labels": {
+      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+      "module_labels_added": 24,
+      "ip_context_labels_added": 69
     }
   }
 }

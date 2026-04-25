@@ -1,0 +1,26 @@
+{
+  "total_entries": 651,
+  "by_decision": {
+    "auto_rejected": 262,
+    "auto_approved": 95,
+    "needs_review": 294
+  },
+  "by_group": {
+    "other": {
+      "auto_rejected": 36,
+      "needs_review": 5
+    },
+    "project": {
+      "auto_approved": 66,
+      "needs_review": 273
+    },
+    "protocol": {
+      "auto_approved": 4
+    },
+    "role": {
+      "auto_approved": 25,
+      "auto_rejected": 226,
+      "needs_review": 16
+    }
+  }
+}

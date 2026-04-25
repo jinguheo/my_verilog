@@ -82,6 +82,8 @@ def clean_modules(rows):
             continue
         if sum(ch.isalpha() for ch in name) < 3:
             continue
+        if re.fullmatch(r"[a-z]+", name.lower()) and name.lower() not in path_lower:
+            continue
         ports = [p for p in row.get("ports", []) if p.get("name") and p["name"].lower() not in RESERVED]
         instances = [
             i for i in row.get("instances", [])

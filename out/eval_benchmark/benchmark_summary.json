@@ -4,8 +4,8 @@
   "hard": 50,
   "total": 150,
   "projects": {
-    "ibex": 53,
-    "opentitan": 97
+    "ibex": 55,
+    "opentitan": 95
   },
   "types": {
     "exact_name": 50,

@@ -24,7 +24,7 @@ def wrap_line(text, width=100):
     return lines
 
 
-def build_lines(kg_summary, benchmark_summary, retrieval_report, multiaxis_summary, multiaxis_report):
+def build_lines(kg_summary, benchmark_summary, retrieval_report, multiaxis_summary, multiaxis_report, retrieval_metadata, multiaxis_metadata):
     lines = []
     lines.append("RTL Knowledge Graph Evaluation Report")
     lines.append("")
@@ -58,6 +58,8 @@ def build_lines(kg_summary, benchmark_summary, retrieval_report, multiaxis_summa
         proxy = retrieval_report["proxy_verilogeval"][mode]["score_100"]
         lines.append(f"{mode}: hit@1={metrics['hit_at_1']}, hit@3={metrics['hit_at_3']}, mrr={metrics['mrr']}, weighted_hit@1={metrics['weighted_hit_at_1']}, proxy_score={proxy}")
         lines.append(f"{mode} by difficulty: {metrics['by_difficulty']}")
+    if retrieval_metadata:
+        lines.append(f"Retrieval metadata: {retrieval_metadata}")
     lines.append("")
     lines.append("5. Multi-Axis Question Set")
     lines.append(f"Total questions: {multiaxis_summary['total']}")
@@ -77,6 +79,9 @@ def build_lines(kg_summary, benchmark_summary, retrieval_report, multiaxis_summa
         lines.append("By type:")
         for qtype, vals in metrics["by_type"].items():
             lines.append(f"  {qtype}: hit@1={vals['hit_at_1']}, hit@3={vals['hit_at_3']}, mrr={vals['mrr']}, count={vals['count']}")
+        lines.append("")
+    if multiaxis_metadata:
+        lines.append(f"Multi-axis metadata: {multiaxis_metadata}")
         lines.append("")
     lines.append("7. VerilogEval Status")
     lines.append("Official verilogeval runner/package was not available in this workspace.")
@@ -145,9 +150,9 @@ def build_pdf_bytes(lines):
         pdf.append(f"{i} 0 obj\n{obj}\nendobj\n".encode("latin-1", errors="replace"))
     xref_pos = sum(len(chunk) for chunk in pdf)
     pdf.append(f"xref\n0 {len(objects)+1}\n".encode("latin-1"))
-    pdf.append(b"0000000000 65535 f \n")
+    pdf.append(b"0000000000 65535 f\n")
     for offset in offsets[1:]:
-        pdf.append(f"{offset:010d} 00000 n \n".encode("latin-1"))
+        pdf.append(f"{offset:010d} 00000 n\n".encode("latin-1"))
     pdf.append(f"trailer\n<< /Size {len(objects)+1} /Root {catalog_id} 0 R >>\nstartxref\n{xref_pos}\n%%EOF\n".encode("latin-1"))
     return b"".join(pdf)
 
@@ -168,18 +173,24 @@ def main():
     retrieval_report = json.loads(Path(args.retrieval_report).read_text(encoding="utf-8"))
     multiaxis_summary = json.loads(Path(args.multiaxis_summary).read_text(encoding="utf-8"))
     multiaxis_report = json.loads(Path(args.multiaxis_report).read_text(encoding="utf-8"))
+    retrieval_metadata_path = Path(args.retrieval_report).with_name("retrieval_metadata.json")
+    multiaxis_metadata_path = Path(args.multiaxis_report).with_name("multiaxis_metadata.json")
+    retrieval_metadata = json.loads(retrieval_metadata_path.read_text(encoding="utf-8")) if retrieval_metadata_path.exists() else {}
+    multiaxis_metadata = json.loads(multiaxis_metadata_path.read_text(encoding="utf-8")) if multiaxis_metadata_path.exists() else {}
 
     report_json = {
         "kg_summary": kg_summary,
         "benchmark_summary": benchmark_summary,
         "retrieval_report": retrieval_report,
+        "retrieval_metadata": retrieval_metadata,
         "multiaxis_summary": multiaxis_summary,
         "multiaxis_report": multiaxis_report,
+        "multiaxis_metadata": multiaxis_metadata,
     }
     Path(args.out_json).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out_json).write_text(json.dumps(report_json, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    lines = build_lines(kg_summary, benchmark_summary, retrieval_report, multiaxis_summary, multiaxis_report)
+    lines = build_lines(kg_summary, benchmark_summary, retrieval_report, multiaxis_summary, multiaxis_report, retrieval_metadata, multiaxis_metadata)
     pdf_bytes = build_pdf_bytes(lines)
     Path(args.out_pdf).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out_pdf).write_bytes(pdf_bytes)

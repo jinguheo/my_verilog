@@ -2,26 +2,33 @@
 
 This report compares two retrieval conditions:
 
-- `kg`: uses labels, summaries, reverse graph hints, and query expansion.
+- `kg`: uses field-aware module facts, labels, summaries, reverse graph hints, query expansion, and approved label context when available.
 - `baseline`: uses parser/LSP style file-local clues such as module name, path, ports, and instances.
 
 ## Aggregate
 
 ### baseline
 
-- hit@1: 0.1533
-- hit@3: 0.3533
-- mrr: 0.254
-- weighted hit@1: 0.1356
-- proxy VerilogEval score (/100): 23.55
+- hit@1: 0.5733
+- hit@3: 0.6867
+- mrr: 0.6378
+- weighted hit@1: 0.48
+- proxy VerilogEval score (/100): 58.39
 
 ### kg
 
-- hit@1: 0.2333
-- hit@3: 0.42
-- mrr: 0.3392
-- weighted hit@1: 0.2111
-- proxy VerilogEval score (/100): 30.98
+- hit@1: 0.58
+- hit@3: 0.7
+- mrr: 0.6446
+- weighted hit@1: 0.4867
+- proxy VerilogEval score (/100): 59.29
+
+## Retrieval Inputs
+
+- modules indexed: 732
+- approved labels: D:\MyWork\verilog\out\label_approval\auto_approved_labels.jsonl
+- module labels added: 24
+- IP context labels added: 69
 
 ## VerilogEval Adapter
 
