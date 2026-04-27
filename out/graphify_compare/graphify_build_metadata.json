@@ -1,0 +1,10 @@
+{
+  "source_files": 1534,
+  "nodes": 3748,
+  "edges": 5412,
+  "communities": 581,
+  "graph_path": "D:\\MyWork\\verilog\\graphify-out\\graph.json",
+  "report_path": "D:\\MyWork\\verilog\\graphify-out\\GRAPH_REPORT.md",
+  "html_path": "D:\\MyWork\\verilog\\graphify-out\\graph.html",
+  "verilog_patch": "module/instantiation fallback extraction plus path-qualified module ids"
+}

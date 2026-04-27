@@ -1,0 +1,558 @@
+{
+  "graphify_build": {
+    "source_files": 1534,
+    "nodes": 3748,
+    "edges": 5412,
+    "communities": 581,
+    "graph_path": "D:\\MyWork\\verilog\\graphify-out\\graph.json",
+    "report_path": "D:\\MyWork\\verilog\\graphify-out\\GRAPH_REPORT.md",
+    "html_path": "D:\\MyWork\\verilog\\graphify-out\\graph.html",
+    "verilog_patch": "module/instantiation fallback extraction plus path-qualified module ids"
+  },
+  "current_kg": {
+    "kg_summary": {
+      "modules": 1544,
+      "ip_blocks": 38,
+      "labels": 14,
+      "ports": 20196,
+      "instance_edges": 14698,
+      "total_nodes": 21792,
+      "total_edges": 39268,
+      "projects": {
+        "opentitan": 1221,
+        "ibex": 323
+      },
+      "top_labels": [
+        [
+          "hierarchical",
+          1120
+        ],
+        [
+          "clocked",
+          1067
+        ],
+        [
+          "resettable",
+          1026
+        ],
+        [
+          "uart",
+          341
+        ],
+        [
+          "fifo",
+          268
+        ],
+        [
+          "spi",
+          164
+        ],
+        [
+          "crypto",
+          93
+        ],
+        [
+          "controller",
+          57
+        ],
+        [
+          "apb",
+          48
+        ],
+        [
+          "i2c",
+          32
+        ],
+        [
+          "ibex_core",
+          30
+        ],
+        [
+          "counter",
+          13
+        ],
+        [
+          "timer",
+          13
+        ],
+        [
+          "alu",
+          1
+        ]
+      ],
+      "approved_labels": {
+        "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+        "module_labels_added": 32,
+        "ip_context_labels_added": 176
+      }
+    },
+    "benchmark_summary": {
+      "easy": 50,
+      "medium": 50,
+      "hard": 50,
+      "total": 150,
+      "projects": {
+        "ibex": 55,
+        "opentitan": 95
+      },
+      "types": {
+        "exact_name": 50,
+        "label_plus_ports": 21,
+        "parent_child": 17,
+        "path_plus_port": 12,
+        "reverse_graph": 20,
+        "multi_hop": 15,
+        "semantic_bridge": 15
+      }
+    },
+    "retrieval_report": {
+      "by_mode": {
+        "baseline": {
+          "count": 150,
+          "hit_at_1": 0.78,
+          "hit_at_3": 0.82,
+          "mrr": 0.8019,
+          "weighted_hit_at_1": 0.7511,
+          "by_difficulty": {
+            "easy": {
+              "count": 50,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "hard": {
+              "count": 50,
+              "hit_at_1": 0.74,
+              "hit_at_3": 0.86,
+              "mrr": 0.7967
+            },
+            "medium": {
+              "count": 50,
+              "hit_at_1": 0.6,
+              "hit_at_3": 0.6,
+              "mrr": 0.609
+            }
+          }
+        },
+        "kg": {
+          "count": 150,
+          "hit_at_1": 0.7933,
+          "hit_at_3": 0.8333,
+          "mrr": 0.8169,
+          "weighted_hit_at_1": 0.7644,
+          "by_difficulty": {
+            "easy": {
+              "count": 50,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "hard": {
+              "count": 50,
+              "hit_at_1": 0.74,
+              "hit_at_3": 0.84,
+              "mrr": 0.7907
+            },
+            "medium": {
+              "count": 50,
+              "hit_at_1": 0.64,
+              "hit_at_3": 0.66,
+              "mrr": 0.66
+            }
+          }
+        }
+      },
+      "proxy_verilogeval": {
+        "baseline": {
+          "status": "proxy_only",
+          "score_100": 78.54
+        },
+        "kg": {
+          "status": "proxy_only",
+          "score_100": 79.9
+        }
+      }
+    },
+    "retrieval_metadata": {
+      "modules_indexed": 732,
+      "approved_labels": {
+        "path": "out\\label_approval\\auto_approved_labels.jsonl",
+        "module_labels_added": 24,
+        "ip_context_labels_added": 69
+      }
+    },
+    "multiaxis_summary": {
+      "per_cell": 5,
+      "total": 175,
+      "levels": {
+        "L1": 35,
+        "L2": 35,
+        "L3": 35,
+        "L4": 35,
+        "L5": 35
+      },
+      "types": {
+        "structure_understanding": 25,
+        "search_navigation": 25,
+        "comparison_similarity": 25,
+        "function_similarity": 25,
+        "generation_design": 25,
+        "code_explanation": 25,
+        "documentation_summary": 25
+      },
+      "matrix": {
+        "L1": {
+          "structure_understanding": 5,
+          "search_navigation": 5,
+          "comparison_similarity": 5,
+          "function_similarity": 5,
+          "generation_design": 5,
+          "code_explanation": 5,
+          "documentation_summary": 5
+        },
+        "L2": {
+          "structure_understanding": 5,
+          "search_navigation": 5,
+          "comparison_similarity": 5,
+          "function_similarity": 5,
+          "generation_design": 5,
+          "code_explanation": 5,
+          "documentation_summary": 5
+        },
+        "L3": {
+          "structure_understanding": 5,
+          "search_navigation": 5,
+          "comparison_similarity": 5,
+          "function_similarity": 5,
+          "generation_design": 5,
+          "code_explanation": 5,
+          "documentation_summary": 5
+        },
+        "L4": {
+          "structure_understanding": 5,
+          "search_navigation": 5,
+          "comparison_similarity": 5,
+          "function_similarity": 5,
+          "generation_design": 5,
+          "code_explanation": 5,
+          "documentation_summary": 5
+        },
+        "L5": {
+          "structure_understanding": 5,
+          "search_navigation": 5,
+          "comparison_similarity": 5,
+          "function_similarity": 5,
+          "generation_design": 5,
+          "code_explanation": 5,
+          "documentation_summary": 5
+        }
+      }
+    },
+    "multiaxis_report": {
+      "by_mode": {
+        "baseline": {
+          "count": 175,
+          "hit_at_1": 0.8514,
+          "hit_at_3": 0.8629,
+          "mrr": 0.8686,
+          "weighted_hit_at_1": 0.8393,
+          "by_level": {
+            "L1": {
+              "count": 35,
+              "hit_at_1": 0.8571,
+              "hit_at_3": 0.8857,
+              "mrr": 0.8714
+            },
+            "L2": {
+              "count": 35,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "L3": {
+              "count": 35,
+              "hit_at_1": 0.8571,
+              "hit_at_3": 0.8571,
+              "mrr": 0.8857
+            },
+            "L4": {
+              "count": 35,
+              "hit_at_1": 0.6857,
+              "hit_at_3": 0.7143,
+              "mrr": 0.7286
+            },
+            "L5": {
+              "count": 35,
+              "hit_at_1": 0.8571,
+              "hit_at_3": 0.8571,
+              "mrr": 0.8571
+            }
+          },
+          "by_type": {
+            "code_explanation": {
+              "count": 25,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "comparison_similarity": {
+              "count": 25,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "documentation_summary": {
+              "count": 25,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "function_similarity": {
+              "count": 25,
+              "hit_at_1": 0.56,
+              "hit_at_3": 0.6,
+              "mrr": 0.66
+            },
+            "generation_design": {
+              "count": 25,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "search_navigation": {
+              "count": 25,
+              "hit_at_1": 0.6,
+              "hit_at_3": 0.6,
+              "mrr": 0.6
+            },
+            "structure_understanding": {
+              "count": 25,
+              "hit_at_1": 0.8,
+              "hit_at_3": 0.84,
+              "mrr": 0.82
+            }
+          }
+        },
+        "kg": {
+          "count": 175,
+          "hit_at_1": 0.8514,
+          "hit_at_3": 0.8629,
+          "mrr": 0.8562,
+          "weighted_hit_at_1": 0.8423,
+          "by_level": {
+            "L1": {
+              "count": 35,
+              "hit_at_1": 0.8286,
+              "hit_at_3": 0.8857,
+              "mrr": 0.8524
+            },
+            "L2": {
+              "count": 35,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "L3": {
+              "count": 35,
+              "hit_at_1": 0.8571,
+              "hit_at_3": 0.8571,
+              "mrr": 0.8571
+            },
+            "L4": {
+              "count": 35,
+              "hit_at_1": 0.7143,
+              "hit_at_3": 0.7143,
+              "mrr": 0.7143
+            },
+            "L5": {
+              "count": 35,
+              "hit_at_1": 0.8571,
+              "hit_at_3": 0.8571,
+              "mrr": 0.8571
+            }
+          },
+          "by_type": {
+            "code_explanation": {
+              "count": 25,
+              "hit_at_1": 0.96,
+              "hit_at_3": 1.0,
+              "mrr": 0.9733
+            },
+            "comparison_similarity": {
+              "count": 25,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "documentation_summary": {
+              "count": 25,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "function_similarity": {
+              "count": 25,
+              "hit_at_1": 0.56,
+              "hit_at_3": 0.6,
+              "mrr": 0.58
+            },
+            "generation_design": {
+              "count": 25,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "search_navigation": {
+              "count": 25,
+              "hit_at_1": 0.6,
+              "hit_at_3": 0.6,
+              "mrr": 0.6
+            },
+            "structure_understanding": {
+              "count": 25,
+              "hit_at_1": 0.84,
+              "hit_at_3": 0.84,
+              "mrr": 0.84
+            }
+          }
+        }
+      }
+    },
+    "multiaxis_metadata": {
+      "modules_indexed": 732,
+      "approved_labels": {
+        "path": "out\\label_approval\\auto_approved_labels.jsonl",
+        "module_labels_added": 24,
+        "ip_context_labels_added": 69
+      }
+    }
+  },
+  "comparison": {
+    "general": {
+      "performance": {
+        "count": 150,
+        "hit_at_1": 0.38,
+        "hit_at_3": 0.5667,
+        "mrr": 0.4865,
+        "by_difficulty": {
+          "easy": {
+            "count": 50,
+            "hit_at_1": 0.88,
+            "hit_at_3": 0.98,
+            "mrr": 0.9233
+          },
+          "hard": {
+            "count": 50,
+            "hit_at_1": 0.0,
+            "hit_at_3": 0.22,
+            "mrr": 0.1539
+          },
+          "medium": {
+            "count": 50,
+            "hit_at_1": 0.26,
+            "hit_at_3": 0.5,
+            "mrr": 0.3823
+          }
+        }
+      },
+      "tokens": {
+        "current_kg_context": {
+          "avg": 465.6,
+          "median": 476.5,
+          "p90": 591
+        },
+        "graphify_query_context": {
+          "avg": 1157.0,
+          "median": 1509.0,
+          "p90": 1509
+        },
+        "raw_gold_source": {
+          "avg": 9496.0,
+          "median": 5494.0,
+          "p90": 18457
+        },
+        "graphify_vs_current_kg_avg_ratio": 2.48,
+        "current_kg_reduction_vs_raw": 20.4,
+        "graphify_reduction_vs_raw": 8.21
+      }
+    },
+    "multiaxis": {
+      "performance": {
+        "count": 175,
+        "hit_at_1": 0.6914,
+        "hit_at_3": 0.8971,
+        "mrr": 0.795,
+        "by_type": {
+          "code_explanation": {
+            "count": 25,
+            "hit_at_1": 0.76,
+            "hit_at_3": 1.0,
+            "mrr": 0.88
+          },
+          "comparison_similarity": {
+            "count": 25,
+            "hit_at_1": 0.96,
+            "hit_at_3": 1.0,
+            "mrr": 0.98
+          },
+          "documentation_summary": {
+            "count": 25,
+            "hit_at_1": 0.6,
+            "hit_at_3": 1.0,
+            "mrr": 0.8
+          },
+          "function_similarity": {
+            "count": 25,
+            "hit_at_1": 0.76,
+            "hit_at_3": 0.76,
+            "mrr": 0.7739
+          },
+          "generation_design": {
+            "count": 25,
+            "hit_at_1": 0.8,
+            "hit_at_3": 1.0,
+            "mrr": 0.9
+          },
+          "search_navigation": {
+            "count": 25,
+            "hit_at_1": 0.36,
+            "hit_at_3": 0.6,
+            "mrr": 0.4733
+          },
+          "structure_understanding": {
+            "count": 25,
+            "hit_at_1": 0.6,
+            "hit_at_3": 0.92,
+            "mrr": 0.7581
+          }
+        }
+      },
+      "tokens": {
+        "current_kg_context": {
+          "avg": 472.8,
+          "median": 479,
+          "p90": 596
+        },
+        "graphify_query_context": {
+          "avg": 1302.1,
+          "median": 1509,
+          "p90": 1509
+        },
+        "raw_gold_source": {
+          "avg": 13530.8,
+          "median": 7504,
+          "p90": 37640
+        },
+        "graphify_vs_current_kg_avg_ratio": 2.75,
+        "current_kg_reduction_vs_raw": 28.62,
+        "graphify_reduction_vs_raw": 10.39
+      }
+    }
+  },
+  "token_estimate": "characters / 4",
+  "notes": [
+    "Graphify was compared on the same RTL module source files as the current KG.",
+    "Graphify context uses a BFS query subgraph with a 2000-token budget.",
+    "Current KG context uses top-3 structured module cards from existing KG retrieval output."
+  ]
+}

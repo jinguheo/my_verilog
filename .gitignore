@@ -4,3 +4,9 @@
 Thumbs.db
 __pycache__/
 *.py[cod]
+.tmp/
+tmp/
+.venv-graphify/
+graphify-out/
+tools/graphify/
+out/graphify_compare/cache/

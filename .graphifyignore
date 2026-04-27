@@ -1,0 +1,13 @@
+.git/
+.codex/
+.venv-graphify/
+tmp/
+.tmp/
+tools/graphify/
+out/
+artifacts/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.tmp
