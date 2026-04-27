@@ -38,9 +38,7 @@
     h1 { font-size: 22px; }
     h2 { font-size: 18px; }
     h3 { font-size: 15px; }
-    button, input, select {
-      font: inherit;
-    }
+    button, input, select { font: inherit; }
     .tabs {
       display: flex;
       gap: 8px;
@@ -86,6 +84,17 @@
       gap: 10px;
       margin-bottom: 12px;
     }
+    .export-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 10px 14px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .export-bar .spacer { flex: 1; }
     input, select {
       width: 100%;
       border: 1px solid var(--line);
@@ -99,7 +108,10 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 10px;
     }
-    .item { padding: 12px; }
+    .item { padding: 12px; transition: border-color 0.15s; }
+    .item.decided-approved { border-color: #86efac; background: #f0fdf4; }
+    .item.decided-rejected { border-color: #fca5a5; background: #fff5f5; }
+    .item.decided-needs_evidence { border-color: #fde68a; background: #fffbeb; }
     .item-top {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -127,6 +139,37 @@
     }
     .needs { background: #fff7ed; color: var(--amber); border: 1px solid #fed7aa; }
     .auto { background: #ecfdf3; color: var(--green); border: 1px solid #bbf7d0; }
+    .rejected-state { background: #fff5f5; color: var(--red); border: 1px solid #fca5a5; }
+    .item-auto-approved { border-left: 3px solid #22c55e; background: #f0fdf4; }
+    .item-auto-approved .item-top h3 { color: #15803d; }
+    .stat-badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .stat-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      background: white;
+      cursor: pointer;
+      font-size: 13px;
+      transition: border-color 0.12s, background 0.12s;
+    }
+    .stat-badge:hover { border-color: #94a3b8; }
+    .stat-badge.active { border-color: var(--teal); background: #f0fdfa; }
+    .stat-badge .cnt {
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .cnt-all     { color: var(--ink); }
+    .cnt-needs   { color: var(--amber); }
+    .cnt-approved { color: var(--green); }
+    .cnt-rejected { color: var(--red); }
     .path {
       font-family: Consolas, monospace;
       font-size: 12px;
@@ -135,8 +178,10 @@
     }
     .actions {
       display: flex;
+      align-items: center;
       gap: 8px;
       margin-top: 10px;
+      flex-wrap: wrap;
     }
     .actions button {
       border: 1px solid var(--line);
@@ -145,8 +190,49 @@
       padding: 7px 9px;
       cursor: pointer;
     }
+    .actions button.active-approve {
+      background: #dcfce7;
+      border-color: #86efac;
+      color: var(--green);
+      font-weight: bold;
+    }
+    .actions button.active-reject {
+      background: #fee2e2;
+      border-color: #fca5a5;
+      color: var(--red);
+      font-weight: bold;
+    }
+    .actions button.active-needs_evidence {
+      background: #fef9c3;
+      border-color: #fde68a;
+      color: var(--amber);
+      font-weight: bold;
+    }
     .approve { color: var(--green); }
     .reject { color: var(--red); }
+    .btn-export {
+      background: var(--teal);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 9px 16px;
+      cursor: pointer;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .btn-export:disabled { background: #94a3b8; cursor: not-allowed; }
+    .badge {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .decision-stats { font-size: 13px; color: var(--muted); }
+    .decision-stats .ok { color: var(--green); font-weight: bold; }
+    .decision-stats .no { color: var(--red); font-weight: bold; }
     .module-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -205,9 +291,9 @@
   <header>
     <div>
       <h1>RTL Ontology Review Console</h1>
-      <div class="muted" style="color:#cbd5e1">100-file public RTL sample, ontology evidence, and search behavior review</div>
+      <div class="muted" style="color:#cbd5e1">전체 RTL 데이터셋 · 온톨로지 레이블 리뷰 콘솔</div>
     </div>
-    <div id="dataStatus" class="muted" style="color:#cbd5e1">loading data</div>
+    <div id="dataStatus" class="muted" style="color:#cbd5e1">loading data…</div>
   </header>
   <nav class="tabs">
     <button class="tab active" data-tab="overview">Overview</button>
@@ -226,19 +312,29 @@
     </section>
 
     <section id="review">
+      <div class="export-bar">
+        <span class="decision-stats" id="decisionStats">결정 없음</span>
+        <span class="spacer"></span>
+        <button class="btn-export" id="exportBtn" disabled onclick="exportDecisions()">
+          Export Decisions (.jsonl)
+        </button>
+      </div>
+      <div class="stat-badges" id="statBadges"></div>
       <div class="toolbar">
-        <input id="reviewFilter" placeholder="module, label, path filter">
+        <input id="reviewFilter" placeholder="module, label, path 필터">
         <select id="stateFilter">
-          <option value="">All states</option>
+          <option value="">전체 상태</option>
           <option value="needs_review">Needs review</option>
           <option value="auto_accept_candidate">Auto-accept candidate</option>
+          <option value="rejected">Rejected</option>
         </select>
         <select id="projectFilter">
-          <option value="">All projects</option>
+          <option value="">전체 프로젝트</option>
           <option value="opentitan">OpenTitan</option>
           <option value="ibex">Ibex</option>
         </select>
       </div>
+      <div id="reviewCount" class="muted" style="margin-bottom:8px"></div>
       <div class="review-list" id="reviewList"></div>
     </section>
 
@@ -251,7 +347,7 @@
         <svg id="graphSvg" viewBox="0 0 920 600" role="img" aria-label="Ontology graph"></svg>
         <div class="panel" style="margin-top:0">
           <h2>Graph Reading</h2>
-          <p class="muted">Module nodes connect to inferred labels and sampled instance edges. Dense clusters are where ontology labels add retrieval context beyond raw parser symbols.</p>
+          <p class="muted">모듈 노드는 추론된 레이블 및 인스턴스 엣지와 연결됩니다. 클러스터가 밀집된 영역은 온톨로지 레이블이 파서 심볼 이상의 검색 컨텍스트를 제공하는 곳입니다.</p>
           <div class="legend">
             <div><span class="dot" style="background:#2563eb"></span>module</div>
             <div><span class="dot" style="background:#0f766e"></span>label</div>
@@ -263,16 +359,16 @@
 
     <section id="modules">
       <div class="toolbar">
-        <input id="moduleFilter" placeholder="module, label, path filter">
+        <input id="moduleFilter" placeholder="module, label, path 필터">
         <select id="moduleProjectFilter">
-          <option value="">All projects</option>
+          <option value="">전체 프로젝트</option>
           <option value="opentitan">OpenTitan</option>
           <option value="ibex">Ibex</option>
         </select>
         <select id="moduleSort">
-          <option value="name">Name</option>
-          <option value="ports">Ports</option>
-          <option value="instances">Instances</option>
+          <option value="name">이름순</option>
+          <option value="ports">포트 수</option>
+          <option value="instances">인스턴스 수</option>
         </select>
       </div>
       <div class="module-grid" id="moduleList"></div>
@@ -280,8 +376,10 @@
   </main>
 
   <script>
-    const DATA_URL = "../../../out/review_demo_100/review_console_data.json";
+    const DATA_URL = "../../../out/review_full/review_console_data.json";
     let data = null;
+
+    // key → { row (original label row), decision (approved|rejected|needs_evidence) }
     const decisions = new Map();
 
     function esc(value) {
@@ -290,22 +388,112 @@
       }[ch]));
     }
 
+    function rowKey(row, idx) {
+      return `${row.project}|${row.module}|${row.label}|${idx}`;
+    }
+
     function metric(label, value) {
       return `<div class="metric"><div class="muted">${esc(label)}</div><strong>${esc(value)}</strong></div>`;
     }
 
+    function updateDecisionStats() {
+      const approved = [...decisions.values()].filter(d => d.decision === "approved").length;
+      const rejected = [...decisions.values()].filter(d => d.decision === "rejected").length;
+      const evidence = [...decisions.values()].filter(d => d.decision === "needs_evidence").length;
+      const total = decisions.size;
+      const btn = document.getElementById("exportBtn");
+      btn.disabled = total === 0;
+      if (total > 0) {
+        btn.textContent = `Export Decisions (.jsonl)  [${total}건]`;
+      } else {
+        btn.textContent = "Export Decisions (.jsonl)";
+      }
+      document.getElementById("decisionStats").innerHTML = total === 0
+        ? "결정 없음 — Approve / Reject 후 Export 하세요"
+        : `<span class="ok">✓ ${approved} approved</span>  ·  <span class="no">✗ ${rejected} rejected</span>  ·  <span style="color:var(--amber)">${evidence} needs evidence</span>  ·  총 ${total}건`;
+    }
+
+    window.setDecision = function(key, value, row) {
+      if (decisions.has(key) && decisions.get(key).decision === value) {
+        decisions.delete(key);
+      } else {
+        decisions.set(key, { row, decision: value });
+      }
+      updateDecisionStats();
+      renderReview();
+    };
+
+    window.exportDecisions = function() {
+      if (decisions.size === 0) return;
+      const now = new Date();
+      const ts = now.toISOString().replace(/[:.]/g, "-").slice(0, 19);
+      const lines = [];
+      for (const [, entry] of decisions) {
+        const { row, decision } = entry;
+        const reviewState = decision === "approved" ? "approved"
+                          : decision === "rejected" ? "rejected"
+                          : "needs_review";
+        lines.push(JSON.stringify({
+          project: row.project,
+          entity_type: row.entity_type,
+          target_name: row.module,
+          path: row.path,
+          label: row.label,
+          group: row.group || "",
+          source_confidence: row.confidence,
+          auto_confidence: row.confidence,
+          decision: decision === "approved" ? "auto_approved"
+                  : decision === "rejected" ? "auto_rejected"
+                  : "needs_review",
+          review_state: reviewState,
+          reviewed_by: "user",
+          reviewed_at: now.toISOString(),
+          evidence: row.evidence || [],
+        }));
+      }
+      const blob = new Blob([lines.join("\n") + "\n"], { type: "application/x-ndjson" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `user_decisions_${ts}.jsonl`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    };
+
     function renderOverview() {
       const s = data.summary;
+      const approvalHtml = s.approval
+        ? `<div class="panel" style="margin-top:14px">
+             <h2>레이블 승인 현황</h2>
+             <div class="bars" style="margin-top:8px">
+               ${[
+                 ["auto_approved", s.approval.auto_approved, "#15803d"],
+                 ["needs_review", s.approval.needs_review, "#b7791f"],
+                 ["auto_rejected", s.approval.auto_rejected, "#b42318"],
+               ].map(([label, count, color]) => {
+                 const max = Math.max(s.approval.auto_approved, s.approval.needs_review, s.approval.auto_rejected, 1);
+                 return `<div class="bar">
+                   <div>${esc(label)}</div>
+                   <div class="track"><div class="fill" style="width:${Math.max(4, count/max*100)}%;background:${color}"></div></div>
+                   <div class="muted">${count}</div>
+                 </div>`;
+               }).join("")}
+             </div>
+           </div>`
+        : "";
       document.getElementById("metrics").innerHTML = [
-        metric("sample RTL files", s.sample_files),
-        metric("modules", s.modules),
-        metric("ports", s.ports),
-        metric("label proposals", s.label_proposals),
-        metric("graph nodes", s.graph_nodes),
-        metric("graph edges", s.graph_edges),
-        metric("OpenTitan modules", s.projects.opentitan || 0),
-        metric("Ibex modules", s.projects.ibex || 0),
+        metric("전체 모듈", s.modules),
+        metric("IP 블록", s.ip_blocks || 0),
+        metric("포트", s.ports),
+        metric("레이블 제안", s.label_proposals),
+        metric("그래프 노드", s.graph_nodes),
+        metric("그래프 엣지", s.graph_edges),
+        metric("OpenTitan 모듈", s.projects.opentitan || 0),
+        metric("Ibex 모듈", s.projects.ibex || 0),
       ].join("");
+      document.getElementById("metrics").insertAdjacentHTML("afterend", approvalHtml);
 
       const max = Math.max(...s.top_labels.map(row => row[1]), 1);
       document.getElementById("labelBars").innerHTML = s.top_labels.map(([label, count]) => `
@@ -317,43 +505,96 @@
       `).join("");
     }
 
+    function renderStatBadges() {
+      if (!data) return;
+      const counts = { "": 0, needs_review: 0, auto_accept_candidate: 0, rejected: 0 };
+      data.labels.forEach(r => {
+        counts[""]++;
+        if (counts[r.review_state] !== undefined) counts[r.review_state]++;
+      });
+      const active = document.getElementById("stateFilter").value;
+      document.getElementById("statBadges").innerHTML = [
+        { val: "",                     label: "전체",           cls: "cnt-all",      icon: "◈" },
+        { val: "needs_review",         label: "Needs Review",   cls: "cnt-needs",    icon: "⚑" },
+        { val: "auto_accept_candidate",label: "Auto Approved",  cls: "cnt-approved", icon: "✓" },
+        { val: "rejected",             label: "Auto Rejected",  cls: "cnt-rejected", icon: "✗" },
+      ].map(({ val, label, cls, icon }) => `
+        <button class="stat-badge${active === val ? ' active' : ''}" onclick="setStateFilter('${val}')">
+          <span class="${cls}">${icon}</span>
+          <span>${label}</span>
+          <span class="cnt ${cls}">${counts[val] ?? 0}</span>
+        </button>
+      `).join("");
+    }
+
+    window.setStateFilter = function(val) {
+      document.getElementById("stateFilter").value = val;
+      renderStatBadges();
+      renderReview();
+    };
+
     function renderReview() {
       const q = document.getElementById("reviewFilter").value.toLowerCase();
       const state = document.getElementById("stateFilter").value;
       const project = document.getElementById("projectFilter").value;
-      const rows = data.labels.filter(row => {
+
+      // 전역 인덱스 기준 key를 유지하기 위해 원본 index를 함께 보존
+      const filtered = [];
+      data.labels.forEach((row, globalIdx) => {
         const hay = [row.module, row.label, row.path, row.project].join(" ").toLowerCase();
-        return (!q || hay.includes(q)) && (!state || row.review_state === state) && (!project || row.project === project);
-      }).slice(0, 80);
-      document.getElementById("reviewList").innerHTML = rows.map((row, idx) => {
-        const key = `${row.module}|${row.label}|${idx}`;
-        const decision = decisions.get(key) || "";
-        const stateClass = row.review_state === "needs_review" ? "needs" : "auto";
+        if ((!q || hay.includes(q))
+          && (!state || row.review_state === state)
+          && (!project || row.project === project)) {
+          filtered.push({ row, globalIdx });
+        }
+      });
+
+      const countEl = document.getElementById("reviewCount");
+      countEl.textContent = `${filtered.length}건 표시`;
+
+      document.getElementById("reviewList").innerHTML = filtered.map(({ row, globalIdx }) => {
+        const key = rowKey(row, globalIdx);
+        const entry = decisions.get(key);
+        const decision = entry ? entry.decision : "";
+
+        const stateClass = row.review_state === "needs_review"         ? "needs"
+                         : row.review_state === "auto_accept_candidate" ? "auto"
+                         : "rejected-state";
+        const stateLabel = row.review_state === "auto_accept_candidate" ? "auto approved"
+                         : row.review_state;
+
+        const autoApprovedClass = row.review_state === "auto_accept_candidate" ? "item-auto-approved" : "";
+        const decidedClass = decision ? `decided-${decision}` : "";
+
         return `
-          <article class="item">
+          <article class="item ${autoApprovedClass} ${decidedClass}">
             <div class="item-top">
               <div>
                 <h3>${esc(row.module)}</h3>
                 <span class="label">${esc(row.label)}</span>
+                ${row.group ? `<span class="label" style="background:#f1f5f9;color:#475569;border-color:#cbd5e1">${esc(row.group)}</span>` : ""}
               </div>
-              <span class="state ${stateClass}">${esc(row.review_state)}</span>
+              <span class="state ${stateClass}">${esc(stateLabel)}</span>
             </div>
-            <div class="muted">confidence ${Math.round(row.confidence * 100)}% · ${esc(row.project)}</div>
+            <div class="muted">confidence ${Math.round((row.confidence || 0) * 100)}% · ${esc(row.project)}</div>
             <div class="path">${esc(row.path)}</div>
             <div class="actions">
-              <button class="approve" onclick="setDecision('${esc(key)}','approved')">Approve</button>
-              <button class="reject" onclick="setDecision('${esc(key)}','rejected')">Reject</button>
-              <button onclick="setDecision('${esc(key)}','needs_evidence')">More evidence</button>
-              <span class="muted">${esc(decision)}</span>
+              <button class="approve${decision === 'approved' ? ' active-approve' : ''}"
+                onclick="setDecision('${esc(key)}', 'approved', ${JSON.stringify(row).replace(/"/g, '&quot;')})">
+                ✓ Approve
+              </button>
+              <button class="reject${decision === 'rejected' ? ' active-reject' : ''}"
+                onclick="setDecision('${esc(key)}', 'rejected', ${JSON.stringify(row).replace(/"/g, '&quot;')})">
+                ✗ Reject
+              </button>
+              <button class="${decision === 'needs_evidence' ? 'active-needs_evidence' : ''}"
+                onclick="setDecision('${esc(key)}', 'needs_evidence', ${JSON.stringify(row).replace(/"/g, '&quot;')})">
+                ? More evidence
+              </button>
             </div>
           </article>
         `;
       }).join("");
-    }
-
-    window.setDecision = function(key, value) {
-      decisions.set(key, value);
-      renderReview();
     }
 
     function renderSearch() {
@@ -363,7 +604,7 @@
           <div class="search-row">
             <div>
               <h3>Parser + LSP 단순 query</h3>
-              <p class="muted">${esc(row.difference.parser_lsp)}</p>
+              <p class="muted">${esc(row.difference?.parser_lsp || "")}</p>
               ${row.parser_lsp.map(result => `
                 <div class="result">
                   <strong>${esc(result.name)}</strong>
@@ -373,12 +614,12 @@
             </div>
             <div>
               <h3>Ontology / Knowledge DB search</h3>
-              <p class="muted">${esc(row.difference.ontology_db)}</p>
+              <p class="muted">${esc(row.difference?.ontology_db || "")}</p>
               ${row.ontology_db.map(result => `
                 <div class="result">
                   <strong>${esc(result.name)}</strong>
                   <div class="muted">${esc(result.project)} · score ${esc(result.score)} · ${esc(result.why)}</div>
-                  <div>${result.labels.map(label => `<span class="label">${esc(label)}</span>`).join("")}</div>
+                  <div>${(result.labels || []).map(label => `<span class="label">${esc(label)}</span>`).join("")}</div>
                 </div>
               `).join("") || "<div class='muted'>No ontology match</div>"}
             </div>
@@ -395,15 +636,15 @@
         const hay = [module.name, module.path, module.project, ...(module.labels || [])].join(" ").toLowerCase();
         return (!q || hay.includes(q)) && (!project || module.project === project);
       }).sort((a, b) => {
-        if (sort === "ports") return b.ports.length - a.ports.length;
-        if (sort === "instances") return b.instances.length - a.instances.length;
+        if (sort === "ports") return (b.ports?.length || 0) - (a.ports?.length || 0);
+        if (sort === "instances") return (b.instances?.length || 0) - (a.instances?.length || 0);
         return a.name.localeCompare(b.name);
       }).slice(0, 90);
       document.getElementById("moduleList").innerHTML = rows.map(module => `
         <article class="module-card">
           <h3>${esc(module.name)}</h3>
-          <div class="muted">${esc(module.project)} · ports ${module.ports.length} · instances ${module.instances.length}</div>
-          <div>${module.labels.map(label => `<span class="label">${esc(label)}</span>`).join("")}</div>
+          <div class="muted">${esc(module.project)} · ports ${module.ports?.length || 0} · instances ${module.instances?.length || 0}</div>
+          <div>${(module.labels || []).map(label => `<span class="label">${esc(label)}</span>`).join("")}</div>
           <div class="path">${esc(module.path)}</div>
         </article>
       `).join("");
@@ -414,34 +655,32 @@
       const nodes = data.graph.nodes.slice(0, 90);
       const nodeIds = new Set(nodes.map(n => n.id));
       const edges = data.graph.edges.filter(e => nodeIds.has(e.source) && nodeIds.has(e.target)).slice(0, 160);
-      const width = 920;
-      const height = 600;
-      const cx = width / 2;
-      const cy = height / 2;
+      const width = 920, height = 600, cx = width / 2, cy = height / 2;
       const labelNodes = nodes.filter(n => n.type === "label");
       const moduleNodes = nodes.filter(n => n.type === "module");
       const pos = new Map();
       labelNodes.forEach((node, idx) => {
         const angle = (idx / Math.max(labelNodes.length, 1)) * Math.PI * 2;
-        pos.set(node.id, {x: cx + Math.cos(angle) * 230, y: cy + Math.sin(angle) * 220});
+        pos.set(node.id, { x: cx + Math.cos(angle) * 230, y: cy + Math.sin(angle) * 220 });
       });
       moduleNodes.forEach((node, idx) => {
         const angle = (idx / Math.max(moduleNodes.length, 1)) * Math.PI * 2;
         const radius = 70 + (idx % 4) * 35;
-        pos.set(node.id, {x: cx + Math.cos(angle) * radius, y: cy + Math.sin(angle) * radius});
+        pos.set(node.id, { x: cx + Math.cos(angle) * radius, y: cy + Math.sin(angle) * radius });
       });
       const lines = edges.map(edge => {
-        const a = pos.get(edge.source);
-        const b = pos.get(edge.target);
+        const a = pos.get(edge.source), b = pos.get(edge.target);
         if (!a || !b) return "";
-        return `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#94a3b8" stroke-width="1" opacity="0.38" />`;
+        return `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#94a3b8" stroke-width="1" opacity="0.38"/>`;
       }).join("");
       const circles = nodes.map(node => {
         const p = pos.get(node.id);
         if (!p) return "";
         const color = node.type === "label" ? "#0f766e" : "#2563eb";
         const r = node.type === "label" ? 7 : 5;
-        const text = node.type === "label" ? `<text x="${p.x + 9}" y="${p.y + 4}" font-size="11" fill="#334155">${esc(node.label)}</text>` : "";
+        const text = node.type === "label"
+          ? `<text x="${p.x + 9}" y="${p.y + 4}" font-size="11" fill="#334155">${esc(node.label)}</text>`
+          : "";
         return `<circle cx="${p.x}" cy="${p.y}" r="${r}" fill="${color}"><title>${esc(node.label)}</title></circle>${text}`;
       }).join("");
       svg.innerHTML = lines + circles;
@@ -454,8 +693,14 @@
     }
 
     document.querySelectorAll(".tab").forEach(btn => btn.addEventListener("click", () => activate(btn.dataset.tab)));
-    ["reviewFilter", "stateFilter", "projectFilter"].forEach(id => document.getElementById(id).addEventListener("input", renderReview));
-    ["moduleFilter", "moduleProjectFilter", "moduleSort"].forEach(id => document.getElementById(id).addEventListener("input", renderModules));
+    ["reviewFilter", "projectFilter"].forEach(id =>
+      document.getElementById(id).addEventListener("input", renderReview));
+    document.getElementById("stateFilter").addEventListener("change", () => {
+      renderStatBadges();
+      renderReview();
+    });
+    ["moduleFilter", "moduleProjectFilter", "moduleSort"].forEach(id =>
+      document.getElementById(id).addEventListener("input", renderModules));
 
     fetch(DATA_URL)
       .then(response => {
@@ -464,14 +709,16 @@
       })
       .then(payload => {
         data = payload;
-        document.getElementById("dataStatus").textContent = "loaded review_demo_100";
+        document.getElementById("dataStatus").textContent =
+          `전체 데이터 로드 완료 · 모듈 ${payload.summary.modules}개 · 레이블 제안 ${payload.summary.label_proposals}개`;
         renderOverview();
+        renderStatBadges();
         renderReview();
         renderSearch();
         renderModules();
       })
       .catch(error => {
-        document.getElementById("dataStatus").textContent = `data load failed: ${error.message}`;
+        document.getElementById("dataStatus").textContent = `데이터 로드 실패: ${error.message}`;
       });
   </script>
 </body>

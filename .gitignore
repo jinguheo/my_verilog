@@ -9,4 +9,16 @@ tmp/
 .venv-graphify/
 graphify-out/
 tools/graphify/
+tools/iverilog/
 out/graphify_compare/cache/
+out/generation_eval/work/
+
+# generated outputs — not versioned
+*.zip
+out/kg_versions/
+out/review_full/
+out/graphify_compare/
+out/generation_eval/
+out/multiaxis_eval_results/multiaxis_answer_table.*
+out/multiaxis_eval_results/multiaxis_wrong_answers.md
+artifacts/

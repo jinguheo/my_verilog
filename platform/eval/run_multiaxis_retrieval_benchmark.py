@@ -71,18 +71,40 @@ def aggregate(questions, runs_by_mode):
     return report
 
 
+def resolve_version(ver_dir, version_tag, approved_labels):
+    if not version_tag:
+        return approved_labels, None
+    base = Path(ver_dir) if ver_dir else Path("out/kg_versions")
+    snap = base / version_tag
+    if not snap.exists():
+        raise FileNotFoundError(f"Version snapshot not found: {snap}")
+    snapped = snap / "auto_approved_labels.jsonl"
+    return (str(snapped) if snapped.exists() else approved_labels), version_tag
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--seed", required=True)
-    ap.add_argument("--questions", required=True)
-    ap.add_argument("--out-dir", required=True)
-    ap.add_argument("--approved-labels")
+    ap.add_argument("--seed",            required=True)
+    ap.add_argument("--questions",       required=True)
+    ap.add_argument("--out-dir",         required=True)
+    ap.add_argument("--approved-labels", default=None)
+    ap.add_argument("--version",         default=None, help="KG version tag e.g. v002")
+    ap.add_argument("--ver-dir",         default=None, help="out/kg_versions directory")
     args = ap.parse_args()
+
+    approved_labels_path, version_tag = resolve_version(
+        args.ver_dir, args.version, args.approved_labels
+    )
+
+    out_dir = Path(args.out_dir)
+    if version_tag:
+        out_dir = out_dir / version_tag
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     questions = read_jsonl(args.questions)
     modules, idf_by_mode, known_projects, approved_summary = prepare_retrieval(
         args.seed,
-        args.approved_labels,
+        approved_labels_path,
     )
     for question in questions:
         question["_idf"] = idf_by_mode
@@ -104,14 +126,15 @@ def main():
     retrieval_metadata = {
         "modules_indexed": len(modules),
         "approved_labels": approved_summary,
+        "kg_version_tag": version_tag,
     }
-    out_dir = Path(args.out_dir)
     write_json(out_dir / "multiaxis_report.json", report)
     write_json(out_dir / "multiaxis_metadata.json", retrieval_metadata)
     write_json(out_dir / "multiaxis_detailed_runs.json", runs_by_mode)
     print(json.dumps({
         "status": "ok",
         "out_dir": str(out_dir),
+        "kg_version_tag": version_tag,
         "modules_indexed": len(modules),
         "approved_labels": approved_summary,
         "baseline_hit_at_1": report["by_mode"]["baseline"]["hit_at_1"],
