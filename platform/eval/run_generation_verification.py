@@ -44,7 +44,7 @@ class Candidate:
 
 def read_jsonl(path: Path) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
-    with path.open("r", encoding="utf-8") as handle:
+    with path.open("r", encoding="utf-8-sig") as handle:
         for line_no, line in enumerate(handle, 1):
             line = line.strip()
             if not line:
@@ -158,7 +158,7 @@ def verify_one(
     vvp: str | None,
     timeout: int,
 ) -> dict[str, Any]:
-    task_dir = out_dir / "work" / safe_name(problem.task_id)
+    task_dir = (out_dir / "work" / safe_name(problem.task_id)).resolve()
     task_dir.mkdir(parents=True, exist_ok=True)
     design = compose_design(problem.prompt, candidate.code)
     combined = design + "\n" + problem.testbench.rstrip() + "\n"
@@ -169,6 +169,8 @@ def verify_one(
     syntax_status, syntax_detail = tree_sitter_syntax_ok(combined)
     result: dict[str, Any] = {
         "task_id": problem.task_id,
+        "level": problem.source.get("level", ""),
+        "type": problem.source.get("type", problem.source.get("category", "")),
         "status": "",
         "syntax_status": syntax_status,
         "syntax_detail": syntax_detail,
@@ -255,7 +257,7 @@ def aggregate(results: list[dict[str, Any]]) -> dict[str, Any]:
     total = len(results)
     passed = counts.get("PASS", 0)
     attempted = total - counts.get("TOOL_MISSING", 0)
-    return {
+    summary: dict[str, Any] = {
         "total": total,
         "pass": passed,
         "pass_rate": round(passed / total, 4) if total else 0.0,
@@ -263,6 +265,23 @@ def aggregate(results: list[dict[str, Any]]) -> dict[str, Any]:
         "simulated_pass_rate": round(passed / attempted, 4) if attempted else 0.0,
         "status_counts": dict(sorted(counts.items())),
     }
+    by_level: dict[str, dict[str, Any]] = {}
+    for level in sorted({str(result.get("level") or "unleveled") for result in results}):
+        subset = [result for result in results if str(result.get("level") or "unleveled") == level]
+        level_counts: dict[str, int] = {}
+        for result in subset:
+            level_counts[result["status"]] = level_counts.get(result["status"], 0) + 1
+        level_total = len(subset)
+        level_pass = level_counts.get("PASS", 0)
+        by_level[level] = {
+            "total": level_total,
+            "pass": level_pass,
+            "pass_rate": round(level_pass / level_total, 4) if level_total else 0.0,
+            "status_counts": dict(sorted(level_counts.items())),
+        }
+    if by_level:
+        summary["by_level"] = by_level
+    return summary
 
 
 def write_outputs(out_dir: Path, results: list[dict[str, Any]], metadata: dict[str, Any]) -> None:
@@ -276,6 +295,8 @@ def write_outputs(out_dir: Path, results: list[dict[str, Any]], metadata: dict[s
 
     csv_fields = [
         "task_id",
+        "level",
+        "type",
         "status",
         "syntax_status",
         "compile_returncode",
@@ -305,16 +326,27 @@ def write_outputs(out_dir: Path, results: list[dict[str, Any]], metadata: dict[s
     ]
     for status, count in summary["status_counts"].items():
         lines.append(f"| {status} | {count} |")
+    if summary.get("by_level"):
+        lines += [
+            "",
+            "## By Level",
+            "",
+            "| Level | Total | PASS | Pass rate | Status counts |",
+            "|---|---:|---:|---:|---|",
+        ]
+        for level, values in summary["by_level"].items():
+            counts = ", ".join(f"{key}:{value}" for key, value in values["status_counts"].items())
+            lines.append(f"| {level} | {values['total']} | {values['pass']} | {values['pass_rate']} | {counts} |")
     lines += [
         "",
         "## Results",
         "",
-        "| Task | Status | Syntax | Detail |",
-        "|---|---|---|---|",
+        "| Task | Level | Type | Status | Syntax | Detail |",
+        "|---|---|---|---|---|---|",
     ]
     for result in results:
         lines.append(
-            f"| {md_escape(result['task_id'])} | {result['status']} | {result['syntax_status']} | {md_escape(result.get('detail', ''))} |"
+            f"| {md_escape(result['task_id'])} | {md_escape(result.get('level', ''))} | {md_escape(result.get('type', ''))} | {result['status']} | {result['syntax_status']} | {md_escape(result.get('detail', ''))} |"
         )
     (out_dir / "generation_eval_summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -344,6 +376,8 @@ def main() -> None:
         if not candidate:
             results.append({
                 "task_id": problem.task_id,
+                "level": problem.source.get("level", ""),
+                "type": problem.source.get("type", problem.source.get("category", "")),
                 "status": "NO_CANDIDATE",
                 "syntax_status": "NOT_RUN",
                 "detail": "no candidate found for task_id",

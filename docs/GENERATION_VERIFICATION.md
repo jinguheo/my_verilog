@@ -29,12 +29,32 @@ Generated candidates are JSONL rows with:
 
 The candidate `task_id` must match the problem `task_id`.
 
+The bundled L1-L5 fixture separates generation checks into:
+
+| Level | Focus |
+|---|---|
+| `L1` | Basic combinational generation |
+| `L2` | Conditional/select logic generation |
+| `L3` | Arithmetic expression generation |
+| `L4` | Sequential logic with reset generation |
+| `L5` | Stateful behavior generation |
+
 ## Commands
 
 Smoke check using reference solutions:
 
 ```powershell
 .\.venv-graphify\Scripts\python.exe platform\eval\run_generation_verification.py --candidate-mode reference
+```
+
+Run the L1-L5 generation benchmark with externally supplied candidates:
+
+```powershell
+.\.venv-graphify\Scripts\python.exe platform\eval\run_generation_verification.py `
+  --problems platform\eval\fixtures\generation_l1_l5.jsonl `
+  --candidates platform\eval\fixtures\generation_l1_l5_candidates.jsonl `
+  --candidate-mode external `
+  --out out\generation_eval_l1_l5
 ```
 
 The script first checks `PATH`, then falls back to `tools\iverilog\bin\iverilog.exe` and `tools\iverilog\bin\vvp.exe` when the portable simulator is present.

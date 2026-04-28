@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "problems": "platform\\eval\\fixtures\\generation_l1_l5.jsonl",
+    "candidates": "platform\\eval\\fixtures\\generation_l1_l5_candidates.jsonl",
+    "candidate_mode": "external",
+    "iverilog": "D:\\MyWork\\verilog\\tools\\iverilog\\bin\\iverilog.exe",
+    "vvp": "D:\\MyWork\\verilog\\tools\\iverilog\\bin\\vvp.exe",
+    "timeout": 20
+  },
+  "summary": {
+    "total": 5,
+    "pass": 5,
+    "pass_rate": 1.0,
+    "attempted_with_simulator": 5,
+    "simulated_pass_rate": 1.0,
+    "status_counts": {
+      "PASS": 5
+    },
+    "by_level": {
+      "L1": {
+        "total": 1,
+        "pass": 1,
+        "pass_rate": 1.0,
+        "status_counts": {
+          "PASS": 1
+        }
+      },
+      "L2": {
+        "total": 1,
+        "pass": 1,
+        "pass_rate": 1.0,
+        "status_counts": {
+          "PASS": 1
+        }
+      },
+      "L3": {
+        "total": 1,
+        "pass": 1,
+        "pass_rate": 1.0,
+        "status_counts": {
+          "PASS": 1
+        }
+      },
+      "L4": {
+        "total": 1,
+        "pass": 1,
+        "pass_rate": 1.0,
+        "status_counts": {
+          "PASS": 1
+        }
+      },
+      "L5": {
+        "total": 1,
+        "pass": 1,
+        "pass_rate": 1.0,
+        "status_counts": {
+          "PASS": 1
+        }
+      }
+    }
+  },
+  "results": [
+    {
+      "task_id": "gen_l1_not_gate",
+      "level": "L1",
+      "type": "generation_basic",
+      "status": "PASS",
+      "syntax_status": "PASS",
+      "syntax_detail": "",
+      "compile_returncode": 0,
+      "sim_returncode": 0,
+      "detail": "compiled and simulated without failure markers",
+      "combined_path": "D:\\MyWork\\verilog\\out\\generation_eval_l1_l5\\work\\gen_l1_not_gate\\combined.sv",
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "sim_stdout": "PASS\n",
+      "sim_stderr": ""
+    },
+    {
+      "task_id": "gen_l2_mux2",
+      "level": "L2",
+      "type": "generation_conditional",
+      "status": "PASS",
+      "syntax_status": "PASS",
+      "syntax_detail": "",
+      "compile_returncode": 0,
+      "sim_returncode": 0,
+      "detail": "compiled and simulated without failure markers",
+      "combined_path": "D:\\MyWork\\verilog\\out\\generation_eval_l1_l5\\work\\gen_l2_mux2\\combined.sv",
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "sim_stdout": "PASS\n",
+      "sim_stderr": ""
+    },
+    {
+      "task_id": "gen_l3_full_adder",
+      "level": "L3",
+      "type": "generation_arithmetic",
+      "status": "PASS",
+      "syntax_status": "PASS",
+      "syntax_detail": "",
+      "compile_returncode": 0,
+      "sim_returncode": 0,
+      "detail": "compiled and simulated without failure markers",
+      "combined_path": "D:\\MyWork\\verilog\\out\\generation_eval_l1_l5\\work\\gen_l3_full_adder\\combined.sv",
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "sim_stdout": "PASS\n",
+      "sim_stderr": ""
+    },
+    {
+      "task_id": "gen_l4_dff_async_reset",
+      "level": "L4",
+      "type": "generation_sequential",
+      "status": "PASS",
+      "syntax_status": "PASS",
+      "syntax_detail": "",
+      "compile_returncode": 0,
+      "sim_returncode": 0,
+      "detail": "compiled and simulated without failure markers",
+      "combined_path": "D:\\MyWork\\verilog\\out\\generation_eval_l1_l5\\work\\gen_l4_dff_async_reset\\combined.sv",
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "sim_stdout": "PASS\n",
+      "sim_stderr": ""
+    },
+    {
+      "task_id": "gen_l5_sat_counter",
+      "level": "L5",
+      "type": "generation_stateful",
+      "status": "PASS",
+      "syntax_status": "PASS",
+      "syntax_detail": "",
+      "compile_returncode": 0,
+      "sim_returncode": 0,
+      "detail": "compiled and simulated without failure markers",
+      "combined_path": "D:\\MyWork\\verilog\\out\\generation_eval_l1_l5\\work\\gen_l5_sat_counter\\combined.sv",
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "sim_stdout": "PASS\n",
+      "sim_stderr": ""
+    }
+  ]
+}

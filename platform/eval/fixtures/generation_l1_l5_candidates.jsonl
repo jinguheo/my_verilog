@@ -1,0 +1,5 @@
+{"task_id":"gen_l1_not_gate","completion":"assign y = ~a;\nendmodule"}
+{"task_id":"gen_l2_mux2","completion":"assign y = sel ? b : a;\nendmodule"}
+{"task_id":"gen_l3_full_adder","completion":"assign {cout, sum} = a + b + cin;\nendmodule"}
+{"task_id":"gen_l4_dff_async_reset","completion":"always @(posedge clk or posedge rst) begin\n  if (rst) q <= 1'b0;\n  else q <= d;\nend\nendmodule"}
+{"task_id":"gen_l5_sat_counter","completion":"always @(posedge clk) begin\n  if (rst) count <= 2'd0;\n  else if (en && count != 2'd3) count <= count + 2'd1;\nend\nendmodule"}

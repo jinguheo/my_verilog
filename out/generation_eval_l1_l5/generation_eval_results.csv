@@ -1,0 +1,6 @@
+﻿task_id,level,type,status,syntax_status,compile_returncode,sim_returncode,detail,combined_path
+gen_l1_not_gate,L1,generation_basic,PASS,PASS,0,0,compiled and simulated without failure markers,D:\MyWork\verilog\out\generation_eval_l1_l5\work\gen_l1_not_gate\combined.sv
+gen_l2_mux2,L2,generation_conditional,PASS,PASS,0,0,compiled and simulated without failure markers,D:\MyWork\verilog\out\generation_eval_l1_l5\work\gen_l2_mux2\combined.sv
+gen_l3_full_adder,L3,generation_arithmetic,PASS,PASS,0,0,compiled and simulated without failure markers,D:\MyWork\verilog\out\generation_eval_l1_l5\work\gen_l3_full_adder\combined.sv
+gen_l4_dff_async_reset,L4,generation_sequential,PASS,PASS,0,0,compiled and simulated without failure markers,D:\MyWork\verilog\out\generation_eval_l1_l5\work\gen_l4_dff_async_reset\combined.sv
+gen_l5_sat_counter,L5,generation_stateful,PASS,PASS,0,0,compiled and simulated without failure markers,D:\MyWork\verilog\out\generation_eval_l1_l5\work\gen_l5_sat_counter\combined.sv

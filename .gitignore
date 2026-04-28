@@ -12,6 +12,7 @@ tools/graphify/
 tools/iverilog/
 out/graphify_compare/cache/
 out/generation_eval/work/
+out/generation_eval_l1_l5/work/
 
 # generated outputs — not versioned
 *.zip
