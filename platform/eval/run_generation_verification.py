@@ -166,7 +166,7 @@ def verify_one(
     vvp_path = task_dir / "sim.vvp"
     combined_path.write_text(combined, encoding="utf-8")
 
-    syntax_status, syntax_detail = tree_sitter_syntax_ok(combined)
+    syntax_status, syntax_detail = tree_sitter_syntax_ok(design)
     result: dict[str, Any] = {
         "task_id": problem.task_id,
         "level": problem.source.get("level", ""),
@@ -174,6 +174,7 @@ def verify_one(
         "status": "",
         "syntax_status": syntax_status,
         "syntax_detail": syntax_detail,
+        "syntax_target": "candidate_design",
         "compile_returncode": None,
         "sim_returncode": None,
         "detail": "",
@@ -265,23 +266,31 @@ def aggregate(results: list[dict[str, Any]]) -> dict[str, Any]:
         "simulated_pass_rate": round(passed / attempted, 4) if attempted else 0.0,
         "status_counts": dict(sorted(counts.items())),
     }
-    by_level: dict[str, dict[str, Any]] = {}
-    for level in sorted({str(result.get("level") or "unleveled") for result in results}):
-        subset = [result for result in results if str(result.get("level") or "unleveled") == level]
-        level_counts: dict[str, int] = {}
-        for result in subset:
-            level_counts[result["status"]] = level_counts.get(result["status"], 0) + 1
-        level_total = len(subset)
-        level_pass = level_counts.get("PASS", 0)
-        by_level[level] = {
-            "total": level_total,
-            "pass": level_pass,
-            "pass_rate": round(level_pass / level_total, 4) if level_total else 0.0,
-            "status_counts": dict(sorted(level_counts.items())),
-        }
+    by_level = aggregate_by_key(results, "level", "unleveled")
     if by_level:
         summary["by_level"] = by_level
+    by_type = aggregate_by_key(results, "type", "untyped")
+    if by_type:
+        summary["by_type"] = by_type
     return summary
+
+
+def aggregate_by_key(results: list[dict[str, Any]], key: str, fallback: str) -> dict[str, dict[str, Any]]:
+    groups: dict[str, dict[str, Any]] = {}
+    for value in sorted({str(result.get(key) or fallback) for result in results}):
+        subset = [result for result in results if str(result.get(key) or fallback) == value]
+        group_counts: dict[str, int] = {}
+        for result in subset:
+            group_counts[result["status"]] = group_counts.get(result["status"], 0) + 1
+        group_total = len(subset)
+        group_pass = group_counts.get("PASS", 0)
+        groups[value] = {
+            "total": group_total,
+            "pass": group_pass,
+            "pass_rate": round(group_pass / group_total, 4) if group_total else 0.0,
+            "status_counts": dict(sorted(group_counts.items())),
+        }
+    return groups
 
 
 def write_outputs(out_dir: Path, results: list[dict[str, Any]], metadata: dict[str, Any]) -> None:
@@ -337,6 +346,17 @@ def write_outputs(out_dir: Path, results: list[dict[str, Any]], metadata: dict[s
         for level, values in summary["by_level"].items():
             counts = ", ".join(f"{key}:{value}" for key, value in values["status_counts"].items())
             lines.append(f"| {level} | {values['total']} | {values['pass']} | {values['pass_rate']} | {counts} |")
+    if summary.get("by_type"):
+        lines += [
+            "",
+            "## By Type",
+            "",
+            "| Type | Total | PASS | Pass rate | Status counts |",
+            "|---|---:|---:|---:|---|",
+        ]
+        for qtype, values in summary["by_type"].items():
+            counts = ", ".join(f"{key}:{value}" for key, value in values["status_counts"].items())
+            lines.append(f"| {qtype} | {values['total']} | {values['pass']} | {values['pass_rate']} | {counts} |")
     lines += [
         "",
         "## Results",

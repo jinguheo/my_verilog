@@ -29,7 +29,7 @@ Generated candidates are JSONL rows with:
 
 The candidate `task_id` must match the problem `task_id`.
 
-The bundled L1-L5 fixture separates generation checks into:
+The bundled L1-L5 fixture separates generation checks into smoke-level examples:
 
 | Level | Focus |
 |---|---|
@@ -56,6 +56,55 @@ Run the L1-L5 generation benchmark with externally supplied candidates:
   --candidate-mode external `
   --out out\generation_eval_l1_l5
 ```
+
+Build and run the 150-task realistic RTL generation benchmark:
+
+```powershell
+.\.venv-graphify\Scripts\python.exe platform\eval\build_generation_benchmark.py `
+  --out-dir out\generation_benchmark
+
+.\.venv-graphify\Scripts\python.exe platform\eval\run_generation_verification.py `
+  --problems out\generation_benchmark\problems_all.jsonl `
+  --candidates out\generation_benchmark\candidates_all.jsonl `
+  --candidate-mode external `
+  --out out\generation_eval_150
+```
+
+The 150-task benchmark covers realistic RTL patterns such as address decoders,
+byte masks, priority grants, ready/valid stages, timers, sequence detectors,
+packet FSMs, credit control, round-robin arbiters, skid buffers, small register
+files, tiny FIFOs, APB-like CSR blocks, DMA burst controllers, PWM controllers,
+watchdogs, and LFSR scramblers.
+
+Prepare and run actual NVlabs VerilogEval generation problems by context mode:
+
+```powershell
+git clone --depth 1 https://github.com/NVlabs/verilog-eval.git tools\verilog-eval
+
+.\.venv-graphify\Scripts\python.exe platform\eval\prepare_verilogeval_generation.py `
+  --repo tools\verilog-eval `
+  --task all `
+  --out-dir out\verilogeval_generation
+
+.\.venv-graphify\Scripts\python.exe platform\eval\run_verilogeval_generation_modes.py `
+  --base-dir out\verilogeval_generation\code-complete-iccad2023 `
+  --out-dir out\verilogeval_generation_eval\code-complete-iccad2023
+
+.\.venv-graphify\Scripts\python.exe platform\eval\run_verilogeval_generation_modes.py `
+  --base-dir out\verilogeval_generation\spec-to-rtl `
+  --out-dir out\verilogeval_generation_eval\spec-to-rtl
+```
+
+The mode runner expects `candidates_parser_lsp.jsonl`, `candidates_kg.jsonl`,
+and `candidates_graphify.jsonl`. The prepared files are oracle references for
+harness sanity checks; replace them with real generated RTL to compare mode
+quality.
+
+The VerilogEval normalizer embeds the official `RefModule` in each testbench so
+the generated `TopModule` is checked by functional comparison. It also applies a
+small Icarus compatibility pass for oracle sanity checks: enum typedefs in a few
+official references are lowered to localparams, and one spec-to-RTL reference
+with mismatched ports is repaired from the paired code-complete reference.
 
 The script first checks `PATH`, then falls back to `tools\iverilog\bin\iverilog.exe` and `tools\iverilog\bin\vvp.exe` when the portable simulator is present.
 

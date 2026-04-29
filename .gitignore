@@ -10,9 +10,15 @@ tmp/
 graphify-out/
 tools/graphify/
 tools/iverilog/
+tools/verilog-eval/
 out/graphify_compare/cache/
 out/generation_eval/work/
-out/generation_eval_l1_l5/work/
+out/generation_eval_*/work/
+out/verilogeval_generation_eval/*/*/work/
+out/generation_benchmark/
+out/generation_eval_150/
+out/verilogeval_generation/
+out/verilogeval_generation_eval/
 
 # generated outputs — not versioned
 *.zip
