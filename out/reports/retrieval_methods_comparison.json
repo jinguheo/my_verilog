@@ -1,0 +1,65 @@
+{
+  "source_report": "D:\\MyWork\\verilog\\out\\manticore_analysis\\manticore_retrieval_report.json",
+  "source_metadata": "D:\\MyWork\\verilog\\out\\manticore_analysis\\manticore_retrieval_metadata.json",
+  "generated_at": "2026-05-09T20:02:34",
+  "questions": 175,
+  "modules_indexed": 732,
+  "methods": {
+    "baseline": {
+      "label": "Baseline",
+      "hit_at_1": 0.8514,
+      "hit_at_3": 0.8629,
+      "mrr": 0.8686,
+      "weighted_hit_at_1": 0.8393,
+      "avg_query_ms": 28.171,
+      "features": {
+        "Input signals": "Module name, file path, ports, instances",
+        "Ranking": "Parser/LSP lexical overlap with exact anchors",
+        "Strength": "Fast simple lookup, transparent evidence",
+        "Tradeoff": "Weak on semantic paraphrase and function similarity"
+      }
+    },
+    "kg": {
+      "label": "KG",
+      "hit_at_1": 0.8514,
+      "hit_at_3": 0.8629,
+      "mrr": 0.8562,
+      "weighted_hit_at_1": 0.8423,
+      "avg_query_ms": 34.284,
+      "features": {
+        "Input signals": "Baseline fields plus labels, summaries, graph context",
+        "Ranking": "KG-aware scorer with semantic expansion",
+        "Strength": "Uses ontology and reverse graph relationships",
+        "Tradeoff": "Can add noise when labels are broad or sparse"
+      }
+    },
+    "manticore_parser_lsp": {
+      "label": "Manticore Parser/LSP",
+      "hit_at_1": 0.8629,
+      "hit_at_3": 0.8914,
+      "mrr": 0.8857,
+      "weighted_hit_at_1": 0.8401,
+      "avg_query_ms": 37.386,
+      "features": {
+        "Input signals": "Parser/LSP fields only",
+        "Ranking": "Manticore-style BM25F full-text field weighting",
+        "Strength": "Best text ranking without KG dependency",
+        "Tradeoff": "Still blind to ontology-only relationships"
+      }
+    },
+    "manticore_hybrid": {
+      "label": "Manticore Hybrid",
+      "hit_at_1": 0.8686,
+      "hit_at_3": 0.8914,
+      "mrr": 0.8781,
+      "weighted_hit_at_1": 0.8479,
+      "avg_query_ms": 46.418,
+      "features": {
+        "Input signals": "Parser/LSP fields plus KG labels, summaries, parents",
+        "Ranking": "BM25F with KG field boosts",
+        "Strength": "Best overall Hit@1 in this run",
+        "Tradeoff": "Slowest local proxy query latency"
+      }
+    }
+  }
+}

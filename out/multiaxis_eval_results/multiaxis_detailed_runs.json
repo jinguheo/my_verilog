@@ -562,8 +562,8 @@
           "score": 136.015,
           "reasons": [
             "child_instance:ast_clks_byp",
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "module_name",
             "instances:byp",
             "instances:ast",
@@ -694,13 +694,13 @@
           "project": "opentitan",
           "score": 91.196,
           "reasons": [
-            "name:darjeeling",
             "name:top_darjeeling",
+            "name:darjeeling",
             "module_name",
-            "path_file:darjeeling",
             "path_file:top_darjeeling",
-            "path:darjeeling",
-            "path:top_darjeeling"
+            "path_file:darjeeling",
+            "path:top_darjeeling",
+            "path:darjeeling"
           ]
         },
         {
@@ -710,12 +710,12 @@
           "reasons": [
             "name:darjeeling",
             "path_file:darjeeling",
-            "instances:darjeeling",
             "instances:top_darjeeling",
+            "instances:darjeeling",
             "instance:top_darjeeling",
-            "instance_names:darjeeling",
             "instance_names:top_darjeeling",
-            "path:darjeeling"
+            "instance_names:darjeeling",
+            "path:top_darjeeling"
           ]
         },
         {
@@ -725,12 +725,12 @@
           "reasons": [
             "name:darjeeling",
             "path_file:darjeeling",
-            "instances:darjeeling",
             "instances:top_darjeeling",
+            "instances:darjeeling",
             "instance:top_darjeeling",
-            "instance_names:darjeeling",
             "instance_names:top_darjeeling",
-            "path:darjeeling"
+            "instance_names:darjeeling",
+            "path:top_darjeeling"
           ]
         },
         {
@@ -768,13 +768,13 @@
           "project": "opentitan",
           "score": 84.733,
           "reasons": [
-            "name:top_earlgrey",
             "name:earlgrey",
+            "name:top_earlgrey",
             "module_name",
-            "path_file:top_earlgrey",
             "path_file:earlgrey",
-            "path:top_earlgrey",
-            "path:earlgrey"
+            "path_file:top_earlgrey",
+            "path:earlgrey",
+            "path:top_earlgrey"
           ]
         },
         {
@@ -784,12 +784,12 @@
           "reasons": [
             "name:earlgrey",
             "path_file:earlgrey",
-            "instances:top_earlgrey",
             "instances:earlgrey",
+            "instances:top_earlgrey",
             "instance:top_earlgrey",
-            "instance_names:top_earlgrey",
             "instance_names:earlgrey",
-            "path:top_earlgrey"
+            "instance_names:top_earlgrey",
+            "path:earlgrey"
           ]
         },
         {
@@ -799,12 +799,12 @@
           "reasons": [
             "name:earlgrey",
             "path_file:earlgrey",
-            "instances:top_earlgrey",
             "instances:earlgrey",
+            "instances:top_earlgrey",
             "instance:top_earlgrey",
-            "instance_names:top_earlgrey",
             "instance_names:earlgrey",
-            "path:top_earlgrey"
+            "instance_names:top_earlgrey",
+            "path:earlgrey"
           ]
         },
         {
@@ -814,12 +814,12 @@
           "reasons": [
             "name:earlgrey",
             "path_file:earlgrey",
-            "instances:top_earlgrey",
             "instances:earlgrey",
+            "instances:top_earlgrey",
             "instance:top_earlgrey",
-            "instance_names:top_earlgrey",
             "instance_names:earlgrey",
-            "path:top_earlgrey"
+            "instance_names:top_earlgrey",
+            "path:earlgrey"
           ]
         },
         {
@@ -829,12 +829,12 @@
           "reasons": [
             "name:earlgrey",
             "path_file:earlgrey",
-            "instances:top_earlgrey",
             "instances:earlgrey",
+            "instances:top_earlgrey",
             "instance:top_earlgrey",
-            "instance_names:top_earlgrey",
             "instance_names:earlgrey",
-            "path:top_earlgrey"
+            "instance_names:top_earlgrey",
+            "path:earlgrey"
           ]
         }
       ]
@@ -1644,8 +1644,8 @@
             "name:ibex_cs_registers",
             "name:registers",
             "name:cs",
-            "path_file:ibex_cs_registers",
             "path_file:registers",
+            "path_file:ibex_cs_registers",
             "path_file:cs",
             "module_name",
             "name:ibex"
@@ -1659,8 +1659,8 @@
             "name:ibex_cs_registers",
             "name:registers",
             "name:cs",
-            "path_file:ibex_cs_registers",
             "path_file:registers",
+            "path_file:ibex_cs_registers",
             "path_file:cs",
             "module_name",
             "name:ibex"
@@ -1724,11 +1724,11 @@
           "project": "opentitan",
           "score": 223.197,
           "reasons": [
-            "name:dpe",
             "name:keymgr_dpe",
+            "name:dpe",
             "name:keymgr",
-            "path_file:dpe",
             "path_file:keymgr_dpe",
+            "path_file:dpe",
             "instances:dpe",
             "module_name",
             "path_file:keymgr"
@@ -1758,8 +1758,8 @@
             "name:keymgr",
             "path_file:dpe",
             "path_file:keymgr",
-            "path:dpe",
             "path:keymgr_dpe",
+            "path:dpe",
             "path:keymgr"
           ]
         },
@@ -1768,8 +1768,8 @@
           "project": "opentitan",
           "score": 78.775,
           "reasons": [
-            "instances:dpe",
             "instances:keymgr_dpe",
+            "instances:dpe",
             "instances:keymgr",
             "ports:wrapper",
             "instance_names:dpe",
@@ -1805,14 +1805,14 @@
           "project": "opentitan",
           "score": 113.784,
           "reasons": [
-            "name:englishbreakfast",
             "name:top_englishbreakfast",
+            "name:englishbreakfast",
             "module_name",
-            "path_file:englishbreakfast",
             "path_file:top_englishbreakfast",
+            "path_file:englishbreakfast",
             "ports:wrapper",
-            "path:englishbreakfast",
-            "path:top_englishbreakfast"
+            "path:top_englishbreakfast",
+            "path:englishbreakfast"
           ]
         },
         {
@@ -1822,12 +1822,12 @@
           "reasons": [
             "name:englishbreakfast",
             "path_file:englishbreakfast",
-            "instances:englishbreakfast",
             "instances:top_englishbreakfast",
+            "instances:englishbreakfast",
             "instance:top_englishbreakfast",
-            "instance_names:englishbreakfast",
             "instance_names:top_englishbreakfast",
-            "path:englishbreakfast"
+            "instance_names:englishbreakfast",
+            "path:top_englishbreakfast"
           ]
         },
         {
@@ -2047,8 +2047,8 @@
             "name:clks",
             "name:ast_clks_byp",
             "name:byp",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "name:ast",
             "path_file:byp",
             "module_name"
@@ -2074,8 +2074,8 @@
           "project": "opentitan",
           "score": 177.093,
           "reasons": [
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "name:ast",
             "module_name",
             "instances:byp",
@@ -2246,12 +2246,12 @@
           "project": "opentitan",
           "score": 138.587,
           "reasons": [
-            "name:darjeeling",
             "name:top_darjeeling",
+            "name:darjeeling",
             "module_name",
             "instances:entropy",
-            "path_file:darjeeling",
             "path_file:top_darjeeling",
+            "path_file:darjeeling",
             "instances:src",
             "instances:core"
           ]
@@ -2474,8 +2474,8 @@
             "name:ast_clks_byp",
             "child_instance:prim_clock_buf",
             "name:byp",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "name:ast",
             "ports:vcaon_pok_por_i"
           ]
@@ -2486,8 +2486,8 @@
           "score": 250.17,
           "reasons": [
             "child_instance:prim_clock_buf",
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "name:ast",
             "module_name",
             "instances:byp",
@@ -2574,8 +2574,8 @@
             "name:spi",
             "instances:prim_racl_error_arb",
             "path_file:spi",
-            "instances:racl",
             "instances:arb",
+            "instances:racl",
             "instances:spi",
             "ports:device"
           ]
@@ -2587,8 +2587,8 @@
           "reasons": [
             "child_instance:prim_racl_error_arb",
             "instances:prim_racl_error_arb",
-            "instances:racl",
             "instances:arb",
+            "instances:racl",
             "instances:error",
             "ports:racl",
             "ports:error",
@@ -2602,8 +2602,8 @@
           "reasons": [
             "child_instance:prim_racl_error_arb",
             "instances:prim_racl_error_arb",
-            "instances:racl",
             "instances:arb",
+            "instances:racl",
             "instances:error",
             "ports:racl",
             "instance_names:racl",
@@ -2617,8 +2617,8 @@
           "reasons": [
             "child_instance:prim_racl_error_arb",
             "instances:prim_racl_error_arb",
-            "instances:racl",
             "instances:arb",
+            "instances:racl",
             "instances:error",
             "ports:racl",
             "ports:error",
@@ -2641,13 +2641,13 @@
           "score": 194.738,
           "reasons": [
             "child_instance:uart",
-            "name:darjeeling",
             "name:top_darjeeling",
+            "name:darjeeling",
             "module_name",
             "instances:uart",
             "ports:mio_out_o",
-            "ports:mio_in_i",
-            "ports:mio"
+            "ports:mio",
+            "ports:mio_in_i"
           ]
         },
         {
@@ -2658,11 +2658,11 @@
             "child_instance:uart",
             "instances:uart",
             "ports:mio_out_o",
-            "ports:mio_in_i",
             "ports:mio",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_in_i",
-            "port:mio_out_o"
+            "port:mio_out_o",
+            "port:mio_in_i"
           ]
         },
         {
@@ -2673,11 +2673,11 @@
             "child_instance:uart",
             "instances:uart",
             "ports:mio_out_o",
-            "ports:mio_in_i",
             "ports:mio",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_in_i",
-            "port:mio_out_o"
+            "port:mio_out_o",
+            "port:mio_in_i"
           ]
         },
         {
@@ -2688,11 +2688,11 @@
             "name:darjeeling",
             "path_file:darjeeling",
             "ports:uart",
-            "instances:darjeeling",
             "instances:top_darjeeling",
+            "instances:darjeeling",
             "instance:top_darjeeling",
-            "instance_names:darjeeling",
-            "instance_names:top_darjeeling"
+            "instance_names:top_darjeeling",
+            "instance_names:darjeeling"
           ]
         },
         {
@@ -2703,11 +2703,11 @@
             "name:darjeeling",
             "path_file:darjeeling",
             "ports:uart",
-            "instances:darjeeling",
             "instances:top_darjeeling",
+            "instances:darjeeling",
             "instance:top_darjeeling",
-            "instance_names:darjeeling",
-            "instance_names:top_darjeeling"
+            "instance_names:top_darjeeling",
+            "instance_names:darjeeling"
           ]
         }
       ]
@@ -2898,8 +2898,8 @@
             "name:clks",
             "name:ast_clks_byp",
             "name:byp",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "name:ast",
             "path_file:byp",
             "module_name"
@@ -2910,8 +2910,8 @@
           "project": "opentitan",
           "score": 149.434,
           "reasons": [
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "name:ast",
             "module_name",
             "instances:byp",
@@ -3065,12 +3065,12 @@
           "project": "opentitan",
           "score": 127.089,
           "reasons": [
-            "name:darjeeling",
             "name:top_darjeeling",
+            "name:darjeeling",
             "module_name",
             "ports:enables",
-            "path_file:darjeeling",
             "path_file:top_darjeeling",
+            "path_file:darjeeling",
             "path_file",
             "port:enables"
           ]
@@ -3082,10 +3082,10 @@
           "reasons": [
             "name:darjeeling",
             "path_file:darjeeling",
-            "instances:darjeeling",
             "instances:top_darjeeling",
-            "instance_names:darjeeling",
+            "instances:darjeeling",
             "instance_names:top_darjeeling",
+            "instance_names:darjeeling",
             "path:top_darjeeling",
             "path:darjeeling"
           ]
@@ -3097,10 +3097,10 @@
           "reasons": [
             "name:darjeeling",
             "path_file:darjeeling",
-            "instances:darjeeling",
             "instances:top_darjeeling",
-            "instance_names:darjeeling",
+            "instances:darjeeling",
             "instance_names:top_darjeeling",
+            "instance_names:darjeeling",
             "path:top_darjeeling",
             "path:darjeeling"
           ]
@@ -3180,12 +3180,12 @@
           "project": "opentitan",
           "score": 132.124,
           "reasons": [
-            "name:top_earlgrey",
             "name:earlgrey",
+            "name:top_earlgrey",
             "module_name",
             "instances:entropy",
-            "path_file:top_earlgrey",
             "path_file:earlgrey",
+            "path_file:top_earlgrey",
             "instances:src",
             "instances:core"
           ]
@@ -3763,8 +3763,8 @@
             "name:ibex_cs_registers",
             "name:registers",
             "name:cs",
-            "path_file:ibex_cs_registers",
             "path_file:registers",
+            "path_file:ibex_cs_registers",
             "path_file:cs",
             "module_name",
             "name:ibex"
@@ -3778,8 +3778,8 @@
             "name:ibex_cs_registers",
             "name:registers",
             "name:cs",
-            "path_file:ibex_cs_registers",
             "path_file:registers",
+            "path_file:ibex_cs_registers",
             "path_file:cs",
             "module_name",
             "name:ibex"
@@ -3843,11 +3843,11 @@
           "project": "opentitan",
           "score": 223.197,
           "reasons": [
-            "name:dpe",
             "name:keymgr_dpe",
+            "name:dpe",
             "name:keymgr",
-            "path_file:dpe",
             "path_file:keymgr_dpe",
+            "path_file:dpe",
             "instances:dpe",
             "module_name",
             "path_file:keymgr"
@@ -3877,8 +3877,8 @@
             "name:keymgr",
             "path_file:dpe",
             "path_file:keymgr",
-            "path:dpe",
             "path:keymgr_dpe",
+            "path:dpe",
             "path:keymgr"
           ]
         },
@@ -3887,8 +3887,8 @@
           "project": "opentitan",
           "score": 78.775,
           "reasons": [
-            "instances:dpe",
             "instances:keymgr_dpe",
+            "instances:dpe",
             "instances:keymgr",
             "ports:wrapper",
             "instance_names:dpe",
@@ -3924,14 +3924,14 @@
           "project": "opentitan",
           "score": 113.784,
           "reasons": [
-            "name:englishbreakfast",
             "name:top_englishbreakfast",
+            "name:englishbreakfast",
             "module_name",
-            "path_file:englishbreakfast",
             "path_file:top_englishbreakfast",
+            "path_file:englishbreakfast",
             "ports:wrapper",
-            "path:englishbreakfast",
-            "path:top_englishbreakfast"
+            "path:top_englishbreakfast",
+            "path:englishbreakfast"
           ]
         },
         {
@@ -3941,12 +3941,12 @@
           "reasons": [
             "name:englishbreakfast",
             "path_file:englishbreakfast",
-            "instances:englishbreakfast",
             "instances:top_englishbreakfast",
+            "instances:englishbreakfast",
             "instance:top_englishbreakfast",
-            "instance_names:englishbreakfast",
             "instance_names:top_englishbreakfast",
-            "path:englishbreakfast"
+            "instance_names:englishbreakfast",
+            "path:top_englishbreakfast"
           ]
         },
         {
@@ -4740,8 +4740,8 @@
           "project": "opentitan",
           "score": 270.078,
           "reasons": [
-            "name:sampling",
             "name:pinmux_strap_sampling",
+            "name:sampling",
             "name:strap",
             "name:pinmux",
             "path_file:sampling",
@@ -4755,8 +4755,8 @@
           "project": "opentitan",
           "score": 270.078,
           "reasons": [
-            "name:sampling",
             "name:pinmux_strap_sampling",
+            "name:sampling",
             "name:strap",
             "name:pinmux",
             "path_file:sampling",
@@ -4770,8 +4770,8 @@
           "project": "opentitan",
           "score": 270.078,
           "reasons": [
-            "name:sampling",
             "name:pinmux_strap_sampling",
+            "name:sampling",
             "name:strap",
             "name:pinmux",
             "path_file:sampling",
@@ -5139,8 +5139,8 @@
             "name:clks",
             "name:ast_clks_byp",
             "name:byp",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "name:ast",
             "path_file:byp",
             "module_name"
@@ -5151,8 +5151,8 @@
           "project": "opentitan",
           "score": 146.164,
           "reasons": [
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "name:ast",
             "module_name",
             "instances:byp",
@@ -5292,13 +5292,13 @@
           "project": "opentitan",
           "score": 91.196,
           "reasons": [
-            "name:darjeeling",
             "name:top_darjeeling",
+            "name:darjeeling",
             "module_name",
-            "path_file:darjeeling",
             "path_file:top_darjeeling",
-            "path:darjeeling",
-            "path:top_darjeeling"
+            "path_file:darjeeling",
+            "path:top_darjeeling",
+            "path:darjeeling"
           ]
         },
         {
@@ -5308,12 +5308,12 @@
           "reasons": [
             "name:darjeeling",
             "path_file:darjeeling",
-            "instances:darjeeling",
             "instances:top_darjeeling",
+            "instances:darjeeling",
             "instance:top_darjeeling",
-            "instance_names:darjeeling",
             "instance_names:top_darjeeling",
-            "path:darjeeling"
+            "instance_names:darjeeling",
+            "path:top_darjeeling"
           ]
         },
         {
@@ -5323,12 +5323,12 @@
           "reasons": [
             "name:darjeeling",
             "path_file:darjeeling",
-            "instances:darjeeling",
             "instances:top_darjeeling",
+            "instances:darjeeling",
             "instance:top_darjeeling",
-            "instance_names:darjeeling",
             "instance_names:top_darjeeling",
-            "path:darjeeling"
+            "instance_names:darjeeling",
+            "path:top_darjeeling"
           ]
         },
         {
@@ -7091,8 +7091,8 @@
           "score": 327.893,
           "reasons": [
             "name:ac_range_check",
-            "name:range",
             "name:ac",
+            "name:range",
             "name:check",
             "path_file:ac_range_check",
             "path_file:ac",
@@ -8642,11 +8642,11 @@
           "project": "opentitan",
           "score": 285.697,
           "reasons": [
-            "name:chip_englishbreakfast_cw305",
             "name:cw305",
+            "name:chip_englishbreakfast_cw305",
             "name:chip",
-            "path_file:chip_englishbreakfast_cw305",
             "path_file:cw305",
+            "path_file:chip_englishbreakfast_cw305",
             "name:englishbreakfast",
             "path_file:chip",
             "module_name"
@@ -9482,13 +9482,13 @@
           "project": "ibex",
           "score": 332.291,
           "reasons": [
-            "name:prim_ram_1r1w_async_adv",
             "name:1r1w",
+            "name:prim_ram_1r1w_async_adv",
             "name:adv",
             "name:async",
             "name:ram",
-            "path_file:prim_ram_1r1w_async_adv",
             "path_file:1r1w",
+            "path_file:prim_ram_1r1w_async_adv",
             "instances:1r1w"
           ]
         },
@@ -9497,13 +9497,13 @@
           "project": "opentitan",
           "score": 332.291,
           "reasons": [
-            "name:prim_ram_1r1w_async_adv",
             "name:1r1w",
+            "name:prim_ram_1r1w_async_adv",
             "name:adv",
             "name:async",
             "name:ram",
-            "path_file:prim_ram_1r1w_async_adv",
             "path_file:1r1w",
+            "path_file:prim_ram_1r1w_async_adv",
             "instances:1r1w"
           ]
         },
@@ -9516,8 +9516,8 @@
             "name:adv",
             "name:ram",
             "path_file:1r1w",
-            "instances:prim_ram_1r1w_async_adv",
             "instances:1r1w",
+            "instances:prim_ram_1r1w_async_adv",
             "path_file:adv",
             "path_file:ram"
           ]
@@ -9531,8 +9531,8 @@
             "name:adv",
             "name:ram",
             "path_file:1r1w",
-            "instances:prim_ram_1r1w_async_adv",
             "instances:1r1w",
+            "instances:prim_ram_1r1w_async_adv",
             "path_file:adv",
             "path_file:ram"
           ]
@@ -11502,14 +11502,14 @@
           "project": "opentitan",
           "score": 105.542,
           "reasons": [
-            "instances:sensor_ctrl",
             "instances:sensor",
+            "instances:sensor_ctrl",
             "instances:clkmgr",
             "ports:clkmgr",
             "instance_names:sensor",
             "instances:ctrl",
             "ports:ctrl",
-            "instance:sensor_ctrl"
+            "instance:clkmgr"
           ]
         },
         {
@@ -12565,8 +12565,8 @@
           "reasons": [
             "name:aes_key_expand",
             "name:expand",
-            "path_file:expand",
             "path_file:aes_key_expand",
+            "path_file:expand",
             "name:key",
             "name:aes",
             "module_name",
@@ -12643,8 +12643,8 @@
           "project": "opentitan",
           "score": 385.031,
           "reasons": [
-            "name:unopt",
             "name:aes_dom_dep_mul_gf2pn_unopt",
+            "name:unopt",
             "name:dep",
             "name:gf2pn",
             "name:dom",
@@ -13280,8 +13280,8 @@
             "name:2sync",
             "module_name",
             "name:flop",
-            "path_file:2sync",
             "path_file:prim_flop_2sync",
+            "path_file:2sync",
             "path_file:flop",
             "name:prim"
           ]
@@ -13295,8 +13295,8 @@
             "name:2sync",
             "module_name",
             "name:flop",
-            "path_file:2sync",
             "path_file:prim_flop_2sync",
+            "path_file:2sync",
             "path_file:flop",
             "name:prim"
           ]
@@ -13431,8 +13431,8 @@
             "name:clks",
             "name:ast_clks_byp",
             "name:byp",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "name:ast",
             "path_file:byp",
             "module_name"
@@ -13458,8 +13458,8 @@
           "project": "opentitan",
           "score": 177.093,
           "reasons": [
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "name:ast",
             "module_name",
             "instances:byp",
@@ -13649,13 +13649,13 @@
           "project": "opentitan",
           "score": 101.798,
           "reasons": [
-            "name:englishbreakfast",
             "name:top_englishbreakfast",
+            "name:englishbreakfast",
             "module_name",
-            "path_file:englishbreakfast",
             "path_file:top_englishbreakfast",
-            "path:englishbreakfast",
-            "path:top_englishbreakfast"
+            "path_file:englishbreakfast",
+            "path:top_englishbreakfast",
+            "path:englishbreakfast"
           ]
         },
         {
@@ -13665,12 +13665,12 @@
           "reasons": [
             "name:englishbreakfast",
             "path_file:englishbreakfast",
-            "instances:englishbreakfast",
             "instances:top_englishbreakfast",
+            "instances:englishbreakfast",
             "instance:top_englishbreakfast",
-            "instance_names:englishbreakfast",
             "instance_names:top_englishbreakfast",
-            "path:englishbreakfast"
+            "instance_names:englishbreakfast",
+            "path:top_englishbreakfast"
           ]
         },
         {
@@ -13678,8 +13678,8 @@
           "project": "opentitan",
           "score": 8.171,
           "reasons": [
-            "path:englishbreakfast",
-            "path:top_englishbreakfast"
+            "path:top_englishbreakfast",
+            "path:englishbreakfast"
           ]
         },
         {
@@ -13687,8 +13687,8 @@
           "project": "opentitan",
           "score": 8.171,
           "reasons": [
-            "path:englishbreakfast",
-            "path:top_englishbreakfast"
+            "path:top_englishbreakfast",
+            "path:englishbreakfast"
           ]
         },
         {
@@ -13696,8 +13696,8 @@
           "project": "opentitan",
           "score": 8.171,
           "reasons": [
-            "path:englishbreakfast",
-            "path:top_englishbreakfast"
+            "path:top_englishbreakfast",
+            "path:englishbreakfast"
           ]
         }
       ]
@@ -13719,8 +13719,8 @@
             "name:clks",
             "name:ast_clks_byp",
             "name:byp",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "name:ast",
             "path_file:byp",
             "module_name"
@@ -13746,8 +13746,8 @@
           "project": "opentitan",
           "score": 177.093,
           "reasons": [
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "name:ast",
             "module_name",
             "instances:byp",
@@ -14438,8 +14438,8 @@
           "reasons": [
             "child_instance:ast_clks_byp",
             "module_name",
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "instances:byp",
             "instances:ast",
             "ports:ast",
@@ -15634,8 +15634,8 @@
             "name:ibex_cs_registers",
             "name:registers",
             "name:cs",
-            "path_file:ibex_cs_registers",
             "path_file:registers",
+            "path_file:ibex_cs_registers",
             "path_file:cs",
             "module_name",
             "name:ibex"
@@ -15649,8 +15649,8 @@
             "name:ibex_cs_registers",
             "name:registers",
             "name:cs",
-            "path_file:ibex_cs_registers",
             "path_file:registers",
+            "path_file:ibex_cs_registers",
             "path_file:cs",
             "module_name",
             "name:ibex"
@@ -16075,8 +16075,8 @@
             "name:byp",
             "name:ast",
             "module_name",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "path_file:byp"
           ]
         },
@@ -16102,8 +16102,8 @@
           "reasons": [
             "name:ast",
             "module_name",
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "instances:entropy",
             "instances:byp",
             "path_file:ast",
@@ -16501,8 +16501,8 @@
             "name:ast",
             "module_name",
             "ports:vcaon",
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "instances:prim_clock_buf",
             "ports:por"
           ]
@@ -16656,8 +16656,8 @@
             "name:darjeeling",
             "module_name",
             "ports:mio_out_o",
-            "ports:mio_in_i",
             "ports:mio",
+            "ports:mio_in_i",
             "path_file:top_darjeeling"
           ]
         },
@@ -16668,12 +16668,12 @@
           "reasons": [
             "child_instance:uart",
             "ports:mio_out_o",
-            "ports:mio_in_i",
             "ports:mio",
+            "ports:mio_in_i",
             "ports:out",
             "instances:uart",
-            "port:mio_in_i",
-            "port:mio_out_o"
+            "port:mio_out_o",
+            "port:mio_in_i"
           ]
         },
         {
@@ -16683,12 +16683,12 @@
           "reasons": [
             "child_instance:uart",
             "ports:mio_out_o",
-            "ports:mio_in_i",
             "ports:mio",
+            "ports:mio_in_i",
             "ports:out",
             "instances:uart",
-            "port:mio_in_i",
-            "port:mio_out_o"
+            "port:mio_out_o",
+            "port:mio_in_i"
           ]
         },
         {
@@ -16911,8 +16911,8 @@
             "name:byp",
             "name:ast",
             "module_name",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "ports:always_ff"
           ]
         },
@@ -16923,8 +16923,8 @@
           "reasons": [
             "name:ast",
             "module_name",
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "instances:byp",
             "path_file:ast",
             "instances:ast",
@@ -17849,8 +17849,8 @@
             "name:ibex_cs_registers",
             "name:registers",
             "name:cs",
-            "path_file:ibex_cs_registers",
             "path_file:registers",
+            "path_file:ibex_cs_registers",
             "path_file:cs",
             "module_name",
             "name:ibex"
@@ -17864,8 +17864,8 @@
             "name:ibex_cs_registers",
             "name:registers",
             "name:cs",
-            "path_file:ibex_cs_registers",
             "path_file:registers",
+            "path_file:ibex_cs_registers",
             "path_file:cs",
             "module_name",
             "name:ibex"
@@ -18863,8 +18863,8 @@
           "project": "opentitan",
           "score": 227.24,
           "reasons": [
-            "name:sampling",
             "name:pinmux_strap_sampling",
+            "name:sampling",
             "name:strap",
             "name:pinmux",
             "module_name",
@@ -18878,8 +18878,8 @@
           "project": "opentitan",
           "score": 227.24,
           "reasons": [
-            "name:sampling",
             "name:pinmux_strap_sampling",
+            "name:sampling",
             "name:strap",
             "name:pinmux",
             "module_name",
@@ -18893,8 +18893,8 @@
           "project": "opentitan",
           "score": 227.24,
           "reasons": [
-            "name:sampling",
             "name:pinmux_strap_sampling",
+            "name:sampling",
             "name:strap",
             "name:pinmux",
             "module_name",
@@ -19291,8 +19291,8 @@
             "name:byp",
             "name:ast",
             "module_name",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "path_file:byp"
           ]
         },
@@ -19303,8 +19303,8 @@
           "reasons": [
             "name:ast",
             "module_name",
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "instances:byp",
             "path_file:ast",
             "instances:ast",
@@ -20822,8 +20822,8 @@
           "reasons": [
             "name:aes_masked_inverse_gf2p8",
             "name:masked",
-            "name:inverse",
             "name:gf2p8",
+            "name:inverse",
             "name:aes",
             "path_file:masked",
             "module_name",
@@ -20836,13 +20836,13 @@
           "score": 250.058,
           "reasons": [
             "name:masked",
-            "name:inverse",
             "name:gf2p8",
+            "name:inverse",
             "name:aes",
             "path_file:masked",
             "instances:masked",
-            "instances:inverse",
-            "instances:gf2p8"
+            "instances:gf2p8",
+            "instances:inverse"
           ]
         },
         {
@@ -20880,8 +20880,8 @@
           "project": "opentitan",
           "score": 140.923,
           "reasons": [
-            "name:inverse",
             "name:gf2p8",
+            "name:inverse",
             "name:aes",
             "instances:inverse",
             "path_file:aes",
@@ -21414,8 +21414,8 @@
           "score": 280.519,
           "reasons": [
             "name:ac_range_check",
-            "name:range",
             "name:ac",
+            "name:range",
             "name:check",
             "path_file:ac_range_check",
             "path_file:ac",
@@ -22164,8 +22164,8 @@
           "score": 270.19,
           "reasons": [
             "name:aes_dom_inverse_gf2p8",
-            "name:inverse",
             "name:gf2p8",
+            "name:inverse",
             "name:dom",
             "name:aes",
             "module_name",
@@ -22182,8 +22182,8 @@
             "name:aes",
             "path_file:dom",
             "instances:aes_dom_inverse_gf2p8",
-            "instances:inverse",
             "instances:gf2p8",
+            "instances:inverse",
             "instances:dom",
             "path_file:aes"
           ]
@@ -22208,11 +22208,11 @@
           "project": "opentitan",
           "score": 168.817,
           "reasons": [
-            "name:inverse",
             "name:gf2p8",
+            "name:inverse",
             "name:aes",
-            "instances:inverse",
             "instances:gf2p8",
+            "instances:inverse",
             "path_file:aes",
             "instances:aes",
             "ports:aes"
@@ -22223,11 +22223,11 @@
           "project": "opentitan",
           "score": 168.817,
           "reasons": [
-            "name:inverse",
             "name:gf2p8",
+            "name:inverse",
             "name:aes",
-            "instances:inverse",
             "instances:gf2p8",
+            "instances:inverse",
             "path_file:aes",
             "instances:aes",
             "ports:aes"
@@ -23017,12 +23017,12 @@
           "project": "opentitan",
           "score": 232.887,
           "reasons": [
-            "name:chip_englishbreakfast_cw305",
             "name:cw305",
+            "name:chip_englishbreakfast_cw305",
             "name:chip",
             "name:englishbreakfast",
-            "path_file:chip_englishbreakfast_cw305",
             "path_file:cw305",
+            "path_file:chip_englishbreakfast_cw305",
             "module_name",
             "path_file:chip"
           ]
@@ -23959,13 +23959,13 @@
           "project": "ibex",
           "score": 316.878,
           "reasons": [
-            "name:prim_ram_1r1w_async_adv",
             "name:1r1w",
+            "name:prim_ram_1r1w_async_adv",
             "name:async",
             "name:ram",
             "name:adv",
-            "path_file:prim_ram_1r1w_async_adv",
             "path_file:1r1w",
+            "path_file:prim_ram_1r1w_async_adv",
             "module_name"
           ]
         },
@@ -23974,13 +23974,13 @@
           "project": "opentitan",
           "score": 316.878,
           "reasons": [
-            "name:prim_ram_1r1w_async_adv",
             "name:1r1w",
+            "name:prim_ram_1r1w_async_adv",
             "name:async",
             "name:ram",
             "name:adv",
-            "path_file:prim_ram_1r1w_async_adv",
             "path_file:1r1w",
+            "path_file:prim_ram_1r1w_async_adv",
             "module_name"
           ]
         },
@@ -23993,8 +23993,8 @@
             "name:ram",
             "name:adv",
             "path_file:1r1w",
-            "instances:prim_ram_1r1w_async_adv",
             "instances:1r1w",
+            "instances:prim_ram_1r1w_async_adv",
             "path_file:ram",
             "path_file:adv"
           ]
@@ -24008,8 +24008,8 @@
             "name:ram",
             "name:adv",
             "path_file:1r1w",
-            "instances:prim_ram_1r1w_async_adv",
             "instances:1r1w",
+            "instances:prim_ram_1r1w_async_adv",
             "path_file:ram",
             "path_file:adv"
           ]
@@ -26017,14 +26017,14 @@
           "project": "opentitan",
           "score": 88.208,
           "reasons": [
-            "instances:sensor_ctrl",
             "instances:sensor",
+            "instances:sensor_ctrl",
             "instances:clkmgr",
             "ports:clkmgr",
             "instances:ctrl",
             "instance_names:sensor",
-            "instance:sensor_ctrl",
-            "instance:clkmgr"
+            "instance:clkmgr",
+            "instance:sensor_ctrl"
           ]
         },
         {
@@ -27095,8 +27095,8 @@
           "reasons": [
             "name:aes_key_expand",
             "name:expand",
-            "path_file:expand",
             "path_file:aes_key_expand",
+            "path_file:expand",
             "name:key",
             "name:aes",
             "module_name",
@@ -27111,8 +27111,8 @@
             "name:aes",
             "path_file:aes",
             "instances:aes",
-            "parents:expand",
             "parents:aes_key_expand",
+            "parents:expand",
             "parents:key",
             "instance_names:aes",
             "parents:aes"
@@ -27178,8 +27178,8 @@
           "project": "opentitan",
           "score": 342.003,
           "reasons": [
-            "name:unopt",
             "name:aes_dom_dep_mul_gf2pn_unopt",
+            "name:unopt",
             "name:dep",
             "name:gf2pn",
             "name:mul",
@@ -27229,8 +27229,8 @@
             "name:aes",
             "path_file:dom",
             "path_file:aes",
-            "parents:unopt",
-            "parents:aes_dom_dep_mul_gf2pn_unopt"
+            "parents:aes_dom_dep_mul_gf2pn_unopt",
+            "parents:unopt"
           ]
         },
         {
@@ -27844,8 +27844,8 @@
             "name:2sync",
             "module_name",
             "name:flop",
-            "path_file:2sync",
             "path_file:prim_flop_2sync",
+            "path_file:2sync",
             "path_file:flop",
             "name:prim"
           ]
@@ -27859,8 +27859,8 @@
             "name:2sync",
             "module_name",
             "name:flop",
-            "path_file:2sync",
             "path_file:prim_flop_2sync",
+            "path_file:2sync",
             "path_file:flop",
             "name:prim"
           ]
@@ -28031,8 +28031,8 @@
             "name:byp",
             "name:ast",
             "module_name",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "path_file:byp"
           ]
         },
@@ -28058,8 +28058,8 @@
           "reasons": [
             "name:ast",
             "module_name",
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "instances:entropy",
             "instances:byp",
             "path_file:ast",
@@ -28352,8 +28352,8 @@
             "name:byp",
             "name:ast",
             "module_name",
-            "path_file:ast_clks_byp",
             "path_file:clks",
+            "path_file:ast_clks_byp",
             "path_file:byp"
           ]
         },
@@ -28379,8 +28379,8 @@
           "reasons": [
             "name:ast",
             "module_name",
-            "instances:ast_clks_byp",
             "instances:clks",
+            "instances:ast_clks_byp",
             "instances:entropy",
             "instances:byp",
             "path_file:ast",

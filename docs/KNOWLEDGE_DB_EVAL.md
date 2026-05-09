@@ -62,7 +62,43 @@ out\eval_results\retrieval_report.md
 out\eval_results\detailed_runs.json
 out\eval_results\predictions_for_verilogeval.json
 out\eval_results\verilogeval_adapter.json
+
+out\manticore_analysis\manticore_retrieval_report.json
+out\manticore_analysis\manticore_retrieval_report.md
+out\manticore_analysis\manticore_detailed_runs.json
+out\manticore_analysis\manticore_documents.jsonl
+out\manticore_analysis\manticore_schema.sql
+
+out\reports\kg_eval_report.pdf
+out\reports\kg_eval_report.json
 ```
+
+## Manticore Search Evaluation
+
+`workflow.ps1 -Step benchmark` also runs a Manticore Search-style retrieval
+evaluation. The repository is expected at:
+
+```text
+tools\manticoresearch
+```
+
+That directory is a local checkout of:
+
+```text
+https://github.com/manticoresoftware/manticoresearch
+```
+
+The current runner does not require a running `searchd` service. It models the
+Manticore full-text behavior used for this benchmark with a local BM25F ranker,
+then writes both load-ready documents and a Manticore SQL schema for a later
+server-backed run.
+
+Compared methods:
+
+- `baseline`: existing parser/LSP overlap retrieval
+- `kg`: KG-aware retrieval with labels, summaries, and graph context
+- `manticore_parser_lsp`: BM25F over parser/LSP fields
+- `manticore_hybrid`: BM25F over parser/LSP plus KG fields
 
 ## VerilogEval
 

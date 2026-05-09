@@ -24,7 +24,17 @@ def wrap_line(text, width=100):
     return lines
 
 
-def build_lines(kg_summary, benchmark_summary, retrieval_report, multiaxis_summary, multiaxis_report, retrieval_metadata, multiaxis_metadata):
+def build_lines(
+    kg_summary,
+    benchmark_summary,
+    retrieval_report,
+    multiaxis_summary,
+    multiaxis_report,
+    retrieval_metadata,
+    multiaxis_metadata,
+    manticore_report=None,
+    manticore_metadata=None,
+):
     lines = []
     lines.append("RTL Knowledge Graph Evaluation Report")
     lines.append("")
@@ -83,7 +93,17 @@ def build_lines(kg_summary, benchmark_summary, retrieval_report, multiaxis_summa
     if multiaxis_metadata:
         lines.append(f"Multi-axis metadata: {multiaxis_metadata}")
         lines.append("")
-    lines.append("7. VerilogEval Status")
+    if manticore_report:
+        lines.append("7. Manticore Search Retrieval")
+        lines.append("This evaluation adds a Manticore Search-style BM25F full-text ranker over parser/LSP fields.")
+        lines.append("It also reports a hybrid variant that indexes KG labels, summaries, and reverse parent context.")
+        for mode in ["manticore_parser_lsp", "manticore_hybrid"]:
+            metrics = manticore_report["by_mode"][mode]
+            lines.append(f"{mode}: hit@1={metrics['hit_at_1']}, hit@3={metrics['hit_at_3']}, mrr={metrics['mrr']}, weighted_hit@1={metrics['weighted_hit_at_1']}")
+        if manticore_metadata:
+            lines.append(f"Manticore metadata: {manticore_metadata}")
+        lines.append("")
+    lines.append("8. VerilogEval Status")
     lines.append("Official verilogeval runner/package was not available in this workspace.")
     lines.append("All score_100 numbers are proxy scores, not official VerilogEval scores.")
     return lines
@@ -164,6 +184,8 @@ def main():
     ap.add_argument("--retrieval-report", required=True)
     ap.add_argument("--multiaxis-summary", required=True)
     ap.add_argument("--multiaxis-report", required=True)
+    ap.add_argument("--manticore-report", default=None)
+    ap.add_argument("--manticore-metadata", default=None)
     ap.add_argument("--out-pdf", required=True)
     ap.add_argument("--out-json", required=True)
     args = ap.parse_args()
@@ -177,6 +199,8 @@ def main():
     multiaxis_metadata_path = Path(args.multiaxis_report).with_name("multiaxis_metadata.json")
     retrieval_metadata = json.loads(retrieval_metadata_path.read_text(encoding="utf-8")) if retrieval_metadata_path.exists() else {}
     multiaxis_metadata = json.loads(multiaxis_metadata_path.read_text(encoding="utf-8")) if multiaxis_metadata_path.exists() else {}
+    manticore_report = json.loads(Path(args.manticore_report).read_text(encoding="utf-8")) if args.manticore_report and Path(args.manticore_report).exists() else {}
+    manticore_metadata = json.loads(Path(args.manticore_metadata).read_text(encoding="utf-8")) if args.manticore_metadata and Path(args.manticore_metadata).exists() else {}
 
     report_json = {
         "kg_summary": kg_summary,
@@ -186,11 +210,23 @@ def main():
         "multiaxis_summary": multiaxis_summary,
         "multiaxis_report": multiaxis_report,
         "multiaxis_metadata": multiaxis_metadata,
+        "manticore_report": manticore_report,
+        "manticore_metadata": manticore_metadata,
     }
     Path(args.out_json).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out_json).write_text(json.dumps(report_json, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    lines = build_lines(kg_summary, benchmark_summary, retrieval_report, multiaxis_summary, multiaxis_report, retrieval_metadata, multiaxis_metadata)
+    lines = build_lines(
+        kg_summary,
+        benchmark_summary,
+        retrieval_report,
+        multiaxis_summary,
+        multiaxis_report,
+        retrieval_metadata,
+        multiaxis_metadata,
+        manticore_report,
+        manticore_metadata,
+    )
     pdf_bytes = build_pdf_bytes(lines)
     Path(args.out_pdf).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out_pdf).write_bytes(pdf_bytes)

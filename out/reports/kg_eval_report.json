@@ -165,10 +165,11 @@
   "retrieval_metadata": {
     "modules_indexed": 732,
     "approved_labels": {
-      "path": "out\\label_approval\\auto_approved_labels.jsonl",
+      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
       "module_labels_added": 24,
       "ip_context_labels_added": 69
-    }
+    },
+    "kg_version_tag": null
   },
   "multiaxis_summary": {
     "per_cell": 5,
@@ -410,9 +411,378 @@
   "multiaxis_metadata": {
     "modules_indexed": 732,
     "approved_labels": {
-      "path": "out\\label_approval\\auto_approved_labels.jsonl",
+      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
       "module_labels_added": 24,
       "ip_context_labels_added": 69
+    },
+    "kg_version_tag": null
+  },
+  "manticore_report": {
+    "by_mode": {
+      "baseline": {
+        "count": 175,
+        "hit_at_1": 0.8514,
+        "hit_at_3": 0.8629,
+        "mrr": 0.8686,
+        "weighted_hit_at_1": 0.8393,
+        "by_level": {
+          "L1": {
+            "count": 35,
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8857,
+            "mrr": 0.8714
+          },
+          "L2": {
+            "count": 35,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L3": {
+            "count": 35,
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8857
+          },
+          "L4": {
+            "count": 35,
+            "hit_at_1": 0.6857,
+            "hit_at_3": 0.7143,
+            "mrr": 0.7286
+          },
+          "L5": {
+            "count": 35,
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8571
+          }
+        },
+        "by_type": {
+          "code_explanation": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "comparison_similarity": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "documentation_summary": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "function_similarity": {
+            "count": 25,
+            "hit_at_1": 0.56,
+            "hit_at_3": 0.6,
+            "mrr": 0.66
+          },
+          "generation_design": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "search_navigation": {
+            "count": 25,
+            "hit_at_1": 0.6,
+            "hit_at_3": 0.6,
+            "mrr": 0.6
+          },
+          "structure_understanding": {
+            "count": 25,
+            "hit_at_1": 0.8,
+            "hit_at_3": 0.84,
+            "mrr": 0.82
+          }
+        }
+      },
+      "kg": {
+        "count": 175,
+        "hit_at_1": 0.8514,
+        "hit_at_3": 0.8629,
+        "mrr": 0.8562,
+        "weighted_hit_at_1": 0.8423,
+        "by_level": {
+          "L1": {
+            "count": 35,
+            "hit_at_1": 0.8286,
+            "hit_at_3": 0.8857,
+            "mrr": 0.8524
+          },
+          "L2": {
+            "count": 35,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L3": {
+            "count": 35,
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8571
+          },
+          "L4": {
+            "count": 35,
+            "hit_at_1": 0.7143,
+            "hit_at_3": 0.7143,
+            "mrr": 0.7143
+          },
+          "L5": {
+            "count": 35,
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8571,
+            "mrr": 0.8571
+          }
+        },
+        "by_type": {
+          "code_explanation": {
+            "count": 25,
+            "hit_at_1": 0.96,
+            "hit_at_3": 1.0,
+            "mrr": 0.9733
+          },
+          "comparison_similarity": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "documentation_summary": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "function_similarity": {
+            "count": 25,
+            "hit_at_1": 0.56,
+            "hit_at_3": 0.6,
+            "mrr": 0.58
+          },
+          "generation_design": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "search_navigation": {
+            "count": 25,
+            "hit_at_1": 0.6,
+            "hit_at_3": 0.6,
+            "mrr": 0.6
+          },
+          "structure_understanding": {
+            "count": 25,
+            "hit_at_1": 0.84,
+            "hit_at_3": 0.84,
+            "mrr": 0.84
+          }
+        }
+      },
+      "manticore_parser_lsp": {
+        "count": 175,
+        "hit_at_1": 0.8629,
+        "hit_at_3": 0.8914,
+        "mrr": 0.8857,
+        "weighted_hit_at_1": 0.8401,
+        "by_level": {
+          "L1": {
+            "count": 35,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L2": {
+            "count": 35,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L3": {
+            "count": 35,
+            "hit_at_1": 0.8,
+            "hit_at_3": 0.8286,
+            "mrr": 0.8429
+          },
+          "L4": {
+            "count": 35,
+            "hit_at_1": 0.6571,
+            "hit_at_3": 0.7429,
+            "mrr": 0.719
+          },
+          "L5": {
+            "count": 35,
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8857,
+            "mrr": 0.8667
+          }
+        },
+        "by_type": {
+          "code_explanation": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "comparison_similarity": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "documentation_summary": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "function_similarity": {
+            "count": 25,
+            "hit_at_1": 0.6,
+            "hit_at_3": 0.6,
+            "mrr": 0.68
+          },
+          "generation_design": {
+            "count": 25,
+            "hit_at_1": 0.96,
+            "hit_at_3": 1.0,
+            "mrr": 0.9733
+          },
+          "search_navigation": {
+            "count": 25,
+            "hit_at_1": 0.52,
+            "hit_at_3": 0.64,
+            "mrr": 0.5667
+          },
+          "structure_understanding": {
+            "count": 25,
+            "hit_at_1": 0.96,
+            "hit_at_3": 1.0,
+            "mrr": 0.98
+          }
+        }
+      },
+      "manticore_hybrid": {
+        "count": 175,
+        "hit_at_1": 0.8686,
+        "hit_at_3": 0.8914,
+        "mrr": 0.8781,
+        "weighted_hit_at_1": 0.8479,
+        "by_level": {
+          "L1": {
+            "count": 35,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L2": {
+            "count": 35,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L3": {
+            "count": 35,
+            "hit_at_1": 0.7714,
+            "hit_at_3": 0.8286,
+            "mrr": 0.8
+          },
+          "L4": {
+            "count": 35,
+            "hit_at_1": 0.7143,
+            "hit_at_3": 0.7429,
+            "mrr": 0.7238
+          },
+          "L5": {
+            "count": 35,
+            "hit_at_1": 0.8571,
+            "hit_at_3": 0.8857,
+            "mrr": 0.8667
+          }
+        },
+        "by_type": {
+          "code_explanation": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "comparison_similarity": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "documentation_summary": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "function_similarity": {
+            "count": 25,
+            "hit_at_1": 0.6,
+            "hit_at_3": 0.6,
+            "mrr": 0.6
+          },
+          "generation_design": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "search_navigation": {
+            "count": 25,
+            "hit_at_1": 0.48,
+            "hit_at_3": 0.64,
+            "mrr": 0.5467
+          },
+          "structure_understanding": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          }
+        }
+      }
     }
+  },
+  "manticore_metadata": {
+    "modules_indexed": 732,
+    "questions": 175,
+    "seed": "D:\\MyWork\\verilog\\out\\merged_ontology_seed.jsonl",
+    "approved_labels": {
+      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+      "module_labels_added": 24,
+      "ip_context_labels_added": 69
+    },
+    "manticore_repo": "D:\\MyWork\\verilog\\tools\\manticoresearch",
+    "manticore_source": "https://github.com/manticoresoftware/manticoresearch",
+    "index_build_ms": 272.225,
+    "latency_ms": {
+      "baseline": {
+        "total_ms": 4929.941,
+        "avg_query_ms": 28.171
+      },
+      "kg": {
+        "total_ms": 5999.671,
+        "avg_query_ms": 34.284
+      },
+      "manticore_parser_lsp": {
+        "total_ms": 6542.472,
+        "avg_query_ms": 37.386
+      },
+      "manticore_hybrid": {
+        "total_ms": 8123.22,
+        "avg_query_ms": 46.418
+      }
+    },
+    "note": "Local BM25F model of Manticore Search over parser+LSP fields; schema/documents are emitted for real server loading."
   }
 }

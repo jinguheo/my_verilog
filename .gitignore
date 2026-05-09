@@ -10,6 +10,7 @@ tmp/
 graphify-out/
 tools/graphify/
 tools/iverilog/
+tools/manticoresearch/
 tools/verilog-eval/
 out/graphify_compare/cache/
 out/generation_eval/work/
@@ -23,6 +24,7 @@ out/verilogeval_generation_eval/
 # generated outputs — not versioned
 *.zip
 out/kg_versions/
+out/manticore_analysis/
 out/review_full/
 out/graphify_compare/
 out/generation_eval/

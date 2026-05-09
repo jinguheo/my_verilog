@@ -26,7 +26,7 @@ This report compares two retrieval conditions:
 ## Retrieval Inputs
 
 - modules indexed: 732
-- approved labels: out\label_approval\auto_approved_labels.jsonl
+- approved labels: D:\MyWork\verilog\out\label_approval\auto_approved_labels.jsonl
 - module labels added: 24
 - IP context labels added: 69
 

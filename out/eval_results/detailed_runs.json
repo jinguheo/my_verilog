@@ -12,11 +12,11 @@
           "score": 196.121,
           "reasons": [
             "name:clkgen_xil7series",
-            "name:xil7series",
             "name:clkgen",
+            "name:xil7series",
             "path_file:clkgen_xil7series",
-            "path_file:xil7series",
             "path_file:clkgen",
+            "path_file:xil7series",
             "module_name",
             "path:clkgen_xil7series"
           ]
@@ -27,11 +27,11 @@
           "score": 196.121,
           "reasons": [
             "name:clkgen_xil7series",
-            "name:xil7series",
             "name:clkgen",
+            "name:xil7series",
             "path_file:clkgen_xil7series",
-            "path_file:xil7series",
             "path_file:clkgen",
+            "path_file:xil7series",
             "module_name",
             "path:clkgen_xil7series"
           ]
@@ -42,11 +42,11 @@
           "score": 196.121,
           "reasons": [
             "name:clkgen_xil7series",
-            "name:xil7series",
             "name:clkgen",
+            "name:xil7series",
             "path_file:clkgen_xil7series",
-            "path_file:xil7series",
             "path_file:clkgen",
+            "path_file:xil7series",
             "module_name",
             "path:clkgen_xil7series"
           ]
@@ -57,8 +57,8 @@
           "score": 64.394,
           "reasons": [
             "instances:clkgen_xil7series",
-            "instances:xil7series",
             "instances:clkgen",
+            "instances:xil7series",
             "instance_names:clkgen",
             "instance:clkgen_xil7series",
             "path:rtl"
@@ -70,8 +70,8 @@
           "score": 64.394,
           "reasons": [
             "instances:clkgen_xil7series",
-            "instances:xil7series",
             "instances:clkgen",
+            "instances:xil7series",
             "instance_names:clkgen",
             "instance:clkgen_xil7series",
             "path:rtl"
@@ -171,8 +171,8 @@
           "project": "ibex",
           "score": 246.312,
           "reasons": [
-            "name:predict",
             "name:ibex_branch_predict",
+            "name:predict",
             "name:branch",
             "path_file:predict",
             "path_file:ibex_branch_predict",
@@ -186,8 +186,8 @@
           "project": "opentitan",
           "score": 241.295,
           "reasons": [
-            "name:predict",
             "name:ibex_branch_predict",
+            "name:predict",
             "name:branch",
             "path_file:predict",
             "path_file:ibex_branch_predict",
@@ -1079,12 +1079,12 @@
           "project": "ibex",
           "score": 310.778,
           "reasons": [
-            "name:unit",
             "name:ibex_load_store_unit",
+            "name:unit",
             "name:store",
             "name:load",
-            "path_file:unit",
             "path_file:ibex_load_store_unit",
+            "path_file:unit",
             "path_file:store",
             "path_file:load"
           ]
@@ -1094,12 +1094,12 @@
           "project": "opentitan",
           "score": 305.76,
           "reasons": [
-            "name:unit",
             "name:ibex_load_store_unit",
+            "name:unit",
             "name:store",
             "name:load",
-            "path_file:unit",
             "path_file:ibex_load_store_unit",
+            "path_file:unit",
             "path_file:store",
             "path_file:load"
           ]
@@ -1743,14 +1743,14 @@
           "project": "ibex",
           "score": 168.435,
           "reasons": [
-            "name:tracer",
             "name:ibex_tracer",
-            "path_file:tracer",
+            "name:tracer",
             "path_file:ibex_tracer",
+            "path_file:tracer",
             "module_name",
             "name:ibex",
             "path_file:ibex",
-            "path:tracer"
+            "path:ibex_tracer"
           ]
         },
         {
@@ -1758,14 +1758,14 @@
           "project": "opentitan",
           "score": 163.417,
           "reasons": [
-            "name:tracer",
             "name:ibex_tracer",
-            "path_file:tracer",
+            "name:tracer",
             "path_file:ibex_tracer",
+            "path_file:tracer",
             "module_name",
             "name:ibex",
             "path_file:ibex",
-            "path:tracer"
+            "path:ibex_tracer"
           ]
         },
         {
@@ -1773,8 +1773,8 @@
           "project": "opentitan",
           "score": 81.143,
           "reasons": [
-            "instances:tracer",
             "instances:ibex_tracer",
+            "instances:tracer",
             "name:ibex",
             "path_file:ibex",
             "instance_names:tracer",
@@ -1788,8 +1788,8 @@
           "project": "opentitan",
           "score": 81.143,
           "reasons": [
-            "instances:tracer",
             "instances:ibex_tracer",
+            "instances:tracer",
             "name:ibex",
             "path_file:ibex",
             "instance_names:tracer",
@@ -1803,8 +1803,8 @@
           "project": "opentitan",
           "score": 81.143,
           "reasons": [
-            "instances:tracer",
             "instances:ibex_tracer",
+            "instances:tracer",
             "name:ibex",
             "path_file:ibex",
             "instance_names:tracer",
@@ -1992,11 +1992,11 @@
           "project": "ibex",
           "score": 182.669,
           "reasons": [
-            "name:fixed",
             "name:prim_arbiter_fixed",
+            "name:fixed",
             "name:arbiter",
-            "path_file:fixed",
             "path_file:prim_arbiter_fixed",
+            "path_file:fixed",
             "module_name",
             "path_file:arbiter",
             "name:prim"
@@ -2007,11 +2007,11 @@
           "project": "opentitan",
           "score": 182.669,
           "reasons": [
-            "name:fixed",
             "name:prim_arbiter_fixed",
+            "name:fixed",
             "name:arbiter",
-            "path_file:fixed",
             "path_file:prim_arbiter_fixed",
+            "path_file:fixed",
             "module_name",
             "path_file:arbiter",
             "name:prim"
@@ -2052,8 +2052,8 @@
           "project": "ibex",
           "score": 68.566,
           "reasons": [
-            "instances:fixed",
             "instances:prim_arbiter_fixed",
+            "instances:fixed",
             "instances:arbiter",
             "name:prim",
             "instance:prim_arbiter_fixed",
@@ -2078,8 +2078,8 @@
             "name:prim_ascon_duplex",
             "name:duplex",
             "name:ascon",
-            "path_file:prim_ascon_duplex",
             "path_file:duplex",
+            "path_file:prim_ascon_duplex",
             "path_file:ascon",
             "module_name",
             "instances:ascon"
@@ -2093,8 +2093,8 @@
             "name:prim_ascon_duplex",
             "name:duplex",
             "name:ascon",
-            "path_file:prim_ascon_duplex",
             "path_file:duplex",
+            "path_file:prim_ascon_duplex",
             "path_file:ascon",
             "module_name",
             "instances:ascon"
@@ -3233,8 +3233,8 @@
             "name:prim_dom_and_2share",
             "name:2share",
             "name:dom",
-            "path_file:2share",
             "path_file:prim_dom_and_2share",
+            "path_file:2share",
             "path_file:dom",
             "module_name",
             "name:prim"
@@ -3248,8 +3248,8 @@
             "name:prim_dom_and_2share",
             "name:2share",
             "name:dom",
-            "path_file:2share",
             "path_file:prim_dom_and_2share",
+            "path_file:2share",
             "path_file:dom",
             "module_name",
             "name:prim"
@@ -3313,12 +3313,12 @@
           "project": "ibex",
           "score": 191.328,
           "reasons": [
-            "name:detector",
-            "name:prim_edge_detector",
             "name:edge",
+            "name:prim_edge_detector",
+            "name:detector",
             "path_file:detector",
-            "path_file:prim_edge_detector",
             "path_file:edge",
+            "path_file:prim_edge_detector",
             "module_name",
             "name:prim"
           ]
@@ -3328,12 +3328,12 @@
           "project": "opentitan",
           "score": 191.328,
           "reasons": [
-            "name:detector",
-            "name:prim_edge_detector",
             "name:edge",
+            "name:prim_edge_detector",
+            "name:detector",
             "path_file:detector",
-            "path_file:prim_edge_detector",
             "path_file:edge",
+            "path_file:prim_edge_detector",
             "module_name",
             "name:prim"
           ]
@@ -3344,8 +3344,8 @@
           "score": 71.762,
           "reasons": [
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:detector",
             "instance_names:edge",
             "instance:prim_edge_detector",
@@ -3359,8 +3359,8 @@
           "score": 71.762,
           "reasons": [
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:detector",
             "instance_names:edge",
             "instance:prim_edge_detector",
@@ -3374,8 +3374,8 @@
           "score": 65.768,
           "reasons": [
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:edge",
             "instance:prim_edge_detector",
             "instances:prim",
@@ -3479,11 +3479,11 @@
           "project": "ibex",
           "score": 248.648,
           "reasons": [
-            "name:simple",
             "name:prim_fifo_async_simple",
+            "name:simple",
             "name:async",
-            "path_file:simple",
             "path_file:prim_fifo_async_simple",
+            "path_file:simple",
             "name:fifo",
             "module_name",
             "path_file:async"
@@ -3494,11 +3494,11 @@
           "project": "opentitan",
           "score": 248.648,
           "reasons": [
-            "name:simple",
             "name:prim_fifo_async_simple",
+            "name:simple",
             "name:async",
-            "path_file:simple",
             "path_file:prim_fifo_async_simple",
+            "path_file:simple",
             "name:fifo",
             "module_name",
             "path_file:async"
@@ -4156,12 +4156,12 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_out_o",
             "port:mio_in_i",
+            "port:mio_out_o",
             "project_match",
             "path:opentitan"
           ]
@@ -4171,12 +4171,12 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_out_o",
             "port:mio_in_i",
+            "port:mio_out_o",
             "project_match",
             "path:opentitan"
           ]
@@ -4186,12 +4186,12 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_out_o",
             "port:mio_in_i",
+            "port:mio_out_o",
             "project_match",
             "path:opentitan"
           ]
@@ -4201,12 +4201,12 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_out_o",
             "port:mio_in_i",
+            "port:mio_out_o",
             "project_match",
             "path:opentitan"
           ]
@@ -4227,8 +4227,8 @@
             "child_instance:pinmux_jtag_breakout",
             "name:earlgrey",
             "name:top_earlgrey",
-            "instances:breakout",
             "instances:pinmux_jtag_breakout",
+            "instances:breakout",
             "module_name",
             "instances:pinmux",
             "instances:jtag"
@@ -4240,8 +4240,8 @@
           "score": 122.78,
           "reasons": [
             "child_instance:pinmux_jtag_breakout",
-            "instances:breakout",
             "instances:pinmux_jtag_breakout",
+            "instances:breakout",
             "instances:pinmux",
             "instances:jtag",
             "ports:pinmux",
@@ -4320,9 +4320,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -4335,9 +4335,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -4350,9 +4350,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -4365,9 +4365,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -4389,13 +4389,13 @@
           "score": 232.578,
           "reasons": [
             "child_instance:pinmux_jtag_breakout",
-            "name:englishbreakfast",
             "name:top_englishbreakfast",
-            "instances:breakout",
+            "name:englishbreakfast",
             "instances:pinmux_jtag_breakout",
+            "instances:breakout",
             "module_name",
-            "path_file:englishbreakfast",
-            "path_file:top_englishbreakfast"
+            "path_file:top_englishbreakfast",
+            "path_file:englishbreakfast"
           ]
         },
         {
@@ -4404,8 +4404,8 @@
           "score": 122.78,
           "reasons": [
             "child_instance:pinmux_jtag_breakout",
-            "instances:breakout",
             "instances:pinmux_jtag_breakout",
+            "instances:breakout",
             "instances:pinmux",
             "instances:jtag",
             "ports:pinmux",
@@ -4420,12 +4420,12 @@
           "reasons": [
             "name:englishbreakfast",
             "path_file:englishbreakfast",
-            "instances:englishbreakfast",
             "instances:top_englishbreakfast",
-            "instance_names:englishbreakfast",
+            "instances:englishbreakfast",
             "instance_names:top_englishbreakfast",
-            "path:englishbreakfast",
-            "path:top_englishbreakfast"
+            "instance_names:englishbreakfast",
+            "path:top_englishbreakfast",
+            "path:englishbreakfast"
           ]
         },
         {
@@ -4438,8 +4438,8 @@
             "ports:jtag",
             "instance_names:pinmux",
             "instance_names:jtag",
-            "path:englishbreakfast",
             "path:top_englishbreakfast",
+            "path:englishbreakfast",
             "path_file:sv"
           ]
         },
@@ -4452,8 +4452,8 @@
             "instances:pinmux",
             "ports:jtag",
             "instance_names:pinmux",
-            "path:englishbreakfast",
             "path:top_englishbreakfast",
+            "path:englishbreakfast",
             "path_file:sv",
             "project_match"
           ]
@@ -4484,9 +4484,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -4499,9 +4499,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -4514,9 +4514,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -4529,9 +4529,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -4553,12 +4553,12 @@
           "score": 153.43,
           "reasons": [
             "child_instance:uart",
-            "name:darjeeling",
             "name:top_darjeeling",
+            "name:darjeeling",
             "module_name",
             "instances:uart",
-            "path_file:darjeeling",
             "path_file:top_darjeeling",
+            "path_file:darjeeling",
             "path_file"
           ]
         },
@@ -4570,11 +4570,11 @@
             "name:darjeeling",
             "path_file:darjeeling",
             "ports:uart",
-            "instances:darjeeling",
             "instances:top_darjeeling",
-            "instance_names:darjeeling",
+            "instances:darjeeling",
             "instance_names:top_darjeeling",
-            "path:darjeeling"
+            "instance_names:darjeeling",
+            "path:top_darjeeling"
           ]
         },
         {
@@ -4585,11 +4585,11 @@
             "name:darjeeling",
             "path_file:darjeeling",
             "ports:uart",
-            "instances:darjeeling",
             "instances:top_darjeeling",
-            "instance_names:darjeeling",
+            "instances:darjeeling",
             "instance_names:top_darjeeling",
-            "path:darjeeling"
+            "instance_names:darjeeling",
+            "path:top_darjeeling"
           ]
         },
         {
@@ -4640,7 +4640,7 @@
             "ports:tck",
             "ports:jtag",
             "instance_names:jtag",
-            "port:por_n"
+            "port:jtag_tck"
           ]
         },
         {
@@ -4875,8 +4875,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -4890,8 +4890,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -4905,8 +4905,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -4919,8 +4919,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -4934,8 +4934,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -5031,8 +5031,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5046,8 +5046,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5061,8 +5061,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5076,8 +5076,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5090,8 +5090,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -5189,8 +5189,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5204,8 +5204,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5219,8 +5219,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5233,8 +5233,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -5248,8 +5248,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -5355,8 +5355,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5370,8 +5370,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5385,8 +5385,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "instance_names:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -5400,8 +5400,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "path:fifo"
@@ -5415,8 +5415,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "instance_names:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -5581,8 +5581,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5596,8 +5596,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5611,8 +5611,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5626,8 +5626,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5640,8 +5640,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -5821,8 +5821,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5836,8 +5836,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -5850,8 +5850,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -5864,8 +5864,8 @@
           "score": 43.954,
           "reasons": [
             "ports:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -5879,8 +5879,8 @@
           "score": 43.954,
           "reasons": [
             "ports:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -5990,8 +5990,8 @@
             "ports:i2c",
             "instance_names:i2c",
             "path:i2c",
-            "port:clk_i",
-            "port:rst_ni"
+            "port:rst_ni",
+            "port:clk_i"
           ]
         },
         {
@@ -6003,8 +6003,8 @@
             "path_file:i2c",
             "instances:i2c",
             "path:i2c",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i"
           ]
@@ -6017,8 +6017,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6032,8 +6032,8 @@
             "name:i2c",
             "path_file:i2c",
             "path:i2c",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6047,8 +6047,8 @@
             "name:i2c",
             "path_file:i2c",
             "path:i2c",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6153,8 +6153,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6168,8 +6168,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6183,8 +6183,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6197,8 +6197,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -6212,8 +6212,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -6386,8 +6386,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6401,8 +6401,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6416,8 +6416,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "instance_names:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -6431,8 +6431,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "path:fifo"
@@ -6446,8 +6446,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "instance_names:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -6635,8 +6635,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6650,8 +6650,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6665,8 +6665,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "instance_names:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -6680,8 +6680,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "path:fifo"
@@ -6695,8 +6695,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "instance_names:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -6801,8 +6801,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6816,8 +6816,8 @@
             "name:bus",
             "path_file:bus",
             "ports:bus",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "path:bus",
             "ports:rst_ni",
             "ports:clk_i"
@@ -6831,8 +6831,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -6845,8 +6845,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -6860,8 +6860,8 @@
           "reasons": [
             "instances:bus",
             "instance_names:bus",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -6971,7 +6971,7 @@
             "path_file:verilator",
             "name:darjeeling",
             "path_file:chip",
-            "ports:d2p"
+            "ports:cio_spi_device_sdo_en_d2p_o"
           ]
         },
         {
@@ -6983,9 +6983,9 @@
             "name:chip",
             "path_file:verilator",
             "path_file:chip",
-            "ports:d2p",
-            "ports:sdo",
             "ports:cio_spi_device_sdo_en_d2p_o",
+            "ports:sdo",
+            "ports:d2p",
             "ports:device"
           ]
         },
@@ -7050,8 +7050,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -7065,8 +7065,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -7080,8 +7080,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -7094,8 +7094,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -7109,8 +7109,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -7299,8 +7299,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -7314,8 +7314,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -7329,8 +7329,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -7343,8 +7343,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -7358,8 +7358,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -7544,8 +7544,8 @@
             "child_instance:usb_fs_nb_in_pe",
             "path_file:usb_fs_nb_pe",
             "instances:usb_fs_nb_in_pe",
-            "instances:pe",
             "instances:nb",
+            "instances:pe",
             "instances:fs",
             "module_name"
           ]
@@ -7623,13 +7623,13 @@
           "score": 479.706,
           "reasons": [
             "name:usb_fs_nb_pe",
-            "name:pe",
             "name:nb",
+            "name:pe",
             "name:fs",
             "path_file:usb_fs_nb_pe",
             "name:usb",
-            "path_file:pe",
-            "path_file:nb"
+            "path_file:nb",
+            "path_file:pe"
           ]
         },
         {
@@ -7912,8 +7912,8 @@
             "ports:clk_in_i",
             "ports:clk_out_i",
             "ports:out",
-            "port:clk_in_i",
             "port:clk_out_i",
+            "port:clk_in_i",
             "ports:clk",
             "project_match",
             "path:opentitan"
@@ -7968,8 +7968,8 @@
             "instances:tpm",
             "path_file:spi",
             "ports:tpm",
-            "instances:prim_edge_detector",
-            "instances:detector"
+            "instances:detector",
+            "instances:edge"
           ]
         },
         {
@@ -7979,8 +7979,8 @@
           "reasons": [
             "child_instance:prim_edge_detector",
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:detector",
             "instance_names:edge",
             "instances:prim",
@@ -7994,8 +7994,8 @@
           "reasons": [
             "child_instance:prim_edge_detector",
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:detector",
             "instance_names:edge",
             "instances:prim",
@@ -8108,8 +8108,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -8123,8 +8123,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -8138,8 +8138,8 @@
             "name:block",
             "path_file:block",
             "path:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -8153,8 +8153,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -8167,8 +8167,8 @@
           "reasons": [
             "instances:block",
             "instance_names:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -9929,8 +9929,8 @@
           "project": "opentitan",
           "score": 172.836,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "ports:vcaon_pok_i",
             "ports:vcaon",
             "instances:prim_clock_buf",
@@ -9944,8 +9944,8 @@
           "project": "opentitan",
           "score": 146.371,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "ports:vcaon",
             "instances:prim_clock_buf",
             "instances:clock",
@@ -9959,8 +9959,8 @@
           "project": "opentitan",
           "score": 146.371,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "ports:vcaon",
             "instances:prim_clock_buf",
             "instances:clock",
@@ -9974,8 +9974,8 @@
           "project": "opentitan",
           "score": 137.172,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "instances:prim_clock_buf",
             "instances:clock",
             "instances:prim_flop_2sync",
@@ -9989,8 +9989,8 @@
           "project": "opentitan",
           "score": 134.66,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "instances:prim_clock_buf",
             "ports:pok",
             "instances:clock",
@@ -10423,8 +10423,8 @@
           "project": "opentitan",
           "score": 214.507,
           "reasons": [
-            "child_instance:prim_lc_sync",
             "child_instance:otp_ctrl_core_reg_top",
+            "child_instance:prim_lc_sync",
             "instances:otp_ctrl_core_reg_top",
             "instances:prim_lc_sync",
             "instances:otp",
@@ -10438,8 +10438,8 @@
           "project": "opentitan",
           "score": 214.507,
           "reasons": [
-            "child_instance:prim_lc_sync",
             "child_instance:otp_ctrl_core_reg_top",
+            "child_instance:prim_lc_sync",
             "instances:otp_ctrl_core_reg_top",
             "instances:prim_lc_sync",
             "instances:otp",
@@ -10672,8 +10672,8 @@
           "project": "opentitan",
           "score": 217.206,
           "reasons": [
-            "child_instance:flash_ctrl_region_cfg",
             "child_instance:flash_ctrl_core_reg_top",
+            "child_instance:flash_ctrl_region_cfg",
             "instances:flash_ctrl_core_reg_top",
             "instances:flash_ctrl_region_cfg",
             "instances:region",
@@ -10687,8 +10687,8 @@
           "project": "opentitan",
           "score": 217.206,
           "reasons": [
-            "child_instance:flash_ctrl_region_cfg",
             "child_instance:flash_ctrl_core_reg_top",
+            "child_instance:flash_ctrl_region_cfg",
             "instances:flash_ctrl_core_reg_top",
             "instances:flash_ctrl_region_cfg",
             "instances:region",
@@ -11311,8 +11311,8 @@
           "score": 99.987,
           "reasons": [
             "child_instance:xbar_peri",
-            "instances:xbar_peri",
             "instances:xbar",
+            "instances:xbar_peri",
             "instances:peri",
             "instance_names:xbar",
             "instance_names:peri",
@@ -11326,8 +11326,8 @@
           "score": 99.987,
           "reasons": [
             "child_instance:xbar_peri",
-            "instances:xbar_peri",
             "instances:xbar",
+            "instances:xbar_peri",
             "instances:peri",
             "instance_names:xbar",
             "instance_names:peri",
@@ -11341,8 +11341,8 @@
           "score": 99.987,
           "reasons": [
             "child_instance:xbar_peri",
-            "instances:xbar_peri",
             "instances:xbar",
+            "instances:xbar_peri",
             "instances:peri",
             "instance_names:xbar",
             "instance_names:peri",
@@ -11863,8 +11863,8 @@
           "score": 123.017,
           "reasons": [
             "child_instance:otbn_vec_transposer",
-            "instances:otbn_vec_transposer",
             "instances:transposer",
+            "instances:otbn_vec_transposer",
             "instances:vec",
             "instances:otbn",
             "instance_names:transposer",
@@ -11890,8 +11890,8 @@
           "score": 35.867,
           "reasons": [
             "instances:otbn",
-            "ports:reset",
             "ports:otbn",
+            "ports:reset",
             "project_match",
             "project:opentitan"
           ]
@@ -12164,11 +12164,11 @@
           "score": 206.353,
           "reasons": [
             "name:clkgen_xil7series",
-            "name:xil7series",
             "name:clkgen",
+            "name:xil7series",
             "path_file:clkgen_xil7series",
-            "path_file:xil7series",
             "path_file:clkgen",
+            "path_file:xil7series",
             "module_name",
             "path:clkgen_xil7series"
           ]
@@ -12179,11 +12179,11 @@
           "score": 206.353,
           "reasons": [
             "name:clkgen_xil7series",
-            "name:xil7series",
             "name:clkgen",
+            "name:xil7series",
             "path_file:clkgen_xil7series",
-            "path_file:xil7series",
             "path_file:clkgen",
+            "path_file:xil7series",
             "module_name",
             "path:clkgen_xil7series"
           ]
@@ -12194,11 +12194,11 @@
           "score": 206.353,
           "reasons": [
             "name:clkgen_xil7series",
-            "name:xil7series",
             "name:clkgen",
+            "name:xil7series",
             "path_file:clkgen_xil7series",
-            "path_file:xil7series",
             "path_file:clkgen",
+            "path_file:xil7series",
             "module_name",
             "path:clkgen_xil7series"
           ]
@@ -12209,8 +12209,8 @@
           "score": 64.391,
           "reasons": [
             "instances:clkgen_xil7series",
-            "instances:xil7series",
             "instances:clkgen",
+            "instances:xil7series",
             "instance_names:clkgen",
             "instance:clkgen_xil7series",
             "path:rtl"
@@ -12222,8 +12222,8 @@
           "score": 64.391,
           "reasons": [
             "instances:clkgen_xil7series",
-            "instances:xil7series",
             "instances:clkgen",
+            "instances:xil7series",
             "instance_names:clkgen",
             "instance:clkgen_xil7series",
             "path:rtl"
@@ -12324,8 +12324,8 @@
           "project": "ibex",
           "score": 262.856,
           "reasons": [
-            "name:predict",
             "name:ibex_branch_predict",
+            "name:predict",
             "name:branch",
             "path_file:predict",
             "path_file:ibex_branch_predict",
@@ -12339,8 +12339,8 @@
           "project": "opentitan",
           "score": 254.187,
           "reasons": [
-            "name:predict",
             "name:ibex_branch_predict",
+            "name:predict",
             "name:branch",
             "path_file:predict",
             "path_file:ibex_branch_predict",
@@ -13235,12 +13235,12 @@
           "project": "ibex",
           "score": 282.174,
           "reasons": [
-            "name:unit",
             "name:ibex_load_store_unit",
+            "name:unit",
             "name:store",
             "name:load",
-            "path_file:unit",
             "path_file:ibex_load_store_unit",
+            "path_file:unit",
             "module_name",
             "path_file:store"
           ]
@@ -13250,12 +13250,12 @@
           "project": "opentitan",
           "score": 273.504,
           "reasons": [
-            "name:unit",
             "name:ibex_load_store_unit",
+            "name:unit",
             "name:store",
             "name:load",
-            "path_file:unit",
             "path_file:ibex_load_store_unit",
+            "path_file:unit",
             "module_name",
             "path_file:store"
           ]
@@ -13899,14 +13899,14 @@
           "project": "ibex",
           "score": 181.992,
           "reasons": [
-            "name:tracer",
             "name:ibex_tracer",
-            "path_file:tracer",
+            "name:tracer",
             "path_file:ibex_tracer",
+            "path_file:tracer",
             "module_name",
             "name:ibex",
             "path_file:ibex",
-            "path:tracer"
+            "path:ibex_tracer"
           ]
         },
         {
@@ -13914,14 +13914,14 @@
           "project": "opentitan",
           "score": 173.323,
           "reasons": [
-            "name:tracer",
             "name:ibex_tracer",
-            "path_file:tracer",
+            "name:tracer",
             "path_file:ibex_tracer",
+            "path_file:tracer",
             "module_name",
             "name:ibex",
             "path_file:ibex",
-            "path:tracer"
+            "path:ibex_tracer"
           ]
         },
         {
@@ -13929,8 +13929,8 @@
           "project": "opentitan",
           "score": 81.219,
           "reasons": [
-            "instances:tracer",
             "instances:ibex_tracer",
+            "instances:tracer",
             "name:ibex",
             "path_file:ibex",
             "instance_names:tracer",
@@ -13944,8 +13944,8 @@
           "project": "opentitan",
           "score": 81.219,
           "reasons": [
-            "instances:tracer",
             "instances:ibex_tracer",
+            "instances:tracer",
             "name:ibex",
             "path_file:ibex",
             "instance_names:tracer",
@@ -13959,8 +13959,8 @@
           "project": "opentitan",
           "score": 81.219,
           "reasons": [
-            "instances:tracer",
             "instances:ibex_tracer",
+            "instances:tracer",
             "name:ibex",
             "path_file:ibex",
             "instance_names:tracer",
@@ -14148,11 +14148,11 @@
           "project": "ibex",
           "score": 192.527,
           "reasons": [
-            "name:fixed",
             "name:prim_arbiter_fixed",
+            "name:fixed",
             "name:arbiter",
-            "path_file:fixed",
             "path_file:prim_arbiter_fixed",
+            "path_file:fixed",
             "module_name",
             "path_file:arbiter",
             "name:prim"
@@ -14163,11 +14163,11 @@
           "project": "opentitan",
           "score": 192.527,
           "reasons": [
-            "name:fixed",
             "name:prim_arbiter_fixed",
+            "name:fixed",
             "name:arbiter",
-            "path_file:fixed",
             "path_file:prim_arbiter_fixed",
+            "path_file:fixed",
             "module_name",
             "path_file:arbiter",
             "name:prim"
@@ -14208,8 +14208,8 @@
           "project": "ibex",
           "score": 69.051,
           "reasons": [
-            "instances:fixed",
             "instances:prim_arbiter_fixed",
+            "instances:fixed",
             "instances:arbiter",
             "name:prim",
             "instance:prim_arbiter_fixed",
@@ -14234,8 +14234,8 @@
             "name:prim_ascon_duplex",
             "name:duplex",
             "name:ascon",
-            "path_file:prim_ascon_duplex",
             "path_file:duplex",
+            "path_file:prim_ascon_duplex",
             "path_file:ascon",
             "module_name",
             "instances:ascon"
@@ -14249,8 +14249,8 @@
             "name:prim_ascon_duplex",
             "name:duplex",
             "name:ascon",
-            "path_file:prim_ascon_duplex",
             "path_file:duplex",
+            "path_file:prim_ascon_duplex",
             "path_file:ascon",
             "module_name",
             "instances:ascon"
@@ -15391,8 +15391,8 @@
             "name:prim_dom_and_2share",
             "name:2share",
             "name:dom",
-            "path_file:2share",
             "path_file:prim_dom_and_2share",
+            "path_file:2share",
             "module_name",
             "path_file:dom",
             "name:prim"
@@ -15406,8 +15406,8 @@
             "name:prim_dom_and_2share",
             "name:2share",
             "name:dom",
-            "path_file:2share",
             "path_file:prim_dom_and_2share",
+            "path_file:2share",
             "module_name",
             "path_file:dom",
             "name:prim"
@@ -15471,12 +15471,12 @@
           "project": "ibex",
           "score": 196.469,
           "reasons": [
-            "name:detector",
-            "name:prim_edge_detector",
             "name:edge",
+            "name:prim_edge_detector",
+            "name:detector",
             "path_file:detector",
-            "path_file:prim_edge_detector",
             "path_file:edge",
+            "path_file:prim_edge_detector",
             "module_name",
             "name:prim"
           ]
@@ -15486,12 +15486,12 @@
           "project": "opentitan",
           "score": 196.469,
           "reasons": [
-            "name:detector",
-            "name:prim_edge_detector",
             "name:edge",
+            "name:prim_edge_detector",
+            "name:detector",
             "path_file:detector",
-            "path_file:prim_edge_detector",
             "path_file:edge",
+            "path_file:prim_edge_detector",
             "module_name",
             "name:prim"
           ]
@@ -15502,8 +15502,8 @@
           "score": 70.184,
           "reasons": [
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:detector",
             "instance_names:edge",
             "instance:prim_edge_detector",
@@ -15517,8 +15517,8 @@
           "score": 70.184,
           "reasons": [
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:detector",
             "instance_names:edge",
             "instance:prim_edge_detector",
@@ -15532,8 +15532,8 @@
           "score": 64.356,
           "reasons": [
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:edge",
             "instance:prim_edge_detector",
             "instances:prim",
@@ -15637,11 +15637,11 @@
           "project": "ibex",
           "score": 253.938,
           "reasons": [
-            "name:simple",
             "name:prim_fifo_async_simple",
+            "name:simple",
             "name:async",
-            "path_file:simple",
             "path_file:prim_fifo_async_simple",
+            "path_file:simple",
             "module_name",
             "name:fifo",
             "path_file:async"
@@ -15652,11 +15652,11 @@
           "project": "opentitan",
           "score": 253.938,
           "reasons": [
-            "name:simple",
             "name:prim_fifo_async_simple",
+            "name:simple",
             "name:async",
-            "path_file:simple",
             "path_file:prim_fifo_async_simple",
+            "path_file:simple",
             "module_name",
             "name:fifo",
             "path_file:async"
@@ -15721,13 +15721,13 @@
           "score": 271.297,
           "reasons": [
             "name:prim_fifo_async_sram_adapter",
-            "name:async",
             "name:adapter",
+            "name:async",
             "name:sram",
             "path_file:prim_fifo_async_sram_adapter",
             "module_name",
             "name:fifo",
-            "path_file:async"
+            "path_file:adapter"
           ]
         },
         {
@@ -15736,13 +15736,13 @@
           "score": 271.297,
           "reasons": [
             "name:prim_fifo_async_sram_adapter",
-            "name:async",
             "name:adapter",
+            "name:async",
             "name:sram",
             "path_file:prim_fifo_async_sram_adapter",
             "module_name",
             "name:fifo",
-            "path_file:async"
+            "path_file:adapter"
           ]
         },
         {
@@ -16301,12 +16301,12 @@
           "project": "opentitan",
           "score": 70.88,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_out_o",
             "port:mio_in_i",
+            "port:mio_out_o",
             "labels:fifo",
             "label:fifo"
           ]
@@ -16316,12 +16316,12 @@
           "project": "opentitan",
           "score": 70.88,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_out_o",
             "port:mio_in_i",
+            "port:mio_out_o",
             "labels:fifo",
             "label:fifo"
           ]
@@ -16331,12 +16331,12 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_out_o",
             "port:mio_in_i",
+            "port:mio_out_o",
             "project_match",
             "path:opentitan"
           ]
@@ -16346,12 +16346,12 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_out_o",
             "port:mio_in_i",
+            "port:mio_out_o",
             "project_match",
             "path:opentitan"
           ]
@@ -16361,12 +16361,12 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
-            "port:mio_out_o",
             "port:mio_in_i",
+            "port:mio_out_o",
             "project_match",
             "path:opentitan"
           ]
@@ -16386,8 +16386,8 @@
           "reasons": [
             "child_instance:pinmux_jtag_breakout",
             "name:top_earlgrey",
-            "instances:breakout",
             "instances:pinmux_jtag_breakout",
+            "instances:breakout",
             "name:earlgrey",
             "module_name",
             "instances:jtag",
@@ -16400,8 +16400,8 @@
           "score": 116.377,
           "reasons": [
             "child_instance:pinmux_jtag_breakout",
-            "instances:breakout",
             "instances:pinmux_jtag_breakout",
+            "instances:breakout",
             "instances:jtag",
             "instances:pinmux",
             "ports:pinmux",
@@ -16467,9 +16467,9 @@
           "project": "opentitan",
           "score": 75.057,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "labels:apb",
             "port:mio_out_o",
@@ -16482,9 +16482,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -16497,9 +16497,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -16512,9 +16512,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -16527,9 +16527,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -16553,8 +16553,8 @@
             "child_instance:pinmux_jtag_breakout",
             "name:top_englishbreakfast",
             "name:englishbreakfast",
-            "instances:breakout",
             "instances:pinmux_jtag_breakout",
+            "instances:breakout",
             "module_name",
             "path_file:top_englishbreakfast",
             "path_file:englishbreakfast"
@@ -16566,8 +16566,8 @@
           "score": 116.377,
           "reasons": [
             "child_instance:pinmux_jtag_breakout",
-            "instances:breakout",
             "instances:pinmux_jtag_breakout",
+            "instances:breakout",
             "instances:jtag",
             "instances:pinmux",
             "ports:pinmux",
@@ -16633,9 +16633,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -16648,9 +16648,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -16663,9 +16663,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -16678,9 +16678,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -16693,9 +16693,9 @@
           "project": "opentitan",
           "score": 62.345,
           "reasons": [
-            "ports:mio_in_i",
-            "ports:mio_out_o",
             "ports:mio",
+            "ports:mio_out_o",
+            "ports:mio_in_i",
             "ports:out",
             "port:mio_out_o",
             "port:mio_in_i",
@@ -16805,8 +16805,8 @@
             "ports:tck",
             "instances:jtag",
             "ports:jtag",
-            "port:por_n",
-            "port:jtag_tck"
+            "port:jtag_tck",
+            "port:por_n"
           ]
         },
         {
@@ -16820,8 +16820,8 @@
             "name:i2c",
             "path_file:i2c",
             "path:bus",
-            "ports:scl",
-            "ports:sda"
+            "ports:sda",
+            "ports:scl"
           ]
         },
         {
@@ -16848,8 +16848,8 @@
             "name:i2c",
             "instance_names:bus",
             "path_file:i2c",
-            "ports:sda",
             "ports:scl",
+            "ports:sda",
             "instances:i2c",
             "ports:i2c"
           ]
@@ -17045,8 +17045,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "summary:queue",
             "ports:rst_ni",
             "ports:clk_i"
@@ -17059,8 +17059,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17074,8 +17074,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17089,8 +17089,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17104,8 +17104,8 @@
           "reasons": [
             "name:buffer",
             "path_file:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17209,8 +17209,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -17224,8 +17224,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -17238,8 +17238,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17253,8 +17253,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17268,8 +17268,8 @@
           "reasons": [
             "name:queue",
             "path_file:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17374,8 +17374,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "summary:queue",
             "ports:rst_ni",
             "ports:clk_i"
@@ -17388,8 +17388,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17403,8 +17403,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17418,8 +17418,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17433,8 +17433,8 @@
           "reasons": [
             "name:buffer",
             "path_file:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17540,8 +17540,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -17555,8 +17555,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -17570,8 +17570,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -17584,8 +17584,8 @@
           "reasons": [
             "name:fifo",
             "path_file:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i",
@@ -17599,8 +17599,8 @@
           "reasons": [
             "name:fifo",
             "path_file:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i",
@@ -17777,8 +17777,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -17792,8 +17792,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -17806,8 +17806,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17821,8 +17821,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -17836,8 +17836,8 @@
           "reasons": [
             "name:queue",
             "path_file:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18025,8 +18025,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18040,8 +18040,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18054,8 +18054,8 @@
           "score": 44.562,
           "reasons": [
             "labels:apb",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18069,8 +18069,8 @@
           "score": 44.562,
           "reasons": [
             "labels:apb",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18084,8 +18084,8 @@
           "score": 44.562,
           "reasons": [
             "labels:apb",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18196,7 +18196,7 @@
             "labels:i2c",
             "instance_names:i2c",
             "path:i2c",
-            "port:clk_i"
+            "port:rst_ni"
           ]
         },
         {
@@ -18210,8 +18210,8 @@
             "labels:i2c",
             "parents:i2c",
             "path:i2c",
-            "port:clk_i",
-            "port:rst_ni"
+            "port:rst_ni",
+            "port:clk_i"
           ]
         },
         {
@@ -18224,8 +18224,8 @@
             "labels:i2c",
             "parents:i2c",
             "path:i2c",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni"
           ]
         },
@@ -18239,8 +18239,8 @@
             "labels:i2c",
             "parents:i2c",
             "path:i2c",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni"
           ]
         },
@@ -18254,8 +18254,8 @@
             "labels:i2c",
             "parents:i2c",
             "path:i2c",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni"
           ]
         }
@@ -18358,8 +18358,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "summary:queue",
             "ports:rst_ni",
             "ports:clk_i"
@@ -18372,8 +18372,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18387,8 +18387,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18402,8 +18402,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18417,8 +18417,8 @@
           "reasons": [
             "name:buffer",
             "path_file:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -18607,8 +18607,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -18622,8 +18622,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -18637,8 +18637,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -18651,8 +18651,8 @@
           "reasons": [
             "name:fifo",
             "path_file:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i",
@@ -18666,8 +18666,8 @@
           "reasons": [
             "name:fifo",
             "path_file:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i",
@@ -18856,8 +18856,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -18871,8 +18871,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -18886,8 +18886,8 @@
             "name:fifo",
             "path_file:fifo",
             "instances:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i"
@@ -18900,8 +18900,8 @@
           "reasons": [
             "name:fifo",
             "path_file:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i",
@@ -18915,8 +18915,8 @@
           "reasons": [
             "name:fifo",
             "path_file:fifo",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "labels:fifo",
             "ports:rst_ni",
             "ports:clk_i",
@@ -19024,8 +19024,8 @@
             "ports:bus",
             "name:i2c",
             "path_file:i2c",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "path:bus"
           ]
         },
@@ -19038,10 +19038,10 @@
             "name:i2c",
             "instance_names:bus",
             "path_file:i2c",
-            "port:clk_i",
             "port:rst_ni",
-            "ports:sda",
-            "ports:scl"
+            "port:clk_i",
+            "ports:scl",
+            "ports:sda"
           ]
         },
         {
@@ -19052,10 +19052,10 @@
             "ports:bus",
             "name:i2c",
             "path_file:i2c",
-            "port:clk_i",
             "port:rst_ni",
-            "ports:scl",
+            "port:clk_i",
             "ports:sda",
+            "ports:scl",
             "ports:rst_ni"
           ]
         },
@@ -19067,10 +19067,10 @@
             "ports:bus",
             "name:i2c",
             "path_file:i2c",
-            "port:clk_i",
             "port:rst_ni",
-            "ports:scl",
+            "port:clk_i",
             "ports:sda",
+            "ports:scl",
             "ports:rst_ni"
           ]
         },
@@ -19081,8 +19081,8 @@
           "reasons": [
             "name:i2c",
             "path_file:i2c",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "instances:i2c",
             "ports:rst_ni",
             "ports:clk_i",
@@ -19191,7 +19191,7 @@
             "name:darjeeling",
             "path_file:chip_darjeeling_verilator",
             "path_file:verilator",
-            "ports:d2p",
+            "ports:cio_spi_device_sdo_en_d2p_o",
             "ports:sdo"
           ]
         },
@@ -19203,9 +19203,9 @@
             "name:verilator",
             "name:chip",
             "path_file:verilator",
-            "ports:d2p",
-            "ports:sdo",
             "ports:cio_spi_device_sdo_en_d2p_o",
+            "ports:sdo",
+            "ports:d2p",
             "path_file:chip",
             "ports:cio"
           ]
@@ -19271,8 +19271,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "summary:queue",
             "ports:rst_ni",
             "ports:clk_i"
@@ -19285,8 +19285,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -19300,8 +19300,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -19315,8 +19315,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -19330,8 +19330,8 @@
           "reasons": [
             "name:buffer",
             "path_file:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -19520,8 +19520,8 @@
             "name:queue",
             "path_file:queue",
             "path:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "summary:queue",
             "ports:rst_ni",
             "ports:clk_i"
@@ -19534,8 +19534,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -19549,8 +19549,8 @@
           "reasons": [
             "instances:queue",
             "instance_names:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -19564,8 +19564,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -19579,8 +19579,8 @@
           "reasons": [
             "name:buffer",
             "path_file:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -19770,8 +19770,8 @@
             "child_instance:usb_fs_nb_in_pe",
             "instances:usb_fs_nb_in_pe",
             "path_file:usb_fs_nb_pe",
-            "instances:pe",
             "instances:nb",
+            "instances:pe",
             "module_name",
             "instances:fs"
           ]
@@ -19849,14 +19849,14 @@
           "project": "opentitan",
           "score": 443.187,
           "reasons": [
+            "name:nb",
             "name:pe",
             "name:usb_fs_nb_pe",
-            "name:nb",
             "name:fs",
             "name:usb",
+            "path_file:nb",
             "path_file:pe",
-            "path_file:usb_fs_nb_pe",
-            "path_file:nb"
+            "path_file:usb_fs_nb_pe"
           ]
         },
         {
@@ -19899,9 +19899,9 @@
             "path_file:fs",
             "path_file:usb",
             "ports:usb",
+            "parents:nb",
             "parents:pe",
-            "parents:usb_fs_nb_pe",
-            "parents:nb"
+            "parents:usb_fs_nb_pe"
           ]
         },
         {
@@ -19914,9 +19914,9 @@
             "path_file:fs",
             "path_file:usb",
             "ports:usb",
+            "parents:nb",
             "parents:pe",
-            "parents:usb_fs_nb_pe",
-            "parents:nb"
+            "parents:usb_fs_nb_pe"
           ]
         }
       ]
@@ -20116,8 +20116,8 @@
             "ports:clk_in_i",
             "ports:clk_out_i",
             "ports:out",
-            "port:clk_in_i",
             "port:clk_out_i",
+            "port:clk_in_i",
             "ports:clk",
             "instances:fifo",
             "project_match"
@@ -20199,10 +20199,10 @@
             "child_instance:prim_edge_detector",
             "name:spi",
             "instances:spi_tpm",
-            "instances:prim_edge_detector",
             "instances:detector",
-            "instances:tpm",
             "instances:edge",
+            "instances:tpm",
+            "instances:prim_edge_detector",
             "ports:tpm"
           ]
         },
@@ -20213,8 +20213,8 @@
           "reasons": [
             "child_instance:prim_edge_detector",
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:detector",
             "instance_names:edge",
             "instances:prim",
@@ -20228,8 +20228,8 @@
           "reasons": [
             "child_instance:prim_edge_detector",
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instance_names:detector",
             "instance_names:edge",
             "instances:prim",
@@ -20243,8 +20243,8 @@
           "reasons": [
             "child_instance:prim_edge_detector",
             "instances:detector",
-            "instances:prim_edge_detector",
             "instances:edge",
+            "instances:prim_edge_detector",
             "instances:prim",
             "path_file:sv",
             "ports:prim",
@@ -20350,8 +20350,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -20365,8 +20365,8 @@
             "name:buffer",
             "path_file:buffer",
             "path:buffer",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni"
@@ -20379,8 +20379,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -20394,8 +20394,8 @@
           "reasons": [
             "name:block",
             "path_file:block",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -20409,8 +20409,8 @@
           "reasons": [
             "name:queue",
             "path_file:queue",
-            "port:clk_i",
             "port:rst_ni",
+            "port:clk_i",
             "ports:rst_ni",
             "ports:clk_i",
             "ports:ni",
@@ -22254,8 +22254,8 @@
           "project": "opentitan",
           "score": 176.626,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "ports:vcaon_pok_i",
             "ports:vcaon",
             "instances:prim_clock_buf",
@@ -22269,8 +22269,8 @@
           "project": "opentitan",
           "score": 150.161,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "ports:vcaon",
             "instances:prim_clock_buf",
             "instances:clock",
@@ -22284,8 +22284,8 @@
           "project": "opentitan",
           "score": 150.161,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "ports:vcaon",
             "instances:prim_clock_buf",
             "instances:clock",
@@ -22299,8 +22299,8 @@
           "project": "opentitan",
           "score": 141.43,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "instances:prim_clock_buf",
             "ports:pok",
             "instances:clock",
@@ -22314,8 +22314,8 @@
           "project": "opentitan",
           "score": 141.43,
           "reasons": [
-            "child_instance:prim_flop_2sync",
             "child_instance:prim_clock_buf",
+            "child_instance:prim_flop_2sync",
             "instances:prim_clock_buf",
             "ports:pok",
             "instances:clock",
@@ -22752,8 +22752,8 @@
           "project": "opentitan",
           "score": 217.881,
           "reasons": [
-            "child_instance:prim_lc_sync",
             "child_instance:otp_ctrl_core_reg_top",
+            "child_instance:prim_lc_sync",
             "instances:otp_ctrl_core_reg_top",
             "instances:prim_lc_sync",
             "instances:otp",
@@ -22767,8 +22767,8 @@
           "project": "opentitan",
           "score": 217.881,
           "reasons": [
-            "child_instance:prim_lc_sync",
             "child_instance:otp_ctrl_core_reg_top",
+            "child_instance:prim_lc_sync",
             "instances:otp_ctrl_core_reg_top",
             "instances:prim_lc_sync",
             "instances:otp",
@@ -23001,8 +23001,8 @@
           "project": "opentitan",
           "score": 208.597,
           "reasons": [
-            "child_instance:flash_ctrl_region_cfg",
             "child_instance:flash_ctrl_core_reg_top",
+            "child_instance:flash_ctrl_region_cfg",
             "instances:flash_ctrl_core_reg_top",
             "instances:flash_ctrl_region_cfg",
             "instances:region",
@@ -23016,8 +23016,8 @@
           "project": "opentitan",
           "score": 208.597,
           "reasons": [
-            "child_instance:flash_ctrl_region_cfg",
             "child_instance:flash_ctrl_core_reg_top",
+            "child_instance:flash_ctrl_region_cfg",
             "instances:flash_ctrl_core_reg_top",
             "instances:flash_ctrl_region_cfg",
             "instances:region",
@@ -23464,8 +23464,8 @@
             "name:async",
             "name:adapter",
             "name:fifo",
-            "path_file:adapter",
             "path_file:async",
+            "path_file:adapter",
             "path_file:fifo",
             "project_match",
             "labels:fifo"
@@ -23479,8 +23479,8 @@
             "name:async",
             "name:adapter",
             "name:fifo",
-            "path_file:adapter",
             "path_file:async",
+            "path_file:adapter",
             "path_file:fifo",
             "labels:fifo",
             "project_mismatch"
@@ -23666,8 +23666,8 @@
           "score": 105.228,
           "reasons": [
             "child_instance:xbar_peri",
-            "instances:xbar_peri",
             "instances:xbar",
+            "instances:xbar_peri",
             "instances:peri",
             "instance_names:xbar",
             "instance_names:peri",
@@ -23681,8 +23681,8 @@
           "score": 104.299,
           "reasons": [
             "child_instance:xbar_peri",
-            "instances:xbar_peri",
             "instances:xbar",
+            "instances:xbar_peri",
             "instances:peri",
             "instance_names:xbar",
             "instance_names:peri",
@@ -23696,8 +23696,8 @@
           "score": 104.299,
           "reasons": [
             "child_instance:xbar_peri",
-            "instances:xbar_peri",
             "instances:xbar",
+            "instances:xbar_peri",
             "instances:peri",
             "instance_names:xbar",
             "instance_names:peri",
@@ -23864,8 +23864,8 @@
             "name:async",
             "name:adapter",
             "name:fifo",
-            "path_file:adapter",
             "path_file:async",
+            "path_file:adapter",
             "path_file:fifo",
             "project_match",
             "labels:fifo"
@@ -24247,8 +24247,8 @@
           "score": 121.993,
           "reasons": [
             "child_instance:otbn_vec_transposer",
-            "instances:otbn_vec_transposer",
             "instances:transposer",
+            "instances:otbn_vec_transposer",
             "instances:vec",
             "instances:otbn",
             "instance_names:transposer",
@@ -24279,8 +24279,8 @@
             "name:async",
             "name:adapter",
             "name:fifo",
-            "path_file:adapter",
             "path_file:async",
+            "path_file:adapter",
             "path_file:fifo",
             "project_match",
             "labels:fifo"
@@ -24359,11 +24359,11 @@
           "project": "ibex",
           "score": 43.028,
           "reasons": [
-            "name:adapter",
             "name:async",
+            "name:adapter",
             "name:fifo",
-            "path_file:adapter",
             "path_file:async",
+            "path_file:adapter",
             "path_file:fifo",
             "label:clocked",
             "project_match"
@@ -24374,11 +24374,11 @@
           "project": "opentitan",
           "score": 42.285,
           "reasons": [
-            "name:adapter",
             "name:async",
+            "name:adapter",
             "name:fifo",
-            "path_file:adapter",
             "path_file:async",
+            "path_file:adapter",
             "path_file:fifo",
             "label:clocked",
             "project_match"
@@ -24442,11 +24442,11 @@
           "project": "ibex",
           "score": 38.958,
           "reasons": [
-            "name:adapter",
             "name:async",
+            "name:adapter",
             "name:fifo",
-            "path_file:adapter",
             "path_file:async",
+            "path_file:adapter",
             "path_file:fifo",
             "project_match",
             "project:ibex"

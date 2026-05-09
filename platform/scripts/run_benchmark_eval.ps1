@@ -7,6 +7,8 @@ $benchmarkOut = Join-Path $OutRoot "eval_benchmark"
 $resultsOut = Join-Path $OutRoot "eval_results"
 $multiaxisOut = Join-Path $OutRoot "multiaxis_benchmark"
 $multiaxisResultsOut = Join-Path $OutRoot "multiaxis_eval_results"
+$manticoreOut = Join-Path $OutRoot "manticore_analysis"
+$manticoreRepo = Join-Path $WorkspaceRoot "tools\manticoresearch"
 $pdfOut = Join-Path $OutRoot "reports\kg_eval_report.pdf"
 $pdfJsonOut = Join-Path $OutRoot "reports\kg_eval_report.json"
 
@@ -45,12 +47,25 @@ Invoke-PythonScript (Join-Path $PlatformRoot "eval\run_multiaxis_retrieval_bench
   "--out-dir", $multiaxisResultsOut
 )
 
+$manticoreArgs = @(
+  "--seed", $seed,
+  "--questions", (Join-Path $multiaxisOut "questions_all.jsonl"),
+  "--out-dir", $manticoreOut
+)
+if (Test-Path -LiteralPath $manticoreRepo) {
+  $manticoreArgs += @("--manticore-repo", $manticoreRepo)
+}
+
+Invoke-PythonScript (Join-Path $PlatformRoot "eval\run_manticore_retrieval_analysis.py") $manticoreArgs
+
 Invoke-PythonScript (Join-Path $PlatformRoot "eval\render_eval_pdf.py") @(
   "--kg-summary", (Join-Path $kgOut "kg_full_summary.json"),
   "--benchmark-summary", (Join-Path $benchmarkOut "benchmark_summary.json"),
   "--retrieval-report", (Join-Path $resultsOut "retrieval_report.json"),
   "--multiaxis-summary", (Join-Path $multiaxisOut "summary.json"),
   "--multiaxis-report", (Join-Path $multiaxisResultsOut "multiaxis_report.json"),
+  "--manticore-report", (Join-Path $manticoreOut "manticore_retrieval_report.json"),
+  "--manticore-metadata", (Join-Path $manticoreOut "manticore_retrieval_metadata.json"),
   "--out-pdf", $pdfOut,
   "--out-json", $pdfJsonOut
 )
@@ -60,4 +75,5 @@ Write-Host "Full KG:    $kgOut"
 Write-Host "Questions: $benchmarkOut"
 Write-Host "Results:   $resultsOut"
 Write-Host "MultiAxis: $multiaxisResultsOut"
+Write-Host "Manticore: $manticoreOut"
 Write-Host "PDF:       $pdfOut"

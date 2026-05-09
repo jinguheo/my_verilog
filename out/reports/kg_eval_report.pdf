@@ -3,7 +3,7 @@
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 2 0 obj
-<< /Length 2386 >>
+<< /Length 2437 >>
 stream
 BT
 /F1 10 Tf
@@ -49,8 +49,8 @@ T* (kg by difficulty: {'easy': {'count': 50, 'hit_at_1': 1.0, 'hit_at_3': 1.0, '
 T* ({'count': 50, 'hit_at_1': 0.74, 'hit_at_3': 0.84, 'mrr': 0.7907}, 'medium': {'count': 50,) Tj
 T* ('hit_at_1': 0.64, 'hit_at_3': 0.66, 'mrr': 0.66}}) Tj
 T* (Retrieval metadata: {'modules_indexed': 732, 'approved_labels': {'path':) Tj
-T* ('out\\\\label_approval\\\\auto_approved_labels.jsonl', 'module_labels_added': 24,) Tj
-T* ('ip_context_labels_added': 69}}) Tj
+T* ('D:\\\\MyWork\\\\verilog\\\\out\\\\label_approval\\\\auto_approved_labels.jsonl', 'module_labels_added':) Tj
+T* (24, 'ip_context_labels_added': 69}, 'kg_version_tag': None}) Tj
 T* () Tj
 T* (5. Multi-Axis Question Set) Tj
 ET
@@ -117,7 +117,7 @@ endobj
 << /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 1082 >>
+<< /Length 2529 >>
 stream
 BT
 /F1 10 Tf
@@ -135,10 +135,27 @@ T* (search_navigation: hit@1=0.6, hit@3=0.6, mrr=0.6, count=25) Tj
 T* (structure_understanding: hit@1=0.84, hit@3=0.84, mrr=0.84, count=25) Tj
 T* () Tj
 T* (Multi-axis metadata: {'modules_indexed': 732, 'approved_labels': {'path':) Tj
-T* ('out\\\\label_approval\\\\auto_approved_labels.jsonl', 'module_labels_added': 24,) Tj
-T* ('ip_context_labels_added': 69}}) Tj
+T* ('D:\\\\MyWork\\\\verilog\\\\out\\\\label_approval\\\\auto_approved_labels.jsonl', 'module_labels_added':) Tj
+T* (24, 'ip_context_labels_added': 69}, 'kg_version_tag': None}) Tj
 T* () Tj
-T* (7. VerilogEval Status) Tj
+T* (7. Manticore Search Retrieval) Tj
+T* (This evaluation adds a Manticore Search-style BM25F full-text ranker over parser/LSP fields.) Tj
+T* (It also reports a hybrid variant that indexes KG labels, summaries, and reverse parent context.) Tj
+T* (manticore_parser_lsp: hit@1=0.8629, hit@3=0.8914, mrr=0.8857, weighted_hit@1=0.8401) Tj
+T* (manticore_hybrid: hit@1=0.8686, hit@3=0.8914, mrr=0.8781, weighted_hit@1=0.8479) Tj
+T* (Manticore metadata: {'modules_indexed': 732, 'questions': 175, 'seed':) Tj
+T* ('D:\\\\MyWork\\\\verilog\\\\out\\\\merged_ontology_seed.jsonl', 'approved_labels': {'path':) Tj
+T* ('D:\\\\MyWork\\\\verilog\\\\out\\\\label_approval\\\\auto_approved_labels.jsonl', 'module_labels_added':) Tj
+T* (24, 'ip_context_labels_added': 69}, 'manticore_repo':) Tj
+T* ('D:\\\\MyWork\\\\verilog\\\\tools\\\\manticoresearch', 'manticore_source':) Tj
+T* ('https://github.com/manticoresoftware/manticoresearch', 'index_build_ms': 272.225,) Tj
+T* ('latency_ms': {'baseline': {'total_ms': 4929.941, 'avg_query_ms': 28.171}, 'kg': {'total_ms':) Tj
+T* (5999.671, 'avg_query_ms': 34.284}, 'manticore_parser_lsp': {'total_ms': 6542.472,) Tj
+T* ('avg_query_ms': 37.386}, 'manticore_hybrid': {'total_ms': 8123.22, 'avg_query_ms': 46.418}},) Tj
+T* ('note': 'Local BM25F model of Manticore Search over parser+LSP fields; schema/documents are) Tj
+T* (emitted for real server loading.'}) Tj
+T* () Tj
+T* (8. VerilogEval Status) Tj
 T* (Official verilogeval runner/package was not available in this workspace.) Tj
 T* (All score_100 numbers are proxy scores, not official VerilogEval scores.) Tj
 ET
@@ -158,15 +175,15 @@ xref
 0000000000 65535 f
 0000000009 00000 n
 0000000079 00000 n
-0000002517 00000 n
-0000002643 00000 n
-0000005367 00000 n
-0000005493 00000 n
-0000006627 00000 n
-0000006753 00000 n
-0000006824 00000 n
+0000002568 00000 n
+0000002694 00000 n
+0000005418 00000 n
+0000005544 00000 n
+0000008125 00000 n
+0000008251 00000 n
+0000008322 00000 n
 trailer
 << /Size 10 /Root 9 0 R >>
 startxref
-6873
+8371
 %%EOF
