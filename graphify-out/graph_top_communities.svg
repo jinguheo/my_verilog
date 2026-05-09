@@ -1,0 +1,492 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1400" viewBox="0 0 1800 1400">
+<rect width="100%" height="100%" fill="#10131a"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif}.label{fill:#fff;font-size:13px;font-weight:600;text-anchor:middle}.small{fill:#aeb9c8;font-size:11px;text-anchor:middle}.edge{stroke:#6d7f99;stroke-opacity:.24}.node{fill:#4E79A7;stroke:#e8edf2;stroke-width:1}</style>
+<text x="40" y="42" fill="#e8edf2" font-size="24" font-weight="700">Graphify Top 80 Communities</text>
+<text x="40" y="68" fill="#aeb9c8" font-size="14">Node size = community size, edge width = cross-community links. Hover nodes in SVG-capable viewers for counts.</text>
+<line class="edge" x1="1150.0" y1="730.0" x2="532.5" y2="1023.0" stroke-width="1.09"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="299.3" y2="835.9" stroke-width="1.09"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="441.8" y2="834.6" stroke-width="1.09"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1292.1" y2="1197.3" stroke-width="1.09"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1428.3" y2="1035.0" stroke-width="1.09"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="794.1" y2="1330.7" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="476.5" y2="933.9" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="326.8" y2="521.4" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="371.7" y2="425.0" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="432.7" y2="337.9" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="507.9" y2="262.7" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="595.0" y2="201.7" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="691.4" y2="156.8" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="794.1" y2="129.3" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="900.0" y2="120.0" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1005.9" y2="129.3" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1108.6" y2="156.8" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1205.0" y2="201.7" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1292.1" y2="262.7" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1367.3" y2="337.9" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1428.3" y2="425.0" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1473.2" y2="521.4" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1500.7" y2="624.1" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="795.4" y2="271.8" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="299.3" y2="835.9" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1108.6" y2="1303.2" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="795.4" y2="1188.2" stroke-width="1.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1267.5" y2="1023.0" stroke-width="1.09"/>
+<line class="edge" x1="995.7" y1="961.0" x2="900.0" y2="1340.0" stroke-width="1.09"/>
+<line class="edge" x1="995.7" y1="961.0" x2="441.8" y2="625.4" stroke-width="1.09"/>
+<line class="edge" x1="995.7" y1="961.0" x2="290.0" y2="730.0" stroke-width="1.09"/>
+<line class="edge" x1="995.7" y1="961.0" x2="1267.5" y2="437.0" stroke-width="1.09"/>
+<line class="edge" x1="995.7" y1="961.0" x2="1370.0" y2="730.0" stroke-width="1.09"/>
+<line class="edge" x1="995.7" y1="961.0" x2="1267.5" y2="1023.0" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="532.5" y2="1023.0" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="326.8" y2="521.4" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="371.7" y2="425.0" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="432.7" y2="337.9" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="507.9" y2="262.7" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="595.0" y2="201.7" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="691.4" y2="156.8" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="794.1" y2="129.3" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="900.0" y2="120.0" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1005.9" y2="129.3" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1108.6" y2="156.8" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1205.0" y2="201.7" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1292.1" y2="262.7" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1367.3" y2="337.9" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1428.3" y2="425.0" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1473.2" y2="521.4" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1500.7" y2="624.1" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="980.0" x2="900.0" y2="480.0" stroke-width="1.09"/>
+<line class="edge" x1="804.3" y1="961.0" x2="794.1" y2="1330.7" stroke-width="1.09"/>
+<line class="edge" x1="804.3" y1="961.0" x2="532.5" y2="1023.0" stroke-width="1.09"/>
+<line class="edge" x1="804.3" y1="961.0" x2="299.3" y2="835.9" stroke-width="1.09"/>
+<line class="edge" x1="804.3" y1="961.0" x2="1473.2" y2="938.6" stroke-width="1.09"/>
+<line class="edge" x1="804.3" y1="961.0" x2="1005.9" y2="1330.7" stroke-width="1.09"/>
+<line class="edge" x1="804.3" y1="961.0" x2="900.0" y2="260.0" stroke-width="1.09"/>
+<line class="edge" x1="723.2" y1="906.8" x2="532.5" y2="1023.0" stroke-width="1.09"/>
+<line class="edge" x1="723.2" y1="906.8" x2="1205.0" y2="1258.3" stroke-width="1.09"/>
+<line class="edge" x1="723.2" y1="906.8" x2="1292.1" y2="1197.3" stroke-width="1.09"/>
+<line class="edge" x1="723.2" y1="906.8" x2="507.9" y2="1197.3" stroke-width="1.09"/>
+<line class="edge" x1="723.2" y1="906.8" x2="1004.6" y2="271.8" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="825.7" x2="1103.9" y2="1153.5" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="825.7" x2="995.7" y2="499.0" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="825.7" x2="1131.0" y2="634.3" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="825.7" x2="696.1" y2="1153.5" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="825.7" x2="900.0" y2="480.0" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="825.7" x2="1267.5" y2="1023.0" stroke-width="1.09"/>
+<line class="edge" x1="650.0" y1="730.0" x2="532.5" y2="437.0" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="634.3" x2="1358.2" y2="625.4" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="634.3" x2="1004.6" y2="1188.2" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="634.3" x2="995.7" y2="499.0" stroke-width="1.09"/>
+<line class="edge" x1="669.0" y1="634.3" x2="1103.9" y2="1153.5" stroke-width="1.09"/>
+<line class="edge" x1="804.3" y1="499.0" x2="900.0" y2="1200.0" stroke-width="1.09"/>
+<line class="edge" x1="804.3" y1="499.0" x2="1370.0" y2="730.0" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="480.0" x2="900.0" y2="1200.0" stroke-width="1.09"/>
+<line class="edge" x1="900.0" y1="480.0" x2="1267.5" y2="1023.0" stroke-width="1.09"/>
+<line class="edge" x1="995.7" y1="499.0" x2="441.8" y2="834.6" stroke-width="1.09"/>
+<line class="edge" x1="1370.0" y1="730.0" x2="1103.9" y2="1153.5" stroke-width="1.09"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="691.4" y2="1303.2" stroke-width="1.50"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="795.4" y2="271.8" stroke-width="1.50"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="507.9" y2="1197.3" stroke-width="1.50"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1500.7" y2="835.9" stroke-width="1.50"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="326.8" y2="938.6" stroke-width="1.50"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1103.9" y2="306.5" stroke-width="1.50"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="696.1" y2="1153.5" stroke-width="1.50"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1205.0" y2="1258.3" stroke-width="1.50"/>
+<line class="edge" x1="995.7" y1="961.0" x2="299.3" y2="624.1" stroke-width="1.50"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1323.5" y2="933.9" stroke-width="1.50"/>
+<line class="edge" x1="900.0" y1="980.0" x2="669.0" y2="634.3" stroke-width="1.50"/>
+<line class="edge" x1="900.0" y1="980.0" x2="1131.0" y2="634.3" stroke-width="1.50"/>
+<line class="edge" x1="804.3" y1="961.0" x2="1358.2" y2="834.6" stroke-width="1.50"/>
+<line class="edge" x1="804.3" y1="961.0" x2="1205.0" y2="1258.3" stroke-width="1.50"/>
+<line class="edge" x1="723.2" y1="906.8" x2="1267.5" y2="1023.0" stroke-width="1.50"/>
+<line class="edge" x1="669.0" y1="825.7" x2="607.0" y2="1097.5" stroke-width="1.50"/>
+<line class="edge" x1="669.0" y1="825.7" x2="1370.0" y2="730.0" stroke-width="1.50"/>
+<line class="edge" x1="669.0" y1="634.3" x2="900.0" y2="1200.0" stroke-width="1.50"/>
+<line class="edge" x1="669.0" y1="634.3" x2="532.5" y2="1023.0" stroke-width="1.50"/>
+<line class="edge" x1="669.0" y1="634.3" x2="696.1" y2="1153.5" stroke-width="1.50"/>
+<line class="edge" x1="669.0" y1="634.3" x2="1193.0" y2="1097.5" stroke-width="1.50"/>
+<line class="edge" x1="804.3" y1="499.0" x2="900.0" y2="480.0" stroke-width="1.50"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="371.7" y2="1035.0" stroke-width="1.79"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="432.7" y2="1122.1" stroke-width="1.79"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="691.4" y2="1303.2" stroke-width="1.79"/>
+<line class="edge" x1="995.7" y1="961.0" x2="299.3" y2="835.9" stroke-width="1.79"/>
+<line class="edge" x1="995.7" y1="961.0" x2="696.1" y2="306.5" stroke-width="1.79"/>
+<line class="edge" x1="900.0" y1="980.0" x2="669.0" y2="825.7" stroke-width="1.79"/>
+<line class="edge" x1="804.3" y1="961.0" x2="1323.5" y2="933.9" stroke-width="1.79"/>
+<line class="edge" x1="723.2" y1="906.8" x2="995.7" y2="499.0" stroke-width="1.79"/>
+<line class="edge" x1="723.2" y1="906.8" x2="795.4" y2="271.8" stroke-width="1.79"/>
+<line class="edge" x1="669.0" y1="634.3" x2="1358.2" y2="834.6" stroke-width="1.79"/>
+<line class="edge" x1="804.3" y1="499.0" x2="995.7" y2="499.0" stroke-width="1.79"/>
+<line class="edge" x1="995.7" y1="499.0" x2="1370.0" y2="730.0" stroke-width="1.79"/>
+<line class="edge" x1="1076.8" y1="553.2" x2="1323.5" y2="933.9" stroke-width="1.79"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1103.9" y2="1153.5" stroke-width="2.01"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="476.5" y2="933.9" stroke-width="2.01"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="696.1" y2="1153.5" stroke-width="2.01"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="900.0" y2="260.0" stroke-width="2.01"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="595.0" y2="1258.3" stroke-width="2.01"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1108.6" y2="1303.2" stroke-width="2.01"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1292.1" y2="1197.3" stroke-width="2.01"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1004.6" y2="271.8" stroke-width="2.01"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="532.5" y2="1023.0" stroke-width="2.01"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1004.6" y2="271.8" stroke-width="2.01"/>
+<line class="edge" x1="900.0" y1="980.0" x2="723.2" y2="906.8" stroke-width="2.01"/>
+<line class="edge" x1="804.3" y1="961.0" x2="1108.6" y2="1303.2" stroke-width="2.01"/>
+<line class="edge" x1="723.2" y1="906.8" x2="1103.9" y2="1153.5" stroke-width="2.01"/>
+<line class="edge" x1="723.2" y1="906.8" x2="607.0" y2="1097.5" stroke-width="2.01"/>
+<line class="edge" x1="723.2" y1="906.8" x2="1358.2" y2="834.6" stroke-width="2.01"/>
+<line class="edge" x1="900.0" y1="480.0" x2="995.7" y2="499.0" stroke-width="2.01"/>
+<line class="edge" x1="1076.8" y1="553.2" x2="1131.0" y2="634.3" stroke-width="2.01"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1323.5" y2="933.9" stroke-width="2.19"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="900.0" y2="1200.0" stroke-width="2.19"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1004.6" y2="1188.2" stroke-width="2.19"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="794.1" y2="1330.7" stroke-width="2.19"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="607.0" y2="362.5" stroke-width="2.19"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1367.3" y2="1122.1" stroke-width="2.19"/>
+<line class="edge" x1="995.7" y1="961.0" x2="1323.5" y2="933.9" stroke-width="2.19"/>
+<line class="edge" x1="723.2" y1="906.8" x2="476.5" y2="526.1" stroke-width="2.19"/>
+<line class="edge" x1="669.0" y1="825.7" x2="900.0" y2="1200.0" stroke-width="2.19"/>
+<line class="edge" x1="669.0" y1="634.3" x2="1323.5" y2="933.9" stroke-width="2.19"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1131.0" y2="634.3" stroke-width="2.35"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="299.3" y2="835.9" stroke-width="2.35"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1205.0" y2="1258.3" stroke-width="2.35"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="795.4" y2="1188.2" stroke-width="2.35"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1323.5" y2="933.9" stroke-width="2.35"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1358.2" y2="834.6" stroke-width="2.35"/>
+<line class="edge" x1="900.0" y1="980.0" x2="804.3" y2="961.0" stroke-width="2.35"/>
+<line class="edge" x1="804.3" y1="961.0" x2="795.4" y2="1188.2" stroke-width="2.35"/>
+<line class="edge" x1="669.0" y1="634.3" x2="1267.5" y2="1023.0" stroke-width="2.35"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="430.0" y2="730.0" stroke-width="2.48"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="795.4" y2="271.8" stroke-width="2.48"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="476.5" y2="933.9" stroke-width="2.48"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1428.3" y2="1035.0" stroke-width="2.48"/>
+<line class="edge" x1="723.2" y1="906.8" x2="900.0" y2="480.0" stroke-width="2.48"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1358.2" y2="834.6" stroke-width="2.60"/>
+<line class="edge" x1="804.3" y1="961.0" x2="723.2" y2="906.8" stroke-width="2.60"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="326.8" y2="938.6" stroke-width="2.70"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="476.5" y2="526.1" stroke-width="2.70"/>
+<line class="edge" x1="995.7" y1="961.0" x2="723.2" y2="906.8" stroke-width="2.70"/>
+<line class="edge" x1="995.7" y1="961.0" x2="1131.0" y2="634.3" stroke-width="2.70"/>
+<line class="edge" x1="804.3" y1="961.0" x2="1131.0" y2="634.3" stroke-width="2.70"/>
+<line class="edge" x1="669.0" y1="634.3" x2="900.0" y2="480.0" stroke-width="2.70"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1473.2" y2="938.6" stroke-width="2.80"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1323.5" y2="933.9" stroke-width="2.80"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1267.5" y2="1023.0" stroke-width="2.80"/>
+<line class="edge" x1="995.7" y1="961.0" x2="696.1" y2="1153.5" stroke-width="2.80"/>
+<line class="edge" x1="723.2" y1="906.8" x2="1076.8" y2="553.2" stroke-width="2.80"/>
+<line class="edge" x1="669.0" y1="634.3" x2="804.3" y2="499.0" stroke-width="2.80"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="995.7" y2="499.0" stroke-width="2.88"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1005.9" y2="1330.7" stroke-width="2.88"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1510.0" y2="730.0" stroke-width="2.88"/>
+<line class="edge" x1="723.2" y1="906.8" x2="441.8" y2="834.6" stroke-width="2.88"/>
+<line class="edge" x1="723.2" y1="906.8" x2="900.0" y2="1200.0" stroke-width="2.88"/>
+<line class="edge" x1="669.0" y1="634.3" x2="1370.0" y2="730.0" stroke-width="2.88"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="900.0" y2="980.0" stroke-width="2.96"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1323.5" y2="526.1" stroke-width="2.96"/>
+<line class="edge" x1="723.2" y1="906.8" x2="1370.0" y2="730.0" stroke-width="2.96"/>
+<line class="edge" x1="669.0" y1="825.7" x2="1076.8" y2="553.2" stroke-width="2.96"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1108.6" y2="1303.2" stroke-width="3.04"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1193.0" y2="362.5" stroke-width="3.04"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1076.8" y2="553.2" stroke-width="3.04"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="476.5" y2="526.1" stroke-width="3.11"/>
+<line class="edge" x1="804.3" y1="961.0" x2="696.1" y2="1153.5" stroke-width="3.29"/>
+<line class="edge" x1="804.3" y1="961.0" x2="1193.0" y2="1097.5" stroke-width="3.29"/>
+<line class="edge" x1="995.7" y1="961.0" x2="669.0" y2="825.7" stroke-width="3.34"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="476.5" y2="526.1" stroke-width="3.40"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="804.3" y2="499.0" stroke-width="3.44"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="804.3" y2="961.0" stroke-width="3.49"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="607.0" y2="1097.5" stroke-width="3.54"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="441.8" y2="834.6" stroke-width="3.54"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="795.4" y2="1188.2" stroke-width="3.66"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="607.0" y2="1097.5" stroke-width="3.70"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="995.7" y2="961.0" stroke-width="3.73"/>
+<line class="edge" x1="669.0" y1="825.7" x2="669.0" y2="634.3" stroke-width="3.77"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="900.0" y2="1200.0" stroke-width="3.80"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="995.7" y2="961.0" stroke-width="3.80"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1004.6" y2="271.8" stroke-width="3.87"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1076.8" y2="553.2" stroke-width="3.90"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1193.0" y2="1097.5" stroke-width="3.96"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1103.9" y2="1153.5" stroke-width="3.96"/>
+<line class="edge" x1="804.3" y1="961.0" x2="1076.8" y2="553.2" stroke-width="3.96"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="900.0" y2="1200.0" stroke-width="4.09"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="441.8" y2="834.6" stroke-width="4.09"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1370.0" y2="730.0" stroke-width="4.09"/>
+<line class="edge" x1="669.0" y1="634.3" x2="1076.8" y2="553.2" stroke-width="4.11"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="995.7" y2="499.0" stroke-width="4.14"/>
+<line class="edge" x1="723.2" y1="906.8" x2="669.0" y2="634.3" stroke-width="4.16"/>
+<line class="edge" x1="669.0" y1="825.7" x2="804.3" y2="499.0" stroke-width="4.16"/>
+<line class="edge" x1="804.3" y1="961.0" x2="669.0" y2="825.7" stroke-width="4.18"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="995.7" y2="499.0" stroke-width="4.21"/>
+<line class="edge" x1="995.7" y1="961.0" x2="669.0" y2="634.3" stroke-width="4.27"/>
+<line class="edge" x1="723.2" y1="906.8" x2="669.0" y2="825.7" stroke-width="4.46"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1103.9" y2="1153.5" stroke-width="4.66"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="1004.6" y2="1188.2" stroke-width="4.69"/>
+<line class="edge" x1="723.2" y1="906.8" x2="804.3" y2="499.0" stroke-width="4.70"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1004.6" y2="1188.2" stroke-width="4.72"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="804.3" y2="961.0" stroke-width="4.76"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="900.0" y2="480.0" stroke-width="4.79"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1370.0" y2="730.0" stroke-width="4.82"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="995.7" y2="961.0" stroke-width="4.88"/>
+<line class="edge" x1="804.3" y1="961.0" x2="669.0" y2="634.3" stroke-width="4.93"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1076.8" y2="553.2" stroke-width="4.97"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1358.2" y2="834.6" stroke-width="5.14"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1370.0" y2="730.0" stroke-width="5.17"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1267.5" y2="1023.0" stroke-width="5.31"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="804.3" y2="499.0" stroke-width="5.44"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="900.0" y2="480.0" stroke-width="5.44"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="669.0" y2="634.3" stroke-width="5.53"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="723.2" y2="906.8" stroke-width="5.54"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="669.0" y2="825.7" stroke-width="5.61"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="669.0" y2="825.7" stroke-width="5.64"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="804.3" y2="961.0" stroke-width="5.73"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="900.0" y2="480.0" stroke-width="5.79"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="804.3" y2="499.0" stroke-width="6.31"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="669.0" y2="634.3" stroke-width="6.32"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="669.0" y2="825.7" stroke-width="6.54"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="900.0" y2="980.0" stroke-width="6.73"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="669.0" y2="634.3" stroke-width="6.84"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1076.8" y2="906.8" stroke-width="6.88"/>
+<line class="edge" x1="1076.8" y1="906.8" x2="723.2" y2="906.8" stroke-width="6.90"/>
+<line class="edge" x1="1150.0" y1="730.0" x2="1131.0" y2="825.7" stroke-width="6.90"/>
+<line class="edge" x1="995.7" y1="961.0" x2="804.3" y2="961.0" stroke-width="6.90"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="723.2" y2="906.8" stroke-width="6.90"/>
+<line class="edge" x1="1131.0" y1="825.7" x2="1076.8" y2="906.8" stroke-width="6.90"/>
+<g><title>Community 0: 7486 nodes</title><circle class="node" cx="1150.0" cy="730.0" r="42.0"/>
+<text class="label" x="1150.0" y="734.0">C0</text>
+<text class="small" x="1150.0" y="786.0">7486</text></g>
+<g><title>Community 1: 5861 nodes</title><circle class="node" cx="1131.0" cy="825.7" r="38.1"/>
+<text class="label" x="1131.0" y="829.7">C1</text>
+<text class="small" x="1131.0" y="877.8">5861</text></g>
+<g><title>Community 2: 4468 nodes</title><circle class="node" cx="1076.8" cy="906.8" r="34.3"/>
+<text class="label" x="1076.8" y="910.8">C2</text>
+<text class="small" x="1076.8" y="955.0">4468</text></g>
+<g><title>Community 3: 4205 nodes</title><circle class="node" cx="995.7" cy="961.0" r="33.5"/>
+<text class="label" x="995.7" y="965.0">C3</text>
+<text class="small" x="995.7" y="1008.5">4205</text></g>
+<g><title>Community 4: 4147 nodes</title><circle class="node" cx="900.0" cy="980.0" r="33.3"/>
+<text class="label" x="900.0" y="984.0">C4</text>
+<text class="small" x="900.0" y="1027.3">4147</text></g>
+<g><title>Community 5: 2613 nodes</title><circle class="node" cx="804.3" cy="961.0" r="28.1"/>
+<text class="label" x="804.3" y="965.0">C5</text>
+<text class="small" x="804.3" y="1003.1">2613</text></g>
+<g><title>Community 6: 1548 nodes</title><circle class="node" cx="723.2" cy="906.8" r="23.5"/>
+<text class="label" x="723.2" y="910.8">C6</text>
+<text class="small" x="723.2" y="944.2">1548</text></g>
+<g><title>Community 7: 1341 nodes</title><circle class="node" cx="669.0" cy="825.7" r="22.4"/>
+<text class="label" x="669.0" y="829.7">C7</text>
+<text class="small" x="669.0" y="862.1">1341</text></g>
+<g><title>Community 8: 1262 nodes</title><circle class="node" cx="650.0" cy="730.0" r="22.0"/>
+<text class="label" x="650.0" y="734.0">C8</text>
+<text class="small" x="650.0" y="766.0">1262</text></g>
+<g><title>Community 9: 1178 nodes</title><circle class="node" cx="669.0" cy="634.3" r="21.5"/>
+<text class="label" x="669.0" y="638.3">C9</text>
+<text class="small" x="669.0" y="669.8">1178</text></g>
+<g><title>Community 10: 922 nodes</title><circle class="node" cx="723.2" cy="553.2" r="19.9"/>
+<text class="label" x="723.2" y="557.2">C10</text>
+<text class="small" x="723.2" y="587.2">922</text></g>
+<g><title>Community 11: 644 nodes</title><circle class="node" cx="804.3" cy="499.0" r="18.0"/>
+<text class="label" x="804.3" y="503.0">C11</text>
+<text class="small" x="804.3" y="531.0">644</text></g>
+<g><title>Community 12: 395 nodes</title><circle class="node" cx="900.0" cy="480.0" r="15.8"/>
+<text class="label" x="900.0" y="484.0">C12</text>
+<text class="small" x="900.0" y="509.8">395</text></g>
+<g><title>Community 13: 393 nodes</title><circle class="node" cx="995.7" cy="499.0" r="15.8"/>
+<text class="label" x="995.7" y="503.0">C13</text>
+<text class="small" x="995.7" y="528.8">393</text></g>
+<g><title>Community 14: 296 nodes</title><circle class="node" cx="1076.8" cy="553.2" r="14.8"/>
+<text class="label" x="1076.8" y="557.2">C14</text>
+<text class="small" x="1076.8" y="582.0">296</text></g>
+<g><title>Community 15: 251 nodes</title><circle class="node" cx="1131.0" cy="634.3" r="14.2"/>
+<text class="label" x="1131.0" y="638.3">C15</text>
+<text class="small" x="1131.0" y="662.6">251</text></g>
+<g><title>Community 16: 206 nodes</title><circle class="node" cx="1370.0" cy="730.0" r="13.6"/>
+<text class="label" x="1370.0" y="734.0">C16</text>
+<text class="small" x="1370.0" y="757.6">206</text></g>
+<g><title>Community 17: 178 nodes</title><circle class="node" cx="1358.2" cy="834.6" r="13.2"/>
+<text class="label" x="1358.2" y="838.6">C17</text>
+<text class="small" x="1358.2" y="861.8">178</text></g>
+<g><title>Community 18: 151 nodes</title><circle class="node" cx="1323.5" cy="933.9" r="12.8"/>
+<text class="label" x="1323.5" y="937.9">C18</text>
+<text class="small" x="1323.5" y="960.8">151</text></g>
+<g><title>Community 19: 147 nodes</title><circle class="node" cx="1267.5" cy="1023.0" r="12.8"/>
+<text class="label" x="1267.5" y="1027.0">C19</text>
+<text class="small" x="1267.5" y="1049.8">147</text></g>
+<g><title>Community 20: 136 nodes</title><circle class="node" cx="1193.0" cy="1097.5" r="12.6"/>
+<text class="label" x="1193.0" y="1101.5">C20</text>
+<text class="small" x="1193.0" y="1124.0">136</text></g>
+<g><title>Community 21: 135 nodes</title><circle class="node" cx="1103.9" cy="1153.5" r="12.6"/>
+<text class="label" x="1103.9" y="1157.5">C21</text>
+<text class="small" x="1103.9" y="1180.0">135</text></g>
+<g><title>Community 22: 128 nodes</title><circle class="node" cx="1004.6" cy="1188.2" r="12.4"/>
+<text class="label" x="1004.6" y="1192.2">C22</text>
+<text class="small" x="1004.6" y="1214.7">128</text></g>
+<g><title>Community 23: 108 nodes</title><circle class="node" cx="900.0" cy="1200.0" r="12.1"/>
+<text class="label" x="900.0" y="1204.0">C23</text>
+<text class="small" x="900.0" y="1226.1">108</text></g>
+<g><title>Community 24: 80 nodes</title><circle class="node" cx="795.4" cy="1188.2" r="11.5"/>
+<text class="label" x="795.4" y="1192.2">C24</text>
+<text class="small" x="795.4" y="1213.7">80</text></g>
+<g><title>Community 25: 74 nodes</title><circle class="node" cx="696.1" cy="1153.5" r="11.4"/>
+<text class="label" x="696.1" y="1157.5">C25</text>
+<text class="small" x="696.1" y="1178.8">74</text></g>
+<g><title>Community 26: 58 nodes</title><circle class="node" cx="607.0" cy="1097.5" r="11.0"/>
+<text class="label" x="607.0" y="1101.5">C26</text>
+<text class="small" x="607.0" y="1122.5">58</text></g>
+<g><title>Community 27: 53 nodes</title><circle class="node" cx="532.5" cy="1023.0" r="10.9"/>
+<text class="label" x="532.5" y="1027.0">C27</text>
+<text class="small" x="532.5" y="1047.9">53</text></g>
+<g><title>Community 28: 51 nodes</title><circle class="node" cx="476.5" cy="933.9" r="10.8"/>
+<text class="label" x="476.5" y="937.9">C28</text>
+<text class="small" x="476.5" y="958.7">51</text></g>
+<g><title>Community 29: 48 nodes</title><circle class="node" cx="441.8" cy="834.6" r="10.7"/>
+<text class="label" x="441.8" y="838.6">C29</text>
+<text class="small" x="441.8" y="859.3">48</text></g>
+<g><title>Community 30: 44 nodes</title><circle class="node" cx="430.0" cy="730.0" r="10.6"/>
+<text class="label" x="430.0" y="734.0">C30</text>
+<text class="small" x="430.0" y="754.6">44</text></g>
+<g><title>Community 31: 41 nodes</title><circle class="node" cx="441.8" cy="625.4" r="10.5"/>
+<text class="label" x="441.8" y="629.4">C31</text>
+<text class="small" x="441.8" y="649.9">41</text></g>
+<g><title>Community 32: 41 nodes</title><circle class="node" cx="476.5" cy="526.1" r="10.5"/>
+<text class="label" x="476.5" y="530.1">C32</text>
+<text class="small" x="476.5" y="550.6">41</text></g>
+<g><title>Community 33: 40 nodes</title><circle class="node" cx="532.5" cy="437.0" r="10.5"/>
+<text class="label" x="532.5" y="441.0">C33</text>
+<text class="small" x="532.5" y="461.4">40</text></g>
+<g><title>Community 34: 38 nodes</title><circle class="node" cx="607.0" cy="362.5" r="10.4"/>
+<text class="label" x="607.0" y="366.5">C34</text>
+<text class="small" x="607.0" y="387.0">38</text></g>
+<g><title>Community 35: 33 nodes</title><circle class="node" cx="696.1" cy="306.5" r="10.3"/>
+<text class="label" x="696.1" y="310.5">C35</text>
+<text class="small" x="696.1" y="330.8">33</text></g>
+<g><title>Community 36: 32 nodes</title><circle class="node" cx="795.4" cy="271.8" r="10.2"/>
+<text class="label" x="795.4" y="275.8">C36</text>
+<text class="small" x="795.4" y="296.0">32</text></g>
+<g><title>Community 37: 31 nodes</title><circle class="node" cx="900.0" cy="260.0" r="10.2"/>
+<text class="label" x="900.0" y="264.0">C37</text>
+<text class="small" x="900.0" y="284.2">31</text></g>
+<g><title>Community 38: 30 nodes</title><circle class="node" cx="1004.6" cy="271.8" r="10.2"/>
+<text class="label" x="1004.6" y="275.8">C38</text>
+<text class="small" x="1004.6" y="295.9">30</text></g>
+<g><title>Community 39: 29 nodes</title><circle class="node" cx="1103.9" cy="306.5" r="10.1"/>
+<text class="label" x="1103.9" y="310.5">C39</text>
+<text class="small" x="1103.9" y="330.7">29</text></g>
+<g><title>Community 40: 29 nodes</title><circle class="node" cx="1193.0" cy="362.5" r="10.1"/>
+<text class="label" x="1193.0" y="366.5">C40</text>
+<text class="small" x="1193.0" y="386.7">29</text></g>
+<g><title>Community 41: 28 nodes</title><circle class="node" cx="1267.5" cy="437.0" r="10.1"/>
+<text class="label" x="1267.5" y="441.0">C41</text>
+<text class="small" x="1267.5" y="461.0">28</text></g>
+<g><title>Community 42: 27 nodes</title><circle class="node" cx="1323.5" cy="526.1" r="10.0"/>
+<text class="label" x="1323.5" y="530.1">C42</text>
+<text class="small" x="1323.5" y="550.1">27</text></g>
+<g><title>Community 43: 25 nodes</title><circle class="node" cx="1358.2" cy="625.4" r="10.0"/>
+<text class="label" x="1358.2" y="629.4">C43</text>
+<text class="small" x="1358.2" y="649.4">25</text></g>
+<g><title>Community 44: 25 nodes</title><circle class="node" cx="1510.0" cy="730.0" r="10.0"/>
+<text class="label" x="1510.0" y="734.0">C44</text>
+<text class="small" x="1510.0" y="754.0">25</text></g>
+<g><title>Community 45: 23 nodes</title><circle class="node" cx="1500.7" cy="835.9" r="9.9"/>
+<text class="label" x="1500.7" y="839.9">C45</text>
+<text class="small" x="1500.7" y="859.8">23</text></g>
+<g><title>Community 46: 23 nodes</title><circle class="node" cx="1473.2" cy="938.6" r="9.9"/>
+<text class="label" x="1473.2" y="942.6">C46</text>
+<text class="small" x="1473.2" y="962.5">23</text></g>
+<g><title>Community 47: 22 nodes</title><circle class="node" cx="1428.3" cy="1035.0" r="9.8"/>
+<text class="label" x="1428.3" y="1039.0">C47</text>
+<text class="small" x="1428.3" y="1058.8">22</text></g>
+<g><title>Community 48: 22 nodes</title><circle class="node" cx="1367.3" cy="1122.1" r="9.8"/>
+<text class="label" x="1367.3" y="1126.1">C48</text>
+<text class="small" x="1367.3" y="1145.9">22</text></g>
+<g><title>Community 49: 20 nodes</title><circle class="node" cx="1292.1" cy="1197.3" r="9.8"/>
+<text class="label" x="1292.1" y="1201.3">C49</text>
+<text class="small" x="1292.1" y="1221.0">20</text></g>
+<g><title>Community 50: 19 nodes</title><circle class="node" cx="1205.0" cy="1258.3" r="9.7"/>
+<text class="label" x="1205.0" y="1262.3">C50</text>
+<text class="small" x="1205.0" y="1282.0">19</text></g>
+<g><title>Community 51: 19 nodes</title><circle class="node" cx="1108.6" cy="1303.2" r="9.7"/>
+<text class="label" x="1108.6" y="1307.2">C51</text>
+<text class="small" x="1108.6" y="1326.9">19</text></g>
+<g><title>Community 52: 19 nodes</title><circle class="node" cx="1005.9" cy="1330.7" r="9.7"/>
+<text class="label" x="1005.9" y="1334.7">C52</text>
+<text class="small" x="1005.9" y="1354.4">19</text></g>
+<g><title>Community 53: 18 nodes</title><circle class="node" cx="900.0" cy="1340.0" r="9.7"/>
+<text class="label" x="900.0" y="1344.0">C53</text>
+<text class="small" x="900.0" y="1363.7">18</text></g>
+<g><title>Community 54: 18 nodes</title><circle class="node" cx="794.1" cy="1330.7" r="9.7"/>
+<text class="label" x="794.1" y="1334.7">C54</text>
+<text class="small" x="794.1" y="1354.4">18</text></g>
+<g><title>Community 55: 17 nodes</title><circle class="node" cx="691.4" cy="1303.2" r="9.6"/>
+<text class="label" x="691.4" y="1307.2">C55</text>
+<text class="small" x="691.4" y="1326.8">17</text></g>
+<g><title>Community 56: 17 nodes</title><circle class="node" cx="595.0" cy="1258.3" r="9.6"/>
+<text class="label" x="595.0" y="1262.3">C56</text>
+<text class="small" x="595.0" y="1281.9">17</text></g>
+<g><title>Community 57: 17 nodes</title><circle class="node" cx="507.9" cy="1197.3" r="9.6"/>
+<text class="label" x="507.9" y="1201.3">C57</text>
+<text class="small" x="507.9" y="1220.9">17</text></g>
+<g><title>Community 58: 16 nodes</title><circle class="node" cx="432.7" cy="1122.1" r="9.6"/>
+<text class="label" x="432.7" y="1126.1">C58</text>
+<text class="small" x="432.7" y="1145.7">16</text></g>
+<g><title>Community 59: 15 nodes</title><circle class="node" cx="371.7" cy="1035.0" r="9.5"/>
+<text class="label" x="371.7" y="1039.0">C59</text>
+<text class="small" x="371.7" y="1058.5">15</text></g>
+<g><title>Community 60: 15 nodes</title><circle class="node" cx="326.8" cy="938.6" r="9.5"/>
+<text class="label" x="326.8" y="942.6">C60</text>
+<text class="small" x="326.8" y="962.2">15</text></g>
+<g><title>Community 61: 14 nodes</title><circle class="node" cx="299.3" cy="835.9" r="9.5"/>
+<text class="label" x="299.3" y="839.9">C61</text>
+<text class="small" x="299.3" y="859.4">14</text></g>
+<g><title>Community 62: 14 nodes</title><circle class="node" cx="290.0" cy="730.0" r="9.5"/>
+<text class="label" x="290.0" y="734.0">C62</text>
+<text class="small" x="290.0" y="753.5">14</text></g>
+<g><title>Community 63: 14 nodes</title><circle class="node" cx="299.3" cy="624.1" r="9.5"/>
+<text class="label" x="299.3" y="628.1">C63</text>
+<text class="small" x="299.3" y="647.5">14</text></g>
+<g><title>Community 64: 13 nodes</title><circle class="node" cx="326.8" cy="521.4" r="9.4"/>
+<text class="label" x="326.8" y="525.4">C64</text>
+<text class="small" x="326.8" y="544.8">13</text></g>
+<g><title>Community 65: 13 nodes</title><circle class="node" cx="371.7" cy="425.0" r="9.4"/>
+<text class="label" x="371.7" y="429.0">C65</text>
+<text class="small" x="371.7" y="448.4">13</text></g>
+<g><title>Community 66: 13 nodes</title><circle class="node" cx="432.7" cy="337.9" r="9.4"/>
+<text class="label" x="432.7" y="341.9">C66</text>
+<text class="small" x="432.7" y="361.3">13</text></g>
+<g><title>Community 67: 13 nodes</title><circle class="node" cx="507.9" cy="262.7" r="9.4"/>
+<text class="label" x="507.9" y="266.7">C67</text>
+<text class="small" x="507.9" y="286.1">13</text></g>
+<g><title>Community 68: 13 nodes</title><circle class="node" cx="595.0" cy="201.7" r="9.4"/>
+<text class="label" x="595.0" y="205.7">C68</text>
+<text class="small" x="595.0" y="225.1">13</text></g>
+<g><title>Community 69: 13 nodes</title><circle class="node" cx="691.4" cy="156.8" r="9.4"/>
+<text class="label" x="691.4" y="160.8">C69</text>
+<text class="small" x="691.4" y="180.2">13</text></g>
+<g><title>Community 70: 13 nodes</title><circle class="node" cx="794.1" cy="129.3" r="9.4"/>
+<text class="label" x="794.1" y="133.3">C70</text>
+<text class="small" x="794.1" y="152.7">13</text></g>
+<g><title>Community 71: 13 nodes</title><circle class="node" cx="900.0" cy="120.0" r="9.4"/>
+<text class="label" x="900.0" y="124.0">C71</text>
+<text class="small" x="900.0" y="143.4">13</text></g>
+<g><title>Community 72: 13 nodes</title><circle class="node" cx="1005.9" cy="129.3" r="9.4"/>
+<text class="label" x="1005.9" y="133.3">C72</text>
+<text class="small" x="1005.9" y="152.7">13</text></g>
+<g><title>Community 73: 13 nodes</title><circle class="node" cx="1108.6" cy="156.8" r="9.4"/>
+<text class="label" x="1108.6" y="160.8">C73</text>
+<text class="small" x="1108.6" y="180.2">13</text></g>
+<g><title>Community 74: 13 nodes</title><circle class="node" cx="1205.0" cy="201.7" r="9.4"/>
+<text class="label" x="1205.0" y="205.7">C74</text>
+<text class="small" x="1205.0" y="225.1">13</text></g>
+<g><title>Community 75: 13 nodes</title><circle class="node" cx="1292.1" cy="262.7" r="9.4"/>
+<text class="label" x="1292.1" y="266.7">C75</text>
+<text class="small" x="1292.1" y="286.1">13</text></g>
+<g><title>Community 76: 13 nodes</title><circle class="node" cx="1367.3" cy="337.9" r="9.4"/>
+<text class="label" x="1367.3" y="341.9">C76</text>
+<text class="small" x="1367.3" y="361.3">13</text></g>
+<g><title>Community 77: 13 nodes</title><circle class="node" cx="1428.3" cy="425.0" r="9.4"/>
+<text class="label" x="1428.3" y="429.0">C77</text>
+<text class="small" x="1428.3" y="448.4">13</text></g>
+<g><title>Community 78: 13 nodes</title><circle class="node" cx="1473.2" cy="521.4" r="9.4"/>
+<text class="label" x="1473.2" y="525.4">C78</text>
+<text class="small" x="1473.2" y="544.8">13</text></g>
+<g><title>Community 79: 13 nodes</title><circle class="node" cx="1500.7" cy="624.1" r="9.4"/>
+<text class="label" x="1500.7" y="628.1">C79</text>
+<text class="small" x="1500.7" y="647.5">13</text></g>
+</svg>
