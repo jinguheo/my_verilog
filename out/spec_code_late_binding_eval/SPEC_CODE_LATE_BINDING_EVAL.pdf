@@ -1,0 +1,185 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 2387 >>
+stream
+BT
+/F1 18 Tf
+60 760 Td (Spec-Code KG Late Binding Evaluation) Tj
+-60 -26 Td
+/F1 12 Tf
+60 724 Td (Spec-Code KG Late Binding Evaluation) Tj
+-60 -17 Td
+/F1 9 Tf
+60 697 Td (## Architecture Decision) Tj
+-60 -13 Td
+/F1 9 Tf
+60 674 Td (- Keep the custom code KG as the primary retrieval engine.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 661 Td (- Keep Graphify as a broad code/architecture navigation graph.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 648 Td (- Keep OpenKB as a separate spec-document wiki/KG.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 635 Td (- Integrate at query time using shared keys: `module_name`, `ip_block`, `spec_section`,) Tj
+-60 -13 Td
+/F1 9 Tf
+60 622 Td (`doc_anchor`, and `approved_label`.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 599 Td (## Link Coverage) Tj
+-60 -13 Td
+/F1 9 Tf
+60 576 Td (- Spec docs scanned: 986) Tj
+-60 -13 Td
+/F1 9 Tf
+60 563 Td (- Docs with any late-binding key: 925 \(93.81%\)) Tj
+-60 -13 Td
+/F1 9 Tf
+60 550 Td (- RTL/spec-like docs linked: 422/426 \(99.06%\)) Tj
+-60 -13 Td
+/F1 9 Tf
+60 537 Td (- Module exact-name doc links: 806) Tj
+-60 -13 Td
+/F1 9 Tf
+60 524 Td (- IP/path doc links: 885) Tj
+-60 -13 Td
+/F1 9 Tf
+60 511 Td (- Approved-label doc links: 782) Tj
+-60 -13 Td
+/F1 9 Tf
+60 488 Td (## Code Coverage) Tj
+-60 -13 Td
+/F1 9 Tf
+60 465 Td (- Code modules scanned: 1383) Tj
+-60 -13 Td
+/F1 9 Tf
+60 452 Td (- Modules with any doc link: 1325 \(95.81%\)) Tj
+-60 -13 Td
+/F1 9 Tf
+60 439 Td (- Modules with exact module-name doc link: 286) Tj
+-60 -13 Td
+/F1 9 Tf
+60 426 Td (- Modules with IP-level doc link: 1312) Tj
+-60 -13 Td
+/F1 9 Tf
+60 413 Td (- IP blocks with docs: 56/56 \(100.00%\)) Tj
+-60 -13 Td
+/F1 9 Tf
+60 390 Td (## Top IP Blocks by Spec Doc Count) Tj
+-60 -13 Td
+/F1 9 Tf
+60 367 Td (- ibex: 194 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 354 Td (- lc_ctrl: 131 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 341 Td (- tlul: 128 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 328 Td (- rstmgr: 106 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 315 Td (- pwrmgr: 104 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 302 Td (- ast: 91 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 289 Td (- edn: 90 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 276 Td (- pinmux: 90 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 263 Td (- aes: 88 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 250 Td (- kmac: 84 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 237 Td (- otbn: 82 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 224 Td (- clkmgr: 76 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 211 Td (- csrng: 74 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 198 Td (- keymgr: 74 docs) Tj
+-60 -13 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Length 1049 >>
+stream
+BT
+/F1 9 Tf
+60 760 Td (- uart: 74 docs) Tj
+-60 -13 Td
+/F1 9 Tf
+60 737 Td (## Assessment) Tj
+-60 -13 Td
+/F1 9 Tf
+60 714 Td (Late binding is feasible and preferable to physical graph merge. The strongest reliable key is) Tj
+-60 -13 Td
+/F1 9 Tf
+60 701 Td (`ip_block` from paths and HJSON/doc layout. Exact `module_name` links exist, but are too sparse) Tj
+-60 -13 Td
+/F1 9 Tf
+60 688 Td (to be the only integration bridge. `approved_label` is useful as a weak recall signal.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 665 Td (Recommended query-time flow:) Tj
+-60 -13 Td
+/F1 9 Tf
+60 642 Td (1. Resolve code query against the custom code KG.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 629 Td (2. Expand result modules to `ip_block` and `approved_label` keys.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 616 Td (3. Fetch OpenKB doc anchors matching those keys.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 603 Td (4. Add Graphify community/context only for architecture questions.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 590 Td (5. Return merged answer with provenance from each store instead of merging graph storage.) Tj
+-60 -13 Td
+ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 3 0 R >>
+endobj
+6 0 obj
+<< /Type /Pages /Kids [4 0 R 5 0 R] /Count 2 >>
+endobj
+7 0 obj
+<< /Type /Catalog /Pages 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000002518 00000 n 
+0000003619 00000 n 
+0000003745 00000 n 
+0000003871 00000 n 
+0000003934 00000 n 
+trailer << /Size 8 /Root 7 0 R >>
+startxref
+3983
+%%EOF

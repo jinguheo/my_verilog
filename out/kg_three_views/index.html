@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KG Three Views</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f7f4;color:#17202a}
+main{max-width:980px;margin:0 auto;padding:36px 22px}
+h1{font-size:28px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+a{display:block;text-decoration:none;color:#17202a;background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:8px;padding:18px;min-height:142px}
+a:hover{background:#f1f5f9}
+h2{margin:0 0 8px;font-size:18px}
+p{margin:0;color:#64748b;line-height:1.45}
+</style>
+</head>
+<body><main>
+<h1>KG Three Views</h1>
+<div class="grid">
+<a href="spec_only_kg.html"><h2>Spec-Only KG</h2><p>Spec documents only. No code, no module graph.</p></a>
+<a href="spec_code_kg.html"><h2>Spec-Code KG</h2><p>Spec documents and code modules connected by late-binding edges.</p></a>
+<a href="code_only_kg.html"><h2>Code-Only KG</h2><p>Custom RTL code KG with modules, ports, labels, and instantiation edges.</p></a>
+</div>
+</main></body></html>

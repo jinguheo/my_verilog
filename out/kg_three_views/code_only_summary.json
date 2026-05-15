@@ -1,0 +1,76 @@
+{
+  "modules": 1433,
+  "ip_blocks": 38,
+  "labels": 14,
+  "ports": 16766,
+  "instance_edges": 2103,
+  "total_nodes": 18251,
+  "total_edges": 22630,
+  "projects": {
+    "opentitan": 1142,
+    "ibex": 291
+  },
+  "top_labels": [
+    [
+      "clocked",
+      1006
+    ],
+    [
+      "resettable",
+      966
+    ],
+    [
+      "hierarchical",
+      738
+    ],
+    [
+      "uart",
+      317
+    ],
+    [
+      "fifo",
+      220
+    ],
+    [
+      "spi",
+      154
+    ],
+    [
+      "crypto",
+      84
+    ],
+    [
+      "controller",
+      56
+    ],
+    [
+      "apb",
+      42
+    ],
+    [
+      "i2c",
+      30
+    ],
+    [
+      "ibex_core",
+      20
+    ],
+    [
+      "counter",
+      13
+    ],
+    [
+      "timer",
+      13
+    ],
+    [
+      "alu",
+      1
+    ]
+  ],
+  "approved_labels": {
+    "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+    "module_labels_added": 22,
+    "ip_context_labels_added": 166
+  }
+}

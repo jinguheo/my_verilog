@@ -1,0 +1,309 @@
+{
+  "generated_at": "2026-05-15T20:48:55",
+  "architecture": {
+    "code_kg": "custom RTL ontology/KG remains primary retrieval engine",
+    "graphify": "assistant architecture/navigation graph",
+    "openkb": "separate spec/document wiki graph",
+    "integration": "late binding by module_name, ip_block, spec_section, doc_anchor, approved_label"
+  },
+  "inputs": {
+    "spec_dir": "D:\\MyWork\\verilog\\out\\spec_documents_20260514_204108",
+    "seed": "D:\\MyWork\\verilog\\out\\merged_ontology_seed.jsonl",
+    "labels": "D:\\MyWork\\verilog\\out\\merged_labels.jsonl",
+    "documents_seen": 986,
+    "modules_seen": 1383,
+    "ip_blocks_seen": 56
+  },
+  "doc_linking": {
+    "docs_with_any_link": 925,
+    "docs_with_any_link_rate": 0.9381,
+    "docs_with_module_name_link": 806,
+    "docs_with_ip_block_link": 885,
+    "docs_with_approved_label_link": 782,
+    "rtl_spec_docs": 426,
+    "rtl_spec_docs_linked": 422,
+    "rtl_spec_docs_link_rate": 0.9906,
+    "confidence_counts": {
+      "high": 806,
+      "low": 33,
+      "medium": 86,
+      "none": 61
+    },
+    "doc_kind_counts": {
+      "generic_doc": 483,
+      "ibex_reference": 40,
+      "opentitan_ip_doc": 161,
+      "opentitan_ip_hjson": 87,
+      "prim_doc": 9,
+      "readme": 77,
+      "testplan": 129
+    }
+  },
+  "code_coverage": {
+    "modules_with_any_doc": 1325,
+    "modules_with_any_doc_rate": 0.9581,
+    "modules_with_exact_doc": 286,
+    "modules_with_ip_doc": 1312,
+    "ip_blocks_with_docs": 56,
+    "ip_blocks_with_docs_rate": 1.0
+  },
+  "top_ip_blocks_by_doc_count": [
+    {
+      "ip_block": "ibex",
+      "doc_count": 194
+    },
+    {
+      "ip_block": "lc_ctrl",
+      "doc_count": 131
+    },
+    {
+      "ip_block": "tlul",
+      "doc_count": 128
+    },
+    {
+      "ip_block": "rstmgr",
+      "doc_count": 106
+    },
+    {
+      "ip_block": "pwrmgr",
+      "doc_count": 104
+    },
+    {
+      "ip_block": "ast",
+      "doc_count": 91
+    },
+    {
+      "ip_block": "edn",
+      "doc_count": 90
+    },
+    {
+      "ip_block": "pinmux",
+      "doc_count": 90
+    },
+    {
+      "ip_block": "aes",
+      "doc_count": 88
+    },
+    {
+      "ip_block": "kmac",
+      "doc_count": 84
+    },
+    {
+      "ip_block": "otbn",
+      "doc_count": 82
+    },
+    {
+      "ip_block": "clkmgr",
+      "doc_count": 76
+    },
+    {
+      "ip_block": "csrng",
+      "doc_count": 74
+    },
+    {
+      "ip_block": "keymgr",
+      "doc_count": 74
+    },
+    {
+      "ip_block": "uart",
+      "doc_count": 74
+    },
+    {
+      "ip_block": "gpio",
+      "doc_count": 71
+    },
+    {
+      "ip_block": "prim",
+      "doc_count": 70
+    },
+    {
+      "ip_block": "alert_handler",
+      "doc_count": 68
+    },
+    {
+      "ip_block": "rv_core_ibex",
+      "doc_count": 68
+    },
+    {
+      "ip_block": "otp_ctrl",
+      "doc_count": 67
+    },
+    {
+      "ip_block": "rv_dm",
+      "doc_count": 64
+    },
+    {
+      "ip_block": "flash_ctrl",
+      "doc_count": 63
+    },
+    {
+      "ip_block": "spi_device",
+      "doc_count": 53
+    },
+    {
+      "ip_block": "racl_ctrl",
+      "doc_count": 51
+    },
+    {
+      "ip_block": "rv_plic",
+      "doc_count": 51
+    }
+  ],
+  "top_modules_by_doc_count": [
+    {
+      "module": "bus",
+      "ip_block": "ibex",
+      "doc_count": 472,
+      "exact_doc_count": 348
+    },
+    {
+      "module": "timer",
+      "ip_block": "ibex",
+      "doc_count": 261,
+      "exact_doc_count": 96
+    },
+    {
+      "module": "ram_1p",
+      "ip_block": "otbn",
+      "doc_count": 251,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "ram_1p",
+      "ip_block": "ibex",
+      "doc_count": 251,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "prim_clock_gating",
+      "ip_block": "",
+      "doc_count": 197,
+      "exact_doc_count": 5
+    },
+    {
+      "module": "prim_clock_gating",
+      "ip_block": "prim_xilinx_ultrascale",
+      "doc_count": 197,
+      "exact_doc_count": 5
+    },
+    {
+      "module": "prim_clock_gating",
+      "ip_block": "prim_xilinx",
+      "doc_count": 197,
+      "exact_doc_count": 5
+    },
+    {
+      "module": "prim_clock_gating",
+      "ip_block": "prim_generic",
+      "doc_count": 197,
+      "exact_doc_count": 5
+    },
+    {
+      "module": "prim_clock_gating",
+      "ip_block": "prim_asap7",
+      "doc_count": 197,
+      "exact_doc_count": 5
+    },
+    {
+      "module": "prim_clock_gating",
+      "ip_block": "prim_xilinx",
+      "doc_count": 197,
+      "exact_doc_count": 5
+    },
+    {
+      "module": "prim_clock_gating",
+      "ip_block": "prim_generic",
+      "doc_count": 197,
+      "exact_doc_count": 5
+    },
+    {
+      "module": "prim_clock_gating",
+      "ip_block": "ibex",
+      "doc_count": 197,
+      "exact_doc_count": 5
+    },
+    {
+      "module": "clkgen_xil7series",
+      "ip_block": "",
+      "doc_count": 194,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "clkgen_xil7series",
+      "ip_block": "",
+      "doc_count": 194,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "clkgen_xil7series",
+      "ip_block": "ibex",
+      "doc_count": 194,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "ibex_alu",
+      "ip_block": "",
+      "doc_count": 194,
+      "exact_doc_count": 2
+    },
+    {
+      "module": "ibex_alu",
+      "ip_block": "ibex",
+      "doc_count": 194,
+      "exact_doc_count": 2
+    },
+    {
+      "module": "ibex_branch_predict",
+      "ip_block": "",
+      "doc_count": 194,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "ibex_branch_predict",
+      "ip_block": "ibex",
+      "doc_count": 194,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "ibex_compressed_decoder",
+      "ip_block": "",
+      "doc_count": 194,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "ibex_compressed_decoder",
+      "ip_block": "ibex",
+      "doc_count": 194,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "ibex_controller",
+      "ip_block": "",
+      "doc_count": 194,
+      "exact_doc_count": 2
+    },
+    {
+      "module": "ibex_controller",
+      "ip_block": "ibex",
+      "doc_count": 194,
+      "exact_doc_count": 2
+    },
+    {
+      "module": "ibex_counter",
+      "ip_block": "",
+      "doc_count": 194,
+      "exact_doc_count": 0
+    },
+    {
+      "module": "ibex_counter",
+      "ip_block": "ibex",
+      "doc_count": 194,
+      "exact_doc_count": 0
+    }
+  ],
+  "assessment": {
+    "can_late_bind": true,
+    "physical_merge_recommended": false,
+    "main_risk": "Exact module-name links are much sparser than IP/path links; use IP-level binding as the default and exact module links as high-confidence evidence."
+  }
+}
