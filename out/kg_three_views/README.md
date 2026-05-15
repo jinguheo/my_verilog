@@ -1,5 +1,16 @@
 # Three KG Views
 
+This folder is portable. Copy the whole `kg_three_views` folder to another PC
+and open `OPEN_ME.html` or `index.html` in Chrome, Edge, or Firefox.
+
+The HTML files are self-contained: graph data, JavaScript, and CSS are embedded
+inside each file. No Python environment, local server, database, CDN, or
+internet connection is required.
+
+Some node details contain original paths such as `D:\MyWork\verilog\...`.
+Those paths are metadata from the source machine only. They are not used for
+loading the graph, so the files still open on another PC.
+
 ## 1. Spec-Only
 
 Input: spec documents only.
