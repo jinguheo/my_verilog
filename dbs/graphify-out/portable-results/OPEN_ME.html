@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portable Spec-Code KG Results</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f8fafc;color:#17202a}
+main{max-width:1120px;margin:0 auto;padding:32px 22px 56px}
+h1{font-size:30px;margin:0 0 8px} h2{font-size:20px;margin:28px 0 10px}
+p{color:#475569;line-height:1.5} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{display:block;background:#fff;border:1px solid #d6dee8;border-radius:8px;padding:16px;text-decoration:none;color:#17202a}
+.card:hover{background:#f1f5f9} .meta{font-size:13px;color:#64748b}
+ul{margin:8px 0 0;padding-left:20px} li{margin:5px 0;line-height:1.35} a{color:#0f5c9c} span{color:#64748b;font-size:12px}
+code{background:#e8eef5;border-radius:4px;padding:2px 5px}
+</style>
+</head>
+<body><main>
+<h1>Portable Spec-Code KG Results</h1>
+<p>Open this file from any cloned or copied workspace. The graph views are self-contained HTML files; the evaluation files are collected under <code>data/</code>.</p>
+
+<h2>Graph Views</h2>
+<div class="grid">
+  <a class="card" href="html/spec-only.html"><strong>spec-only graph</strong><p class="meta">Spec document KG view.</p></a>
+  <a class="card" href="html/code-only.html"><strong>code-only graph</strong><p class="meta">Code KG view.</p></a>
+  <a class="card" href="html/spec-code.html"><strong>spec-code graph</strong><p class="meta">Integrated spec/code graph with bridge edges.</p></a>
+</div>
+
+<h2>Traceability Benchmark</h2>
+<ul><li><a href="data/benchmark/catalog.md">catalog.md</a> <span>5.8 KB</span></li>
+<li><a href="data/benchmark/prompts_only.jsonl">prompts_only.jsonl</a> <span>40.5 KB</span></li>
+<li><a href="data/benchmark/questions_all.jsonl">questions_all.jsonl</a> <span>358.1 KB</span></li></ul>
+
+<h2>Traceability Evaluation</h2>
+<ul><li><a href="data/traceability_eval/spec_code_graphify_variant_report.md">spec_code_graphify_variant_report.md</a> <span>1.5 KB</span></li>
+<li><a href="data/traceability_eval/spec_code_question_answer_details.csv">spec_code_question_answer_details.csv</a> <span>391.5 KB</span></li>
+<li><a href="data/traceability_eval/spec_code_question_answer_details.md">spec_code_question_answer_details.md</a> <span>424.1 KB</span></li>
+<li><a href="data/traceability_eval/spec_code_question_answer_details.jsonl">spec_code_question_answer_details.jsonl</a> <span>1137.1 KB</span></li></ul>
+
+<h2>User QA Evaluation</h2>
+<ul><li><a href="data/user_qa/catalog.md">catalog.md</a> <span>8.3 KB</span></li>
+<li><a href="data/user_qa/user_qa_prompts_only.jsonl">user_qa_prompts_only.jsonl</a> <span>114.8 KB</span></li>
+<li><a href="data/user_qa/user_qa_questions_all.jsonl">user_qa_questions_all.jsonl</a> <span>485.3 KB</span></li>
+<li><a href="data/user_qa/spec_code_graphify_variant_report.md">spec_code_graphify_variant_report.md</a> <span>1.7 KB</span></li>
+<li><a href="data/user_qa/spec_code_question_answer_details.csv">spec_code_question_answer_details.csv</a> <span>462.0 KB</span></li>
+<li><a href="data/user_qa/spec_code_question_answer_details.md">spec_code_question_answer_details.md</a> <span>497.4 KB</span></li>
+<li><a href="data/user_qa/spec_code_question_answer_details.jsonl">spec_code_question_answer_details.jsonl</a> <span>1223.0 KB</span></li></ul>
+
+<h2>SVA / DV Verification QA Evaluation</h2>
+<ul><li><a href="data/sva_dv_qa/catalog.md">catalog.md</a> <span>7.9 KB</span></li>
+<li><a href="data/sva_dv_qa/sva_dv_user_qa_prompts_only.jsonl">sva_dv_user_qa_prompts_only.jsonl</a> <span>35.9 KB</span></li>
+<li><a href="data/sva_dv_qa/sva_dv_user_qa_questions_all.jsonl">sva_dv_user_qa_questions_all.jsonl</a> <span>146.8 KB</span></li>
+<li><a href="data/sva_dv_qa/spec_code_graphify_variant_report.md">spec_code_graphify_variant_report.md</a> <span>1.1 KB</span></li>
+<li><a href="data/sva_dv_qa/spec_code_question_answer_details.csv">spec_code_question_answer_details.csv</a> <span>140.6 KB</span></li>
+<li><a href="data/sva_dv_qa/spec_code_question_answer_details.md">spec_code_question_answer_details.md</a> <span>151.7 KB</span></li>
+<li><a href="data/sva_dv_qa/spec_code_question_answer_details.jsonl">spec_code_question_answer_details.jsonl</a> <span>394.6 KB</span></li></ul>
+
+<h2>Full Graph JSON</h2>
+<p>The large full graph files are not duplicated in this portable folder. They remain available through relative paths in the repository:</p>
+<ul>
+  <li><a href="../spec-only-graphify/graph.json">../spec-only-graphify/graph.json</a></li>
+  <li><a href="../code-only-graphify/graph.json">../code-only-graphify/graph.json</a></li>
+  <li><a href="../spec-code-graphify/graph.json">../spec-code-graphify/graph.json</a></li>
+</ul>
+</main></body></html>

@@ -1,0 +1,129 @@
+{
+  "description": "Portable Graphify spec/code KG results for offline inspection on another PC.",
+  "open": "OPEN_ME.html",
+  "graph_views": [
+    "html/spec-only.html",
+    "html/code-only.html",
+    "html/spec-code.html"
+  ],
+  "data": {
+    "benchmark": [
+      {
+        "source": "out\\spec_code_retrieval_benchmark\\catalog.md",
+        "portable_path": "data/benchmark/catalog.md",
+        "bytes": 5986
+      },
+      {
+        "source": "out\\spec_code_retrieval_benchmark\\prompts_only.jsonl",
+        "portable_path": "data/benchmark/prompts_only.jsonl",
+        "bytes": 41500
+      },
+      {
+        "source": "out\\spec_code_retrieval_benchmark\\questions_all.jsonl",
+        "portable_path": "data/benchmark/questions_all.jsonl",
+        "bytes": 366713
+      }
+    ],
+    "traceability_eval": [
+      {
+        "source": "out\\spec_code_graphify_variant_eval\\spec_code_graphify_variant_report.md",
+        "portable_path": "data/traceability_eval/spec_code_graphify_variant_report.md",
+        "bytes": 1551
+      },
+      {
+        "source": "out\\spec_code_graphify_variant_eval\\spec_code_question_answer_details.csv",
+        "portable_path": "data/traceability_eval/spec_code_question_answer_details.csv",
+        "bytes": 400888
+      },
+      {
+        "source": "out\\spec_code_graphify_variant_eval\\spec_code_question_answer_details.md",
+        "portable_path": "data/traceability_eval/spec_code_question_answer_details.md",
+        "bytes": 434294
+      },
+      {
+        "source": "out\\spec_code_graphify_variant_eval\\spec_code_question_answer_details.jsonl",
+        "portable_path": "data/traceability_eval/spec_code_question_answer_details.jsonl",
+        "bytes": 1164382
+      }
+    ],
+    "user_qa": [
+      {
+        "source": "out\\spec_code_user_qa_benchmark\\catalog.md",
+        "portable_path": "data/user_qa/catalog.md",
+        "bytes": 8473
+      },
+      {
+        "source": "out\\spec_code_user_qa_benchmark\\user_qa_prompts_only.jsonl",
+        "portable_path": "data/user_qa/user_qa_prompts_only.jsonl",
+        "bytes": 117580
+      },
+      {
+        "source": "out\\spec_code_user_qa_benchmark\\user_qa_questions_all.jsonl",
+        "portable_path": "data/user_qa/user_qa_questions_all.jsonl",
+        "bytes": 496943
+      },
+      {
+        "source": "out\\spec_code_user_qa_eval\\spec_code_graphify_variant_report.md",
+        "portable_path": "data/user_qa/spec_code_graphify_variant_report.md",
+        "bytes": 1697
+      },
+      {
+        "source": "out\\spec_code_user_qa_eval\\spec_code_question_answer_details.csv",
+        "portable_path": "data/user_qa/spec_code_question_answer_details.csv",
+        "bytes": 473042
+      },
+      {
+        "source": "out\\spec_code_user_qa_eval\\spec_code_question_answer_details.md",
+        "portable_path": "data/user_qa/spec_code_question_answer_details.md",
+        "bytes": 509360
+      },
+      {
+        "source": "out\\spec_code_user_qa_eval\\spec_code_question_answer_details.jsonl",
+        "portable_path": "data/user_qa/spec_code_question_answer_details.jsonl",
+        "bytes": 1252377
+      }
+    ],
+    "sva_dv_qa": [
+      {
+        "source": "out\\spec_code_sva_dv_user_qa_benchmark\\catalog.md",
+        "portable_path": "data/sva_dv_qa/catalog.md",
+        "bytes": 8131
+      },
+      {
+        "source": "out\\spec_code_sva_dv_user_qa_benchmark\\sva_dv_user_qa_prompts_only.jsonl",
+        "portable_path": "data/sva_dv_qa/sva_dv_user_qa_prompts_only.jsonl",
+        "bytes": 36720
+      },
+      {
+        "source": "out\\spec_code_sva_dv_user_qa_benchmark\\sva_dv_user_qa_questions_all.jsonl",
+        "portable_path": "data/sva_dv_qa/sva_dv_user_qa_questions_all.jsonl",
+        "bytes": 150373
+      },
+      {
+        "source": "out\\spec_code_sva_dv_user_qa_eval\\spec_code_graphify_variant_report.md",
+        "portable_path": "data/sva_dv_qa/spec_code_graphify_variant_report.md",
+        "bytes": 1114
+      },
+      {
+        "source": "out\\spec_code_sva_dv_user_qa_eval\\spec_code_question_answer_details.csv",
+        "portable_path": "data/sva_dv_qa/spec_code_question_answer_details.csv",
+        "bytes": 143969
+      },
+      {
+        "source": "out\\spec_code_sva_dv_user_qa_eval\\spec_code_question_answer_details.md",
+        "portable_path": "data/sva_dv_qa/spec_code_question_answer_details.md",
+        "bytes": 155362
+      },
+      {
+        "source": "out\\spec_code_sva_dv_user_qa_eval\\spec_code_question_answer_details.jsonl",
+        "portable_path": "data/sva_dv_qa/spec_code_question_answer_details.jsonl",
+        "bytes": 404039
+      }
+    ]
+  },
+  "full_graph_json": [
+    "../spec-only-graphify/graph.json",
+    "../code-only-graphify/graph.json",
+    "../spec-code-graphify/graph.json"
+  ]
+}
