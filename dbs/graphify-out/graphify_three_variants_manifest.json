@@ -1,0 +1,271 @@
+{
+  "status": "ok",
+  "generated_at": "2026-05-16T16:39:42",
+  "variants": [
+    {
+      "status": "ok",
+      "created_at": "2026-05-16T16:36:09",
+      "spec_root": "D:\\MyWork\\verilog\\out\\spec_documents_20260514_204108",
+      "out_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-only-graphify",
+      "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-only-graphify\\graph.json",
+      "report": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-only-graphify\\GRAPH_REPORT.md",
+      "html": "skipped: Graph has 8196 nodes - too large for HTML viz. Use --no-viz or reduce input size.",
+      "nodes": 8196,
+      "edges": 30054,
+      "communities": 33,
+      "documents": 985,
+      "sections": 6748,
+      "components": 437,
+      "topics": 16,
+      "total_words": 1684868,
+      "extensions": {
+        ".md": 545,
+        ".hjson": 367,
+        ".rst": 70,
+        ".txt": 3
+      },
+      "projects": {
+        "opentitan": 933,
+        "ibex": 52
+      },
+      "relations": {
+        "references_component": 11057,
+        "contains": 9703,
+        "documents_component": 9423,
+        "mentions_topic": 1832
+      },
+      "top_components": [
+        [
+          "opentitan",
+          652
+        ],
+        [
+          "lowrisc",
+          507
+        ],
+        [
+          "software",
+          365
+        ],
+        [
+          "security",
+          362
+        ],
+        [
+          "system",
+          274
+        ],
+        [
+          "readme",
+          268
+        ],
+        [
+          "debug",
+          226
+        ],
+        [
+          "verification",
+          210
+        ],
+        [
+          "interfaces",
+          190
+        ],
+        [
+          "specification",
+          184
+        ],
+        [
+          "testing",
+          173
+        ],
+        [
+          "integration",
+          161
+        ],
+        [
+          "setup",
+          159
+        ],
+        [
+          "rom",
+          155
+        ],
+        [
+          "testplan",
+          149
+        ],
+        [
+          "boot",
+          140
+        ],
+        [
+          "checklist",
+          139
+        ],
+        [
+          "contributing",
+          130
+        ],
+        [
+          "lc_ctrl",
+          128
+        ],
+        [
+          "tools",
+          128
+        ]
+      ],
+      "top_topics": [
+        [
+          "memory",
+          267
+        ],
+        [
+          "alert",
+          263
+        ],
+        [
+          "security",
+          247
+        ],
+        [
+          "testplan",
+          214
+        ],
+        [
+          "clock",
+          205
+        ],
+        [
+          "interrupt",
+          169
+        ],
+        [
+          "power",
+          117
+        ],
+        [
+          "crypto",
+          72
+        ],
+        [
+          "debug",
+          65
+        ],
+        [
+          "entropy",
+          57
+        ],
+        [
+          "reset",
+          50
+        ],
+        [
+          "fifo",
+          32
+        ],
+        [
+          "registers",
+          28
+        ],
+        [
+          "lifecycle",
+          21
+        ],
+        [
+          "bus",
+          14
+        ],
+        [
+          "coverage",
+          11
+        ]
+      ],
+      "variant": "spec-only"
+    },
+    {
+      "status": "ok",
+      "variant": "code-only",
+      "created_at": "2026-05-16T16:39:36",
+      "out_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\code-only-graphify",
+      "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\code-only-graphify\\graph.json",
+      "report": "D:\\MyWork\\verilog\\dbs\\graphify-out\\code-only-graphify\\GRAPH_REPORT.md",
+      "html": "not generated; graph is too large for Graphify HTML viz",
+      "nodes": 39694,
+      "links": 95961,
+      "file_types": {
+        "code": 37193,
+        "rationale": 2501
+      },
+      "roles": {},
+      "relations": {
+        "calls": 55446,
+        "contains": 20512,
+        "method": 5837,
+        "defines": 2965,
+        "imports_from": 2847,
+        "instantiates": 2755,
+        "rationale_for": 2538,
+        "uses": 1325,
+        "imports": 1022,
+        "inherits": 714
+      },
+      "variants": {
+        "": 39694
+      },
+      "communities": 4187
+    },
+    {
+      "status": "ok",
+      "variant": "spec-code",
+      "created_at": "2026-05-16T16:39:42",
+      "out_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-code-graphify",
+      "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-code-graphify\\graph.json",
+      "report": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-code-graphify\\GRAPH_REPORT.md",
+      "html": "skipped: merged graph is too large for Graphify HTML viz",
+      "nodes": 47890,
+      "links": 138613,
+      "file_types": {
+        "code": 37193,
+        "document": 8196,
+        "rationale": 2501
+      },
+      "roles": {
+        "section": 6748,
+        "document": 985,
+        "component": 437,
+        "topic": 16,
+        "category": 7,
+        "project": 2,
+        "corpus": 1
+      },
+      "relations": {
+        "calls": 55446,
+        "contains": 28254,
+        "references_component": 11057,
+        "spec_path_matches_code_path": 9983,
+        "documents_component": 9423,
+        "method": 5837,
+        "defines": 2965,
+        "imports_from": 2847,
+        "instantiates": 2755,
+        "spec_component_matches_code": 2615,
+        "rationale_for": 2538,
+        "mentions_topic": 1832,
+        "uses": 1325,
+        "imports": 1022,
+        "inherits": 714
+      },
+      "variants": {
+        "code": 39694,
+        "spec": 8196
+      },
+      "communities": 4220,
+      "bridge_links": {
+        "spec_component_matches_code": 2615,
+        "spec_path_matches_code_path": 9983
+      }
+    }
+  ]
+}

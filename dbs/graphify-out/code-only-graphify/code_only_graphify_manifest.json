@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "variant": "code-only",
+  "created_at": "2026-05-16T16:39:36",
+  "out_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\code-only-graphify",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\code-only-graphify\\graph.json",
+  "report": "D:\\MyWork\\verilog\\dbs\\graphify-out\\code-only-graphify\\GRAPH_REPORT.md",
+  "html": "not generated; graph is too large for Graphify HTML viz",
+  "nodes": 39694,
+  "links": 95961,
+  "file_types": {
+    "code": 37193,
+    "rationale": 2501
+  },
+  "roles": {},
+  "relations": {
+    "calls": 55446,
+    "contains": 20512,
+    "method": 5837,
+    "defines": 2965,
+    "imports_from": 2847,
+    "instantiates": 2755,
+    "rationale_for": 2538,
+    "uses": 1325,
+    "imports": 1022,
+    "inherits": 714
+  },
+  "variants": {
+    "": 39694
+  },
+  "communities": 4187
+}

@@ -1,0 +1,181 @@
+{
+  "status": "ok",
+  "created_at": "2026-05-16T16:36:09",
+  "spec_root": "D:\\MyWork\\verilog\\out\\spec_documents_20260514_204108",
+  "out_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-only-graphify",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-only-graphify\\graph.json",
+  "report": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-only-graphify\\GRAPH_REPORT.md",
+  "html": "skipped: Graph has 8196 nodes - too large for HTML viz. Use --no-viz or reduce input size.",
+  "nodes": 8196,
+  "edges": 30054,
+  "communities": 33,
+  "documents": 985,
+  "sections": 6748,
+  "components": 437,
+  "topics": 16,
+  "total_words": 1684868,
+  "extensions": {
+    ".md": 545,
+    ".hjson": 367,
+    ".rst": 70,
+    ".txt": 3
+  },
+  "projects": {
+    "opentitan": 933,
+    "ibex": 52
+  },
+  "relations": {
+    "references_component": 11057,
+    "contains": 9703,
+    "documents_component": 9423,
+    "mentions_topic": 1832
+  },
+  "top_components": [
+    [
+      "opentitan",
+      652
+    ],
+    [
+      "lowrisc",
+      507
+    ],
+    [
+      "software",
+      365
+    ],
+    [
+      "security",
+      362
+    ],
+    [
+      "system",
+      274
+    ],
+    [
+      "readme",
+      268
+    ],
+    [
+      "debug",
+      226
+    ],
+    [
+      "verification",
+      210
+    ],
+    [
+      "interfaces",
+      190
+    ],
+    [
+      "specification",
+      184
+    ],
+    [
+      "testing",
+      173
+    ],
+    [
+      "integration",
+      161
+    ],
+    [
+      "setup",
+      159
+    ],
+    [
+      "rom",
+      155
+    ],
+    [
+      "testplan",
+      149
+    ],
+    [
+      "boot",
+      140
+    ],
+    [
+      "checklist",
+      139
+    ],
+    [
+      "contributing",
+      130
+    ],
+    [
+      "lc_ctrl",
+      128
+    ],
+    [
+      "tools",
+      128
+    ]
+  ],
+  "top_topics": [
+    [
+      "memory",
+      267
+    ],
+    [
+      "alert",
+      263
+    ],
+    [
+      "security",
+      247
+    ],
+    [
+      "testplan",
+      214
+    ],
+    [
+      "clock",
+      205
+    ],
+    [
+      "interrupt",
+      169
+    ],
+    [
+      "power",
+      117
+    ],
+    [
+      "crypto",
+      72
+    ],
+    [
+      "debug",
+      65
+    ],
+    [
+      "entropy",
+      57
+    ],
+    [
+      "reset",
+      50
+    ],
+    [
+      "fifo",
+      32
+    ],
+    [
+      "registers",
+      28
+    ],
+    [
+      "lifecycle",
+      21
+    ],
+    [
+      "bus",
+      14
+    ],
+    [
+      "coverage",
+      11
+    ]
+  ]
+}

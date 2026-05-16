@@ -1,0 +1,160 @@
+{
+  "variant": "spec-only",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-only-graphify\\graph.json",
+  "total_nodes": 8196,
+  "total_links": 30054,
+  "view_nodes": 1800,
+  "view_links": 12897,
+  "file_types": [
+    {
+      "name": "document",
+      "count": 8196
+    }
+  ],
+  "roles": [
+    {
+      "name": "section",
+      "count": 6748
+    },
+    {
+      "name": "document",
+      "count": 985
+    },
+    {
+      "name": "component",
+      "count": 437
+    },
+    {
+      "name": "topic",
+      "count": 16
+    },
+    {
+      "name": "category",
+      "count": 7
+    },
+    {
+      "name": "project",
+      "count": 2
+    },
+    {
+      "name": "corpus",
+      "count": 1
+    }
+  ],
+  "relations": [
+    {
+      "name": "references_component",
+      "count": 11057
+    },
+    {
+      "name": "documents_component",
+      "count": 9423
+    },
+    {
+      "name": "contains",
+      "count": 7742
+    },
+    {
+      "name": "mentions_topic",
+      "count": 1832
+    }
+  ],
+  "projects": [
+    {
+      "name": "opentitan",
+      "count": 7421
+    },
+    {
+      "name": "__graphify_spec_only__",
+      "count": 463
+    },
+    {
+      "name": "ibex",
+      "count": 312
+    }
+  ],
+  "communities": 33,
+  "top_communities": [
+    {
+      "name": "0",
+      "count": 847
+    },
+    {
+      "name": "1",
+      "count": 824
+    },
+    {
+      "name": "2",
+      "count": 630
+    },
+    {
+      "name": "3",
+      "count": 530
+    },
+    {
+      "name": "4",
+      "count": 525
+    },
+    {
+      "name": "5",
+      "count": 484
+    },
+    {
+      "name": "6",
+      "count": 431
+    },
+    {
+      "name": "7",
+      "count": 355
+    },
+    {
+      "name": "8",
+      "count": 325
+    },
+    {
+      "name": "9",
+      "count": 317
+    },
+    {
+      "name": "10",
+      "count": 290
+    },
+    {
+      "name": "11",
+      "count": 286
+    },
+    {
+      "name": "12",
+      "count": 273
+    },
+    {
+      "name": "13",
+      "count": 249
+    },
+    {
+      "name": "14",
+      "count": 242
+    },
+    {
+      "name": "15",
+      "count": 238
+    },
+    {
+      "name": "16",
+      "count": 185
+    },
+    {
+      "name": "17",
+      "count": 171
+    },
+    {
+      "name": "18",
+      "count": 163
+    },
+    {
+      "name": "19",
+      "count": 105
+    }
+  ],
+  "bridge_links": 0
+}

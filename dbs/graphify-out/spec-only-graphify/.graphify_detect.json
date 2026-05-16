@@ -1,0 +1,12 @@
+{
+  "root": "D:\\MyWork\\verilog\\out\\spec_documents_20260514_204108",
+  "total_files": 985,
+  "total_words": 1684868,
+  "files": {
+    "documents": 985,
+    "code": 0,
+    "paper": 0,
+    "image": 0
+  },
+  "warning": "Spec-only graph built deterministically from exported spec documents; no LLM/OpenKB ingest was run."
+}

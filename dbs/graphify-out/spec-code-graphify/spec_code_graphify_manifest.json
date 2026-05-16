@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "variant": "spec-code",
+  "created_at": "2026-05-16T16:39:42",
+  "out_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-code-graphify",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-code-graphify\\graph.json",
+  "report": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-code-graphify\\GRAPH_REPORT.md",
+  "html": "skipped: merged graph is too large for Graphify HTML viz",
+  "nodes": 47890,
+  "links": 138613,
+  "file_types": {
+    "code": 37193,
+    "document": 8196,
+    "rationale": 2501
+  },
+  "roles": {
+    "section": 6748,
+    "document": 985,
+    "component": 437,
+    "topic": 16,
+    "category": 7,
+    "project": 2,
+    "corpus": 1
+  },
+  "relations": {
+    "calls": 55446,
+    "contains": 28254,
+    "references_component": 11057,
+    "spec_path_matches_code_path": 9983,
+    "documents_component": 9423,
+    "method": 5837,
+    "defines": 2965,
+    "imports_from": 2847,
+    "instantiates": 2755,
+    "spec_component_matches_code": 2615,
+    "rationale_for": 2538,
+    "mentions_topic": 1832,
+    "uses": 1325,
+    "imports": 1022,
+    "inherits": 714
+  },
+  "variants": {
+    "code": 39694,
+    "spec": 8196
+  },
+  "communities": 4220,
+  "bridge_links": {
+    "spec_component_matches_code": 2615,
+    "spec_path_matches_code_path": 9983
+  }
+}
