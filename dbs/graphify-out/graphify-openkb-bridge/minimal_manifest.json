@@ -1,0 +1,11 @@
+{
+  "source_graph": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-only-graphify\\graph.json",
+  "openkb_kb": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-graphify-minimal\\kb",
+  "raw_markdown": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-graphify-minimal\\kb\\raw\\graphify_minimal_spec_knowledge.md",
+  "html_preview": "D:\\MyWork\\verilog\\dbs\\graphify-out\\graphify-openkb-bridge\\graphify_minimal_spec_knowledge.html",
+  "files": 1,
+  "bytes": 37633,
+  "components": 30,
+  "topics": 16,
+  "documents": 20
+}

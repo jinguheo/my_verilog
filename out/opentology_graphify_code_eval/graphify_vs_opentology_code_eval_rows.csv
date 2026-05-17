@@ -1,0 +1,115 @@
+task,query,graphify_ms,opentology_ms,speedup_graphify_vs_opentology,graphify_count,opentology_count,intersection,jaccard
+direct_relation,contains outgoing from ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py,0.0026999914553016424,0.001900014467537403,0.7037112890881849,175,175,175,1.0
+direct_relation,contains outgoing from ibex_vendor_riscv_tests_debug_gdbserver_py,0.001800013706088066,0.0016999838408082724,0.9444282757728625,90,90,90,1.0
+direct_relation,contains outgoing from opentitan_sw_vendor_freertos_freertos_kernel_tasks_c,0.001600012183189392,0.0014999823179095984,0.9374818102444703,86,86,86,1.0
+direct_relation,contains outgoing from main_main,0.001300009898841381,0.001200009137392044,0.9230769230769231,71,71,71,1.0
+direct_relation,contains outgoing from main_opts,0.001200009137392044,0.0011999800335615873,0.999975746992627,67,67,67,1.0
+direct_relation,contains outgoing from opentitan_hw_ip_otbn_dv_otbnsim_sim_insn_py,0.001200009137392044,0.001200009137392044,1.0,65,65,65,1.0
+direct_relation,contains outgoing from opentitan_sw_device_lib_dif_dif_spi_device_c,0.001200009137392044,0.001200009137392044,1.0,65,65,65,1.0
+direct_relation,contains outgoing from opentitan_hw_ip_otbn_dv_model_otbn_model_cc,0.0010999792721122503,0.0009999785106629133,0.90908850377034,61,61,61,1.0
+direct_relation,contains outgoing from opentitan_sw_device_tests_penetrationtests_firmware_fi_ibex_fi_c,0.00100000761449337,0.000900006853044033,0.9,58,58,58,1.0
+direct_relation,contains outgoing from opentitan_sw_device_lib_crypto_impl_ecc_p384_c,0.000900006853044033,0.000900006853044033,1.0,55,55,55,1.0
+direct_relation,calls outgoing from mod_neededcapabilities_ok,0.028999987989664078,0.03789999755099416,1.3068970085264222,1157,1157,1157,1.0
+direct_relation,calls outgoing from statusprinter_enlightenstatusprinter_exit,0.02500001573935151,0.024399982066825032,0.9759986682095567,874,874,874,1.0
+direct_relation,calls outgoing from syscalls_tohost_exit,0.023100001271814108,0.02300000051036477,0.9956709629461642,746,746,746,1.0
+direct_relation,calls outgoing from conductor_processrunner_append,0.013999990187585354,0.011900003300979733,0.8500008315385958,618,618,618,1.0
+direct_relation,calls outgoing from mock_mmio_mmio_region_read32,0.014999997802078724,0.012300006346777081,0.8200005432715815,477,477,477,1.0
+direct_relation,calls outgoing from syscalls_memcpy,0.01400001929141581,0.011399999493733048,0.8142845560736492,459,459,459,1.0
+direct_relation,calls outgoing from mock_mmio_mmio_region_write32,0.012600008631125093,0.010200019460171461,0.8095247994493374,400,400,400,1.0
+direct_relation,calls outgoing from codegen_codechunk_len,0.012199976481497288,0.010099989594891667,0.8278695955036881,378,378,378,1.0
+direct_relation,calls outgoing from syscalls_memset,0.010799994925037026,0.008700008038431406,0.8055566783890483,315,315,315,1.0
+direct_relation,calls outgoing from mod_sizerange_range,0.010299991117790341,0.008600007276982069,0.8349528828357893,310,310,310,1.0
+direct_relation,instantiates outgoing from prim_flop_2sync,0.004199973773211241,0.0030999945010989904,0.7380985378698635,109,109,109,1.0
+direct_relation,instantiates outgoing from prim_flop,0.0036999990697950125,0.0036999990697950125,1.0,86,86,86,1.0
+direct_relation,instantiates outgoing from tlul_rsp_intg_gen,0.003700028173625469,0.0034999975468963385,0.9459380801057169,77,77,77,1.0
+direct_relation,instantiates outgoing from prim_subreg,0.002400018274784088,0.0021999876480549574,0.9166545401629802,69,69,69,1.0
+direct_relation,instantiates outgoing from tlul_adapter_reg,0.0020999868866056204,0.0020999868866056204,1.0,69,69,69,1.0
+direct_relation,instantiates outgoing from prim_reg_we_check,0.0021999876480549574,0.002100015990436077,0.9545580823113863,67,67,67,1.0
+direct_relation,instantiates outgoing from tlul_cmd_intg_chk,0.001100008375942707,0.001200009137392044,1.0909090909090908,67,67,67,1.0
+direct_relation,instantiates outgoing from prim_subreg_ext,0.0009999785106629133,0.000900006853044033,0.9000261940103029,63,63,63,1.0
+direct_relation,instantiates outgoing from clk_rst_if,0.000900006853044033,0.000900006853044033,1.0,62,62,62,1.0
+direct_relation,instantiates outgoing from prim_buf,0.0009999785106629133,0.000900006853044033,0.9000261940103029,62,62,62,1.0
+direct_relation,defines outgoing from opentitan_hw_ip_aes_rtl_aes_sbox_dom_sv,0.000600004568696022,0.000600004568696022,1.0,6,6,6,1.0
+direct_relation,defines outgoing from rtllm_chatgpt4_t5_adder_32bit_v,0.000600004568696022,0.000600004568696022,1.0,6,6,6,1.0
+direct_relation,defines outgoing from rtllm_arithmetic_adder_adder_16bit_verified_adder_16bit_v,0.000600004568696022,0.000500003807246685,0.8333333333333334,5,5,5,1.0
+direct_relation,defines outgoing from rtllm_arithmetic_adder_adder_32bit_verified_adder_32bit_v,0.000600004568696022,0.000600004568696022,1.0,5,5,5,1.0
+direct_relation,defines outgoing from opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_noreuse_sv,0.000500003807246685,0.000500003807246685,1.0,3,3,3,1.0
+direct_relation,defines outgoing from opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_sv,0.000500003807246685,0.000500003807246685,1.0,3,3,3,1.0
+direct_relation,defines outgoing from rtllm_chatgpt4_t1_adder_16bit_v,0.000500003807246685,0.000500003807246685,1.0,3,3,3,1.0
+direct_relation,defines outgoing from rtllm_chatgpt4_t1_adder_32bit_v,0.000500003807246685,0.000500003807246685,1.0,3,3,3,1.0
+direct_relation,defines outgoing from rtllm_chatgpt4_t2_adder_32bit_v,0.000500003807246685,0.000500003807246685,1.0,3,3,3,1.0
+direct_relation,defines outgoing from rtllm_chatgpt4_t3_adder_16bit_v,0.000500003807246685,0.000500003807246685,1.0,3,3,3,1.0
+direct_relation,method outgoing from riscv_asm_program_gen_riscv_asm_program_gen,0.0009999785106629133,0.000900006853044033,0.9000261940103029,63,63,63,1.0
+direct_relation,method outgoing from fi_ibex_commands_otfiibex,0.000900006853044033,0.000900006853044033,1.0,51,51,51,1.0
+direct_relation,method outgoing from state_otbnstate,0.000900006853044033,0.000900006853044033,1.0,42,42,42,1.0
+direct_relation,method outgoing from testlib_gdb,0.000900006853044033,0.000800006091594696,0.8888888888888888,35,35,35,1.0
+direct_relation,method outgoing from fi_ibex_python_test_ibexfitest,0.000900006853044033,0.000800006091594696,0.8888888888888888,32,32,32,1.0
+direct_relation,method outgoing from model_model,0.000900006853044033,0.000800006091594696,0.8888888888888888,32,32,32,1.0
+direct_relation,method outgoing from spi_hyperdebugspitarget,0.0009999785106629133,0.0008999777492135763,0.8999970895544108,31,31,31,1.0
+direct_relation,method outgoing from usb_backend_b,0.000900006853044033,0.000800006091594696,0.8888888888888888,30,30,30,1.0
+direct_relation,method outgoing from helper_iphelper,0.000900006853044033,0.000800006091594696,0.8888888888888888,29,29,29,1.0
+direct_relation,method outgoing from openocd_openocdjtagtap,0.000900006853044033,0.000800006091594696,0.8888888888888888,27,27,27,1.0
+direct_relation,inherits outgoing from object,0.0022999884095042944,0.001900014467537403,0.8260974097460362,190,190,190,1.0
+direct_relation,inherits outgoing from intenum,0.000900006853044033,0.000900006853044033,1.0,58,58,58,1.0
+direct_relation,inherits outgoing from otbninsn,0.000900006853044033,0.000800006091594696,0.8888888888888888,41,41,41,1.0
+direct_relation,inherits outgoing from enum,0.000900006853044033,0.000800006091594696,0.8888888888888888,25,25,25,1.0
+direct_relation,inherits outgoing from exception,0.000800006091594696,0.0007999769877642393,0.9999636204889406,19,19,19,1.0
+direct_relation,inherits outgoing from gdbtest,0.0007999769877642393,0.000700005330145359,0.8750318332302544,17,17,17,1.0
+direct_relation,inherits outgoing from gdbserver_debugtest,0.0007999769877642393,0.0007999769877642393,1.0,16,16,16,1.0
+direct_relation,inherits outgoing from baserunner,0.000600004568696022,0.000600004568696022,1.0,15,15,15,1.0
+direct_relation,inherits outgoing from snippetgen,0.000600004568696022,0.0005999754648655653,0.9999514939852542,15,15,15,1.0
+direct_relation,inherits outgoing from gdbsingleharttest,0.000600004568696022,0.000600004568696022,1.0,12,12,12,1.0
+label_source_search,rv_core_ibex,67.32629999169149,66.1862000124529,0.9830660532454735,163,163,163,1.0
+label_source_search,ibex,76.61730001564138,75.7758000108879,0.9890168407842396,11226,11226,11226,1.0
+label_source_search,alert_handler,69.83200000831857,69.94449999183416,1.0016110090431634,284,284,284,1.0
+label_source_search,uart,67.87790000089444,74.08589997794479,1.0914583388255756,431,431,431,1.0
+label_source_search,pwrmgr,70.92510000802577,74.67959998757578,1.0529361252804037,329,329,329,1.0
+label_source_search,rstmgr,66.02820000262,75.94950002385303,1.150258526218182,276,276,276,1.0
+label_source_search,cosim,75.72829999844544,81.57010001013987,1.077141570744548,109,109,109,1.0
+label_source_search,csr,75.08919999236241,84.30620000581257,1.1227473460149748,4210,4210,4210,1.0
+label_source_search,sva,67.81110001611523,71.23980001779273,1.0505625185384497,217,217,217,1.0
+label_source_search,testplan,68.77559999702498,60.949600010644644,0.8862096443110803,130,130,130,1.0
+reverse_reachable_depth2,calls reverse depth<=2 to mod_neededcapabilities_ok,1.0377999860793352,1.1086000013165176,1.0682212528298975,1070,1070,1070,1.0
+reverse_reachable_depth2,calls reverse depth<=2 to codegen_codechunk_len,0.8512000204063952,0.6996000010985881,0.8218984778273061,1093,1093,1093,1.0
+reverse_reachable_depth2,calls reverse depth<=2 to validate_testplans_schemavalidator_check,2.4474000092595816,1.0207000013906509,0.4170548326913858,1725,1725,1725,1.0
+reverse_reachable_depth2,calls reverse depth<=2 to xmodem_xmodemfirmware_new,0.8286999945994467,0.776899978518486,0.9374924382544515,1078,1078,1078,1.0
+reverse_reachable_depth2,calls reverse depth<=2 to ownership_format,0.5456999933812767,0.5215000128373504,0.9556533244686738,786,786,786,1.0
+reverse_reachable_depth2,calls reverse depth<=2 to targets_target_write,0.5222999898251146,0.523599999723956,1.002489010002234,806,806,806,1.0
+reverse_reachable_depth2,calls reverse depth<=2 to secure_prng_get,0.7455000013578683,0.9494999831076711,1.2736418261277442,1185,1185,1185,1.0
+reverse_reachable_depth2,calls reverse depth<=2 to lib_testplan_join,0.9565999789629132,1.0757999843917787,1.1246079950347636,1356,1356,1356,1.0
+reverse_reachable_depth2,instantiates reverse depth<=2 to d_mywork_verilog_dbs_opentitan_hw_top_earlgrey_rtl_autogen_top_earlgrey_sv_top_earlgrey,0.09750001481734216,0.03630001447163522,0.3723077841540861,62,62,62,1.0
+reverse_reachable_depth2,instantiates reverse depth<=2 to d_mywork_verilog_dbs_opentitan_hw_top_darjeeling_rtl_autogen_top_darjeeling_sv_top_darjeeling,0.02269999822601676,0.022499996703118086,0.9911893595361849,49,49,49,1.0
+reverse_reachable_depth2,instantiates reverse depth<=2 to d_mywork_verilog_dbs_opentitan_hw_top_englishbreakfast_rtl_autogen_top_englishbreakfast_sv_top_englishbreakfast,0.017399986973032355,0.017799990018829703,1.0229886980040444,34,34,34,1.0
+reverse_reachable_depth2,instantiates reverse depth<=2 to d_mywork_verilog_dbs_opentitan_hw_top_englishbreakfast_ip_autogen_flash_ctrl_rtl_flash_ctrl_sv_flash_ctrl,0.015400000847876072,0.015199999324977398,0.9870128888384927,28,28,28,1.0
+reverse_reachable_depth2,instantiates reverse depth<=2 to d_mywork_verilog_dbs_opentitan_hw_top_earlgrey_ip_autogen_otp_ctrl_rtl_otp_ctrl_sv_otp_ctrl,0.014699995517730713,0.014599994756281376,0.9931972250380132,28,28,28,1.0
+reverse_reachable_depth2,instantiates reverse depth<=2 to d_mywork_verilog_dbs_opentitan_hw_ip_spi_device_rtl_spi_device_sv_spi_device,0.014399993233382702,0.014499993994832039,1.006944500586119,28,28,28,1.0
+reverse_reachable_depth2,instantiates reverse depth<=2 to d_mywork_verilog_dbs_opentitan_hw_top_earlgrey_ip_autogen_rv_core_ibex_rtl_rv_core_ibex_sv_rv_core_ibex,0.013400014722719789,0.012900010915473104,0.9626863240382172,27,27,27,1.0
+reverse_reachable_depth2,instantiates reverse depth<=2 to d_mywork_verilog_dbs_opentitan_hw_top_englishbreakfast_ip_autogen_rv_core_ibex_rtl_rv_core_ibex_sv_rv_core_ibex,0.012999982573091984,0.012900010915473104,0.9923098621819842,27,27,27,1.0
+reverse_reachable_depth2,contains reverse depth<=2 to opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py,0.12840001727454364,0.13679999392479658,1.0654203700945943,176,176,176,1.0
+reverse_reachable_depth2,contains reverse depth<=2 to opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_pkg_py,0.04640000406652689,0.10259999544359744,2.211206604561774,45,45,45,1.0
+reverse_reachable_depth2,contains reverse depth<=2 to opentitan_hw_vendor_lowrisc_ibex_dv_cosim_spike_cosim_cc,0.10229999315924942,0.09130002581514418,0.8924734303062787,40,40,40,1.0
+reverse_reachable_depth2,contains reverse depth<=2 to opentitan_hw_vendor_lowrisc_ibex_dv_formal_conductor_py,0.08379999781027436,0.0805000017862767,0.9606205714769951,35,35,35,1.0
+reverse_reachable_depth2,contains reverse depth<=2 to opentitan_hw_dv_verilator_simutil_verilator_cpp_verilator_sim_ctrl_cc,0.06949997623451054,0.06560000474564731,0.943885283130116,28,28,28,1.0
+reverse_reachable_depth2,contains reverse depth<=2 to ibex_vendor_riscv_tests_benchmarks_common_syscalls_c,0.06370001938194036,0.06349998875521123,0.9968598027336576,27,27,27,1.0
+reverse_reachable_depth2,contains reverse depth<=2 to opentitan_hw_ip_prim_util_vendor_google_verible_verilog_syntax_py_verible_verilog_syntax_py,0.04579999949783087,0.050799979362636805,1.1091698672407788,22,22,22,1.0
+reverse_reachable_depth2,contains reverse depth<=2 to opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_run_py,0.04579999949783087,0.030400027753785253,0.6637560717708092,22,22,22,1.0
+community_lookup,ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py,0.010400020983070135,0.006200018106028438,0.5961543843153058,377,377,377,1.0
+community_lookup,ibex_vendor_riscv_tests_debug_gdbserver_py,0.012200005585327744,0.009000010322779417,0.7377054264305599,724,724,724,1.0
+community_lookup,opentitan_sw_vendor_freertos_freertos_kernel_tasks_c,0.0029999937396496534,0.0026999914553016424,0.8999990298702937,254,254,254,1.0
+community_lookup,main_main,0.09640000644139946,0.09799998952075839,1.0165973337390963,4320,4320,4320,1.0
+community_lookup,main_opts,0.09670000872574747,0.09670000872574747,1.0,4320,4320,4320,1.0
+community_lookup,opentitan_hw_ip_otbn_dv_otbnsim_sim_insn_py,0.02370000584051013,0.022599997464567423,0.9535861559129881,1144,1144,1144,1.0
+community_lookup,opentitan_sw_device_lib_dif_dif_spi_device_c,0.08209998486563563,0.06880000000819564,0.8380025906313299,3613,3613,3613,1.0
+community_lookup,opentitan_hw_ip_otbn_dv_model_otbn_model_cc,0.031200004741549492,0.022099993657320738,0.708333022395021,1081,1081,1081,1.0
+community_lookup,opentitan_sw_device_tests_penetrationtests_firmware_fi_ibex_fi_c,0.04600000102072954,0.04290000651963055,0.9326088166888953,1732,1732,1732,1.0
+community_lookup,opentitan_sw_device_lib_crypto_impl_ecc_p384_c,0.04600000102072954,0.043400010326877236,0.9434784644313238,1732,1732,1732,1.0
+community_lookup,mod_neededcapabilities_ok,0.09869999485090375,0.09819999104365706,0.9949341050321027,4320,4320,4320,1.0
+community_lookup,statusprinter_enlightenstatusprinter_exit,0.10170001769438386,0.10119998478330672,0.9950832564004091,4551,4551,4551,1.0
+community_lookup,syscalls_tohost_exit,0.06500000017695129,0.06370001938194036,0.9800002955158161,3770,3770,3770,1.0
+community_lookup,conductor_processrunner_append,0.10269999620504677,0.1601999974809587,1.5598831879322534,4551,4551,4551,1.0
+community_lookup,mock_mmio_mmio_region_read32,0.11110000195913017,0.10959999053739011,0.9864985472971292,3613,3613,3613,1.0
+community_lookup,syscalls_memcpy,0.05800000508315861,0.043100008042529225,0.7431035218140717,1732,1732,1732,1.0
+community_lookup,mock_mmio_mmio_region_write32,0.0653000024612993,0.06369999027810991,0.975497517260621,3613,3613,3613,1.0
+community_lookup,codegen_codechunk_len,0.1010000123642385,0.10239999392069876,1.013861201832446,4551,4551,4551,1.0
+community_lookup,syscalls_memset,0.048299989430233836,0.04290000651963055,0.8881990871156772,1732,1732,1732,1.0
+community_lookup,mod_sizerange_range,0.0261999957729131,0.035500008380040526,1.3549623705184815,1129,1129,1129,1.0

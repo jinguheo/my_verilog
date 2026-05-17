@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "direct_calls_001",
+    "category": "direct_relation",
+    "question": "Which nodes does `.ok()` directly `calls`?",
+    "relation": "calls",
+    "answer_count": 1157,
+    "eval_ms": "0.022600",
+    "top_answers": "main() [access_after_hw_reset_main] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L79 ; test_access_after_hw_reset() [access_after_hw_reset_test_access_after_hw_reset] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L33 ; main() [access_after_wakeup_main] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L149 ; test_access_after_wakeup() [access_after_wakeup_test_access_after_wakeup] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L34 ; test_trivial_values() [alert_test_trivial_values] opentitan\\\\sw\\\\host\\\\ot_hal\\\\src\\\\util\\\\alert.rs:L41 ; asm_interrupt_handler() [asm_interrupt_handler_asm_interrupt_handler] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_openocd_debug_test\\\\src\\\\asm_interrupt_handler.rs:L30 ; main() [asm_interrupt_handler_main] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_openocd_debug_test\\\\src\\\\asm_interrupt_handler.rs:L55 ; asm_watchdog_bark() [asm_watchdog_bark_asm_watchdog_bark] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_openocd_debug_test\\\\src\\\\asm_watchdog_bark.rs:L30",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:mod_neededcapabilities_ok> otx:calls ?target . }"
+  },
+  {
+    "id": "direct_calls_002",
+    "category": "direct_relation",
+    "question": "Which nodes does `.exit()` directly `calls`?",
+    "relation": "calls",
+    "answer_count": 874,
+    "eval_ms": "0.012700",
+    "top_answers": "main() [at_plot_main] opentitan\\\\hw\\\\syn\\\\tools\\\\dc\\\\at-plot.py:L32 ; ._ConstructBazelString() [bitstreams_workspace_bitstreamcache_constructbazelstring] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L457 ; .Get() [bitstreams_workspace_bitstreamcache_get] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L188 ; .GetBitstreamsAvailable() [bitstreams_workspace_bitstreamcache_getbitstreamsavailable] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L223 ; ._run_cmd() [build_sw_collateral_for_sim_bazelrunner_run_cmd] opentitan\\\\util\\\\py\\\\scripts\\\\build_sw_collateral_for_sim.py:L205 ; .__post_init__() [build_sw_collateral_for_sim_imagestring_post_init] opentitan\\\\util\\\\py\\\\scripts\\\\build_sw_collateral_for_sim.py:L242 ; main() [c_array_bitmap_generator_main] opentitan\\\\sw\\\\device\\\\examples\\\\teacup_demos\\\\data\\\\c-array-bitmap-generator.py:L15 ; ._get_alert_peripherals() [c_test_topgenctest_get_alert_peripherals] opentitan\\\\util\\\\topgen\\\\c_test.py:L221",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:statusprinter_enlightenstatusprinter_exit> otx:calls ?target . }"
+  },
+  {
+    "id": "direct_calls_003",
+    "category": "direct_relation",
+    "question": "Which nodes does `tohost_exit()` directly `calls`?",
+    "relation": "calls",
+    "answer_count": 746,
+    "eval_ms": "0.011900",
+    "top_answers": "_exit() [syscalls_exit] opentitan\\\\hw\\\\vendor\\\\pulp_riscv_dbg\\\\tb\\\\prog\\\\syscalls.c:L97 ; handle_trap() [syscalls_handle_trap] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L62 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_01_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_01.c:L89 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_02_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_02.c:L89 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_03_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_03.c:L89 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_04_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_04.c:L89 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_05_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_05.c:L89 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_06_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_06.c:L89",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:syscalls_tohost_exit> otx:calls ?target . }"
+  },
+  {
+    "id": "direct_calls_004",
+    "category": "direct_relation",
+    "question": "Which nodes does `.append()` directly `calls`?",
+    "relation": "calls",
+    "answer_count": 618,
+    "eval_ms": "0.010400",
+    "top_answers": "from_raw_list() [alert_from_raw_list] opentitan\\\\util\\\\reggen\\\\alert.py:L41 ; main() [at_plot_main] opentitan\\\\hw\\\\syn\\\\tools\\\\dc\\\\at-plot.py:L32 ; .get_merged_report_group() [audit_sec_mmio_calls_bazeltool_get_merged_report_group] opentitan\\\\util\\\\py\\\\scripts\\\\audit_sec_mmio_calls.py:L93 ; ._query_audit_report_paths() [audit_sec_mmio_calls_bazeltool_query_audit_report_paths] opentitan\\\\util\\\\py\\\\scripts\\\\audit_sec_mmio_calls.py:L113 ; main() [audit_sec_mmio_calls_main] opentitan\\\\util\\\\py\\\\scripts\\\\audit_sec_mmio_calls.py:L221 ; cal_atk() [auto_run_cal_atk] RTLLM\\\\auto_run.py:L28 ; .gen() [bad_bnmovr_badbnmovr_gen] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\gens\\\\bad_bnmovr.py:L37 ; .__init__() [bad_ispr_badispr_init] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\gens\\\\bad_ispr.py:L24",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:conductor_processrunner_append> otx:calls ?target . }"
+  },
+  {
+    "id": "direct_calls_005",
+    "category": "direct_relation",
+    "question": "Which nodes does `mmio_region_read32()` directly `calls`?",
+    "relation": "calls",
+    "answer_count": 477,
+    "eval_ms": "0.011100",
+    "top_answers": "handle_alert_fi_ibex_sw_fatal() [alert_fi_handle_alert_fi_ibex_sw_fatal] opentitan\\\\sw\\\\device\\\\tests\\\\penetrationtests\\\\firmware\\\\fi\\\\alert_fi.c:L568 ; handle_alert_fi_sensor_ctrl_trigger() [alert_fi_handle_alert_fi_sensor_ctrl_trigger] opentitan\\\\sw\\\\device\\\\tests\\\\penetrationtests\\\\firmware\\\\fi\\\\alert_fi.c:L509 ; handle_alert_fi_trigger() [alert_fi_handle_alert_fi_trigger] opentitan\\\\sw\\\\device\\\\tests\\\\penetrationtests\\\\firmware\\\\fi\\\\alert_fi.c:L228 ; entropy_config_read() [chip_specific_startup_entropy_config_read] opentitan\\\\sw\\\\device\\\\silicon_creator\\\\rom\\\\e2e\\\\chip_specific_startup\\\\chip_specific_startup.c:L64 ; test_chip_specific_startup() [chip_specific_startup_test_chip_specific_startup] opentitan\\\\sw\\\\device\\\\silicon_creator\\\\rom\\\\e2e\\\\chip_specific_startup\\\\chip_specific_startup.c:L78 ; test_main() [cpu_info_test_test_main] opentitan\\\\sw\\\\device\\\\silicon_creator\\\\rom\\\\e2e\\\\rstmgr\\\\cpu_info_test.c:L76 ; handle_crypto_fi_hmac() [crypto_fi_handle_crypto_fi_hmac] opentitan\\\\sw\\\\device\\\\tests\\\\penetrationtests\\\\firmware\\\\fi\\\\crypto_fi.c:L526 ; dif_adc_ctrl_configure_filter() [dif_adc_ctrl_dif_adc_ctrl_configure_filter] opentitan\\\\sw\\\\device\\\\lib\\\\dif\\\\dif_adc_ctrl.c:L86",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:mock_mmio_mmio_region_read32> otx:calls ?target . }"
+  },
+  {
+    "id": "direct_calls_006",
+    "category": "direct_relation",
+    "question": "Which nodes does `memcpy()` directly `calls`?",
+    "relation": "calls",
+    "answer_count": 459,
+    "eval_ms": "0.009600",
+    "top_answers": "absorb_bytes() [absorb_data_absorb_bytes] opentitan\\\\hw\\\\ip\\\\kmac\\\\dv\\\\dpi\\\\vendor\\\\kerukuro_digestpp\\\\detail\\\\absorb_data.hpp:L16 ; spx_addr_keypair_copy() [address_spx_addr_keypair_copy] opentitan\\\\sw\\\\device\\\\silicon_creator\\\\lib\\\\sigverify\\\\sphincsplus\\\\address.c:L68 ; spx_addr_keypair_set() [address_spx_addr_keypair_set] opentitan\\\\sw\\\\device\\\\silicon_creator\\\\lib\\\\sigverify\\\\sphincsplus\\\\address.c:L61 ; spx_addr_subtree_copy() [address_spx_addr_subtree_copy] opentitan\\\\sw\\\\device\\\\silicon_creator\\\\lib\\\\sigverify\\\\sphincsplus\\\\address.c:L46 ; spx_addr_tree_index_set() [address_spx_addr_tree_index_set] opentitan\\\\sw\\\\device\\\\silicon_creator\\\\lib\\\\sigverify\\\\sphincsplus\\\\address.c:L88 ; spx_addr_tree_set() [address_spx_addr_tree_set] opentitan\\\\sw\\\\device\\\\silicon_creator\\\\lib\\\\sigverify\\\\sphincsplus\\\\address.c:L35 ; TEST_F() [address_unittest_test_f] opentitan\\\\sw\\\\device\\\\silicon_creator\\\\lib\\\\sigverify\\\\sphincsplus\\\\address_unittest.cc:L109 ; aes_key_expand() [aes_aes_key_expand] opentitan\\\\sw\\\\device\\\\sca\\\\lib\\\\aes.c:L135",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:syscalls_memcpy> otx:calls ?target . }"
+  },
+  {
+    "id": "direct_instantiates_007",
+    "category": "direct_relation",
+    "question": "Which nodes does `prim_flop_2sync` directly `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 109,
+    "eval_ms": "0.002000",
+    "top_answers": "prim_rst_sync [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_generic_rtl_prim_rst_sync_sv_prim_rst_sync] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim_generic\\\\rtl\\\\prim_rst_sync.sv:L10 ; prim_clock_gating_sync [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_clock_gating_sync_sv_prim_clock_gating_sync] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_clock_gating_sync.sv:L7 ; prim_clock_meas [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_clock_meas_sv_prim_clock_meas] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_clock_meas.sv:L15 ; prim_fifo_async_sram_adapter [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_fifo_async_sram_adapter_sv_prim_fifo_async_sram_adapter] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_fifo_async_sram_adapter.sv:L9 ; prim_fifo_async [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_fifo_async_sv_prim_fifo_async] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_fifo_async.sv:L9 ; prim_multibit_sync [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_multibit_sync_sv_prim_multibit_sync] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_multibit_sync.sv:L40 ; prim_pulse_sync [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_pulse_sync_sv_prim_pulse_sync] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_pulse_sync.sv:L16 ; prim_sync_slow_fast [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_sync_slow_fast_sv_prim_sync_slow_fast] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_sync_slow_fast.sv:L15",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:prim_flop_2sync> gfy:instantiates ?target . }"
+  },
+  {
+    "id": "direct_instantiates_008",
+    "category": "direct_relation",
+    "question": "Which nodes does `prim_flop` directly `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 86,
+    "eval_ms": "0.002000",
+    "top_answers": "prim_flop_2sync [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_generic_rtl_prim_flop_2sync_sv_prim_flop_2sync] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim_generic\\\\rtl\\\\prim_flop_2sync.sv:L7 ; prim_clock_timeout [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_clock_timeout_sv_prim_clock_timeout] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_clock_timeout.sv:L12 ; prim_diff_encode [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_diff_encode_sv_prim_diff_encode] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_diff_encode.sv:L10 ; prim_ram_1p_scr [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_ram_1p_scr_sv_prim_ram_1p_scr] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_ram_1p_scr.sv:L26 ; prim_sdc_example [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_sdc_example_sv_prim_sdc_example] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_sdc_example.sv:L44 ; prim_sec_anchor_flop [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_sec_anchor_flop_sv_prim_sec_anchor_flop] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_sec_anchor_flop.sv:L7 ; prim_sparse_fsm_flop [d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_sparse_fsm_flop_sv_prim_sparse_fsm_flop] ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_sparse_fsm_flop.sv:L7 ; aes_cipher_control [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_cipher_control_sv_aes_cipher_control] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_cipher_control.sv:L11",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:prim_flop> gfy:instantiates ?target . }"
+  },
+  {
+    "id": "direct_instantiates_009",
+    "category": "direct_relation",
+    "question": "Which nodes does `tlul_rsp_intg_gen` directly `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 77,
+    "eval_ms": "0.001700",
+    "top_answers": "aes_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_reg_top_sv_aes_reg_top] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_reg_top.sv:L9 ; aon_timer_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_aon_timer_rtl_aon_timer_reg_top_sv_aon_timer_reg_top] opentitan\\\\hw\\\\ip\\\\aon_timer\\\\rtl\\\\aon_timer_reg_top.sv:L9 ; ascon_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_ascon_rtl_ascon_reg_top_sv_ascon_reg_top] opentitan\\\\hw\\\\ip\\\\ascon\\\\rtl\\\\ascon_reg_top.sv:L9 ; csrng_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_csrng_rtl_csrng_reg_top_sv_csrng_reg_top] opentitan\\\\hw\\\\ip\\\\csrng\\\\rtl\\\\csrng_reg_top.sv:L9 ; dma_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_dma_rtl_dma_reg_top_sv_dma_reg_top] opentitan\\\\hw\\\\ip\\\\dma\\\\rtl\\\\dma_reg_top.sv:L9 ; edn_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_edn_rtl_edn_reg_top_sv_edn_reg_top] opentitan\\\\hw\\\\ip\\\\edn\\\\rtl\\\\edn_reg_top.sv:L9 ; entropy_src_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_entropy_src_rtl_entropy_src_reg_top_sv_entropy_src_reg_top] opentitan\\\\hw\\\\ip\\\\entropy_src\\\\rtl\\\\entropy_src_reg_top.sv:L9 ; hmac_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_hmac_rtl_hmac_reg_top_sv_hmac_reg_top] opentitan\\\\hw\\\\ip\\\\hmac\\\\rtl\\\\hmac_reg_top.sv:L9",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:tlul_rsp_intg_gen> gfy:instantiates ?target . }"
+  },
+  {
+    "id": "direct_instantiates_010",
+    "category": "direct_relation",
+    "question": "Which nodes does `prim_subreg` directly `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 69,
+    "eval_ms": "0.001300",
+    "top_answers": "adc_ctrl_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_adc_ctrl_rtl_adc_ctrl_reg_top_sv_adc_ctrl_reg_top] opentitan\\\\hw\\\\ip\\\\adc_ctrl\\\\rtl\\\\adc_ctrl_reg_top.sv:L9 ; aes_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_reg_top_sv_aes_reg_top] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_reg_top.sv:L9 ; aon_timer_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_aon_timer_rtl_aon_timer_reg_top_sv_aon_timer_reg_top] opentitan\\\\hw\\\\ip\\\\aon_timer\\\\rtl\\\\aon_timer_reg_top.sv:L9 ; ascon_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_ascon_rtl_ascon_reg_top_sv_ascon_reg_top] opentitan\\\\hw\\\\ip\\\\ascon\\\\rtl\\\\ascon_reg_top.sv:L9 ; csrng_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_csrng_rtl_csrng_reg_top_sv_csrng_reg_top] opentitan\\\\hw\\\\ip\\\\csrng\\\\rtl\\\\csrng_reg_top.sv:L9 ; dma_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_dma_rtl_dma_reg_top_sv_dma_reg_top] opentitan\\\\hw\\\\ip\\\\dma\\\\rtl\\\\dma_reg_top.sv:L9 ; edn_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_edn_rtl_edn_reg_top_sv_edn_reg_top] opentitan\\\\hw\\\\ip\\\\edn\\\\rtl\\\\edn_reg_top.sv:L9 ; entropy_src_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_entropy_src_rtl_entropy_src_reg_top_sv_entropy_src_reg_top] opentitan\\\\hw\\\\ip\\\\entropy_src\\\\rtl\\\\entropy_src_reg_top.sv:L9",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:prim_subreg> gfy:instantiates ?target . }"
+  },
+  {
+    "id": "direct_instantiates_011",
+    "category": "direct_relation",
+    "question": "Which nodes does `tlul_adapter_reg` directly `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 69,
+    "eval_ms": "0.001400",
+    "top_answers": "aes_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_reg_top_sv_aes_reg_top] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_reg_top.sv:L9 ; aon_timer_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_aon_timer_rtl_aon_timer_reg_top_sv_aon_timer_reg_top] opentitan\\\\hw\\\\ip\\\\aon_timer\\\\rtl\\\\aon_timer_reg_top.sv:L9 ; ascon_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_ascon_rtl_ascon_reg_top_sv_ascon_reg_top] opentitan\\\\hw\\\\ip\\\\ascon\\\\rtl\\\\ascon_reg_top.sv:L9 ; csrng_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_csrng_rtl_csrng_reg_top_sv_csrng_reg_top] opentitan\\\\hw\\\\ip\\\\csrng\\\\rtl\\\\csrng_reg_top.sv:L9 ; dma_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_dma_rtl_dma_reg_top_sv_dma_reg_top] opentitan\\\\hw\\\\ip\\\\dma\\\\rtl\\\\dma_reg_top.sv:L9 ; edn_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_edn_rtl_edn_reg_top_sv_edn_reg_top] opentitan\\\\hw\\\\ip\\\\edn\\\\rtl\\\\edn_reg_top.sv:L9 ; entropy_src_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_entropy_src_rtl_entropy_src_reg_top_sv_entropy_src_reg_top] opentitan\\\\hw\\\\ip\\\\entropy_src\\\\rtl\\\\entropy_src_reg_top.sv:L9 ; hmac_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_hmac_rtl_hmac_reg_top_sv_hmac_reg_top] opentitan\\\\hw\\\\ip\\\\hmac\\\\rtl\\\\hmac_reg_top.sv:L9",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:tlul_adapter_reg> gfy:instantiates ?target . }"
+  },
+  {
+    "id": "direct_instantiates_012",
+    "category": "direct_relation",
+    "question": "Which nodes does `prim_reg_we_check` directly `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 67,
+    "eval_ms": "0.001300",
+    "top_answers": "aes_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_reg_top_sv_aes_reg_top] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_reg_top.sv:L9 ; aon_timer_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_aon_timer_rtl_aon_timer_reg_top_sv_aon_timer_reg_top] opentitan\\\\hw\\\\ip\\\\aon_timer\\\\rtl\\\\aon_timer_reg_top.sv:L9 ; ascon_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_ascon_rtl_ascon_reg_top_sv_ascon_reg_top] opentitan\\\\hw\\\\ip\\\\ascon\\\\rtl\\\\ascon_reg_top.sv:L9 ; csrng_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_csrng_rtl_csrng_reg_top_sv_csrng_reg_top] opentitan\\\\hw\\\\ip\\\\csrng\\\\rtl\\\\csrng_reg_top.sv:L9 ; dma_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_dma_rtl_dma_reg_top_sv_dma_reg_top] opentitan\\\\hw\\\\ip\\\\dma\\\\rtl\\\\dma_reg_top.sv:L9 ; edn_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_edn_rtl_edn_reg_top_sv_edn_reg_top] opentitan\\\\hw\\\\ip\\\\edn\\\\rtl\\\\edn_reg_top.sv:L9 ; entropy_src_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_entropy_src_rtl_entropy_src_reg_top_sv_entropy_src_reg_top] opentitan\\\\hw\\\\ip\\\\entropy_src\\\\rtl\\\\entropy_src_reg_top.sv:L9 ; hmac_reg_top [d_mywork_verilog_dbs_opentitan_hw_ip_hmac_rtl_hmac_reg_top_sv_hmac_reg_top] opentitan\\\\hw\\\\ip\\\\hmac\\\\rtl\\\\hmac_reg_top.sv:L9",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:prim_reg_we_check> gfy:instantiates ?target . }"
+  },
+  {
+    "id": "direct_contains_013",
+    "category": "direct_relation",
+    "question": "Which nodes does `riscv_instr_cover_group.py` directly `contains`?",
+    "relation": "contains",
+    "answer_count": 175,
+    "eval_ms": "0.003400",
+    "top_answers": "add_cg [riscv_instr_cover_group_add_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1080 ; addi_cg [riscv_instr_cover_group_addi_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1103 ; addiw_cg [riscv_instr_cover_group_addiw_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L623 ; addw_cg [riscv_instr_cover_group_addw_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L579 ; and_cg [riscv_instr_cover_group_and_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1340 ; andi_cg [riscv_instr_cover_group_andi_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1376 ; auipc_cg [riscv_instr_cover_group_auipc_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1175 ; beq_cg [riscv_instr_cover_group_beq_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1552",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py> otx:contains ?target . }"
+  },
+  {
+    "id": "direct_contains_014",
+    "category": "direct_relation",
+    "question": "Which nodes does `gdbserver.py` directly `contains`?",
+    "relation": "contains",
+    "answer_count": 90,
+    "eval_ms": "0.002000",
+    "top_answers": "CeaseMultiTest [gdbserver_ceasemultitest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1794 ; CeaseRunTest [gdbserver_ceaseruntest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1859 ; CeaseStepiTest [gdbserver_ceasestepitest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1836 ; check_incrementing_samples() [gdbserver_check_incrementing_samples] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L815 ; check_samples_equal() [gdbserver_check_samples_equal] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L848 ; CheckMisa [gdbserver_checkmisa] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1609 ; CustomRegisterTest [gdbserver_customregistertest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L189 ; DebugBreakpoint [gdbserver_debugbreakpoint] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L597",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:ibex_vendor_riscv_tests_debug_gdbserver_py> otx:contains ?target . }"
+  },
+  {
+    "id": "direct_contains_015",
+    "category": "direct_relation",
+    "question": "Which nodes does `tasks.c` directly `contains`?",
+    "relation": "contains",
+    "answer_count": 86,
+    "eval_ms": "0.001800",
+    "top_answers": "eTaskConfirmSleepModeStatus() [tasks_etaskconfirmsleepmodestatus] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L3552 ; eTaskGetState() [tasks_etaskgetstate] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L1383 ; freertos_tasks_c_additions_init() [tasks_freertos_tasks_c_additions_init] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L5428 ; pcTaskGetName() [tasks_pctaskgetname] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L2378 ; prvAddCurrentTaskToDelayedList() [tasks_prvaddcurrenttasktodelayedlist] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L5302 ; prvAddNewTaskToReadyList() [tasks_prvaddnewtasktoreadylist] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L1070 ; prvCheckTasksWaitingTermination() [tasks_prvchecktaskswaitingtermination] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L3690 ; prvDeleteTCB() [tasks_prvdeletetcb] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L3942",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:opentitan_sw_vendor_freertos_freertos_kernel_tasks_c> otx:contains ?target . }"
+  },
+  {
+    "id": "direct_contains_016",
+    "category": "direct_relation",
+    "question": "Which nodes does `main()` directly `contains`?",
+    "relation": "contains",
+    "answer_count": 71,
+    "eval_ms": "0.001400",
+    "top_answers": "main.c [opentitan_hw_ip_hmac_dv_cryptoc_dpi_main_c] opentitan\\\\hw\\\\ip\\\\hmac\\\\dv\\\\cryptoc_dpi\\\\main.c:L1 ; main.rs [opentitan_hw_vendor_lowrisc_ibex_dv_formal_aig_manip_src_main_rs] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\aig-manip\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_device_silicon_owner_tock_kernel_src_main_rs] opentitan\\\\sw\\\\device\\\\silicon_owner\\\\tock\\\\kernel\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_opentitansession_src_main_rs] opentitan\\\\sw\\\\host\\\\opentitansession\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_opentitantool_src_main_rs] opentitan\\\\sw\\\\host\\\\opentitantool\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_provisioning_cp_src_main_rs] opentitan\\\\sw\\\\host\\\\provisioning\\\\cp\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_provisioning_ft_src_main_rs] opentitan\\\\sw\\\\host\\\\provisioning\\\\ft\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_tests_chip_example_sival_main_rs] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\example_sival\\\\main.rs:L1",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:main_main> otx:contains ?target . }"
+  },
+  {
+    "id": "direct_contains_017",
+    "category": "direct_relation",
+    "question": "Which nodes does `Opts` directly `contains`?",
+    "relation": "contains",
+    "answer_count": 67,
+    "eval_ms": "0.001500",
+    "top_answers": "main.rs [opentitan_sw_host_opentitantool_src_main_rs] opentitan\\\\sw\\\\host\\\\opentitantool\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_provisioning_cp_src_main_rs] opentitan\\\\sw\\\\host\\\\provisioning\\\\cp\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_provisioning_ft_src_main_rs] opentitan\\\\sw\\\\host\\\\provisioning\\\\ft\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_tests_chip_example_sival_main_rs] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\example_sival\\\\main.rs:L1 ; main.rs [opentitan_sw_host_tests_chip_flash_ctrl_src_main_rs] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\flash_ctrl\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_tests_chip_i2c_host_override_src_main_rs] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\i2c_host_override\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_tests_chip_i2c_target_src_main_rs] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\i2c_target\\\\src\\\\main.rs:L1 ; main.rs [opentitan_sw_host_tests_chip_mem_src_main_rs] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\mem\\\\src\\\\main.rs:L1",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:main_opts> otx:contains ?target . }"
+  },
+  {
+    "id": "direct_contains_018",
+    "category": "direct_relation",
+    "question": "Which nodes does `insn.py` directly `contains`?",
+    "relation": "contains",
+    "answer_count": 65,
+    "eval_ms": "0.001400",
+    "top_answers": "ADD [insn_add] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L17 ; ADDI [insn_addi] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L31 ; AND [insn_and] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L152 ; ANDI [insn_andi] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L166 ; BEQ [insn_beq] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L307 ; BNADD [insn_bnadd] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L546 ; BNADDC [insn_bnaddc] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L573 ; BNADDI [insn_bnaddi] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L601",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:opentitan_hw_ip_otbn_dv_otbnsim_sim_insn_py> otx:contains ?target . }"
+  },
+  {
+    "id": "direct_method_019",
+    "category": "direct_relation",
+    "question": "Which nodes does `riscv_asm_program_gen` directly `method`?",
+    "relation": "method",
+    "answer_count": 63,
+    "eval_ms": "0.001000",
+    "top_answers": ".add_directed_instr_stream() [riscv_asm_program_gen_riscv_asm_program_gen_add_directed_instr_stream] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L1125 ; .core_is_initialized() [riscv_asm_program_gen_riscv_asm_program_gen_core_is_initialized] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L409 ; .create_page_table() [riscv_asm_program_gen_riscv_asm_program_gen_create_page_table] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L939 ; .dump_perf_stats() [riscv_asm_program_gen_riscv_asm_program_gen_dump_perf_stats] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L1052 ; .format_section() [riscv_asm_program_gen_riscv_asm_program_gen_format_section] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L1037 ; .gen_all_trap_handler() [riscv_asm_program_gen_riscv_asm_program_gen_gen_all_trap_handler] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L726 ; .gen_callstack() [riscv_asm_program_gen_riscv_asm_program_gen_gen_callstack] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L228 ; .gen_data_page() [riscv_asm_program_gen_riscv_asm_program_gen_gen_data_page] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L289",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:riscv_asm_program_gen_riscv_asm_program_gen> gfy:method ?target . }"
+  },
+  {
+    "id": "direct_method_020",
+    "category": "direct_relation",
+    "question": "Which nodes does `OTFIIbex` directly `method`?",
+    "relation": "method",
+    "answer_count": 51,
+    "eval_ms": "0.000900",
+    "top_answers": ".ibex_address_translation() [fi_ibex_commands_otfiibex_ibex_address_translation] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L350 ; .ibex_address_translation_config() [fi_ibex_commands_otfiibex_ibex_address_translation_config] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L343 ; .ibex_char_addi_single_beq() [fi_ibex_commands_otfiibex_ibex_char_addi_single_beq] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L139 ; .ibex_char_addi_single_beq_cm() [fi_ibex_commands_otfiibex_ibex_char_addi_single_beq_cm] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L151 ; .ibex_char_addi_single_beq_cm2() [fi_ibex_commands_otfiibex_ibex_char_addi_single_beq_cm2] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L157 ; .ibex_char_addi_single_beq_neg() [fi_ibex_commands_otfiibex_ibex_char_addi_single_beq_neg] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L145 ; .ibex_char_addi_single_bne() [fi_ibex_commands_otfiibex_ibex_char_addi_single_bne] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L163 ; .ibex_char_addi_single_bne_neg() [fi_ibex_commands_otfiibex_ibex_char_addi_single_bne_neg] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L175",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:fi_ibex_commands_otfiibex> gfy:method ?target . }"
+  },
+  {
+    "id": "direct_method_021",
+    "category": "direct_relation",
+    "question": "Which nodes does `OTBNState` directly `method`?",
+    "relation": "method",
+    "answer_count": 42,
+    "eval_ms": "0.000900",
+    "top_answers": "._abort() [state_otbnstate_abort] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L349 ; .changes() [state_otbnstate_changes] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L271 ; .clear_imem_invalidation() [state_otbnstate_clear_imem_invalidation] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L596 ; .commit() [state_otbnstate_commit] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L307 ; .complete_init_sec_wipe() [state_otbnstate_complete_init_sec_wipe] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L254 ; .edn_flush() [state_otbnstate_edn_flush] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L223 ; .edn_rnd_step() [state_otbnstate_edn_rnd_step] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L220 ; .edn_urnd_step() [state_otbnstate_edn_urnd_step] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L216",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:state_otbnstate> gfy:method ?target . }"
+  },
+  {
+    "id": "direct_method_022",
+    "category": "direct_relation",
+    "question": "Which nodes does `Gdb` directly `method`?",
+    "relation": "method",
+    "answer_count": 35,
+    "eval_ms": "0.000900",
+    "top_answers": ".b() [testlib_gdb_b] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L886 ; .c() [testlib_gdb_c] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L763 ; .c_all() [testlib_gdb_c_all] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L785 ; .command() [testlib_gdb_command] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L705 ; .connect() [testlib_gdb_connect] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L638 ; .__del__() [testlib_gdb_del] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L671 ; .disconnect() [testlib_gdb_disconnect] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L665 ; .expect() [testlib_gdb_expect] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L875",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:testlib_gdb> gfy:method ?target . }"
+  },
+  {
+    "id": "direct_method_023",
+    "category": "direct_relation",
+    "question": "Which nodes does `IbexFiTest` directly `method`?",
+    "relation": "method",
+    "answer_count": 32,
+    "eval_ms": "0.001000",
+    "top_answers": ".test_char_addi_single_beq() [fi_ibex_python_test_ibexfitest_test_char_addi_single_beq] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L147 ; .test_char_addi_single_beq_cm() [fi_ibex_python_test_ibexfitest_test_char_addi_single_beq_cm] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L472 ; .test_char_addi_single_beq_neg() [fi_ibex_python_test_ibexfitest_test_char_addi_single_beq_neg] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L153 ; .test_char_addi_single_bne() [fi_ibex_python_test_ibexfitest_test_char_addi_single_bne] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L159 ; .test_char_addi_single_bne_neg() [fi_ibex_python_test_ibexfitest_test_char_addi_single_bne_neg] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L165 ; .test_char_combi() [fi_ibex_python_test_ibexfitest_test_char_combi] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L171 ; .test_char_conditional_branch_beq() [fi_ibex_python_test_ibexfitest_test_char_conditional_branch_beq] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L177 ; .test_char_conditional_branch_bge() [fi_ibex_python_test_ibexfitest_test_char_conditional_branch_bge] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L183",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:fi_ibex_python_test_ibexfitest> gfy:method ?target . }"
+  },
+  {
+    "id": "direct_method_024",
+    "category": "direct_relation",
+    "question": "Which nodes does `Model` directly `method`?",
+    "relation": "method",
+    "answer_count": 32,
+    "eval_ms": "0.000900",
+    "top_answers": ".all_regs_with_known_vals() [model_model_all_regs_with_known_vals] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\model.py:L525 ; .consume_fuel() [model_model_consume_fuel] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\model.py:L1041 ; .forget_value() [model_model_forget_value] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\model.py:L615 ; ._generic_update_for_insn() [model_model_generic_update_for_insn] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\model.py:L1006 ; .get_reg() [model_model_get_reg] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\model.py:L390 ; ._inc_gpr() [model_model_inc_gpr] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\model.py:L778 ; .__init__() [model_model_init] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\model.py:L185 ; .is_const() [model_model_is_const] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\model.py:L608",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:model_model> gfy:method ?target . }"
+  },
+  {
+    "id": "direct_inherits_025",
+    "category": "direct_relation",
+    "question": "Which nodes does `object` directly `inherits`?",
+    "relation": "inherits",
+    "answer_count": 190,
+    "eval_ms": "0.002700",
+    "top_answers": "BitstreamCache [bitstreams_workspace_bitstreamcache] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L98 ; DB [db_db] opentitan\\\\sw\\\\host\\\\provisioning\\\\orchestrator\\\\src\\\\db.py:L19 ; DBConfig [db_dbconfig] opentitan\\\\sw\\\\host\\\\provisioning\\\\orchestrator\\\\src\\\\db.py:L15 ; DeviceRecord [db_devicerecord] opentitan\\\\sw\\\\host\\\\provisioning\\\\orchestrator\\\\src\\\\db.py:L44 ; GithubApi [gh_testplan_githubapi] opentitan\\\\util\\\\py\\\\scripts\\\\gh_testplan.py:L79 ; Testplan [gh_testplan_testplan] opentitan\\\\util\\\\py\\\\scripts\\\\gh_testplan.py:L40 ; CArrayMapping [lib_carraymapping] opentitan\\\\util\\\\topgen\\\\lib.py:L91 ; CEnum [lib_cenum] opentitan\\\\util\\\\topgen\\\\lib.py:L31",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:object> otx:inherits ?target . }"
+  },
+  {
+    "id": "direct_inherits_026",
+    "category": "direct_relation",
+    "question": "Which nodes does `IntEnum` directly `inherits`?",
+    "relation": "inherits",
+    "answer_count": 58,
+    "eval_ms": "0.001000",
+    "top_answers": "Cmd [constants_cmd] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\constants.py:L8 ; CsrAddrs [constants_csraddrs] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\constants.py:L65 ; ErrBits [constants_errbits] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\constants.py:L25 ; LcTx [constants_lctx] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\constants.py:L47 ; Status [constants_status] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\constants.py:L15 ; WsrAddrs [constants_wsraddrs] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\constants.py:L94 ; MaiOperation [mai_ispr_maioperation] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\mai_ispr.py:L10 ; ErrBits [otbn_sim_test_errbits] opentitan\\\\hw\\\\ip\\\\otbn\\\\util\\\\otbn_sim_test.py:L28",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:intenum> otx:inherits ?target . }"
+  },
+  {
+    "id": "direct_inherits_027",
+    "category": "direct_relation",
+    "question": "Which nodes does `OTBNInsn` directly `inherits`?",
+    "relation": "inherits",
+    "answer_count": 41,
+    "eval_ms": "0.000900",
+    "top_answers": "EmptyInsn [decode_emptyinsn] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\decode.py:L43 ; BEQ [insn_beq] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L307 ; BNADD [insn_bnadd] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L546 ; BNADDC [insn_bnaddc] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L573 ; BNADDI [insn_bnaddi] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L601 ; BNADDM [insn_bnaddm] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L625 ; BNAND [insn_bnand] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L874 ; BNCMP [insn_bncmp] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L996",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:otbninsn> otx:inherits ?target . }"
+  },
+  {
+    "id": "direct_inherits_028",
+    "category": "direct_relation",
+    "question": "Which nodes does `Enum` directly `inherits`?",
+    "relation": "inherits",
+    "answer_count": 25,
+    "eval_ms": "0.001000",
+    "top_answers": "JsonEnum [access_jsonenum] opentitan\\\\util\\\\reggen\\\\access.py:L13 ; sw_type_e [build_sw_collateral_for_sim_sw_type_e] opentitan\\\\util\\\\py\\\\scripts\\\\build_sw_collateral_for_sim.py:L140 ; SwType [check_dv_sw_images_swtype] opentitan\\\\ci\\\\scripts\\\\check_dv_sw_images.py:L25 ; OutputFormat [committer_stats_outputformat] opentitan\\\\util\\\\py\\\\scripts\\\\committer_stats.py:L56 ; FlashScramblingKeyType [gen_flash_img_flashscramblingkeytype] opentitan\\\\util\\\\design\\\\gen-flash-img.py:L58 ; DtIpPos [helper_dtippos] opentitan\\\\util\\\\dtgen\\\\helper.py:L327 ; StopPoint [instruction_count_range_stoppoint] opentitan\\\\hw\\\\ip\\\\otbn\\\\util\\\\shared\\\\instruction_count_range.py:L16 ; ImAct [intermodule_imact] opentitan\\\\util\\\\topgen\\\\intermodule.py:L32",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:enum> otx:inherits ?target . }"
+  },
+  {
+    "id": "direct_inherits_029",
+    "category": "direct_relation",
+    "question": "Which nodes does `Exception` directly `inherits`?",
+    "relation": "inherits",
+    "answer_count": 19,
+    "eval_ms": "0.000800",
+    "top_answers": "ParserBug [bitstream_bisect_parserbug] opentitan\\\\util\\\\fpga\\\\bitstream_bisect.py:L71 ; ReqErr [check_tool_requirements_reqerr] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\util\\\\check_tool_requirements.py:L35 ; ConfigException [ibex_config_configexception] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\util\\\\ibex_config.py:L17 ; LauncherBusy [launcher_launcherbusy] opentitan\\\\util\\\\dvsim\\\\Launcher.py:L22 ; LauncherError [launcher_launchererror] opentitan\\\\util\\\\dvsim\\\\Launcher.py:L17 ; TemplateParseError [lib_templateparseerror] opentitan\\\\util\\\\ipgen\\\\lib.py:L14 ; TemplateRenderError [lib_templaterendererror] opentitan\\\\util\\\\ipgen\\\\lib.py:L18 ; EmptyMultiRegException [multi_register_emptymultiregexception] opentitan\\\\util\\\\reggen\\\\multi_register.py:L50",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:exception> otx:inherits ?target . }"
+  },
+  {
+    "id": "direct_inherits_030",
+    "category": "direct_relation",
+    "question": "Which nodes does `GdbTest` directly `inherits`?",
+    "relation": "inherits",
+    "answer_count": 17,
+    "eval_ms": "0.000700",
+    "top_answers": "CeaseMultiTest [gdbserver_ceasemultitest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1794 ; CheckMisa [gdbserver_checkmisa] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1609 ; DisconnectTest [gdbserver_disconnecttest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L415 ; DownloadTest [gdbserver_downloadtest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1478 ; FreeRtosTest [gdbserver_freertostest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1882 ; InstantChangePc [gdbserver_instantchangepc] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L448 ; InstantHaltTest [gdbserver_instanthalttest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L431 ; MemTestBlock [gdbserver_memtestblock] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L346",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:gdbtest> otx:inherits ?target . }"
+  },
+  {
+    "id": "direct_defines_031",
+    "category": "direct_relation",
+    "question": "Which nodes does `aes_sbox_dom.sv` directly `defines`?",
+    "relation": "defines",
+    "answer_count": 6,
+    "eval_ms": "0.000600",
+    "top_answers": "aes_dom_dep_mul_gf2pn [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_dom_sv_aes_dom_dep_mul_gf2pn] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_dom.sv:L320 ; aes_dom_dep_mul_gf2pn_unopt [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_dom_sv_aes_dom_dep_mul_gf2pn_unopt] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_dom.sv:L190 ; aes_dom_indep_mul_gf2pn [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_dom_sv_aes_dom_indep_mul_gf2pn] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_dom.sv:L65 ; aes_dom_inverse_gf2p4 [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_dom_sv_aes_dom_inverse_gf2p4] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_dom.sv:L582 ; aes_dom_inverse_gf2p8 [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_dom_sv_aes_dom_inverse_gf2p8] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_dom.sv:L795 ; aes_sbox_dom [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_dom_sv_aes_sbox_dom] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_dom.sv:L984",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:opentitan_hw_ip_aes_rtl_aes_sbox_dom_sv> otx:defines ?target . }"
+  },
+  {
+    "id": "direct_defines_032",
+    "category": "direct_relation",
+    "question": "Which nodes does `adder_32bit.v` directly `defines`?",
+    "relation": "defines",
+    "answer_count": 6,
+    "eval_ms": "0.000600",
+    "top_answers": "adder_32bit [d_mywork_verilog_dbs_rtllm_chatgpt4_t5_adder_32bit_v_adder_32bit] RTLLM\\\\_chatgpt4\\\\t5\\\\adder_32bit.v:L86 ; cla_16bit [d_mywork_verilog_dbs_rtllm_chatgpt4_t5_adder_32bit_v_cla_16bit] RTLLM\\\\_chatgpt4\\\\t5\\\\adder_32bit.v:L1 ; cla_4bit [d_mywork_verilog_dbs_rtllm_chatgpt4_t5_adder_32bit_v_cla_4bit] RTLLM\\\\_chatgpt4\\\\t5\\\\adder_32bit.v:L61 ; cla_adder_16bit [d_mywork_verilog_dbs_rtllm_chatgpt4_t5_adder_32bit_v_cla_adder_16bit] RTLLM\\\\_chatgpt4\\\\t5\\\\adder_32bit.v:L139 ; cla_adder_4bit [d_mywork_verilog_dbs_rtllm_chatgpt4_t5_adder_32bit_v_cla_adder_4bit] RTLLM\\\\_chatgpt4\\\\t5\\\\adder_32bit.v:L116 ; cla_gen_4bit [d_mywork_verilog_dbs_rtllm_chatgpt4_t5_adder_32bit_v_cla_gen_4bit] RTLLM\\\\_chatgpt4\\\\t5\\\\adder_32bit.v:L101",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:rtllm_chatgpt4_t5_adder_32bit_v> otx:defines ?target . }"
+  },
+  {
+    "id": "direct_defines_033",
+    "category": "direct_relation",
+    "question": "Which nodes does `verified_adder_16bit.v` directly `defines`?",
+    "relation": "defines",
+    "answer_count": 5,
+    "eval_ms": "0.000600",
+    "top_answers": "add1 [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_16bit_verified_adder_16bit_v_add1] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L113 ; add2 [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_16bit_verified_adder_16bit_v_add2] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L85 ; add4 [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_16bit_verified_adder_16bit_v_add4] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L57 ; add8 [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_16bit_verified_adder_16bit_v_add8] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L29 ; verified_adder_16bit [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_16bit_verified_adder_16bit_v_verified_adder_16bit] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L1",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:rtllm_arithmetic_adder_adder_16bit_verified_adder_16bit_v> otx:defines ?target . }"
+  },
+  {
+    "id": "direct_defines_034",
+    "category": "direct_relation",
+    "question": "Which nodes does `verified_adder_32bit.v` directly `defines`?",
+    "relation": "defines",
+    "answer_count": 5,
+    "eval_ms": "0.000600",
+    "top_answers": "adder [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_32bit_verified_adder_32bit_v_adder] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_32bit\\\\verified_adder_32bit.v:L174 ; adder_4 [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_32bit_verified_adder_32bit_v_adder_4] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_32bit\\\\verified_adder_32bit.v:L90 ; CLA [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_32bit_verified_adder_32bit_v_cla] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_32bit\\\\verified_adder_32bit.v:L163 ; CLA_16 [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_32bit_verified_adder_32bit_v_cla_16] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_32bit\\\\verified_adder_32bit.v:L32 ; verified_adder_32bit [d_mywork_verilog_dbs_rtllm_arithmetic_adder_adder_32bit_verified_adder_32bit_v_verified_adder_32bit] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_32bit\\\\verified_adder_32bit.v:L1",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:rtllm_arithmetic_adder_adder_32bit_verified_adder_32bit_v> otx:defines ?target . }"
+  },
+  {
+    "id": "direct_defines_035",
+    "category": "direct_relation",
+    "question": "Which nodes does `aes_sbox_canright_masked_noreuse.sv` directly `defines`?",
+    "relation": "defines",
+    "answer_count": 3,
+    "eval_ms": "0.000500",
+    "top_answers": "aes_masked_inverse_gf2p4_noreuse [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_noreuse_sv_aes_masked_inverse_gf2p4_noreuse] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_canright_masked_noreuse.sv:L34 ; aes_masked_inverse_gf2p8_noreuse [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_noreuse_sv_aes_masked_inverse_gf2p8_noreuse] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_canright_masked_noreuse.sv:L190 ; aes_sbox_canright_masked_noreuse [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_noreuse_sv_aes_sbox_canright_masked_noreuse] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_canright_masked_noreuse.sv:L392",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_noreuse_sv> otx:defines ?target . }"
+  },
+  {
+    "id": "direct_defines_036",
+    "category": "direct_relation",
+    "question": "Which nodes does `aes_sbox_canright_masked.sv` directly `defines`?",
+    "relation": "defines",
+    "answer_count": 3,
+    "eval_ms": "0.000500",
+    "top_answers": "aes_masked_inverse_gf2p4 [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_sv_aes_masked_inverse_gf2p4] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_canright_masked.sv:L35 ; aes_masked_inverse_gf2p8 [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_sv_aes_masked_inverse_gf2p8] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_canright_masked.sv:L233 ; aes_sbox_canright_masked [d_mywork_verilog_dbs_opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_sv_aes_sbox_canright_masked] opentitan\\\\hw\\\\ip\\\\aes\\\\rtl\\\\aes_sbox_canright_masked.sv:L434",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:opentitan_hw_ip_aes_rtl_aes_sbox_canright_masked_sv> otx:defines ?target . }"
+  },
+  {
+    "id": "reverse_calls_037",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `.ok()` via `calls`?",
+    "relation": "calls",
+    "answer_count": 694,
+    "eval_ms": "0.011400",
+    "top_answers": ".generate_key() [acorn_acorn_generate_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L322 ; .get_host_version() [acorn_acorn_get_host_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L132 ; .get_key_info() [acorn_acorn_get_key_info] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L286 ; .get_public_hash() [acorn_acorn_get_public_hash] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L213 ; .get_public_key() [acorn_acorn_get_public_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L184 ; .get_see_version() [acorn_acorn_get_see_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L154 ; .get_version() [acorn_acorn_get_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L250 ; .import_keypair() [acorn_acorn_import_keypair] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L379",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls <urn:graphify-node:mod_neededcapabilities_ok> . }"
+  },
+  {
+    "id": "reverse_calls_038",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `.len()` via `calls`?",
+    "relation": "calls",
+    "answer_count": 536,
+    "eval_ms": "0.010300",
+    "top_answers": ".get_public_hash() [acorn_acorn_get_public_hash] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L213 ; .import_keypair() [acorn_acorn_import_keypair] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L379 ; .sign() [acorn_acorn_sign] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L445 ; .verify() [acorn_acorn_verify] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L490 ; .try_new() [alert_handler_alertregs_try_new] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\otp\\\\alert_handler.rs:L144 ; main() [analyze_information_flow_main] opentitan\\\\hw\\\\ip\\\\otbn\\\\util\\\\analyze_information_flow.py:L18 ; .write() [application_key_ownerapplicationkey_write] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\ownership\\\\application_key.rs:L87 ; main() [at_plot_main] opentitan\\\\hw\\\\syn\\\\tools\\\\dc\\\\at-plot.py:L32",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls <urn:graphify-node:codegen_codechunk_len> . }"
+  },
+  {
+    "id": "reverse_calls_039",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `.check()` via `calls`?",
+    "relation": "calls",
+    "answer_count": 506,
+    "eval_ms": "0.010200",
+    "top_answers": "ottf_handle_irq() [adc_ctrl_sleep_debug_cable_wakeup_test_ottf_handle_irq] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L68 ; test_main() [adc_ctrl_sleep_debug_cable_wakeup_test_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L98 ; execute_test() [aes_entropy_test_execute_test] opentitan\\\\sw\\\\device\\\\tests\\\\aes_entropy_test.c:L27 ; execute_test() [aes_force_prng_reseed_test_execute_test] opentitan\\\\sw\\\\device\\\\tests\\\\aes_force_prng_reseed_test.c:L76 ; make_key_config() [aes_functest_make_key_config] opentitan\\\\sw\\\\device\\\\tests\\\\crypto\\\\aes_functest.c:L32 ; get_tag_length() [aes_gcm_testutils_get_tag_length] opentitan\\\\sw\\\\device\\\\tests\\\\crypto\\\\aes_gcm_testutils.c:L43 ; initialize_clkmgr() [aes_idle_test_initialize_clkmgr] opentitan\\\\sw\\\\device\\\\tests\\\\aes_idle_test.c:L47 ; execute_test() [aes_masking_off_test_execute_test] opentitan\\\\sw\\\\device\\\\tests\\\\aes_masking_off_test.c:L48",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls <urn:graphify-node:validate_testplans_schemavalidator_check> . }"
+  },
+  {
+    "id": "reverse_calls_040",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `.new()` via `calls`?",
+    "relation": "calls",
+    "answer_count": 480,
+    "eval_ms": "0.010300",
+    "top_answers": ".new() [acorn_acorn_new] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L123 ; .init_simulation() [aiw_aigerwitness_init_simulation] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\aig-manip\\\\src\\\\aiw.rs:L61 ; .parse() [aiw_aigerwitness_parse] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\aig-manip\\\\src\\\\aiw.rs:L22 ; new_crc() [alert_handler_new_crc] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\otp\\\\alert_handler.rs:L356 ; .default_header() [application_key_ownerapplicationkey_default_header] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\ownership\\\\application_key.rs:L66 ; .write() [application_key_ownerapplicationkey_write] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\ownership\\\\application_key.rs:L87 ; test_owner_application_key_read() [application_key_test_owner_application_key_read] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\ownership\\\\application_key.rs:L158 ; test_owner_application_key_write() [application_key_test_owner_application_key_write] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\ownership\\\\application_key.rs:L138",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls <urn:graphify-node:xmodem_xmodemfirmware_new> . }"
+  },
+  {
+    "id": "reverse_calls_041",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `Format` via `calls`?",
+    "relation": "calls",
+    "answer_count": 450,
+    "eval_ms": "0.009300",
+    "top_answers": "main() [analyze_information_flow_main] opentitan\\\\hw\\\\ip\\\\otbn\\\\util\\\\analyze_information_flow.py:L18 ; .find_empty_test_suites() [bazel_query_bazelqueryrunner_find_empty_test_suites] opentitan\\\\ci\\\\scripts\\\\lib\\\\bazel_query.py:L65 ; from_yaml() [bit_ranges_from_yaml] opentitan\\\\hw\\\\ip\\\\otbn\\\\util\\\\shared\\\\bit_ranges.py:L33 ; ._ConstructBazelString() [bitstreams_workspace_bitstreamcache_constructbazelstring] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L457 ; main() [bitstreams_workspace_main] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L576 ; from_string() [bool_literal_from_string] opentitan\\\\hw\\\\ip\\\\otbn\\\\util\\\\shared\\\\bool_literal.py:L25 ; main() [build_translated_names_main] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\syn\\\\python\\\\build_translated_names.py:L13 ; _load_cfg() [cfgfactory_load_cfg] opentitan\\\\util\\\\dvsim\\\\CfgFactory.py:L19",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls <urn:graphify-node:ownership_format> . }"
+  },
+  {
+    "id": "reverse_calls_042",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `.write()` via `calls`?",
+    "relation": "calls",
+    "answer_count": 437,
+    "eval_ms": "0.009000",
+    "top_answers": "replace_module_name() [aes_sbox_lec_replace_module_name] opentitan\\\\hw\\\\ip\\\\aes\\\\pre_dv\\\\aes_sbox_lec\\\\aes_sbox_lec.py:L15 ; .write() [application_key_ownerapplicationkey_write] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\ownership\\\\application_key.rs:L87 ; testutil() [binary_blob_testutil] opentitan\\\\sw\\\\device\\\\lib\\\\testing\\\\binary_blob.h:L13 ; parse_dac_sequence() [bitbang_parse_dac_sequence] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\util\\\\bitbang.rs:L351 ; ._GenerateMemoryMapFromV2() [bitstreams_workspace_bitstreamcache_generatememorymapfromv2] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L342 ; .WriteBazelFiles() [bitstreams_workspace_bitstreamcache_writebazelfiles] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L546 ; main() [bitstreams_workspace_main] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L576 ; .write() [broadcast_broadcaster_t_write] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\io\\\\console\\\\broadcast.rs:L153",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls <urn:graphify-node:targets_target_write> . }"
+  },
+  {
+    "id": "reverse_instantiates_043",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `top_earlgrey` via `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 36,
+    "eval_ms": "0.000900",
+    "top_answers": "adc_ctrl [adc_ctrl] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L2047 ; aes [aes] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L1174 ; alert_handler [alert_handler] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L1677 ; aon_timer [aon_timer] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L1049 ; clkmgr [clkmgr] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L928 ; csrng [csrng] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L2617 ; edn [edn] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L2692 ; entropy_src [entropy_src] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L2649",
+    "sparql": "SELECT ?source WHERE { ?source gfy:instantiates <urn:graphify-node:d_mywork_verilog_dbs_opentitan_hw_top_earlgrey_rtl_autogen_top_earlgrey_sv_top_earlgrey> . }"
+  },
+  {
+    "id": "reverse_instantiates_044",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `top_darjeeling` via `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 25,
+    "eval_ms": "0.000900",
+    "top_answers": "ac_range_check [ac_range_check] opentitan\\\\hw\\\\top_darjeeling\\\\rtl\\\\autogen\\\\top_darjeeling.sv:L2684 ; aes [aes] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L1174 ; aon_timer [aon_timer] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L1049 ; clkmgr [clkmgr] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L928 ; csrng [csrng] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L2617 ; dma [dma] opentitan\\\\hw\\\\top_darjeeling\\\\rtl\\\\autogen\\\\top_darjeeling.sv:L2221 ; edn [edn] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L2692 ; entropy_src [entropy_src] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L2649",
+    "sparql": "SELECT ?source WHERE { ?source gfy:instantiates <urn:graphify-node:d_mywork_verilog_dbs_opentitan_hw_top_darjeeling_rtl_autogen_top_darjeeling_sv_top_darjeeling> . }"
+  },
+  {
+    "id": "reverse_instantiates_045",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `top_englishbreakfast` via `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 20,
+    "eval_ms": "0.000800",
+    "top_answers": "aes [aes] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L1174 ; aon_timer [aon_timer] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L1049 ; clkmgr [clkmgr] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L928 ; flash_ctrl [flash_ctrl] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L1078 ; gpio [gpio] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L631 ; pinmux [pinmux] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L979 ; pinmux_jtag_breakout [pinmux_jtag_breakout] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L415 ; pwrmgr [pwrmgr] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L839",
+    "sparql": "SELECT ?source WHERE { ?source gfy:instantiates <urn:graphify-node:d_mywork_verilog_dbs_opentitan_hw_top_englishbreakfast_rtl_autogen_top_englishbreakfast_sv_top_englishbreakfast> . }"
+  },
+  {
+    "id": "reverse_instantiates_046",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `flash_ctrl` via `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 18,
+    "eval_ms": "0.000700",
+    "top_answers": "flash_ctrl_arb [flash_ctrl_arb] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\flash_ctrl\\\\rtl\\\\flash_ctrl.sv:L334 ; flash_ctrl_core_reg_top [flash_ctrl_core_reg_top] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\flash_ctrl\\\\rtl\\\\flash_ctrl.sv:L123 ; flash_ctrl_erase [flash_ctrl_erase] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\flash_ctrl\\\\rtl\\\\flash_ctrl.sv:L736 ; flash_ctrl_lcmgr [flash_ctrl_lcmgr] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\flash_ctrl\\\\rtl\\\\flash_ctrl.sv:L422 ; flash_ctrl_prog [flash_ctrl_prog] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\flash_ctrl\\\\rtl\\\\flash_ctrl.sv:L585 ; flash_ctrl_rd [flash_ctrl_rd] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\flash_ctrl\\\\rtl\\\\flash_ctrl.sv:L705 ; flash_ctrl_region_cfg [flash_ctrl_region_cfg] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\flash_ctrl\\\\rtl\\\\flash_ctrl.sv:L146 ; flash_mp [flash_mp] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\flash_ctrl\\\\rtl\\\\flash_ctrl.sv:L799",
+    "sparql": "SELECT ?source WHERE { ?source gfy:instantiates <urn:graphify-node:d_mywork_verilog_dbs_opentitan_hw_top_englishbreakfast_ip_autogen_flash_ctrl_rtl_flash_ctrl_sv_flash_ctrl> . }"
+  },
+  {
+    "id": "reverse_instantiates_047",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `otp_ctrl` via `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 17,
+    "eval_ms": "0.000700",
+    "top_answers": "assert_static_in_generate_invalid [assert_static_in_generate_invalid] opentitan\\\\hw\\\\top_earlgrey\\\\ip_autogen\\\\otp_ctrl\\\\rtl\\\\otp_ctrl.sv:L1388 ; otp_ctrl_core_reg_top [otp_ctrl_core_reg_top] opentitan\\\\hw\\\\top_earlgrey\\\\ip_autogen\\\\otp_ctrl\\\\rtl\\\\otp_ctrl.sv:L173 ; otp_ctrl_dai [otp_ctrl_dai] opentitan\\\\hw\\\\top_earlgrey\\\\ip_autogen\\\\otp_ctrl\\\\rtl\\\\otp_ctrl.sv:L1055 ; otp_ctrl_kdi [otp_ctrl_kdi] opentitan\\\\hw\\\\top_earlgrey\\\\ip_autogen\\\\otp_ctrl\\\\rtl\\\\otp_ctrl.sv:L1150 ; otp_ctrl_lci [otp_ctrl_lci] opentitan\\\\hw\\\\top_earlgrey\\\\ip_autogen\\\\otp_ctrl\\\\rtl\\\\otp_ctrl.sv:L1107 ; otp_ctrl_lfsr_timer [otp_ctrl_lfsr_timer] opentitan\\\\hw\\\\top_earlgrey\\\\ip_autogen\\\\otp_ctrl\\\\rtl\\\\otp_ctrl.sv:L751 ; otp_ctrl_scrmbl [otp_ctrl_scrmbl] opentitan\\\\hw\\\\top_earlgrey\\\\ip_autogen\\\\otp_ctrl\\\\rtl\\\\otp_ctrl.sv:L996 ; prim_arbiter_fixed [prim_arbiter_fixed] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\rv_core_ibex\\\\rtl\\\\rv_core_ibex_addr_trans.sv:L58",
+    "sparql": "SELECT ?source WHERE { ?source gfy:instantiates <urn:graphify-node:d_mywork_verilog_dbs_opentitan_hw_top_earlgrey_ip_autogen_otp_ctrl_rtl_otp_ctrl_sv_otp_ctrl> . }"
+  },
+  {
+    "id": "reverse_instantiates_048",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `spi_device` via `instantiates`?",
+    "relation": "instantiates",
+    "answer_count": 16,
+    "eval_ms": "0.000700",
+    "top_answers": "prim_buf [prim_buf] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\rtl\\\\ibex_top.sv:L294 ; prim_edge_detector [prim_edge_detector] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\clkmgr\\\\rtl\\\\clkmgr_meas_chk.sv:L114 ; prim_flop [prim_flop] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\rtl\\\\ibex_lockstep.sv:L199 ; prim_flop_2sync [prim_flop_2sync] opentitan\\\\hw\\\\vendor\\\\pulp_riscv_dbg\\\\src\\\\dmi_cdc.sv:L65 ; prim_intr_hw [prim_intr_hw] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\pwrmgr\\\\rtl\\\\pwrmgr.sv:L705 ; prim_mubi4_sync [prim_mubi4_sync] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\rstmgr\\\\rtl\\\\rstmgr_leaf_rst.sv:L32 ; prim_pulse_sync [prim_pulse_sync] opentitan\\\\hw\\\\top_englishbreakfast\\\\ip_autogen\\\\pwrmgr\\\\rtl\\\\pwrmgr_cdc.sv:L108 ; prim_sram_arbiter [prim_sram_arbiter] opentitan\\\\hw\\\\ip\\\\spi_device\\\\rtl\\\\spi_tpm.sv:L1525",
+    "sparql": "SELECT ?source WHERE { ?source gfy:instantiates <urn:graphify-node:d_mywork_verilog_dbs_opentitan_hw_ip_spi_device_rtl_spi_device_sv_spi_device> . }"
+  },
+  {
+    "id": "reverse_contains_049",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `riscv_instr_cover_group.py` via `contains`?",
+    "relation": "contains",
+    "answer_count": 175,
+    "eval_ms": "0.002700",
+    "top_answers": "add_cg [riscv_instr_cover_group_add_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1080 ; addi_cg [riscv_instr_cover_group_addi_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1103 ; addiw_cg [riscv_instr_cover_group_addiw_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L623 ; addw_cg [riscv_instr_cover_group_addw_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L579 ; and_cg [riscv_instr_cover_group_and_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1340 ; andi_cg [riscv_instr_cover_group_andi_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1376 ; auipc_cg [riscv_instr_cover_group_auipc_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1175 ; beq_cg [riscv_instr_cover_group_beq_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1552",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains <urn:graphify-node:opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py> . }"
+  },
+  {
+    "id": "reverse_contains_050",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `riscv_instr_pkg.py` via `contains`?",
+    "relation": "contains",
+    "answer_count": 44,
+    "eval_ms": "0.000900",
+    "top_answers": "add_functions_as_methods() [riscv_instr_pkg_add_functions_as_methods] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1899 ; all_categories [riscv_instr_pkg_all_categories] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1270 ; all_gpr [riscv_instr_pkg_all_gpr] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1224 ; b_ext_group_t [riscv_instr_pkg_b_ext_group_t] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1211 ; branch_hazard_e [riscv_instr_pkg_branch_hazard_e] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1153 ; compressed_gpr [riscv_instr_pkg_compressed_gpr] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1259 ; data_pattern_t [riscv_instr_pkg_data_pattern_t] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1070 ; exception_cause_t [riscv_instr_pkg_exception_cause_t] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1097",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains <urn:graphify-node:opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_pkg_py> . }"
+  },
+  {
+    "id": "reverse_contains_051",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `spike_cosim.cc` via `contains`?",
+    "relation": "contains",
+    "answer_count": 39,
+    "eval_ms": "0.000900",
+    "top_answers": "add_memory() [spike_cosim_add_memory] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L126 ; addr_to_mem() [spike_cosim_addr_to_mem] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L82 ; backdoor_read_mem() [spike_cosim_backdoor_read_mem] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L137 ; backdoor_write_mem() [spike_cosim_backdoor_write_mem] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L132 ; change_cpuctrlsts_sync_exc_seen() [spike_cosim_change_cpuctrlsts_sync_exc_seen] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L542 ; check_debug_ebreak() [spike_cosim_check_debug_ebreak] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L1079 ; check_gpr_write() [spike_cosim_check_gpr_write] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L435 ; check_mem_access() [spike_cosim_check_mem_access] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L841",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains <urn:graphify-node:opentitan_hw_vendor_lowrisc_ibex_dv_cosim_spike_cosim_cc> . }"
+  },
+  {
+    "id": "reverse_contains_052",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `conductor.py` via `contains`?",
+    "relation": "contains",
+    "answer_count": 34,
+    "eval_ms": "0.000800",
+    "top_answers": "bmc() [conductor_bmc] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L354 ; bmc_mode() [conductor_bmc_mode] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L588 ; build_strategy_rec() [conductor_build_strategy_rec] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L393 ; construct_strategy() [conductor_construct_strategy] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L676 ; decode_strategy() [conductor_decode_strategy] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L552 ; explore() [conductor_explore] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L371 ; explore_mode() [conductor_explore_mode] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L700 ; from_proc() [conductor_from_proc] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L129",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains <urn:graphify-node:opentitan_hw_vendor_lowrisc_ibex_dv_formal_conductor_py> . }"
+  },
+  {
+    "id": "reverse_contains_053",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `verilator_sim_ctrl.cc` via `contains`?",
+    "relation": "contains",
+    "answer_count": 27,
+    "eval_ms": "0.000800",
+    "top_answers": "Exec() [verilator_sim_ctrl_exec] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L50 ; FileSize() [verilator_sim_ctrl_filesize] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L435 ; GetExecutionTimeMs() [verilator_sim_ctrl_getexecutiontimems] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L413 ; GetName() [verilator_sim_ctrl_getname] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L406 ; GetTraceFileName() [verilator_sim_ctrl_gettracefilename] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L331 ; ParseCommandArgs() [verilator_sim_ctrl_parsecommandargs] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L110 ; PrintHelp() [verilator_sim_ctrl_printhelp] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L277 ; PrintStatistics() [verilator_sim_ctrl_printstatistics] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L312",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains <urn:graphify-node:opentitan_hw_dv_verilator_simutil_verilator_cpp_verilator_sim_ctrl_cc> . }"
+  },
+  {
+    "id": "reverse_contains_054",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `syscalls.c` via `contains`?",
+    "relation": "contains",
+    "answer_count": 26,
+    "eval_ms": "0.000800",
+    "top_answers": "abort() [syscalls_abort] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L72 ; atol() [syscalls_atol] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L450 ; _exit() [syscalls_exit] opentitan\\\\hw\\\\vendor\\\\pulp_riscv_dbg\\\\tb\\\\prog\\\\syscalls.c:L97 ; getint() [syscalls_getint] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L187 ; getuint() [syscalls_getuint] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L177 ; handle_trap() [syscalls_handle_trap] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L62 ; _init() [syscalls_init] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L106 ; init_tls() [syscalls_init_tls] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L96",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains <urn:graphify-node:ibex_vendor_riscv_tests_benchmarks_common_syscalls_c> . }"
+  },
+  {
+    "id": "reverse_inherits_055",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `AddressRange` via `inherits`?",
+    "relation": "inherits",
+    "answer_count": 4,
+    "eval_ms": "0.000500",
+    "top_answers": "Address [types_address] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L50 ; Item [types_item] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L21 ; Name [types_name] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L40 ; Size [types_size] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L68",
+    "sparql": "SELECT ?source WHERE { ?source otx:inherits <urn:graphify-node:types_addressrange> . }"
+  },
+  {
+    "id": "reverse_inherits_056",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `Symbol` via `inherits`?",
+    "relation": "inherits",
+    "answer_count": 4,
+    "eval_ms": "0.000500",
+    "top_answers": "AddressRange [types_addressrange] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L113 ; Item [types_item] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L21 ; Location [types_location] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L98 ; Name [types_name] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L40",
+    "sparql": "SELECT ?source WHERE { ?source otx:inherits <urn:graphify-node:types_symbol> . }"
+  },
+  {
+    "id": "reverse_inherits_057",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `riscv_rand_instr_stream` via `inherits`?",
+    "relation": "inherits",
+    "answer_count": 3,
+    "eval_ms": "0.000500",
+    "top_answers": "riscv_directed_instr_stream [riscv_directed_instr_lib_riscv_directed_instr_stream] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_directed_instr_lib.py:L29 ; riscv_pop_stack_instr [riscv_directed_instr_lib_riscv_pop_stack_instr] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_directed_instr_lib.py:L297 ; riscv_push_stack_instr [riscv_directed_instr_lib_riscv_push_stack_instr] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_directed_instr_lib.py:L221",
+    "sparql": "SELECT ?source WHERE { ?source otx:inherits <urn:graphify-node:riscv_rand_instr_stream> . }"
+  },
+  {
+    "id": "reverse_inherits_058",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `LogLevel` via `inherits`?",
+    "relation": "inherits",
+    "answer_count": 2,
+    "eval_ms": "0.000500",
+    "top_answers": "Enum [enum] ; str [str]",
+    "sparql": "SELECT ?source WHERE { ?source otx:inherits <urn:graphify-node:ot_logging_loglevel> . }"
+  },
+  {
+    "id": "reverse_inherits_059",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `riscv_mem_access_stream` via `inherits`?",
+    "relation": "inherits",
+    "answer_count": 2,
+    "eval_ms": "0.000500",
+    "top_answers": "riscv_amo_base_instr_stream [riscv_amo_instr_lib_riscv_amo_base_instr_stream] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_amo_instr_lib.py:L29 ; riscv_load_store_base_instr_stream [riscv_load_store_instr_lib_riscv_load_store_base_instr_stream] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_load_store_instr_lib.py:L37",
+    "sparql": "SELECT ?source WHERE { ?source otx:inherits <urn:graphify-node:riscv_mem_access_stream> . }"
+  },
+  {
+    "id": "reverse_inherits_060",
+    "category": "reverse_relation",
+    "question": "Which nodes directly point to `Memory` via `inherits`?",
+    "relation": "inherits",
+    "answer_count": 2,
+    "eval_ms": "0.000500",
+    "top_answers": "AddressRange [types_addressrange] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L113 ; Name [types_name] opentitan\\\\util\\\\py\\\\packages\\\\impl\\\\object_size\\\\types.py:L40",
+    "sparql": "SELECT ?source WHERE { ?source otx:inherits <urn:graphify-node:types_memory> . }"
+  },
+  {
+    "id": "reachable_calls_061",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `.ok()` reach through repeated `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1157,
+    "eval_ms": "0.227000",
+    "top_answers": "main() [access_after_hw_reset_main] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L79 ; test_access_after_hw_reset() [access_after_hw_reset_test_access_after_hw_reset] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L33 ; main() [access_after_wakeup_main] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L149 ; test_access_after_wakeup() [access_after_wakeup_test_access_after_wakeup] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L34 ; test_trivial_values() [alert_test_trivial_values] opentitan\\\\sw\\\\host\\\\ot_hal\\\\src\\\\util\\\\alert.rs:L41 ; asm_interrupt_handler() [asm_interrupt_handler_asm_interrupt_handler] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_openocd_debug_test\\\\src\\\\asm_interrupt_handler.rs:L30 ; main() [asm_interrupt_handler_main] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_openocd_debug_test\\\\src\\\\asm_interrupt_handler.rs:L55 ; asm_watchdog_bark() [asm_watchdog_bark_asm_watchdog_bark] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_openocd_debug_test\\\\src\\\\asm_watchdog_bark.rs:L30",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:mod_neededcapabilities_ok> otx:calls+ ?target . }"
+  },
+  {
+    "id": "reachable_calls_062",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `.exit()` reach through repeated `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1009,
+    "eval_ms": "0.234400",
+    "top_answers": "main() [at_plot_main] opentitan\\\\hw\\\\syn\\\\tools\\\\dc\\\\at-plot.py:L32 ; ._ConstructBazelString() [bitstreams_workspace_bitstreamcache_constructbazelstring] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L457 ; .Get() [bitstreams_workspace_bitstreamcache_get] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L188 ; .GetBitstreamsAvailable() [bitstreams_workspace_bitstreamcache_getbitstreamsavailable] opentitan\\\\rules\\\\scripts\\\\bitstreams_workspace.py:L223 ; ._run_cmd() [build_sw_collateral_for_sim_bazelrunner_run_cmd] opentitan\\\\util\\\\py\\\\scripts\\\\build_sw_collateral_for_sim.py:L205 ; .__post_init__() [build_sw_collateral_for_sim_imagestring_post_init] opentitan\\\\util\\\\py\\\\scripts\\\\build_sw_collateral_for_sim.py:L242 ; main() [c_array_bitmap_generator_main] opentitan\\\\sw\\\\device\\\\examples\\\\teacup_demos\\\\data\\\\c-array-bitmap-generator.py:L15 ; ._get_alert_peripherals() [c_test_topgenctest_get_alert_peripherals] opentitan\\\\util\\\\topgen\\\\c_test.py:L221",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:statusprinter_enlightenstatusprinter_exit> otx:calls+ ?target . }"
+  },
+  {
+    "id": "reachable_calls_063",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `tohost_exit()` reach through repeated `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1000,
+    "eval_ms": "0.662100",
+    "top_answers": "abort() [syscalls_abort] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L72 ; _exit() [syscalls_exit] opentitan\\\\hw\\\\vendor\\\\pulp_riscv_dbg\\\\tb\\\\prog\\\\syscalls.c:L97 ; handle_trap() [syscalls_handle_trap] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L62 ; _init() [syscalls_init] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L106 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_01_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_01.c:L89 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_02_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_02.c:L89 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_03_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_03.c:L89 ; handle_trap() [test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_04_handle_trap] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\gengen_src\\\\outputs\\\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_04.c:L89",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:syscalls_tohost_exit> otx:calls+ ?target . }"
+  },
+  {
+    "id": "reachable_calls_064",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `.append()` reach through repeated `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1015,
+    "eval_ms": "0.463500",
+    "top_answers": "absorb_bytes() [absorb_data_absorb_bytes] opentitan\\\\hw\\\\ip\\\\kmac\\\\dv\\\\dpi\\\\vendor\\\\kerukuro_digestpp\\\\detail\\\\absorb_data.hpp:L16 ; test_access_after_hw_reset() [access_after_hw_reset_test_access_after_hw_reset] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L33 ; test_access_after_wakeup() [access_after_wakeup_test_access_after_wakeup] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L34 ; from_raw_list() [alert_from_raw_list] opentitan\\\\util\\\\reggen\\\\alert.py:L41 ; main() [at_plot_main] opentitan\\\\hw\\\\syn\\\\tools\\\\dc\\\\at-plot.py:L32 ; .get_merged_report_group() [audit_sec_mmio_calls_bazeltool_get_merged_report_group] opentitan\\\\util\\\\py\\\\scripts\\\\audit_sec_mmio_calls.py:L93 ; ._query_audit_report_paths() [audit_sec_mmio_calls_bazeltool_query_audit_report_paths] opentitan\\\\util\\\\py\\\\scripts\\\\audit_sec_mmio_calls.py:L113 ; main() [audit_sec_mmio_calls_main] opentitan\\\\util\\\\py\\\\scripts\\\\audit_sec_mmio_calls.py:L221",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:conductor_processrunner_append> otx:calls+ ?target . }"
+  },
+  {
+    "id": "reachable_calls_065",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `mmio_region_read32()` reach through repeated `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1001,
+    "eval_ms": "0.392300",
+    "top_answers": "test_main() [adc_ctrl_sleep_debug_cable_wakeup_test_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L98 ; execute_test() [aes_entropy_test_execute_test] opentitan\\\\sw\\\\device\\\\tests\\\\aes_entropy_test.c:L27 ; execute_test() [aes_gcm_test_execute_test] opentitan\\\\sw\\\\device\\\\tests\\\\aes_gcm_test.c:L42 ; initialize_clkmgr() [aes_idle_test_initialize_clkmgr] opentitan\\\\sw\\\\device\\\\tests\\\\aes_idle_test.c:L47 ; is_hintable_clock_enabled() [aes_idle_test_is_hintable_clock_enabled] opentitan\\\\sw\\\\device\\\\tests\\\\aes_idle_test.c:L39 ; execute_test() [aes_interrupt_encryption_test_execute_test] opentitan\\\\sw\\\\device\\\\tests\\\\aes_interrupt_encryption_test.c:L46 ; test_main() [aes_masking_off_test_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\aes_masking_off_test.c:L145 ; aes_testutils_csrng_kat() [aes_testutils_aes_testutils_csrng_kat] opentitan\\\\sw\\\\device\\\\lib\\\\testing\\\\aes_testutils.c:L149",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:mock_mmio_mmio_region_read32> otx:calls+ ?target . }"
+  },
+  {
+    "id": "reachable_contains_066",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `riscv_instr_cover_group.py` reach through repeated `contains` edges?",
+    "relation": "contains",
+    "answer_count": 176,
+    "eval_ms": "0.124700",
+    "top_answers": "riscv_instr_cover_group.py [opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1 ; add_cg [riscv_instr_cover_group_add_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1080 ; addi_cg [riscv_instr_cover_group_addi_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1103 ; addiw_cg [riscv_instr_cover_group_addiw_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L623 ; addw_cg [riscv_instr_cover_group_addw_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L579 ; and_cg [riscv_instr_cover_group_and_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1340 ; andi_cg [riscv_instr_cover_group_andi_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1376 ; auipc_cg [riscv_instr_cover_group_auipc_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1175",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py> otx:contains+ ?target . }"
+  },
+  {
+    "id": "reachable_contains_067",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `gdbserver.py` reach through repeated `contains` edges?",
+    "relation": "contains",
+    "answer_count": 90,
+    "eval_ms": "0.075500",
+    "top_answers": "CeaseMultiTest [gdbserver_ceasemultitest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1794 ; CeaseRunTest [gdbserver_ceaseruntest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1859 ; CeaseStepiTest [gdbserver_ceasestepitest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1836 ; check_incrementing_samples() [gdbserver_check_incrementing_samples] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L815 ; check_samples_equal() [gdbserver_check_samples_equal] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L848 ; CheckMisa [gdbserver_checkmisa] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1609 ; CustomRegisterTest [gdbserver_customregistertest] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L189 ; DebugBreakpoint [gdbserver_debugbreakpoint] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L597",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:ibex_vendor_riscv_tests_debug_gdbserver_py> otx:contains+ ?target . }"
+  },
+  {
+    "id": "reachable_contains_068",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `tasks.c` reach through repeated `contains` edges?",
+    "relation": "contains",
+    "answer_count": 86,
+    "eval_ms": "0.055300",
+    "top_answers": "eTaskConfirmSleepModeStatus() [tasks_etaskconfirmsleepmodestatus] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L3552 ; eTaskGetState() [tasks_etaskgetstate] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L1383 ; freertos_tasks_c_additions_init() [tasks_freertos_tasks_c_additions_init] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L5428 ; pcTaskGetName() [tasks_pctaskgetname] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L2378 ; prvAddCurrentTaskToDelayedList() [tasks_prvaddcurrenttasktodelayedlist] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L5302 ; prvAddNewTaskToReadyList() [tasks_prvaddnewtasktoreadylist] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L1070 ; prvCheckTasksWaitingTermination() [tasks_prvchecktaskswaitingtermination] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L3690 ; prvDeleteTCB() [tasks_prvdeletetcb] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L3942",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:opentitan_sw_vendor_freertos_freertos_kernel_tasks_c> otx:contains+ ?target . }"
+  },
+  {
+    "id": "reachable_contains_069",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `main()` reach through repeated `contains` edges?",
+    "relation": "contains",
+    "answer_count": 254,
+    "eval_ms": "0.180800",
+    "top_answers": "AcvpResults [main_acvpresults] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\acvp\\\\src\\\\main.rs:L58 ; AcvpVectors [main_acvpvectors] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\acvp\\\\src\\\\main.rs:L44 ; AesGcmTestCase [main_aesgcmtestcase] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\aes_gcm_nist_kat\\\\src\\\\main.rs:L54 ; AesTestCase [main_aestestcase] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\aes_nist_kat\\\\src\\\\main.rs:L55 ; BootstrapTest [main_bootstraptest] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_bootstrap_entry\\\\src\\\\main.rs:L56 ; check_and_set_phase() [main_check_and_set_phase] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\example_sival\\\\main.rs:L50 ; check_ast() [main_check_ast] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_chip_specific_startup\\\\src\\\\main.rs:L40 ; check_cp_provisioning() [main_check_cp_provisioning] opentitan\\\\sw\\\\host\\\\tests\\\\manuf\\\\cp_provision_functest\\\\src\\\\main.rs:L172",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:main_main> otx:contains+ ?target . }"
+  },
+  {
+    "id": "reachable_contains_070",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `Opts` reach through repeated `contains` edges?",
+    "relation": "contains",
+    "answer_count": 240,
+    "eval_ms": "0.165100",
+    "top_answers": "AcvpResults [main_acvpresults] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\acvp\\\\src\\\\main.rs:L58 ; AcvpVectors [main_acvpvectors] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\acvp\\\\src\\\\main.rs:L44 ; AesGcmTestCase [main_aesgcmtestcase] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\aes_gcm_nist_kat\\\\src\\\\main.rs:L54 ; AesTestCase [main_aestestcase] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\aes_nist_kat\\\\src\\\\main.rs:L55 ; BootstrapTest [main_bootstraptest] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_bootstrap_entry\\\\src\\\\main.rs:L56 ; check_and_set_phase() [main_check_and_set_phase] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\example_sival\\\\main.rs:L50 ; check_ast() [main_check_ast] opentitan\\\\sw\\\\host\\\\tests\\\\rom\\\\e2e_chip_specific_startup\\\\src\\\\main.rs:L40 ; check_cp_provisioning() [main_check_cp_provisioning] opentitan\\\\sw\\\\host\\\\tests\\\\manuf\\\\cp_provision_functest\\\\src\\\\main.rs:L172",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:main_opts> otx:contains+ ?target . }"
+  },
+  {
+    "id": "reachable_method_071",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `riscv_asm_program_gen` reach through repeated `method` edges?",
+    "relation": "method",
+    "answer_count": 63,
+    "eval_ms": "0.213500",
+    "top_answers": ".add_directed_instr_stream() [riscv_asm_program_gen_riscv_asm_program_gen_add_directed_instr_stream] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L1125 ; .core_is_initialized() [riscv_asm_program_gen_riscv_asm_program_gen_core_is_initialized] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L409 ; .create_page_table() [riscv_asm_program_gen_riscv_asm_program_gen_create_page_table] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L939 ; .dump_perf_stats() [riscv_asm_program_gen_riscv_asm_program_gen_dump_perf_stats] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L1052 ; .format_section() [riscv_asm_program_gen_riscv_asm_program_gen_format_section] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L1037 ; .gen_all_trap_handler() [riscv_asm_program_gen_riscv_asm_program_gen_gen_all_trap_handler] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L726 ; .gen_callstack() [riscv_asm_program_gen_riscv_asm_program_gen_gen_callstack] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L228 ; .gen_data_page() [riscv_asm_program_gen_riscv_asm_program_gen_gen_data_page] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_asm_program_gen.py:L289",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:riscv_asm_program_gen_riscv_asm_program_gen> gfy:method+ ?target . }"
+  },
+  {
+    "id": "reachable_method_072",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `OTFIIbex` reach through repeated `method` edges?",
+    "relation": "method",
+    "answer_count": 51,
+    "eval_ms": "0.063400",
+    "top_answers": ".ibex_address_translation() [fi_ibex_commands_otfiibex_ibex_address_translation] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L350 ; .ibex_address_translation_config() [fi_ibex_commands_otfiibex_ibex_address_translation_config] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L343 ; .ibex_char_addi_single_beq() [fi_ibex_commands_otfiibex_ibex_char_addi_single_beq] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L139 ; .ibex_char_addi_single_beq_cm() [fi_ibex_commands_otfiibex_ibex_char_addi_single_beq_cm] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L151 ; .ibex_char_addi_single_beq_cm2() [fi_ibex_commands_otfiibex_ibex_char_addi_single_beq_cm2] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L157 ; .ibex_char_addi_single_beq_neg() [fi_ibex_commands_otfiibex_ibex_char_addi_single_beq_neg] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L145 ; .ibex_char_addi_single_bne() [fi_ibex_commands_otfiibex_ibex_char_addi_single_bne] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L163 ; .ibex_char_addi_single_bne_neg() [fi_ibex_commands_otfiibex_ibex_char_addi_single_bne_neg] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\communication\\\\fi_ibex_commands.py:L175",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:fi_ibex_commands_otfiibex> gfy:method+ ?target . }"
+  },
+  {
+    "id": "reachable_method_073",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `OTBNState` reach through repeated `method` edges?",
+    "relation": "method",
+    "answer_count": 42,
+    "eval_ms": "0.048800",
+    "top_answers": "._abort() [state_otbnstate_abort] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L349 ; .changes() [state_otbnstate_changes] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L271 ; .clear_imem_invalidation() [state_otbnstate_clear_imem_invalidation] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L596 ; .commit() [state_otbnstate_commit] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L307 ; .complete_init_sec_wipe() [state_otbnstate_complete_init_sec_wipe] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L254 ; .edn_flush() [state_otbnstate_edn_flush] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L223 ; .edn_rnd_step() [state_otbnstate_edn_rnd_step] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L220 ; .edn_urnd_step() [state_otbnstate_edn_urnd_step] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\state.py:L216",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:state_otbnstate> gfy:method+ ?target . }"
+  },
+  {
+    "id": "reachable_method_074",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `Gdb` reach through repeated `method` edges?",
+    "relation": "method",
+    "answer_count": 35,
+    "eval_ms": "0.022600",
+    "top_answers": ".b() [testlib_gdb_b] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L886 ; .c() [testlib_gdb_c] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L763 ; .c_all() [testlib_gdb_c_all] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L785 ; .command() [testlib_gdb_command] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L705 ; .connect() [testlib_gdb_connect] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L638 ; .__del__() [testlib_gdb_del] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L671 ; .disconnect() [testlib_gdb_disconnect] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L665 ; .expect() [testlib_gdb_expect] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\testlib.py:L875",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:testlib_gdb> gfy:method+ ?target . }"
+  },
+  {
+    "id": "reachable_method_075",
+    "category": "transitive_reachable",
+    "question": "Within depth 3, what can `IbexFiTest` reach through repeated `method` edges?",
+    "relation": "method",
+    "answer_count": 32,
+    "eval_ms": "0.020900",
+    "top_answers": ".test_char_addi_single_beq() [fi_ibex_python_test_ibexfitest_test_char_addi_single_beq] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L147 ; .test_char_addi_single_beq_cm() [fi_ibex_python_test_ibexfitest_test_char_addi_single_beq_cm] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L472 ; .test_char_addi_single_beq_neg() [fi_ibex_python_test_ibexfitest_test_char_addi_single_beq_neg] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L153 ; .test_char_addi_single_bne() [fi_ibex_python_test_ibexfitest_test_char_addi_single_bne] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L159 ; .test_char_addi_single_bne_neg() [fi_ibex_python_test_ibexfitest_test_char_addi_single_bne_neg] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L165 ; .test_char_combi() [fi_ibex_python_test_ibexfitest_test_char_combi] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L171 ; .test_char_conditional_branch_beq() [fi_ibex_python_test_ibexfitest_test_char_conditional_branch_beq] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L177 ; .test_char_conditional_branch_bge() [fi_ibex_python_test_ibexfitest_test_char_conditional_branch_bge] opentitan\\\\sw\\\\host\\\\penetrationtests\\\\python\\\\fi\\\\test_scripts\\\\fi_ibex_python_test.py:L183",
+    "sparql": "SELECT ?target WHERE { <urn:graphify-node:fi_ibex_python_test_ibexfitest> gfy:method+ ?target . }"
+  },
+  {
+    "id": "impact_calls_076",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `.ok()` through `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1000,
+    "eval_ms": "0.626400",
+    "top_answers": "Acorn [acorn_acorn] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L118 ; .generate_key() [acorn_acorn_generate_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L322 ; .get_host_version() [acorn_acorn_get_host_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L132 ; .get_key_info() [acorn_acorn_get_key_info] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L286 ; .get_public_hash() [acorn_acorn_get_public_hash] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L213 ; .get_public_key() [acorn_acorn_get_public_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L184 ; .get_see_version() [acorn_acorn_get_see_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L154 ; .get_version() [acorn_acorn_get_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L250",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls+ <urn:graphify-node:mod_neededcapabilities_ok> . }"
+  },
+  {
+    "id": "impact_calls_077",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `.len()` through `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1000,
+    "eval_ms": "0.519400",
+    "top_answers": ".get_public_hash() [acorn_acorn_get_public_hash] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L213 ; .import_keypair() [acorn_acorn_import_keypair] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L379 ; .new() [acorn_acorn_new] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L123 ; .sign() [acorn_acorn_sign] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L445 ; .verify() [acorn_acorn_verify] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L490 ; rust_string() [acorn_rust_string] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L24 ; .init_simulation() [aiw_aigerwitness_init_simulation] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\aig-manip\\\\src\\\\aiw.rs:L61 ; .simulate_to_step() [aiw_aigerwitness_simulate_to_step] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\aig-manip\\\\src\\\\aiw.rs:L66",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls+ <urn:graphify-node:codegen_codechunk_len> . }"
+  },
+  {
+    "id": "impact_calls_078",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `.check()` through `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1003,
+    "eval_ms": "0.359300",
+    "top_answers": "ottf_handle_irq() [adc_ctrl_sleep_debug_cable_wakeup_test_ottf_handle_irq] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L68 ; test_main() [adc_ctrl_sleep_debug_cable_wakeup_test_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L98 ; execute_test() [aes_entropy_test_execute_test] opentitan\\\\sw\\\\device\\\\tests\\\\aes_entropy_test.c:L27 ; execute_test() [aes_force_prng_reseed_test_execute_test] opentitan\\\\sw\\\\device\\\\tests\\\\aes_force_prng_reseed_test.c:L76 ; make_key_config() [aes_functest_make_key_config] opentitan\\\\sw\\\\device\\\\tests\\\\crypto\\\\aes_functest.c:L32 ; get_tag_length() [aes_gcm_testutils_get_tag_length] opentitan\\\\sw\\\\device\\\\tests\\\\crypto\\\\aes_gcm_testutils.c:L43 ; initialize_clkmgr() [aes_idle_test_initialize_clkmgr] opentitan\\\\sw\\\\device\\\\tests\\\\aes_idle_test.c:L47 ; execute_test() [aes_masking_off_test_execute_test] opentitan\\\\sw\\\\device\\\\tests\\\\aes_masking_off_test.c:L48",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls+ <urn:graphify-node:validate_testplans_schemavalidator_check> . }"
+  },
+  {
+    "id": "impact_calls_079",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `.new()` through `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1000,
+    "eval_ms": "0.705200",
+    "top_answers": ".generate_key() [acorn_acorn_generate_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L322 ; .get_host_version() [acorn_acorn_get_host_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L132 ; .get_key_info() [acorn_acorn_get_key_info] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L286 ; .get_public_hash() [acorn_acorn_get_public_hash] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L213 ; .get_public_key() [acorn_acorn_get_public_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L184 ; .get_see_version() [acorn_acorn_get_see_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L154 ; .import_keypair() [acorn_acorn_import_keypair] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L379 ; .list_keys() [acorn_acorn_list_keys] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L258",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls+ <urn:graphify-node:xmodem_xmodemfirmware_new> . }"
+  },
+  {
+    "id": "impact_calls_080",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `Format` through `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1000,
+    "eval_ms": "0.739300",
+    "top_answers": ".init_simulation() [aiw_aigerwitness_init_simulation] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\aig-manip\\\\src\\\\aiw.rs:L61 ; .simulate_to_step() [aiw_aigerwitness_simulate_to_step] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\aig-manip\\\\src\\\\aiw.rs:L66 ; main() [analyze_information_flow_main] opentitan\\\\hw\\\\ip\\\\otbn\\\\util\\\\analyze_information_flow.py:L18 ; main() [ascentlint_report_parser_main] opentitan\\\\util\\\\dvsim\\\\ascentlint-report-parser.py:L17 ; c_dpi_ascon_round() [ascon_model_dpi_c_dpi_ascon_round] opentitan\\\\hw\\\\ip\\\\prim\\\\dv\\\\prim_ascon\\\\ascon_model_dpi\\\\ascon_model_dpi.c:L132 ; ._gen_tail_insns() [bad_at_end_badatend_gen_tail_insns] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\gens\\\\bad_at_end.py:L43 ; .__init__() [bad_deep_loop_baddeeploop_init] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\gens\\\\bad_deep_loop.py:L25 ; ._pick_bodysize() [bad_deep_loop_baddeeploop_pick_bodysize] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\rig\\\\rig\\\\gens\\\\bad_deep_loop.py:L38",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls+ <urn:graphify-node:ownership_format> . }"
+  },
+  {
+    "id": "impact_calls_081",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `.write()` through `calls` edges?",
+    "relation": "calls",
+    "answer_count": 1420,
+    "eval_ms": "0.623000",
+    "top_answers": ".generate_key() [acorn_acorn_generate_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L322 ; .get_host_version() [acorn_acorn_get_host_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L132 ; .get_key_info() [acorn_acorn_get_key_info] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L286 ; .get_public_hash() [acorn_acorn_get_public_hash] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L213 ; .get_public_key() [acorn_acorn_get_public_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L184 ; .get_see_version() [acorn_acorn_get_see_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L154 ; .get_version() [acorn_acorn_get_version] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L250 ; .import_keypair() [acorn_acorn_import_keypair] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L379",
+    "sparql": "SELECT ?source WHERE { ?source otx:calls+ <urn:graphify-node:targets_target_write> . }"
+  },
+  {
+    "id": "impact_contains_082",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `riscv_instr_cover_group.py` through `contains` edges?",
+    "relation": "contains",
+    "answer_count": 176,
+    "eval_ms": "0.136100",
+    "top_answers": "riscv_instr_cover_group.py [ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py] ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1 ; add_cg [riscv_instr_cover_group_add_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1080 ; addi_cg [riscv_instr_cover_group_addi_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1103 ; addiw_cg [riscv_instr_cover_group_addiw_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L623 ; addw_cg [riscv_instr_cover_group_addw_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L579 ; and_cg [riscv_instr_cover_group_and_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1340 ; andi_cg [riscv_instr_cover_group_andi_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1376 ; auipc_cg [riscv_instr_cover_group_auipc_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1175",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains+ <urn:graphify-node:opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py> . }"
+  },
+  {
+    "id": "impact_contains_083",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `riscv_instr_pkg.py` through `contains` edges?",
+    "relation": "contains",
+    "answer_count": 45,
+    "eval_ms": "0.091300",
+    "top_answers": "riscv_instr_pkg.py [ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_pkg_py] ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1 ; add_functions_as_methods() [riscv_instr_pkg_add_functions_as_methods] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1899 ; all_categories [riscv_instr_pkg_all_categories] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1270 ; all_gpr [riscv_instr_pkg_all_gpr] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1224 ; b_ext_group_t [riscv_instr_pkg_b_ext_group_t] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1211 ; branch_hazard_e [riscv_instr_pkg_branch_hazard_e] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1153 ; compressed_gpr [riscv_instr_pkg_compressed_gpr] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1259 ; data_pattern_t [riscv_instr_pkg_data_pattern_t] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_pkg.py:L1070",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains+ <urn:graphify-node:opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_pkg_py> . }"
+  },
+  {
+    "id": "impact_contains_084",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `spike_cosim.cc` through `contains` edges?",
+    "relation": "contains",
+    "answer_count": 40,
+    "eval_ms": "0.057500",
+    "top_answers": "spike_cosim.cc [ibex_dv_cosim_spike_cosim_cc] ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L1 ; add_memory() [spike_cosim_add_memory] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L126 ; addr_to_mem() [spike_cosim_addr_to_mem] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L82 ; backdoor_read_mem() [spike_cosim_backdoor_read_mem] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L137 ; backdoor_write_mem() [spike_cosim_backdoor_write_mem] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L132 ; change_cpuctrlsts_sync_exc_seen() [spike_cosim_change_cpuctrlsts_sync_exc_seen] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L542 ; check_debug_ebreak() [spike_cosim_check_debug_ebreak] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L1079 ; check_gpr_write() [spike_cosim_check_gpr_write] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\cosim\\\\spike_cosim.cc:L435",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains+ <urn:graphify-node:opentitan_hw_vendor_lowrisc_ibex_dv_cosim_spike_cosim_cc> . }"
+  },
+  {
+    "id": "impact_contains_085",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `conductor.py` through `contains` edges?",
+    "relation": "contains",
+    "answer_count": 35,
+    "eval_ms": "0.040700",
+    "top_answers": "bmc() [conductor_bmc] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L354 ; bmc_mode() [conductor_bmc_mode] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L588 ; build_strategy_rec() [conductor_build_strategy_rec] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L393 ; construct_strategy() [conductor_construct_strategy] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L676 ; decode_strategy() [conductor_decode_strategy] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L552 ; explore() [conductor_explore] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L371 ; explore_mode() [conductor_explore_mode] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L700 ; from_proc() [conductor_from_proc] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\dv\\\\formal\\\\conductor.py:L129",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains+ <urn:graphify-node:opentitan_hw_vendor_lowrisc_ibex_dv_formal_conductor_py> . }"
+  },
+  {
+    "id": "impact_contains_086",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `verilator_sim_ctrl.cc` through `contains` edges?",
+    "relation": "contains",
+    "answer_count": 28,
+    "eval_ms": "0.019800",
+    "top_answers": "verilator_sim_ctrl.cc [ibex_vendor_lowrisc_ip_dv_verilator_simutil_verilator_cpp_verilator_sim_ctrl_cc] ibex\\\\vendor\\\\lowrisc_ip\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L1 ; Exec() [verilator_sim_ctrl_exec] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L50 ; FileSize() [verilator_sim_ctrl_filesize] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L435 ; GetExecutionTimeMs() [verilator_sim_ctrl_getexecutiontimems] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L413 ; GetName() [verilator_sim_ctrl_getname] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L406 ; GetTraceFileName() [verilator_sim_ctrl_gettracefilename] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L331 ; ParseCommandArgs() [verilator_sim_ctrl_parsecommandargs] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L110 ; PrintHelp() [verilator_sim_ctrl_printhelp] opentitan\\\\hw\\\\dv\\\\verilator\\\\simutil_verilator\\\\cpp\\\\verilator_sim_ctrl.cc:L277",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains+ <urn:graphify-node:opentitan_hw_dv_verilator_simutil_verilator_cpp_verilator_sim_ctrl_cc> . }"
+  },
+  {
+    "id": "impact_contains_087",
+    "category": "impact_reverse_reachable",
+    "question": "Within depth 3, what upstream nodes could be impacted by changing `syscalls.c` through `contains` edges?",
+    "relation": "contains",
+    "answer_count": 27,
+    "eval_ms": "0.019300",
+    "top_answers": "syscalls.c [ibex_vendor_riscv_isa_sim_tests_mseccfg_syscalls_c] ibex\\\\vendor\\\\riscv-isa-sim\\\\tests\\\\mseccfg\\\\syscalls.c:L1 ; abort() [syscalls_abort] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L72 ; atol() [syscalls_atol] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L450 ; _exit() [syscalls_exit] opentitan\\\\hw\\\\vendor\\\\pulp_riscv_dbg\\\\tb\\\\prog\\\\syscalls.c:L97 ; getint() [syscalls_getint] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L187 ; getuint() [syscalls_getuint] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L177 ; handle_trap() [syscalls_handle_trap] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L62 ; _init() [syscalls_init] ibex\\\\vendor\\\\riscv-tests\\\\benchmarks\\\\common\\\\syscalls.c:L106",
+    "sparql": "SELECT ?source WHERE { ?source otx:contains+ <urn:graphify-node:ibex_vendor_riscv_tests_benchmarks_common_syscalls_c> . }"
+  },
+  {
+    "id": "path_088",
+    "category": "path_query",
+    "question": "Is there a short structural path from `riscv_instr_cover_group.py` to `addiw_cg`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.023600",
+    "top_answers": "riscv_instr_cover_group.py [ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py] ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L1 ; addiw_cg [riscv_instr_cover_group_addiw_cg] opentitan\\\\hw\\\\vendor\\\\lowrisc_ibex\\\\vendor\\\\google_riscv-dv\\\\pygen\\\\pygen_src\\\\riscv_instr_cover_group.py:L623",
+    "sparql": "ASK { <urn:graphify-node:ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:riscv_instr_cover_group_addiw_cg> . }"
+  },
+  {
+    "id": "path_089",
+    "category": "path_query",
+    "question": "Is there a short structural path from `gdbserver.py` to `check_incrementing_samples()`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.030200",
+    "top_answers": "gdbserver.py [ibex_vendor_riscv_tests_debug_gdbserver_py] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L1 ; check_incrementing_samples() [gdbserver_check_incrementing_samples] ibex\\\\vendor\\\\riscv-tests\\\\debug\\\\gdbserver.py:L815",
+    "sparql": "ASK { <urn:graphify-node:ibex_vendor_riscv_tests_debug_gdbserver_py> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:gdbserver_check_incrementing_samples> . }"
+  },
+  {
+    "id": "path_090",
+    "category": "path_query",
+    "question": "Is there a short structural path from `tasks.c` to `pcTaskGetName()`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.008400",
+    "top_answers": "tasks.c [opentitan_sw_vendor_freertos_freertos_kernel_tasks_c] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L1 ; pcTaskGetName() [tasks_pctaskgetname] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\tasks.c:L2378",
+    "sparql": "ASK { <urn:graphify-node:opentitan_sw_vendor_freertos_freertos_kernel_tasks_c> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:tasks_pctaskgetname> . }"
+  },
+  {
+    "id": "path_091",
+    "category": "path_query",
+    "question": "Is there a short structural path from `main()` to `AesTestCase`?",
+    "relation": "mixed_path",
+    "answer_count": 3,
+    "eval_ms": "0.214000",
+    "top_answers": "main() [main_main] opentitan\\\\sw\\\\host\\\\tpm2_test_server\\\\src\\\\main.rs:L57 ; main.rs [opentitan_sw_host_tests_crypto_aes_nist_kat_src_main_rs] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\aes_nist_kat\\\\src\\\\main.rs:L1 ; AesTestCase [main_aestestcase] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\aes_nist_kat\\\\src\\\\main.rs:L55",
+    "sparql": "ASK { <urn:graphify-node:main_main> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:main_aestestcase> . }"
+  },
+  {
+    "id": "path_092",
+    "category": "path_query",
+    "question": "Is there a short structural path from `Opts` to `AesTestCase`?",
+    "relation": "mixed_path",
+    "answer_count": 3,
+    "eval_ms": "0.165400",
+    "top_answers": "Opts [main_opts] opentitan\\\\sw\\\\host\\\\tpm2_test_server\\\\src\\\\main.rs:L41 ; main.rs [opentitan_sw_host_tests_crypto_aes_nist_kat_src_main_rs] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\aes_nist_kat\\\\src\\\\main.rs:L1 ; AesTestCase [main_aestestcase] opentitan\\\\sw\\\\host\\\\tests\\\\crypto\\\\aes_nist_kat\\\\src\\\\main.rs:L55",
+    "sparql": "ASK { <urn:graphify-node:main_opts> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:main_aestestcase> . }"
+  },
+  {
+    "id": "path_093",
+    "category": "path_query",
+    "question": "Is there a short structural path from `insn.py` to `ANDI`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.007700",
+    "top_answers": "insn.py [opentitan_hw_ip_otbn_dv_otbnsim_sim_insn_py] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L1 ; ANDI [insn_andi] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\otbnsim\\\\sim\\\\insn.py:L166",
+    "sparql": "ASK { <urn:graphify-node:opentitan_hw_ip_otbn_dv_otbnsim_sim_insn_py> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:insn_andi> . }"
+  },
+  {
+    "id": "path_094",
+    "category": "path_query",
+    "question": "Is there a short structural path from `dif_spi_device.c` to `dif_spi_device_configure()`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.013400",
+    "top_answers": "dif_spi_device.c [opentitan_sw_device_lib_dif_dif_spi_device_c] opentitan\\\\sw\\\\device\\\\lib\\\\dif\\\\dif_spi_device.c:L1 ; dif_spi_device_configure() [dif_spi_device_dif_spi_device_configure] opentitan\\\\sw\\\\device\\\\lib\\\\dif\\\\dif_spi_device.c:L90",
+    "sparql": "ASK { <urn:graphify-node:opentitan_sw_device_lib_dif_dif_spi_device_c> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:dif_spi_device_dif_spi_device_configure> . }"
+  },
+  {
+    "id": "path_095",
+    "category": "path_query",
+    "question": "Is there a short structural path from `otbn_model.cc` to `check_dmem()`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.011600",
+    "top_answers": "otbn_model.cc [opentitan_hw_ip_otbn_dv_model_otbn_model_cc] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\model\\\\otbn_model.cc:L1 ; check_dmem() [otbn_model_check_dmem] opentitan\\\\hw\\\\ip\\\\otbn\\\\dv\\\\model\\\\otbn_model.cc:L701",
+    "sparql": "ASK { <urn:graphify-node:opentitan_hw_ip_otbn_dv_model_otbn_model_cc> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:otbn_model_check_dmem> . }"
+  },
+  {
+    "id": "path_096",
+    "category": "path_query",
+    "question": "Is there a short structural path from `ibex_fi.c` to `handle_ibex_fi_char_addi_single_beq()`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.006100",
+    "top_answers": "ibex_fi.c [opentitan_sw_device_tests_penetrationtests_firmware_fi_ibex_fi_c] opentitan\\\\sw\\\\device\\\\tests\\\\penetrationtests\\\\firmware\\\\fi\\\\ibex_fi.c:L1 ; handle_ibex_fi_char_addi_single_beq() [ibex_fi_handle_ibex_fi_char_addi_single_beq] opentitan\\\\sw\\\\device\\\\tests\\\\penetrationtests\\\\firmware\\\\fi\\\\ibex_fi.c:L737",
+    "sparql": "ASK { <urn:graphify-node:opentitan_sw_device_tests_penetrationtests_firmware_fi_ibex_fi_c> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:ibex_fi_handle_ibex_fi_char_addi_single_beq> . }"
+  },
+  {
+    "id": "path_097",
+    "category": "path_query",
+    "question": "Is there a short structural path from `p384.c` to `otcrypto_ecc_p384_private_key_export()`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.006100",
+    "top_answers": "p384.c [opentitan_sw_device_lib_crypto_impl_ecc_p384_c] opentitan\\\\sw\\\\device\\\\lib\\\\crypto\\\\impl\\\\ecc\\\\p384.c:L1 ; otcrypto_ecc_p384_private_key_export() [ecc_p384_otcrypto_ecc_p384_private_key_export] opentitan\\\\sw\\\\device\\\\lib\\\\crypto\\\\impl\\\\ecc_p384.c:L844",
+    "sparql": "ASK { <urn:graphify-node:opentitan_sw_device_lib_crypto_impl_ecc_p384_c> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:ecc_p384_otcrypto_ecc_p384_private_key_export> . }"
+  },
+  {
+    "id": "path_098",
+    "category": "path_query",
+    "question": "Is there a short structural path from `dif_flash_ctrl.c` to `dif_flash_ctrl_disallow_prog_types()`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.003600",
+    "top_answers": "dif_flash_ctrl.c [opentitan_sw_device_lib_dif_dif_flash_ctrl_c] opentitan\\\\sw\\\\device\\\\lib\\\\dif\\\\dif_flash_ctrl.c:L1 ; dif_flash_ctrl_disallow_prog_types() [dif_flash_ctrl_dif_flash_ctrl_disallow_prog_types] opentitan\\\\sw\\\\device\\\\lib\\\\dif\\\\dif_flash_ctrl.c:L300",
+    "sparql": "ASK { <urn:graphify-node:opentitan_sw_device_lib_dif_dif_flash_ctrl_c> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:dif_flash_ctrl_dif_flash_ctrl_disallow_prog_types> . }"
+  },
+  {
+    "id": "path_099",
+    "category": "path_query",
+    "question": "Is there a short structural path from `lib.py` to `CEnum`?",
+    "relation": "mixed_path",
+    "answer_count": 2,
+    "eval_ms": "0.004100",
+    "top_answers": "lib.py [opentitan_util_topgen_lib_py] opentitan\\\\util\\\\topgen\\\\lib.py:L1 ; CEnum [lib_cenum] opentitan\\\\util\\\\topgen\\\\lib.py:L31",
+    "sparql": "ASK { <urn:graphify-node:opentitan_util_topgen_lib_py> (otx:contains|gfy:method|otx:dependsOn|gfy:instantiates)+ <urn:graphify-node:lib_cenum> . }"
+  },
+  {
+    "id": "community_100",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `riscv_instr_cover_group.py`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "0.063200",
+    "top_answers": "dict [dict] ; ElfDebugger [elf_debugger_elfdebugger] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\debug\\\\elf_debugger.rs:L21 ; ResolvedAddress [elf_debugger_resolvedaddress] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\debug\\\\elf_debugger.rs:L106 ; .fmt() [elf_debugger_resolvedaddress_fmt] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\debug\\\\elf_debugger.rs:L113 ; SymbolicAddress [elf_debugger_symbolicaddress] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\debug\\\\elf_debugger.rs:L43 ; .add() [elf_debugger_symbolicaddress_add] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\debug\\\\elf_debugger.rs:L73 ; .fmt() [elf_debugger_symbolicaddress_fmt] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\debug\\\\elf_debugger.rs:L85 ; .from() [elf_debugger_symbolicaddress_from] opentitan\\\\sw\\\\host\\\\opentitanlib\\\\src\\\\debug\\\\elf_debugger.rs:L50",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py>) }"
+  },
+  {
+    "id": "community_101",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `gdbserver.py`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "0.138100",
+    "top_answers": ".__init__() [audit_sec_mmio_calls_bazeltool_init] opentitan\\\\util\\\\py\\\\scripts\\\\audit_sec_mmio_calls.py:L61 ; build_target() [bazel_build_target] opentitan\\\\util\\\\py\\\\packages\\\\lib\\\\bazel.py:L25 ; get_rule_deps_of_kind() [bazel_get_rule_deps_of_kind] opentitan\\\\util\\\\py\\\\packages\\\\lib\\\\bazel.py:L30 ; get_target_files_with_ext() [bazel_get_target_files_with_ext] opentitan\\\\util\\\\py\\\\packages\\\\lib\\\\bazel.py:L36 ; BazelQuery [bazel_query_bazelquery] opentitan\\\\ci\\\\scripts\\\\lib\\\\bazel_query.py:L10 ; BazelQueryRunner [bazel_query_bazelqueryrunner] opentitan\\\\ci\\\\scripts\\\\lib\\\\bazel_query.py:L39 ; .find_empty_test_suites() [bazel_query_bazelqueryrunner_find_empty_test_suites] opentitan\\\\ci\\\\scripts\\\\lib\\\\bazel_query.py:L65 ; .find_non_manual_test_suites() [bazel_query_bazelqueryrunner_find_non_manual_test_suites] opentitan\\\\ci\\\\scripts\\\\lib\\\\bazel_query.py:L95",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:ibex_vendor_riscv_tests_debug_gdbserver_py> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:ibex_vendor_riscv_tests_debug_gdbserver_py>) }"
+  },
+  {
+    "id": "community_102",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `tasks.c`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "0.034000",
+    "top_answers": "prvCheckDelayedList() [croutine_prvcheckdelayedlist] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\croutine.c:L225 ; prvCheckPendingReadyList() [croutine_prvcheckpendingreadylist] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\croutine.c:L202 ; prvInitialiseCoRoutineLists() [croutine_prvinitialisecoroutinelists] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\croutine.c:L319 ; vCoRoutineAddToDelayedList() [croutine_vcoroutineaddtodelayedlist] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\croutine.c:L163 ; vCoRoutineSchedule() [croutine_vcoroutineschedule] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\croutine.c:L284 ; xCoRoutineCreate() [croutine_xcoroutinecreate] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\croutine.c:L103 ; xCoRoutineRemoveFromEventList() [croutine_xcoroutineremovefromeventlist] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\croutine.c:L339 ; prvTestWaitCondition() [event_groups_prvtestwaitcondition] opentitan\\\\sw\\\\vendor\\\\freertos_freertos_kernel\\\\event_groups.c:L692",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:opentitan_sw_vendor_freertos_freertos_kernel_tasks_c> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:opentitan_sw_vendor_freertos_freertos_kernel_tasks_c>) }"
+  },
+  {
+    "id": "community_103",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `main()`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "1.052800",
+    "top_answers": "main() [access_after_hw_reset_main] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L79 ; Opts [access_after_hw_reset_opts] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L20 ; test_access_after_hw_reset() [access_after_hw_reset_test_access_after_hw_reset] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L33 ; main() [access_after_wakeup_main] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L149 ; Opts [access_after_wakeup_opts] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L21 ; test_access_after_wakeup() [access_after_wakeup_test_access_after_wakeup] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L34 ; Acorn [acorn_acorn] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L118 ; .generate_key() [acorn_acorn_generate_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L322",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:main_main> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:main_main>) }"
+  },
+  {
+    "id": "community_104",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `Opts`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "1.431600",
+    "top_answers": "main() [access_after_hw_reset_main] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L79 ; Opts [access_after_hw_reset_opts] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L20 ; test_access_after_hw_reset() [access_after_hw_reset_test_access_after_hw_reset] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_hw_reset.rs:L33 ; main() [access_after_wakeup_main] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L149 ; Opts [access_after_wakeup_opts] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L21 ; test_access_after_wakeup() [access_after_wakeup_test_access_after_wakeup] opentitan\\\\sw\\\\host\\\\tests\\\\chip\\\\rv_dm\\\\src\\\\access_after_wakeup.rs:L34 ; Acorn [acorn_acorn] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L118 ; .generate_key() [acorn_acorn_generate_key] opentitan\\\\sw\\\\host\\\\hsmtool\\\\acorn\\\\acorn.rs:L322",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:main_opts> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:main_opts>) }"
+  },
+  {
+    "id": "community_105",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `insn.py`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "0.216700",
+    "top_answers": "BaseRunner [baserunner] ; .get_commit() [baserunner_baserunner_get_commit] sv-tests\\\\tools\\\\BaseRunner.py:L210 ; .get_top_module_or_guess() [baserunner_baserunner_get_top_module_or_guess] sv-tests\\\\tools\\\\BaseRunner.py:L244 ; Attempt to get the commit hash of the tool. The result is based on         the [baserunner_rationale_211] sv-tests\\\\tools\\\\BaseRunner.py:L211 ; Get the top-level module from the params, or guess it [baserunner_rationale_245] sv-tests\\\\tools\\\\BaseRunner.py:L245 ; BnVecVecAdd [bnvecvecadd] ; BnVecVecMul [bnvecvecmul] ; BnVecVecTrn [bnvecvectrn]",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:opentitan_hw_ip_otbn_dv_otbnsim_sim_insn_py> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:opentitan_hw_ip_otbn_dv_otbnsim_sim_insn_py>) }"
+  },
+  {
+    "id": "community_106",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `dif_spi_device.c`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "0.960400",
+    "top_answers": "ac_range_check [ac_range_check] opentitan\\\\hw\\\\top_darjeeling\\\\rtl\\\\autogen\\\\top_darjeeling.sv:L2684 ; adc_ctrl [adc_ctrl] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L2047 ; configure_adc_ctrl() [adc_ctrl_sleep_debug_cable_wakeup_test_configure_adc_ctrl] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L51 ; en_plic_irqs() [adc_ctrl_sleep_debug_cable_wakeup_test_en_plic_irqs] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L84 ; ottf_handle_irq() [adc_ctrl_sleep_debug_cable_wakeup_test_ottf_handle_irq] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L68 ; test_main() [adc_ctrl_sleep_debug_cable_wakeup_test_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L98 ; test_main() [aes_functest_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\crypto\\\\aes_functest.c:L260 ; test_main() [aes_gcm_functest_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\crypto\\\\aes_gcm_functest.c:L53",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:opentitan_sw_device_lib_dif_dif_spi_device_c> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:opentitan_sw_device_lib_dif_dif_spi_device_c>) }"
+  },
+  {
+    "id": "community_107",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `otbn_model.cc`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "0.227000",
+    "top_answers": "aes_add_round_key() [aes_aes_add_round_key] opentitan\\\\sw\\\\device\\\\sca\\\\lib\\\\aes.c:L35 ; aes_decrypt_block() [aes_aes_decrypt_block] opentitan\\\\hw\\\\ip\\\\aes\\\\model\\\\aes.c:L63 ; aes_encrypt_block() [aes_aes_encrypt_block] opentitan\\\\hw\\\\ip\\\\aes\\\\model\\\\aes.c:L11 ; aes_get_num_rounds() [aes_aes_get_num_rounds] opentitan\\\\hw\\\\ip\\\\aes\\\\model\\\\aes.c:L136 ; aes_inv_key_expand() [aes_aes_inv_key_expand] opentitan\\\\hw\\\\ip\\\\aes\\\\model\\\\aes.c:L656 ; aes_inv_mix_columns() [aes_aes_inv_mix_columns] opentitan\\\\hw\\\\ip\\\\aes\\\\model\\\\aes.c:L303 ; aes_inv_shift_rows() [aes_aes_inv_shift_rows] opentitan\\\\hw\\\\ip\\\\aes\\\\model\\\\aes.c:L246 ; aes_inv_sub_bytes() [aes_aes_inv_sub_bytes] opentitan\\\\hw\\\\ip\\\\aes\\\\model\\\\aes.c:L207",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:opentitan_hw_ip_otbn_dv_model_otbn_model_cc> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:opentitan_hw_ip_otbn_dv_model_otbn_model_cc>) }"
+  },
+  {
+    "id": "community_108",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `ibex_fi.c`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "0.415200",
+    "top_answers": "absorb_bytes() [absorb_data_absorb_bytes] opentitan\\\\hw\\\\ip\\\\kmac\\\\dv\\\\dpi\\\\vendor\\\\kerukuro_digestpp\\\\detail\\\\absorb_data.hpp:L16 ; add1 [add1] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L95 ; add2 [add2] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L67 ; add4 [add4] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L39 ; add8 [add8] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L11 ; aes [aes] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L1174 ; aes_base() [aes_aes_base] opentitan\\\\sw\\\\device\\\\lib\\\\crypto\\\\drivers\\\\aes.c:L26 ; aes_begin() [aes_aes_begin] opentitan\\\\sw\\\\device\\\\lib\\\\crypto\\\\drivers\\\\aes.c:L255",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:opentitan_sw_device_tests_penetrationtests_firmware_fi_ibex_fi_c> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:opentitan_sw_device_tests_penetrationtests_firmware_fi_ibex_fi_c>) }"
+  },
+  {
+    "id": "community_109",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `p384.c`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "0.384700",
+    "top_answers": "absorb_bytes() [absorb_data_absorb_bytes] opentitan\\\\hw\\\\ip\\\\kmac\\\\dv\\\\dpi\\\\vendor\\\\kerukuro_digestpp\\\\detail\\\\absorb_data.hpp:L16 ; add1 [add1] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L95 ; add2 [add2] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L67 ; add4 [add4] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L39 ; add8 [add8] RTLLM\\\\Arithmetic\\\\Adder\\\\adder_16bit\\\\verified_adder_16bit.v:L11 ; aes [aes] opentitan\\\\hw\\\\top_englishbreakfast\\\\rtl\\\\autogen\\\\top_englishbreakfast.sv:L1174 ; aes_base() [aes_aes_base] opentitan\\\\sw\\\\device\\\\lib\\\\crypto\\\\drivers\\\\aes.c:L26 ; aes_begin() [aes_aes_begin] opentitan\\\\sw\\\\device\\\\lib\\\\crypto\\\\drivers\\\\aes.c:L255",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:opentitan_sw_device_lib_crypto_impl_ecc_p384_c> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:opentitan_sw_device_lib_crypto_impl_ecc_p384_c>) }"
+  },
+  {
+    "id": "community_110",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `dif_flash_ctrl.c`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "0.884800",
+    "top_answers": "ac_range_check [ac_range_check] opentitan\\\\hw\\\\top_darjeeling\\\\rtl\\\\autogen\\\\top_darjeeling.sv:L2684 ; adc_ctrl [adc_ctrl] opentitan\\\\hw\\\\top_earlgrey\\\\rtl\\\\autogen\\\\top_earlgrey.sv:L2047 ; configure_adc_ctrl() [adc_ctrl_sleep_debug_cable_wakeup_test_configure_adc_ctrl] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L51 ; en_plic_irqs() [adc_ctrl_sleep_debug_cable_wakeup_test_en_plic_irqs] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L84 ; ottf_handle_irq() [adc_ctrl_sleep_debug_cable_wakeup_test_ottf_handle_irq] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L68 ; test_main() [adc_ctrl_sleep_debug_cable_wakeup_test_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\sim_dv\\\\adc_ctrl_sleep_debug_cable_wakeup_test.c:L98 ; test_main() [aes_functest_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\crypto\\\\aes_functest.c:L260 ; test_main() [aes_gcm_functest_test_main] opentitan\\\\sw\\\\device\\\\tests\\\\crypto\\\\aes_gcm_functest.c:L53",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:opentitan_sw_device_lib_dif_dif_flash_ctrl_c> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:opentitan_sw_device_lib_dif_dif_flash_ctrl_c>) }"
+  },
+  {
+    "id": "community_111",
+    "category": "community_peers",
+    "question": "Which nodes are in the same Graphify community as `lib.py`?",
+    "relation": "community",
+    "answer_count": 25,
+    "eval_ms": "1.187700",
+    "top_answers": "HwAccess [access_hwaccess] opentitan\\\\util\\\\reggen\\\\access.py:L41 ; .allows_write() [access_hwaccess_allows_write] opentitan\\\\util\\\\reggen\\\\access.py:L153 ; .__eq__() [access_hwaccess_eq] opentitan\\\\util\\\\reggen\\\\access.py:L156 ; .__init__() [access_hwaccess_init] opentitan\\\\util\\\\reggen\\\\access.py:L143 ; .__str__() [access_hwaccess_str] opentitan\\\\util\\\\reggen\\\\access.py:L161 ; JsonEnum [access_jsonenum] opentitan\\\\util\\\\reggen\\\\access.py:L13 ; .for_json() [access_jsonenum_for_json] opentitan\\\\util\\\\reggen\\\\access.py:L14 ; Return a UVM access string as used by uvm_base_reg_field abstraction. [access_rationale_106] opentitan\\\\util\\\\reggen\\\\access.py:L106",
+    "sparql": "SELECT ?peer WHERE { <urn:graphify-node:opentitan_util_topgen_lib_py> gfy:community ?c . ?peer gfy:community ?c . FILTER(?peer != <urn:graphify-node:opentitan_util_topgen_lib_py>) }"
+  }
+]

@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Graphify Minimal Spec Knowledge</title>
+  <style>
+    body { margin: 0; font-family: Segoe UI, Arial, sans-serif; background: #f7f8fb; color: #17202a; letter-spacing: 0; }
+    main { max-width: 1040px; margin: 0 auto; padding: 28px; }
+    h1 { font-size: 28px; }
+    h2 { margin-top: 30px; padding-bottom: 8px; border-bottom: 1px solid #d8dee8; }
+    h3 { margin-top: 22px; color: #005f68; }
+    li { line-height: 1.55; margin: 4px 0; }
+    code { background: #edf2f7; border-radius: 5px; padding: 2px 5px; }
+  </style>
+</head>
+<body><main><h1>Graphify Minimal Spec Knowledge</h1>
+This is a single-file, low-token OpenKB input generated from the spec-only Graphify graph.
+It is intentionally compact: use it as a curated bridge, not as a replacement for raw source truth.
+<h2>Source Graph</h2>
+<li>Source graph: `D:\MyWork\verilog\dbs\graphify-out\spec-only-graphify\graph.json`</li>
+<li>Nodes: 8196</li>
+<li>Links: 30054</li>
+<li>Export strategy: top graph entities only, preserving source anchors and Graphify ids.</li>
+<h2>Top Components</h2>
+<h3>Component: checklist</h3>
+<li>Graphify id: `component_checklist`</li>
+<li>Community: 0</li>
+<li>Evidence sections: ADC CTRL Checklist [opentitan/hw/ip/adc_ctrl/doc/checklist.md:L1]; Design Checklist [opentitan/hw/ip/adc_ctrl/doc/checklist.md:L11]; D1 [opentitan/hw/ip/adc_ctrl/doc/checklist.md:L13]; D2 [opentitan/hw/ip/adc_ctrl/doc/checklist.md:L37]; ... 713 more</li>
+<li>Evidence documents: verification_stages.rst [ibex/doc/03_reference/verification_stages.rst:L1]; README.md [opentitan/doc/contributing/dv/methodology/README.md:L1]; setup_dv.md [opentitan/doc/getting_started/setup_dv.md:L1]; ... 136 more</li>
+<h3>Component: readme</h3>
+<li>Graphify id: `component_readme`</li>
+<li>Community: 1</li>
+<li>Evidence sections: OpenTitan Continuous Integration [opentitan/doc/contributing/ci/README.md:L1]; How to report CI problems [opentitan/doc/contributing/ci/README.md:L9]; Overview [opentitan/doc/contributing/ci/README.md:L15]; Test descriptions [opentitan/doc/contributing/ci/README.md:L37]; ... 482 more</li>
+<li>Evidence documents: examples.rst [ibex/doc/02_user/examples.rst:L1]; prim_keccak.md [ibex/vendor/lowrisc_ip/ip/prim/doc/prim_keccak.md:L1]; design_doc.md [ibex/vendor/lowrisc_ip/util/dvsim/doc/design_doc.md:L1]; ... 265 more</li>
+<h3>Component: theory_of_operation</h3>
+<li>Graphify id: `component_theory_of_operation`</li>
+<li>Community: 15</li>
+<li>Evidence sections: Theory of Operation [opentitan/hw/ip/adc_ctrl/doc/theory_of_operation.md:L1]; Block Diagram [opentitan/hw/ip/adc_ctrl/doc/theory_of_operation.md:L5]; Signals [opentitan/hw/ip/adc_ctrl/doc/theory_of_operation.md:L9]; Design Details [opentitan/hw/ip/adc_ctrl/doc/theory_of_operation.md:L19]; ... 567 more</li>
+<li>Evidence documents: example_ip_block.md [opentitan/doc/contributing/doc/example_ip_block.md:L1]; theory_of_operation.md [opentitan/hw/ip/adc_ctrl/doc/theory_of_operation.md:L1]; theory_of_operation.md [opentitan/hw/ip/aes/doc/theory_of_operation.md:L1]; ... 91 more</li>
+<h3>Component: opentitan</h3>
+<li>Graphify id: `component_opentitan`</li>
+<li>Community: 1</li>
+<li>Evidence sections: ! OpenTitan logo ../images/otlogo.png About OpenTitan [opentitan/doc/sections/opentitan.md:L2]</li>
+<li>Evidence documents: verification_overview.rst [ibex/doc/01_overview/verification_overview.rst:L1]; configuration.rst [ibex/doc/02_user/configuration.rst:L1]; getting_started.rst [ibex/doc/02_user/getting_started.rst:L1]; ... 649 more</li>
+<h3>Component: lowrisc</h3>
+<li>Graphify id: `component_lowrisc`</li>
+<li>Community: 3</li>
+<li>Evidence sections: lowRISC CIC [opentitan/doc/project_governance/lowRISC.md:L1]</li>
+<li>Evidence documents: licensing.rst [ibex/doc/01_overview/licensing.rst:L1]; verification_overview.rst [ibex/doc/01_overview/verification_overview.rst:L1]; examples.rst [ibex/doc/02_user/examples.rst:L1]; ... 504 more</li>
+<h3>Component: programmers_guide</h3>
+<li>Graphify id: `component_programmers_guide`</li>
+<li>Community: 7</li>
+<li>Evidence sections: Programmer's Guide [opentitan/hw/ip/adc_ctrl/doc/programmers_guide.md:L1]; Initialization [opentitan/hw/ip/adc_ctrl/doc/programmers_guide.md:L3]; Running in normal mode [opentitan/hw/ip/adc_ctrl/doc/programmers_guide.md:L16]; Running with the rest of the chip in sleep [opentitan/hw/ip/adc_ctrl/doc/programmers_guide.md:L25]; ... 407 more</li>
+<li>Evidence documents: example_ip_block.md [opentitan/doc/contributing/doc/example_ip_block.md:L1]; programmers_guide.md [opentitan/hw/ip/adc_ctrl/doc/programmers_guide.md:L1]; programmers_guide.md [opentitan/hw/ip/aes/doc/programmers_guide.md:L1]; ... 82 more</li>
+<h3>Component: interfaces</h3>
+<li>Graphify id: `component_interfaces`</li>
+<li>Community: 2</li>
+<li>Evidence sections: Hardware Interfaces [opentitan/hw/ip/adc_ctrl/doc/interfaces.md:L1]; Inter-Module Signals [opentitan/hw/ip/adc_ctrl/doc/interfaces.md:L11]; Interrupts [opentitan/hw/ip/adc_ctrl/doc/interfaces.md:L19]; Security Alerts [opentitan/hw/ip/adc_ctrl/doc/interfaces.md:L25]; ... 298 more</li>
+<li>Evidence documents: integration.rst [ibex/doc/02_user/integration.rst:L1]; instruction_decode_execute.rst [ibex/doc/03_reference/instruction_decode_execute.rst:L1]; instruction_fetch.rst [ibex/doc/03_reference/instruction_fetch.rst:L1]; ... 187 more</li>
+<h3>Component: security</h3>
+<li>Graphify id: `component_security`</li>
+<li>Community: 2</li>
+<li>Evidence sections: Security Features [ibex/doc/03_reference/security.rst:L3]; Outputs [ibex/doc/03_reference/security.rst:L9]; Data Independent Timing [ibex/doc/03_reference/security.rst:L17]; Dummy Instruction Insertion [ibex/doc/03_reference/security.rst:L41]; ... 26 more</li>
+<li>Evidence documents: integration.rst [ibex/doc/02_user/integration.rst:L1]; coverage_plan.rst [ibex/doc/03_reference/coverage_plan.rst:L1]; cs_registers.rst [ibex/doc/03_reference/cs_registers.rst:L1]; ... 359 more</li>
+<h3>Component: software</h3>
+<li>Graphify id: `component_software`</li>
+<li>Community: 8</li>
+<li>Evidence sections: ! OpenTitan logo ../images/otlogo.png OpenTitan Software [opentitan/doc/sections/software.md:L2]</li>
+<li>Evidence documents: index.rst [ibex/doc/02_user/index.rst:L1]; cs_registers.rst [ibex/doc/03_reference/cs_registers.rst:L1]; debug.rst [ibex/doc/03_reference/debug.rst:L1]; ... 362 more</li>
+<h3>Component: pwrmgr</h3>
+<li>Graphify id: `component_pwrmgr`</li>
+<li>Community: 7</li>
+<li>Evidence sections: template param list [opentitan/hw/ip_templates/pwrmgr/data/pwrmgr.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/pwrmgr/data/pwrmgr.tpldesc.hjson:L8]; width [opentitan/hw/ip_templates/pwrmgr/data/pwrmgr.tpldesc.hjson:L31]; peripheral [opentitan/hw/ip_templates/pwrmgr/data/pwrmgr.tpldesc.hjson:L43]; ... 255 more</li>
+<li>Evidence documents: lc_ctrl_testplan.hjson [opentitan/hw/ip/lc_ctrl/data/lc_ctrl_testplan.hjson:L1]; interfaces.md [opentitan/hw/ip/lc_ctrl/doc/interfaces.md:L1]; rom_ctrl.hjson [opentitan/hw/ip/rom_ctrl/data/rom_ctrl.hjson:L1]; ... 93 more</li>
+<h3>Component: rstmgr</h3>
+<li>Graphify id: `component_rstmgr`</li>
+<li>Community: 4</li>
+<li>Evidence sections: resets [opentitan/hw/ip_templates/rstmgr/data/rstmgr.cfg.example.hjson:L32]; template param list [opentitan/hw/ip_templates/rstmgr/data/rstmgr.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/rstmgr/data/rstmgr.tpldesc.hjson:L8]; peripheral [opentitan/hw/ip_templates/rstmgr/data/rstmgr.tpldesc.hjson:L33]; ... 246 more</li>
+<li>Evidence documents: README.md [opentitan/doc/project_governance/checklist/README.md:L1]; sysrst_ctrl.hjson [opentitan/hw/ip/sysrst_ctrl/data/sysrst_ctrl.hjson:L1]; programmers_guide.md [opentitan/hw/ip_templates/alert_handler/doc/programmers_guide.md:L1]; ... 93 more</li>
+<h3>Component: pinmux</h3>
+<li>Graphify id: `component_pinmux`</li>
+<li>Community: 10</li>
+<li>Evidence sections: template param list [opentitan/hw/ip_templates/pinmux/data/pinmux.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/pinmux/data/pinmux.tpldesc.hjson:L8]; import testplans [opentitan/hw/ip_templates/pinmux/data/pinmux_fpv_testplan.hjson:L6]; testpoints [opentitan/hw/ip_templates/pinmux/data/pinmux_fpv_testplan.hjson:L7]; ... 257 more</li>
+<li>Evidence documents: README.md [opentitan/doc/contributing/hw/comportability/README.md:L1]; design.md [opentitan/doc/contributing/hw/design.md:L1]; device_interface_functions.md [opentitan/doc/contributing/sw/device_interface_functions.md:L1]; ... 80 more</li>
+<h3>Component: ipconfig</h3>
+<li>Graphify id: `component_ipconfig`</li>
+<li>Community: 4</li>
+<li>Evidence sections: instance name [opentitan/hw/top_darjeeling/ip_autogen/ac_range_check/data/top_darjeeling_ac_range_check.ipconfig.hjson:L5]; param values [opentitan/hw/top_darjeeling/ip_autogen/ac_range_check/data/top_darjeeling_ac_range_check.ipconfig.hjson:L6]; num ranges [opentitan/hw/top_darjeeling/ip_autogen/ac_range_check/data/top_darjeeling_ac_range_check.ipconfig.hjson:L8]; nr role bits [opentitan/hw/top_darjeeling/ip_autogen/ac_range_check/data/top_darjeeling_ac_range_check.ipconfig.hjson:L9]; ... 277 more</li>
+<li>Evidence documents: create_top.md [opentitan/hw/top/doc/create_top.md:L1]; top_desc.md [opentitan/hw/top/doc/top_desc.md:L1]; top_darjeeling_ac_range_check.ipconfig.hjson [opentitan/hw/top_darjeeling/ip_autogen/ac_range_check/data/top_darjeeling_ac_range_check.ipconfig.hjson:L1]; ... 29 more</li>
+<h3>Component: rv_core_ibex</h3>
+<li>Graphify id: `component_rv_core_ibex`</li>
+<li>Community: 5</li>
+<li>Evidence sections: template param list [opentitan/hw/ip_templates/rv_core_ibex/data/rv_core_ibex.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/rv_core_ibex/data/rv_core_ibex.tpldesc.hjson:L8]; dtgen [opentitan/hw/ip_templates/rv_core_ibex/data/rv_core_ibex.tpldesc.hjson:L17]; Boot, ROM execution and Patching [opentitan/hw/ip_templates/rv_core_ibex/doc/boot-rom-patching.md:L1]; ... 246 more</li>
+<li>Evidence documents: verification_stages.rst [ibex/doc/03_reference/verification_stages.rst:L1]; cores.md [opentitan/hw/doc/cores.md:L1]; README.md [opentitan/hw/ip/aes/README.md:L1]; ... 58 more</li>
+<h3>Component: clkmgr</h3>
+<li>Graphify id: `component_clkmgr`</li>
+<li>Community: 12</li>
+<li>Evidence sections: template param list [opentitan/hw/ip_templates/clkmgr/data/clkmgr.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/clkmgr/data/clkmgr.tpldesc.hjson:L8]; aon [opentitan/hw/ip_templates/clkmgr/data/clkmgr.tpldesc.hjson:L25]; freq [opentitan/hw/ip_templates/clkmgr/data/clkmgr.tpldesc.hjson:L26]; ... 224 more</li>
+<li>Evidence documents: README.md [opentitan/doc/contributing/dv/methodology/README.md:L1]; theory_of_operation.md [opentitan/hw/ip/lc_ctrl/doc/theory_of_operation.md:L1]; ac_range_check.tpldesc.hjson [opentitan/hw/ip_templates/ac_range_check/data/ac_range_check.tpldesc.hjson:L1]; ... 72 more</li>
+<h3>Component: system</h3>
+<li>Graphify id: `component_system`</li>
+<li>Community: 11</li>
+<li>Evidence sections: Overview [opentitan/hw/vendor/pulp_riscv_dbg/doc/debug-system.md:L1]; Features [opentitan/hw/vendor/pulp_riscv_dbg/doc/debug-system.md:L5]; Description [opentitan/hw/vendor/pulp_riscv_dbg/doc/debug-system.md:L15]; Compatibility [opentitan/hw/vendor/pulp_riscv_dbg/doc/debug-system.md:L19]; ... 6 more</li>
+<li>Evidence documents: examples.rst [ibex/doc/02_user/examples.rst:L1]; getting_started.rst [ibex/doc/02_user/getting_started.rst:L1]; integration.rst [ibex/doc/02_user/integration.rst:L1]; ... 271 more</li>
+<h3>Component: gpio</h3>
+<li>Graphify id: `component_gpio`</li>
+<li>Community: 15</li>
+<li>Evidence sections: template param list [opentitan/hw/ip_templates/gpio/data/gpio.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/gpio/data/gpio.tpldesc.hjson:L8]; dtgen [opentitan/hw/ip_templates/gpio/data/gpio.tpldesc.hjson:L29]; testpoints [opentitan/hw/ip_templates/gpio/data/gpio_sec_cm_testplan.hjson:L25]; ... 207 more</li>
+<li>Evidence documents: README.md [opentitan/doc/contributing/hw/comportability/README.md:L1]; setup_fpga.md [opentitan/doc/getting_started/setup_fpga.md:L1]; setup_verilator.md [opentitan/doc/getting_started/setup_verilator.md:L1]; ... 67 more</li>
+<h3>Component: rv_plic</h3>
+<li>Graphify id: `component_rv_plic`</li>
+<li>Community: 9</li>
+<li>Evidence sections: template param list [opentitan/hw/ip_templates/rv_plic/data/rv_plic.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/rv_plic/data/rv_plic.tpldesc.hjson:L8]; dtgen [opentitan/hw/ip_templates/rv_plic/data/rv_plic.tpldesc.hjson:L23]; testpoints [opentitan/hw/ip_templates/rv_plic/data/rv_plic_sec_cm_testplan.hjson:L25]; ... 233 more</li>
+<li>Evidence documents: README.md [opentitan/doc/contributing/hw/comportability/README.md:L1]; rv_plic.tpldesc.hjson [opentitan/hw/ip_templates/rv_plic/data/rv_plic.tpldesc.hjson:L1]; rv_plic_sec_cm_testplan.hjson [opentitan/hw/ip_templates/rv_plic/data/rv_plic_sec_cm_testplan.hjson:L1]; ... 38 more</li>
+<h3>Component: otp_ctrl</h3>
+<li>Graphify id: `component_otp_ctrl`</li>
+<li>Community: 8</li>
+<li>Evidence sections: template param list [opentitan/hw/ip_templates/otp_ctrl/data/otp_ctrl.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/otp_ctrl/data/otp_ctrl.tpldesc.hjson:L8]; testpoints [opentitan/hw/ip_templates/otp_ctrl/data/otp_ctrl_sec_cm_testplan.hjson:L25]; desc [opentitan/hw/ip_templates/otp_ctrl/data/otp_ctrl_sec_cm_testplan.hjson:L28]; ... 196 more</li>
+<li>Evidence documents: lc_ctrl_testplan.hjson [opentitan/hw/ip/lc_ctrl/data/lc_ctrl_testplan.hjson:L1]; interfaces.md [opentitan/hw/ip/lc_ctrl/doc/interfaces.md:L1]; theory_of_operation.md [opentitan/hw/ip/lc_ctrl/doc/theory_of_operation.md:L1]; ... 61 more</li>
+<h3>Component: flash_ctrl</h3>
+<li>Graphify id: `component_flash_ctrl`</li>
+<li>Community: 16</li>
+<li>Evidence sections: template param list [opentitan/hw/ip_templates/flash_ctrl/data/flash_ctrl.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/flash_ctrl/data/flash_ctrl.tpldesc.hjson:L8]; testpoints [opentitan/hw/ip_templates/flash_ctrl/data/flash_ctrl_sec_cm_testplan.hjson:L25]; desc [opentitan/hw/ip_templates/flash_ctrl/data/flash_ctrl_sec_cm_testplan.hjson:L28]; ... 192 more</li>
+<li>Evidence documents: testplanner.md [ibex/vendor/lowrisc_ip/util/dvsim/doc/testplanner.md:L1]; directory_structure.md [opentitan/doc/contributing/directory_structure.md:L1]; README.md [opentitan/doc/contributing/hw/comportability/README.md:L1]; ... 62 more</li>
+<h3>Component: debug</h3>
+<li>Graphify id: `component_debug`</li>
+<li>Community: 11</li>
+<li>Evidence sections: Debug Support [ibex/doc/03_reference/debug.rst:L3]; Interface [ibex/doc/03_reference/debug.rst:L18]; Parameters [ibex/doc/03_reference/debug.rst:L29]; Core Debug Registers [ibex/doc/03_reference/debug.rst:L48]; ... 14 more</li>
+<li>Evidence documents: compliance.rst [ibex/doc/01_overview/compliance.rst:L1]; verification_overview.rst [ibex/doc/01_overview/verification_overview.rst:L1]; examples.rst [ibex/doc/02_user/examples.rst:L1]; ... 223 more</li>
+<h3>Component: verification</h3>
+<li>Graphify id: `component_verification`</li>
+<li>Community: 0</li>
+<li>Evidence sections: Verification [ibex/doc/03_reference/verification.rst:L3]; Ibex Core [ibex/doc/03_reference/verification.rst:L10]; Overview [ibex/doc/03_reference/verification.rst:L13]; Testbench Architecture [ibex/doc/03_reference/verification.rst:L30]; ... 16 more</li>
+<li>Evidence documents: verification_overview.rst [ibex/doc/01_overview/verification_overview.rst:L1]; configuration.rst [ibex/doc/02_user/configuration.rst:L1]; getting_started.rst [ibex/doc/02_user/getting_started.rst:L1]; ... 207 more</li>
+<h3>Component: alert_handler</h3>
+<li>Graphify id: `component_alert_handler`</li>
+<li>Community: 4</li>
+<li>Evidence sections: template param list [opentitan/hw/ip_templates/alert_handler/data/alert_handler.tpldesc.hjson:L5]; desc [opentitan/hw/ip_templates/alert_handler/data/alert_handler.tpldesc.hjson:L8]; testpoints [opentitan/hw/ip_templates/alert_handler/data/alert_handler_sec_cm_testplan.hjson:L25]; desc [opentitan/hw/ip_templates/alert_handler/data/alert_handler_sec_cm_testplan.hjson:L28]; ... 143 more</li>
+<li>Evidence documents: README.md [opentitan/doc/contributing/hw/comportability/README.md:L1]; README.md [opentitan/doc/security/README.md:L1]; alert_handler.tpldesc.hjson [opentitan/hw/ip_templates/alert_handler/data/alert_handler.tpldesc.hjson:L1]; ... 66 more</li>
+<h3>Component: lc_ctrl</h3>
+<li>Graphify id: `component_lc_ctrl`</li>
+<li>Community: 8</li>
+<li>Evidence sections: human name [opentitan/hw/ip/lc_ctrl/data/lc_ctrl.hjson:L6]; one line desc [opentitan/hw/ip/lc_ctrl/data/lc_ctrl.hjson:L7]; one paragraph desc [opentitan/hw/ip/lc_ctrl/data/lc_ctrl.hjson:L8]; cip id [opentitan/hw/ip/lc_ctrl/data/lc_ctrl.hjson:L13]; ... 80 more</li>
+<li>Evidence documents: README.md [opentitan/doc/security/specs/device_life_cycle/README.md:L1]; interfaces.md [opentitan/hw/ip/aes/doc/interfaces.md:L1]; keymgr.hjson [opentitan/hw/ip/keymgr/data/keymgr.hjson:L1]; ... 125 more</li>
+<h3>Component: testing</h3>
+<li>Graphify id: `component_testing`</li>
+<li>Community: 3</li>
+<li>Evidence sections: seed [opentitan/hw/top_darjeeling/data/autogen/top_darjeeling.secrets.testing.gen.hjson:L10]; topgen seed [opentitan/hw/top_darjeeling/data/autogen/top_darjeeling.secrets.testing.gen.hjson:L12]; seed mode [opentitan/hw/top_darjeeling/data/autogen/top_darjeeling.secrets.testing.gen.hjson:L14]; otp img seed [opentitan/hw/top_darjeeling/data/autogen/top_darjeeling.secrets.testing.gen.hjson:L17]; ... 33 more</li>
+<li>Evidence documents: system_requirements.rst [ibex/doc/02_user/system_requirements.rst:L1]; verification.rst [ibex/doc/03_reference/verification.rst:L1]; verification_stages.rst [ibex/doc/03_reference/verification_stages.rst:L1]; ... 170 more</li>
+<h3>Component: gen</h3>
+<li>Graphify id: `component_gen`</li>
+<li>Community: 3</li>
+<li>Evidence sections: datawidth [opentitan/hw/top_darjeeling/data/autogen/top_darjeeling.gen.hjson:L12]; racl config [opentitan/hw/top_darjeeling/data/autogen/top_darjeeling.gen.hjson:L13]; power [opentitan/hw/top_darjeeling/data/autogen/top_darjeeling.gen.hjson:L14]; domains [opentitan/hw/top_darjeeling/data/autogen/top_darjeeling.gen.hjson:L16]; ... 136 more</li>
+<li>Evidence documents: verification.rst [ibex/doc/03_reference/verification.rst:L1]; adding_python_depedencies.md [opentitan/doc/contributing/sw/adding_python_depedencies.md:L1]; README.md [opentitan/doc/project_governance/checklist/README.md:L1]; ... 66 more</li>
+<h3>Component: rom</h3>
+<li>Graphify id: `component_rom`</li>
+<li>Community: 5</li>
+<li>Evidence sections: Boot, ROM execution and Patching [opentitan/hw/ip_templates/rv_core_ibex/doc/boot-rom-patching.md:L1]; Glossary [opentitan/hw/ip_templates/rv_core_ibex/doc/boot-rom-patching.md:L3]; Scope [opentitan/hw/ip_templates/rv_core_ibex/doc/boot-rom-patching.md:L11]; Overview [opentitan/hw/ip_templates/rv_core_ibex/doc/boot-rom-patching.md:L16]; ... 36 more</li>
+<li>Evidence documents: verification.rst [ibex/doc/03_reference/verification.rst:L1]; verification_stages.rst [ibex/doc/03_reference/verification_stages.rst:L1]; testplanner.md [ibex/vendor/lowrisc_ip/util/dvsim/doc/testplanner.md:L1]; ... 152 more</li>
+<h3>Component: prim</h3>
+<li>Graphify id: `component_prim`</li>
+<li>Community: 13</li>
+<li>Evidence sections: Primitive Component: Flash Wrapper [ibex/vendor/lowrisc_ip/ip/prim/doc/prim_flash.md:L1]; Overview [ibex/vendor/lowrisc_ip/ip/prim/doc/prim_flash.md:L3]; Parameters [ibex/vendor/lowrisc_ip/ip/prim/doc/prim_flash.md:L9]; Signal Interfaces [ibex/vendor/lowrisc_ip/ip/prim/doc/prim_flash.md:L24]; ... 122 more</li>
+<li>Evidence documents: icache.rst [ibex/doc/03_reference/icache.rst:L1]; load_store_unit.rst [ibex/doc/03_reference/load_store_unit.rst:L1]; prim_flash.md [ibex/vendor/lowrisc_ip/ip/prim/doc/prim_flash.md:L1]; ... 61 more</li>
+<h3>Component: otbn</h3>
+<li>Graphify id: `component_otbn`</li>
+<li>Community: 17</li>
+<li>Evidence sections: human name [opentitan/hw/ip/otbn/data/otbn.hjson:L6]; one line desc [opentitan/hw/ip/otbn/data/otbn.hjson:L7]; one paragraph desc [opentitan/hw/ip/otbn/data/otbn.hjson:L8]; cip id [opentitan/hw/ip/otbn/data/otbn.hjson:L19]; ... 108 more</li>
+<li>Evidence documents: otbn_style_guide.md [opentitan/doc/contributing/style_guides/otbn_style_guide.md:L1]; README.md [opentitan/doc/contributing/style_guides/README.md:L1]; otbn_sw.md [opentitan/doc/contributing/sw/otbn_sw.md:L1]; ... 72 more</li>
+<h3>Component: specification</h3>
+<li>Graphify id: `component_specification`</li>
+<li>Community: 9</li>
+<li>Evidence sections: ! OpenTitan logo ../images/otlogo.png OpenTitan Specification [opentitan/doc/sections/specification.md:L2]</li>
+<li>Evidence documents: compliance.rst [ibex/doc/01_overview/compliance.rst:L1]; integration.rst [ibex/doc/02_user/integration.rst:L1]; coverage_plan.rst [ibex/doc/03_reference/coverage_plan.rst:L1]; ... 181 more</li>
+<h2>Topics</h2>
+<h3>Topic: memory</h3>
+<li>Graphify id: `topic_memory`</li>
+<li>Community: 5</li>
+<li>Mentioning sections: Memory Access Checking and Bus Errors [ibex/doc/03_reference/cosim.rst:L145]; icache.rst [ibex/doc/03_reference/icache.rst:L1]; RAM Arrangement [ibex/doc/03_reference/icache.rst:L76]; instruction_fetch.rst [ibex/doc/03_reference/instruction_fetch.rst:L1]; Instruction-Side Memory Interface [ibex/doc/03_reference/instruction_fetch.rst:L41]; load_store_unit.rst [ibex/doc/03_reference/load_store_unit.rst:L1]; ... 260 more</li>
+<h3>Topic: alert</h3>
+<li>Graphify id: `topic_alert`</li>
+<li>Community: 2</li>
+<li>Mentioning sections: Recommendation 5 : Alerts [opentitan/doc/security/implementation_guidelines/hardware/README.md:L246]; interfaces.md [opentitan/hw/ip/adc_ctrl/doc/interfaces.md:L1]; Security Alerts [opentitan/hw/ip/adc_ctrl/doc/interfaces.md:L25]; registers.md [opentitan/hw/ip/adc_ctrl/doc/registers.md:L1]; ALERT TEST [opentitan/hw/ip/adc_ctrl/doc/registers.md:L92]; interfaces.md [opentitan/hw/ip/aes/doc/interfaces.md:L1]; ... 256 more</li>
+<h3>Topic: security</h3>
+<li>Graphify id: `topic_security`</li>
+<li>Community: 2</li>
+<li>Mentioning sections: Security Features [ibex/doc/03_reference/security.rst:L3]; README.md [opentitan/doc/contributing/dv/sec_cm_dv_framework/README.md:L1]; Security Countermeasure Verification Framework [opentitan/doc/contributing/dv/sec_cm_dv_framework/README.md:L1]; Standardized Design Countermeasure Primitive [opentitan/doc/contributing/dv/sec_cm_dv_framework/README.md:L11]; Verification Framework For The Standardized Design Countermeasures [opentitan/doc/contributing/dv/sec_cm_dv_framework/README.md:L98]; README.md [opentitan/doc/contributing/README.md:L1]; ... 240 more</li>
+<h3>Topic: testplan</h3>
+<li>Graphify id: `topic_testplan`</li>
+<li>Community: 0</li>
+<li>Mentioning sections: Verification Overview [ibex/doc/01_overview/verification_overview.rst:L1]; Verification Status [ibex/doc/01_overview/verification_overview.rst:L9]; rvfi.rst [ibex/doc/03_reference/rvfi.rst:L1]; Formal Verification [ibex/doc/03_reference/rvfi.rst:L11]; verification.rst [ibex/doc/03_reference/verification.rst:L1]; Verification [ibex/doc/03_reference/verification.rst:L3]; ... 207 more</li>
+<h3>Topic: clock</h3>
+<li>Graphify id: `topic_clock`</li>
+<li>Community: 3</li>
+<li>Mentioning sections: clocking [opentitan/hw/ip/dma/data/dma.hjson:L21]; mbx.hjson [opentitan/hw/ip/mbx/data/mbx.hjson:L1]; clocking [opentitan/hw/ip/mbx/data/mbx.hjson:L20]; README.md [opentitan/hw/ip/spi_device/README.md:L1]; Clocking Requirements [opentitan/hw/ip/spi_device/README.md:L89]; theory_of_operation.md [opentitan/hw/ip/spi_host/doc/theory_of_operation.md:L1]; ... 198 more</li>
+<h3>Topic: interrupt</h3>
+<li>Graphify id: `topic_interrupt`</li>
+<li>Community: 2</li>
+<li>Mentioning sections: Interrupts and Debug Requests [ibex/doc/03_reference/cosim.rst:L126]; cs_registers.rst [ibex/doc/03_reference/cs_registers.rst:L1]; Machine Interrupt Enable Register mie [ibex/doc/03_reference/cs_registers.rst:L149]; Machine Interrupt Pending Register mip [ibex/doc/03_reference/cs_registers.rst:L238]; exception_interrupts.rst [ibex/doc/03_reference/exception_interrupts.rst:L1]; Exceptions and Interrupts [ibex/doc/03_reference/exception_interrupts.rst:L3]; ... 162 more</li>
+<h3>Topic: power</h3>
+<li>Graphify id: `topic_power`</li>
+<li>Community: 7</li>
+<li>Mentioning sections: Running with the rest of the chip in sleep [opentitan/hw/ip/adc_ctrl/doc/programmers_guide.md:L25]; programmers_guide.md [opentitan/hw/ip/aon_timer/doc/programmers_guide.md:L1]; Wakeup count and threshold access [opentitan/hw/ip/aon_timer/doc/programmers_guide.md:L15]; README.md [opentitan/hw/ip/aon_timer/README.md:L1]; Wakeup timer [opentitan/hw/ip/aon_timer/README.md:L27]; interfaces.md [opentitan/hw/ip/lc_ctrl/doc/interfaces.md:L1]; ... 110 more</li>
+<h3>Topic: crypto</h3>
+<li>Graphify id: `topic_crypto`</li>
+<li>Community: 6</li>
+<li>Mentioning sections: AES [opentitan/doc/glossary.md:L7]; cryptolib_api.md [opentitan/doc/security/cryptolib/cryptolib_api.md:L1]; AES data structures [opentitan/doc/security/cryptolib/cryptolib_api.md:L126]; security.md [opentitan/doc/security/cryptolib/security.md:L1]; AES [opentitan/doc/security/cryptolib/security.md:L35]; HMAC [opentitan/doc/security/cryptolib/security.md:L61]; ... 65 more</li>
+<h3>Topic: debug</h3>
+<li>Graphify id: `topic_debug`</li>
+<li>Community: 11</li>
+<li>Mentioning sections: Interrupts and Debug Requests [ibex/doc/03_reference/cosim.rst:L126]; debug.rst [ibex/doc/03_reference/debug.rst:L1]; Debug Support [ibex/doc/03_reference/debug.rst:L3]; Core Debug Registers [ibex/doc/03_reference/debug.rst:L48]; pmp.rst [ibex/doc/03_reference/pmp.rst:L1]; Debug Mode [ibex/doc/03_reference/pmp.rst:L62]; ... 58 more</li>
+<h3>Topic: entropy</h3>
+<li>Graphify id: `topic_entropy`</li>
+<li>Community: 14</li>
+<li>Mentioning sections: Entropy source entropy source [opentitan/doc/security/README.md:L65]; CSRNG csrng [opentitan/doc/security/README.md:L71]; csrng.hjson [opentitan/hw/ip/csrng/data/csrng.hjson:L1]; csrng_sec_cm_testplan.hjson [opentitan/hw/ip/csrng/data/csrng_sec_cm_testplan.hjson:L1]; csrng_testplan.hjson [opentitan/hw/ip/csrng/data/csrng_testplan.hjson:L1]; checklist.md [opentitan/hw/ip/csrng/doc/checklist.md:L1]; ... 50 more</li>
+<h3>Topic: reset</h3>
+<li>Graphify id: `topic_reset`</li>
+<li>Community: 3</li>
+<li>Mentioning sections: CTRL . CMD FIFO RST [opentitan/hw/ip/edn/doc/registers.md:L137]; registers.md [opentitan/hw/ip/spi_host/doc/registers.md:L1]; CONTROL . SW RST [opentitan/hw/ip/spi_host/doc/registers.md:L119]; registers.md [opentitan/hw/ip/sysrst_ctrl/doc/registers.md:L1]; EC RST CTL [opentitan/hw/ip/sysrst_ctrl/doc/registers.md:L137]; rstmgr.cfg.example.hjson [opentitan/hw/ip_templates/rstmgr/data/rstmgr.cfg.example.hjson:L1]; ... 43 more</li>
+<h3>Topic: fifo</h3>
+<li>Graphify id: `topic_fifo`</li>
+<li>Community: 3</li>
+<li>Mentioning sections: Primitive Component: Packer FIFO [ibex/vendor/lowrisc_ip/ip/prim/doc/prim_packer_fifo.md:L1]; registers.md [opentitan/hw/ip/edn/doc/registers.md:L1]; CTRL . CMD FIFO RST [opentitan/hw/ip/edn/doc/registers.md:L137]; programmers_guide.md [opentitan/hw/ip/hmac/doc/programmers_guide.md:L1]; FIFO Depth and Empty status [opentitan/hw/ip/hmac/doc/programmers_guide.md:L130]; registers.md [opentitan/hw/ip/hmac/doc/registers.md:L1]; ... 25 more</li>
+<h3>Topic: registers</h3>
+<li>Graphify id: `topic_registers`</li>
+<li>Community: 17</li>
+<li>Mentioning sections: Identification CSRs [ibex/doc/02_user/integration.rst:L17]; instruction_decode_execute.rst [ibex/doc/03_reference/instruction_decode_execute.rst:L1]; Control and Status Register Block CSR [ibex/doc/03_reference/instruction_decode_execute.rst:L156]; security.rst [ibex/doc/03_reference/security.rst:L1]; Shadow CSRs [ibex/doc/03_reference/security.rst:L128]; asm_coding_style.md [opentitan/doc/contributing/style_guides/asm_coding_style.md:L1]; ... 21 more</li>
+<h3>Topic: lifecycle</h3>
+<li>Graphify id: `topic_lifecycle`</li>
+<li>Community: 8</li>
+<li>Mentioning sections: Device Lifecycle and Personalization Stages [opentitan/doc/security/specs/device_provisioning/README.md:L49]; lc_ctrl.hjson [opentitan/hw/ip/lc_ctrl/data/lc_ctrl.hjson:L1]; lc_ctrl_sec_cm_testplan.hjson [opentitan/hw/ip/lc_ctrl/data/lc_ctrl_sec_cm_testplan.hjson:L1]; lc_ctrl_state.hjson [opentitan/hw/ip/lc_ctrl/data/lc_ctrl_state.hjson:L1]; lc_ctrl_testplan.hjson [opentitan/hw/ip/lc_ctrl/data/lc_ctrl_testplan.hjson:L1]; checklist.md [opentitan/hw/ip/lc_ctrl/doc/checklist.md:L1]; ... 14 more</li>
+<h3>Topic: bus</h3>
+<li>Graphify id: `topic_bus`</li>
+<li>Community: 9</li>
+<li>Mentioning sections: tlul_testplan.hjson [opentitan/hw/ip/tlul/data/tlul_testplan.hjson:L1]; README.md [opentitan/hw/ip/tlul/doc/dv/README.md:L1]; TLUL XBAR DV document [opentitan/hw/ip/tlul/doc/dv/README.md:L1]; TlulProtocolChecker.md [opentitan/hw/ip/tlul/doc/TlulProtocolChecker.md:L1]; README.md [opentitan/hw/ip/tlul/README.md:L1]; README.md [opentitan/hw/ip_templates/rv_plic/doc/dv/README.md:L1]; ... 7 more</li>
+<h3>Topic: coverage</h3>
+<li>Graphify id: `topic_coverage`</li>
+<li>Community: 17</li>
+<li>Mentioning sections: Coverage Plan [ibex/doc/03_reference/coverage_plan.rst:L3]; Coverage Implementation [ibex/doc/03_reference/coverage_plan.rst:L21]; device_interface_functions.md [opentitan/doc/contributing/sw/device_interface_functions.md:L1]; Coverage Requirements [opentitan/doc/contributing/sw/device_interface_functions.md:L49]; fcov.md [opentitan/hw/ip/otbn/dv/doc/fcov.md:L1]; OTBN functional coverage [opentitan/hw/ip/otbn/dv/doc/fcov.md:L1]; ... 4 more</li>
+<h2>High-Value Source Documents</h2>
+<h3>Document: theory_of_operation.md</h3>
+<li>Graphify id: `doc_opentitan_hw_ip_lc_ctrl_doc_theory_of_operation_md`</li>
+<li>Source file: `opentitan/hw/ip/lc_ctrl/doc/theory_of_operation.md`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\ip\lc_ctrl\doc\theory_of_operation.md`</li>
+<li>Community: 8</li>
+<li>Sections: Theory of Operation; Power Up Sequence; Normal Operation; Unconditional Transitions; Conditional Transitions; Transition Counter Limits; Token Hashing Mechanism; Post Transition Handling; ... 2 more</li>
+<h3>Document: top_darjeeling.gen.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_darjeeling_data_autogen_top_darjeeling_gen_hjson`</li>
+<li>Source file: `opentitan/hw/top_darjeeling/data/autogen/top_darjeeling.gen.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_darjeeling\data\autogen\top_darjeeling.gen.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: datawidth; racl config; power; domains; wait for external reset; halt ibex via rom ctrl; unmanaged clocks; clocks; ... 2 more</li>
+<h3>Document: top_darjeeling.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_darjeeling_data_top_darjeeling_hjson`</li>
+<li>Source file: `opentitan/hw/top_darjeeling/data/top_darjeeling.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_darjeeling\data\top_darjeeling.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: datawidth; racl config; power; domains; wait for external reset; halt ibex via rom ctrl; unmanaged clocks; clocks; ... 2 more</li>
+<h3>Document: README.md</h3>
+<li>Graphify id: `doc_opentitan_hw_top_earlgrey_doc_design_readme_md`</li>
+<li>Source file: `opentitan/hw/top_earlgrey/doc/design/README.md`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_earlgrey\doc\design\README.md`</li>
+<li>Community: 1</li>
+<li>Sections: OpenTitan Earl Grey Chip Specification; Theory of Operations; Design Details; Clocking and Reset; AST Clocking and Reset Relationship; System Reset Handling and Flash; Reset due to External Supply; Reset due to Internal Request; ... 2 more</li>
+<h3>Document: chip_testplan.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_darjeeling_data_chip_testplan_hjson`</li>
+<li>Source file: `opentitan/hw/top_darjeeling/data/chip_testplan.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_darjeeling\data\chip_testplan.hjson`</li>
+<li>Community: 6</li>
+<li>Sections: import testplans; testpoints; desc; stage; tests; tags; parameters; alert handler reg pkg; ... 2 more</li>
+<h3>Document: xbar_main.gen.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_darjeeling_ip_xbar_main_data_autogen_xbar_main_gen_hjson`</li>
+<li>Source file: `opentitan/hw/top_darjeeling/ip/xbar_main/data/autogen/xbar_main.gen.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_darjeeling\ip\xbar_main\data\autogen\xbar_main.gen.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: clock srcs; clk main i; clk fixed i; clock group; reset connections; rst main ni; domain; rst fixed ni; ... 2 more</li>
+<h3>Document: xbar_peri.gen.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_darjeeling_ip_xbar_peri_data_autogen_xbar_peri_gen_hjson`</li>
+<li>Source file: `opentitan/hw/top_darjeeling/ip/xbar_peri/data/autogen/xbar_peri.gen.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_darjeeling\ip\xbar_peri\data\autogen\xbar_peri.gen.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: clock srcs; clk peri i; clock group; reset connections; rst peri ni; domain; clock connections; connections; ... 2 more</li>
+<h3>Document: top_earlgrey.gen.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_earlgrey_data_autogen_top_earlgrey_gen_hjson`</li>
+<li>Source file: `opentitan/hw/top_earlgrey/data/autogen/top_earlgrey.gen.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_earlgrey\data\autogen\top_earlgrey.gen.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: datawidth; power; domains; wait for external reset; unmanaged clocks; clocks; hier paths; ext; ... 2 more</li>
+<h3>Document: top_earlgrey.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_earlgrey_data_top_earlgrey_hjson`</li>
+<li>Source file: `opentitan/hw/top_earlgrey/data/top_earlgrey.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_earlgrey\data\top_earlgrey.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: datawidth; power; domains; wait for external reset; unmanaged clocks; clocks; hier paths; ext; ... 2 more</li>
+<h3>Document: xbar_main.gen.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_earlgrey_ip_xbar_main_data_autogen_xbar_main_gen_hjson`</li>
+<li>Source file: `opentitan/hw/top_earlgrey/ip/xbar_main/data/autogen/xbar_main.gen.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_earlgrey\ip\xbar_main\data\autogen\xbar_main.gen.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: clock srcs; clk main i; clk fixed i; clk usb i; clk spi host0 i; clk spi host1 i; clock group; reset connections; ... 2 more</li>
+<h3>Document: xbar_peri.gen.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_earlgrey_ip_xbar_peri_data_autogen_xbar_peri_gen_hjson`</li>
+<li>Source file: `opentitan/hw/top_earlgrey/ip/xbar_peri/data/autogen/xbar_peri.gen.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_earlgrey\ip\xbar_peri\data\autogen\xbar_peri.gen.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: clock srcs; clk peri i; clock group; reset connections; rst peri ni; domain; clock connections; connections; ... 2 more</li>
+<h3>Document: top_englishbreakfast.gen.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_englishbreakfast_data_autogen_top_englishbreakfast_gen_hjson`</li>
+<li>Source file: `opentitan/hw/top_englishbreakfast/data/autogen/top_englishbreakfast.gen.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_englishbreakfast\data\autogen\top_englishbreakfast.gen.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: datawidth; power; domains; wait for external reset; unmanaged clocks; clocks; hier paths; ext; ... 2 more</li>
+<h3>Document: top_englishbreakfast.hjson</h3>
+<li>Graphify id: `doc_opentitan_hw_top_englishbreakfast_data_top_englishbreakfast_hjson`</li>
+<li>Source file: `opentitan/hw/top_englishbreakfast/data/top_englishbreakfast.hjson`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_englishbreakfast\data\top_englishbreakfast.hjson`</li>
+<li>Community: 3</li>
+<li>Sections: datawidth; power; domains; wait for external reset; unmanaged clocks; clocks; hier paths; ext; ... 2 more</li>
+<h3>Document: README.md</h3>
+<li>Graphify id: `doc_opentitan_doc_contributing_dv_methodology_readme_md`</li>
+<li>Source file: `opentitan/doc/contributing/dv/methodology/README.md`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\doc\contributing\dv\methodology\README.md`</li>
+<li>Community: 1</li>
+<li>Sections: Design Verification Methodology within OpenTitan; Language and Tool Selection; Defining Verification Complete: Stages and Checklists; Documentation; Testplan; DV document; Regression Dashboard; Automation; ... 2 more</li>
+<h3>Document: setup_fpga.md</h3>
+<li>Graphify id: `doc_opentitan_doc_getting_started_setup_fpga_md`</li>
+<li>Source file: `opentitan/doc/getting_started/setup_fpga.md`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\doc\getting_started\setup_fpga.md`</li>
+<li>Community: 1</li>
+<li>Sections: FPGA Setup; Prerequisites; Obtain an FPGA bitstream; Download a Pre-built Bitstream; Using the @bitstreams repository; Build an FPGA bitstream; Splicing a different ROM or OTP into a Cached Bitstream; From Scratch; ... 2 more</li>
+<h3>Document: glossary.md</h3>
+<li>Graphify id: `doc_opentitan_doc_glossary_md`</li>
+<li>Source file: `opentitan/doc/glossary.md`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\doc\glossary.md`</li>
+<li>Community: 26</li>
+<li>Sections: Glossary; ADC; AES; Airgapped; AON; ASM; Attestation; Baud; ... 2 more</li>
+<h3>Document: README.md</h3>
+<li>Graphify id: `doc_opentitan_doc_project_governance_checklist_readme_md`</li>
+<li>Source file: `opentitan/doc/project_governance/checklist/README.md`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\doc\project_governance\checklist\README.md`</li>
+<li>Community: 1</li>
+<li>Sections: Signoff Checklist; D1; SPEC COMPLETE; CSR DEFINED; CLKRST CONNECTED; IP TOP; IP INSTANTIABLE; PHYSICAL MACROS DEFINED 80; ... 2 more</li>
+<h3>Document: README.md</h3>
+<li>Graphify id: `doc_opentitan_doc_security_readme_md`</li>
+<li>Source file: `opentitan/doc/security/README.md`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\doc\security\README.md`</li>
+<li>Community: 1</li>
+<li>Sections: Security; Overview; OpenTitan Security Model Specification security model; Logical Security Model logical security model; Secure Hardware Design Guidelines implementation guidelines; Functional Guarantees; Use Cases; Security Hardware Primitives; ... 2 more</li>
+<h3>Document: otbn_intro.md</h3>
+<li>Graphify id: `doc_opentitan_hw_ip_otbn_doc_otbn_intro_md`</li>
+<li>Source file: `opentitan/hw/ip/otbn/doc/otbn_intro.md`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\ip\otbn\doc\otbn_intro.md`</li>
+<li>Community: 17</li>
+<li>Sections: Introduction to OTBN; How OTBN executes programs; Security features; Instruction set highlights; Multiplying big numbers; Add/subtract modulo; Hardware loops; Concatenate-and-shift; ... 2 more</li>
+<h3>Document: boot-rom-patching.md</h3>
+<li>Graphify id: `doc_opentitan_hw_ip_templates_rv_core_ibex_doc_boot_rom_patching_md`</li>
+<li>Source file: `opentitan/hw/ip_templates/rv_core_ibex/doc/boot-rom-patching.md`</li>
+<li>Original source: `D:\MyWork\verilog\dbs\opentitan\hw\ip_templates\rv_core_ibex\doc\boot-rom-patching.md`</li>
+<li>Community: 5</li>
+<li>Sections: Boot, ROM execution and Patching; Glossary; Scope; Overview; Programming method; ROM Boot &amp; Patching Building Blocks; OpenTitan base ROM first ROM partition; Second ROM partition; ... 2 more</li>
+<h2>OpenKB Instructions</h2>
+<li>Build concept pages from this compact graph-derived input.</li>
+<li>Preserve Graphify ids, exact component names, source paths, and source locations.</li>
+<li>If a question needs detailed wording, route back to the original source file rather than inventing details.</li>
+<li>Prefer component/topic/source anchors as late-binding keys for code KG integration.</li>
+</main></body>
+</html>

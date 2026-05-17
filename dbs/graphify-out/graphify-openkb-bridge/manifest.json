@@ -1,0 +1,10 @@
+{
+  "source_graph": "D:\\MyWork\\verilog\\dbs\\graphify-out\\spec-only-graphify\\graph.json",
+  "openkb_kb": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-graphify-wiki\\kb",
+  "raw_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-graphify-wiki\\kb\\raw",
+  "html_preview": "D:\\MyWork\\verilog\\dbs\\graphify-out\\graphify-openkb-bridge\\graphify_derived_spec_wiki.html",
+  "pages": 107,
+  "components": 60,
+  "topics": 16,
+  "documents": 30
+}
