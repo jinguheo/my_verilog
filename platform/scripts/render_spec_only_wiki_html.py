@@ -167,11 +167,14 @@ def build_wiki() -> dict[str, Any]:
         section_rows = []
         for section in sections:
             lno = line_number(str(section.get("source_location") or ""))
+            precomputed = str(section.get("snippet") or "").strip()
+            sec_original = section.get("original_source") or ""
+            sec_path = Path(sec_original) if sec_original and Path(sec_original).exists() else original_path
             section_rows.append(
                 {
                     **compact_node(section),
                     "line": lno,
-                    "snippet": snippet(original_path, lno, 4),
+                    "snippet": precomputed or snippet(sec_path, lno, 4),
                 }
             )
         pages.append(

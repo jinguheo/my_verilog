@@ -1,0 +1,989 @@
+{
+  "summary": {
+    "source_graph": "dbs\\graphify-out\\ibex-openkb-raw-graphify\\graph.json",
+    "documents": 10,
+    "sections": 38,
+    "components": 11,
+    "topics": 1,
+    "roles": [
+      [
+        "section",
+        38
+      ],
+      [
+        "component",
+        11
+      ],
+      [
+        "category",
+        10
+      ],
+      [
+        "document",
+        10
+      ],
+      [
+        "project",
+        6
+      ],
+      [
+        "corpus",
+        1
+      ],
+      [
+        "topic",
+        1
+      ]
+    ],
+    "document_kinds": [
+      [
+        "doc",
+        9
+      ],
+      [
+        "interface",
+        1
+      ]
+    ],
+    "projects": [
+      [
+        "concepts",
+        3
+      ],
+      [
+        "sources",
+        2
+      ],
+      [
+        "summaries",
+        2
+      ],
+      [
+        "agents_md",
+        1
+      ],
+      [
+        "index_md",
+        1
+      ],
+      [
+        "log_md",
+        1
+      ]
+    ],
+    "relations": [
+      [
+        "contains",
+        64
+      ],
+      [
+        "references_component",
+        60
+      ],
+      [
+        "documents_component",
+        59
+      ],
+      [
+        "mentions_topic",
+        4
+      ]
+    ]
+  },
+  "pages": [
+    {
+      "id": "doc_agents_md",
+      "label": "AGENTS.md",
+      "role": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "community": "",
+      "project": "agents_md",
+      "kind": "doc",
+      "bytes": 1748,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_agents_md_1_wiki_schema",
+          "label": "Wiki Schema",
+          "role": "section",
+          "source_file": "AGENTS.md",
+          "source_location": "L1",
+          "community": "",
+          "line": 1,
+          "snippet": "# Wiki Schema\n\n## Directory Structure\n- sources/ — Document content. Short docs as .md, long docs as .json (per-page). Do not modify directly.\n- sources/images/ — Extracted images from documents, referenced by sources.\n- summaries/ — One per source document. Summary of key content.\n- concepts/ — Cross-document topic synthesis. Created when a theme spans multiple documents.\n- explorations/ — Saved query results, analyses, and comparisons worth keeping."
+        },
+        {
+          "id": "section_agents_md_3_directory_structure",
+          "label": "Directory Structure",
+          "role": "section",
+          "source_file": "AGENTS.md",
+          "source_location": "L3",
+          "community": "",
+          "line": 3,
+          "snippet": "# Wiki Schema\n\n## Directory Structure\n- sources/ — Document content. Short docs as .md, long docs as .json (per-page). Do not modify directly.\n- sources/images/ — Extracted images from documents, referenced by sources.\n- summaries/ — One per source document. Summary of key content.\n- concepts/ — Cross-document topic synthesis. Created when a theme spans multiple documents.\n- explorations/ — Saved query results, analyses, and comparisons worth keeping.\n- reports/ — Lint health check reports. Auto-generated."
+        },
+        {
+          "id": "section_agents_md_11_special_files",
+          "label": "Special Files",
+          "role": "section",
+          "source_file": "AGENTS.md",
+          "source_location": "L11",
+          "community": "",
+          "line": 11,
+          "snippet": "## Directory Structure\n- sources/ — Document content. Short docs as .md, long docs as .json (per-page). Do not modify directly.\n- sources/images/ — Extracted images from documents, referenced by sources.\n- summaries/ — One per source document. Summary of key content.\n- concepts/ — Cross-document topic synthesis. Created when a theme spans multiple documents.\n- explorations/ — Saved query results, analyses, and comparisons worth keeping.\n- reports/ — Lint health check reports. Auto-generated.\n\n## Special Files\n- index.md — Content catalog: every page with link, one-line summary, organized by category.\n- log.md — Chronological append-only record of operations (ingests, queries, lints).\n\n## Page Types\n- **Summary Page** (summaries/): Key content of a single source document.\n- **Concept Page** (concepts/): Cross-document topic synthesis with [[wikilinks]].\n- **Exploration Page** (explorations/): Saved query results — analyses, comparisons, syntheses."
+        },
+        {
+          "id": "section_agents_md_15_page_types",
+          "label": "Page Types",
+          "role": "section",
+          "source_file": "AGENTS.md",
+          "source_location": "L15",
+          "community": "",
+          "line": 15,
+          "snippet": "- concepts/ — Cross-document topic synthesis. Created when a theme spans multiple documents.\n- explorations/ — Saved query results, analyses, and comparisons worth keeping.\n- reports/ — Lint health check reports. Auto-generated.\n\n## Special Files\n- index.md — Content catalog: every page with link, one-line summary, organized by category.\n- log.md — Chronological append-only record of operations (ingests, queries, lints).\n\n## Page Types\n- **Summary Page** (summaries/): Key content of a single source document.\n- **Concept Page** (concepts/): Cross-document topic synthesis with [[wikilinks]].\n- **Exploration Page** (explorations/): Saved query results — analyses, comparisons, syntheses.\n- **Index Page** (index.md): One-liner summary of every page in the wiki. Auto-maintained.\n\n## Index Page Format\nindex.md lists all documents, concepts, and explorations with metadata:"
+        },
+        {
+          "id": "section_agents_md_21_index_page_format",
+          "label": "Index Page Format",
+          "role": "section",
+          "source_file": "AGENTS.md",
+          "source_location": "L21",
+          "community": "",
+          "line": 21,
+          "snippet": "- log.md — Chronological append-only record of operations (ingests, queries, lints).\n\n## Page Types\n- **Summary Page** (summaries/): Key content of a single source document.\n- **Concept Page** (concepts/): Cross-document topic synthesis with [[wikilinks]].\n- **Exploration Page** (explorations/): Saved query results — analyses, comparisons, syntheses.\n- **Index Page** (index.md): One-liner summary of every page in the wiki. Auto-maintained.\n\n## Index Page Format\nindex.md lists all documents, concepts, and explorations with metadata:\n- Documents: name, one-liner description, type (short|pageindex), detail access path\n- Concepts: name, one-liner description\n- Explorations: name, one-liner description\n\n## Log Format\nEach log entry: `## [YYYY-MM-DD HH:MM:SS] operation | description`"
+        },
+        {
+          "id": "section_agents_md_27_log_format",
+          "label": "Log Format",
+          "role": "section",
+          "source_file": "AGENTS.md",
+          "source_location": "L27",
+          "community": "",
+          "line": 27,
+          "snippet": "- **Index Page** (index.md): One-liner summary of every page in the wiki. Auto-maintained.\n\n## Index Page Format\nindex.md lists all documents, concepts, and explorations with metadata:\n- Documents: name, one-liner description, type (short|pageindex), detail access path\n- Concepts: name, one-liner description\n- Explorations: name, one-liner description\n\n## Log Format\nEach log entry: `## [YYYY-MM-DD HH:MM:SS] operation | description`\nOperations: ingest, query, lint\n\n## Format\n- Use [[wikilink]] to link other wiki pages (e.g., [[concepts/attention]])\n- Standard Markdown heading hierarchy\n- Keep each page focused on a single topic"
+        },
+        {
+          "id": "section_agents_md_31_format",
+          "label": "Format",
+          "role": "section",
+          "source_file": "AGENTS.md",
+          "source_location": "L31",
+          "community": "",
+          "line": 31,
+          "snippet": "- Documents: name, one-liner description, type (short|pageindex), detail access path\n- Concepts: name, one-liner description\n- Explorations: name, one-liner description\n\n## Log Format\nEach log entry: `## [YYYY-MM-DD HH:MM:SS] operation | description`\nOperations: ingest, query, lint\n\n## Format\n- Use [[wikilink]] to link other wiki pages (e.g., [[concepts/attention]])\n- Standard Markdown heading hierarchy\n- Keep each page focused on a single topic\n- Do not include YAML frontmatter (---) in generated content; it is managed by code"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:agents",
+          "count": 8
+        },
+        {
+          "label": "component:log",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_concepts_branch_prediction_md",
+      "label": "branch-prediction.md",
+      "role": "document",
+      "source_file": "concepts/branch-prediction.md",
+      "source_location": "L1",
+      "community": "4",
+      "project": "concepts",
+      "kind": "doc",
+      "bytes": 1443,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_branch_prediction_md_6_branch_prediction",
+          "label": "Branch Prediction",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L6",
+          "community": "4",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/instruction_fetch.md]\nbrief: Static branch prediction is an experimental feature that attempts to improve performance by predicting branch outcomes based on offset signs.\n---\n\n# Branch Prediction\n\nBranch prediction is a feature available in Ibex that can be configured to use static prediction to improve performance during instruction fetching.\n\n## Mechanism and Goal\n\nWhen enabled (by setting the ``BranchPrediction`` parameter to 1), the predictor attempts to predict the outcome of a branch based on its offset."
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_10_mechanism_and_goal",
+          "label": "Mechanism and Goal",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L10",
+          "community": "4",
+          "line": 10,
+          "snippet": "sources: [summaries/instruction_fetch.md]\nbrief: Static branch prediction is an experimental feature that attempts to improve performance by predicting branch outcomes based on offset signs.\n---\n\n# Branch Prediction\n\nBranch prediction is a feature available in Ibex that can be configured to use static prediction to improve performance during instruction fetching.\n\n## Mechanism and Goal\n\nWhen enabled (by setting the ``BranchPrediction`` parameter to 1), the predictor attempts to predict the outcome of a branch based on its offset.\n\n*   **Prediction Rule:** The predictor assumes that any branch with a negative offset is taken, and any branch with a positive offset is not taken.\n*   **Benefit:** If the prediction is successful, it can remove a stall cycle from a taken branch, thereby improving overall performance.\n\n## Mis-prediction Penalty"
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_17_mis_prediction_penalty",
+          "label": "Mis-prediction Penalty",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L17",
+          "community": "4",
+          "line": 17,
+          "snippet": "## Mechanism and Goal\n\nWhen enabled (by setting the ``BranchPrediction`` parameter to 1), the predictor attempts to predict the outcome of a branch based on its offset.\n\n*   **Prediction Rule:** The predictor assumes that any branch with a negative offset is taken, and any branch with a positive offset is not taken.\n*   **Benefit:** If the prediction is successful, it can remove a stall cycle from a taken branch, thereby improving overall performance.\n\n## Mis-prediction Penalty\n\nWhile branch prediction offers performance gains, it carries a penalty if the prediction is wrong:\n\n*   A mis-predict penalty exists if a branch is wrongly predicted to be taken.\n*   This penalty is at least one cycle, or at least two cycles if the instructions following the branch are uncompressed and not aligned.\n\n## Status"
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_24_status",
+          "label": "Status",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L24",
+          "community": "4",
+          "line": 24,
+          "snippet": "## Mis-prediction Penalty\n\nWhile branch prediction offers performance gains, it carries a penalty if the prediction is wrong:\n\n*   A mis-predict penalty exists if a branch is wrongly predicted to be taken.\n*   This penalty is at least one cycle, or at least two cycles if the instructions following the branch are uncompressed and not aligned.\n\n## Status\n\nThis feature is currently marked as *EXPERIMENTAL*, and its full effects are not yet fully documented.\n\nRefer to [[summaries/instruction_fetch]] for details on how the Instruction Fetch stage handles instruction flow and prediction."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:branch",
+          "count": 5
+        },
+        {
+          "label": "component:prediction",
+          "count": 5
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_concepts_instruction_fetch_pipeline_md",
+      "label": "instruction-fetch-pipeline.md",
+      "role": "document",
+      "source_file": "concepts/instruction-fetch-pipeline.md",
+      "source_location": "L1",
+      "community": "2",
+      "project": "concepts",
+      "kind": "doc",
+      "bytes": 2277,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline",
+          "label": "Instruction Fetch Pipeline",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch-pipeline.md",
+          "source_location": "L6",
+          "community": "2",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/instruction_fetch.md]\nbrief: The Instruction Fetch (IF) stage manages instruction flow, buffering, and prediction to supply instructions to the ID stage efficiently.\n---\n\n# Instruction Fetch Pipeline\n\nThe Instruction Fetch (IF) stage is responsible for retrieving instructions from memory and supplying them to the Instruction-Decode (ID) stage, optimizing performance through buffering and prediction.\n\n## Instruction Flow and Buffering\n\nInstructions are fetched into a prefetch buffer (``ibex_prefetch_buffer.sv``) for optimal timing and performance. This data is then stored along with the Program Counter (PC) in the fetch FIFO (``ibex_fetch_fifo.sv``)."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering",
+          "label": "Instruction Flow and Buffering",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch-pipeline.md",
+          "source_location": "L10",
+          "community": "2",
+          "line": 10,
+          "snippet": "sources: [summaries/instruction_fetch.md]\nbrief: The Instruction Fetch (IF) stage manages instruction flow, buffering, and prediction to supply instructions to the ID stage efficiently.\n---\n\n# Instruction Fetch Pipeline\n\nThe Instruction Fetch (IF) stage is responsible for retrieving instructions from memory and supplying them to the Instruction-Decode (ID) stage, optimizing performance through buffering and prediction.\n\n## Instruction Flow and Buffering\n\nInstructions are fetched into a prefetch buffer (``ibex_prefetch_buffer.sv``) for optimal timing and performance. This data is then stored along with the Program Counter (PC) in the fetch FIFO (``ibex_fetch_fifo.sv``).\n\nThe fetch FIFO includes a feedthrough path, ensuring that instructions are immediately available upon the FIFO becoming empty.\n\n## Instruction Handling"
+        },
+        {
+          "id": "section_concepts_instruction_fetch_pipeline_md_16_instruction_handling",
+          "label": "Instruction Handling",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch-pipeline.md",
+          "source_location": "L16",
+          "community": "2",
+          "line": 16,
+          "snippet": "The Instruction Fetch (IF) stage is responsible for retrieving instructions from memory and supplying them to the Instruction-Decode (ID) stage, optimizing performance through buffering and prediction.\n\n## Instruction Flow and Buffering\n\nInstructions are fetched into a prefetch buffer (``ibex_prefetch_buffer.sv``) for optimal timing and performance. This data is then stored along with the Program Counter (PC) in the fetch FIFO (``ibex_fetch_fifo.sv``).\n\nThe fetch FIFO includes a feedthrough path, ensuring that instructions are immediately available upon the FIFO becoming empty.\n\n## Instruction Handling\n\nThe IF stage handles the expansion of compressed instructions, ensuring the decoder receives uncompressed instructions. \n\n## Instruction Caching\n\nIf the system uses an instruction cache (ICache), the prefetch buffer is replaced by the [[icache]] module. The cache interface includes signals to enable the cache and flush it upon execution of a ``fence.i`` instruction."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_pipeline_md_20_instruction_caching",
+          "label": "Instruction Caching",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch-pipeline.md",
+          "source_location": "L20",
+          "community": "2",
+          "line": 20,
+          "snippet": "Instructions are fetched into a prefetch buffer (``ibex_prefetch_buffer.sv``) for optimal timing and performance. This data is then stored along with the Program Counter (PC) in the fetch FIFO (``ibex_fetch_fifo.sv``).\n\nThe fetch FIFO includes a feedthrough path, ensuring that instructions are immediately available upon the FIFO becoming empty.\n\n## Instruction Handling\n\nThe IF stage handles the expansion of compressed instructions, ensuring the decoder receives uncompressed instructions. \n\n## Instruction Caching\n\nIf the system uses an instruction cache (ICache), the prefetch buffer is replaced by the [[icache]] module. The cache interface includes signals to enable the cache and flush it upon execution of a ``fence.i`` instruction.\n\n## Branch Prediction\n\nIbex supports static branch prediction to improve performance by predicting branch outcomes based on offset signs. While this feature avoids stall cycles for correctly predicted branches, it introduces a mis-predict penalty, which must be accounted for."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_pipeline_md_24_branch_prediction",
+          "label": "Branch Prediction",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch-pipeline.md",
+          "source_location": "L24",
+          "community": "2",
+          "line": 24,
+          "snippet": "## Instruction Handling\n\nThe IF stage handles the expansion of compressed instructions, ensuring the decoder receives uncompressed instructions. \n\n## Instruction Caching\n\nIf the system uses an instruction cache (ICache), the prefetch buffer is replaced by the [[icache]] module. The cache interface includes signals to enable the cache and flush it upon execution of a ``fence.i`` instruction.\n\n## Branch Prediction\n\nIbex supports static branch prediction to improve performance by predicting branch outcomes based on offset signs. While this feature avoids stall cycles for correctly predicted branches, it introduces a mis-predict penalty, which must be accounted for.\n\n## Instruction-Side Memory Interface\n\nThe instruction interface defines how the IF stage communicates with the instruction memory or cache. This interface handles requests, data retrieval, and error reporting."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface",
+          "label": "Instruction-Side Memory Interface",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch-pipeline.md",
+          "source_location": "L28",
+          "community": "2",
+          "line": 28,
+          "snippet": "## Instruction Caching\n\nIf the system uses an instruction cache (ICache), the prefetch buffer is replaced by the [[icache]] module. The cache interface includes signals to enable the cache and flush it upon execution of a ``fence.i`` instruction.\n\n## Branch Prediction\n\nIbex supports static branch prediction to improve performance by predicting branch outcomes based on offset signs. While this feature avoids stall cycles for correctly predicted branches, it introduces a mis-predict penalty, which must be accounted for.\n\n## Instruction-Side Memory Interface\n\nThe instruction interface defines how the IF stage communicates with the instruction memory or cache. This interface handles requests, data retrieval, and error reporting. \n\n*   **Alignment:** Externally, the interface performs word-aligned instruction fetches. Internally, the core manages both word- and half-word-aligned addresses to support compressed instructions, ignoring the LSB of the instruction address.\n*   **Protocol:** The communication protocol is similar to the protocol used by the Load-Store Unit (LSU) on the data interface.\n\nThis pipeline architecture ensures a smooth, high-throughput flow of instructions necessary for efficient execution."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_pipeline_md_37_related_documents",
+          "label": "Related Documents",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch-pipeline.md",
+          "source_location": "L37",
+          "community": "2",
+          "line": 37,
+          "snippet": "The instruction interface defines how the IF stage communicates with the instruction memory or cache. This interface handles requests, data retrieval, and error reporting. \n\n*   **Alignment:** Externally, the interface performs word-aligned instruction fetches. Internally, the core manages both word- and half-word-aligned addresses to support compressed instructions, ignoring the LSB of the instruction address.\n*   **Protocol:** The communication protocol is similar to the protocol used by the Load-Store Unit (LSU) on the data interface.\n\nThis pipeline architecture ensures a smooth, high-throughput flow of instructions necessary for efficient execution.\n\n## Related Documents\n- [[summaries/instruction_fetch]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:fetch",
+          "count": 8
+        },
+        {
+          "label": "component:instruction",
+          "count": 8
+        },
+        {
+          "label": "component:pipeline",
+          "count": 8
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_concepts_memory_interface_protocol_md",
+      "label": "memory-interface-protocol.md",
+      "role": "document",
+      "source_file": "concepts/memory-interface-protocol.md",
+      "source_location": "L1",
+      "community": "3",
+      "project": "concepts",
+      "kind": "interface",
+      "bytes": 2423,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol",
+          "label": "Instruction Memory Interface Protocol",
+          "role": "section",
+          "source_file": "concepts/memory-interface-protocol.md",
+          "source_location": "L6",
+          "community": "3",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/instruction_fetch.md]\nbrief: The Instruction Memory Interface Protocol governs how the Instruction Fetch stage communicates with the instruction cache or memory.\n---\n\n# Instruction Memory Interface Protocol\n\nThis protocol defines the communication mechanism used by the Instruction Fetch (IF) stage to interact with the instruction cache or instruction memory.\n\n## Interface Overview\n\nThe interface is designed to facilitate the efficient fetching of instructions, similar to the data interface used by the Load-Store Unit (LSU)."
+        },
+        {
+          "id": "section_concepts_memory_interface_protocol_md_10_interface_overview",
+          "label": "Interface Overview",
+          "role": "section",
+          "source_file": "concepts/memory-interface-protocol.md",
+          "source_location": "L10",
+          "community": "3",
+          "line": 10,
+          "snippet": "sources: [summaries/instruction_fetch.md]\nbrief: The Instruction Memory Interface Protocol governs how the Instruction Fetch stage communicates with the instruction cache or memory.\n---\n\n# Instruction Memory Interface Protocol\n\nThis protocol defines the communication mechanism used by the Instruction Fetch (IF) stage to interact with the instruction cache or instruction memory.\n\n## Interface Overview\n\nThe interface is designed to facilitate the efficient fetching of instructions, similar to the data interface used by the Load-Store Unit (LSU).\n\n### Protocol Similarity\n\nThe protocol used for instruction fetches is highly similar to the protocol employed by the LSU on the data interface of the processor."
+        },
+        {
+          "id": "section_concepts_memory_interface_protocol_md_14_protocol_similarity",
+          "label": "Protocol Similarity",
+          "role": "section",
+          "source_file": "concepts/memory-interface-protocol.md",
+          "source_location": "L14",
+          "community": "3",
+          "line": 14,
+          "snippet": "# Instruction Memory Interface Protocol\n\nThis protocol defines the communication mechanism used by the Instruction Fetch (IF) stage to interact with the instruction cache or instruction memory.\n\n## Interface Overview\n\nThe interface is designed to facilitate the efficient fetching of instructions, similar to the data interface used by the Load-Store Unit (LSU).\n\n### Protocol Similarity\n\nThe protocol used for instruction fetches is highly similar to the protocol employed by the LSU on the data interface of the processor.\n\n*   See [[summaries/instruction_fetch]] for details on how this protocol is implemented in the IF stage.\n*   For specific details on the underlying mechanism, refer to the [[LSU Protocol|LSU Protocol]].\n\n## Instruction Fetch Interface"
+        },
+        {
+          "id": "section_concepts_memory_interface_protocol_md_21_instruction_fetch_interface",
+          "label": "Instruction Fetch Interface",
+          "role": "section",
+          "source_file": "concepts/memory-interface-protocol.md",
+          "source_location": "L21",
+          "community": "3",
+          "line": 21,
+          "snippet": "### Protocol Similarity\n\nThe protocol used for instruction fetches is highly similar to the protocol employed by the LSU on the data interface of the processor.\n\n*   See [[summaries/instruction_fetch]] for details on how this protocol is implemented in the IF stage.\n*   For specific details on the underlying mechanism, refer to the [[LSU Protocol|LSU Protocol]].\n\n## Instruction Fetch Interface\n\nThe instruction interface is a simplified version of the interface used on the data interface, focusing only on instruction requests and data flow, which avoids the need for write transactions.\n\n### Key Signals\n\nThe interface uses a set of signals to manage the request, grant, and data transfer for instructions:"
+        },
+        {
+          "id": "section_concepts_memory_interface_protocol_md_25_key_signals",
+          "label": "Key Signals",
+          "role": "section",
+          "source_file": "concepts/memory-interface-protocol.md",
+          "source_location": "L25",
+          "community": "3",
+          "line": 25,
+          "snippet": "*   See [[summaries/instruction_fetch]] for details on how this protocol is implemented in the IF stage.\n*   For specific details on the underlying mechanism, refer to the [[LSU Protocol|LSU Protocol]].\n\n## Instruction Fetch Interface\n\nThe instruction interface is a simplified version of the interface used on the data interface, focusing only on instruction requests and data flow, which avoids the need for write transactions.\n\n### Key Signals\n\nThe interface uses a set of signals to manage the request, grant, and data transfer for instructions:\n\n| Signal | Direction | Description |\n| :--- | :--- | :--- |\n| `instr_req_o` | output | Request valid, must stay high until `instr_gnt_i` is high for one cycle. |\n| `instr_addr_o[31:0]` | output | The memory address, word aligned. |"
+        },
+        {
+          "id": "section_concepts_memory_interface_protocol_md_39_alignment_handling",
+          "label": "Alignment Handling",
+          "role": "section",
+          "source_file": "concepts/memory-interface-protocol.md",
+          "source_location": "L39",
+          "community": "3",
+          "line": 39,
+          "snippet": "| `instr_req_o` | output | Request valid, must stay high until `instr_gnt_i` is high for one cycle. |\n| `instr_addr_o[31:0]` | output | The memory address, word aligned. |\n| `instr_gnt_i` | input | The other side accepted the request; `instr_req_o` may be deasserted in the next cycle. |\n| `instr_rvalid_i` | input | `instr_rdata_i` holds valid data when this signal is high, indicating exactly one cycle of data transfer. |\n| `instr_rdata_i[31:0]` | input | The instruction data read from memory. |\n| `instr_rdata_intg_i[6:0]` | input | Data integrity bits returned from memory. |\n| `instr_err_i` | input | Indicates a memory access error occurred. |\n\n## Alignment Handling\n\n### External Alignment\n\nExternally, the IF interface performs word-aligned instruction fetches only.\n\n### Internal Alignment"
+        },
+        {
+          "id": "section_concepts_memory_interface_protocol_md_41_external_alignment",
+          "label": "External Alignment",
+          "role": "section",
+          "source_file": "concepts/memory-interface-protocol.md",
+          "source_location": "L41",
+          "community": "3",
+          "line": 41,
+          "snippet": "| `instr_gnt_i` | input | The other side accepted the request; `instr_req_o` may be deasserted in the next cycle. |\n| `instr_rvalid_i` | input | `instr_rdata_i` holds valid data when this signal is high, indicating exactly one cycle of data transfer. |\n| `instr_rdata_i[31:0]` | input | The instruction data read from memory. |\n| `instr_rdata_intg_i[6:0]` | input | Data integrity bits returned from memory. |\n| `instr_err_i` | input | Indicates a memory access error occurred. |\n\n## Alignment Handling\n\n### External Alignment\n\nExternally, the IF interface performs word-aligned instruction fetches only.\n\n### Internal Alignment\n\nInternally, the core is able to handle both word-aligned and half-word-aligned instruction addresses to support compressed instructions. The Least Significant Bit (LSB) of the instruction address is ignored internally to manage these alignments."
+        },
+        {
+          "id": "section_concepts_memory_interface_protocol_md_45_internal_alignment",
+          "label": "Internal Alignment",
+          "role": "section",
+          "source_file": "concepts/memory-interface-protocol.md",
+          "source_location": "L45",
+          "community": "3",
+          "line": 45,
+          "snippet": "| `instr_err_i` | input | Indicates a memory access error occurred. |\n\n## Alignment Handling\n\n### External Alignment\n\nExternally, the IF interface performs word-aligned instruction fetches only.\n\n### Internal Alignment\n\nInternally, the core is able to handle both word-aligned and half-word-aligned instruction addresses to support compressed instructions. The Least Significant Bit (LSB) of the instruction address is ignored internally to manage these alignments."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:memory",
+          "count": 9
+        },
+        {
+          "label": "component:protocol",
+          "count": 9
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_index_md",
+      "label": "index.md",
+      "role": "document",
+      "source_file": "index.md",
+      "source_location": "L1",
+      "community": "6",
+      "project": "index_md",
+      "kind": "doc",
+      "bytes": 1004,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_index_md_1_knowledge_base_index",
+          "label": "Knowledge Base Index",
+          "role": "section",
+          "source_file": "index.md",
+          "source_location": "L1",
+          "community": "6",
+          "line": 1,
+          "snippet": "# Knowledge Base Index\n\n## Documents\n- [[summaries/instruction_fetch]] (short) — This document describes the Instruction Fetch (IF) stage, including instruction buffering, instruction-side memory interfaces, and branch prediction mechanisms in the Ibex core.\n- [[summaries/pipeline_details]] (short) — This document details the instruction flow, cycle timing, and stall characteristics of the Ibex two-stage pipeline.\n\n## Concepts\n- [[concepts/memory-interface-protocol]] — The Instruction Memory Interface Protocol governs how the Instruction Fetch stage communicates with the instruction cache or memory."
+        },
+        {
+          "id": "section_index_md_3_documents",
+          "label": "Documents",
+          "role": "section",
+          "source_file": "index.md",
+          "source_location": "L3",
+          "community": "6",
+          "line": 3,
+          "snippet": "# Knowledge Base Index\n\n## Documents\n- [[summaries/instruction_fetch]] (short) — This document describes the Instruction Fetch (IF) stage, including instruction buffering, instruction-side memory interfaces, and branch prediction mechanisms in the Ibex core.\n- [[summaries/pipeline_details]] (short) — This document details the instruction flow, cycle timing, and stall characteristics of the Ibex two-stage pipeline.\n\n## Concepts\n- [[concepts/memory-interface-protocol]] — The Instruction Memory Interface Protocol governs how the Instruction Fetch stage communicates with the instruction cache or memory.\n- [[concepts/branch-prediction]] — Static branch prediction is an experimental feature that attempts to improve performance by predicting branch outcomes based on offset signs.\n- [[concepts/instruction-fetch-pipeline]] — The Instruction Fetch (IF) stage manages instruction flow, buffering, and prediction to supply instructions to the ID stage efficiently."
+        },
+        {
+          "id": "section_index_md_7_concepts",
+          "label": "Concepts",
+          "role": "section",
+          "source_file": "index.md",
+          "source_location": "L7",
+          "community": "6",
+          "line": 7,
+          "snippet": "# Knowledge Base Index\n\n## Documents\n- [[summaries/instruction_fetch]] (short) — This document describes the Instruction Fetch (IF) stage, including instruction buffering, instruction-side memory interfaces, and branch prediction mechanisms in the Ibex core.\n- [[summaries/pipeline_details]] (short) — This document details the instruction flow, cycle timing, and stall characteristics of the Ibex two-stage pipeline.\n\n## Concepts\n- [[concepts/memory-interface-protocol]] — The Instruction Memory Interface Protocol governs how the Instruction Fetch stage communicates with the instruction cache or memory.\n- [[concepts/branch-prediction]] — Static branch prediction is an experimental feature that attempts to improve performance by predicting branch outcomes based on offset signs.\n- [[concepts/instruction-fetch-pipeline]] — The Instruction Fetch (IF) stage manages instruction flow, buffering, and prediction to supply instructions to the ID stage efficiently.\n\n## Explorations"
+        },
+        {
+          "id": "section_index_md_12_explorations",
+          "label": "Explorations",
+          "role": "section",
+          "source_file": "index.md",
+          "source_location": "L12",
+          "community": "6",
+          "line": 12,
+          "snippet": "- [[summaries/instruction_fetch]] (short) — This document describes the Instruction Fetch (IF) stage, including instruction buffering, instruction-side memory interfaces, and branch prediction mechanisms in the Ibex core.\n- [[summaries/pipeline_details]] (short) — This document details the instruction flow, cycle timing, and stall characteristics of the Ibex two-stage pipeline.\n\n## Concepts\n- [[concepts/memory-interface-protocol]] — The Instruction Memory Interface Protocol governs how the Instruction Fetch stage communicates with the instruction cache or memory.\n- [[concepts/branch-prediction]] — Static branch prediction is an experimental feature that attempts to improve performance by predicting branch outcomes based on offset signs.\n- [[concepts/instruction-fetch-pipeline]] — The Instruction Fetch (IF) stage manages instruction flow, buffering, and prediction to supply instructions to the ID stage efficiently.\n\n## Explorations"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_log_md",
+      "label": "log.md",
+      "role": "document",
+      "source_file": "log.md",
+      "source_location": "L1",
+      "community": "",
+      "project": "log_md",
+      "kind": "doc",
+      "bytes": 137,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_log_md_1_operations_log",
+          "label": "Operations Log",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L1",
+          "community": "",
+          "line": 1,
+          "snippet": "# Operations Log\n\n## [2026-05-23 16:34:22] ingest | pipeline_details.txt\n\n## [2026-05-23 16:35:24] ingest | instruction_fetch.txt"
+        },
+        {
+          "id": "section_log_md_3_2026_05_23_16_34_22_ingest_pipeline_details_txt",
+          "label": "2026-05-23 16:34:22 ingest | pipeline details.txt",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L3",
+          "community": "",
+          "line": 3,
+          "snippet": "# Operations Log\n\n## [2026-05-23 16:34:22] ingest | pipeline_details.txt\n\n## [2026-05-23 16:35:24] ingest | instruction_fetch.txt"
+        },
+        {
+          "id": "section_log_md_5_2026_05_23_16_35_24_ingest_instruction_fetch_txt",
+          "label": "2026-05-23 16:35:24 ingest | instruction fetch.txt",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L5",
+          "community": "",
+          "line": 5,
+          "snippet": "# Operations Log\n\n## [2026-05-23 16:34:22] ingest | pipeline_details.txt\n\n## [2026-05-23 16:35:24] ingest | instruction_fetch.txt"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:log",
+          "count": 4
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_sources_instruction_fetch_md",
+      "label": "instruction_fetch.md",
+      "role": "document",
+      "source_file": "sources/instruction_fetch.md",
+      "source_location": "L1",
+      "community": "4",
+      "project": "sources",
+      "kind": "doc",
+      "bytes": 5805,
+      "original_source": "",
+      "sections": [],
+      "components": [
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_sources_pipeline_details_md",
+      "label": "pipeline_details.md",
+      "role": "document",
+      "source_file": "sources/pipeline_details.md",
+      "source_location": "L1",
+      "community": "2",
+      "project": "sources",
+      "kind": "doc",
+      "bytes": 10483,
+      "original_source": "",
+      "sections": [],
+      "components": [
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_summaries_instruction_fetch_md",
+      "label": "instruction_fetch.md",
+      "role": "document",
+      "source_file": "summaries/instruction_fetch.md",
+      "source_location": "L1",
+      "community": "4",
+      "project": "summaries",
+      "kind": "doc",
+      "bytes": 1771,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_summaries_instruction_fetch_md_20_related_concepts",
+          "label": "Related Concepts",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch.md",
+          "source_location": "L20",
+          "community": "4",
+          "line": 20,
+          "snippet": "If the Ibex is configured with an instruction cache (ICache), the prefetch buffer is replaced by the icache module, which includes signals for cache enabling and flushing upon executing a ``fence.i`` instruction.\n\nBranch Prediction is an experimental feature that uses static prediction to improve performance by predicting branch outcomes based on offset signs, potentially avoiding stall cycles, although mis-predict penalties exist.\n\nAn Instruction-Side Memory Interface is defined by signals for requesting instructions, providing data, and reporting errors. These interfaces handle word-aligned fetches externally, but the core internally manages both word- and half-word-aligned addresses to support compressed instructions, ignoring the LSB of the instruction address.\n\nThe protocol used for communicating with the instruction cache or instruction memory is similar to the protocol used by the Load-Store Unit (LSU) on the data interface.\n\n## Related Concepts\n- [[concepts/instruction-fetch-pipeline]]\n- [[concepts/branch-prediction]]\n- [[concepts/memory-interface-protocol]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:instruction_fetch",
+          "count": 2
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_summaries_pipeline_details_md",
+      "label": "pipeline_details.md",
+      "role": "document",
+      "source_file": "summaries/pipeline_details.md",
+      "source_location": "L1",
+      "community": "5",
+      "project": "summaries",
+      "kind": "doc",
+      "bytes": 2745,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_summaries_pipeline_details_md_6_ibex_pipeline_details",
+          "label": "Ibex Pipeline Details",
+          "role": "section",
+          "source_file": "summaries/pipeline_details.md",
+          "source_location": "L6",
+          "community": "5",
+          "line": 6,
+          "snippet": "---\ndoc_type: short\nfull_text: sources/pipeline_details.md\n---\n\n# Ibex Pipeline Details\n\nIbex utilizes a two-stage pipeline: Instruction Fetch (IF) and Instruction Decode and Execute (ID/EX).\n\n## Pipeline Stages\n\n1. **Instruction Fetch (IF):** Fetches instructions from memory via a prefetch buffer, aiming to fetch one instruction per cycle if the memory system allows. \n2. **Instruction Decode and Execute (ID/EX):** Decodes the instruction and immediately executes it, including register reads and writes. Multi-cycle instructions may stall this stage until completion."
+        },
+        {
+          "id": "section_summaries_pipeline_details_md_10_pipeline_stages",
+          "label": "Pipeline Stages",
+          "role": "section",
+          "source_file": "summaries/pipeline_details.md",
+          "source_location": "L10",
+          "community": "5",
+          "line": 10,
+          "snippet": "doc_type: short\nfull_text: sources/pipeline_details.md\n---\n\n# Ibex Pipeline Details\n\nIbex utilizes a two-stage pipeline: Instruction Fetch (IF) and Instruction Decode and Execute (ID/EX).\n\n## Pipeline Stages\n\n1. **Instruction Fetch (IF):** Fetches instructions from memory via a prefetch buffer, aiming to fetch one instruction per cycle if the memory system allows. \n2. **Instruction Decode and Execute (ID/EX):** Decodes the instruction and immediately executes it, including register reads and writes. Multi-cycle instructions may stall this stage until completion.\n\nAll instructions require a minimum of two cycles to pass through the pipeline (one in IF and one in ID/EX).\n\n## Performance and Stalls"
+        },
+        {
+          "id": "section_summaries_pipeline_details_md_17_performance_and_stalls",
+          "label": "Performance and Stalls",
+          "role": "section",
+          "source_file": "summaries/pipeline_details.md",
+          "source_location": "L17",
+          "community": "5",
+          "line": 17,
+          "snippet": "## Pipeline Stages\n\n1. **Instruction Fetch (IF):** Fetches instructions from memory via a prefetch buffer, aiming to fetch one instruction per cycle if the memory system allows. \n2. **Instruction Decode and Execute (ID/EX):** Decodes the instruction and immediately executes it, including register reads and writes. Multi-cycle instructions may stall this stage until completion.\n\nAll instructions require a minimum of two cycles to pass through the pipeline (one in IF and one in ID/EX).\n\n## Performance and Stalls\n\nWithout stalls, the maximum Instructions per Cycle (IPC) Ibex can achieve is 1. Stalls occur when instructions require variable time for memory access or complex operations, leading to delays in the ID/EX stage.\n\n### Instruction Stall Characteristics\n\nThe duration an instruction stalls for is defined by its type and behavior, detailed in the table below:"
+        },
+        {
+          "id": "section_summaries_pipeline_details_md_21_instruction_stall_characteristics",
+          "label": "Instruction Stall Characteristics",
+          "role": "section",
+          "source_file": "summaries/pipeline_details.md",
+          "source_location": "L21",
+          "community": "5",
+          "line": 21,
+          "snippet": "2. **Instruction Decode and Execute (ID/EX):** Decodes the instruction and immediately executes it, including register reads and writes. Multi-cycle instructions may stall this stage until completion.\n\nAll instructions require a minimum of two cycles to pass through the pipeline (one in IF and one in ID/EX).\n\n## Performance and Stalls\n\nWithout stalls, the maximum Instructions per Cycle (IPC) Ibex can achieve is 1. Stalls occur when instructions require variable time for memory access or complex operations, leading to delays in the ID/EX stage.\n\n### Instruction Stall Characteristics\n\nThe duration an instruction stalls for is defined by its type and behavior, detailed in the table below:\n\n| Instruction Type | Stall Cycles | Description |\n| :--- | :--- | :--- |\n| **Integer Computational** | 0 | Instructions defined in the RISCV-V RV32I Base Integer Instruction Set. |\n| **CSR Access** | 0 | Instructions defined in the 'Zicsr' of the RISC-V specification. |"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:pipeline_details",
+          "count": 5
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        }
+      ],
+      "topics": []
+    }
+  ],
+  "components": [
+    {
+      "id": "component_agents",
+      "label": "component:agents",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": ""
+    },
+    {
+      "id": "component_branch",
+      "label": "component:branch",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "4"
+    },
+    {
+      "id": "component_fetch",
+      "label": "component:fetch",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "2"
+    },
+    {
+      "id": "component_instruction",
+      "label": "component:instruction",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "2"
+    },
+    {
+      "id": "component_instruction_fetch",
+      "label": "component:instruction_fetch",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "4"
+    },
+    {
+      "id": "component_log",
+      "label": "component:log",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": ""
+    },
+    {
+      "id": "component_memory",
+      "label": "component:memory",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "3"
+    },
+    {
+      "id": "component_pipeline",
+      "label": "component:pipeline",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "2"
+    },
+    {
+      "id": "component_pipeline_details",
+      "label": "component:pipeline_details",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "5"
+    },
+    {
+      "id": "component_prediction",
+      "label": "component:prediction",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "4"
+    },
+    {
+      "id": "component_protocol",
+      "label": "component:protocol",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "3"
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic_memory",
+      "label": "topic:memory",
+      "role": "topic",
+      "source_file": "__graphify_spec_only__/topics.md",
+      "source_location": "L1",
+      "community": "3"
+    }
+  ]
+}

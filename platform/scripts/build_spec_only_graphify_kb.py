@@ -362,6 +362,8 @@ def build_extraction(
         source_file: str,
         source_location: str = "L1",
         role: str = "document",
+        original_source: str = "",
+        snippet: str = "",
     ) -> None:
         add_node(
             nodes,
@@ -374,6 +376,8 @@ def build_extraction(
                 "source_location": source_location,
                 "confidence_score": 1.0,
                 "role": role,
+                "original_source": original_source,
+                "snippet": snippet,
             },
         )
 
@@ -466,9 +470,15 @@ def build_extraction(
             edge(doc_id, topic_id, "mentions_topic", rel)
             stats["topic_mentions"][topic] += 1
 
+        lines_list = text.splitlines()
         for line, heading in headings:
             section_id = "section_" + make_id(rel, str(line), heading)
-            node(section_id, heading, rel, f"L{line}", role="section")
+            radius = 8
+            start = max(0, line - 1 - radius)
+            end = min(len(lines_list), line - 1 + radius)
+            snip = "\n".join(lines_list[start:end]).strip()
+            node(section_id, heading, rel, f"L{line}", role="section",
+                 original_source=str(path), snippet=snip)
             edge(doc_id, section_id, "contains", rel, f"L{line}", weight=1.2)
             stats["sections"] += 1
 

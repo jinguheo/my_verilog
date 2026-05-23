@@ -10,6 +10,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "corpus",
+      "original_source": "",
+      "snippet": "",
       "id": "spec_corpus",
       "community": 4,
       "norm_label": "spec documents corpus"
@@ -21,6 +23,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_00_graphify_spec_wiki_index",
       "community": 5,
       "norm_label": "component:00_graphify_spec_wiki_index"
@@ -32,6 +36,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_accesses",
       "community": 0,
       "norm_label": "component:accesses"
@@ -43,6 +49,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_anchors",
       "community": 3,
       "norm_label": "component:anchors"
@@ -54,6 +62,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_branch",
       "community": 6,
       "norm_label": "component:branch"
@@ -65,6 +75,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_fetch",
       "community": 0,
       "norm_label": "component:fetch"
@@ -76,6 +88,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_instruction",
       "community": 0,
       "norm_label": "component:instruction"
@@ -87,6 +101,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_instruction_fetch",
       "community": 3,
       "norm_label": "component:instruction_fetch"
@@ -98,6 +114,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_instruction_fetch_rst",
       "community": 8,
       "norm_label": "component:instruction_fetch_rst"
@@ -109,6 +127,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_knowledge",
       "community": 3,
       "norm_label": "component:knowledge"
@@ -120,6 +140,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_log",
       "community": 9,
       "norm_label": "component:log"
@@ -131,6 +153,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_memory",
       "community": 1,
       "norm_label": "component:memory"
@@ -142,6 +166,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_misaligned",
       "community": 0,
       "norm_label": "component:misaligned"
@@ -153,6 +179,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_pipeline",
       "community": 2,
       "norm_label": "component:pipeline"
@@ -164,6 +192,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_pipeline_details",
       "community": 7,
       "norm_label": "component:pipeline_details"
@@ -175,6 +205,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_pipeline_details_rst",
       "community": 2,
       "norm_label": "component:pipeline_details_rst"
@@ -186,6 +218,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_prediction",
       "community": 6,
       "norm_label": "component:prediction"
@@ -197,6 +231,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_protocol",
       "community": 0,
       "norm_label": "component:protocol"
@@ -208,6 +244,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_side",
       "community": 1,
       "norm_label": "component:side"
@@ -219,6 +257,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_stages",
       "community": 2,
       "norm_label": "component:stages"
@@ -230,6 +270,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_topic",
       "community": 1,
       "norm_label": "component:topic"
@@ -241,6 +283,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "project",
+      "original_source": "",
+      "snippet": "",
       "id": "project_concepts",
       "community": 4,
       "norm_label": "project:concepts"
@@ -252,6 +296,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_concepts_branch_prediction_md",
       "community": 4,
       "norm_label": "concepts/branch-prediction.md"
@@ -277,6 +323,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "topic",
+      "original_source": "",
+      "snippet": "",
       "id": "topic_memory",
       "community": 1,
       "norm_label": "topic:memory"
@@ -288,6 +336,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "---\nsources: [summaries/instruction_fetch_rst.md]\nbrief: This document maps the specifications for instruction fetching, branch prediction, memory interfaces, and access protocols.\n---\n\n# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.",
       "id": "section_concepts_branch_prediction_md_6_instruction_fetch_specification_summary",
       "community": 6,
       "norm_label": "instruction fetch specification summary"
@@ -299,6 +349,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "sources: [summaries/instruction_fetch_rst.md]\nbrief: This document maps the specifications for instruction fetching, branch prediction, memory interfaces, and access protocols.\n---\n\n# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.",
       "id": "section_concepts_branch_prediction_md_10_overview",
       "community": 6,
       "norm_label": "overview"
@@ -310,6 +362,8 @@
       "source_location": "L14",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.",
       "id": "section_concepts_branch_prediction_md_14_key_topics",
       "community": 6,
       "norm_label": "key topics"
@@ -321,6 +375,8 @@
       "source_location": "L16",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "This document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.",
       "id": "section_concepts_branch_prediction_md_16_instruction_fetch",
       "community": 6,
       "norm_label": "instruction fetch"
@@ -332,6 +388,8 @@
       "source_location": "L19",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "This specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.",
       "id": "section_concepts_branch_prediction_md_19_branch_prediction",
       "community": 6,
       "norm_label": "branch prediction"
@@ -343,6 +401,8 @@
       "source_location": "L22",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.",
       "id": "section_concepts_branch_prediction_md_22_instruction_side_memory_interface",
       "community": 6,
       "norm_label": "instruction-side memory interface"
@@ -354,6 +414,8 @@
       "source_location": "L25",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "Details concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping",
       "id": "section_concepts_branch_prediction_md_25_misaligned_accesses",
       "community": 6,
       "norm_label": "misaligned accesses"
@@ -365,6 +427,8 @@
       "source_location": "L28",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "Information related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n### Structure",
       "id": "section_concepts_branch_prediction_md_28_protocol",
       "community": 6,
       "norm_label": "protocol"
@@ -376,6 +440,8 @@
       "source_location": "L31",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "Specification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n### Structure\n\n*   **Instruction Fetch** (instruction_fetch.rst:L3)\n*   **Branch Prediction** (instruction_fetch.rst:L31)",
       "id": "section_concepts_branch_prediction_md_31_source_mapping",
       "community": 6,
       "norm_label": "source mapping"
@@ -387,6 +453,8 @@
       "source_location": "L35",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\branch-prediction.md",
+      "snippet": "### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n### Structure\n\n*   **Instruction Fetch** (instruction_fetch.rst:L3)\n*   **Branch Prediction** (instruction_fetch.rst:L31)\n*   **Instruction-Side Memory Interface** (instruction_fetch.rst:L41)\n*   **Misaligned Accesses** (instruction_fetch.rst:L74)\n*   **Protocol** (instruction_fetch.rst:L83)",
       "id": "section_concepts_branch_prediction_md_35_structure",
       "community": 6,
       "norm_label": "structure"
@@ -398,6 +466,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_concepts_instruction_fetch_md",
       "community": 4,
       "norm_label": "concepts/instruction-fetch.md"
@@ -423,6 +493,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction Fetch Mechanism retrieves instructions, incorporating details about pipeline stages and instruction cycle types.\n---\n\n# Instruction Fetch Mechanism\n\nThe Instruction Fetch Mechanism encompasses the processes and interfaces required to retrieve instructions and associated data from memory into the execution unit, operating within the context of the overall pipeline structure.\n\n## Overview\n\nThe mechanism defines how the system handles the core tasks of instruction fetching, prediction, and memory access interfaces related to instructions, specifically how these operations interact with the pipeline stages and instruction execution cycles.",
       "id": "section_concepts_instruction_fetch_md_6_instruction_fetch_mechanism",
       "community": 0,
       "norm_label": "instruction fetch mechanism"
@@ -434,6 +506,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "sources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction Fetch Mechanism retrieves instructions, incorporating details about pipeline stages and instruction cycle types.\n---\n\n# Instruction Fetch Mechanism\n\nThe Instruction Fetch Mechanism encompasses the processes and interfaces required to retrieve instructions and associated data from memory into the execution unit, operating within the context of the overall pipeline structure.\n\n## Overview\n\nThe mechanism defines how the system handles the core tasks of instruction fetching, prediction, and memory access interfaces related to instructions, specifically how these operations interact with the pipeline stages and instruction execution cycles.\n\n## Pipeline Context\n\nInstruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]].",
       "id": "section_concepts_instruction_fetch_md_10_overview",
       "community": 0,
       "norm_label": "overview"
@@ -445,6 +519,8 @@
       "source_location": "L14",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "# Instruction Fetch Mechanism\n\nThe Instruction Fetch Mechanism encompasses the processes and interfaces required to retrieve instructions and associated data from memory into the execution unit, operating within the context of the overall pipeline structure.\n\n## Overview\n\nThe mechanism defines how the system handles the core tasks of instruction fetching, prediction, and memory access interfaces related to instructions, specifically how these operations interact with the pipeline stages and instruction execution cycles.\n\n## Pipeline Context\n\nInstruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]].\n\n### Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage",
       "id": "section_concepts_instruction_fetch_md_14_pipeline_context",
       "community": 0,
       "norm_label": "pipeline context"
@@ -456,6 +532,8 @@
       "source_location": "L18",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "## Overview\n\nThe mechanism defines how the system handles the core tasks of instruction fetching, prediction, and memory access interfaces related to instructions, specifically how these operations interact with the pipeline stages and instruction execution cycles.\n\n## Pipeline Context\n\nInstruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]].\n\n### Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.",
       "id": "section_concepts_instruction_fetch_md_18_pipeline_details",
       "community": 0,
       "norm_label": "pipeline details"
@@ -467,6 +545,8 @@
       "source_location": "L21",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "## Pipeline Context\n\nInstruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]].\n\n### Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components",
       "id": "section_concepts_instruction_fetch_md_21_third_pipeline_stage",
       "community": 0,
       "norm_label": "third pipeline stage"
@@ -478,6 +558,8 @@
       "source_location": "L24",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "Instruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]].\n\n### Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory.",
       "id": "section_concepts_instruction_fetch_md_24_instruction_cycles",
       "community": 0,
       "norm_label": "instruction cycles"
@@ -489,6 +571,8 @@
       "source_location": "L27",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "Details concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory.\n\n### Branch Prediction\nMechanisms are implemented to predict the flow of execution, specifically handling branches encountered during instruction fetching.",
       "id": "section_concepts_instruction_fetch_md_27_key_components",
       "community": 0,
       "norm_label": "key components"
@@ -500,6 +584,8 @@
       "source_location": "L29",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory.\n\n### Branch Prediction\nMechanisms are implemented to predict the flow of execution, specifically handling branches encountered during instruction fetching.\n\n### Instruction-Side Memory Interface\nThis interface specifies the mechanism used to access memory directly from the instruction stream or instruction-related structures.",
       "id": "section_concepts_instruction_fetch_md_29_instruction_fetch",
       "community": 0,
       "norm_label": "instruction fetch"
@@ -511,6 +597,8 @@
       "source_location": "L32",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory.\n\n### Branch Prediction\nMechanisms are implemented to predict the flow of execution, specifically handling branches encountered during instruction fetching.\n\n### Instruction-Side Memory Interface\nThis interface specifies the mechanism used to access memory directly from the instruction stream or instruction-related structures.\n\n### Misaligned Accesses\nRules for managing memory accesses that do not align with standard boundaries, ensuring correct handling of instruction data.",
       "id": "section_concepts_instruction_fetch_md_32_branch_prediction",
       "community": 0,
       "norm_label": "branch prediction"
@@ -522,6 +610,8 @@
       "source_location": "L35",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-fetch.md",
+      "snippet": "## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory.\n\n### Branch Prediction\nMechanisms are implemented to predict the flow of execution, specifically handling branches encountered during instruction fetching.\n\n### Instruction-Side Memory Interface\nThis interface specifies the mechanism used to access memory directly from the instruction stream or instruction-related structures.\n\n### Misaligned Accesses\nRules for managing memory accesses that do not align with standard boundaries, ensuring correct handling of instruction data.\n\n### Protocol\nDetails the operational protocol governing the synchronization and execution of these instruction fetching and memory access operations.",
       "id": "section_concepts_instruction_fetch_md_35_instruction_side_memory_interface",
       "community": 0,
       "norm_label": "instruction-side memory interface"
@@ -533,6 +623,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_concepts_instruction_side_memory_interface_md",
       "community": 4,
       "norm_label": "concepts/instruction-side-memory-interface.md"
@@ -558,6 +650,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-side-memory-interface.md",
+      "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction-Side Memory Interface defines the mechanism for accessing memory directly from the instruction stream.\n---\n\n# Instruction-Side Memory Interface\n\n## Definition\n\nThe Instruction-Side Memory Interface is a critical component specifying how memory is accessed directly from the instruction stream or related internal structures.\n\n## Role in Instruction Fetching",
       "id": "section_concepts_instruction_side_memory_interface_md_6_instruction_side_memory_interface",
       "community": 1,
       "norm_label": "instruction-side memory interface"
@@ -569,6 +663,8 @@
       "source_location": "L8",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-side-memory-interface.md",
+      "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction-Side Memory Interface defines the mechanism for accessing memory directly from the instruction stream.\n---\n\n# Instruction-Side Memory Interface\n\n## Definition\n\nThe Instruction-Side Memory Interface is a critical component specifying how memory is accessed directly from the instruction stream or related internal structures.\n\n## Role in Instruction Fetching\n\nThis interface is integral to the overall instruction fetching process, providing the necessary mechanisms for the processor to retrieve instructions and associated data.",
       "id": "section_concepts_instruction_side_memory_interface_md_8_definition",
       "community": 1,
       "norm_label": "definition"
@@ -580,6 +676,8 @@
       "source_location": "L12",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-side-memory-interface.md",
+      "snippet": "---\n\n# Instruction-Side Memory Interface\n\n## Definition\n\nThe Instruction-Side Memory Interface is a critical component specifying how memory is accessed directly from the instruction stream or related internal structures.\n\n## Role in Instruction Fetching\n\nThis interface is integral to the overall instruction fetching process, providing the necessary mechanisms for the processor to retrieve instructions and associated data.\n\n## Context\n\nThis concept is defined within the context of the overall instruction fetching specification, which also covers topics such as branch prediction and memory access rules.",
       "id": "section_concepts_instruction_side_memory_interface_md_12_role_in_instruction_fetching",
       "community": 1,
       "norm_label": "role in instruction fetching"
@@ -591,6 +689,8 @@
       "source_location": "L16",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-side-memory-interface.md",
+      "snippet": "## Definition\n\nThe Instruction-Side Memory Interface is a critical component specifying how memory is accessed directly from the instruction stream or related internal structures.\n\n## Role in Instruction Fetching\n\nThis interface is integral to the overall instruction fetching process, providing the necessary mechanisms for the processor to retrieve instructions and associated data.\n\n## Context\n\nThis concept is defined within the context of the overall instruction fetching specification, which also covers topics such as branch prediction and memory access rules.\n\n## Related Concepts\n\n* [[concepts/branch_prediction]]\n* [[concepts/protocol]]",
       "id": "section_concepts_instruction_side_memory_interface_md_16_context",
       "community": 1,
       "norm_label": "context"
@@ -602,6 +702,8 @@
       "source_location": "L20",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\instruction-side-memory-interface.md",
+      "snippet": "## Role in Instruction Fetching\n\nThis interface is integral to the overall instruction fetching process, providing the necessary mechanisms for the processor to retrieve instructions and associated data.\n\n## Context\n\nThis concept is defined within the context of the overall instruction fetching specification, which also covers topics such as branch prediction and memory access rules.\n\n## Related Concepts\n\n* [[concepts/branch_prediction]]\n* [[concepts/protocol]]\n* [[summaries/instruction_fetch_rst]]\n\nSee also: [[summaries/pipeline_details_rst]]",
       "id": "section_concepts_instruction_side_memory_interface_md_20_related_concepts",
       "community": 1,
       "norm_label": "related concepts"
@@ -613,6 +715,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_concepts_knowledge_anchors_md",
       "community": 4,
       "norm_label": "concepts/knowledge-anchors.md"
@@ -638,6 +742,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\knowledge-anchors.md",
+      "snippet": "---\nsources: [summaries/instruction_fetch_rst.md, summaries/instruction_fetch.md]\nbrief: Knowledge anchors define curated views of information used as anchors for OpenKB processing and source curation.\n---\n\n# Knowledge Anchors and Entities\n\nKnowledge Anchors and Entities are core mechanisms used to define specific, curated views of information candidates within the knowledge base, serving as anchors for OpenKB processing.\n\nThese anchors allow for the creation of compact, high-confidence views\u2014often derived from graph structures\u2014that serve as effective input for systems like OpenKB, rather than raw source material.\n\n## Purpose",
       "id": "section_concepts_knowledge_anchors_md_6_knowledge_anchors_and_entities",
       "community": 3,
       "norm_label": "knowledge anchors and entities"
@@ -649,6 +755,8 @@
       "source_location": "L12",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\knowledge-anchors.md",
+      "snippet": "---\n\n# Knowledge Anchors and Entities\n\nKnowledge Anchors and Entities are core mechanisms used to define specific, curated views of information candidates within the knowledge base, serving as anchors for OpenKB processing.\n\nThese anchors allow for the creation of compact, high-confidence views\u2014often derived from graph structures\u2014that serve as effective input for systems like OpenKB, rather than raw source material.\n\n## Purpose\n\nThe primary goal of establishing knowledge anchors is to distill complex source documents into actionable, low-token representations that provide context for downstream knowledge graph or reasoning tasks.\n\n## Application in Curation\n\nWhen curating documents, anchors help define how a source entity should be treated:",
       "id": "section_concepts_knowledge_anchors_md_12_purpose",
       "community": 3,
       "norm_label": "purpose"
@@ -660,6 +768,8 @@
       "source_location": "L16",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\knowledge-anchors.md",
+      "snippet": "Knowledge Anchors and Entities are core mechanisms used to define specific, curated views of information candidates within the knowledge base, serving as anchors for OpenKB processing.\n\nThese anchors allow for the creation of compact, high-confidence views\u2014often derived from graph structures\u2014that serve as effective input for systems like OpenKB, rather than raw source material.\n\n## Purpose\n\nThe primary goal of establishing knowledge anchors is to distill complex source documents into actionable, low-token representations that provide context for downstream knowledge graph or reasoning tasks.\n\n## Application in Curation\n\nWhen curating documents, anchors help define how a source entity should be treated:\n\n*   **Entity Anchoring:** Treating a specific piece of data or code as a fixed point for reference.\n*   **Curation Hints:** Using linked sections from the source as evidence for requirements, verification topics, and integration constraints.\n\nFor example, a specific entry like `component_instruction_fetch` acts as an anchor, providing identity (Node ID, Role, Confidence Score) and curation guidance.",
       "id": "section_concepts_knowledge_anchors_md_16_application_in_curation",
       "community": 3,
       "norm_label": "application in curation"
@@ -671,6 +781,8 @@
       "source_location": "L29",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\knowledge-anchors.md",
+      "snippet": "*   **Curation Hints:** Using linked sections from the source as evidence for requirements, verification topics, and integration constraints.\n\nFor example, a specific entry like `component_instruction_fetch` acts as an anchor, providing identity (Node ID, Role, Confidence Score) and curation guidance.\n\nThis application is crucial when processing technical specifications. For instance, a document like [[summaries/instruction_fetch]] uses sections to map specific points within the original specification corpus, demonstrating how anchors are used to guide the ingestion and processing of source documents, ensuring the knowledge base utilizes high-quality, anchored information rather than relying solely on raw text.\n\n[[summaries/instruction_fetch]]\n\n## Related Documents\n- [[summaries/instruction_fetch_rst]]",
       "id": "section_concepts_knowledge_anchors_md_29_related_documents",
       "community": 3,
       "norm_label": "related documents"
@@ -682,6 +794,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_concepts_misaligned_accesses_md",
       "community": 4,
       "norm_label": "concepts/misaligned-accesses.md"
@@ -707,6 +821,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\misaligned-accesses.md",
+      "snippet": "---\nsources: [summaries/instruction_fetch_rst.md]\nbrief: Misaligned memory accesses refer to handling memory accesses that do not adhere to standard alignment boundaries.\n---\n\n# Misaligned Memory Accesses\n\nMisaligned memory accesses refer to the rules and handling procedures required when memory accesses do not align with standard boundaries within the system.\n\nThis concept is governed by the overall instruction fetching and memory access [[Protocol]].\n\n## Context",
       "id": "section_concepts_misaligned_accesses_md_6_misaligned_memory_accesses",
       "community": 0,
       "norm_label": "misaligned memory accesses"
@@ -718,6 +834,8 @@
       "source_location": "L12",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\misaligned-accesses.md",
+      "snippet": "---\n\n# Misaligned Memory Accesses\n\nMisaligned memory accesses refer to the rules and handling procedures required when memory accesses do not align with standard boundaries within the system.\n\nThis concept is governed by the overall instruction fetching and memory access [[Protocol]].\n\n## Context\n\nThese access procedures are critical components of the system's memory management and instruction execution, specifically related to the [[Instruction-Side Memory Interface]].\n\n## Key Considerations\n\n*   **Handling Misalignment**: The specification defines the rules for managing accesses that violate standard alignment. \n*   **Instruction Fetch**: Misaligned accesses directly impact the process of instruction fetching and execution.",
       "id": "section_concepts_misaligned_accesses_md_12_context",
       "community": 0,
       "norm_label": "context"
@@ -729,6 +847,8 @@
       "source_location": "L16",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\misaligned-accesses.md",
+      "snippet": "Misaligned memory accesses refer to the rules and handling procedures required when memory accesses do not align with standard boundaries within the system.\n\nThis concept is governed by the overall instruction fetching and memory access [[Protocol]].\n\n## Context\n\nThese access procedures are critical components of the system's memory management and instruction execution, specifically related to the [[Instruction-Side Memory Interface]].\n\n## Key Considerations\n\n*   **Handling Misalignment**: The specification defines the rules for managing accesses that violate standard alignment. \n*   **Instruction Fetch**: Misaligned accesses directly impact the process of instruction fetching and execution.\n*   **Branch Prediction**: The handling of these accesses may interact with branch prediction mechanisms.\n\n## References",
       "id": "section_concepts_misaligned_accesses_md_16_key_considerations",
       "community": 0,
       "norm_label": "key considerations"
@@ -740,6 +860,8 @@
       "source_location": "L22",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\misaligned-accesses.md",
+      "snippet": "These access procedures are critical components of the system's memory management and instruction execution, specifically related to the [[Instruction-Side Memory Interface]].\n\n## Key Considerations\n\n*   **Handling Misalignment**: The specification defines the rules for managing accesses that violate standard alignment. \n*   **Instruction Fetch**: Misaligned accesses directly impact the process of instruction fetching and execution.\n*   **Branch Prediction**: The handling of these accesses may interact with branch prediction mechanisms.\n\n## References\n\n*   See the detailed source mapping in [[summaries/instruction_fetch_rst]] for specific points.\n*   Related concepts include [[concepts/attention]] and the overall [[Protocol]].",
       "id": "section_concepts_misaligned_accesses_md_22_references",
       "community": 0,
       "norm_label": "references"
@@ -751,6 +873,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_concepts_pipeline_stages_pipeline_stages_md",
       "community": 4,
       "norm_label": "concepts/pipeline-stages----pipeline-stages.md"
@@ -776,6 +900,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\pipeline-stages----Pipeline-Stages.md",
+      "snippet": "---\nsources: [summaries/pipeline_details_rst.md]\nbrief: Pipeline stages define the structural components and specific instructions governing the flow of data through the pipeline.\n---\n\n# Pipeline Stages\n\nPipeline stages represent the distinct phases or components within the overall data processing pipeline. Understanding these stages is crucial for configuring the pipeline correctly and managing instruction flow.\n\n## Overview\n\nDetailed information regarding the overall structure and configuration of the pipeline is documented in the source document [[pipeline_details_rst]].",
       "id": "section_concepts_pipeline_stages_pipeline_stages_md_6_pipeline_stages",
       "community": 2,
       "norm_label": "pipeline stages"
@@ -787,6 +913,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\pipeline-stages----Pipeline-Stages.md",
+      "snippet": "sources: [summaries/pipeline_details_rst.md]\nbrief: Pipeline stages define the structural components and specific instructions governing the flow of data through the pipeline.\n---\n\n# Pipeline Stages\n\nPipeline stages represent the distinct phases or components within the overall data processing pipeline. Understanding these stages is crucial for configuring the pipeline correctly and managing instruction flow.\n\n## Overview\n\nDetailed information regarding the overall structure and configuration of the pipeline is documented in the source document [[pipeline_details_rst]].\n\n## Specific Stages\n\nSpecific focus areas include:",
       "id": "section_concepts_pipeline_stages_pipeline_stages_md_10_overview",
       "community": 2,
       "norm_label": "overview"
@@ -798,6 +926,8 @@
       "source_location": "L14",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\pipeline-stages----Pipeline-Stages.md",
+      "snippet": "# Pipeline Stages\n\nPipeline stages represent the distinct phases or components within the overall data processing pipeline. Understanding these stages is crucial for configuring the pipeline correctly and managing instruction flow.\n\n## Overview\n\nDetailed information regarding the overall structure and configuration of the pipeline is documented in the source document [[pipeline_details_rst]].\n\n## Specific Stages\n\nSpecific focus areas include:\n\n*   **Third Pipeline Stage**: Detailed specifications for the third stage of the pipeline are documented separately. Refer to the details found in [[summaries/pipeline_details_rst]].\n\n## Instruction Handling",
       "id": "section_concepts_pipeline_stages_pipeline_stages_md_14_specific_stages",
       "community": 2,
       "norm_label": "specific stages"
@@ -809,6 +939,8 @@
       "source_location": "L20",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\pipeline-stages----Pipeline-Stages.md",
+      "snippet": "Detailed information regarding the overall structure and configuration of the pipeline is documented in the source document [[pipeline_details_rst]].\n\n## Specific Stages\n\nSpecific focus areas include:\n\n*   **Third Pipeline Stage**: Detailed specifications for the third stage of the pipeline are documented separately. Refer to the details found in [[summaries/pipeline_details_rst]].\n\n## Instruction Handling\n\nSpecifications related to how instructions are handled within these stages, including multi-cycle and single-cycle instructions, are also defined within the pipeline details.\n\n*   [[Multi- and Single-Cycle Instructions]]\n\n*Source Reference: [[pipeline_details_rst]]",
       "id": "section_concepts_pipeline_stages_pipeline_stages_md_20_instruction_handling",
       "community": 2,
       "norm_label": "instruction handling"
@@ -820,6 +952,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_concepts_protocol_instruction_fetch_md",
       "community": 4,
       "norm_label": "concepts/protocol-instruction-fetch.md"
@@ -845,6 +979,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction Fetch Protocol governs instruction retrieval coordinated across the pipeline stages and memory access interfaces.\n---\n\n# Instruction Fetch Protocol\n\n## Overview\n\nThe Instruction Fetch Protocol governs the operational sequence and rules for the entire instruction fetching and associated memory access operations within the system, coordinating these actions with the overall pipeline structure.\n\n## Key Mechanisms",
       "id": "section_concepts_protocol_instruction_fetch_md_6_instruction_fetch_protocol",
       "community": 0,
       "norm_label": "instruction fetch protocol"
@@ -856,6 +992,8 @@
       "source_location": "L8",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction Fetch Protocol governs instruction retrieval coordinated across the pipeline stages and memory access interfaces.\n---\n\n# Instruction Fetch Protocol\n\n## Overview\n\nThe Instruction Fetch Protocol governs the operational sequence and rules for the entire instruction fetching and associated memory access operations within the system, coordinating these actions with the overall pipeline structure.\n\n## Key Mechanisms\n\nThis protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages.",
       "id": "section_concepts_protocol_instruction_fetch_md_8_overview",
       "community": 0,
       "norm_label": "overview"
@@ -867,6 +1005,8 @@
       "source_location": "L12",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "---\n\n# Instruction Fetch Protocol\n\n## Overview\n\nThe Instruction Fetch Protocol governs the operational sequence and rules for the entire instruction fetching and associated memory access operations within the system, coordinating these actions with the overall pipeline structure.\n\n## Key Mechanisms\n\nThis protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages.\n\n### Instruction Fetch\nThis involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface",
       "id": "section_concepts_protocol_instruction_fetch_md_12_key_mechanisms",
       "community": 0,
       "norm_label": "key mechanisms"
@@ -878,6 +1018,8 @@
       "source_location": "L16",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "## Overview\n\nThe Instruction Fetch Protocol governs the operational sequence and rules for the entire instruction fetching and associated memory access operations within the system, coordinating these actions with the overall pipeline structure.\n\n## Key Mechanisms\n\nThis protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages.\n\n### Instruction Fetch\nThis involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface\nAccess to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.",
       "id": "section_concepts_protocol_instruction_fetch_md_16_instruction_fetch",
       "community": 0,
       "norm_label": "instruction fetch"
@@ -889,6 +1031,8 @@
       "source_location": "L19",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "## Key Mechanisms\n\nThis protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages.\n\n### Instruction Fetch\nThis involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface\nAccess to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].",
       "id": "section_concepts_protocol_instruction_fetch_md_19_memory_interface",
       "community": 0,
       "norm_label": "memory interface"
@@ -900,6 +1044,8 @@
       "source_location": "L22",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "This protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages.\n\n### Instruction Fetch\nThis involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface\nAccess to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions.",
       "id": "section_concepts_protocol_instruction_fetch_md_22_pipeline_coordination",
       "community": 0,
       "norm_label": "pipeline coordination"
@@ -911,6 +1057,8 @@
       "source_location": "L25",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "This involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface\nAccess to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions.\n\n### Branch Prediction Interaction\nThe protocol must integrate with mechanisms like Branch Prediction to ensure accurate instruction flow and prediction during fetching.",
       "id": "section_concepts_protocol_instruction_fetch_md_25_access_management",
       "community": 0,
       "norm_label": "access management"
@@ -922,6 +1070,8 @@
       "source_location": "L28",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "Access to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions.\n\n### Branch Prediction Interaction\nThe protocol must integrate with mechanisms like Branch Prediction to ensure accurate instruction flow and prediction during fetching.\n\n## Relations",
       "id": "section_concepts_protocol_instruction_fetch_md_28_instruction_cycle_handling",
       "community": 0,
       "norm_label": "instruction cycle handling"
@@ -933,6 +1083,8 @@
       "source_location": "L31",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "The fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions.\n\n### Branch Prediction Interaction\nThe protocol must integrate with mechanisms like Branch Prediction to ensure accurate instruction flow and prediction during fetching.\n\n## Relations\n\nThe protocol coordinates the interactions between instruction fetching, the instruction-side memory interface, pipeline coordination, and error handling procedures like managing [[concepts/misaligned_accesses]].\n\n**Related Documents:**",
       "id": "section_concepts_protocol_instruction_fetch_md_31_branch_prediction_interaction",
       "community": 0,
       "norm_label": "branch prediction interaction"
@@ -944,6 +1096,8 @@
       "source_location": "L34",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\protocol-instruction-fetch.md",
+      "snippet": "Specific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions.\n\n### Branch Prediction Interaction\nThe protocol must integrate with mechanisms like Branch Prediction to ensure accurate instruction flow and prediction during fetching.\n\n## Relations\n\nThe protocol coordinates the interactions between instruction fetching, the instruction-side memory interface, pipeline coordination, and error handling procedures like managing [[concepts/misaligned_accesses]].\n\n**Related Documents:**\n- [[summaries/instruction_fetch_rst]]\n- [[pipeline_details_rst]]",
       "id": "section_concepts_protocol_instruction_fetch_md_34_relations",
       "community": 0,
       "norm_label": "relations"
@@ -955,6 +1109,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_concepts_topic_memory_md",
       "community": 4,
       "norm_label": "concepts/topic-memory.md"
@@ -980,6 +1136,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\topic-memory.md",
+      "snippet": "---\nsources: [summaries/memory.md]\nbrief: The Memory Topic Cluster defines the identity and curation guidelines for the 'memory' topic extracted from the spec graph.\n---\n\n# Memory Topic Cluster\n\nThis concept defines the identity and necessary curation guidelines for the 'memory' topic cluster, which was extracted from the spec graph.\n\n## Identity\n\n*   **Node ID**: `topic_memory`\n*   **Community**: `0`",
       "id": "section_concepts_topic_memory_md_6_memory_topic_cluster",
       "community": 1,
       "norm_label": "memory topic cluster"
@@ -991,6 +1149,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\topic-memory.md",
+      "snippet": "sources: [summaries/memory.md]\nbrief: The Memory Topic Cluster defines the identity and curation guidelines for the 'memory' topic extracted from the spec graph.\n---\n\n# Memory Topic Cluster\n\nThis concept defines the identity and necessary curation guidelines for the 'memory' topic cluster, which was extracted from the spec graph.\n\n## Identity\n\n*   **Node ID**: `topic_memory`\n*   **Community**: `0`\n\n## Context\n\nThis cluster represents a specific topic extracted from the spec graph and relates to the detailed content found in [[summaries/memory]].",
       "id": "section_concepts_topic_memory_md_10_identity",
       "community": 1,
       "norm_label": "identity"
@@ -1002,6 +1162,8 @@
       "source_location": "L15",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\topic-memory.md",
+      "snippet": "This concept defines the identity and necessary curation guidelines for the 'memory' topic cluster, which was extracted from the spec graph.\n\n## Identity\n\n*   **Node ID**: `topic_memory`\n*   **Community**: `0`\n\n## Context\n\nThis cluster represents a specific topic extracted from the spec graph and relates to the detailed content found in [[summaries/memory]].\n\n## Curation Guidelines\n\nThe following hints are provided to guide the OpenKB curation process for this topic:",
       "id": "section_concepts_topic_memory_md_15_context",
       "community": 1,
       "norm_label": "context"
@@ -1013,6 +1175,8 @@
       "source_location": "L19",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\concepts\\topic-memory.md",
+      "snippet": "*   **Node ID**: `topic_memory`\n*   **Community**: `0`\n\n## Context\n\nThis cluster represents a specific topic extracted from the spec graph and relates to the detailed content found in [[summaries/memory]].\n\n## Curation Guidelines\n\nThe following hints are provided to guide the OpenKB curation process for this topic:\n\n1.  **Concept Conversion**: Repeated section references should be consolidated into stable concept pages to enhance cross-linking.\n2.  **Traceability**: Source paths must be maintained as traceability anchors for all references to ensure clear traceability back to the original documents.\n\nThis concept serves as a guideline for how related topics should be structured within the knowledge base.",
       "id": "section_concepts_topic_memory_md_19_curation_guidelines",
       "community": 1,
       "norm_label": "curation guidelines"
@@ -1024,6 +1188,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "project",
+      "original_source": "",
+      "snippet": "",
       "id": "project_index_md",
       "community": 4,
       "norm_label": "project:index_md"
@@ -1035,6 +1201,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_index_md_root",
       "community": 4,
       "norm_label": "index_md/root"
@@ -1060,6 +1228,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\index.md",
+      "snippet": "# Knowledge Base Index\n\n## Documents\n- [[summaries/memory]] (short) \u2014 This page summarizes the Graphify topic cluster for 'memory' and provides OpenKB curation hints.\n- [[summaries/pipeline_details_rst]] (short) \u2014 This document serves as a source map detailing the specific structure, stages, and instruction types within the pipeline specification.\n- [[summaries/instruction_fetch_rst]] (short) \u2014 This document serves as a source map detailing the structure of instruction fetching, memory interfaces, branch prediction, and access handling protocols.\n- [[summaries/pipeline_details]] (short) \u2014 This page provides a Graphify-derived, curated view of a component entity candidate for OpenKB input.\n- [[summaries/instruction_fetch]] (short) \u2014 This document defines a component anchor for instruction fetch used as compact input for OpenKB.",
       "id": "section_index_md_1_knowledge_base_index",
       "community": 2,
       "norm_label": "knowledge base index"
@@ -1071,6 +1241,8 @@
       "source_location": "L3",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\index.md",
+      "snippet": "# Knowledge Base Index\n\n## Documents\n- [[summaries/memory]] (short) \u2014 This page summarizes the Graphify topic cluster for 'memory' and provides OpenKB curation hints.\n- [[summaries/pipeline_details_rst]] (short) \u2014 This document serves as a source map detailing the specific structure, stages, and instruction types within the pipeline specification.\n- [[summaries/instruction_fetch_rst]] (short) \u2014 This document serves as a source map detailing the structure of instruction fetching, memory interfaces, branch prediction, and access handling protocols.\n- [[summaries/pipeline_details]] (short) \u2014 This page provides a Graphify-derived, curated view of a component entity candidate for OpenKB input.\n- [[summaries/instruction_fetch]] (short) \u2014 This document defines a component anchor for instruction fetch used as compact input for OpenKB.\n- [[summaries/00_graphify_spec_wiki_index]] (short) \u2014 This wiki serves as a compact, graph-derived index for the Graphify specification, prioritizing data retention and curation.",
       "id": "section_index_md_3_documents",
       "community": 2,
       "norm_label": "documents"
@@ -1082,6 +1254,8 @@
       "source_location": "L11",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\index.md",
+      "snippet": "## Documents\n- [[summaries/memory]] (short) \u2014 This page summarizes the Graphify topic cluster for 'memory' and provides OpenKB curation hints.\n- [[summaries/pipeline_details_rst]] (short) \u2014 This document serves as a source map detailing the specific structure, stages, and instruction types within the pipeline specification.\n- [[summaries/instruction_fetch_rst]] (short) \u2014 This document serves as a source map detailing the structure of instruction fetching, memory interfaces, branch prediction, and access handling protocols.\n- [[summaries/pipeline_details]] (short) \u2014 This page provides a Graphify-derived, curated view of a component entity candidate for OpenKB input.\n- [[summaries/instruction_fetch]] (short) \u2014 This document defines a component anchor for instruction fetch used as compact input for OpenKB.\n- [[summaries/00_graphify_spec_wiki_index]] (short) \u2014 This wiki serves as a compact, graph-derived index for the Graphify specification, prioritizing data retention and curation.\n\n## Concepts\n- [[concepts/topic-memory]] \u2014 The Memory Topic Cluster defines the identity and curation guidelines for the 'memory' topic extracted from the spec graph.\n- [[concepts/pipeline-stages----Pipeline-Stages]] \u2014 Pipeline stages define the structural components and specific instructions governing the flow of data through the pipeline.\n- [[concepts/protocol-instruction-fetch]] \u2014 The Instruction Fetch Protocol governs instruction retrieval coordinated across the pipeline stages and memory access interfaces.\n- [[concepts/misaligned-accesses]] \u2014 Misaligned memory accesses refer to handling memory accesses that do not adhere to standard alignment boundaries.\n- [[concepts/instruction-side-memory-interface]] \u2014 The Instruction-Side Memory Interface defines the mechanism for accessing memory directly from the instruction stream.\n- [[concepts/branch-prediction]] \u2014 This document maps the specifications for instruction fetching, branch prediction, memory interfaces, and access protocols.\n- [[concepts/instruction-fetch]] \u2014 The Instruction Fetch Mechanism retrieves instructions, incorporating details about pipeline stages and instruction cycle types.",
       "id": "section_index_md_11_concepts",
       "community": 2,
       "norm_label": "concepts"
@@ -1093,6 +1267,8 @@
       "source_location": "L21",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\index.md",
+      "snippet": "- [[concepts/pipeline-stages----Pipeline-Stages]] \u2014 Pipeline stages define the structural components and specific instructions governing the flow of data through the pipeline.\n- [[concepts/protocol-instruction-fetch]] \u2014 The Instruction Fetch Protocol governs instruction retrieval coordinated across the pipeline stages and memory access interfaces.\n- [[concepts/misaligned-accesses]] \u2014 Misaligned memory accesses refer to handling memory accesses that do not adhere to standard alignment boundaries.\n- [[concepts/instruction-side-memory-interface]] \u2014 The Instruction-Side Memory Interface defines the mechanism for accessing memory directly from the instruction stream.\n- [[concepts/branch-prediction]] \u2014 This document maps the specifications for instruction fetching, branch prediction, memory interfaces, and access protocols.\n- [[concepts/instruction-fetch]] \u2014 The Instruction Fetch Mechanism retrieves instructions, incorporating details about pipeline stages and instruction cycle types.\n- [[concepts/knowledge-anchors]] \u2014 Knowledge anchors define curated views of information used as anchors for OpenKB processing and source curation.\n\n## Explorations",
       "id": "section_index_md_21_explorations",
       "community": 2,
       "norm_label": "explorations"
@@ -1104,6 +1280,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "project",
+      "original_source": "",
+      "snippet": "",
       "id": "project_log_md",
       "community": 9,
       "norm_label": "project:log_md"
@@ -1115,6 +1293,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_log_md_root",
       "community": 9,
       "norm_label": "log_md/root"
@@ -1140,6 +1320,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\log.md",
+      "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md",
       "id": "section_log_md_1_operations_log",
       "community": 9,
       "norm_label": "operations log"
@@ -1151,6 +1333,8 @@
       "source_location": "L3",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\log.md",
+      "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md",
       "id": "section_log_md_3_2026_05_23_16_36_00_ingest_00_graphify_spec_wiki_index_md",
       "community": 9,
       "norm_label": "2026-05-23 16:36:00 ingest | 00 graphify spec wiki index.md"
@@ -1162,6 +1346,8 @@
       "source_location": "L5",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\log.md",
+      "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md",
       "id": "section_log_md_5_2026_05_23_16_36_28_ingest_instruction_fetch_md",
       "community": 9,
       "norm_label": "2026-05-23 16:36:28 ingest | instruction fetch.md"
@@ -1173,6 +1359,8 @@
       "source_location": "L7",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\log.md",
+      "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md\n\n## [2026-05-23 16:39:12] ingest | memory.md",
       "id": "section_log_md_7_2026_05_23_16_36_48_ingest_pipeline_details_md",
       "community": 9,
       "norm_label": "2026-05-23 16:36:48 ingest | pipeline details.md"
@@ -1184,6 +1372,8 @@
       "source_location": "L9",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\log.md",
+      "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md\n\n## [2026-05-23 16:39:12] ingest | memory.md",
       "id": "section_log_md_9_2026_05_23_16_37_59_ingest_instruction_fetch_rst_md",
       "community": 9,
       "norm_label": "2026-05-23 16:37:59 ingest | instruction fetch rst.md"
@@ -1195,6 +1385,8 @@
       "source_location": "L11",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\log.md",
+      "snippet": "## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md\n\n## [2026-05-23 16:39:12] ingest | memory.md",
       "id": "section_log_md_11_2026_05_23_16_38_41_ingest_pipeline_details_rst_md",
       "community": 9,
       "norm_label": "2026-05-23 16:38:41 ingest | pipeline details rst.md"
@@ -1206,6 +1398,8 @@
       "source_location": "L13",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\log.md",
+      "snippet": "## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md\n\n## [2026-05-23 16:39:12] ingest | memory.md",
       "id": "section_log_md_13_2026_05_23_16_39_12_ingest_memory_md",
       "community": 9,
       "norm_label": "2026-05-23 16:39:12 ingest | memory.md"
@@ -1217,6 +1411,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "project",
+      "original_source": "",
+      "snippet": "",
       "id": "project_sources",
       "community": 4,
       "norm_label": "project:sources"
@@ -1228,6 +1424,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_sources_00_graphify_spec_wiki_index_md",
       "community": 4,
       "norm_label": "sources/00_graphify_spec_wiki_index.md"
@@ -1253,6 +1451,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\00_graphify_spec_wiki_index.md",
+      "snippet": "# Graphify-derived Spec Wiki\n\nThis compact wiki was generated from `spec-only-graphify/graph.json` and is intended as low-token OpenKB input.\n\n## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2",
       "id": "section_sources_00_graphify_spec_wiki_index_md_1_graphify_derived_spec_wiki",
       "community": 5,
       "norm_label": "graphify-derived spec wiki"
@@ -1264,6 +1464,8 @@
       "source_location": "L5",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\00_graphify_spec_wiki_index.md",
+      "snippet": "# Graphify-derived Spec Wiki\n\nThis compact wiki was generated from `spec-only-graphify/graph.json` and is intended as low-token OpenKB input.\n\n## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2\n- Exported topic pages: 1\n- Exported document map pages: 2\n\n## Strategy",
       "id": "section_sources_00_graphify_spec_wiki_index_md_5_counts",
       "community": 5,
       "norm_label": "counts"
@@ -1275,6 +1477,8 @@
       "source_location": "L12",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\00_graphify_spec_wiki_index.md",
+      "snippet": "## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2\n- Exported topic pages: 1\n- Exported document map pages: 2\n\n## Strategy\n- Keep exact Graphify node ids, component names, source files, and section anchors.\n- Use OpenKB only as a curator over this compact graph-derived wiki.\n- Avoid sending the full raw spec corpus unless a topic needs deeper evidence.",
       "id": "section_sources_00_graphify_spec_wiki_index_md_12_strategy",
       "community": 5,
       "norm_label": "strategy"
@@ -1286,6 +1490,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_sources_instruction_fetch_md",
       "community": 4,
       "norm_label": "sources/instruction_fetch.md"
@@ -1311,6 +1517,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch.md",
+      "snippet": "# Component: instruction fetch\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`",
       "id": "section_sources_instruction_fetch_md_1_component_instruction_fetch",
       "community": 3,
       "norm_label": "component: instruction fetch"
@@ -1322,6 +1530,8 @@
       "source_location": "L3",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch.md",
+      "snippet": "# Component: instruction fetch\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`",
       "id": "section_sources_instruction_fetch_md_3_openkb_purpose",
       "community": 3,
       "norm_label": "openkb purpose"
@@ -1333,6 +1543,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch.md",
+      "snippet": "# Component: instruction fetch\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.",
       "id": "section_sources_instruction_fetch_md_6_graphify_identity",
       "community": 3,
       "norm_label": "graphify identity"
@@ -1344,6 +1556,8 @@
       "source_location": "L12",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch.md",
+      "snippet": "This page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.",
       "id": "section_sources_instruction_fetch_md_12_referencing_documents",
       "community": 3,
       "norm_label": "referencing documents"
@@ -1355,6 +1569,8 @@
       "source_location": "L15",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch.md",
+      "snippet": "- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.\n- Preserve exact names and source paths.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints.",
       "id": "section_sources_instruction_fetch_md_15_referencing_sections",
       "community": 3,
       "norm_label": "referencing sections"
@@ -1366,6 +1582,8 @@
       "source_location": "L18",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch.md",
+      "snippet": "- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.\n- Preserve exact names and source paths.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints.",
       "id": "section_sources_instruction_fetch_md_18_openkb_curation_hints",
       "community": 3,
       "norm_label": "openkb curation hints"
@@ -1377,6 +1595,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_sources_instruction_fetch_rst_md",
       "community": 4,
       "norm_label": "sources/instruction_fetch_rst.md"
@@ -1402,6 +1622,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch_rst.md",
+      "snippet": "# Document: instruction_fetch.rst\n\n## Source\n- Graphify source file: `instruction_fetch.rst`\n- Original source: ``\n- Project: `instruction_fetch_rst`\n- Bytes: `5809`\n- Community: `0`",
       "id": "section_sources_instruction_fetch_rst_md_1_document_instruction_fetch_rst",
       "community": 0,
       "norm_label": "document: instruction fetch.rst"
@@ -1413,6 +1635,8 @@
       "source_location": "L3",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch_rst.md",
+      "snippet": "# Document: instruction_fetch.rst\n\n## Source\n- Graphify source file: `instruction_fetch.rst`\n- Original source: ``\n- Project: `instruction_fetch_rst`\n- Bytes: `5809`\n- Community: `0`\n\n## Sections",
       "id": "section_sources_instruction_fetch_rst_md_3_source",
       "community": 0,
       "norm_label": "source"
@@ -1424,6 +1648,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch_rst.md",
+      "snippet": "## Source\n- Graphify source file: `instruction_fetch.rst`\n- Original source: ``\n- Project: `instruction_fetch_rst`\n- Bytes: `5809`\n- Community: `0`\n\n## Sections\n- Instruction Fetch (instruction_fetch.rst:L3)\n- Branch Prediction (instruction_fetch.rst:L31)\n- Instruction-Side Memory Interface (instruction_fetch.rst:L41)\n- Misaligned Accesses (instruction_fetch.rst:L74)\n- Protocol (instruction_fetch.rst:L83)\n\n## OpenKB Curation Hints",
       "id": "section_sources_instruction_fetch_rst_md_10_sections",
       "community": 0,
       "norm_label": "sections"
@@ -1435,6 +1661,8 @@
       "source_location": "L17",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\instruction_fetch_rst.md",
+      "snippet": "## Sections\n- Instruction Fetch (instruction_fetch.rst:L3)\n- Branch Prediction (instruction_fetch.rst:L31)\n- Instruction-Side Memory Interface (instruction_fetch.rst:L41)\n- Misaligned Accesses (instruction_fetch.rst:L74)\n- Protocol (instruction_fetch.rst:L83)\n\n## OpenKB Curation Hints\n- This page is a source map, not a prose summary.\n- Use sections as anchors back to the raw specification corpus.",
       "id": "section_sources_instruction_fetch_rst_md_17_openkb_curation_hints",
       "community": 0,
       "norm_label": "openkb curation hints"
@@ -1446,6 +1674,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_sources_memory_md",
       "community": 4,
       "norm_label": "sources/memory.md"
@@ -1471,6 +1701,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\memory.md",
+      "snippet": "# Topic: memory\n\n## OpenKB Purpose\nThis page summarizes a Graphify topic cluster extracted from the spec graph.\n\n## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`",
       "id": "section_sources_memory_md_1_topic_memory",
       "community": 1,
       "norm_label": "topic: memory"
@@ -1482,6 +1714,8 @@
       "source_location": "L3",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\memory.md",
+      "snippet": "# Topic: memory\n\n## OpenKB Purpose\nThis page summarizes a Graphify topic cluster extracted from the spec graph.\n\n## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`\n\n## Mentioning Sections",
       "id": "section_sources_memory_md_3_openkb_purpose",
       "community": 1,
       "norm_label": "openkb purpose"
@@ -1493,6 +1727,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\memory.md",
+      "snippet": "# Topic: memory\n\n## OpenKB Purpose\nThis page summarizes a Graphify topic cluster extracted from the spec graph.\n\n## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`\n\n## Mentioning Sections\n- instruction fetch.rst (instruction_fetch.rst:L1)\n\n## OpenKB Curation Hints",
       "id": "section_sources_memory_md_6_graphify_identity",
       "community": 1,
       "norm_label": "graphify identity"
@@ -1504,6 +1740,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\memory.md",
+      "snippet": "## OpenKB Purpose\nThis page summarizes a Graphify topic cluster extracted from the spec graph.\n\n## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`\n\n## Mentioning Sections\n- instruction fetch.rst (instruction_fetch.rst:L1)\n\n## OpenKB Curation Hints\n- Convert repeated section references into a stable concept page.\n- Keep source paths as traceability anchors.",
       "id": "section_sources_memory_md_10_mentioning_sections",
       "community": 1,
       "norm_label": "mentioning sections"
@@ -1515,6 +1753,8 @@
       "source_location": "L13",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\memory.md",
+      "snippet": "## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`\n\n## Mentioning Sections\n- instruction fetch.rst (instruction_fetch.rst:L1)\n\n## OpenKB Curation Hints\n- Convert repeated section references into a stable concept page.\n- Keep source paths as traceability anchors.",
       "id": "section_sources_memory_md_13_openkb_curation_hints",
       "community": 1,
       "norm_label": "openkb curation hints"
@@ -1526,6 +1766,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_sources_pipeline_details_md",
       "community": 4,
       "norm_label": "sources/pipeline_details.md"
@@ -1551,6 +1793,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details.md",
+      "snippet": "# Component: pipeline details\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`",
       "id": "section_sources_pipeline_details_md_1_component_pipeline_details",
       "community": 7,
       "norm_label": "component: pipeline details"
@@ -1562,6 +1806,8 @@
       "source_location": "L3",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details.md",
+      "snippet": "# Component: pipeline details\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`",
       "id": "section_sources_pipeline_details_md_3_openkb_purpose",
       "community": 7,
       "norm_label": "openkb purpose"
@@ -1573,6 +1819,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details.md",
+      "snippet": "# Component: pipeline details\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.",
       "id": "section_sources_pipeline_details_md_6_graphify_identity",
       "community": 7,
       "norm_label": "graphify identity"
@@ -1584,6 +1832,8 @@
       "source_location": "L12",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details.md",
+      "snippet": "This page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.",
       "id": "section_sources_pipeline_details_md_12_referencing_documents",
       "community": 7,
       "norm_label": "referencing documents"
@@ -1595,6 +1845,8 @@
       "source_location": "L15",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details.md",
+      "snippet": "- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.\n- Preserve exact names and source paths.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints.",
       "id": "section_sources_pipeline_details_md_15_referencing_sections",
       "community": 7,
       "norm_label": "referencing sections"
@@ -1606,6 +1858,8 @@
       "source_location": "L18",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details.md",
+      "snippet": "- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.\n- Preserve exact names and source paths.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints.",
       "id": "section_sources_pipeline_details_md_18_openkb_curation_hints",
       "community": 7,
       "norm_label": "openkb curation hints"
@@ -1617,6 +1871,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_sources_pipeline_details_rst_md",
       "community": 4,
       "norm_label": "sources/pipeline_details_rst.md"
@@ -1642,6 +1898,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details_rst.md",
+      "snippet": "# Document: pipeline_details.rst\n\n## Source\n- Graphify source file: `pipeline_details.rst`\n- Original source: ``\n- Project: `pipeline_details_rst`\n- Bytes: `10483`\n- Community: `2`",
       "id": "section_sources_pipeline_details_rst_md_1_document_pipeline_details_rst",
       "community": 2,
       "norm_label": "document: pipeline details.rst"
@@ -1653,6 +1911,8 @@
       "source_location": "L3",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details_rst.md",
+      "snippet": "# Document: pipeline_details.rst\n\n## Source\n- Graphify source file: `pipeline_details.rst`\n- Original source: ``\n- Project: `pipeline_details_rst`\n- Bytes: `10483`\n- Community: `2`\n\n## Sections",
       "id": "section_sources_pipeline_details_rst_md_3_source",
       "community": 2,
       "norm_label": "source"
@@ -1664,6 +1924,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details_rst.md",
+      "snippet": "## Source\n- Graphify source file: `pipeline_details.rst`\n- Original source: ``\n- Project: `pipeline_details_rst`\n- Bytes: `10483`\n- Community: `2`\n\n## Sections\n- Pipeline Details (pipeline_details.rst:L9)\n- Third Pipeline Stage (pipeline_details.rst:L26)\n- Multi- and Single-Cycle Instructions (pipeline_details.rst:L32)\n\n## OpenKB Curation Hints\n- This page is a source map, not a prose summary.\n- Use sections as anchors back to the raw specification corpus.",
       "id": "section_sources_pipeline_details_rst_md_10_sections",
       "community": 2,
       "norm_label": "sections"
@@ -1675,6 +1937,8 @@
       "source_location": "L15",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\sources\\pipeline_details_rst.md",
+      "snippet": "- Bytes: `10483`\n- Community: `2`\n\n## Sections\n- Pipeline Details (pipeline_details.rst:L9)\n- Third Pipeline Stage (pipeline_details.rst:L26)\n- Multi- and Single-Cycle Instructions (pipeline_details.rst:L32)\n\n## OpenKB Curation Hints\n- This page is a source map, not a prose summary.\n- Use sections as anchors back to the raw specification corpus.",
       "id": "section_sources_pipeline_details_rst_md_15_openkb_curation_hints",
       "community": 2,
       "norm_label": "openkb curation hints"
@@ -1686,6 +1950,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "project",
+      "original_source": "",
+      "snippet": "",
       "id": "project_summaries",
       "community": 5,
       "norm_label": "project:summaries"
@@ -1697,6 +1963,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_summaries_00_graphify_spec_wiki_index_md",
       "community": 5,
       "norm_label": "summaries/00_graphify_spec_wiki_index.md"
@@ -1722,6 +1990,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\00_graphify_spec_wiki_index.md",
+      "snippet": "---\ndoc_type: short\nfull_text: sources/00_graphify_spec_wiki_index.md\n---\n\n# Graphify-derived Spec Wiki\n\nThis compact wiki was generated directly from the source file `spec-only-graphify/graph.json` and is designed for low-token input into the OpenKB system.\n\n## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2",
       "id": "section_summaries_00_graphify_spec_wiki_index_md_6_graphify_derived_spec_wiki",
       "community": 5,
       "norm_label": "graphify-derived spec wiki"
@@ -1733,6 +2003,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\00_graphify_spec_wiki_index.md",
+      "snippet": "doc_type: short\nfull_text: sources/00_graphify_spec_wiki_index.md\n---\n\n# Graphify-derived Spec Wiki\n\nThis compact wiki was generated directly from the source file `spec-only-graphify/graph.json` and is designed for low-token input into the OpenKB system.\n\n## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2\n- Exported topic pages: 1\n- Exported document map pages: 2\n\n## Strategy",
       "id": "section_summaries_00_graphify_spec_wiki_index_md_10_counts",
       "community": 5,
       "norm_label": "counts"
@@ -1744,6 +2016,8 @@
       "source_location": "L17",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\00_graphify_spec_wiki_index.md",
+      "snippet": "## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2\n- Exported topic pages: 1\n- Exported document map pages: 2\n\n## Strategy\n- Exact Graphify node ids, component names, source files, and section anchors must be preserved.\n- OpenKB should act primarily as a curator over this compact graph-derived content.\n- The full raw specification corpus should be avoided unless deeper evidence is required for a specific topic.",
       "id": "section_summaries_00_graphify_spec_wiki_index_md_17_strategy",
       "community": 5,
       "norm_label": "strategy"
@@ -1755,6 +2029,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_summaries_instruction_fetch_md",
       "community": 5,
       "norm_label": "summaries/instruction_fetch.md"
@@ -1780,6 +2056,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch.md",
+      "snippet": "---\ndoc_type: short\nfull_text: sources/instruction_fetch.md\n---\n\n# Component: instruction fetch\n\nThis page serves as a compact, Graphify-derived view of a spec or code entity candidate, intended for use as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`",
       "id": "section_summaries_instruction_fetch_md_6_component_instruction_fetch",
       "community": 3,
       "norm_label": "component: instruction fetch"
@@ -1791,6 +2069,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch.md",
+      "snippet": "doc_type: short\nfull_text: sources/instruction_fetch.md\n---\n\n# Component: instruction fetch\n\nThis page serves as a compact, Graphify-derived view of a spec or code entity candidate, intended for use as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Curation Hints\n- Treat this entry as an anchor for a component or entity.",
       "id": "section_summaries_instruction_fetch_md_10_graphify_identity",
       "community": 3,
       "norm_label": "graphify identity"
@@ -1802,6 +2082,8 @@
       "source_location": "L16",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch.md",
+      "snippet": "This page serves as a compact, Graphify-derived view of a spec or code entity candidate, intended for use as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Curation Hints\n- Treat this entry as an anchor for a component or entity.\n- Preserve exact names and source paths during curation.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints.\n\n## Related Concepts\n- [[concepts/knowledge-anchors]]",
       "id": "section_summaries_instruction_fetch_md_16_curation_hints",
       "community": 3,
       "norm_label": "curation hints"
@@ -1813,6 +2095,8 @@
       "source_location": "L21",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch.md",
+      "snippet": "- Community: `0`\n- Confidence score: `1.0`\n\n## Curation Hints\n- Treat this entry as an anchor for a component or entity.\n- Preserve exact names and source paths during curation.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints.\n\n## Related Concepts\n- [[concepts/knowledge-anchors]]",
       "id": "section_summaries_instruction_fetch_md_21_related_concepts",
       "community": 3,
       "norm_label": "related concepts"
@@ -1824,6 +2108,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_summaries_instruction_fetch_rst_md",
       "community": 5,
       "norm_label": "summaries/instruction_fetch_rst.md"
@@ -1849,6 +2135,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "---\ndoc_type: short\nfull_text: sources/instruction_fetch_rst.md\n---\n\n# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.",
       "id": "section_summaries_instruction_fetch_rst_md_6_instruction_fetch_specification_summary",
       "community": 8,
       "norm_label": "instruction fetch specification summary"
@@ -1860,6 +2148,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "doc_type: short\nfull_text: sources/instruction_fetch_rst.md\n---\n\n# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.",
       "id": "section_summaries_instruction_fetch_rst_md_10_overview",
       "community": 8,
       "norm_label": "overview"
@@ -1871,6 +2161,8 @@
       "source_location": "L14",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.",
       "id": "section_summaries_instruction_fetch_rst_md_14_key_topics",
       "community": 8,
       "norm_label": "key topics"
@@ -1882,6 +2174,8 @@
       "source_location": "L16",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "This document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.",
       "id": "section_summaries_instruction_fetch_rst_md_16_instruction_fetch",
       "community": 8,
       "norm_label": "instruction fetch"
@@ -1893,6 +2187,8 @@
       "source_location": "L19",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "This specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.",
       "id": "section_summaries_instruction_fetch_rst_md_19_branch_prediction",
       "community": 8,
       "norm_label": "branch prediction"
@@ -1904,6 +2200,8 @@
       "source_location": "L22",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.",
       "id": "section_summaries_instruction_fetch_rst_md_22_instruction_side_memory_interface",
       "community": 8,
       "norm_label": "instruction-side memory interface"
@@ -1915,6 +2213,8 @@
       "source_location": "L25",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "Details concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping",
       "id": "section_summaries_instruction_fetch_rst_md_25_misaligned_accesses",
       "community": 8,
       "norm_label": "misaligned accesses"
@@ -1926,6 +2226,8 @@
       "source_location": "L28",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "Information related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n## Related Concepts",
       "id": "section_summaries_instruction_fetch_rst_md_28_protocol",
       "community": 8,
       "norm_label": "protocol"
@@ -1937,6 +2239,8 @@
       "source_location": "L31",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "Specification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n## Related Concepts\n- [[concepts/instruction-fetch]]\n- [[concepts/branch-prediction]]\n- [[concepts/instruction-side-memory-interface]]",
       "id": "section_summaries_instruction_fetch_rst_md_31_source_mapping",
       "community": 8,
       "norm_label": "source mapping"
@@ -1948,6 +2252,8 @@
       "source_location": "L35",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\instruction_fetch_rst.md",
+      "snippet": "### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n## Related Concepts\n- [[concepts/instruction-fetch]]\n- [[concepts/branch-prediction]]\n- [[concepts/instruction-side-memory-interface]]\n- [[concepts/misaligned-accesses]]\n- [[concepts/protocol-instruction-fetch]]\n- [[concepts/knowledge-anchors]]",
       "id": "section_summaries_instruction_fetch_rst_md_35_related_concepts",
       "community": 8,
       "norm_label": "related concepts"
@@ -1959,6 +2265,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_summaries_memory_md",
       "community": 5,
       "norm_label": "summaries/memory.md"
@@ -1984,6 +2292,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\memory.md",
+      "snippet": "---\ndoc_type: short\nfull_text: sources/memory.md\n---\n\n# Memory Topic Summary\n\nThis document summarizes the topic cluster for 'memory' extracted from the spec graph, defining its identity and providing curation guidelines for the OpenKB process.\n\n## Graphify Identity\n- **Node id**: `topic_memory`\n- **Community**: `0`",
       "id": "section_summaries_memory_md_6_memory_topic_summary",
       "community": 1,
       "norm_label": "memory topic summary"
@@ -1995,6 +2305,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\memory.md",
+      "snippet": "doc_type: short\nfull_text: sources/memory.md\n---\n\n# Memory Topic Summary\n\nThis document summarizes the topic cluster for 'memory' extracted from the spec graph, defining its identity and providing curation guidelines for the OpenKB process.\n\n## Graphify Identity\n- **Node id**: `topic_memory`\n- **Community**: `0`\n\n## Context and References\n- This topic cluster was extracted from the spec graph.\n- It mentions related instructions found in `instruction_fetch.rst`.",
       "id": "section_summaries_memory_md_10_graphify_identity",
       "community": 1,
       "norm_label": "graphify identity"
@@ -2006,6 +2318,8 @@
       "source_location": "L14",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\memory.md",
+      "snippet": "# Memory Topic Summary\n\nThis document summarizes the topic cluster for 'memory' extracted from the spec graph, defining its identity and providing curation guidelines for the OpenKB process.\n\n## Graphify Identity\n- **Node id**: `topic_memory`\n- **Community**: `0`\n\n## Context and References\n- This topic cluster was extracted from the spec graph.\n- It mentions related instructions found in `instruction_fetch.rst`.\n\n## OpenKB Curation Hints\n- Repeated section references should be converted into stable concept pages to improve cross-linking.\n- Source paths must be maintained as traceability anchors for all references.",
       "id": "section_summaries_memory_md_14_context_and_references",
       "community": 1,
       "norm_label": "context and references"
@@ -2017,6 +2331,8 @@
       "source_location": "L18",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\memory.md",
+      "snippet": "## Graphify Identity\n- **Node id**: `topic_memory`\n- **Community**: `0`\n\n## Context and References\n- This topic cluster was extracted from the spec graph.\n- It mentions related instructions found in `instruction_fetch.rst`.\n\n## OpenKB Curation Hints\n- Repeated section references should be converted into stable concept pages to improve cross-linking.\n- Source paths must be maintained as traceability anchors for all references.\n\n## Related Concepts\n- [[concepts/topic-memory]]",
       "id": "section_summaries_memory_md_18_openkb_curation_hints",
       "community": 1,
       "norm_label": "openkb curation hints"
@@ -2028,6 +2344,8 @@
       "source_location": "L22",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\memory.md",
+      "snippet": "## Context and References\n- This topic cluster was extracted from the spec graph.\n- It mentions related instructions found in `instruction_fetch.rst`.\n\n## OpenKB Curation Hints\n- Repeated section references should be converted into stable concept pages to improve cross-linking.\n- Source paths must be maintained as traceability anchors for all references.\n\n## Related Concepts\n- [[concepts/topic-memory]]",
       "id": "section_summaries_memory_md_22_related_concepts",
       "community": 1,
       "norm_label": "related concepts"
@@ -2039,6 +2357,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_summaries_pipeline_details_md",
       "community": 7,
       "norm_label": "summaries/pipeline_details.md"
@@ -2064,6 +2384,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\pipeline_details.md",
+      "snippet": "---\ndoc_type: short\nfull_text: sources/pipeline_details.md\n---\n\n# Component: pipeline details\n\nThis document serves as a compact, Graphify-derived view of a spec or code entity candidate, intended as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`",
       "id": "section_summaries_pipeline_details_md_6_component_pipeline_details",
       "community": 7,
       "norm_label": "component: pipeline details"
@@ -2075,6 +2397,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\pipeline_details.md",
+      "snippet": "doc_type: short\nfull_text: sources/pipeline_details.md\n---\n\n# Component: pipeline details\n\nThis document serves as a compact, Graphify-derived view of a spec or code entity candidate, intended as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Curation Hints\n- This entity should be treated as an anchor for components/entities.",
       "id": "section_summaries_pipeline_details_md_10_graphify_identity",
       "community": 7,
       "norm_label": "graphify identity"
@@ -2086,6 +2410,8 @@
       "source_location": "L16",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\pipeline_details.md",
+      "snippet": "This document serves as a compact, Graphify-derived view of a spec or code entity candidate, intended as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Curation Hints\n- This entity should be treated as an anchor for components/entities.\n- Exact names and source paths must be preserved.\n- Linked sections should be used as evidence for requirements, verification, and integration constraints.",
       "id": "section_summaries_pipeline_details_md_16_curation_hints",
       "community": 7,
       "norm_label": "curation hints"
@@ -2097,6 +2423,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_summaries_pipeline_details_rst_md",
       "community": 5,
       "norm_label": "summaries/pipeline_details_rst.md"
@@ -2122,6 +2450,8 @@
       "source_location": "L6",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\pipeline_details_rst.md",
+      "snippet": "---\ndoc_type: short\nfull_text: sources/pipeline_details_rst.md\n---\n\n# Pipeline Details Summary\n\nThis document acts as a source map, providing structured details regarding the pipeline specification.\n\n## Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided at this section.\n\n## Third Pipeline Stage",
       "id": "section_summaries_pipeline_details_rst_md_6_pipeline_details_summary",
       "community": 2,
       "norm_label": "pipeline details summary"
@@ -2133,6 +2463,8 @@
       "source_location": "L10",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\pipeline_details_rst.md",
+      "snippet": "doc_type: short\nfull_text: sources/pipeline_details_rst.md\n---\n\n# Pipeline Details Summary\n\nThis document acts as a source map, providing structured details regarding the pipeline specification.\n\n## Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided at this section.\n\n## Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here.\n\n## Multi- and Single-Cycle Instructions\nSpecifications for handling multi-cycle and single-cycle instructions are detailed in this section.",
       "id": "section_summaries_pipeline_details_rst_md_10_pipeline_details",
       "community": 2,
       "norm_label": "pipeline details"
@@ -2144,6 +2476,8 @@
       "source_location": "L13",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\pipeline_details_rst.md",
+      "snippet": "# Pipeline Details Summary\n\nThis document acts as a source map, providing structured details regarding the pipeline specification.\n\n## Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided at this section.\n\n## Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here.\n\n## Multi- and Single-Cycle Instructions\nSpecifications for handling multi-cycle and single-cycle instructions are detailed in this section.\n\n*Source Reference: [[pipeline_details_rst]]*",
       "id": "section_summaries_pipeline_details_rst_md_13_third_pipeline_stage",
       "community": 2,
       "norm_label": "third pipeline stage"
@@ -2155,6 +2489,8 @@
       "source_location": "L16",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\pipeline_details_rst.md",
+      "snippet": "This document acts as a source map, providing structured details regarding the pipeline specification.\n\n## Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided at this section.\n\n## Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here.\n\n## Multi- and Single-Cycle Instructions\nSpecifications for handling multi-cycle and single-cycle instructions are detailed in this section.\n\n*Source Reference: [[pipeline_details_rst]]*\n\n## Related Concepts\n- [[concepts/pipeline-stages----Pipeline-Stages]]\n- [[concepts/instruction-fetch]]",
       "id": "section_summaries_pipeline_details_rst_md_16_multi_and_single_cycle_instructions",
       "community": 2,
       "norm_label": "multi- and single-cycle instructions"
@@ -2166,6 +2502,8 @@
       "source_location": "L21",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki\\summaries\\pipeline_details_rst.md",
+      "snippet": "## Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here.\n\n## Multi- and Single-Cycle Instructions\nSpecifications for handling multi-cycle and single-cycle instructions are detailed in this section.\n\n*Source Reference: [[pipeline_details_rst]]*\n\n## Related Concepts\n- [[concepts/pipeline-stages----Pipeline-Stages]]\n- [[concepts/instruction-fetch]]\n- [[concepts/protocol-instruction-fetch]]\n- [[concepts/instruction-fetch]]\n- [[concepts/protocol-instruction-fetch]]\n- [[concepts/instruction-side-memory-interface]]",
       "id": "section_summaries_pipeline_details_rst_md_21_related_concepts",
       "community": 2,
       "norm_label": "related concepts"

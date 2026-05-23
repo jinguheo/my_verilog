@@ -10,6 +10,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "corpus",
+      "original_source": "",
+      "snippet": "",
       "id": "spec_corpus",
       "community": 1,
       "norm_label": "spec documents corpus"
@@ -21,6 +23,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_instruction_fetch",
       "community": 0,
       "norm_label": "component:instruction_fetch"
@@ -32,6 +36,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "component",
+      "original_source": "",
+      "snippet": "",
       "id": "component_pipeline_details",
       "community": 2,
       "norm_label": "component:pipeline_details"
@@ -43,6 +49,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "project",
+      "original_source": "",
+      "snippet": "",
       "id": "project_instruction_fetch_rst",
       "community": 1,
       "norm_label": "project:instruction_fetch_rst"
@@ -54,6 +62,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_instruction_fetch_rst_root",
       "community": 1,
       "norm_label": "instruction_fetch_rst/root"
@@ -79,6 +89,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "topic",
+      "original_source": "",
+      "snippet": "",
       "id": "topic_memory",
       "community": 0,
       "norm_label": "topic:memory"
@@ -90,6 +102,8 @@
       "source_location": "L3",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_mini_docs\\instruction_fetch.rst",
+      "snippet": ".. _instruction-fetch:\n\nInstruction Fetch\n=================\n:file:`rtl/ibex_if_stage.sv.`\n\n.. figure:: images/if_stage.svg\n   :name: if_stage\n   :align: center",
       "id": "section_instruction_fetch_rst_3_instruction_fetch",
       "community": 0,
       "norm_label": "instruction fetch"
@@ -101,6 +115,8 @@
       "source_location": "L31",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_mini_docs\\instruction_fetch.rst",
+      "snippet": "If Ibex has been configured with an instruction cache (parameter ICache == 1), then the prefetch buffer is replaced by the icache module (:ref:`icache`).\nThe interfaces of the icache module are the same as the prefetch buffer with two additions.\nFirstly, a signal to enable the cache which is driven from a custom CSR.\nSecondly a signal to the flush the cache which is set every time a ``fence.i`` instruction is executed.\n\n.. _branch-prediction:\n\nBranch Prediction\n-----------------\n\nIbex can be configured to use static branch prediction by setting the ``BranchPrediction`` parameter to 1.\nThis improves performance by predicting that any branch with a negative offset is taken and that any branch with a positive offset is not.\nWhen successful, the prediction removes a stall cycle from a taken branch.\nHowever, there is a mis-predict penalty if a branch is wrongly predicted to be taken.\nThis penalty is at least one cycle, or at least two cycles if the instruction following the branch is uncompressed and not aligned.",
       "id": "section_instruction_fetch_rst_31_branch_prediction",
       "community": 0,
       "norm_label": "branch prediction"
@@ -112,6 +128,8 @@
       "source_location": "L41",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_mini_docs\\instruction_fetch.rst",
+      "snippet": "Ibex can be configured to use static branch prediction by setting the ``BranchPrediction`` parameter to 1.\nThis improves performance by predicting that any branch with a negative offset is taken and that any branch with a positive offset is not.\nWhen successful, the prediction removes a stall cycle from a taken branch.\nHowever, there is a mis-predict penalty if a branch is wrongly predicted to be taken.\nThis penalty is at least one cycle, or at least two cycles if the instruction following the branch is uncompressed and not aligned.\nThis feature is *EXPERIMENTAL* and its effects are not yet fully documented.\n\nInstruction-Side Memory Interface\n---------------------------------\n\nThe following table describes the signals that are used to fetch instructions.\nThis interface is a simplified version of the interface used on the data interface as described in :ref:`load-store-unit`.\nThe main difference is that the instruction interface does not allow for write transactions and thus needs less signals.\n\n.. tabularcolumns:: |p{4cm}|l|p{9cm}|",
       "id": "section_instruction_fetch_rst_41_instruction_side_memory_interface",
       "community": 0,
       "norm_label": "instruction-side memory interface"
@@ -123,6 +141,8 @@
       "source_location": "L74",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_mini_docs\\instruction_fetch.rst",
+      "snippet": "| ``instr_rdata_i[31:0]``     | input     | Data read from memory                         |\n+-----------------------------+-----------+-----------------------------------------------+\n| ``instr_rdata_intg_i[6:0]`` | input     | Data integrity bits from memory               |\n+-----------------------------+-----------+-----------------------------------------------+\n| ``instr_err_i``             | input     | Memory access error                           |\n+-----------------------------+-----------+-----------------------------------------------+\n\n\nMisaligned Accesses\n-------------------\n\nExternally, the IF interface performs word-aligned instruction fetches only.\nMisaligned instruction fetches are handled by performing two separate word-aligned instruction fetches.\nInternally, the core can deal with both word- and half-word-aligned instruction addresses to support compressed instructions.\nThe LSB of the instruction address is ignored internally.",
       "id": "section_instruction_fetch_rst_74_misaligned_accesses",
       "community": 0,
       "norm_label": "misaligned accesses"
@@ -134,6 +154,8 @@
       "source_location": "L83",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_mini_docs\\instruction_fetch.rst",
+      "snippet": "-------------------\n\nExternally, the IF interface performs word-aligned instruction fetches only.\nMisaligned instruction fetches are handled by performing two separate word-aligned instruction fetches.\nInternally, the core can deal with both word- and half-word-aligned instruction addresses to support compressed instructions.\nThe LSB of the instruction address is ignored internally.\n\n\nProtocol\n--------\n\nThe protocol used to communicate with the instruction cache or the instruction memory is very similar to the protocol used by the LSU on the data interface of Ibex.\nSee the description of the LSU in :ref:`LSU Protocol<lsu-protocol>` for details about this protocol.",
       "id": "section_instruction_fetch_rst_83_protocol",
       "community": 0,
       "norm_label": "protocol"
@@ -145,6 +167,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "project",
+      "original_source": "",
+      "snippet": "",
       "id": "project_pipeline_details_rst",
       "community": 1,
       "norm_label": "project:pipeline_details_rst"
@@ -156,6 +180,8 @@
       "source_location": "L1",
       "confidence_score": 1.0,
       "role": "category",
+      "original_source": "",
+      "snippet": "",
       "id": "category_pipeline_details_rst_root",
       "community": 1,
       "norm_label": "pipeline_details_rst/root"
@@ -181,6 +207,8 @@
       "source_location": "L9",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_mini_docs\\pipeline_details.rst",
+      "snippet": ".. _pipeline-details:\n\n.. figure:: images/blockdiagram.svg\n   :name: ibex-pipeline\n   :align: center\n\n   Ibex Pipeline\n\nPipeline Details\n================\nIbex has a 2-stage pipeline, the 2 stages are:\n\nInstruction Fetch (IF)\n  Fetches instructions from memory via a prefetch buffer, capable of fetching 1 instruction per cycle if the instruction side memory system allows. See :ref:`instruction-fetch` for details.\n\nInstruction Decode and Execute (ID/EX)",
       "id": "section_pipeline_details_rst_9_pipeline_details",
       "community": 2,
       "norm_label": "pipeline details"
@@ -192,6 +220,8 @@
       "source_location": "L26",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_mini_docs\\pipeline_details.rst",
+      "snippet": "Multi-cycle instructions will stall this stage until they are complete See :ref:`instruction-decode-execute` for details.\n\nAll instructions require two cycles minimum to pass down the pipeline.\nOne cycle in the IF stage and one in the ID/EX stage.\nNot all instructions can complete in the ID/EX stage in one cycle so will stall there until they complete.\nThis means the maximum IPC (Instructions per Cycle) Ibex can achieve is 1 when multi-cycle instructions aren't used.\nSee Multi- and Single-Cycle Instructions below for the details.\n\nThird Pipeline Stage\n--------------------\nIbex can be configured to have a third pipeline stage (Writeback) which has major effects on performance and instruction behaviour.\nThe details of its impact are not yet documented here.\nAll of the information presented below applies only to the two stage pipeline provided in the default configurations.\n\nMulti- and Single-Cycle Instructions\n------------------------------------",
       "id": "section_pipeline_details_rst_26_third_pipeline_stage",
       "community": 2,
       "norm_label": "third pipeline stage"
@@ -203,6 +233,8 @@
       "source_location": "L32",
       "confidence_score": 1.0,
       "role": "section",
+      "original_source": "D:\\MyWork\\verilog\\out\\ibex_mini_docs\\pipeline_details.rst",
+      "snippet": "See Multi- and Single-Cycle Instructions below for the details.\n\nThird Pipeline Stage\n--------------------\nIbex can be configured to have a third pipeline stage (Writeback) which has major effects on performance and instruction behaviour.\nThe details of its impact are not yet documented here.\nAll of the information presented below applies only to the two stage pipeline provided in the default configurations.\n\nMulti- and Single-Cycle Instructions\n------------------------------------\n\nIn the table below when an instruction stalls for X cycles X + 1 cycles pass before a new instruction enters the ID/EX stage.\nSome instructions stall for a variable time, this is indicated as a range e.g. 1 - N means the instruction stalls a minimum of 1 cycle with an indeterminate maximum cycles.\nRead the description for more information.\n\n+-----------------------+--------------------------------------+-------------------------------------------------------------+",
       "id": "section_pipeline_details_rst_32_multi_and_single_cycle_instructions",
       "community": 2,
       "norm_label": "multi- and single-cycle instructions"

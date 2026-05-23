@@ -1,0 +1,2502 @@
+{
+  "summary": {
+    "source_graph": "dbs\\graphify-out\\ibex-graphify-openkb-graphify\\graph.json",
+    "documents": 22,
+    "sections": 120,
+    "components": 20,
+    "topics": 1,
+    "roles": [
+      [
+        "section",
+        120
+      ],
+      [
+        "category",
+        22
+      ],
+      [
+        "document",
+        22
+      ],
+      [
+        "component",
+        20
+      ],
+      [
+        "project",
+        5
+      ],
+      [
+        "corpus",
+        1
+      ],
+      [
+        "topic",
+        1
+      ]
+    ],
+    "document_kinds": [
+      [
+        "doc",
+        21
+      ],
+      [
+        "interface",
+        1
+      ]
+    ],
+    "projects": [
+      [
+        "concepts",
+        8
+      ],
+      [
+        "sources",
+        6
+      ],
+      [
+        "summaries",
+        6
+      ],
+      [
+        "index_md",
+        1
+      ],
+      [
+        "log_md",
+        1
+      ]
+    ],
+    "relations": [
+      [
+        "references_component",
+        182
+      ],
+      [
+        "contains",
+        169
+      ],
+      [
+        "documents_component",
+        155
+      ],
+      [
+        "mentions_topic",
+        18
+      ]
+    ]
+  },
+  "pages": [
+    {
+      "id": "doc_concepts_branch_prediction_md",
+      "label": "branch-prediction.md",
+      "role": "document",
+      "source_file": "concepts/branch-prediction.md",
+      "source_location": "L1",
+      "community": "6",
+      "project": "concepts",
+      "kind": "doc",
+      "bytes": 1729,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_branch_prediction_md_6_instruction_fetch_specification_summary",
+          "label": "Instruction Fetch Specification Summary",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L6",
+          "community": "6",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/instruction_fetch_rst.md]\nbrief: This document maps the specifications for instruction fetching, branch prediction, memory interfaces, and access protocols.\n---\n\n# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols."
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_10_overview",
+          "label": "Overview",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L10",
+          "community": "6",
+          "line": 10,
+          "snippet": "sources: [summaries/instruction_fetch_rst.md]\nbrief: This document maps the specifications for instruction fetching, branch prediction, memory interfaces, and access protocols.\n---\n\n# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material."
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_14_key_topics",
+          "label": "Key Topics",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L14",
+          "community": "6",
+          "line": 14,
+          "snippet": "# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution."
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_16_instruction_fetch",
+          "label": "Instruction Fetch",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L16",
+          "community": "6",
+          "line": 16,
+          "snippet": "This document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures."
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_19_branch_prediction",
+          "label": "Branch Prediction",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L19",
+          "community": "6",
+          "line": 19,
+          "snippet": "This specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries."
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_22_instruction_side_memory_interface",
+          "label": "Instruction-Side Memory Interface",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L22",
+          "community": "6",
+          "line": 22,
+          "snippet": "## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations."
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_25_misaligned_accesses",
+          "label": "Misaligned Accesses",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L25",
+          "community": "6",
+          "line": 25,
+          "snippet": "Details concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping"
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_28_protocol",
+          "label": "Protocol",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L28",
+          "community": "6",
+          "line": 28,
+          "snippet": "Information related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n### Structure"
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_31_source_mapping",
+          "label": "Source Mapping",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L31",
+          "community": "6",
+          "line": 31,
+          "snippet": "Specification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n### Structure\n\n*   **Instruction Fetch** (instruction_fetch.rst:L3)\n*   **Branch Prediction** (instruction_fetch.rst:L31)"
+        },
+        {
+          "id": "section_concepts_branch_prediction_md_35_structure",
+          "label": "Structure",
+          "role": "section",
+          "source_file": "concepts/branch-prediction.md",
+          "source_location": "L35",
+          "community": "6",
+          "line": 35,
+          "snippet": "### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n### Structure\n\n*   **Instruction Fetch** (instruction_fetch.rst:L3)\n*   **Branch Prediction** (instruction_fetch.rst:L31)\n*   **Instruction-Side Memory Interface** (instruction_fetch.rst:L41)\n*   **Misaligned Accesses** (instruction_fetch.rst:L74)\n*   **Protocol** (instruction_fetch.rst:L83)"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:branch",
+          "count": 11
+        },
+        {
+          "label": "component:prediction",
+          "count": 11
+        },
+        {
+          "label": "component:accesses",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:misaligned",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        },
+        {
+          "label": "component:side",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_concepts_instruction_fetch_md",
+      "label": "instruction-fetch.md",
+      "role": "document",
+      "source_file": "concepts/instruction-fetch.md",
+      "source_location": "L1",
+      "community": "",
+      "project": "concepts",
+      "kind": "doc",
+      "bytes": 2652,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_instruction_fetch_md_6_instruction_fetch_mechanism",
+          "label": "Instruction Fetch Mechanism",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L6",
+          "community": "",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction Fetch Mechanism retrieves instructions, incorporating details about pipeline stages and instruction cycle types.\n---\n\n# Instruction Fetch Mechanism\n\nThe Instruction Fetch Mechanism encompasses the processes and interfaces required to retrieve instructions and associated data from memory into the execution unit, operating within the context of the overall pipeline structure.\n\n## Overview\n\nThe mechanism defines how the system handles the core tasks of instruction fetching, prediction, and memory access interfaces related to instructions, specifically how these operations interact with the pipeline stages and instruction execution cycles."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_md_10_overview",
+          "label": "Overview",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L10",
+          "community": "",
+          "line": 10,
+          "snippet": "sources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction Fetch Mechanism retrieves instructions, incorporating details about pipeline stages and instruction cycle types.\n---\n\n# Instruction Fetch Mechanism\n\nThe Instruction Fetch Mechanism encompasses the processes and interfaces required to retrieve instructions and associated data from memory into the execution unit, operating within the context of the overall pipeline structure.\n\n## Overview\n\nThe mechanism defines how the system handles the core tasks of instruction fetching, prediction, and memory access interfaces related to instructions, specifically how these operations interact with the pipeline stages and instruction execution cycles.\n\n## Pipeline Context\n\nInstruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]]."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_md_14_pipeline_context",
+          "label": "Pipeline Context",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L14",
+          "community": "",
+          "line": 14,
+          "snippet": "# Instruction Fetch Mechanism\n\nThe Instruction Fetch Mechanism encompasses the processes and interfaces required to retrieve instructions and associated data from memory into the execution unit, operating within the context of the overall pipeline structure.\n\n## Overview\n\nThe mechanism defines how the system handles the core tasks of instruction fetching, prediction, and memory access interfaces related to instructions, specifically how these operations interact with the pipeline stages and instruction execution cycles.\n\n## Pipeline Context\n\nInstruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]].\n\n### Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage"
+        },
+        {
+          "id": "section_concepts_instruction_fetch_md_18_pipeline_details",
+          "label": "Pipeline Details",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L18",
+          "community": "",
+          "line": 18,
+          "snippet": "## Overview\n\nThe mechanism defines how the system handles the core tasks of instruction fetching, prediction, and memory access interfaces related to instructions, specifically how these operations interact with the pipeline stages and instruction execution cycles.\n\n## Pipeline Context\n\nInstruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]].\n\n### Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_md_21_third_pipeline_stage",
+          "label": "Third Pipeline Stage",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L21",
+          "community": "",
+          "line": 21,
+          "snippet": "## Pipeline Context\n\nInstruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]].\n\n### Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components"
+        },
+        {
+          "id": "section_concepts_instruction_fetch_md_24_instruction_cycles",
+          "label": "Instruction Cycles",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L24",
+          "community": "",
+          "line": 24,
+          "snippet": "Instruction fetching is tightly coupled with the overall pipeline architecture, which dictates timing and flow. Specific details about the pipeline structure and stages are documented in [[summaries/pipeline_details_rst]].\n\n### Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_md_27_key_components",
+          "label": "Key Components",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L27",
+          "community": "",
+          "line": 27,
+          "snippet": "Details concerning the overall structure and configuration of the pipeline are provided here, defining the boundaries and flow for instruction fetching.\n\n### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory.\n\n### Branch Prediction\nMechanisms are implemented to predict the flow of execution, specifically handling branches encountered during instruction fetching."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_md_29_instruction_fetch",
+          "label": "Instruction Fetch",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L29",
+          "community": "",
+          "line": 29,
+          "snippet": "### Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here, which impacts when and how instructions are fetched and processed.\n\n### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory.\n\n### Branch Prediction\nMechanisms are implemented to predict the flow of execution, specifically handling branches encountered during instruction fetching.\n\n### Instruction-Side Memory Interface\nThis interface specifies the mechanism used to access memory directly from the instruction stream or instruction-related structures."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_md_32_branch_prediction",
+          "label": "Branch Prediction",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L32",
+          "community": "",
+          "line": 32,
+          "snippet": "### Instruction Cycles\nSpecifications for handling multi-cycle and single-cycle instructions are detailed here, defining the nature of the instructions that the fetch mechanism must handle.\n\n## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory.\n\n### Branch Prediction\nMechanisms are implemented to predict the flow of execution, specifically handling branches encountered during instruction fetching.\n\n### Instruction-Side Memory Interface\nThis interface specifies the mechanism used to access memory directly from the instruction stream or instruction-related structures.\n\n### Misaligned Accesses\nRules for managing memory accesses that do not align with standard boundaries, ensuring correct handling of instruction data."
+        },
+        {
+          "id": "section_concepts_instruction_fetch_md_35_instruction_side_memory_interface",
+          "label": "Instruction-Side Memory Interface",
+          "role": "section",
+          "source_file": "concepts/instruction-fetch.md",
+          "source_location": "L35",
+          "community": "",
+          "line": 35,
+          "snippet": "## Key Components\n\n### Instruction Fetch\nThis is the core process for retrieving instructions from memory.\n\n### Branch Prediction\nMechanisms are implemented to predict the flow of execution, specifically handling branches encountered during instruction fetching.\n\n### Instruction-Side Memory Interface\nThis interface specifies the mechanism used to access memory directly from the instruction stream or instruction-related structures.\n\n### Misaligned Accesses\nRules for managing memory accesses that do not align with standard boundaries, ensuring correct handling of instruction data.\n\n### Protocol\nDetails the operational protocol governing the synchronization and execution of these instruction fetching and memory access operations."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:fetch",
+          "count": 11
+        },
+        {
+          "label": "component:instruction",
+          "count": 11
+        },
+        {
+          "label": "component:accesses",
+          "count": 1
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:misaligned",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details_rst",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        },
+        {
+          "label": "component:side",
+          "count": 1
+        },
+        {
+          "label": "component:stages",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_concepts_instruction_side_memory_interface_md",
+      "label": "instruction-side-memory-interface.md",
+      "role": "document",
+      "source_file": "concepts/instruction-side-memory-interface.md",
+      "source_location": "L1",
+      "community": "1",
+      "project": "concepts",
+      "kind": "interface",
+      "bytes": 1008,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_instruction_side_memory_interface_md_6_instruction_side_memory_interface",
+          "label": "Instruction-Side Memory Interface",
+          "role": "section",
+          "source_file": "concepts/instruction-side-memory-interface.md",
+          "source_location": "L6",
+          "community": "1",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction-Side Memory Interface defines the mechanism for accessing memory directly from the instruction stream.\n---\n\n# Instruction-Side Memory Interface\n\n## Definition\n\nThe Instruction-Side Memory Interface is a critical component specifying how memory is accessed directly from the instruction stream or related internal structures.\n\n## Role in Instruction Fetching"
+        },
+        {
+          "id": "section_concepts_instruction_side_memory_interface_md_8_definition",
+          "label": "Definition",
+          "role": "section",
+          "source_file": "concepts/instruction-side-memory-interface.md",
+          "source_location": "L8",
+          "community": "1",
+          "line": 8,
+          "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction-Side Memory Interface defines the mechanism for accessing memory directly from the instruction stream.\n---\n\n# Instruction-Side Memory Interface\n\n## Definition\n\nThe Instruction-Side Memory Interface is a critical component specifying how memory is accessed directly from the instruction stream or related internal structures.\n\n## Role in Instruction Fetching\n\nThis interface is integral to the overall instruction fetching process, providing the necessary mechanisms for the processor to retrieve instructions and associated data."
+        },
+        {
+          "id": "section_concepts_instruction_side_memory_interface_md_12_role_in_instruction_fetching",
+          "label": "Role in Instruction Fetching",
+          "role": "section",
+          "source_file": "concepts/instruction-side-memory-interface.md",
+          "source_location": "L12",
+          "community": "1",
+          "line": 12,
+          "snippet": "---\n\n# Instruction-Side Memory Interface\n\n## Definition\n\nThe Instruction-Side Memory Interface is a critical component specifying how memory is accessed directly from the instruction stream or related internal structures.\n\n## Role in Instruction Fetching\n\nThis interface is integral to the overall instruction fetching process, providing the necessary mechanisms for the processor to retrieve instructions and associated data.\n\n## Context\n\nThis concept is defined within the context of the overall instruction fetching specification, which also covers topics such as branch prediction and memory access rules."
+        },
+        {
+          "id": "section_concepts_instruction_side_memory_interface_md_16_context",
+          "label": "Context",
+          "role": "section",
+          "source_file": "concepts/instruction-side-memory-interface.md",
+          "source_location": "L16",
+          "community": "1",
+          "line": 16,
+          "snippet": "## Definition\n\nThe Instruction-Side Memory Interface is a critical component specifying how memory is accessed directly from the instruction stream or related internal structures.\n\n## Role in Instruction Fetching\n\nThis interface is integral to the overall instruction fetching process, providing the necessary mechanisms for the processor to retrieve instructions and associated data.\n\n## Context\n\nThis concept is defined within the context of the overall instruction fetching specification, which also covers topics such as branch prediction and memory access rules.\n\n## Related Concepts\n\n* [[concepts/branch_prediction]]\n* [[concepts/protocol]]"
+        },
+        {
+          "id": "section_concepts_instruction_side_memory_interface_md_20_related_concepts",
+          "label": "Related Concepts",
+          "role": "section",
+          "source_file": "concepts/instruction-side-memory-interface.md",
+          "source_location": "L20",
+          "community": "1",
+          "line": 20,
+          "snippet": "## Role in Instruction Fetching\n\nThis interface is integral to the overall instruction fetching process, providing the necessary mechanisms for the processor to retrieve instructions and associated data.\n\n## Context\n\nThis concept is defined within the context of the overall instruction fetching specification, which also covers topics such as branch prediction and memory access rules.\n\n## Related Concepts\n\n* [[concepts/branch_prediction]]\n* [[concepts/protocol]]\n* [[summaries/instruction_fetch_rst]]\n\nSee also: [[summaries/pipeline_details_rst]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:instruction",
+          "count": 6
+        },
+        {
+          "label": "component:memory",
+          "count": 6
+        },
+        {
+          "label": "component:side",
+          "count": 6
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details_rst",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_concepts_knowledge_anchors_md",
+      "label": "knowledge-anchors.md",
+      "role": "document",
+      "source_file": "concepts/knowledge-anchors.md",
+      "source_location": "L1",
+      "community": "3",
+      "project": "concepts",
+      "kind": "doc",
+      "bytes": 1902,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_knowledge_anchors_md_6_knowledge_anchors_and_entities",
+          "label": "Knowledge Anchors and Entities",
+          "role": "section",
+          "source_file": "concepts/knowledge-anchors.md",
+          "source_location": "L6",
+          "community": "3",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/instruction_fetch_rst.md, summaries/instruction_fetch.md]\nbrief: Knowledge anchors define curated views of information used as anchors for OpenKB processing and source curation.\n---\n\n# Knowledge Anchors and Entities\n\nKnowledge Anchors and Entities are core mechanisms used to define specific, curated views of information candidates within the knowledge base, serving as anchors for OpenKB processing.\n\nThese anchors allow for the creation of compact, high-confidence views—often derived from graph structures—that serve as effective input for systems like OpenKB, rather than raw source material.\n\n## Purpose"
+        },
+        {
+          "id": "section_concepts_knowledge_anchors_md_12_purpose",
+          "label": "Purpose",
+          "role": "section",
+          "source_file": "concepts/knowledge-anchors.md",
+          "source_location": "L12",
+          "community": "3",
+          "line": 12,
+          "snippet": "---\n\n# Knowledge Anchors and Entities\n\nKnowledge Anchors and Entities are core mechanisms used to define specific, curated views of information candidates within the knowledge base, serving as anchors for OpenKB processing.\n\nThese anchors allow for the creation of compact, high-confidence views—often derived from graph structures—that serve as effective input for systems like OpenKB, rather than raw source material.\n\n## Purpose\n\nThe primary goal of establishing knowledge anchors is to distill complex source documents into actionable, low-token representations that provide context for downstream knowledge graph or reasoning tasks.\n\n## Application in Curation\n\nWhen curating documents, anchors help define how a source entity should be treated:"
+        },
+        {
+          "id": "section_concepts_knowledge_anchors_md_16_application_in_curation",
+          "label": "Application in Curation",
+          "role": "section",
+          "source_file": "concepts/knowledge-anchors.md",
+          "source_location": "L16",
+          "community": "3",
+          "line": 16,
+          "snippet": "Knowledge Anchors and Entities are core mechanisms used to define specific, curated views of information candidates within the knowledge base, serving as anchors for OpenKB processing.\n\nThese anchors allow for the creation of compact, high-confidence views—often derived from graph structures—that serve as effective input for systems like OpenKB, rather than raw source material.\n\n## Purpose\n\nThe primary goal of establishing knowledge anchors is to distill complex source documents into actionable, low-token representations that provide context for downstream knowledge graph or reasoning tasks.\n\n## Application in Curation\n\nWhen curating documents, anchors help define how a source entity should be treated:\n\n*   **Entity Anchoring:** Treating a specific piece of data or code as a fixed point for reference.\n*   **Curation Hints:** Using linked sections from the source as evidence for requirements, verification topics, and integration constraints.\n\nFor example, a specific entry like `component_instruction_fetch` acts as an anchor, providing identity (Node ID, Role, Confidence Score) and curation guidance."
+        },
+        {
+          "id": "section_concepts_knowledge_anchors_md_29_related_documents",
+          "label": "Related Documents",
+          "role": "section",
+          "source_file": "concepts/knowledge-anchors.md",
+          "source_location": "L29",
+          "community": "3",
+          "line": 29,
+          "snippet": "*   **Curation Hints:** Using linked sections from the source as evidence for requirements, verification topics, and integration constraints.\n\nFor example, a specific entry like `component_instruction_fetch` acts as an anchor, providing identity (Node ID, Role, Confidence Score) and curation guidance.\n\nThis application is crucial when processing technical specifications. For instance, a document like [[summaries/instruction_fetch]] uses sections to map specific points within the original specification corpus, demonstrating how anchors are used to guide the ingestion and processing of source documents, ensuring the knowledge base utilizes high-quality, anchored information rather than relying solely on raw text.\n\n[[summaries/instruction_fetch]]\n\n## Related Documents\n- [[summaries/instruction_fetch_rst]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:anchors",
+          "count": 5
+        },
+        {
+          "label": "component:knowledge",
+          "count": 5
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_concepts_misaligned_accesses_md",
+      "label": "misaligned-accesses.md",
+      "role": "document",
+      "source_file": "concepts/misaligned-accesses.md",
+      "source_location": "L1",
+      "community": "",
+      "project": "concepts",
+      "kind": "doc",
+      "bytes": 1230,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_misaligned_accesses_md_6_misaligned_memory_accesses",
+          "label": "Misaligned Memory Accesses",
+          "role": "section",
+          "source_file": "concepts/misaligned-accesses.md",
+          "source_location": "L6",
+          "community": "",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/instruction_fetch_rst.md]\nbrief: Misaligned memory accesses refer to handling memory accesses that do not adhere to standard alignment boundaries.\n---\n\n# Misaligned Memory Accesses\n\nMisaligned memory accesses refer to the rules and handling procedures required when memory accesses do not align with standard boundaries within the system.\n\nThis concept is governed by the overall instruction fetching and memory access [[Protocol]].\n\n## Context"
+        },
+        {
+          "id": "section_concepts_misaligned_accesses_md_12_context",
+          "label": "Context",
+          "role": "section",
+          "source_file": "concepts/misaligned-accesses.md",
+          "source_location": "L12",
+          "community": "",
+          "line": 12,
+          "snippet": "---\n\n# Misaligned Memory Accesses\n\nMisaligned memory accesses refer to the rules and handling procedures required when memory accesses do not align with standard boundaries within the system.\n\nThis concept is governed by the overall instruction fetching and memory access [[Protocol]].\n\n## Context\n\nThese access procedures are critical components of the system's memory management and instruction execution, specifically related to the [[Instruction-Side Memory Interface]].\n\n## Key Considerations\n\n*   **Handling Misalignment**: The specification defines the rules for managing accesses that violate standard alignment. \n*   **Instruction Fetch**: Misaligned accesses directly impact the process of instruction fetching and execution."
+        },
+        {
+          "id": "section_concepts_misaligned_accesses_md_16_key_considerations",
+          "label": "Key Considerations",
+          "role": "section",
+          "source_file": "concepts/misaligned-accesses.md",
+          "source_location": "L16",
+          "community": "",
+          "line": 16,
+          "snippet": "Misaligned memory accesses refer to the rules and handling procedures required when memory accesses do not align with standard boundaries within the system.\n\nThis concept is governed by the overall instruction fetching and memory access [[Protocol]].\n\n## Context\n\nThese access procedures are critical components of the system's memory management and instruction execution, specifically related to the [[Instruction-Side Memory Interface]].\n\n## Key Considerations\n\n*   **Handling Misalignment**: The specification defines the rules for managing accesses that violate standard alignment. \n*   **Instruction Fetch**: Misaligned accesses directly impact the process of instruction fetching and execution.\n*   **Branch Prediction**: The handling of these accesses may interact with branch prediction mechanisms.\n\n## References"
+        },
+        {
+          "id": "section_concepts_misaligned_accesses_md_22_references",
+          "label": "References",
+          "role": "section",
+          "source_file": "concepts/misaligned-accesses.md",
+          "source_location": "L22",
+          "community": "",
+          "line": 22,
+          "snippet": "These access procedures are critical components of the system's memory management and instruction execution, specifically related to the [[Instruction-Side Memory Interface]].\n\n## Key Considerations\n\n*   **Handling Misalignment**: The specification defines the rules for managing accesses that violate standard alignment. \n*   **Instruction Fetch**: Misaligned accesses directly impact the process of instruction fetching and execution.\n*   **Branch Prediction**: The handling of these accesses may interact with branch prediction mechanisms.\n\n## References\n\n*   See the detailed source mapping in [[summaries/instruction_fetch_rst]] for specific points.\n*   Related concepts include [[concepts/attention]] and the overall [[Protocol]]."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:accesses",
+          "count": 5
+        },
+        {
+          "label": "component:misaligned",
+          "count": 5
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        },
+        {
+          "label": "component:side",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_concepts_pipeline_stages_pipeline_stages_md",
+      "label": "pipeline-stages----Pipeline-Stages.md",
+      "role": "document",
+      "source_file": "concepts/pipeline-stages----Pipeline-Stages.md",
+      "source_location": "L1",
+      "community": "2",
+      "project": "concepts",
+      "kind": "doc",
+      "bytes": 1132,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_pipeline_stages_pipeline_stages_md_6_pipeline_stages",
+          "label": "Pipeline Stages",
+          "role": "section",
+          "source_file": "concepts/pipeline-stages----Pipeline-Stages.md",
+          "source_location": "L6",
+          "community": "2",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/pipeline_details_rst.md]\nbrief: Pipeline stages define the structural components and specific instructions governing the flow of data through the pipeline.\n---\n\n# Pipeline Stages\n\nPipeline stages represent the distinct phases or components within the overall data processing pipeline. Understanding these stages is crucial for configuring the pipeline correctly and managing instruction flow.\n\n## Overview\n\nDetailed information regarding the overall structure and configuration of the pipeline is documented in the source document [[pipeline_details_rst]]."
+        },
+        {
+          "id": "section_concepts_pipeline_stages_pipeline_stages_md_10_overview",
+          "label": "Overview",
+          "role": "section",
+          "source_file": "concepts/pipeline-stages----Pipeline-Stages.md",
+          "source_location": "L10",
+          "community": "2",
+          "line": 10,
+          "snippet": "sources: [summaries/pipeline_details_rst.md]\nbrief: Pipeline stages define the structural components and specific instructions governing the flow of data through the pipeline.\n---\n\n# Pipeline Stages\n\nPipeline stages represent the distinct phases or components within the overall data processing pipeline. Understanding these stages is crucial for configuring the pipeline correctly and managing instruction flow.\n\n## Overview\n\nDetailed information regarding the overall structure and configuration of the pipeline is documented in the source document [[pipeline_details_rst]].\n\n## Specific Stages\n\nSpecific focus areas include:"
+        },
+        {
+          "id": "section_concepts_pipeline_stages_pipeline_stages_md_14_specific_stages",
+          "label": "Specific Stages",
+          "role": "section",
+          "source_file": "concepts/pipeline-stages----Pipeline-Stages.md",
+          "source_location": "L14",
+          "community": "2",
+          "line": 14,
+          "snippet": "# Pipeline Stages\n\nPipeline stages represent the distinct phases or components within the overall data processing pipeline. Understanding these stages is crucial for configuring the pipeline correctly and managing instruction flow.\n\n## Overview\n\nDetailed information regarding the overall structure and configuration of the pipeline is documented in the source document [[pipeline_details_rst]].\n\n## Specific Stages\n\nSpecific focus areas include:\n\n*   **Third Pipeline Stage**: Detailed specifications for the third stage of the pipeline are documented separately. Refer to the details found in [[summaries/pipeline_details_rst]].\n\n## Instruction Handling"
+        },
+        {
+          "id": "section_concepts_pipeline_stages_pipeline_stages_md_20_instruction_handling",
+          "label": "Instruction Handling",
+          "role": "section",
+          "source_file": "concepts/pipeline-stages----Pipeline-Stages.md",
+          "source_location": "L20",
+          "community": "2",
+          "line": 20,
+          "snippet": "Detailed information regarding the overall structure and configuration of the pipeline is documented in the source document [[pipeline_details_rst]].\n\n## Specific Stages\n\nSpecific focus areas include:\n\n*   **Third Pipeline Stage**: Detailed specifications for the third stage of the pipeline are documented separately. Refer to the details found in [[summaries/pipeline_details_rst]].\n\n## Instruction Handling\n\nSpecifications related to how instructions are handled within these stages, including multi-cycle and single-cycle instructions, are also defined within the pipeline details.\n\n*   [[Multi- and Single-Cycle Instructions]]\n\n*Source Reference: [[pipeline_details_rst]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:pipeline",
+          "count": 5
+        },
+        {
+          "label": "component:stages",
+          "count": 5
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details_rst",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_concepts_protocol_instruction_fetch_md",
+      "label": "protocol-instruction-fetch.md",
+      "role": "document",
+      "source_file": "concepts/protocol-instruction-fetch.md",
+      "source_location": "L1",
+      "community": "",
+      "project": "concepts",
+      "kind": "doc",
+      "bytes": 2221,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_6_instruction_fetch_protocol",
+          "label": "Instruction Fetch Protocol",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L6",
+          "community": "",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction Fetch Protocol governs instruction retrieval coordinated across the pipeline stages and memory access interfaces.\n---\n\n# Instruction Fetch Protocol\n\n## Overview\n\nThe Instruction Fetch Protocol governs the operational sequence and rules for the entire instruction fetching and associated memory access operations within the system, coordinating these actions with the overall pipeline structure.\n\n## Key Mechanisms"
+        },
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_8_overview",
+          "label": "Overview",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L8",
+          "community": "",
+          "line": 8,
+          "snippet": "---\nsources: [summaries/pipeline_details_rst.md, summaries/instruction_fetch_rst.md]\nbrief: The Instruction Fetch Protocol governs instruction retrieval coordinated across the pipeline stages and memory access interfaces.\n---\n\n# Instruction Fetch Protocol\n\n## Overview\n\nThe Instruction Fetch Protocol governs the operational sequence and rules for the entire instruction fetching and associated memory access operations within the system, coordinating these actions with the overall pipeline structure.\n\n## Key Mechanisms\n\nThis protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages."
+        },
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_12_key_mechanisms",
+          "label": "Key Mechanisms",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L12",
+          "community": "",
+          "line": 12,
+          "snippet": "---\n\n# Instruction Fetch Protocol\n\n## Overview\n\nThe Instruction Fetch Protocol governs the operational sequence and rules for the entire instruction fetching and associated memory access operations within the system, coordinating these actions with the overall pipeline structure.\n\n## Key Mechanisms\n\nThis protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages.\n\n### Instruction Fetch\nThis involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface"
+        },
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_16_instruction_fetch",
+          "label": "Instruction Fetch",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L16",
+          "community": "",
+          "line": 16,
+          "snippet": "## Overview\n\nThe Instruction Fetch Protocol governs the operational sequence and rules for the entire instruction fetching and associated memory access operations within the system, coordinating these actions with the overall pipeline structure.\n\n## Key Mechanisms\n\nThis protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages.\n\n### Instruction Fetch\nThis involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface\nAccess to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval."
+        },
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_19_memory_interface",
+          "label": "Memory Interface",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L19",
+          "community": "",
+          "line": 19,
+          "snippet": "## Key Mechanisms\n\nThis protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages.\n\n### Instruction Fetch\nThis involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface\nAccess to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]]."
+        },
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_22_pipeline_coordination",
+          "label": "Pipeline Coordination",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L22",
+          "community": "",
+          "line": 22,
+          "snippet": "This protocol dictates how the system coordinates instruction retrieval with the instruction-side memory interface and handles potential memory access issues across the pipeline stages.\n\n### Instruction Fetch\nThis involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface\nAccess to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions."
+        },
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_25_access_management",
+          "label": "Access Management",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L25",
+          "community": "",
+          "line": 25,
+          "snippet": "This involves the core process of retrieving instructions, which is the foundation of the protocol.\n\n### Memory Interface\nAccess to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions.\n\n### Branch Prediction Interaction\nThe protocol must integrate with mechanisms like Branch Prediction to ensure accurate instruction flow and prediction during fetching."
+        },
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_28_instruction_cycle_handling",
+          "label": "Instruction Cycle Handling",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L28",
+          "community": "",
+          "line": 28,
+          "snippet": "Access to memory is mediated through the Instruction-Side Memory Interface, which is critical for fetching instruction data.\n\n### Pipeline Coordination\nThe fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions.\n\n### Branch Prediction Interaction\nThe protocol must integrate with mechanisms like Branch Prediction to ensure accurate instruction flow and prediction during fetching.\n\n## Relations"
+        },
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_31_branch_prediction_interaction",
+          "label": "Branch Prediction Interaction",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L31",
+          "community": "",
+          "line": 31,
+          "snippet": "The fetching process is closely tied to the pipeline stages, such as the [[pipeline_details_rst]]'s definition of the pipeline structure, which influences the timing and scope of instruction retrieval.\n\n### Access Management\nSpecific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions.\n\n### Branch Prediction Interaction\nThe protocol must integrate with mechanisms like Branch Prediction to ensure accurate instruction flow and prediction during fetching.\n\n## Relations\n\nThe protocol coordinates the interactions between instruction fetching, the instruction-side memory interface, pipeline coordination, and error handling procedures like managing [[concepts/misaligned_accesses]].\n\n**Related Documents:**"
+        },
+        {
+          "id": "section_concepts_protocol_instruction_fetch_md_34_relations",
+          "label": "Relations",
+          "role": "section",
+          "source_file": "concepts/protocol-instruction-fetch.md",
+          "source_location": "L34",
+          "community": "",
+          "line": 34,
+          "snippet": "Specific protocols are necessary to manage exceptions and rules related to memory alignment, particularly concerning [[concepts/misaligned_accesses]].\n\n### Instruction Cycle Handling\nThe protocol must accommodate different instruction execution models, managing the flow for both multi-cycle and single-cycle instructions as detailed in the [[pipeline_details_rst]]'s handling of multi- and single-cycle instructions.\n\n### Branch Prediction Interaction\nThe protocol must integrate with mechanisms like Branch Prediction to ensure accurate instruction flow and prediction during fetching.\n\n## Relations\n\nThe protocol coordinates the interactions between instruction fetching, the instruction-side memory interface, pipeline coordination, and error handling procedures like managing [[concepts/misaligned_accesses]].\n\n**Related Documents:**\n- [[summaries/instruction_fetch_rst]]\n- [[pipeline_details_rst]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:fetch",
+          "count": 11
+        },
+        {
+          "label": "component:instruction",
+          "count": 11
+        },
+        {
+          "label": "component:protocol",
+          "count": 11
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details_rst",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:side",
+          "count": 1
+        },
+        {
+          "label": "component:stages",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_concepts_topic_memory_md",
+      "label": "topic-memory.md",
+      "role": "document",
+      "source_file": "concepts/topic-memory.md",
+      "source_location": "L1",
+      "community": "1",
+      "project": "concepts",
+      "kind": "doc",
+      "bytes": 1088,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_concepts_topic_memory_md_6_memory_topic_cluster",
+          "label": "Memory Topic Cluster",
+          "role": "section",
+          "source_file": "concepts/topic-memory.md",
+          "source_location": "L6",
+          "community": "1",
+          "line": 6,
+          "snippet": "---\nsources: [summaries/memory.md]\nbrief: The Memory Topic Cluster defines the identity and curation guidelines for the 'memory' topic extracted from the spec graph.\n---\n\n# Memory Topic Cluster\n\nThis concept defines the identity and necessary curation guidelines for the 'memory' topic cluster, which was extracted from the spec graph.\n\n## Identity\n\n*   **Node ID**: `topic_memory`\n*   **Community**: `0`"
+        },
+        {
+          "id": "section_concepts_topic_memory_md_10_identity",
+          "label": "Identity",
+          "role": "section",
+          "source_file": "concepts/topic-memory.md",
+          "source_location": "L10",
+          "community": "1",
+          "line": 10,
+          "snippet": "sources: [summaries/memory.md]\nbrief: The Memory Topic Cluster defines the identity and curation guidelines for the 'memory' topic extracted from the spec graph.\n---\n\n# Memory Topic Cluster\n\nThis concept defines the identity and necessary curation guidelines for the 'memory' topic cluster, which was extracted from the spec graph.\n\n## Identity\n\n*   **Node ID**: `topic_memory`\n*   **Community**: `0`\n\n## Context\n\nThis cluster represents a specific topic extracted from the spec graph and relates to the detailed content found in [[summaries/memory]]."
+        },
+        {
+          "id": "section_concepts_topic_memory_md_15_context",
+          "label": "Context",
+          "role": "section",
+          "source_file": "concepts/topic-memory.md",
+          "source_location": "L15",
+          "community": "1",
+          "line": 15,
+          "snippet": "This concept defines the identity and necessary curation guidelines for the 'memory' topic cluster, which was extracted from the spec graph.\n\n## Identity\n\n*   **Node ID**: `topic_memory`\n*   **Community**: `0`\n\n## Context\n\nThis cluster represents a specific topic extracted from the spec graph and relates to the detailed content found in [[summaries/memory]].\n\n## Curation Guidelines\n\nThe following hints are provided to guide the OpenKB curation process for this topic:"
+        },
+        {
+          "id": "section_concepts_topic_memory_md_19_curation_guidelines",
+          "label": "Curation Guidelines",
+          "role": "section",
+          "source_file": "concepts/topic-memory.md",
+          "source_location": "L19",
+          "community": "1",
+          "line": 19,
+          "snippet": "*   **Node ID**: `topic_memory`\n*   **Community**: `0`\n\n## Context\n\nThis cluster represents a specific topic extracted from the spec graph and relates to the detailed content found in [[summaries/memory]].\n\n## Curation Guidelines\n\nThe following hints are provided to guide the OpenKB curation process for this topic:\n\n1.  **Concept Conversion**: Repeated section references should be consolidated into stable concept pages to enhance cross-linking.\n2.  **Traceability**: Source paths must be maintained as traceability anchors for all references to ensure clear traceability back to the original documents.\n\nThis concept serves as a guideline for how related topics should be structured within the knowledge base."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:memory",
+          "count": 5
+        },
+        {
+          "label": "component:topic",
+          "count": 5
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:knowledge",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_index_md",
+      "label": "index.md",
+      "role": "document",
+      "source_file": "index.md",
+      "source_location": "L1",
+      "community": "2",
+      "project": "index_md",
+      "kind": "doc",
+      "bytes": 2393,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_index_md_1_knowledge_base_index",
+          "label": "Knowledge Base Index",
+          "role": "section",
+          "source_file": "index.md",
+          "source_location": "L1",
+          "community": "2",
+          "line": 1,
+          "snippet": "# Knowledge Base Index\n\n## Documents\n- [[summaries/memory]] (short) — This page summarizes the Graphify topic cluster for 'memory' and provides OpenKB curation hints.\n- [[summaries/pipeline_details_rst]] (short) — This document serves as a source map detailing the specific structure, stages, and instruction types within the pipeline specification.\n- [[summaries/instruction_fetch_rst]] (short) — This document serves as a source map detailing the structure of instruction fetching, memory interfaces, branch prediction, and access handling protocols.\n- [[summaries/pipeline_details]] (short) — This page provides a Graphify-derived, curated view of a component entity candidate for OpenKB input.\n- [[summaries/instruction_fetch]] (short) — This document defines a component anchor for instruction fetch used as compact input for OpenKB."
+        },
+        {
+          "id": "section_index_md_3_documents",
+          "label": "Documents",
+          "role": "section",
+          "source_file": "index.md",
+          "source_location": "L3",
+          "community": "2",
+          "line": 3,
+          "snippet": "# Knowledge Base Index\n\n## Documents\n- [[summaries/memory]] (short) — This page summarizes the Graphify topic cluster for 'memory' and provides OpenKB curation hints.\n- [[summaries/pipeline_details_rst]] (short) — This document serves as a source map detailing the specific structure, stages, and instruction types within the pipeline specification.\n- [[summaries/instruction_fetch_rst]] (short) — This document serves as a source map detailing the structure of instruction fetching, memory interfaces, branch prediction, and access handling protocols.\n- [[summaries/pipeline_details]] (short) — This page provides a Graphify-derived, curated view of a component entity candidate for OpenKB input.\n- [[summaries/instruction_fetch]] (short) — This document defines a component anchor for instruction fetch used as compact input for OpenKB.\n- [[summaries/00_graphify_spec_wiki_index]] (short) — This wiki serves as a compact, graph-derived index for the Graphify specification, prioritizing data retention and curation."
+        },
+        {
+          "id": "section_index_md_11_concepts",
+          "label": "Concepts",
+          "role": "section",
+          "source_file": "index.md",
+          "source_location": "L11",
+          "community": "2",
+          "line": 11,
+          "snippet": "## Documents\n- [[summaries/memory]] (short) — This page summarizes the Graphify topic cluster for 'memory' and provides OpenKB curation hints.\n- [[summaries/pipeline_details_rst]] (short) — This document serves as a source map detailing the specific structure, stages, and instruction types within the pipeline specification.\n- [[summaries/instruction_fetch_rst]] (short) — This document serves as a source map detailing the structure of instruction fetching, memory interfaces, branch prediction, and access handling protocols.\n- [[summaries/pipeline_details]] (short) — This page provides a Graphify-derived, curated view of a component entity candidate for OpenKB input.\n- [[summaries/instruction_fetch]] (short) — This document defines a component anchor for instruction fetch used as compact input for OpenKB.\n- [[summaries/00_graphify_spec_wiki_index]] (short) — This wiki serves as a compact, graph-derived index for the Graphify specification, prioritizing data retention and curation.\n\n## Concepts\n- [[concepts/topic-memory]] — The Memory Topic Cluster defines the identity and curation guidelines for the 'memory' topic extracted from the spec graph.\n- [[concepts/pipeline-stages----Pipeline-Stages]] — Pipeline stages define the structural components and specific instructions governing the flow of data through the pipeline.\n- [[concepts/protocol-instruction-fetch]] — The Instruction Fetch Protocol governs instruction retrieval coordinated across the pipeline stages and memory access interfaces.\n- [[concepts/misaligned-accesses]] — Misaligned memory accesses refer to handling memory accesses that do not adhere to standard alignment boundaries.\n- [[concepts/instruction-side-memory-interface]] — The Instruction-Side Memory Interface defines the mechanism for accessing memory directly from the instruction stream.\n- [[concepts/branch-prediction]] — This document maps the specifications for instruction fetching, branch prediction, memory interfaces, and access protocols.\n- [[concepts/instruction-fetch]] — The Instruction Fetch Mechanism retrieves instructions, incorporating details about pipeline stages and instruction cycle types."
+        },
+        {
+          "id": "section_index_md_21_explorations",
+          "label": "Explorations",
+          "role": "section",
+          "source_file": "index.md",
+          "source_location": "L21",
+          "community": "2",
+          "line": 21,
+          "snippet": "- [[concepts/pipeline-stages----Pipeline-Stages]] — Pipeline stages define the structural components and specific instructions governing the flow of data through the pipeline.\n- [[concepts/protocol-instruction-fetch]] — The Instruction Fetch Protocol governs instruction retrieval coordinated across the pipeline stages and memory access interfaces.\n- [[concepts/misaligned-accesses]] — Misaligned memory accesses refer to handling memory accesses that do not adhere to standard alignment boundaries.\n- [[concepts/instruction-side-memory-interface]] — The Instruction-Side Memory Interface defines the mechanism for accessing memory directly from the instruction stream.\n- [[concepts/branch-prediction]] — This document maps the specifications for instruction fetching, branch prediction, memory interfaces, and access protocols.\n- [[concepts/instruction-fetch]] — The Instruction Fetch Mechanism retrieves instructions, incorporating details about pipeline stages and instruction cycle types.\n- [[concepts/knowledge-anchors]] — Knowledge anchors define curated views of information used as anchors for OpenKB processing and source curation.\n\n## Explorations"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:00_graphify_spec_wiki_index",
+          "count": 1
+        },
+        {
+          "label": "component:accesses",
+          "count": 1
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 1
+        },
+        {
+          "label": "component:knowledge",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:misaligned",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details_rst",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        },
+        {
+          "label": "component:side",
+          "count": 1
+        },
+        {
+          "label": "component:stages",
+          "count": 1
+        },
+        {
+          "label": "component:topic",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_log_md",
+      "label": "log.md",
+      "role": "document",
+      "source_file": "log.md",
+      "source_location": "L1",
+      "community": "9",
+      "project": "log_md",
+      "kind": "doc",
+      "bytes": 373,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_log_md_1_operations_log",
+          "label": "Operations Log",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L1",
+          "community": "9",
+          "line": 1,
+          "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md"
+        },
+        {
+          "id": "section_log_md_3_2026_05_23_16_36_00_ingest_00_graphify_spec_wiki_index_md",
+          "label": "2026-05-23 16:36:00 ingest | 00 graphify spec wiki index.md",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L3",
+          "community": "9",
+          "line": 3,
+          "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md"
+        },
+        {
+          "id": "section_log_md_5_2026_05_23_16_36_28_ingest_instruction_fetch_md",
+          "label": "2026-05-23 16:36:28 ingest | instruction fetch.md",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L5",
+          "community": "9",
+          "line": 5,
+          "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md"
+        },
+        {
+          "id": "section_log_md_7_2026_05_23_16_36_48_ingest_pipeline_details_md",
+          "label": "2026-05-23 16:36:48 ingest | pipeline details.md",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L7",
+          "community": "9",
+          "line": 7,
+          "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md\n\n## [2026-05-23 16:39:12] ingest | memory.md"
+        },
+        {
+          "id": "section_log_md_9_2026_05_23_16_37_59_ingest_instruction_fetch_rst_md",
+          "label": "2026-05-23 16:37:59 ingest | instruction fetch rst.md",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L9",
+          "community": "9",
+          "line": 9,
+          "snippet": "# Operations Log\n\n## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md\n\n## [2026-05-23 16:39:12] ingest | memory.md"
+        },
+        {
+          "id": "section_log_md_11_2026_05_23_16_38_41_ingest_pipeline_details_rst_md",
+          "label": "2026-05-23 16:38:41 ingest | pipeline details rst.md",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L11",
+          "community": "9",
+          "line": 11,
+          "snippet": "## [2026-05-23 16:36:00] ingest | 00_graphify_spec_wiki_index.md\n\n## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md\n\n## [2026-05-23 16:39:12] ingest | memory.md"
+        },
+        {
+          "id": "section_log_md_13_2026_05_23_16_39_12_ingest_memory_md",
+          "label": "2026-05-23 16:39:12 ingest | memory.md",
+          "role": "section",
+          "source_file": "log.md",
+          "source_location": "L13",
+          "community": "9",
+          "line": 13,
+          "snippet": "## [2026-05-23 16:36:28] ingest | instruction_fetch.md\n\n## [2026-05-23 16:36:48] ingest | pipeline_details.md\n\n## [2026-05-23 16:37:59] ingest | instruction_fetch_rst.md\n\n## [2026-05-23 16:38:41] ingest | pipeline_details_rst.md\n\n## [2026-05-23 16:39:12] ingest | memory.md"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:log",
+          "count": 8
+        },
+        {
+          "label": "component:00_graphify_spec_wiki_index",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details_rst",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_sources_00_graphify_spec_wiki_index_md",
+      "label": "00_graphify_spec_wiki_index.md",
+      "role": "document",
+      "source_file": "sources/00_graphify_spec_wiki_index.md",
+      "source_location": "L1",
+      "community": "5",
+      "project": "sources",
+      "kind": "doc",
+      "bytes": 552,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_sources_00_graphify_spec_wiki_index_md_1_graphify_derived_spec_wiki",
+          "label": "Graphify-derived Spec Wiki",
+          "role": "section",
+          "source_file": "sources/00_graphify_spec_wiki_index.md",
+          "source_location": "L1",
+          "community": "5",
+          "line": 1,
+          "snippet": "# Graphify-derived Spec Wiki\n\nThis compact wiki was generated from `spec-only-graphify/graph.json` and is intended as low-token OpenKB input.\n\n## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2"
+        },
+        {
+          "id": "section_sources_00_graphify_spec_wiki_index_md_5_counts",
+          "label": "Counts",
+          "role": "section",
+          "source_file": "sources/00_graphify_spec_wiki_index.md",
+          "source_location": "L5",
+          "community": "5",
+          "line": 5,
+          "snippet": "# Graphify-derived Spec Wiki\n\nThis compact wiki was generated from `spec-only-graphify/graph.json` and is intended as low-token OpenKB input.\n\n## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2\n- Exported topic pages: 1\n- Exported document map pages: 2\n\n## Strategy"
+        },
+        {
+          "id": "section_sources_00_graphify_spec_wiki_index_md_12_strategy",
+          "label": "Strategy",
+          "role": "section",
+          "source_file": "sources/00_graphify_spec_wiki_index.md",
+          "source_location": "L12",
+          "community": "5",
+          "line": 12,
+          "snippet": "## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2\n- Exported topic pages: 1\n- Exported document map pages: 2\n\n## Strategy\n- Keep exact Graphify node ids, component names, source files, and section anchors.\n- Use OpenKB only as a curator over this compact graph-derived wiki.\n- Avoid sending the full raw spec corpus unless a topic needs deeper evidence."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:00_graphify_spec_wiki_index",
+          "count": 4
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:topic",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_sources_instruction_fetch_md",
+      "label": "instruction_fetch.md",
+      "role": "document",
+      "source_file": "sources/instruction_fetch.md",
+      "source_location": "L1",
+      "community": "3",
+      "project": "sources",
+      "kind": "doc",
+      "bytes": 695,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_sources_instruction_fetch_md_1_component_instruction_fetch",
+          "label": "Component: instruction fetch",
+          "role": "section",
+          "source_file": "sources/instruction_fetch.md",
+          "source_location": "L1",
+          "community": "3",
+          "line": 1,
+          "snippet": "# Component: instruction fetch\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`"
+        },
+        {
+          "id": "section_sources_instruction_fetch_md_3_openkb_purpose",
+          "label": "OpenKB Purpose",
+          "role": "section",
+          "source_file": "sources/instruction_fetch.md",
+          "source_location": "L3",
+          "community": "3",
+          "line": 3,
+          "snippet": "# Component: instruction fetch\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`"
+        },
+        {
+          "id": "section_sources_instruction_fetch_md_6_graphify_identity",
+          "label": "Graphify Identity",
+          "role": "section",
+          "source_file": "sources/instruction_fetch.md",
+          "source_location": "L6",
+          "community": "3",
+          "line": 6,
+          "snippet": "# Component: instruction fetch\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph."
+        },
+        {
+          "id": "section_sources_instruction_fetch_md_12_referencing_documents",
+          "label": "Referencing Documents",
+          "role": "section",
+          "source_file": "sources/instruction_fetch.md",
+          "source_location": "L12",
+          "community": "3",
+          "line": 12,
+          "snippet": "This page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor."
+        },
+        {
+          "id": "section_sources_instruction_fetch_md_15_referencing_sections",
+          "label": "Referencing Sections",
+          "role": "section",
+          "source_file": "sources/instruction_fetch.md",
+          "source_location": "L15",
+          "community": "3",
+          "line": 15,
+          "snippet": "- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.\n- Preserve exact names and source paths.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints."
+        },
+        {
+          "id": "section_sources_instruction_fetch_md_18_openkb_curation_hints",
+          "label": "OpenKB Curation Hints",
+          "role": "section",
+          "source_file": "sources/instruction_fetch.md",
+          "source_location": "L18",
+          "community": "3",
+          "line": 18,
+          "snippet": "- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.\n- Preserve exact names and source paths.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:instruction_fetch",
+          "count": 7
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_sources_instruction_fetch_rst_md",
+      "label": "instruction_fetch_rst.md",
+      "role": "document",
+      "source_file": "sources/instruction_fetch_rst.md",
+      "source_location": "L1",
+      "community": "",
+      "project": "sources",
+      "kind": "doc",
+      "bytes": 603,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_sources_instruction_fetch_rst_md_1_document_instruction_fetch_rst",
+          "label": "Document: instruction fetch.rst",
+          "role": "section",
+          "source_file": "sources/instruction_fetch_rst.md",
+          "source_location": "L1",
+          "community": "",
+          "line": 1,
+          "snippet": "# Document: instruction_fetch.rst\n\n## Source\n- Graphify source file: `instruction_fetch.rst`\n- Original source: ``\n- Project: `instruction_fetch_rst`\n- Bytes: `5809`\n- Community: `0`"
+        },
+        {
+          "id": "section_sources_instruction_fetch_rst_md_3_source",
+          "label": "Source",
+          "role": "section",
+          "source_file": "sources/instruction_fetch_rst.md",
+          "source_location": "L3",
+          "community": "",
+          "line": 3,
+          "snippet": "# Document: instruction_fetch.rst\n\n## Source\n- Graphify source file: `instruction_fetch.rst`\n- Original source: ``\n- Project: `instruction_fetch_rst`\n- Bytes: `5809`\n- Community: `0`\n\n## Sections"
+        },
+        {
+          "id": "section_sources_instruction_fetch_rst_md_10_sections",
+          "label": "Sections",
+          "role": "section",
+          "source_file": "sources/instruction_fetch_rst.md",
+          "source_location": "L10",
+          "community": "",
+          "line": 10,
+          "snippet": "## Source\n- Graphify source file: `instruction_fetch.rst`\n- Original source: ``\n- Project: `instruction_fetch_rst`\n- Bytes: `5809`\n- Community: `0`\n\n## Sections\n- Instruction Fetch (instruction_fetch.rst:L3)\n- Branch Prediction (instruction_fetch.rst:L31)\n- Instruction-Side Memory Interface (instruction_fetch.rst:L41)\n- Misaligned Accesses (instruction_fetch.rst:L74)\n- Protocol (instruction_fetch.rst:L83)\n\n## OpenKB Curation Hints"
+        },
+        {
+          "id": "section_sources_instruction_fetch_rst_md_17_openkb_curation_hints",
+          "label": "OpenKB Curation Hints",
+          "role": "section",
+          "source_file": "sources/instruction_fetch_rst.md",
+          "source_location": "L17",
+          "community": "",
+          "line": 17,
+          "snippet": "## Sections\n- Instruction Fetch (instruction_fetch.rst:L3)\n- Branch Prediction (instruction_fetch.rst:L31)\n- Instruction-Side Memory Interface (instruction_fetch.rst:L41)\n- Misaligned Accesses (instruction_fetch.rst:L74)\n- Protocol (instruction_fetch.rst:L83)\n\n## OpenKB Curation Hints\n- This page is a source map, not a prose summary.\n- Use sections as anchors back to the raw specification corpus."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 5
+        },
+        {
+          "label": "component:accesses",
+          "count": 1
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:misaligned",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        },
+        {
+          "label": "component:side",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_sources_memory_md",
+      "label": "memory.md",
+      "role": "document",
+      "source_file": "sources/memory.md",
+      "source_location": "L1",
+      "community": "1",
+      "project": "sources",
+      "kind": "doc",
+      "bytes": 404,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_sources_memory_md_1_topic_memory",
+          "label": "Topic: memory",
+          "role": "section",
+          "source_file": "sources/memory.md",
+          "source_location": "L1",
+          "community": "1",
+          "line": 1,
+          "snippet": "# Topic: memory\n\n## OpenKB Purpose\nThis page summarizes a Graphify topic cluster extracted from the spec graph.\n\n## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`"
+        },
+        {
+          "id": "section_sources_memory_md_3_openkb_purpose",
+          "label": "OpenKB Purpose",
+          "role": "section",
+          "source_file": "sources/memory.md",
+          "source_location": "L3",
+          "community": "1",
+          "line": 3,
+          "snippet": "# Topic: memory\n\n## OpenKB Purpose\nThis page summarizes a Graphify topic cluster extracted from the spec graph.\n\n## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`\n\n## Mentioning Sections"
+        },
+        {
+          "id": "section_sources_memory_md_6_graphify_identity",
+          "label": "Graphify Identity",
+          "role": "section",
+          "source_file": "sources/memory.md",
+          "source_location": "L6",
+          "community": "1",
+          "line": 6,
+          "snippet": "# Topic: memory\n\n## OpenKB Purpose\nThis page summarizes a Graphify topic cluster extracted from the spec graph.\n\n## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`\n\n## Mentioning Sections\n- instruction fetch.rst (instruction_fetch.rst:L1)\n\n## OpenKB Curation Hints"
+        },
+        {
+          "id": "section_sources_memory_md_10_mentioning_sections",
+          "label": "Mentioning Sections",
+          "role": "section",
+          "source_file": "sources/memory.md",
+          "source_location": "L10",
+          "community": "1",
+          "line": 10,
+          "snippet": "## OpenKB Purpose\nThis page summarizes a Graphify topic cluster extracted from the spec graph.\n\n## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`\n\n## Mentioning Sections\n- instruction fetch.rst (instruction_fetch.rst:L1)\n\n## OpenKB Curation Hints\n- Convert repeated section references into a stable concept page.\n- Keep source paths as traceability anchors."
+        },
+        {
+          "id": "section_sources_memory_md_13_openkb_curation_hints",
+          "label": "OpenKB Curation Hints",
+          "role": "section",
+          "source_file": "sources/memory.md",
+          "source_location": "L13",
+          "community": "1",
+          "line": 13,
+          "snippet": "## Graphify Identity\n- Node id: `topic_memory`\n- Community: `0`\n\n## Mentioning Sections\n- instruction fetch.rst (instruction_fetch.rst:L1)\n\n## OpenKB Curation Hints\n- Convert repeated section references into a stable concept page.\n- Keep source paths as traceability anchors."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:memory",
+          "count": 6
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:topic",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_sources_pipeline_details_md",
+      "label": "pipeline_details.md",
+      "role": "document",
+      "source_file": "sources/pipeline_details.md",
+      "source_location": "L1",
+      "community": "7",
+      "project": "sources",
+      "kind": "doc",
+      "bytes": 693,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_sources_pipeline_details_md_1_component_pipeline_details",
+          "label": "Component: pipeline details",
+          "role": "section",
+          "source_file": "sources/pipeline_details.md",
+          "source_location": "L1",
+          "community": "7",
+          "line": 1,
+          "snippet": "# Component: pipeline details\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`"
+        },
+        {
+          "id": "section_sources_pipeline_details_md_3_openkb_purpose",
+          "label": "OpenKB Purpose",
+          "role": "section",
+          "source_file": "sources/pipeline_details.md",
+          "source_location": "L3",
+          "community": "7",
+          "line": 3,
+          "snippet": "# Component: pipeline details\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`"
+        },
+        {
+          "id": "section_sources_pipeline_details_md_6_graphify_identity",
+          "label": "Graphify Identity",
+          "role": "section",
+          "source_file": "sources/pipeline_details.md",
+          "source_location": "L6",
+          "community": "7",
+          "line": 6,
+          "snippet": "# Component: pipeline details\n\n## OpenKB Purpose\nThis page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph."
+        },
+        {
+          "id": "section_sources_pipeline_details_md_12_referencing_documents",
+          "label": "Referencing Documents",
+          "role": "section",
+          "source_file": "sources/pipeline_details.md",
+          "source_location": "L12",
+          "community": "7",
+          "line": 12,
+          "snippet": "This page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor."
+        },
+        {
+          "id": "section_sources_pipeline_details_md_15_referencing_sections",
+          "label": "Referencing Sections",
+          "role": "section",
+          "source_file": "sources/pipeline_details.md",
+          "source_location": "L15",
+          "community": "7",
+          "line": 15,
+          "snippet": "- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.\n- Preserve exact names and source paths.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints."
+        },
+        {
+          "id": "section_sources_pipeline_details_md_18_openkb_curation_hints",
+          "label": "OpenKB Curation Hints",
+          "role": "section",
+          "source_file": "sources/pipeline_details.md",
+          "source_location": "L18",
+          "community": "7",
+          "line": 18,
+          "snippet": "- Confidence score: `1.0`\n\n## Referencing Documents\n- None recorded in the Graphify spec graph.\n\n## Referencing Sections\n- None recorded in the Graphify spec graph.\n\n## OpenKB Curation Hints\n- Treat this as a component/entity anchor.\n- Preserve exact names and source paths.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:pipeline_details",
+          "count": 7
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_sources_pipeline_details_rst_md",
+      "label": "pipeline_details_rst.md",
+      "role": "document",
+      "source_file": "sources/pipeline_details_rst.md",
+      "source_location": "L1",
+      "community": "2",
+      "project": "sources",
+      "kind": "doc",
+      "bytes": 512,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_sources_pipeline_details_rst_md_1_document_pipeline_details_rst",
+          "label": "Document: pipeline details.rst",
+          "role": "section",
+          "source_file": "sources/pipeline_details_rst.md",
+          "source_location": "L1",
+          "community": "2",
+          "line": 1,
+          "snippet": "# Document: pipeline_details.rst\n\n## Source\n- Graphify source file: `pipeline_details.rst`\n- Original source: ``\n- Project: `pipeline_details_rst`\n- Bytes: `10483`\n- Community: `2`"
+        },
+        {
+          "id": "section_sources_pipeline_details_rst_md_3_source",
+          "label": "Source",
+          "role": "section",
+          "source_file": "sources/pipeline_details_rst.md",
+          "source_location": "L3",
+          "community": "2",
+          "line": 3,
+          "snippet": "# Document: pipeline_details.rst\n\n## Source\n- Graphify source file: `pipeline_details.rst`\n- Original source: ``\n- Project: `pipeline_details_rst`\n- Bytes: `10483`\n- Community: `2`\n\n## Sections"
+        },
+        {
+          "id": "section_sources_pipeline_details_rst_md_10_sections",
+          "label": "Sections",
+          "role": "section",
+          "source_file": "sources/pipeline_details_rst.md",
+          "source_location": "L10",
+          "community": "2",
+          "line": 10,
+          "snippet": "## Source\n- Graphify source file: `pipeline_details.rst`\n- Original source: ``\n- Project: `pipeline_details_rst`\n- Bytes: `10483`\n- Community: `2`\n\n## Sections\n- Pipeline Details (pipeline_details.rst:L9)\n- Third Pipeline Stage (pipeline_details.rst:L26)\n- Multi- and Single-Cycle Instructions (pipeline_details.rst:L32)\n\n## OpenKB Curation Hints\n- This page is a source map, not a prose summary.\n- Use sections as anchors back to the raw specification corpus."
+        },
+        {
+          "id": "section_sources_pipeline_details_rst_md_15_openkb_curation_hints",
+          "label": "OpenKB Curation Hints",
+          "role": "section",
+          "source_file": "sources/pipeline_details_rst.md",
+          "source_location": "L15",
+          "community": "2",
+          "line": 15,
+          "snippet": "- Bytes: `10483`\n- Community: `2`\n\n## Sections\n- Pipeline Details (pipeline_details.rst:L9)\n- Third Pipeline Stage (pipeline_details.rst:L26)\n- Multi- and Single-Cycle Instructions (pipeline_details.rst:L32)\n\n## OpenKB Curation Hints\n- This page is a source map, not a prose summary.\n- Use sections as anchors back to the raw specification corpus."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:pipeline_details_rst",
+          "count": 5
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline_details",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_summaries_00_graphify_spec_wiki_index_md",
+      "label": "00_graphify_spec_wiki_index.md",
+      "role": "document",
+      "source_file": "summaries/00_graphify_spec_wiki_index.md",
+      "source_location": "L1",
+      "community": "5",
+      "project": "summaries",
+      "kind": "doc",
+      "bytes": 732,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_summaries_00_graphify_spec_wiki_index_md_6_graphify_derived_spec_wiki",
+          "label": "Graphify-derived Spec Wiki",
+          "role": "section",
+          "source_file": "summaries/00_graphify_spec_wiki_index.md",
+          "source_location": "L6",
+          "community": "5",
+          "line": 6,
+          "snippet": "---\ndoc_type: short\nfull_text: sources/00_graphify_spec_wiki_index.md\n---\n\n# Graphify-derived Spec Wiki\n\nThis compact wiki was generated directly from the source file `spec-only-graphify/graph.json` and is designed for low-token input into the OpenKB system.\n\n## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2"
+        },
+        {
+          "id": "section_summaries_00_graphify_spec_wiki_index_md_10_counts",
+          "label": "Counts",
+          "role": "section",
+          "source_file": "summaries/00_graphify_spec_wiki_index.md",
+          "source_location": "L10",
+          "community": "5",
+          "line": 10,
+          "snippet": "doc_type: short\nfull_text: sources/00_graphify_spec_wiki_index.md\n---\n\n# Graphify-derived Spec Wiki\n\nThis compact wiki was generated directly from the source file `spec-only-graphify/graph.json` and is designed for low-token input into the OpenKB system.\n\n## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2\n- Exported topic pages: 1\n- Exported document map pages: 2\n\n## Strategy"
+        },
+        {
+          "id": "section_summaries_00_graphify_spec_wiki_index_md_17_strategy",
+          "label": "Strategy",
+          "role": "section",
+          "source_file": "summaries/00_graphify_spec_wiki_index.md",
+          "source_location": "L17",
+          "community": "5",
+          "line": 17,
+          "snippet": "## Counts\n- Source graph nodes: 18\n- Source graph links: 26\n- Exported component pages: 2\n- Exported topic pages: 1\n- Exported document map pages: 2\n\n## Strategy\n- Exact Graphify node ids, component names, source files, and section anchors must be preserved.\n- OpenKB should act primarily as a curator over this compact graph-derived content.\n- The full raw specification corpus should be avoided unless deeper evidence is required for a specific topic."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:00_graphify_spec_wiki_index",
+          "count": 4
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:topic",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_summaries_instruction_fetch_md",
+      "label": "instruction_fetch.md",
+      "role": "document",
+      "source_file": "summaries/instruction_fetch.md",
+      "source_location": "L1",
+      "community": "3",
+      "project": "summaries",
+      "kind": "doc",
+      "bytes": 700,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_summaries_instruction_fetch_md_6_component_instruction_fetch",
+          "label": "Component: instruction fetch",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch.md",
+          "source_location": "L6",
+          "community": "3",
+          "line": 6,
+          "snippet": "---\ndoc_type: short\nfull_text: sources/instruction_fetch.md\n---\n\n# Component: instruction fetch\n\nThis page serves as a compact, Graphify-derived view of a spec or code entity candidate, intended for use as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`"
+        },
+        {
+          "id": "section_summaries_instruction_fetch_md_10_graphify_identity",
+          "label": "Graphify Identity",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch.md",
+          "source_location": "L10",
+          "community": "3",
+          "line": 10,
+          "snippet": "doc_type: short\nfull_text: sources/instruction_fetch.md\n---\n\n# Component: instruction fetch\n\nThis page serves as a compact, Graphify-derived view of a spec or code entity candidate, intended for use as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Curation Hints\n- Treat this entry as an anchor for a component or entity."
+        },
+        {
+          "id": "section_summaries_instruction_fetch_md_16_curation_hints",
+          "label": "Curation Hints",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch.md",
+          "source_location": "L16",
+          "community": "3",
+          "line": 16,
+          "snippet": "This page serves as a compact, Graphify-derived view of a spec or code entity candidate, intended for use as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_instruction_fetch`\n- Role: `component`\n- Community: `0`\n- Confidence score: `1.0`\n\n## Curation Hints\n- Treat this entry as an anchor for a component or entity.\n- Preserve exact names and source paths during curation.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints.\n\n## Related Concepts\n- [[concepts/knowledge-anchors]]"
+        },
+        {
+          "id": "section_summaries_instruction_fetch_md_21_related_concepts",
+          "label": "Related Concepts",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch.md",
+          "source_location": "L21",
+          "community": "3",
+          "line": 21,
+          "snippet": "- Community: `0`\n- Confidence score: `1.0`\n\n## Curation Hints\n- Treat this entry as an anchor for a component or entity.\n- Preserve exact names and source paths during curation.\n- Use linked sections as evidence for requirements, verification topics, and integration constraints.\n\n## Related Concepts\n- [[concepts/knowledge-anchors]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:instruction_fetch",
+          "count": 5
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:knowledge",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_summaries_instruction_fetch_rst_md",
+      "label": "instruction_fetch_rst.md",
+      "role": "document",
+      "source_file": "summaries/instruction_fetch_rst.md",
+      "source_location": "L1",
+      "community": "8",
+      "project": "summaries",
+      "kind": "doc",
+      "bytes": 1501,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_6_instruction_fetch_specification_summary",
+          "label": "Instruction Fetch Specification Summary",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L6",
+          "community": "8",
+          "line": 6,
+          "snippet": "---\ndoc_type: short\nfull_text: sources/instruction_fetch_rst.md\n---\n\n# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols."
+        },
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_10_overview",
+          "label": "Overview",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L10",
+          "community": "8",
+          "line": 10,
+          "snippet": "doc_type: short\nfull_text: sources/instruction_fetch_rst.md\n---\n\n# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material."
+        },
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_14_key_topics",
+          "label": "Key Topics",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L14",
+          "community": "8",
+          "line": 14,
+          "snippet": "# Instruction Fetch Specification Summary\n\nThis document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution."
+        },
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_16_instruction_fetch",
+          "label": "Instruction Fetch",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L16",
+          "community": "8",
+          "line": 16,
+          "snippet": "This document acts as a source map detailing the specifications related to instruction fetching and related memory operations within the system.\n\n## Overview\n\nThis specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures."
+        },
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_19_branch_prediction",
+          "label": "Branch Prediction",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L19",
+          "community": "8",
+          "line": 19,
+          "snippet": "This specification defines the mechanisms governing instruction retrieval, memory interfaces, and access protocols.\n\n## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries."
+        },
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_22_instruction_side_memory_interface",
+          "label": "Instruction-Side Memory Interface",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L22",
+          "community": "8",
+          "line": 22,
+          "snippet": "## Key Topics\n\n### Instruction Fetch\nDetails concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations."
+        },
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_25_misaligned_accesses",
+          "label": "Misaligned Accesses",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L25",
+          "community": "8",
+          "line": 25,
+          "snippet": "Details concerning the core process of instruction fetching, as specified in the source material.\n\n### Branch Prediction\nInformation related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping"
+        },
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_28_protocol",
+          "label": "Protocol",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L28",
+          "community": "8",
+          "line": 28,
+          "snippet": "Information related to the mechanisms employed for branch prediction during instruction execution.\n\n### Instruction-Side Memory Interface\nSpecification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n## Related Concepts"
+        },
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_31_source_mapping",
+          "label": "Source Mapping",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L31",
+          "community": "8",
+          "line": 31,
+          "snippet": "Specification of the interface used for accessing memory directly from the instruction stream or related structures.\n\n### Misaligned Accesses\nRules and handling procedures for managing memory accesses that do not align with standard boundaries.\n\n### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n## Related Concepts\n- [[concepts/instruction-fetch]]\n- [[concepts/branch-prediction]]\n- [[concepts/instruction-side-memory-interface]]"
+        },
+        {
+          "id": "section_summaries_instruction_fetch_rst_md_35_related_concepts",
+          "label": "Related Concepts",
+          "role": "section",
+          "source_file": "summaries/instruction_fetch_rst.md",
+          "source_location": "L35",
+          "community": "8",
+          "line": 35,
+          "snippet": "### Protocol\nDetails outlining the operational protocol governing these instruction fetching and memory access operations.\n\n## Source Mapping\n\nThis page serves primarily as an anchor to the raw specification corpus, using sections to map specific points within the original document.\n\n## Related Concepts\n- [[concepts/instruction-fetch]]\n- [[concepts/branch-prediction]]\n- [[concepts/instruction-side-memory-interface]]\n- [[concepts/misaligned-accesses]]\n- [[concepts/protocol-instruction-fetch]]\n- [[concepts/knowledge-anchors]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:instruction_fetch_rst",
+          "count": 11
+        },
+        {
+          "label": "component:accesses",
+          "count": 1
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:branch",
+          "count": 1
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:knowledge",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:misaligned",
+          "count": 1
+        },
+        {
+          "label": "component:prediction",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        },
+        {
+          "label": "component:side",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_summaries_memory_md",
+      "label": "memory.md",
+      "role": "document",
+      "source_file": "summaries/memory.md",
+      "source_location": "L1",
+      "community": "1",
+      "project": "summaries",
+      "kind": "doc",
+      "bytes": 748,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_summaries_memory_md_6_memory_topic_summary",
+          "label": "Memory Topic Summary",
+          "role": "section",
+          "source_file": "summaries/memory.md",
+          "source_location": "L6",
+          "community": "1",
+          "line": 6,
+          "snippet": "---\ndoc_type: short\nfull_text: sources/memory.md\n---\n\n# Memory Topic Summary\n\nThis document summarizes the topic cluster for 'memory' extracted from the spec graph, defining its identity and providing curation guidelines for the OpenKB process.\n\n## Graphify Identity\n- **Node id**: `topic_memory`\n- **Community**: `0`"
+        },
+        {
+          "id": "section_summaries_memory_md_10_graphify_identity",
+          "label": "Graphify Identity",
+          "role": "section",
+          "source_file": "summaries/memory.md",
+          "source_location": "L10",
+          "community": "1",
+          "line": 10,
+          "snippet": "doc_type: short\nfull_text: sources/memory.md\n---\n\n# Memory Topic Summary\n\nThis document summarizes the topic cluster for 'memory' extracted from the spec graph, defining its identity and providing curation guidelines for the OpenKB process.\n\n## Graphify Identity\n- **Node id**: `topic_memory`\n- **Community**: `0`\n\n## Context and References\n- This topic cluster was extracted from the spec graph.\n- It mentions related instructions found in `instruction_fetch.rst`."
+        },
+        {
+          "id": "section_summaries_memory_md_14_context_and_references",
+          "label": "Context and References",
+          "role": "section",
+          "source_file": "summaries/memory.md",
+          "source_location": "L14",
+          "community": "1",
+          "line": 14,
+          "snippet": "# Memory Topic Summary\n\nThis document summarizes the topic cluster for 'memory' extracted from the spec graph, defining its identity and providing curation guidelines for the OpenKB process.\n\n## Graphify Identity\n- **Node id**: `topic_memory`\n- **Community**: `0`\n\n## Context and References\n- This topic cluster was extracted from the spec graph.\n- It mentions related instructions found in `instruction_fetch.rst`.\n\n## OpenKB Curation Hints\n- Repeated section references should be converted into stable concept pages to improve cross-linking.\n- Source paths must be maintained as traceability anchors for all references."
+        },
+        {
+          "id": "section_summaries_memory_md_18_openkb_curation_hints",
+          "label": "OpenKB Curation Hints",
+          "role": "section",
+          "source_file": "summaries/memory.md",
+          "source_location": "L18",
+          "community": "1",
+          "line": 18,
+          "snippet": "## Graphify Identity\n- **Node id**: `topic_memory`\n- **Community**: `0`\n\n## Context and References\n- This topic cluster was extracted from the spec graph.\n- It mentions related instructions found in `instruction_fetch.rst`.\n\n## OpenKB Curation Hints\n- Repeated section references should be converted into stable concept pages to improve cross-linking.\n- Source paths must be maintained as traceability anchors for all references.\n\n## Related Concepts\n- [[concepts/topic-memory]]"
+        },
+        {
+          "id": "section_summaries_memory_md_22_related_concepts",
+          "label": "Related Concepts",
+          "role": "section",
+          "source_file": "summaries/memory.md",
+          "source_location": "L22",
+          "community": "1",
+          "line": 22,
+          "snippet": "## Context and References\n- This topic cluster was extracted from the spec graph.\n- It mentions related instructions found in `instruction_fetch.rst`.\n\n## OpenKB Curation Hints\n- Repeated section references should be converted into stable concept pages to improve cross-linking.\n- Source paths must be maintained as traceability anchors for all references.\n\n## Related Concepts\n- [[concepts/topic-memory]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:memory",
+          "count": 6
+        },
+        {
+          "label": "component:anchors",
+          "count": 1
+        },
+        {
+          "label": "component:instruction_fetch",
+          "count": 1
+        },
+        {
+          "label": "component:topic",
+          "count": 1
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_summaries_pipeline_details_md",
+      "label": "pipeline_details.md",
+      "role": "document",
+      "source_file": "summaries/pipeline_details.md",
+      "source_location": "L1",
+      "community": "7",
+      "project": "summaries",
+      "kind": "doc",
+      "bytes": 642,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_summaries_pipeline_details_md_6_component_pipeline_details",
+          "label": "Component: pipeline details",
+          "role": "section",
+          "source_file": "summaries/pipeline_details.md",
+          "source_location": "L6",
+          "community": "7",
+          "line": 6,
+          "snippet": "---\ndoc_type: short\nfull_text: sources/pipeline_details.md\n---\n\n# Component: pipeline details\n\nThis document serves as a compact, Graphify-derived view of a spec or code entity candidate, intended as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`"
+        },
+        {
+          "id": "section_summaries_pipeline_details_md_10_graphify_identity",
+          "label": "Graphify Identity",
+          "role": "section",
+          "source_file": "summaries/pipeline_details.md",
+          "source_location": "L10",
+          "community": "7",
+          "line": 10,
+          "snippet": "doc_type: short\nfull_text: sources/pipeline_details.md\n---\n\n# Component: pipeline details\n\nThis document serves as a compact, Graphify-derived view of a spec or code entity candidate, intended as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Curation Hints\n- This entity should be treated as an anchor for components/entities."
+        },
+        {
+          "id": "section_summaries_pipeline_details_md_16_curation_hints",
+          "label": "Curation Hints",
+          "role": "section",
+          "source_file": "summaries/pipeline_details.md",
+          "source_location": "L16",
+          "community": "7",
+          "line": 16,
+          "snippet": "This document serves as a compact, Graphify-derived view of a spec or code entity candidate, intended as lower-token OpenKB input rather than raw source truth.\n\n## Graphify Identity\n- Node id: `component_pipeline_details`\n- Role: `component`\n- Community: `2`\n- Confidence score: `1.0`\n\n## Curation Hints\n- This entity should be treated as an anchor for components/entities.\n- Exact names and source paths must be preserved.\n- Linked sections should be used as evidence for requirements, verification, and integration constraints."
+        }
+      ],
+      "components": [
+        {
+          "label": "component:pipeline_details",
+          "count": 4
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        }
+      ],
+      "topics": []
+    },
+    {
+      "id": "doc_summaries_pipeline_details_rst_md",
+      "label": "pipeline_details_rst.md",
+      "role": "document",
+      "source_file": "summaries/pipeline_details_rst.md",
+      "source_location": "L1",
+      "community": "2",
+      "project": "summaries",
+      "kind": "doc",
+      "bytes": 910,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_summaries_pipeline_details_rst_md_6_pipeline_details_summary",
+          "label": "Pipeline Details Summary",
+          "role": "section",
+          "source_file": "summaries/pipeline_details_rst.md",
+          "source_location": "L6",
+          "community": "2",
+          "line": 6,
+          "snippet": "---\ndoc_type: short\nfull_text: sources/pipeline_details_rst.md\n---\n\n# Pipeline Details Summary\n\nThis document acts as a source map, providing structured details regarding the pipeline specification.\n\n## Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided at this section.\n\n## Third Pipeline Stage"
+        },
+        {
+          "id": "section_summaries_pipeline_details_rst_md_10_pipeline_details",
+          "label": "Pipeline Details",
+          "role": "section",
+          "source_file": "summaries/pipeline_details_rst.md",
+          "source_location": "L10",
+          "community": "2",
+          "line": 10,
+          "snippet": "doc_type: short\nfull_text: sources/pipeline_details_rst.md\n---\n\n# Pipeline Details Summary\n\nThis document acts as a source map, providing structured details regarding the pipeline specification.\n\n## Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided at this section.\n\n## Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here.\n\n## Multi- and Single-Cycle Instructions\nSpecifications for handling multi-cycle and single-cycle instructions are detailed in this section."
+        },
+        {
+          "id": "section_summaries_pipeline_details_rst_md_13_third_pipeline_stage",
+          "label": "Third Pipeline Stage",
+          "role": "section",
+          "source_file": "summaries/pipeline_details_rst.md",
+          "source_location": "L13",
+          "community": "2",
+          "line": 13,
+          "snippet": "# Pipeline Details Summary\n\nThis document acts as a source map, providing structured details regarding the pipeline specification.\n\n## Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided at this section.\n\n## Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here.\n\n## Multi- and Single-Cycle Instructions\nSpecifications for handling multi-cycle and single-cycle instructions are detailed in this section.\n\n*Source Reference: [[pipeline_details_rst]]*"
+        },
+        {
+          "id": "section_summaries_pipeline_details_rst_md_16_multi_and_single_cycle_instructions",
+          "label": "Multi- and Single-Cycle Instructions",
+          "role": "section",
+          "source_file": "summaries/pipeline_details_rst.md",
+          "source_location": "L16",
+          "community": "2",
+          "line": 16,
+          "snippet": "This document acts as a source map, providing structured details regarding the pipeline specification.\n\n## Pipeline Details\nDetails concerning the overall structure and configuration of the pipeline are provided at this section.\n\n## Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here.\n\n## Multi- and Single-Cycle Instructions\nSpecifications for handling multi-cycle and single-cycle instructions are detailed in this section.\n\n*Source Reference: [[pipeline_details_rst]]*\n\n## Related Concepts\n- [[concepts/pipeline-stages----Pipeline-Stages]]\n- [[concepts/instruction-fetch]]"
+        },
+        {
+          "id": "section_summaries_pipeline_details_rst_md_21_related_concepts",
+          "label": "Related Concepts",
+          "role": "section",
+          "source_file": "summaries/pipeline_details_rst.md",
+          "source_location": "L21",
+          "community": "2",
+          "line": 21,
+          "snippet": "## Third Pipeline Stage\nInformation specific to the third stage of the pipeline is documented here.\n\n## Multi- and Single-Cycle Instructions\nSpecifications for handling multi-cycle and single-cycle instructions are detailed in this section.\n\n*Source Reference: [[pipeline_details_rst]]*\n\n## Related Concepts\n- [[concepts/pipeline-stages----Pipeline-Stages]]\n- [[concepts/instruction-fetch]]\n- [[concepts/protocol-instruction-fetch]]\n- [[concepts/instruction-fetch]]\n- [[concepts/protocol-instruction-fetch]]\n- [[concepts/instruction-side-memory-interface]]"
+        }
+      ],
+      "components": [
+        {
+          "label": "component:pipeline_details_rst",
+          "count": 6
+        },
+        {
+          "label": "component:fetch",
+          "count": 1
+        },
+        {
+          "label": "component:instruction",
+          "count": 1
+        },
+        {
+          "label": "component:memory",
+          "count": 1
+        },
+        {
+          "label": "component:pipeline",
+          "count": 1
+        },
+        {
+          "label": "component:protocol",
+          "count": 1
+        },
+        {
+          "label": "component:side",
+          "count": 1
+        },
+        {
+          "label": "component:stages",
+          "count": 1
+        }
+      ],
+      "topics": []
+    }
+  ],
+  "components": [
+    {
+      "id": "component_00_graphify_spec_wiki_index",
+      "label": "component:00_graphify_spec_wiki_index",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "5"
+    },
+    {
+      "id": "component_accesses",
+      "label": "component:accesses",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": ""
+    },
+    {
+      "id": "component_anchors",
+      "label": "component:anchors",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "3"
+    },
+    {
+      "id": "component_branch",
+      "label": "component:branch",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "6"
+    },
+    {
+      "id": "component_fetch",
+      "label": "component:fetch",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": ""
+    },
+    {
+      "id": "component_instruction",
+      "label": "component:instruction",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": ""
+    },
+    {
+      "id": "component_instruction_fetch",
+      "label": "component:instruction_fetch",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "3"
+    },
+    {
+      "id": "component_instruction_fetch_rst",
+      "label": "component:instruction_fetch_rst",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "8"
+    },
+    {
+      "id": "component_knowledge",
+      "label": "component:knowledge",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "3"
+    },
+    {
+      "id": "component_log",
+      "label": "component:log",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "9"
+    },
+    {
+      "id": "component_memory",
+      "label": "component:memory",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "1"
+    },
+    {
+      "id": "component_misaligned",
+      "label": "component:misaligned",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": ""
+    },
+    {
+      "id": "component_pipeline",
+      "label": "component:pipeline",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "2"
+    },
+    {
+      "id": "component_pipeline_details",
+      "label": "component:pipeline_details",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "7"
+    },
+    {
+      "id": "component_pipeline_details_rst",
+      "label": "component:pipeline_details_rst",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "2"
+    },
+    {
+      "id": "component_prediction",
+      "label": "component:prediction",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "6"
+    },
+    {
+      "id": "component_protocol",
+      "label": "component:protocol",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": ""
+    },
+    {
+      "id": "component_side",
+      "label": "component:side",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "1"
+    },
+    {
+      "id": "component_stages",
+      "label": "component:stages",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "2"
+    },
+    {
+      "id": "component_topic",
+      "label": "component:topic",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "1"
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic_memory",
+      "label": "topic:memory",
+      "role": "topic",
+      "source_file": "__graphify_spec_only__/topics.md",
+      "source_location": "L1",
+      "community": "1"
+    }
+  ]
+}
