@@ -1,65 +1,70 @@
 {
-  "source_report": "D:\\MyWork\\verilog\\out\\manticore_analysis\\manticore_retrieval_report.json",
-  "source_metadata": "D:\\MyWork\\verilog\\out\\manticore_analysis\\manticore_retrieval_metadata.json",
-  "generated_at": "2026-05-09T20:02:34",
+  "generated_at": "2026-05-10T00:00:00+09:00",
+  "question_set": "D:\\MyWork\\verilog\\out\\multiaxis_benchmark\\questions_all.jsonl",
   "questions": 175,
-  "modules_indexed": 732,
+  "method_count": 4,
   "methods": {
-    "baseline": {
-      "label": "Baseline",
-      "hit_at_1": 0.8514,
-      "hit_at_3": 0.8629,
-      "mrr": 0.8686,
-      "weighted_hit_at_1": 0.8393,
-      "avg_query_ms": 28.171,
+    "parser_lsp": {
+      "label": "Parser+LSP",
+      "hit_at_1": 0.8629,
+      "hit_at_3": 0.8743,
+      "mrr": 0.8824,
+      "weighted_hit_at_1": 0.8601,
+      "avg_query_ms": null,
       "features": {
-        "Input signals": "Module name, file path, ports, instances",
-        "Ranking": "Parser/LSP lexical overlap with exact anchors",
-        "Strength": "Fast simple lookup, transparent evidence",
-        "Tradeoff": "Weak on semantic paraphrase and function similarity"
+        "Input signals": "tree-sitter parser/LSP seed: module name, file path, ports, instances",
+        "Ranking": "Parser/LSP-style lexical overlap with exact anchors",
+        "Strength": "Fast structural RTL lookup",
+        "Tradeoff": "No cross-module graph or full-text ranker"
       }
     },
     "kg": {
       "label": "KG",
-      "hit_at_1": 0.8514,
-      "hit_at_3": 0.8629,
-      "mrr": 0.8562,
-      "weighted_hit_at_1": 0.8423,
-      "avg_query_ms": 34.284,
-      "features": {
-        "Input signals": "Baseline fields plus labels, summaries, graph context",
-        "Ranking": "KG-aware scorer with semantic expansion",
-        "Strength": "Uses ontology and reverse graph relationships",
-        "Tradeoff": "Can add noise when labels are broad or sparse"
-      }
-    },
-    "manticore_parser_lsp": {
-      "label": "Manticore Parser/LSP",
-      "hit_at_1": 0.8629,
-      "hit_at_3": 0.8914,
-      "mrr": 0.8857,
-      "weighted_hit_at_1": 0.8401,
-      "avg_query_ms": 37.386,
-      "features": {
-        "Input signals": "Parser/LSP fields only",
-        "Ranking": "Manticore-style BM25F full-text field weighting",
-        "Strength": "Best text ranking without KG dependency",
-        "Tradeoff": "Still blind to ontology-only relationships"
-      }
-    },
-    "manticore_hybrid": {
-      "label": "Manticore Hybrid",
       "hit_at_1": 0.8686,
-      "hit_at_3": 0.8914,
-      "mrr": 0.8781,
-      "weighted_hit_at_1": 0.8479,
-      "avg_query_ms": 46.418,
+      "hit_at_3": 0.88,
+      "mrr": 0.8733,
+      "weighted_hit_at_1": 0.8683,
+      "avg_query_ms": null,
       "features": {
-        "Input signals": "Parser/LSP fields plus KG labels, summaries, parents",
-        "Ranking": "BM25F with KG field boosts",
-        "Strength": "Best overall Hit@1 in this run",
-        "Tradeoff": "Slowest local proxy query latency"
+        "Input signals": "parser/LSP seed plus labels, summaries, reverse parents",
+        "Ranking": "KG-aware scorer with semantic expansion",
+        "Strength": "Best weighted structural retrieval in this run",
+        "Tradeoff": "Depends on KG label and graph quality"
+      }
+    },
+    "graphify": {
+      "label": "Graphify",
+      "hit_at_1": 0.6914,
+      "hit_at_3": 0.8971,
+      "mrr": 0.795,
+      "weighted_hit_at_1": 0.6913,
+      "avg_query_ms": null,
+      "features": {
+        "Input signals": "Graphify AST graph and BFS query subgraph",
+        "Ranking": "Graph node match mapped back to RTL modules",
+        "Strength": "General codebase navigation and relationship context",
+        "Tradeoff": "Less Verilog-specific than the custom KG"
+      }
+    },
+    "manticore": {
+      "label": "Manticore",
+      "hit_at_1": 0.8629,
+      "hit_at_3": 0.8971,
+      "mrr": 0.8935,
+      "weighted_hit_at_1": 0.8423,
+      "avg_query_ms": 46.801,
+      "features": {
+        "Input signals": "parser/LSP fields indexed as Manticore-style full-text documents",
+        "Ranking": "BM25F-style field weighting with exact boosts",
+        "Strength": "Best Hit@3/MRR among parser+LSP-only methods",
+        "Tradeoff": "Local proxy model; real searchd server not started"
       }
     }
+  },
+  "sources": {
+    "parser_lsp_and_kg": "D:\\MyWork\\verilog\\out\\multiaxis_eval_results\\multiaxis_report.json",
+    "graphify": "D:\\MyWork\\verilog\\out\\graphify_compare\\comparison_report.json",
+    "manticore": "D:\\MyWork\\verilog\\out\\manticore_analysis\\manticore_retrieval_report.json",
+    "manticore_github": "https://github.com/manticoresoftware/manticoresearch"
   }
 }

@@ -1,0 +1,80 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 1382 >>
+stream
+BT
+/F1 18 Tf
+60 760 Td (OpenKB Generation Performance Comparison) Tj
+-60 -26 Td
+/F1 9 Tf
+60 734 Td (Generated: 2026-05-09T21:19:42) Tj
+-60 -13 Td
+/F1 14 Tf
+60 711 Td (Measured Methods) Tj
+-60 -20 Td
+/F1 9 Tf
+60 691 Td (1. Parser + LSP: hit@1 0.9481, hit@3 1.0000, hit@5 1.0000, MRR 0.9675) Tj
+-60 -13 Td
+/F1 9 Tf
+60 678 Td (2. Parser + LSP + Manticore: hit@1 0.8312, hit@3 0.8961, hit@5 0.9481, MRR 0.8645) Tj
+-60 -13 Td
+/F1 9 Tf
+60 665 Td (3. KG: hit@1 0.9481, hit@3 0.9870, hit@5 1.0000, MRR 0.9658) Tj
+-60 -13 Td
+/F1 9 Tf
+60 652 Td (4. Graphify: hit@1 0.9740, hit@3 0.9740, hit@5 0.9740, MRR 0.9740) Tj
+-60 -13 Td
+/F1 14 Tf
+60 629 Td (OpenKB) Tj
+-60 -20 Td
+/F1 9 Tf
+60 609 Td (OpenKB is prepared but not measured: raw docs=3, indexed docs=0, questions=80, LLM_API_KEY is) Tj
+-60 -13 Td
+/F1 9 Tf
+60 596 Td (not set.) Tj
+-60 -13 Td
+/F1 14 Tf
+60 573 Td (Interpretation) Tj
+-60 -20 Td
+/F1 9 Tf
+60 553 Td (Graphify is currently best among measured methods on hit@1 and MRR.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 540 Td (Parser + LSP and KG are tied on hit@1 and both achieve perfect hit@5.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 527 Td (Manticore Parser/LSP is weaker on hard L4/L5 generation prompts.) Tj
+-60 -13 Td
+/F1 9 Tf
+60 514 Td (OpenKB cannot be fairly compared until raw docs are compiled with an LLM API key and openkb) Tj
+-60 -13 Td
+/F1 9 Tf
+60 501 Td (query outputs are scored.) Tj
+-60 -13 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000001513 00000 n 
+0000001639 00000 n 
+0000001696 00000 n 
+trailer << /Size 6 /Root 5 0 R >>
+startxref
+1745
+%%EOF

@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-05-09T21:19:42",
+  "benchmark": "hard_generation_context_readiness",
+  "openkb_status": {
+    "llm_api_key_present": false,
+    "raw_docs": 3,
+    "indexed_docs": 0,
+    "questions_prepared": 80,
+    "runbook": "D:\\MyWork\\verilog\\out\\openkb_eval\\OPENKB_EVAL_RUNBOOK.md"
+  },
+  "rows": [
+    {
+      "method": "1. Parser + LSP",
+      "status": "measured",
+      "questions": 77,
+      "hit_at_1": 0.9481,
+      "hit_at_3": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.9675,
+      "notes": "Hard Verilog generation-context readiness benchmark"
+    },
+    {
+      "method": "2. Parser + LSP + Manticore",
+      "status": "measured",
+      "questions": 77,
+      "hit_at_1": 0.8312,
+      "hit_at_3": 0.8961,
+      "hit_at_5": 0.9481,
+      "mrr": 0.8645,
+      "notes": "Hard Verilog generation-context readiness benchmark"
+    },
+    {
+      "method": "3. KG",
+      "status": "measured",
+      "questions": 77,
+      "hit_at_1": 0.9481,
+      "hit_at_3": 0.987,
+      "hit_at_5": 1.0,
+      "mrr": 0.9658,
+      "notes": "Hard Verilog generation-context readiness benchmark"
+    },
+    {
+      "method": "4. Graphify",
+      "status": "measured",
+      "questions": 77,
+      "hit_at_1": 0.974,
+      "hit_at_3": 0.974,
+      "hit_at_5": 0.974,
+      "mrr": 0.974,
+      "notes": "Hard Verilog generation-context readiness benchmark"
+    },
+    {
+      "method": "5. OpenKB",
+      "status": "prepared, not measured",
+      "questions": 80,
+      "hit_at_1": null,
+      "hit_at_3": null,
+      "hit_at_5": null,
+      "mrr": null,
+      "notes": "OpenKB raw docs staged, KB skeleton initialized, but indexed documents=0 and LLM_API_KEY is not set"
+    }
+  ],
+  "interpretation": [
+    "Graphify is currently best among measured methods on hit@1 and MRR.",
+    "Parser + LSP and KG are tied on hit@1 and both achieve perfect hit@5.",
+    "Manticore Parser/LSP is weaker on hard L4/L5 generation prompts.",
+    "OpenKB cannot be fairly compared until raw docs are compiled with an LLM API key and openkb query outputs are scored."
+  ]
+}

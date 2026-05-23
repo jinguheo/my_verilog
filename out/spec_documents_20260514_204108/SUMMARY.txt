@@ -1,0 +1,5 @@
+﻿spec document export
+created=20260514_204108
+source=D:\MyWork\verilog\dbs
+files=985
+manifest=D:\MyWork\verilog\out\spec_documents_20260514_204108\manifest.csv

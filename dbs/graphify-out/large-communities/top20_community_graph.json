@@ -1,0 +1,5560 @@
+{
+  "source_graph": "dbs\\graphify-out\\graph.json",
+  "source_node_count": 39694,
+  "source_edge_count": 95961,
+  "top_community_count": 20,
+  "cap_per_community": 150,
+  "limited_node_count": 2963,
+  "limited_edge_count": 11065,
+  "communities": [
+    {
+      "rank": 1,
+      "community": 0,
+      "node_count": 4551,
+      "internal_edge_count": 12891,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 3327,
+        "rationale": 1224
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\util\\topgen\\lib.py",
+          "count": 114
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\util\\shared\\information_flow.py",
+          "count": 98
+        },
+        {
+          "file": "opentitan\\util\\topgen\\merge.py",
+          "count": 72
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\util\\shared\\operand.py",
+          "count": 71
+        },
+        {
+          "file": "opentitan\\util\\topgen.py",
+          "count": 64
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\util\\shared\\control_flow.py",
+          "count": 60
+        },
+        {
+          "file": "opentitan\\util\\vendor.py",
+          "count": 60
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\util\\otbn_as.py",
+          "count": 59
+        },
+        {
+          "file": "opentitan\\util\\dvsim\\Testplan.py",
+          "count": 51
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\formal\\conductor.py",
+          "count": 50
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "statusprinter_enlightenstatusprinter_exit",
+          "label": ".exit()",
+          "degree": 963,
+          "source_file": "opentitan\\util\\dvsim\\StatusPrinter.py",
+          "source_location": "L162"
+        },
+        {
+          "id": "codegen_codechunk_len",
+          "label": ".len()",
+          "degree": 915,
+          "source_file": "opentitan\\sw\\host\\ot_certs\\src\\asn1\\codegen.rs",
+          "source_location": "L79"
+        },
+        {
+          "id": "ownership_format",
+          "label": "Format",
+          "degree": 737,
+          "source_file": "opentitan\\sw\\host\\opentitantool\\src\\command\\ownership.rs",
+          "source_location": "L24"
+        },
+        {
+          "id": "conductor_processrunner_append",
+          "label": ".append()",
+          "degree": 619,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\formal\\conductor.py",
+          "source_location": "L235"
+        },
+        {
+          "id": "secure_prng_get",
+          "label": "get()",
+          "degree": 432,
+          "source_file": "opentitan\\util\\topgen\\secure_prng.py",
+          "source_location": "L330"
+        },
+        {
+          "id": "lib_testplan_join",
+          "label": ".join()",
+          "degree": 368,
+          "source_file": "opentitan\\util\\testplantool\\testplanlib\\lib.py",
+          "source_location": "L39"
+        },
+        {
+          "id": "usb_device_open",
+          "label": "Open()",
+          "degree": 361,
+          "source_file": "opentitan\\sw\\host\\tests\\usbdev\\usbdev_stream\\usb_device.cc",
+          "source_location": "L56"
+        },
+        {
+          "id": "str",
+          "label": "str",
+          "degree": 336,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "register_transaction_print",
+          "label": "Print()",
+          "degree": 251,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\cs_registers\\reg_driver\\register_transaction.cc",
+          "source_location": "L27"
+        },
+        {
+          "id": "cbor_int",
+          "label": "int()",
+          "degree": 229,
+          "source_file": "opentitan\\sw\\host\\ot_certs\\src\\cbor.rs",
+          "source_location": "L61"
+        },
+        {
+          "id": "lint_commits_error",
+          "label": "error()",
+          "degree": 209,
+          "source_file": "opentitan\\util\\lint_commits.py",
+          "source_location": "L21"
+        },
+        {
+          "id": "jobtime_jobtime_set",
+          "label": ".set()",
+          "degree": 206,
+          "source_file": "opentitan\\util\\dvsim\\JobTime.py",
+          "source_location": "L20"
+        },
+        {
+          "id": "gh_testplan_testplan_keys",
+          "label": ".keys()",
+          "degree": 166,
+          "source_file": "opentitan\\util\\py\\scripts\\gh_testplan.py",
+          "source_location": "L63"
+        },
+        {
+          "id": "ef_elementaryfile_list",
+          "label": ".list()",
+          "degree": 153,
+          "source_file": "opentitan\\sw\\host\\hsmtool\\src\\util\\ef.rs",
+          "source_location": "L77"
+        },
+        {
+          "id": "qsubopts_qsuboptions_parse_args",
+          "label": ".parse_args()",
+          "degree": 149,
+          "source_file": "opentitan\\util\\dvsim\\qsubopts.py",
+          "source_location": "L1749"
+        },
+        {
+          "id": "report_configloader_load",
+          "label": ".load()",
+          "degree": 145,
+          "source_file": "sv-tests\\conf\\report\\report.js",
+          "source_location": "L71"
+        },
+        {
+          "id": "otp_ctrl_descrambling_test_lower",
+          "label": "lower()",
+          "degree": 109,
+          "source_file": "opentitan\\sw\\device\\tests\\otp_ctrl_descrambling_test.c",
+          "source_location": "L43"
+        },
+        {
+          "id": "baserunner_baserunner_run",
+          "label": ".run()",
+          "degree": 107,
+          "source_file": "sv-tests\\tools\\BaseRunner.py",
+          "source_location": "L85"
+        },
+        {
+          "id": "clocks_group",
+          "label": "Group",
+          "degree": 94,
+          "source_file": "opentitan\\util\\topgen\\clocks.py",
+          "source_location": "L98"
+        },
+        {
+          "id": "params_params_add",
+          "label": ".add()",
+          "degree": 91,
+          "source_file": "opentitan\\util\\reggen\\params.py",
+          "source_location": "L298"
+        },
+        {
+          "id": "report_testdetailspanel_close",
+          "label": ".close()",
+          "degree": 76,
+          "source_file": "sv-tests\\conf\\report\\report.js",
+          "source_location": "L442"
+        },
+        {
+          "id": "program_program_copy",
+          "label": ".copy()",
+          "degree": 70,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\program.py",
+          "source_location": "L214"
+        },
+        {
+          "id": "bit_ranges_bitranges_decode",
+          "label": ".decode()",
+          "degree": 65,
+          "source_file": "opentitan\\hw\\ip\\otbn\\util\\shared\\bit_ranges.py",
+          "source_location": "L104"
+        },
+        {
+          "id": "opentitan_util_topgen_lib_py",
+          "label": "lib.py",
+          "degree": 65,
+          "source_file": "opentitan\\util\\topgen\\lib.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "ef_elementaryfile_exists",
+          "label": ".exists()",
+          "degree": 64,
+          "source_file": "opentitan\\sw\\host\\hsmtool\\src\\util\\ef.rs",
+          "source_location": "L81"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "community": 1,
+      "node_count": 4320,
+      "internal_edge_count": 14640,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 4303,
+        "rationale": 17
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\app\\mod.rs",
+          "count": 70
+        },
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\util\\vcd.rs",
+          "count": 62
+        },
+        {
+          "file": "opentitan\\sw\\host\\ot_certs\\src\\template\\subst.rs",
+          "count": 57
+        },
+        {
+          "file": "opentitan\\sw\\host\\ot_transports\\hyperdebug\\src\\lib.rs",
+          "count": 55
+        },
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\image\\manifest_def.rs",
+          "count": 52
+        },
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\image\\image.rs",
+          "count": 48
+        },
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\test_utils\\bitbanging\\spi.rs",
+          "count": 46
+        },
+        {
+          "file": "opentitan\\sw\\host\\ot_certs\\src\\cwt.rs",
+          "count": 46
+        },
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\chip\\boot_svc.rs",
+          "count": 45
+        },
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\debug\\openocd.rs",
+          "count": 43
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "mod_neededcapabilities_ok",
+          "label": ".ok()",
+          "degree": 1852,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\transport\\mod.rs",
+          "source_location": "L85"
+        },
+        {
+          "id": "xmodem_xmodemfirmware_new",
+          "label": ".new()",
+          "degree": 495,
+          "source_file": "opentitan\\sw\\host\\tests\\xmodem\\xmodem.rs",
+          "source_location": "L43"
+        },
+        {
+          "id": "report_log_err",
+          "label": ".err()",
+          "degree": 308,
+          "source_file": "sv-tests\\conf\\report\\report.js",
+          "source_location": "L37"
+        },
+        {
+          "id": "wrap_wrap_unwrap",
+          "label": ".unwrap()",
+          "degree": 303,
+          "source_file": "opentitan\\sw\\host\\hsmtool\\src\\util\\wrap.rs",
+          "source_location": "L174"
+        },
+        {
+          "id": "broadcast_weakbroadcaster_t_clone",
+          "label": ".clone()",
+          "degree": 252,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\io\\console\\broadcast.rs",
+          "source_location": "L223"
+        },
+        {
+          "id": "signature_spxrawsignature_read",
+          "label": ".read()",
+          "degree": 245,
+          "source_file": "opentitan\\sw\\host\\sphincsplus\\signature.rs",
+          "source_location": "L19"
+        },
+        {
+          "id": "bitvec_bitvec_iter",
+          "label": ".iter()",
+          "degree": 223,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\formal\\aig-manip\\src\\bitvec.rs",
+          "source_location": "L54"
+        },
+        {
+          "id": "main_main",
+          "label": "main()",
+          "degree": 170,
+          "source_file": "opentitan\\sw\\host\\tpm2_test_server\\src\\main.rs",
+          "source_location": "L57"
+        },
+        {
+          "id": "bitvec_bitvec_push",
+          "label": ".push()",
+          "degree": 168,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\formal\\aig-manip\\src\\bitvec.rs",
+          "source_location": "L37"
+        },
+        {
+          "id": "transport_verilator_uart",
+          "label": ".uart()",
+          "degree": 155,
+          "source_file": "opentitan\\sw\\host\\ot_transports\\verilator\\src\\transport.rs",
+          "source_location": "L103"
+        },
+        {
+          "id": "secure_prng_create",
+          "label": "create()",
+          "degree": 145,
+          "source_file": "opentitan\\util\\topgen\\secure_prng.py",
+          "source_location": "L318"
+        },
+        {
+          "id": "console_uartconsole_wait_for",
+          "label": ".wait_for()",
+          "degree": 129,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\uart\\console.rs",
+          "source_location": "L175"
+        },
+        {
+          "id": "key_spxpublickey_from",
+          "label": ".from()",
+          "degree": 127,
+          "source_file": "opentitan\\sw\\host\\sphincsplus\\key.rs",
+          "source_location": "L281"
+        },
+        {
+          "id": "gpio_gpioconfiguration_default",
+          "label": ".default()",
+          "degree": 118,
+          "source_file": "opentitan\\sw\\host\\ot_transports\\ti50emulator\\src\\gpio.rs",
+          "source_location": "L32"
+        },
+        {
+          "id": "bits_bits_as_str",
+          "label": ".as_str()",
+          "degree": 116,
+          "source_file": "opentitan\\util\\reggen\\bits.py",
+          "source_location": "L76"
+        },
+        {
+          "id": "db_devicerecord_insert",
+          "label": ".insert()",
+          "degree": 111,
+          "source_file": "opentitan\\sw\\host\\provisioning\\orchestrator\\src\\db.py",
+          "source_location": "L149"
+        },
+        {
+          "id": "mapfile_to_json_mapfile_parse",
+          "label": ".parse()",
+          "degree": 109,
+          "source_file": "opentitan\\util\\py\\scripts\\mapfile_to_json.py",
+          "source_location": "L366"
+        },
+        {
+          "id": "sha256_sha256digest_as_ref",
+          "label": ".as_ref()",
+          "degree": 106,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\crypto\\sha256.rs",
+          "source_location": "L40"
+        },
+        {
+          "id": "testlib_gdb_expect",
+          "label": ".expect()",
+          "degree": 101,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L875"
+        },
+        {
+          "id": "mod_transportwrapper_pin_strapping",
+          "label": ".pin_strapping()",
+          "degree": 99,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\app\\mod.rs",
+          "source_location": "L980"
+        },
+        {
+          "id": "uart",
+          "label": "uart",
+          "degree": 99,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\rtl\\autogen\\top_englishbreakfast.sv",
+          "source_location": "L557"
+        },
+        {
+          "id": "mod_vmem_from_str",
+          "label": ".from_str()",
+          "degree": 95,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\util\\vmem\\mod.rs",
+          "source_location": "L36"
+        },
+        {
+          "id": "report_is_empty",
+          "label": "is_empty()",
+          "degree": 95,
+          "source_file": "sv-tests\\conf\\report\\report.js",
+          "source_location": "L4"
+        },
+        {
+          "id": "usb_device_reset",
+          "label": "Reset()",
+          "degree": 93,
+          "source_file": "opentitan\\sw\\host\\tests\\usbdev\\usbdev_stream\\usb_device.cc",
+          "source_location": "L357"
+        },
+        {
+          "id": "signature_spxrawsignature_as_bytes",
+          "label": ".as_bytes()",
+          "degree": 91,
+          "source_file": "opentitan\\sw\\host\\sphincsplus\\signature.rs",
+          "source_location": "L62"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "community": 2,
+      "node_count": 3770,
+      "internal_edge_count": 4895,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 3770
+      },
+      "top_source_files": [
+        {
+          "file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "count": 23
+        },
+        {
+          "file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_ok_share_1_r0_x0_cfgl0_typex1_umode1.c",
+          "count": 10
+        },
+        {
+          "file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_ok_share_1_r0_x1_cfgl1_typex0_umode1.c",
+          "count": 10
+        },
+        {
+          "file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_ok_share_1_r1_x1_cfgl1_typex1_umode1.c",
+          "count": 10
+        },
+        {
+          "file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_01.c",
+          "count": 7
+        },
+        {
+          "file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_02.c",
+          "count": 7
+        },
+        {
+          "file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_03.c",
+          "count": 7
+        },
+        {
+          "file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_04.c",
+          "count": 7
+        },
+        {
+          "file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_05.c",
+          "count": 7
+        },
+        {
+          "file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_06.c",
+          "count": 7
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "syscalls_tohost_exit",
+          "label": "tohost_exit()",
+          "degree": 748,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L56"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_syscalls_c",
+          "label": "syscalls.c",
+          "degree": 27,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\syscalls.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_tests_benchmarks_common_syscalls_c",
+          "label": "syscalls.c",
+          "degree": 27,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "syscalls_setstats",
+          "label": "setStats()",
+          "degree": 10,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L40"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_ok_share_1_r0_x0_cfgl0_typex1_umode1_c",
+          "label": "test_pmp_ok_share_1_r0_x0_cfgl0_typex1_umode1.c",
+          "degree": 9,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_ok_share_1_r0_x0_cfgl0_typex1_umode1.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_ok_share_1_r0_x1_cfgl1_typex0_umode1_c",
+          "label": "test_pmp_ok_share_1_r0_x1_cfgl1_typex0_umode1.c",
+          "degree": 9,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_ok_share_1_r0_x1_cfgl1_typex0_umode1.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_ok_share_1_r1_x1_cfgl1_typex1_umode1_c",
+          "label": "test_pmp_ok_share_1_r1_x1_cfgl1_typex1_umode1.c",
+          "degree": 9,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_ok_share_1_r1_x1_cfgl1_typex1_umode1.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "syscalls_init",
+          "label": "_init()",
+          "degree": 8,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L106"
+        },
+        {
+          "id": "syscalls_vprintfmt",
+          "label": "vprintfmt()",
+          "degree": 8,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L197"
+        },
+        {
+          "id": "dhrystone_main_main",
+          "label": "main()",
+          "degree": 7,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\dhrystone\\dhrystone_main.c",
+          "source_location": "L56"
+        },
+        {
+          "id": "syscalls_printstr",
+          "label": "printstr()",
+          "degree": 7,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L77"
+        },
+        {
+          "id": "syscalls_strcmp",
+          "label": "strcmp()",
+          "degree": 7,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L430"
+        },
+        {
+          "id": "syscalls_exit",
+          "label": "_exit()",
+          "degree": 6,
+          "source_file": "opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\prog\\syscalls.c",
+          "source_location": "L97"
+        },
+        {
+          "id": "syscalls_putchar",
+          "label": "putchar()",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L126"
+        },
+        {
+          "id": "syscalls_sprintf",
+          "label": "sprintf()",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L359"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_01_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_01.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_01.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_02_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_02.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_02.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_03_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_03.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_03.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_04_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_04.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_04.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_05_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_05.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_05.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_06_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_06.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_06.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_07_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_07.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_07.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_11_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_11.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_11.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_12_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_12.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_12.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_vendor_riscv_isa_sim_tests_mseccfg_gengen_src_outputs_test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_13_c",
+          "label": "test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_13.c",
+          "degree": 6,
+          "source_file": "ibex\\vendor\\riscv-isa-sim\\tests\\mseccfg\\gengen_src\\outputs\\test_pmp_csr_1_lock00_rlb0_mmwp0_mml0_pmp_13.c",
+          "source_location": "L1"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "community": 3,
+      "node_count": 3613,
+      "internal_edge_count": 12589,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 3613
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\sw\\device\\lib\\dif\\dif_spi_device.c",
+          "count": 66
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\dif\\dif_flash_ctrl.c",
+          "count": 55
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\dif\\dif_usbdev.c",
+          "count": 52
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\dif\\dif_i2c.c",
+          "count": 43
+        },
+        {
+          "file": "opentitan\\sw\\device\\tests\\sim_dv\\all_escalation_resets_test.c",
+          "count": 36
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\dif\\dif_clkmgr.c",
+          "count": 33
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\dif\\dif_sysrst_ctrl.c",
+          "count": 32
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\dif\\dif_alert_handler.c",
+          "count": 30
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\dif\\dif_entropy_src.c",
+          "count": 30
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\dif\\dif_spi_host.c",
+          "count": 30
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "validate_testplans_schemavalidator_check",
+          "label": ".check()",
+          "degree": 510,
+          "source_file": "opentitan\\util\\validate_testplans.py",
+          "source_location": "L35"
+        },
+        {
+          "id": "mock_mmio_mmio_region_read32",
+          "label": "mmio_region_read32()",
+          "degree": 479,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\mock_mmio.cc",
+          "source_location": "L24"
+        },
+        {
+          "id": "mock_mmio_mmio_region_write32",
+          "label": "mmio_region_write32()",
+          "degree": 402,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\mock_mmio.cc",
+          "source_location": "L41"
+        },
+        {
+          "id": "top_earlgrey",
+          "label": "top_earlgrey",
+          "degree": 279,
+          "source_file": "opentitan\\hw\\top_earlgrey\\rtl\\autogen\\chip_earlgrey_cw340.sv",
+          "source_location": "L1047"
+        },
+        {
+          "id": "bitfield_bitfield_bit32_write",
+          "label": "bitfield_bit32_write()",
+          "degree": 218,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\bitfield.h",
+          "source_location": "L133"
+        },
+        {
+          "id": "bitfield_bitfield_bit32_read",
+          "label": "bitfield_bit32_read()",
+          "degree": 213,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\bitfield.h",
+          "source_location": "L118"
+        },
+        {
+          "id": "bitfield_bitfield_field32_write",
+          "label": "bitfield_field32_write()",
+          "degree": 194,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\bitfield.h",
+          "source_location": "L71"
+        },
+        {
+          "id": "status_status_ok",
+          "label": "status_ok()",
+          "degree": 193,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\status.h",
+          "source_location": "L233"
+        },
+        {
+          "id": "bitfield_bitfield_field32_read",
+          "label": "bitfield_field32_read()",
+          "degree": 135,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\bitfield.h",
+          "source_location": "L53"
+        },
+        {
+          "id": "data_integrity_escalation_reset_test_execute_test",
+          "label": "execute_test()",
+          "degree": 110,
+          "source_file": "opentitan\\sw\\device\\tests\\sim_dv\\data_integrity_escalation_reset_test.c",
+          "source_location": "L478"
+        },
+        {
+          "id": "hart_wait_for_interrupt",
+          "label": "wait_for_interrupt()",
+          "degree": 102,
+          "source_file": "opentitan\\sw\\device\\lib\\runtime\\hart.h",
+          "source_location": "L27"
+        },
+        {
+          "id": "hart_polyfills_busy_spin_micros",
+          "label": "busy_spin_micros()",
+          "degree": 101,
+          "source_file": "opentitan\\sw\\device\\lib\\runtime\\hart_polyfills.c",
+          "source_location": "L12"
+        },
+        {
+          "id": "irq_irq_global_ctrl",
+          "label": "irq_global_ctrl()",
+          "degree": 84,
+          "source_file": "opentitan\\sw\\device\\lib\\runtime\\irq.c",
+          "source_location": "L17"
+        },
+        {
+          "id": "mock_flash_ctrl_internal",
+          "label": "internal()",
+          "degree": 78,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\mock_flash_ctrl.h",
+          "source_location": "L13"
+        },
+        {
+          "id": "irq_irq_external_ctrl",
+          "label": "irq_external_ctrl()",
+          "degree": 74,
+          "source_file": "opentitan\\sw\\device\\lib\\runtime\\irq.c",
+          "source_location": "L25"
+        },
+        {
+          "id": "opentitan_sw_device_tests_sim_dv_all_escalation_resets_test_c",
+          "label": "all_escalation_resets_test.c",
+          "degree": 71,
+          "source_file": "opentitan\\sw\\device\\tests\\sim_dv\\all_escalation_resets_test.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_device_lib_dif_dif_spi_device_c",
+          "label": "dif_spi_device.c",
+          "degree": 65,
+          "source_file": "opentitan\\sw\\device\\lib\\dif\\dif_spi_device.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "mock_entropy_entropy_complex_init",
+          "label": "entropy_complex_init()",
+          "degree": 60,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\drivers\\mock_entropy.cc",
+          "source_location": "L22"
+        },
+        {
+          "id": "rstmgr_testutils_rstmgr_testutils_reason_get",
+          "label": "rstmgr_testutils_reason_get()",
+          "degree": 60,
+          "source_file": "opentitan\\sw\\device\\lib\\testing\\rstmgr_testutils.c",
+          "source_location": "L101"
+        },
+        {
+          "id": "dif_spi_device_unittest_test_f",
+          "label": "TEST_F()",
+          "degree": 59,
+          "source_file": "opentitan\\sw\\device\\lib\\dif\\dif_spi_device_unittest.cc",
+          "source_location": "L40"
+        },
+        {
+          "id": "dif_base_dif_toggle_to_bool",
+          "label": "dif_toggle_to_bool()",
+          "degree": 58,
+          "source_file": "opentitan\\sw\\device\\lib\\dif\\dif_base.h",
+          "source_location": "L151"
+        },
+        {
+          "id": "dif_base_dif_is_valid_toggle",
+          "label": "dif_is_valid_toggle()",
+          "degree": 57,
+          "source_file": "opentitan\\sw\\device\\lib\\dif\\dif_base.h",
+          "source_location": "L133"
+        },
+        {
+          "id": "rstmgr",
+          "label": "rstmgr",
+          "degree": 56,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\rtl\\autogen\\top_englishbreakfast.sv",
+          "source_location": "L891"
+        },
+        {
+          "id": "opentitan_sw_device_lib_dif_dif_flash_ctrl_c",
+          "label": "dif_flash_ctrl.c",
+          "degree": 54,
+          "source_file": "opentitan\\sw\\device\\lib\\dif\\dif_flash_ctrl.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "status_test_status_set",
+          "label": "test_status_set()",
+          "degree": 53,
+          "source_file": "opentitan\\sw\\device\\lib\\testing\\test_framework\\status.c",
+          "source_location": "L27"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "community": 4,
+      "node_count": 2114,
+      "internal_edge_count": 3892,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 2114
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_core_ibex\\rtl\\rv_core_ibex.sv",
+          "count": 15
+        },
+        {
+          "file": "opentitan\\hw\\ip\\spi_device\\rtl\\spi_device.sv",
+          "count": 14
+        },
+        {
+          "file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\flash_ctrl\\rtl\\flash_ctrl.sv",
+          "count": 13
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\rtl\\otbn_core.sv",
+          "count": 13
+        },
+        {
+          "file": "opentitan\\hw\\ip\\aes\\rtl\\aes_sbox_dom.sv",
+          "count": 12
+        },
+        {
+          "file": "opentitan\\hw\\ip\\entropy_src\\rtl\\entropy_src_core.sv",
+          "count": 11
+        },
+        {
+          "file": "opentitan\\hw\\top_earlgrey\\ip_autogen\\alert_handler\\rtl\\alert_handler.sv",
+          "count": 10
+        },
+        {
+          "file": "opentitan\\hw\\ip\\keymgr_dpe\\rtl\\keymgr_dpe.sv",
+          "count": 10
+        },
+        {
+          "file": "opentitan\\hw\\top_earlgrey\\ip_autogen\\otp_ctrl\\rtl\\otp_ctrl.sv",
+          "count": 10
+        },
+        {
+          "file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_plic\\rtl\\rv_plic_reg_top.sv",
+          "count": 9
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "prim_mubi_pkg",
+          "label": "prim_mubi_pkg",
+          "degree": 196,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_core_ibex\\rtl\\rv_core_ibex.sv",
+          "source_location": "L905"
+        },
+        {
+          "id": "prim_flop_2sync",
+          "label": "prim_flop_2sync",
+          "degree": 110,
+          "source_file": "opentitan\\hw\\vendor\\pulp_riscv_dbg\\src\\dmi_cdc.sv",
+          "source_location": "L65"
+        },
+        {
+          "id": "prim_flop",
+          "label": "prim_flop",
+          "degree": 87,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\rtl\\ibex_lockstep.sv",
+          "source_location": "L199"
+        },
+        {
+          "id": "tlul_rsp_intg_gen",
+          "label": "tlul_rsp_intg_gen",
+          "degree": 78,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_plic\\rtl\\rv_plic_reg_top.sv",
+          "source_location": "L81"
+        },
+        {
+          "id": "prim_subreg",
+          "label": "prim_subreg",
+          "degree": 70,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_plic\\rtl\\rv_plic_reg_top.sv",
+          "source_location": "L671"
+        },
+        {
+          "id": "tlul_adapter_reg",
+          "label": "tlul_adapter_reg",
+          "degree": 70,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_plic\\rtl\\rv_plic_reg_top.sv",
+          "source_location": "L92"
+        },
+        {
+          "id": "prim_reg_we_check",
+          "label": "prim_reg_we_check",
+          "degree": 68,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_plic\\rtl\\rv_plic_reg_top.sv",
+          "source_location": "L56"
+        },
+        {
+          "id": "tlul_cmd_intg_chk",
+          "label": "tlul_cmd_intg_chk",
+          "degree": 68,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_plic\\rtl\\rv_plic_reg_top.sv",
+          "source_location": "L48"
+        },
+        {
+          "id": "prim_subreg_ext",
+          "label": "prim_subreg_ext",
+          "degree": 64,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_plic\\rtl\\rv_plic_reg_top.sv",
+          "source_location": "L8023"
+        },
+        {
+          "id": "prim_buf",
+          "label": "prim_buf",
+          "degree": 63,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\rtl\\ibex_top.sv",
+          "source_location": "L294"
+        },
+        {
+          "id": "prim_count",
+          "label": "prim_count",
+          "degree": 62,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\flash_ctrl\\rtl\\flash_phy_core.sv",
+          "source_location": "L240"
+        },
+        {
+          "id": "aes_pkg",
+          "label": "aes_pkg",
+          "degree": 60,
+          "source_file": "opentitan\\hw\\ip\\aes\\rtl\\aes_wrap.sv",
+          "source_location": "L8"
+        },
+        {
+          "id": "lc_ctrl_pkg",
+          "label": "lc_ctrl_pkg",
+          "degree": 52,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\pwrmgr\\rtl\\pwrmgr_fsm.sv",
+          "source_location": "L76"
+        },
+        {
+          "id": "prim_mubi4_sync",
+          "label": "prim_mubi4_sync",
+          "degree": 47,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rstmgr\\rtl\\rstmgr_leaf_rst.sv",
+          "source_location": "L32"
+        },
+        {
+          "id": "prim_lc_sync",
+          "label": "prim_lc_sync",
+          "degree": 42,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rv_core_ibex\\rtl\\rv_core_ibex.sv",
+          "source_location": "L325"
+        },
+        {
+          "id": "prim_pad_wrapper_pkg",
+          "label": "prim_pad_wrapper_pkg",
+          "degree": 39,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\rtl\\autogen\\chip_englishbreakfast_cw305.sv",
+          "source_location": "L61"
+        },
+        {
+          "id": "flash_ctrl_top_specific_pkg",
+          "label": "flash_ctrl_top_specific_pkg",
+          "degree": 38,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\flash_ctrl\\rtl\\flash_phy.sv",
+          "source_location": "L14"
+        },
+        {
+          "id": "pinmux",
+          "label": "pinmux",
+          "degree": 36,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\rtl\\autogen\\top_englishbreakfast.sv",
+          "source_location": "L979"
+        },
+        {
+          "id": "otbn_pkg",
+          "label": "otbn_pkg",
+          "degree": 33,
+          "source_file": "opentitan\\hw\\ip\\otbn\\rtl\\otbn_vec_transposer.sv",
+          "source_location": "L26"
+        },
+        {
+          "id": "prim_intr_hw",
+          "label": "prim_intr_hw",
+          "degree": 33,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\pwrmgr\\rtl\\pwrmgr.sv",
+          "source_location": "L705"
+        },
+        {
+          "id": "prim_util_pkg",
+          "label": "prim_util_pkg",
+          "degree": 32,
+          "source_file": "opentitan\\hw\\top_earlgrey\\ip_autogen\\otp_ctrl\\rtl\\otp_ctrl_top_specific_pkg.sv",
+          "source_location": "L12"
+        },
+        {
+          "id": "prim_clock_buf",
+          "label": "prim_clock_buf",
+          "degree": 31,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rstmgr\\rtl\\rstmgr.sv",
+          "source_location": "L148"
+        },
+        {
+          "id": "prim_fifo_sync",
+          "label": "prim_fifo_sync",
+          "degree": 31,
+          "source_file": "opentitan\\hw\\vendor\\pulp_riscv_dbg\\src\\dm_csrs.sv",
+          "source_location": "L590"
+        },
+        {
+          "id": "otp_ctrl_reg_pkg",
+          "label": "otp_ctrl_reg_pkg",
+          "degree": 29,
+          "source_file": "opentitan\\hw\\top_earlgrey\\ip_autogen\\otp_ctrl\\rtl\\otp_ctrl_top_specific_pkg.sv",
+          "source_location": "L14"
+        },
+        {
+          "id": "otp_ctrl_pkg",
+          "label": "otp_ctrl_pkg",
+          "degree": 28,
+          "source_file": "opentitan\\hw\\top_earlgrey\\ip_autogen\\otp_ctrl\\rtl\\otp_ctrl_top_specific_pkg.sv",
+          "source_location": "L13"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "community": 5,
+      "node_count": 1732,
+      "internal_edge_count": 6854,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 1732
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\fi\\ibex_fi.c",
+          "count": 59
+        },
+        {
+          "file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\lib\\pentest_lib.c",
+          "count": 35
+        },
+        {
+          "file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\sca\\cryptolib_sca_asym.c",
+          "count": 35
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\crypto\\impl\\ecc_p256.c",
+          "count": 31
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\crypto\\impl\\ecc_p384.c",
+          "count": 31
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\crypto\\impl\\rsa.c",
+          "count": 28
+        },
+        {
+          "file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\fi\\cryptolib_fi_asym.c",
+          "count": 28
+        },
+        {
+          "file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\sca\\ibex_sca.c",
+          "count": 27
+        },
+        {
+          "file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\fi\\otbn_fi.c",
+          "count": 26
+        },
+        {
+          "file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\sca\\cryptolib_sca_sym.c",
+          "count": 26
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "syscalls_memcpy",
+          "label": "memcpy()",
+          "degree": 469,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L379"
+        },
+        {
+          "id": "syscalls_memset",
+          "label": "memset()",
+          "degree": 324,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L395"
+        },
+        {
+          "id": "mock_mmio_mmio_region_from_addr",
+          "label": "mmio_region_from_addr()",
+          "degree": 294,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\mock_mmio.cc",
+          "source_location": "L15"
+        },
+        {
+          "id": "hardened_launder32",
+          "label": "launder32()",
+          "degree": 273,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\hardened.h",
+          "source_location": "L192"
+        },
+        {
+          "id": "pentest_lib_pentest_get_sensor_alerts",
+          "label": "pentest_get_sensor_alerts()",
+          "degree": 127,
+          "source_file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\lib\\pentest_lib.c",
+          "source_location": "L260"
+        },
+        {
+          "id": "pentest_lib_pentest_get_triggered_alerts",
+          "label": "pentest_get_triggered_alerts()",
+          "degree": 127,
+          "source_file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\lib\\pentest_lib.c",
+          "source_location": "L280"
+        },
+        {
+          "id": "pentest_lib_pentest_get_triggered_loc_alerts",
+          "label": "pentest_get_triggered_loc_alerts()",
+          "degree": 126,
+          "source_file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\lib\\pentest_lib.c",
+          "source_location": "L310"
+        },
+        {
+          "id": "dif_rv_core_ibex_dif_rv_core_ibex_get_error_status",
+          "label": "dif_rv_core_ibex_get_error_status()",
+          "degree": 125,
+          "source_file": "opentitan\\sw\\device\\lib\\dif\\dif_rv_core_ibex.c",
+          "source_location": "L208"
+        },
+        {
+          "id": "pentest_lib_pentest_clear_sensor_recov_alerts",
+          "label": "pentest_clear_sensor_recov_alerts()",
+          "degree": 120,
+          "source_file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\lib\\pentest_lib.c",
+          "source_location": "L272"
+        },
+        {
+          "id": "pentest_lib_pentest_set_trigger_high",
+          "label": "pentest_set_trigger_high()",
+          "degree": 109,
+          "source_file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\lib\\pentest_lib.c",
+          "source_location": "L1043"
+        },
+        {
+          "id": "pentest_lib_pentest_set_trigger_low",
+          "label": "pentest_set_trigger_low()",
+          "degree": 109,
+          "source_file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\lib\\pentest_lib.c",
+          "source_location": "L1047"
+        },
+        {
+          "id": "mock_entropy_entropy_complex_check",
+          "label": "entropy_complex_check()",
+          "degree": 89,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\drivers\\mock_entropy.cc",
+          "source_location": "L24"
+        },
+        {
+          "id": "hardened_memory_hardened_memcpy",
+          "label": "hardened_memcpy()",
+          "degree": 77,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\hardened_memory.c",
+          "source_location": "L13"
+        },
+        {
+          "id": "otbn_otbn_load_app",
+          "label": "otbn_load_app()",
+          "degree": 77,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\drivers\\otbn.c",
+          "source_location": "L313"
+        },
+        {
+          "id": "otbn_otbn_dmem_write",
+          "label": "otbn_dmem_write()",
+          "degree": 67,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\drivers\\otbn.c",
+          "source_location": "L119"
+        },
+        {
+          "id": "otbn_otbn_execute",
+          "label": "otbn_execute()",
+          "degree": 66,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\drivers\\otbn.c",
+          "source_location": "L204"
+        },
+        {
+          "id": "integrity_integrity_blinded_checksum",
+          "label": "integrity_blinded_checksum()",
+          "degree": 64,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\impl\\integrity.c",
+          "source_location": "L20"
+        },
+        {
+          "id": "opentitan_sw_device_tests_penetrationtests_firmware_fi_ibex_fi_c",
+          "label": "ibex_fi.c",
+          "degree": 59,
+          "source_file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\fi\\ibex_fi.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "hardened_memory_hardened_memshred",
+          "label": "hardened_memshred()",
+          "degree": 58,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\hardened_memory.c",
+          "source_location": "L53"
+        },
+        {
+          "id": "otbn",
+          "label": "otbn",
+          "degree": 58,
+          "source_file": "opentitan\\hw\\top_earlgrey\\rtl\\autogen\\top_earlgrey.sv",
+          "source_location": "L2517"
+        },
+        {
+          "id": "opentitan_sw_device_lib_crypto_impl_ecc_p384_c",
+          "label": "p384.c",
+          "degree": 58,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\impl\\ecc\\p384.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_device_lib_crypto_impl_ecc_p256_c",
+          "label": "p256.c",
+          "degree": 56,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\impl\\ecc\\p256.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "math_ceil_div",
+          "label": "ceil_div()",
+          "degree": 53,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\math.h",
+          "source_location": "L59"
+        },
+        {
+          "id": "pentest_lib_otbn_busy_wait_for_done",
+          "label": "otbn_busy_wait_for_done()",
+          "degree": 53,
+          "source_file": "opentitan\\sw\\device\\tests\\penetrationtests\\firmware\\lib\\pentest_lib.c",
+          "source_location": "L1057"
+        },
+        {
+          "id": "keyblob_keyblob_num_words",
+          "label": "keyblob_num_words()",
+          "degree": 52,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\impl\\keyblob.c",
+          "source_location": "L54"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "community": 6,
+      "node_count": 1300,
+      "internal_edge_count": 3183,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 1288,
+        "rationale": 12
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\flash_ctrl.c",
+          "count": 34
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\scripts\\gen_csr_test.py",
+          "count": 29
+        },
+        {
+          "file": "opentitan\\sw\\device\\lib\\crypto\\drivers\\entropy.c",
+          "count": 26
+        },
+        {
+          "file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\usb.c",
+          "count": 26
+        },
+        {
+          "file": "opentitan\\sw\\device\\silicon_creator\\lib\\ownership\\owner_block.c",
+          "count": 23
+        },
+        {
+          "file": "opentitan\\sw\\device\\silicon_creator\\manuf\\base\\ft_personalize.c",
+          "count": 23
+        },
+        {
+          "file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\mock_flash_ctrl.cc",
+          "count": 22
+        },
+        {
+          "file": "opentitan\\sw\\device\\silicon_creator\\lib\\cert\\dice_chain.c",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\kmac.c",
+          "count": 17
+        },
+        {
+          "file": "opentitan\\sw\\device\\silicon_creator\\lib\\boot_data_functest.c",
+          "count": 17
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "mock_abs_mmio_abs_mmio_read32",
+          "label": "abs_mmio_read32()",
+          "degree": 135,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\mock_abs_mmio.cc",
+          "source_location": "L21"
+        },
+        {
+          "id": "mock_abs_mmio_abs_mmio_write32",
+          "label": "abs_mmio_write32()",
+          "degree": 123,
+          "source_file": "opentitan\\sw\\device\\lib\\base\\mock_abs_mmio.cc",
+          "source_location": "L25"
+        },
+        {
+          "id": "hmac",
+          "label": "hmac",
+          "degree": 85,
+          "source_file": "opentitan\\hw\\top_earlgrey\\rtl\\autogen\\top_earlgrey.sv",
+          "source_location": "L2452"
+        },
+        {
+          "id": "flash_ctrl",
+          "label": "flash_ctrl",
+          "degree": 49,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\rtl\\autogen\\top_englishbreakfast.sv",
+          "source_location": "L1078"
+        },
+        {
+          "id": "string_memcmp",
+          "label": "memcmp()",
+          "degree": 44,
+          "source_file": "ibex\\vendor\\riscv-test-env\\v\\string.c",
+          "source_location": "L60"
+        },
+        {
+          "id": "otp_otp_read32",
+          "label": "otp_read32()",
+          "degree": 39,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\otp.c",
+          "source_location": "L22"
+        },
+        {
+          "id": "gen_csr_test_csr_read",
+          "label": "csr_read()",
+          "degree": 38,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\scripts\\gen_csr_test.py",
+          "source_location": "L194"
+        },
+        {
+          "id": "rom_void",
+          "label": "void()",
+          "degree": 38,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\rom\\rom.c",
+          "source_location": "L154"
+        },
+        {
+          "id": "opentitan_sw_device_silicon_creator_manuf_base_ft_personalize_c",
+          "label": "ft_personalize.c",
+          "degree": 37,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\manuf\\base\\ft_personalize.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_device_silicon_creator_lib_drivers_flash_ctrl_c",
+          "label": "flash_ctrl.c",
+          "degree": 34,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\flash_ctrl.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "rom_ext_rom_ext_boot",
+          "label": "rom_ext_boot()",
+          "degree": 33,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\rom_ext\\rom_ext.c",
+          "source_location": "L229"
+        },
+        {
+          "id": "rstmgr_rstmgr_reset",
+          "label": "rstmgr_reset()",
+          "degree": 31,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\rstmgr.c",
+          "source_location": "L139"
+        },
+        {
+          "id": "keymgr",
+          "label": "keymgr",
+          "degree": 29,
+          "source_file": "opentitan\\hw\\top_earlgrey\\rtl\\autogen\\top_earlgrey.sv",
+          "source_location": "L2564"
+        },
+        {
+          "id": "rom_rom_boot",
+          "label": "rom_boot()",
+          "degree": 29,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\rom\\rom.c",
+          "source_location": "L552"
+        },
+        {
+          "id": "rom_ext_rom_ext_start",
+          "label": "rom_ext_start()",
+          "degree": 29,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\rom_ext\\rom_ext.c",
+          "source_location": "L498"
+        },
+        {
+          "id": "sec_mmio_sec_mmio_write32",
+          "label": "sec_mmio_write32()",
+          "degree": 29,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\base\\sec_mmio.c",
+          "source_location": "L99"
+        },
+        {
+          "id": "hmac_hmac_sha256_init",
+          "label": "HMAC_SHA256_init()",
+          "degree": 28,
+          "source_file": "opentitan\\sw\\vendor\\cryptoc\\hmac.c",
+          "source_location": "L51"
+        },
+        {
+          "id": "opentitan_sw_device_lib_crypto_drivers_entropy_c",
+          "label": "entropy.c",
+          "degree": 28,
+          "source_file": "opentitan\\sw\\device\\lib\\crypto\\drivers\\entropy.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "gen_csr_test_csr_write",
+          "label": "csr_write()",
+          "degree": 26,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\scripts\\gen_csr_test.py",
+          "source_location": "L176"
+        },
+        {
+          "id": "opentitan_sw_device_silicon_creator_lib_ownership_owner_block_c",
+          "label": "owner_block.c",
+          "degree": 26,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\ownership\\owner_block.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_device_silicon_creator_rom_rom_c",
+          "label": "rom.c",
+          "degree": 26,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\rom\\rom.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "rom_rom_verify",
+          "label": "rom_verify()",
+          "degree": 26,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\rom\\rom.c",
+          "source_location": "L311"
+        },
+        {
+          "id": "opentitan_sw_device_silicon_creator_lib_drivers_usb_c",
+          "label": "usb.c",
+          "degree": 26,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\usb.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "mock_hmac_hmac_sha256_process",
+          "label": "hmac_sha256_process()",
+          "degree": 25,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\mock_hmac.cc",
+          "source_location": "L25"
+        },
+        {
+          "id": "mock_hmac_hmac_sha256_update",
+          "label": "hmac_sha256_update()",
+          "degree": 25,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\drivers\\mock_hmac.cc",
+          "source_location": "L17"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "community": 7,
+      "node_count": 1144,
+      "internal_edge_count": 2165,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 892,
+        "rationale": 252
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\insn.py",
+          "count": 170
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\kmac_ispr.py",
+          "count": 95
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\state.py",
+          "count": 68
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\ext_regs.py",
+          "count": 65
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\mai_ispr.py",
+          "count": 63
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\wsr.py",
+          "count": 63
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\isa.py",
+          "count": 47
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\sim.py",
+          "count": 44
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\mai.py",
+          "count": 42
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\kmac.py",
+          "count": 38
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "model_model_get_reg",
+          "label": ".get_reg()",
+          "degree": 74,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\model.py",
+          "source_location": "L390"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_otbnsim_sim_insn_py",
+          "label": "insn.py",
+          "degree": 71,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\insn.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "wsr_keywsr_read_unsigned",
+          "label": ".read_unsigned()",
+          "degree": 70,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\wsr.py",
+          "source_location": "L232"
+        },
+        {
+          "id": "wsr_keywsr_write_unsigned",
+          "label": ".write_unsigned()",
+          "degree": 58,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\wsr.py",
+          "source_location": "L235"
+        },
+        {
+          "id": "state_otbnstate_stop_at_end_of_cycle",
+          "label": ".stop_at_end_of_cycle()",
+          "degree": 48,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\state.py",
+          "source_location": "L547"
+        },
+        {
+          "id": "state_otbnstate",
+          "label": "OTBNState",
+          "degree": 44,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\state.py",
+          "source_location": "L79"
+        },
+        {
+          "id": "otbninsn",
+          "label": "OTBNInsn",
+          "degree": 42,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "data_bool",
+          "label": "bool",
+          "degree": 42,
+          "source_file": "opentitan\\sw\\host\\hsmtool\\src\\util\\attribute\\data.rs",
+          "source_location": "L45"
+        },
+        {
+          "id": "insn_bnpack_init",
+          "label": ".__init__()",
+          "degree": 41,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\insn.py",
+          "source_location": "L1747"
+        },
+        {
+          "id": "baserunner",
+          "label": "BaseRunner",
+          "degree": 32,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_otbnsim_stepped_py",
+          "label": "stepped.py",
+          "degree": 31,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\stepped.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "stepped_check_arg_count",
+          "label": "check_arg_count()",
+          "degree": 28,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\stepped.py",
+          "source_location": "L110"
+        },
+        {
+          "id": "sim_otbnsim",
+          "label": "OTBNSim",
+          "degree": 27,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\sim.py",
+          "source_location": "L25"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_otbnsim_sim_isa_py",
+          "label": "isa.py",
+          "degree": 23,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\isa.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_otbnsim_sim_state_py",
+          "label": "state.py",
+          "degree": 23,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\state.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "mai_ispr_maictrlcsr",
+          "label": "MaiCtrlCSR",
+          "degree": 20,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\mai_ispr.py",
+          "source_location": "L16"
+        },
+        {
+          "id": "baserunner_baserunner_get_commit",
+          "label": ".get_commit()",
+          "degree": 19,
+          "source_file": "sv-tests\\tools\\BaseRunner.py",
+          "source_location": "L210"
+        },
+        {
+          "id": "dmem_dmem",
+          "label": "Dmem",
+          "degree": 19,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\dmem.py",
+          "source_location": "L25"
+        },
+        {
+          "id": "ext_regs_otbnextregs",
+          "label": "OTBNExtRegs",
+          "degree": 19,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\ext_regs.py",
+          "source_location": "L244"
+        },
+        {
+          "id": "kmac_kmac",
+          "label": "Kmac",
+          "degree": 18,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\kmac.py",
+          "source_location": "L150"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_otbnsim_sim_kmac_ispr_py",
+          "label": "kmac_ispr.py",
+          "degree": 18,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\kmac_ispr.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_otbnsim_sim_wsr_py",
+          "label": "wsr.py",
+          "degree": 18,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\wsr.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "kmac_ispr_kmacsetclrcsr",
+          "label": "KmacSetClrCSR",
+          "degree": 17,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\kmac_ispr.py",
+          "source_location": "L122"
+        },
+        {
+          "id": "state_otbnstate_read_csr",
+          "label": ".read_csr()",
+          "degree": 16,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\state.py",
+          "source_location": "L535"
+        },
+        {
+          "id": "kmac_ispr_kmacdatawsrs",
+          "label": "KmacDataWSRs",
+          "degree": 16,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\sim\\kmac_ispr.py",
+          "source_location": "L296"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "community": 8,
+      "node_count": 1129,
+      "internal_edge_count": 3741,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 876,
+        "rationale": 253
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\communication\\fi_ibex_commands.py",
+          "count": 94
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\otbnsim\\test\\generate_bn_simd_tests.py",
+          "count": 74
+        },
+        {
+          "file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\host_scripts\\fi_ibex_functions.py",
+          "count": 48
+        },
+        {
+          "file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\test_scripts\\fi_ibex_python_test.py",
+          "count": 48
+        },
+        {
+          "file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\communication\\fi_otbn_commands.py",
+          "count": 47
+        },
+        {
+          "file": "opentitan\\sw\\host\\penetrationtests\\python\\sca\\communication\\sca_ibex_commands.py",
+          "count": 43
+        },
+        {
+          "file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\communication\\fi_crypto_commands.py",
+          "count": 38
+        },
+        {
+          "file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\communication\\fi_asym_cryptolib_commands.py",
+          "count": 33
+        },
+        {
+          "file": "opentitan\\sw\\host\\penetrationtests\\python\\sca\\communication\\sca_asym_cryptolib_commands.py",
+          "count": 31
+        },
+        {
+          "file": "opentitan\\sw\\host\\penetrationtests\\python\\sca\\communication\\sca_sym_cryptolib_commands.py",
+          "count": 25
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "targets_target_write",
+          "label": ".write()",
+          "degree": 593,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\util\\targets.py",
+          "source_location": "L78"
+        },
+        {
+          "id": "mod_sizerange_range",
+          "label": ".range()",
+          "degree": 542,
+          "source_file": "opentitan\\sw\\host\\ot_certs\\src\\template\\mod.rs",
+          "source_location": "L382"
+        },
+        {
+          "id": "lcstenc_lcstenc_encode",
+          "label": ".encode()",
+          "degree": 280,
+          "source_file": "opentitan\\util\\design\\lib\\LcStEnc.py",
+          "source_location": "L315"
+        },
+        {
+          "id": "ot_logging_init",
+          "label": "init()",
+          "degree": 218,
+          "source_file": "opentitan\\util\\py\\packages\\lib\\ot_logging.py",
+          "source_location": "L22"
+        },
+        {
+          "id": "targets_target_dump_all",
+          "label": ".dump_all()",
+          "degree": 193,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\util\\targets.py",
+          "source_location": "L120"
+        },
+        {
+          "id": "targets_target_reset_target",
+          "label": ".reset_target()",
+          "degree": 191,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\util\\targets.py",
+          "source_location": "L75"
+        },
+        {
+          "id": "targets_target_read_response",
+          "label": ".read_response()",
+          "degree": 182,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\util\\targets.py",
+          "source_location": "L174"
+        },
+        {
+          "id": "utils_compare_json_data",
+          "label": "compare_json_data()",
+          "degree": 138,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\util\\utils.py",
+          "source_location": "L8"
+        },
+        {
+          "id": "db_devicerecord_update",
+          "label": ".update()",
+          "degree": 115,
+          "source_file": "opentitan\\sw\\host\\provisioning\\orchestrator\\src\\db.py",
+          "source_location": "L175"
+        },
+        {
+          "id": "fi_ibex_commands_otfiibex",
+          "label": "OTFIIbex",
+          "degree": 100,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\communication\\fi_ibex_commands.py",
+          "source_location": "L14"
+        },
+        {
+          "id": "eeprom_cmd_to_bytes",
+          "label": ".to_bytes()",
+          "degree": 63,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\io\\eeprom.rs",
+          "source_location": "L190"
+        },
+        {
+          "id": "image_image_bytes",
+          "label": ".bytes()",
+          "degree": 57,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\image\\image.rs",
+          "source_location": "L534"
+        },
+        {
+          "id": "hasher_digest",
+          "label": "digest()",
+          "degree": 53,
+          "source_file": "opentitan\\hw\\ip\\kmac\\dv\\dpi\\vendor\\kerukuro_digestpp\\hasher.hpp",
+          "source_location": "L271"
+        },
+        {
+          "id": "fi_ibex_commands_otfiibex_ujson_ibex_fi_cmd",
+          "label": "._ujson_ibex_fi_cmd()",
+          "degree": 52,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\communication\\fi_ibex_commands.py",
+          "source_location": "L18"
+        },
+        {
+          "id": "opentitan_sw_host_penetrationtests_python_fi_host_scripts_fi_ibex_functions_py",
+          "label": "fi_ibex_functions.py",
+          "degree": 47,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\host_scripts\\fi_ibex_functions.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "fi_otbn_commands_otfiotbn",
+          "label": "OTFIOtbn",
+          "degree": 42,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\communication\\fi_otbn_commands.py",
+          "source_location": "L13"
+        },
+        {
+          "id": "sca_ibex_commands_otibex",
+          "label": "OTIbex",
+          "degree": 41,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\sca\\communication\\sca_ibex_commands.py",
+          "source_location": "L13"
+        },
+        {
+          "id": "topgen_seed",
+          "label": "Seed",
+          "degree": 41,
+          "source_file": "opentitan\\util\\topgen.py",
+          "source_location": "L80"
+        },
+        {
+          "id": "fi_ibex_python_test_load_test_data",
+          "label": "load_test_data()",
+          "degree": 39,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\test_scripts\\fi_ibex_python_test.py",
+          "source_location": "L33"
+        },
+        {
+          "id": "secure_prng_secureprng_getrandbits",
+          "label": ".getrandbits()",
+          "degree": 38,
+          "source_file": "opentitan\\util\\topgen\\secure_prng.py",
+          "source_location": "L214"
+        },
+        {
+          "id": "sca_prng_commands_otprng_seed_prng",
+          "label": ".seed_prng()",
+          "degree": 34,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\sca\\communication\\sca_prng_commands.py",
+          "source_location": "L22"
+        },
+        {
+          "id": "fi_ibex_python_test_ibexfitest",
+          "label": "IbexFiTest",
+          "degree": 33,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\test_scripts\\fi_ibex_python_test.py",
+          "source_location": "L45"
+        },
+        {
+          "id": "sca_prng_commands_otprng",
+          "label": "OTPRNG",
+          "degree": 33,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\sca\\communication\\sca_prng_commands.py",
+          "source_location": "L14"
+        },
+        {
+          "id": "fi_asym_cryptolib_commands_otfiasymcrypto",
+          "label": "OTFIAsymCrypto",
+          "degree": 32,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\fi\\communication\\fi_asym_cryptolib_commands.py",
+          "source_location": "L13"
+        },
+        {
+          "id": "sca_asym_cryptolib_commands_otasymcrypto",
+          "label": "OTAsymCrypto",
+          "degree": 30,
+          "source_file": "opentitan\\sw\\host\\penetrationtests\\python\\sca\\communication\\sca_asym_cryptolib_commands.py",
+          "source_location": "L14"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "community": 9,
+      "node_count": 1081,
+      "internal_edge_count": 2715,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 1070,
+        "rationale": 11
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\model\\otbn_model.cc",
+          "count": 59
+        },
+        {
+          "file": "sv-tests\\conf\\report\\report.js",
+          "count": 42
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\cosim\\spike_cosim.cc",
+          "count": 40
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\model\\iss_wrapper.cc",
+          "count": 35
+        },
+        {
+          "file": "opentitan\\hw\\dv\\verilator\\simutil_verilator\\cpp\\verilator_sim_ctrl.cc",
+          "count": 27
+        },
+        {
+          "file": "opentitan\\util\\py\\packages\\impl\\object_size\\types.py",
+          "count": 24
+        },
+        {
+          "file": "opentitan\\hw\\dv\\dpi\\usbdpi\\usbdpi.c",
+          "count": 20
+        },
+        {
+          "file": "opentitan\\hw\\dv\\verilator\\cpp\\scrambled_ecc32_mem_area.cc",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\hw\\dv\\dpi\\common\\tcp_server\\tcp_server.c",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\sw\\device\\silicon_creator\\lib\\cert\\asn1.c",
+          "count": 19
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "translate_assert",
+          "label": "assert()",
+          "degree": 235,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\programs\\translate.c",
+          "source_location": "L67"
+        },
+        {
+          "id": "types_size",
+          "label": "Size",
+          "degree": 109,
+          "source_file": "opentitan\\util\\py\\packages\\impl\\object_size\\types.py",
+          "source_location": "L68"
+        },
+        {
+          "id": "syscalls_printf",
+          "label": "printf()",
+          "degree": 69,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\common\\syscalls.c",
+          "source_location": "L348"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_model_otbn_model_cc",
+          "label": "otbn_model.cc",
+          "degree": 61,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\model\\otbn_model.cc",
+          "source_location": "L1"
+        },
+        {
+          "id": "tiny_malloc_free",
+          "label": "free()",
+          "degree": 47,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\programs\\tiny-malloc.c",
+          "source_location": "L216"
+        },
+        {
+          "id": "epmp_epmpaddressrange_end",
+          "label": ".end()",
+          "degree": 46,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\test_utils\\epmp.rs",
+          "source_location": "L67"
+        },
+        {
+          "id": "ibex_dv_cosim_spike_cosim_cc",
+          "label": "spike_cosim.cc",
+          "degree": 39,
+          "source_file": "ibex\\dv\\cosim\\spike_cosim.cc",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_vendor_lowrisc_ibex_dv_cosim_spike_cosim_cc",
+          "label": "spike_cosim.cc",
+          "degree": 39,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\cosim\\spike_cosim.cc",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_model_iss_wrapper_cc",
+          "label": "iss_wrapper.cc",
+          "degree": 36,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\model\\iss_wrapper.cc",
+          "source_location": "L1"
+        },
+        {
+          "id": "signal",
+          "label": "Signal",
+          "degree": 35,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "tiny_malloc_malloc",
+          "label": "malloc()",
+          "degree": 33,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\programs\\tiny-malloc.c",
+          "source_location": "L132"
+        },
+        {
+          "id": "iss_wrapper_run_command",
+          "label": "run_command()",
+          "degree": 30,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\model\\iss_wrapper.cc",
+          "source_location": "L722"
+        },
+        {
+          "id": "ibex_vendor_lowrisc_ip_dv_verilator_simutil_verilator_cpp_verilator_sim_ctrl_cc",
+          "label": "verilator_sim_ctrl.cc",
+          "degree": 28,
+          "source_file": "ibex\\vendor\\lowrisc_ip\\dv\\verilator\\simutil_verilator\\cpp\\verilator_sim_ctrl.cc",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_dv_verilator_simutil_verilator_cpp_verilator_sim_ctrl_cc",
+          "label": "verilator_sim_ctrl.cc",
+          "degree": 28,
+          "source_file": "opentitan\\hw\\dv\\verilator\\simutil_verilator\\cpp\\verilator_sim_ctrl.cc",
+          "source_location": "L1"
+        },
+        {
+          "id": "asn1_unittest_test",
+          "label": "TEST()",
+          "degree": 23,
+          "source_file": "opentitan\\sw\\device\\silicon_creator\\lib\\cert\\asn1_unittest.cc",
+          "source_location": "L32"
+        },
+        {
+          "id": "uart_ti50uart_get_state",
+          "label": ".get_state()",
+          "degree": 22,
+          "source_file": "opentitan\\sw\\host\\ot_transports\\ti50emulator\\src\\uart.rs",
+          "source_location": "L55"
+        },
+        {
+          "id": "otbn_model_ensure_wrapper",
+          "label": "ensure_wrapper()",
+          "degree": 22,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\model\\otbn_model.cc",
+          "source_location": "L677"
+        },
+        {
+          "id": "usbdpi_usbdpi_host_to_device",
+          "label": "usbdpi_host_to_device()",
+          "degree": 22,
+          "source_file": "opentitan\\hw\\dv\\dpi\\usbdpi\\usbdpi.c",
+          "source_location": "L1115"
+        },
+        {
+          "id": "exec_exec",
+          "label": "Exec",
+          "degree": 20,
+          "source_file": "opentitan\\sw\\host\\hsmtool\\src\\commands\\exec.rs",
+          "source_location": "L17"
+        },
+        {
+          "id": "opentitan_hw_dv_dpi_usbdpi_usbdpi_c",
+          "label": "usbdpi.c",
+          "degree": 20,
+          "source_file": "opentitan\\hw\\dv\\dpi\\usbdpi\\usbdpi.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "aes_example_main",
+          "label": "main()",
+          "degree": 19,
+          "source_file": "opentitan\\hw\\ip\\aes\\model\\aes_example.c",
+          "source_location": "L35"
+        },
+        {
+          "id": "ibex_vendor_lowrisc_ip_dv_verilator_cpp_scrambled_ecc32_mem_area_cc",
+          "label": "scrambled_ecc32_mem_area.cc",
+          "degree": 19,
+          "source_file": "ibex\\vendor\\lowrisc_ip\\dv\\verilator\\cpp\\scrambled_ecc32_mem_area.cc",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_dv_verilator_cpp_scrambled_ecc32_mem_area_cc",
+          "label": "scrambled_ecc32_mem_area.cc",
+          "degree": 19,
+          "source_file": "opentitan\\hw\\dv\\verilator\\cpp\\scrambled_ecc32_mem_area.cc",
+          "source_location": "L1"
+        },
+        {
+          "id": "semihosting_strlen",
+          "label": "strlen()",
+          "degree": 19,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\programs\\semihosting.c",
+          "source_location": "L5"
+        },
+        {
+          "id": "verilator_sim_ctrl_settop",
+          "label": "SetTop()",
+          "degree": 18,
+          "source_file": "opentitan\\hw\\dv\\verilator\\simutil_verilator\\cpp\\verilator_sim_ctrl.cc",
+          "source_location": "L42"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "community": 10,
+      "node_count": 952,
+      "internal_edge_count": 1593,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 952
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\transport\\mod.rs",
+          "count": 17
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\uvm\\icache\\dv\\tb\\tb.sv",
+          "count": 10
+        },
+        {
+          "file": "RTLLM\\Arithmetic\\Adder\\adder_32bit\\verified_adder_32bit.v",
+          "count": 9
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\rtl\\ibex_core.sv",
+          "count": 8
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\uvm\\core_ibex\\tests\\core_ibex_test_pkg.sv",
+          "count": 7
+        },
+        {
+          "file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\flash_ctrl\\dv\\tb\\tb.sv",
+          "count": 7
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\uvm\\tb.sv",
+          "count": 7
+        },
+        {
+          "file": "opentitan\\hw\\ip\\entropy_src\\dv\\tb\\tb.sv",
+          "count": 7
+        },
+        {
+          "file": "opentitan\\hw\\ip\\usbdev\\dv\\tb\\tb.sv",
+          "count": 7
+        },
+        {
+          "file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\pwrmgr\\dv\\tb.sv",
+          "count": 6
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "uvm_pkg",
+          "label": "uvm_pkg",
+          "degree": 335,
+          "source_file": "sv-tests\\tests\\testbenches\\uvm_test_run_test.sv",
+          "source_location": "L19"
+        },
+        {
+          "id": "dv_utils_pkg",
+          "label": "dv_utils_pkg",
+          "degree": 111,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\uvm\\icache\\dv\\tb\\tb.sv",
+          "source_location": "L12"
+        },
+        {
+          "id": "clk_rst_if",
+          "label": "clk_rst_if",
+          "degree": 63,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\uvm\\icache\\dv\\tb\\tb.sv",
+          "source_location": "L23"
+        },
+        {
+          "id": "ibex_pkg",
+          "label": "ibex_pkg",
+          "degree": 58,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\rtl\\ibex_wb_stage.sv",
+          "source_location": "L64"
+        },
+        {
+          "id": "cip_base_pkg",
+          "label": "cip_base_pkg",
+          "degree": 54,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\rstmgr\\dv\\tests\\rstmgr_test_pkg.sv",
+          "source_location": "L8"
+        },
+        {
+          "id": "tl_if",
+          "label": "tl_if",
+          "degree": 43,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\pwrmgr\\dv\\tb.sv",
+          "source_location": "L44"
+        },
+        {
+          "id": "pins_if",
+          "label": "pins_if",
+          "degree": 38,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\pwrmgr\\dv\\tb.sv",
+          "source_location": "L39"
+        },
+        {
+          "id": "dv_lib_pkg",
+          "label": "dv_lib_pkg",
+          "degree": 31,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\uvm\\icache\\dv\\tests\\ibex_icache_test_pkg.sv",
+          "source_location": "L8"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_ip_otbn_dv_uvm_tb_sv_tb",
+          "label": "tb",
+          "degree": 21,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\uvm\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_ip_lc_ctrl_dv_tb_sv_tb",
+          "label": "tb",
+          "degree": 19,
+          "source_file": "opentitan\\hw\\ip\\lc_ctrl\\dv\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "clk_gen",
+          "label": "clk_gen",
+          "degree": 16,
+          "source_file": "sv-tests\\tests\\chapter-16\\16.9--sequence-stable-uvm.sv",
+          "source_location": "L72"
+        },
+        {
+          "id": "opentitan_sw_host_opentitanlib_src_transport_mod_rs",
+          "label": "mod.rs",
+          "degree": 15,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\transport\\mod.rs",
+          "source_location": "L1"
+        },
+        {
+          "id": "rst_shadowed_if",
+          "label": "rst_shadowed_if",
+          "degree": 15,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\flash_ctrl\\dv\\tb\\tb.sv",
+          "source_location": "L50"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_ip_usbdev_dv_tb_tb_sv_tb",
+          "label": "tb",
+          "degree": 15,
+          "source_file": "opentitan\\hw\\ip\\usbdev\\dv\\tb\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_top_earlgrey_dv_tb_tb_sv_tb",
+          "label": "tb",
+          "degree": 15,
+          "source_file": "opentitan\\hw\\top_earlgrey\\dv\\tb\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_top_darjeeling_dv_tb_tb_sv_tb",
+          "label": "tb",
+          "degree": 14,
+          "source_file": "opentitan\\hw\\top_darjeeling\\dv\\tb\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "tl_agent_pkg",
+          "label": "tl_agent_pkg",
+          "degree": 14,
+          "source_file": "opentitan\\hw\\top_englishbreakfast\\ip_autogen\\gpio\\dv\\tb\\tb.sv",
+          "source_location": "L10"
+        },
+        {
+          "id": "opentitan_hw_dv_sv_cip_lib_cip_base_pkg_sv",
+          "label": "cip_base_pkg.sv",
+          "degree": 13,
+          "source_file": "opentitan\\hw\\dv\\sv\\cip_lib\\cip_base_pkg.sv",
+          "source_location": "L1"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_ip_dma_dv_tb_tb_sv_tb",
+          "label": "tb",
+          "degree": 13,
+          "source_file": "opentitan\\hw\\ip\\dma\\dv\\tb\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_ip_i2c_dv_tb_tb_sv_tb",
+          "label": "tb",
+          "degree": 13,
+          "source_file": "opentitan\\hw\\ip\\i2c\\dv\\tb\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_ip_spi_host_dv_tb_sv_tb",
+          "label": "tb",
+          "degree": 13,
+          "source_file": "opentitan\\hw\\ip\\spi_host\\dv\\tb.sv",
+          "source_location": "L6"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_ip_sram_ctrl_dv_tb_sv_tb",
+          "label": "tb",
+          "degree": 13,
+          "source_file": "opentitan\\hw\\ip\\sram_ctrl\\dv\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_top_darjeeling_ip_autogen_alert_handler_dv_tb_tb_sv_tb",
+          "label": "tb",
+          "degree": 13,
+          "source_file": "opentitan\\hw\\top_darjeeling\\ip_autogen\\alert_handler\\dv\\tb\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "d_mywork_verilog_dbs_opentitan_hw_top_earlgrey_ip_autogen_alert_handler_dv_tb_tb_sv_tb",
+          "label": "tb",
+          "degree": 13,
+          "source_file": "opentitan\\hw\\top_earlgrey\\ip_autogen\\alert_handler\\dv\\tb\\tb.sv",
+          "source_location": "L5"
+        },
+        {
+          "id": "dv_base_reg_pkg",
+          "label": "dv_base_reg_pkg",
+          "degree": 12,
+          "source_file": "opentitan\\hw\\dv\\sv\\tl_agent\\tl_agent_pkg.sv",
+          "source_location": "L13"
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "community": 11,
+      "node_count": 724,
+      "internal_edge_count": 1609,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 643,
+        "rationale": 81
+      },
+      "top_source_files": [
+        {
+          "file": "ibex\\vendor\\riscv-tests\\debug\\gdbserver.py",
+          "count": 246
+        },
+        {
+          "file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "count": 105
+        },
+        {
+          "file": "opentitan\\sw\\host\\provisioning\\orchestrator\\tests\\device_id_test.py",
+          "count": 21
+        },
+        {
+          "file": "opentitan\\util\\py\\packages\\lib\\register_usage_report_test.py",
+          "count": 20
+        },
+        {
+          "file": "opentitan\\sw\\host\\cryptotest\\testvectors\\parsers\\cryptotest_util_test.py",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\sw\\host\\provisioning\\orchestrator\\src\\device_id.py",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\sw\\host\\provisioning\\orchestrator\\src\\db.py",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\util\\design\\sparse-fsm-encode-test.py",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\util\\py\\packages\\lib\\register_usage_report.py",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\ci\\scripts\\lib\\bazel_query_test.py",
+          "count": 18
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "testlib_assertequal",
+          "label": "assertEqual()",
+          "degree": 190,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L1338"
+        },
+        {
+          "id": "ibex_vendor_riscv_tests_debug_gdbserver_py",
+          "label": "gdbserver.py",
+          "degree": 95,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\gdbserver.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "testlib_gdb_p",
+          "label": ".p()",
+          "degree": 71,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L835"
+        },
+        {
+          "id": "testlib_assertin",
+          "label": "assertIn()",
+          "degree": 62,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L1346"
+        },
+        {
+          "id": "lib_command",
+          "label": "Command",
+          "degree": 51,
+          "source_file": "opentitan\\sw\\host\\ot_transports\\dediprog\\src\\lib.rs",
+          "source_location": "L87"
+        },
+        {
+          "id": "blake_provider_c",
+          "label": "C()",
+          "degree": 47,
+          "source_file": "opentitan\\hw\\ip\\kmac\\dv\\dpi\\vendor\\kerukuro_digestpp\\algorithm\\detail\\blake_provider.hpp",
+          "source_location": "L67"
+        },
+        {
+          "id": "ibex_vendor_riscv_tests_debug_testlib_py",
+          "label": "testlib.py",
+          "degree": 45,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "testlib_gdb_b",
+          "label": ".b()",
+          "degree": 40,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L886"
+        },
+        {
+          "id": "testlib_gdb",
+          "label": "Gdb",
+          "degree": 38,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L590"
+        },
+        {
+          "id": "testlib_gdb_command",
+          "label": ".command()",
+          "degree": 36,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L705"
+        },
+        {
+          "id": "device_id_deviceid",
+          "label": "DeviceId",
+          "degree": 28,
+          "source_file": "opentitan\\sw\\host\\provisioning\\orchestrator\\src\\device_id.py",
+          "source_location": "L116"
+        },
+        {
+          "id": "util_format_hex",
+          "label": "format_hex()",
+          "degree": 28,
+          "source_file": "opentitan\\sw\\host\\provisioning\\orchestrator\\src\\util.py",
+          "source_location": "L26"
+        },
+        {
+          "id": "device_id_deviceid_to_int",
+          "label": ".to_int()",
+          "degree": 24,
+          "source_file": "opentitan\\sw\\host\\provisioning\\orchestrator\\src\\device_id.py",
+          "source_location": "L290"
+        },
+        {
+          "id": "device_id_test_testdeviceid",
+          "label": "TestDeviceId",
+          "degree": 22,
+          "source_file": "opentitan\\sw\\host\\provisioning\\orchestrator\\tests\\device_id_test.py",
+          "source_location": "L16"
+        },
+        {
+          "id": "gdbserver_debugtest",
+          "label": "DebugTest",
+          "degree": 20,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\gdbserver.py",
+          "source_location": "L516"
+        },
+        {
+          "id": "dmi_dmidebugger_d_select_hart",
+          "label": ".select_hart()",
+          "degree": 19,
+          "source_file": "opentitan\\sw\\host\\opentitanlib\\src\\debug\\dmi.rs",
+          "source_location": "L238"
+        },
+        {
+          "id": "testlib_gdb_stepi",
+          "label": ".stepi()",
+          "degree": 19,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L867"
+        },
+        {
+          "id": "gdbserver_debugtest_exit",
+          "label": ".exit()",
+          "degree": 18,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\gdbserver.py",
+          "source_location": "L526"
+        },
+        {
+          "id": "gdbtest",
+          "label": "GdbTest",
+          "degree": 18,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "testlib_asserttrue",
+          "label": "assertTrue()",
+          "degree": 17,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\testlib.py",
+          "source_location": "L1362"
+        },
+        {
+          "id": "register_usage_report_merge",
+          "label": "merge()",
+          "degree": 17,
+          "source_file": "opentitan\\util\\py\\packages\\lib\\register_usage_report.py",
+          "source_location": "L108"
+        },
+        {
+          "id": "gdbserver_smpsimultaneousrunhalt_test",
+          "label": ".test()",
+          "degree": 16,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\gdbserver.py",
+          "source_location": "L1219"
+        },
+        {
+          "id": "bazel_query_bazelqueryrunner",
+          "label": "BazelQueryRunner",
+          "degree": 16,
+          "source_file": "opentitan\\ci\\scripts\\lib\\bazel_query.py",
+          "source_location": "L39"
+        },
+        {
+          "id": "gdbserver_freertostest_test",
+          "label": ".test()",
+          "degree": 15,
+          "source_file": "ibex\\vendor\\riscv-tests\\debug\\gdbserver.py",
+          "source_location": "L1889"
+        },
+        {
+          "id": "gen_vivado_mem_image_otp_words_to_updatemem_pieces",
+          "label": "otp_words_to_updatemem_pieces()",
+          "degree": 15,
+          "source_file": "opentitan\\hw\\ip\\rom_ctrl\\util\\gen_vivado_mem_image.py",
+          "source_location": "L128"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "community": 12,
+      "node_count": 651,
+      "internal_edge_count": 1754,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 560,
+        "rationale": 91
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_asm_program_gen.py",
+          "count": 66
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_pkg.py",
+          "count": 51
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_load_store_instr_lib.py",
+          "count": 26
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_illegal_instr.py",
+          "count": 26
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\isa\\riscv_instr.py",
+          "count": 26
+        },
+        {
+          "file": "opentitan\\util\\reggen\\register.py",
+          "count": 26
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_directed_instr_lib.py",
+          "count": 24
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_amo_instr_lib.py",
+          "count": 22
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_gen_config.py",
+          "count": 20
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_stream.py",
+          "count": 18
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "riscv_asm_program_gen_riscv_asm_program_gen",
+          "label": "riscv_asm_program_gen",
+          "degree": 84,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_asm_program_gen.py",
+          "source_location": "L45"
+        },
+        {
+          "id": "riscv_instr_riscv_instr",
+          "label": "riscv_instr",
+          "degree": 78,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\isa\\riscv_instr.py",
+          "source_location": "L35"
+        },
+        {
+          "id": "enum",
+          "label": "Enum",
+          "degree": 63,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "intenum",
+          "label": "IntEnum",
+          "degree": 59,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "riscv_instr_pkg_riscv_instr_group_t",
+          "label": "riscv_instr_group_t",
+          "degree": 58,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_pkg.py",
+          "source_location": "L73"
+        },
+        {
+          "id": "riscv_instr_pkg_riscv_instr_name_t",
+          "label": "riscv_instr_name_t",
+          "degree": 56,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_pkg.py",
+          "source_location": "L99"
+        },
+        {
+          "id": "ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_pkg_py",
+          "label": "riscv_instr_pkg.py",
+          "degree": 47,
+          "source_file": "ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_pkg.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_pkg_py",
+          "label": "riscv_instr_pkg.py",
+          "degree": 47,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_pkg.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "riscv_instr_pkg_riscv_instr_category_t",
+          "label": "riscv_instr_category_t",
+          "degree": 46,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_pkg.py",
+          "source_location": "L781"
+        },
+        {
+          "id": "riscv_asm_program_gen_riscv_asm_program_gen_gen_program",
+          "label": ".gen_program()",
+          "degree": 45,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_asm_program_gen.py",
+          "source_location": "L64"
+        },
+        {
+          "id": "riscv_instr_pkg_riscv_reg_t",
+          "label": "riscv_reg_t",
+          "degree": 42,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_pkg.py",
+          "source_location": "L633"
+        },
+        {
+          "id": "riscv_instr_stream_riscv_rand_instr_stream",
+          "label": "riscv_rand_instr_stream",
+          "degree": 35,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_stream.py",
+          "source_location": "L150"
+        },
+        {
+          "id": "riscv_instr_pkg_riscv_instr_format_t",
+          "label": "riscv_instr_format_t",
+          "degree": 34,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_pkg.py",
+          "source_location": "L738"
+        },
+        {
+          "id": "riscv_instr_sequence_riscv_instr_sequence",
+          "label": "riscv_instr_sequence",
+          "degree": 34,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_sequence.py",
+          "source_location": "L47"
+        },
+        {
+          "id": "register_register",
+          "label": "Register",
+          "degree": 31,
+          "source_file": "opentitan\\util\\reggen\\register.py",
+          "source_location": "L89"
+        },
+        {
+          "id": "riscv_privileged_common_seq_riscv_privileged_common_seq",
+          "label": "riscv_privileged_common_seq",
+          "degree": 30,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_privileged_common_seq.py",
+          "source_location": "L25"
+        },
+        {
+          "id": "riscv_pseudo_instr_riscv_pseudo_instr",
+          "label": "riscv_pseudo_instr",
+          "degree": 29,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_pseudo_instr.py",
+          "source_location": "L22"
+        },
+        {
+          "id": "riscv_directed_instr_lib_riscv_mem_access_stream",
+          "label": "riscv_mem_access_stream",
+          "degree": 28,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_directed_instr_lib.py",
+          "source_location": "L50"
+        },
+        {
+          "id": "riscv_load_store_instr_lib_riscv_load_store_base_instr_stream",
+          "label": "riscv_load_store_base_instr_stream",
+          "degree": 27,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_load_store_instr_lib.py",
+          "source_location": "L37"
+        },
+        {
+          "id": "riscv_floating_point_instr_riscv_floating_point_instr",
+          "label": "riscv_floating_point_instr",
+          "degree": 25,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\isa\\riscv_floating_point_instr.py",
+          "source_location": "L23"
+        },
+        {
+          "id": "ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_illegal_instr_py",
+          "label": "riscv_illegal_instr.py",
+          "degree": 23,
+          "source_file": "ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_illegal_instr.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_illegal_instr_py",
+          "label": "riscv_illegal_instr.py",
+          "degree": 23,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_illegal_instr.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "riscv_b_instr_riscv_b_instr",
+          "label": "riscv_b_instr",
+          "degree": 22,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\isa\\riscv_b_instr.py",
+          "source_location": "L28"
+        },
+        {
+          "id": "riscv_callstack_gen_riscv_callstack_gen",
+          "label": "riscv_callstack_gen",
+          "degree": 21,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_callstack_gen.py",
+          "source_location": "L57"
+        },
+        {
+          "id": "riscv_instr_pkg_privileged_reg_t",
+          "label": "privileged_reg_t",
+          "degree": 20,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_pkg.py",
+          "source_location": "L801"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "community": 13,
+      "node_count": 500,
+      "internal_edge_count": 1367,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 304,
+        "rationale": 196
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\util\\dvsim\\Deploy.py",
+          "count": 77
+        },
+        {
+          "file": "opentitan\\util\\dvsim\\Scheduler.py",
+          "count": 37
+        },
+        {
+          "file": "opentitan\\util\\dvsim\\FlowCfg.py",
+          "count": 31
+        },
+        {
+          "file": "opentitan\\util\\dvsim\\Launcher.py",
+          "count": 31
+        },
+        {
+          "file": "opentitan\\util\\dvsim\\SimCfg.py",
+          "count": 29
+        },
+        {
+          "file": "opentitan\\util\\dvsim\\LsfLauncher.py",
+          "count": 20
+        },
+        {
+          "file": "opentitan\\util\\dvsim\\modes.py",
+          "count": 20
+        },
+        {
+          "file": "opentitan\\util\\dvsim\\NcLauncher.py",
+          "count": 19
+        },
+        {
+          "file": "ibex\\vendor\\lowrisc_ip\\util\\dvsim\\SimCfg.py",
+          "count": 15
+        },
+        {
+          "file": "opentitan\\util\\dvsim\\LocalLauncher.py",
+          "count": 14
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "launcher_launchererror",
+          "label": "LauncherError",
+          "degree": 66,
+          "source_file": "opentitan\\util\\dvsim\\Launcher.py",
+          "source_location": "L17"
+        },
+        {
+          "id": "launcher_launcher",
+          "label": "Launcher",
+          "degree": 54,
+          "source_file": "opentitan\\util\\dvsim\\Launcher.py",
+          "source_location": "L41"
+        },
+        {
+          "id": "results_server_resultsserver",
+          "label": "ResultsServer",
+          "degree": 54,
+          "source_file": "opentitan\\util\\dvsim\\results_server.py",
+          "source_location": "L24"
+        },
+        {
+          "id": "flowcfg_flowcfg",
+          "label": "FlowCfg",
+          "degree": 50,
+          "source_file": "opentitan\\util\\dvsim\\FlowCfg.py",
+          "source_location": "L24"
+        },
+        {
+          "id": "launcher_errormessage",
+          "label": "ErrorMessage",
+          "degree": 49,
+          "source_file": "opentitan\\util\\dvsim\\Launcher.py",
+          "source_location": "L27"
+        },
+        {
+          "id": "jobtime_jobtime",
+          "label": "JobTime",
+          "degree": 49,
+          "source_file": "opentitan\\util\\dvsim\\JobTime.py",
+          "source_location": "L12"
+        },
+        {
+          "id": "scheduler_scheduler",
+          "label": "Scheduler",
+          "degree": 47,
+          "source_file": "opentitan\\util\\dvsim\\Scheduler.py",
+          "source_location": "L49"
+        },
+        {
+          "id": "deploy_runtest",
+          "label": "RunTest",
+          "degree": 40,
+          "source_file": "opentitan\\util\\dvsim\\Deploy.py",
+          "source_location": "L464"
+        },
+        {
+          "id": "timer_timer",
+          "label": "Timer",
+          "degree": 36,
+          "source_file": "opentitan\\util\\dvsim\\Timer.py",
+          "source_location": "L8"
+        },
+        {
+          "id": "simcfg_simcfg",
+          "label": "SimCfg",
+          "degree": 35,
+          "source_file": "opentitan\\util\\dvsim\\SimCfg.py",
+          "source_location": "L36"
+        },
+        {
+          "id": "modes_mode",
+          "label": "Mode",
+          "degree": 34,
+          "source_file": "opentitan\\util\\dvsim\\modes.py",
+          "source_location": "L10"
+        },
+        {
+          "id": "testplan_testplan",
+          "label": "Testplan",
+          "degree": 33,
+          "source_file": "opentitan\\util\\dvsim\\Testplan.py",
+          "source_location": "L235"
+        },
+        {
+          "id": "launcher_launcherbusy",
+          "label": "LauncherBusy",
+          "degree": 31,
+          "source_file": "opentitan\\util\\dvsim\\Launcher.py",
+          "source_location": "L22"
+        },
+        {
+          "id": "modes_runmode",
+          "label": "RunMode",
+          "degree": 31,
+          "source_file": "opentitan\\util\\dvsim\\modes.py",
+          "source_location": "L266"
+        },
+        {
+          "id": "results_server_nogcperror",
+          "label": "NoGCPError",
+          "degree": 29,
+          "source_file": "opentitan\\util\\dvsim\\results_server.py",
+          "source_location": "L18"
+        },
+        {
+          "id": "modes_buildmode",
+          "label": "BuildMode",
+          "degree": 28,
+          "source_file": "opentitan\\util\\dvsim\\modes.py",
+          "source_location": "L229"
+        },
+        {
+          "id": "deploy_compilesim",
+          "label": "CompileSim",
+          "degree": 28,
+          "source_file": "opentitan\\util\\dvsim\\Deploy.py",
+          "source_location": "L325"
+        },
+        {
+          "id": "deploy_covreport",
+          "label": "CovReport",
+          "degree": 28,
+          "source_file": "opentitan\\util\\dvsim\\Deploy.py",
+          "source_location": "L707"
+        },
+        {
+          "id": "oneshotcfg_oneshotcfg",
+          "label": "OneShotCfg",
+          "degree": 28,
+          "source_file": "opentitan\\util\\dvsim\\OneShotCfg.py",
+          "source_location": "L18"
+        },
+        {
+          "id": "test_test",
+          "label": "Test",
+          "degree": 28,
+          "source_file": "opentitan\\util\\dvsim\\Test.py",
+          "source_location": "L12"
+        },
+        {
+          "id": "deploy_covanalyze",
+          "label": "CovAnalyze",
+          "degree": 27,
+          "source_file": "opentitan\\util\\dvsim\\Deploy.py",
+          "source_location": "L762"
+        },
+        {
+          "id": "deploy_covmerge",
+          "label": "CovMerge",
+          "degree": 27,
+          "source_file": "opentitan\\util\\dvsim\\Deploy.py",
+          "source_location": "L645"
+        },
+        {
+          "id": "deploy_covunr",
+          "label": "CovUnr",
+          "degree": 27,
+          "source_file": "opentitan\\util\\dvsim\\Deploy.py",
+          "source_location": "L604"
+        },
+        {
+          "id": "deploy_deploy",
+          "label": "Deploy",
+          "degree": 27,
+          "source_file": "opentitan\\util\\dvsim\\Deploy.py",
+          "source_location": "L21"
+        },
+        {
+          "id": "simresults_simresults",
+          "label": "SimResults",
+          "degree": 27,
+          "source_file": "opentitan\\util\\dvsim\\SimResults.py",
+          "source_location": "L68"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "community": 14,
+      "node_count": 422,
+      "internal_edge_count": 958,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 288,
+        "rationale": 134
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\model.py",
+          "count": 73
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\snippet.py",
+          "count": 40
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\config.py",
+          "count": 26
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\gens\\loop.py",
+          "count": 24
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\known_mem.py",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\gens\\straight_line_insn.py",
+          "count": 18
+        },
+        {
+          "file": "ibex\\vendor\\riscv-tests\\benchmarks\\mm\\gen.scala",
+          "count": 15
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\gens\\bad_deep_loop.py",
+          "count": 14
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\snippet_gen.py",
+          "count": 13
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\gens\\jump.py",
+          "count": 13
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "opentitan_hw_ip_otbn_dv_rig_rig_snippet_gen_py",
+          "label": "snippet_gen.py",
+          "degree": 38,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\snippet_gen.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "model_model",
+          "label": "Model",
+          "degree": 36,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\model.py",
+          "source_location": "L177"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_rig_rig_snippet_py",
+          "label": "snippet.py",
+          "degree": 34,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\snippet.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_rig_rig_program_py",
+          "label": "program.py",
+          "degree": 32,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\program.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "secure_prng_secureprng_choice",
+          "label": ".choice()",
+          "degree": 30,
+          "source_file": "opentitan\\util\\topgen\\secure_prng.py",
+          "source_location": "L259"
+        },
+        {
+          "id": "program_proginsn",
+          "label": "ProgInsn",
+          "degree": 30,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\program.py",
+          "source_location": "L11"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_rig_rig_model_py",
+          "label": "model.py",
+          "degree": 30,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\model.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_rig_rig_snippet_gens_py",
+          "label": "snippet_gens.py",
+          "degree": 28,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\snippet_gens.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_dv_rig_rig_config_py",
+          "label": "config.py",
+          "degree": 27,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\config.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "snippet_loopsnippet_insert_into_program",
+          "label": ".insert_into_program()",
+          "degree": 26,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\snippet.py",
+          "source_location": "L302"
+        },
+        {
+          "id": "operand_immoperandtype_op_val_to_enc_val",
+          "label": ".op_val_to_enc_val()",
+          "degree": 26,
+          "source_file": "opentitan\\hw\\ip\\otbn\\util\\shared\\operand.py",
+          "source_location": "L388"
+        },
+        {
+          "id": "operand_regoperandtype_is_dest",
+          "label": ".is_dest()",
+          "degree": 25,
+          "source_file": "opentitan\\hw\\ip\\otbn\\util\\shared\\operand.py",
+          "source_location": "L254"
+        },
+        {
+          "id": "snippet_progsnippet",
+          "label": "ProgSnippet",
+          "degree": 25,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\snippet.py",
+          "source_location": "L138"
+        },
+        {
+          "id": "model_model_regs_with_known_vals",
+          "label": ".regs_with_known_vals()",
+          "degree": 23,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\model.py",
+          "source_location": "L534"
+        },
+        {
+          "id": "operand_immoperandtype_get_op_val_range",
+          "label": ".get_op_val_range()",
+          "degree": 20,
+          "source_file": "opentitan\\hw\\ip\\otbn\\util\\shared\\operand.py",
+          "source_location": "L502"
+        },
+        {
+          "id": "program_program_get_insn_space_at",
+          "label": ".get_insn_space_at()",
+          "degree": 19,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\program.py",
+          "source_location": "L556"
+        },
+        {
+          "id": "bad_deep_loop_baddeeploop_gen_loop_stack",
+          "label": "._gen_loop_stack()",
+          "degree": 18,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\gens\\bad_deep_loop.py",
+          "source_location": "L126"
+        },
+        {
+          "id": "model_model_generic_update_for_insn",
+          "label": "._generic_update_for_insn()",
+          "degree": 18,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\model.py",
+          "source_location": "L1006"
+        },
+        {
+          "id": "straight_line_insn_straightlineinsn_fill_lsu_insn",
+          "label": "._fill_lsu_insn()",
+          "degree": 16,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\gens\\straight_line_insn.py",
+          "source_location": "L379"
+        },
+        {
+          "id": "model_model_pick_reg_operand_value",
+          "label": "._pick_reg_operand_value()",
+          "degree": 16,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\model.py",
+          "source_location": "L428"
+        },
+        {
+          "id": "model_model_pick_operand_value",
+          "label": ".pick_operand_value()",
+          "degree": 16,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\model.py",
+          "source_location": "L402"
+        },
+        {
+          "id": "loop_loop",
+          "label": "Loop",
+          "degree": 16,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\gens\\loop.py",
+          "source_location": "L20"
+        },
+        {
+          "id": "snippetgen",
+          "label": "SnippetGen",
+          "degree": 16,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "straight_line_insn_straightlineinsn_fill_bn_xid",
+          "label": "._fill_bn_xid()",
+          "degree": 15,
+          "source_file": "opentitan\\hw\\ip\\otbn\\dv\\rig\\rig\\gens\\straight_line_insn.py",
+          "source_location": "L233"
+        },
+        {
+          "id": "gen_mmgen",
+          "label": "MMGen",
+          "degree": 15,
+          "source_file": "ibex\\vendor\\riscv-tests\\benchmarks\\mm\\gen.scala",
+          "source_location": "L2"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "community": 15,
+      "node_count": 377,
+      "internal_edge_count": 1096,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 374,
+        "rationale": 3
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "count": 355
+        },
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\debug\\elf_debugger.rs",
+          "count": 8
+        },
+        {
+          "file": "opentitan\\sw\\host\\hsmtool\\src\\commands\\spx\\export.rs",
+          "count": 2
+        },
+        {
+          "file": "opentitan\\sw\\host\\hsmtool\\src\\util\\wrap.rs",
+          "count": 2
+        },
+        {
+          "file": "opentitan\\util\\py\\packages\\lib\\run_test.py",
+          "count": 2
+        },
+        {
+          "file": "ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "count": 1
+        },
+        {
+          "file": "opentitan\\sw\\host\\hsmtool\\src\\commands\\aes\\export.rs",
+          "count": 1
+        },
+        {
+          "file": "opentitan\\sw\\host\\hsmtool\\src\\commands\\ecdsa\\export.rs",
+          "count": 1
+        },
+        {
+          "file": "opentitan\\sw\\host\\hsmtool\\src\\commands\\kdf\\export.rs",
+          "count": 1
+        },
+        {
+          "file": "opentitan\\sw\\host\\hsmtool\\src\\commands\\mldsa\\export.rs",
+          "count": 1
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "object",
+          "label": "object",
+          "degree": 215,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py",
+          "label": "riscv_instr_cover_group.py",
+          "degree": 178,
+          "source_file": "ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_vendor_lowrisc_ibex_vendor_google_riscv_dv_pygen_pygen_src_riscv_instr_cover_group_py",
+          "label": "riscv_instr_cover_group.py",
+          "degree": 178,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "riscv_instr_cover_group_fclass_d_cg_init",
+          "label": ".__init__()",
+          "degree": 175,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L7881"
+        },
+        {
+          "id": "riscv_instr_cover_group_riscv_instr_cover_group_cg_instantiation",
+          "label": ".cg_instantiation()",
+          "degree": 149,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L7930"
+        },
+        {
+          "id": "dict",
+          "label": "dict",
+          "degree": 63,
+          "source_file": "",
+          "source_location": ""
+        },
+        {
+          "id": "export_export",
+          "label": "Export",
+          "degree": 9,
+          "source_file": "opentitan\\sw\\host\\hsmtool\\src\\commands\\spx\\export.rs",
+          "source_location": "L19"
+        },
+        {
+          "id": "riscv_instr_cover_group_riscv_instr_cover_group",
+          "label": "riscv_instr_cover_group",
+          "degree": 7,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L20"
+        },
+        {
+          "id": "riscv_instr_cover_group_add_cg",
+          "label": "add_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L1080"
+        },
+        {
+          "id": "riscv_instr_cover_group_addi_cg",
+          "label": "addi_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L1103"
+        },
+        {
+          "id": "riscv_instr_cover_group_addiw_cg",
+          "label": "addiw_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L623"
+        },
+        {
+          "id": "riscv_instr_cover_group_addw_cg",
+          "label": "addw_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L579"
+        },
+        {
+          "id": "riscv_instr_cover_group_and_cg",
+          "label": "and_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L1340"
+        },
+        {
+          "id": "riscv_instr_cover_group_andi_cg",
+          "label": "andi_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L1376"
+        },
+        {
+          "id": "riscv_instr_cover_group_auipc_cg",
+          "label": "auipc_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L1175"
+        },
+        {
+          "id": "riscv_instr_cover_group_beq_cg",
+          "label": "beq_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L1552"
+        },
+        {
+          "id": "riscv_instr_cover_group_c_add_cg",
+          "label": "c_add_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L2322"
+        },
+        {
+          "id": "riscv_instr_cover_group_c_addi16sp_cg",
+          "label": "c_addi16sp_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L2276"
+        },
+        {
+          "id": "riscv_instr_cover_group_c_addi4spn_cg",
+          "label": "c_addi4spn_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L2252"
+        },
+        {
+          "id": "riscv_instr_cover_group_c_addi_cg",
+          "label": "c_addi_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L2263"
+        },
+        {
+          "id": "riscv_instr_cover_group_c_addiw_cg",
+          "label": "c_addiw_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L343"
+        },
+        {
+          "id": "riscv_instr_cover_group_c_addw_cg",
+          "label": "c_addw_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L369"
+        },
+        {
+          "id": "riscv_instr_cover_group_c_and_cg",
+          "label": "c_and_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L2391"
+        },
+        {
+          "id": "riscv_instr_cover_group_c_andi_cg",
+          "label": "c_andi_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L2352"
+        },
+        {
+          "id": "riscv_instr_cover_group_c_beqz_cg",
+          "label": "c_beqz_cg",
+          "degree": 5,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\vendor\\google_riscv-dv\\pygen\\pygen_src\\riscv_instr_cover_group.py",
+          "source_location": "L2404"
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "community": 16,
+      "node_count": 294,
+      "internal_edge_count": 665,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 244,
+        "rationale": 50
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\util\\dtgen\\helper.py",
+          "count": 109
+        },
+        {
+          "file": "opentitan\\util\\topgen\\lib.py",
+          "count": 34
+        },
+        {
+          "file": "opentitan\\hw\\ip\\otbn\\util\\docs\\get_impl.py",
+          "count": 31
+        },
+        {
+          "file": "opentitan\\util\\basegen\\lib.py",
+          "count": 18
+        },
+        {
+          "file": "opentitan\\sw\\host\\opentitanlib\\src\\io\\jtag.rs",
+          "count": 14
+        },
+        {
+          "file": "opentitan\\util\\dtgen\\ipgen_ext.py",
+          "count": 11
+        },
+        {
+          "file": "opentitan\\hw\\top\\dt\\clkmgr_ipconfig.py",
+          "count": 10
+        },
+        {
+          "file": "opentitan\\hw\\top\\dt\\pwrmgr_ipconfig.py",
+          "count": 8
+        },
+        {
+          "file": "opentitan\\hw\\top\\dt\\rstmgr_ipconfig.py",
+          "count": 8
+        },
+        {
+          "file": "opentitan\\hw\\top_earlgrey\\ip_autogen\\otp_ctrl\\util\\dt.py",
+          "count": 7
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "types_name",
+          "label": "Name",
+          "degree": 86,
+          "source_file": "opentitan\\util\\py\\packages\\impl\\object_size\\types.py",
+          "source_location": "L40"
+        },
+        {
+          "id": "lib_from_snake_case",
+          "label": "from_snake_case()",
+          "degree": 48,
+          "source_file": "opentitan\\util\\basegen\\lib.py",
+          "source_location": "L39"
+        },
+        {
+          "id": "helper_iphelper",
+          "label": "IpHelper",
+          "degree": 31,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L696"
+        },
+        {
+          "id": "helper_iphelper_create_instance",
+          "label": "._create_instance()",
+          "degree": 24,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L1052"
+        },
+        {
+          "id": "helper_scalartype",
+          "label": "ScalarType",
+          "degree": 24,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L57"
+        },
+        {
+          "id": "helper_structtype",
+          "label": "StructType",
+          "degree": 24,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L122"
+        },
+        {
+          "id": "helper_enumtype",
+          "label": "EnumType",
+          "degree": 21,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L208"
+        },
+        {
+          "id": "lib_name",
+          "label": "Name",
+          "degree": 20,
+          "source_file": "opentitan\\util\\basegen\\lib.py",
+          "source_location": "L8"
+        },
+        {
+          "id": "opentitan_util_dtgen_helper_py",
+          "label": "helper.py",
+          "degree": 20,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "lib_topgen",
+          "label": "TopGen",
+          "degree": 18,
+          "source_file": "opentitan\\util\\topgen\\lib.py",
+          "source_location": "L948"
+        },
+        {
+          "id": "lib_topgen_init",
+          "label": ".__init__()",
+          "degree": 17,
+          "source_file": "opentitan\\util\\topgen\\lib.py",
+          "source_location": "L950"
+        },
+        {
+          "id": "helper_iphelper_create_dt_struct",
+          "label": "._create_dt_struct()",
+          "degree": 17,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L952"
+        },
+        {
+          "id": "helper_arraymaptype",
+          "label": "ArrayMapType",
+          "degree": 17,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L97"
+        },
+        {
+          "id": "opentitan_hw_ip_otbn_util_docs_get_impl_py",
+          "label": "get_impl.py",
+          "degree": 17,
+          "source_file": "opentitan\\hw\\ip\\otbn\\util\\docs\\get_impl.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "lib_topgen_init_plic_mapping",
+          "label": "._init_plic_mapping()",
+          "degree": 16,
+          "source_file": "opentitan\\util\\topgen\\lib.py",
+          "source_location": "L1162"
+        },
+        {
+          "id": "helper_iphelper_init",
+          "label": ".__init__()",
+          "degree": 15,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L710"
+        },
+        {
+          "id": "helper_tophelper_init_api",
+          "label": "._init_api()",
+          "degree": 14,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L401"
+        },
+        {
+          "id": "helper_structtype_add_field",
+          "label": ".add_field()",
+          "degree": 14,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L138"
+        },
+        {
+          "id": "helper_enumtype_render_type_def",
+          "label": ".render_type_def()",
+          "degree": 14,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L233"
+        },
+        {
+          "id": "lib_topgen_init_clkmgr_clocks",
+          "label": "._init_clkmgr_clocks()",
+          "degree": 13,
+          "source_file": "opentitan\\util\\topgen\\lib.py",
+          "source_location": "L1537"
+        },
+        {
+          "id": "helper_tophelper_init_irq_map",
+          "label": "._init_irq_map()",
+          "degree": 13,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L615"
+        },
+        {
+          "id": "helper_enumtype_add_constant",
+          "label": ".add_constant()",
+          "degree": 13,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L220"
+        },
+        {
+          "id": "lib_rustenum_add_constant",
+          "label": ".add_constant()",
+          "degree": 13,
+          "source_file": "opentitan\\util\\topgen\\lib.py",
+          "source_location": "L152"
+        },
+        {
+          "id": "lib_cenum_add_last_constant",
+          "label": ".add_last_constant()",
+          "degree": 13,
+          "source_file": "opentitan\\util\\topgen\\lib.py",
+          "source_location": "L67"
+        },
+        {
+          "id": "helper_tophelper",
+          "label": "TopHelper",
+          "degree": 13,
+          "source_file": "opentitan\\util\\dtgen\\helper.py",
+          "source_location": "L357"
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "community": 17,
+      "node_count": 254,
+      "internal_edge_count": 543,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 254
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\tasks.c",
+          "count": 86
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\queue.c",
+          "count": 51
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\timers.c",
+          "count": 28
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\stream_buffer.c",
+          "count": 25
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\event_groups.c",
+          "count": 16
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\portable\\MemMang\\heap_4.c",
+          "count": 9
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\croutine.c",
+          "count": 8
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\portable\\MemMang\\heap_5.c",
+          "count": 8
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\list.c",
+          "count": 6
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\portable\\MemMang\\heap_2.c",
+          "count": 6
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "opentitan_sw_vendor_freertos_freertos_kernel_tasks_c",
+          "label": "tasks.c",
+          "degree": 86,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\tasks.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_vendor_freertos_freertos_kernel_queue_c",
+          "label": "queue.c",
+          "degree": 50,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\queue.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "tasks_xtaskresumeall",
+          "label": "xTaskResumeAll()",
+          "degree": 30,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\tasks.c",
+          "source_location": "L2212"
+        },
+        {
+          "id": "tasks_vtasksuspendall",
+          "label": "vTaskSuspendAll()",
+          "degree": 28,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\tasks.c",
+          "source_location": "L2128"
+        },
+        {
+          "id": "opentitan_sw_vendor_freertos_freertos_kernel_timers_c",
+          "label": "timers.c",
+          "degree": 27,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\timers.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_vendor_freertos_freertos_kernel_stream_buffer_c",
+          "label": "stream_buffer.c",
+          "degree": 24,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\stream_buffer.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "list_uxlistremove",
+          "label": "uxListRemove()",
+          "degree": 18,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\list.c",
+          "source_location": "L186"
+        },
+        {
+          "id": "opentitan_sw_vendor_freertos_freertos_kernel_event_groups_c",
+          "label": "event_groups.c",
+          "degree": 15,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\event_groups.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "queue_xqueuesemaphoretake",
+          "label": "xQueueSemaphoreTake()",
+          "degree": 15,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\queue.c",
+          "source_location": "L1494"
+        },
+        {
+          "id": "queue_xqueuegenericsend",
+          "label": "xQueueGenericSend()",
+          "degree": 14,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\queue.c",
+          "source_location": "L804"
+        },
+        {
+          "id": "heap_5_pvportmalloc",
+          "label": "pvPortMalloc()",
+          "degree": 13,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\portable\\MemMang\\heap_5.c",
+          "source_location": "L134"
+        },
+        {
+          "id": "queue_xqueuereceive",
+          "label": "xQueueReceive()",
+          "degree": 13,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\queue.c",
+          "source_location": "L1351"
+        },
+        {
+          "id": "heap_5_vportfree",
+          "label": "vPortFree()",
+          "degree": 12,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\portable\\MemMang\\heap_5.c",
+          "source_location": "L284"
+        },
+        {
+          "id": "tasks_xtaskremovefromeventlist",
+          "label": "xTaskRemoveFromEventList()",
+          "degree": 12,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\tasks.c",
+          "source_location": "L3175"
+        },
+        {
+          "id": "queue_xqueuepeek",
+          "label": "xQueuePeek()",
+          "degree": 11,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\queue.c",
+          "source_location": "L1713"
+        },
+        {
+          "id": "tasks_prvaddcurrenttasktodelayedlist",
+          "label": "prvAddCurrentTaskToDelayedList()",
+          "degree": 10,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\tasks.c",
+          "source_location": "L5302"
+        },
+        {
+          "id": "queue_prvunlockqueue",
+          "label": "prvUnlockQueue()",
+          "degree": 9,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\queue.c",
+          "source_location": "L2263"
+        },
+        {
+          "id": "opentitan_sw_vendor_freertos_freertos_kernel_portable_memmang_heap_4_c",
+          "label": "heap_4.c",
+          "degree": 8,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\portable\\MemMang\\heap_4.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "queue_prvcopydatatoqueue",
+          "label": "prvCopyDataToQueue()",
+          "degree": 8,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\queue.c",
+          "source_location": "L2159"
+        },
+        {
+          "id": "freertos_hooks_vapplicationmallocfailedhook",
+          "label": "vApplicationMallocFailedHook()",
+          "degree": 8,
+          "source_file": "opentitan\\sw\\device\\lib\\testing\\test_framework\\freertos_hooks.c",
+          "source_location": "L18"
+        },
+        {
+          "id": "tasks_xtaskcreate",
+          "label": "xTaskCreate()",
+          "degree": 8,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\tasks.c",
+          "source_location": "L727"
+        },
+        {
+          "id": "tasks_xtaskgetschedulerstate",
+          "label": "xTaskGetSchedulerState()",
+          "degree": 8,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\tasks.c",
+          "source_location": "L4038"
+        },
+        {
+          "id": "opentitan_sw_vendor_freertos_freertos_kernel_croutine_c",
+          "label": "croutine.c",
+          "degree": 7,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\croutine.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_vendor_freertos_freertos_kernel_portable_memmang_heap_5_c",
+          "label": "heap_5.c",
+          "degree": 7,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\portable\\MemMang\\heap_5.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "stream_buffer_prvbytesinbuffer",
+          "label": "prvBytesInBuffer()",
+          "degree": 7,
+          "source_file": "opentitan\\sw\\vendor\\freertos_freertos_kernel\\stream_buffer.c",
+          "source_location": "L1231"
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "community": 18,
+      "node_count": 180,
+      "internal_edge_count": 498,
+      "sampled_node_count": 150,
+      "file_type_counts": {
+        "code": 169,
+        "rationale": 11
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\util\\tlgen\\item.py",
+          "count": 20
+        },
+        {
+          "file": "ibex\\examples\\sw\\simple_system\\common\\simple_system_common.c",
+          "count": 17
+        },
+        {
+          "file": "opentitan\\third_party\\coremark\\top_earlgrey\\ee_printf.c",
+          "count": 14
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\eembc_coremark\\core_list_join.c",
+          "count": 13
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\eembc_coremark\\core_matrix.c",
+          "count": 12
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\pulp_riscv_dbg\\tb\\remote_bitbang\\remote_bitbang.c",
+          "count": 10
+        },
+        {
+          "file": "opentitan\\sw\\vendor\\eembc_coremark\\core_util.c",
+          "count": 9
+        },
+        {
+          "file": "opentitan\\third_party\\coremark\\top_earlgrey\\core_portme.c",
+          "count": 8
+        },
+        {
+          "file": "ibex\\examples\\sw\\simple_system\\dit_test\\dit_test.c",
+          "count": 7
+        },
+        {
+          "file": "ibex\\examples\\sw\\simple_system\\dummy_instr_test\\dummy_instr_test.c",
+          "count": 6
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "ee_printf_ee_printf",
+          "label": "ee_printf()",
+          "degree": 21,
+          "source_file": "opentitan\\third_party\\coremark\\top_earlgrey\\ee_printf.c",
+          "source_location": "L669"
+        },
+        {
+          "id": "core_main_ottf_main",
+          "label": "_ottf_main()",
+          "degree": 20,
+          "source_file": "opentitan\\sw\\vendor\\eembc_coremark\\core_main.c",
+          "source_location": "L93"
+        },
+        {
+          "id": "core_main_main",
+          "label": "main()",
+          "degree": 20,
+          "source_file": "ibex\\vendor\\eembc_coremark\\core_main.c",
+          "source_location": "L93"
+        },
+        {
+          "id": "core_portme_portable_init",
+          "label": "portable_init()",
+          "degree": 20,
+          "source_file": "opentitan\\third_party\\coremark\\top_earlgrey\\core_portme.c",
+          "source_location": "L140"
+        },
+        {
+          "id": "core_portme_portable_fini",
+          "label": "portable_fini()",
+          "degree": 19,
+          "source_file": "opentitan\\third_party\\coremark\\top_earlgrey\\core_portme.c",
+          "source_location": "L165"
+        },
+        {
+          "id": "core_portme_start_time",
+          "label": "start_time()",
+          "degree": 17,
+          "source_file": "opentitan\\third_party\\coremark\\top_earlgrey\\core_portme.c",
+          "source_location": "L83"
+        },
+        {
+          "id": "core_portme_get_time",
+          "label": "get_time()",
+          "degree": 16,
+          "source_file": "opentitan\\third_party\\coremark\\top_earlgrey\\core_portme.c",
+          "source_location": "L110"
+        },
+        {
+          "id": "ibex_examples_sw_simple_system_common_simple_system_common_c",
+          "label": "simple_system_common.c",
+          "degree": 16,
+          "source_file": "ibex\\examples\\sw\\simple_system\\common\\simple_system_common.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "core_portme_stop_time",
+          "label": "stop_time()",
+          "degree": 16,
+          "source_file": "opentitan\\third_party\\coremark\\top_earlgrey\\core_portme.c",
+          "source_location": "L96"
+        },
+        {
+          "id": "core_portme_core_start_parallel",
+          "label": "core_start_parallel()",
+          "degree": 15,
+          "source_file": "opentitan\\sw\\vendor\\eembc_coremark\\linux64\\core_portme.c",
+          "source_location": "L237"
+        },
+        {
+          "id": "core_portme_time_in_secs",
+          "label": "time_in_secs()",
+          "degree": 15,
+          "source_file": "opentitan\\third_party\\coremark\\top_earlgrey\\core_portme.c",
+          "source_location": "L124"
+        },
+        {
+          "id": "core_util_crc16",
+          "label": "crc16()",
+          "degree": 13,
+          "source_file": "opentitan\\sw\\vendor\\eembc_coremark\\core_util.c",
+          "source_location": "L176"
+        },
+        {
+          "id": "ibex_vendor_eembc_coremark_barebones_ee_printf_c",
+          "label": "ee_printf.c",
+          "degree": 13,
+          "source_file": "ibex\\vendor\\eembc_coremark\\barebones\\ee_printf.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_vendor_eembc_coremark_barebones_ee_printf_c",
+          "label": "ee_printf.c",
+          "degree": 13,
+          "source_file": "opentitan\\sw\\vendor\\eembc_coremark\\barebones\\ee_printf.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_third_party_coremark_top_earlgrey_ee_printf_c",
+          "label": "ee_printf.c",
+          "degree": 13,
+          "source_file": "opentitan\\third_party\\coremark\\top_earlgrey\\ee_printf.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "item_socket",
+          "label": "Socket",
+          "degree": 12,
+          "source_file": "opentitan\\util\\tlgen\\item.py",
+          "source_location": "L99"
+        },
+        {
+          "id": "ibex_vendor_eembc_coremark_core_list_join_c",
+          "label": "core_list_join.c",
+          "degree": 12,
+          "source_file": "ibex\\vendor\\eembc_coremark\\core_list_join.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_vendor_eembc_coremark_core_list_join_c",
+          "label": "core_list_join.c",
+          "degree": 12,
+          "source_file": "opentitan\\sw\\vendor\\eembc_coremark\\core_list_join.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "ibex_examples_sw_benchmarks_coremark_ibex_ee_printf_c",
+          "label": "ee_printf.c",
+          "degree": 12,
+          "source_file": "ibex\\examples\\sw\\benchmarks\\coremark\\ibex\\ee_printf.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_util_tlgen_item_py",
+          "label": "item.py",
+          "degree": 12,
+          "source_file": "opentitan\\util\\tlgen\\item.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "core_matrix_matrix_test",
+          "label": "matrix_test()",
+          "degree": 12,
+          "source_file": "opentitan\\sw\\vendor\\eembc_coremark\\core_matrix.c",
+          "source_location": "L117"
+        },
+        {
+          "id": "ibex_vendor_eembc_coremark_core_matrix_c",
+          "label": "core_matrix.c",
+          "degree": 11,
+          "source_file": "ibex\\vendor\\eembc_coremark\\core_matrix.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_sw_vendor_eembc_coremark_core_matrix_c",
+          "label": "core_matrix.c",
+          "degree": 11,
+          "source_file": "opentitan\\sw\\vendor\\eembc_coremark\\core_matrix.c",
+          "source_location": "L1"
+        },
+        {
+          "id": "core_portme_core_stop_parallel",
+          "label": "core_stop_parallel()",
+          "degree": 11,
+          "source_file": "opentitan\\sw\\vendor\\eembc_coremark\\linux64\\core_portme.c",
+          "source_location": "L240"
+        },
+        {
+          "id": "ee_printf_ee_vsprintf",
+          "label": "ee_vsprintf()",
+          "degree": 11,
+          "source_file": "opentitan\\third_party\\coremark\\top_earlgrey\\ee_printf.c",
+          "source_location": "L461"
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "community": 19,
+      "node_count": 113,
+      "internal_edge_count": 205,
+      "sampled_node_count": 113,
+      "file_type_counts": {
+        "code": 93,
+        "rationale": 20
+      },
+      "top_source_files": [
+        {
+          "file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "count": 62
+        },
+        {
+          "file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax_test.py",
+          "count": 19
+        },
+        {
+          "file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\uvm\\core_ibex\\scripts\\report_lib\\svg.py",
+          "count": 15
+        },
+        {
+          "file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\print_modules.py",
+          "count": 4
+        },
+        {
+          "file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\print_tree.py",
+          "count": 4
+        },
+        {
+          "file": "opentitan\\hw\\ip\\kmac\\dv\\dpi\\vendor\\kerukuro_digestpp\\algorithm\\detail\\whirlpool_provider.hpp",
+          "count": 4
+        },
+        {
+          "file": "ibex\\dv\\uvm\\core_ibex\\scripts\\report_lib\\svg.py",
+          "count": 1
+        },
+        {
+          "file": "ibex\\vendor\\lowrisc_ip\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\print_modules.py",
+          "count": 1
+        },
+        {
+          "file": "ibex\\vendor\\lowrisc_ip\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\print_tree.py",
+          "count": 1
+        },
+        {
+          "file": "ibex\\vendor\\lowrisc_ip\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "count": 1
+        }
+      ],
+      "top_nodes": [
+        {
+          "id": "ibex_vendor_lowrisc_ip_ip_prim_util_vendor_google_verible_verilog_syntax_py_verible_verilog_syntax_py",
+          "label": "verible_verilog_syntax.py",
+          "degree": 21,
+          "source_file": "ibex\\vendor\\lowrisc_ip\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "opentitan_hw_ip_prim_util_vendor_google_verible_verilog_syntax_py_verible_verilog_syntax_py",
+          "label": "verible_verilog_syntax.py",
+          "degree": 21,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L1"
+        },
+        {
+          "id": "verible_verilog_syntax_veribleverilogsyntax_parse",
+          "label": "._parse()",
+          "degree": 14,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L420"
+        },
+        {
+          "id": "verible_verilog_syntax_test_testparsemethods",
+          "label": "TestParseMethods",
+          "degree": 12,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax_test.py",
+          "source_location": "L42"
+        },
+        {
+          "id": "svg_output_results_svg",
+          "label": "output_results_svg()",
+          "degree": 12,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\uvm\\core_ibex\\scripts\\report_lib\\svg.py",
+          "source_location": "L106"
+        },
+        {
+          "id": "verible_verilog_syntax_veribleverilogsyntax",
+          "label": "VeribleVerilogSyntax",
+          "degree": 11,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L367"
+        },
+        {
+          "id": "verible_verilog_syntax_veribleverilogsyntax_parse_string",
+          "label": ".parse_string()",
+          "degree": 10,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L514"
+        },
+        {
+          "id": "verible_verilog_syntax_branchnode",
+          "label": "BranchNode",
+          "degree": 10,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L136"
+        },
+        {
+          "id": "verible_verilog_syntax_test_veribleverilogsyntaxtest_create_temp_file",
+          "label": ".create_temp_file()",
+          "degree": 9,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax_test.py",
+          "source_location": "L35"
+        },
+        {
+          "id": "svg_dashboardelement",
+          "label": "DashboardElement",
+          "degree": 9,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\uvm\\core_ibex\\scripts\\report_lib\\svg.py",
+          "source_location": "L24"
+        },
+        {
+          "id": "verible_verilog_syntax_treeiteratorbase",
+          "label": "_TreeIteratorBase",
+          "degree": 9,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L46"
+        },
+        {
+          "id": "print_modules_process_file_data",
+          "label": "process_file_data()",
+          "degree": 9,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\print_modules.py",
+          "source_location": "L38"
+        },
+        {
+          "id": "verible_verilog_syntax_text",
+          "label": "text()",
+          "degree": 9,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L118"
+        },
+        {
+          "id": "verible_verilog_syntax_veribleverilogsyntax_parse_files",
+          "label": ".parse_files()",
+          "degree": 8,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L476"
+        },
+        {
+          "id": "verible_verilog_syntax_node",
+          "label": "Node",
+          "degree": 8,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L93"
+        },
+        {
+          "id": "verible_verilog_syntax_token_to_formatted_string",
+          "label": ".to_formatted_string()",
+          "degree": 7,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L340"
+        },
+        {
+          "id": "svg_dashboard",
+          "label": "Dashboard",
+          "degree": 7,
+          "source_file": "opentitan\\hw\\vendor\\lowrisc_ibex\\dv\\uvm\\core_ibex\\scripts\\report_lib\\svg.py",
+          "source_location": "L75"
+        },
+        {
+          "id": "verible_verilog_syntax_leafnode",
+          "label": "LeafNode",
+          "degree": 7,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L255"
+        },
+        {
+          "id": "verible_verilog_syntax_token",
+          "label": "Token",
+          "degree": 7,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L310"
+        },
+        {
+          "id": "verible_verilog_syntax_test_veribleverilogsyntaxtest",
+          "label": "VeribleVerilogSyntaxTest",
+          "degree": 7,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax_test.py",
+          "source_location": "L25"
+        },
+        {
+          "id": "verible_verilog_syntax_colorize",
+          "label": "_colorize()",
+          "degree": 7,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L28"
+        },
+        {
+          "id": "print_modules_main",
+          "label": "main()",
+          "degree": 7,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\print_modules.py",
+          "source_location": "L117"
+        },
+        {
+          "id": "print_tree_main",
+          "label": "main()",
+          "degree": 7,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\print_tree.py",
+          "source_location": "L52"
+        },
+        {
+          "id": "verible_verilog_syntax_levelordertreeiterator_iter_tree",
+          "label": "._iter_tree()",
+          "degree": 6,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L84"
+        },
+        {
+          "id": "verible_verilog_syntax_branchnode_find",
+          "label": ".find()",
+          "degree": 6,
+          "source_file": "opentitan\\hw\\ip\\prim\\util\\vendor\\google_verible_verilog_syntax_py\\verible_verilog_syntax.py",
+          "source_location": "L199"
+        }
+      ]
+    }
+  ],
+  "community_edges": [
+    {
+      "source_community": 3,
+      "target_community": 5,
+      "edge_count": 1040,
+      "top_relations": {
+        "calls": 837,
+        "contains": 106,
+        "imports": 90,
+        "instantiates": 7
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 1,
+      "edge_count": 966,
+      "top_relations": {
+        "calls": 924,
+        "method": 27,
+        "contains": 13,
+        "uses": 1,
+        "imports_from": 1
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 8,
+      "edge_count": 718,
+      "top_relations": {
+        "calls": 694,
+        "method": 15,
+        "contains": 9
+      }
+    },
+    {
+      "source_community": 3,
+      "target_community": 6,
+      "edge_count": 573,
+      "top_relations": {
+        "calls": 408,
+        "imports": 117,
+        "contains": 42,
+        "instantiates": 6
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 2,
+      "edge_count": 532,
+      "top_relations": {
+        "calls": 532
+      }
+    },
+    {
+      "source_community": 5,
+      "target_community": 6,
+      "edge_count": 429,
+      "top_relations": {
+        "calls": 359,
+        "imports": 43,
+        "contains": 27
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 11,
+      "edge_count": 415,
+      "top_relations": {
+        "calls": 357,
+        "contains": 31,
+        "method": 18,
+        "inherits": 9
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 12,
+      "edge_count": 374,
+      "top_relations": {
+        "calls": 244,
+        "method": 61,
+        "contains": 24,
+        "uses": 17,
+        "imports_from": 13,
+        "inherits": 12,
+        "imports": 2,
+        "rationale_for": 1
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 13,
+      "edge_count": 337,
+      "top_relations": {
+        "calls": 223,
+        "method": 58,
+        "rationale_for": 22,
+        "uses": 16,
+        "contains": 10,
+        "inherits": 4,
+        "imports_from": 2,
+        "imports": 2
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 8,
+      "edge_count": 318,
+      "top_relations": {
+        "calls": 308,
+        "method": 7,
+        "contains": 3
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 9,
+      "edge_count": 241,
+      "top_relations": {
+        "calls": 214,
+        "imports": 11,
+        "contains": 10,
+        "method": 6
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 14,
+      "edge_count": 215,
+      "top_relations": {
+        "calls": 171,
+        "method": 38,
+        "contains": 5,
+        "inherits": 1
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 7,
+      "edge_count": 213,
+      "top_relations": {
+        "calls": 145,
+        "method": 42,
+        "contains": 20,
+        "imports_from": 5,
+        "inherits": 1
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 16,
+      "edge_count": 200,
+      "top_relations": {
+        "calls": 173,
+        "method": 20,
+        "contains": 6,
+        "imports": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 9,
+      "edge_count": 130,
+      "top_relations": {
+        "calls": 113,
+        "contains": 9,
+        "method": 6,
+        "inherits": 2
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 8,
+      "edge_count": 116,
+      "top_relations": {
+        "calls": 97,
+        "method": 19
+      }
+    },
+    {
+      "source_community": 10,
+      "target_community": 4,
+      "edge_count": 113,
+      "top_relations": {
+        "imports_from": 91,
+        "instantiates": 22
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 3,
+      "edge_count": 108,
+      "top_relations": {
+        "calls": 54,
+        "imports": 28,
+        "imports_from": 12,
+        "instantiates": 9,
+        "contains": 4,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 11,
+      "edge_count": 86,
+      "top_relations": {
+        "calls": 78,
+        "method": 6,
+        "contains": 2
+      }
+    },
+    {
+      "source_community": 3,
+      "target_community": 4,
+      "edge_count": 71,
+      "top_relations": {
+        "imports_from": 33,
+        "imports": 20,
+        "instantiates": 18
+      }
+    },
+    {
+      "source_community": 5,
+      "target_community": 9,
+      "edge_count": 70,
+      "top_relations": {
+        "calls": 62,
+        "imports": 7,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 6,
+      "edge_count": 69,
+      "top_relations": {
+        "calls": 39,
+        "imports": 23,
+        "contains": 4,
+        "method": 2,
+        "imports_from": 1
+      }
+    },
+    {
+      "source_community": 12,
+      "target_community": 8,
+      "edge_count": 51,
+      "top_relations": {
+        "calls": 50,
+        "contains": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 7,
+      "edge_count": 49,
+      "top_relations": {
+        "calls": 43,
+        "method": 3,
+        "contains": 2,
+        "inherits": 1
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 6,
+      "edge_count": 42,
+      "top_relations": {
+        "calls": 39,
+        "imports": 1,
+        "inherits": 1,
+        "contains": 1
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 19,
+      "edge_count": 40,
+      "top_relations": {
+        "calls": 36,
+        "imports_from": 2,
+        "method": 2
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 13,
+      "edge_count": 39,
+      "top_relations": {
+        "calls": 33,
+        "contains": 2,
+        "method": 2,
+        "inherits": 1,
+        "imports_from": 1
+      }
+    },
+    {
+      "source_community": 7,
+      "target_community": 8,
+      "edge_count": 36,
+      "top_relations": {
+        "calls": 35,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 10,
+      "target_community": 3,
+      "edge_count": 35,
+      "top_relations": {
+        "instantiates": 27,
+        "imports_from": 8
+      }
+    },
+    {
+      "source_community": 8,
+      "target_community": 9,
+      "edge_count": 28,
+      "top_relations": {
+        "calls": 26,
+        "contains": 1,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 15,
+      "edge_count": 27,
+      "top_relations": {
+        "calls": 13,
+        "inherits": 12,
+        "method": 1,
+        "contains": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 15,
+      "edge_count": 26,
+      "top_relations": {
+        "imports_from": 17,
+        "calls": 4,
+        "method": 3,
+        "contains": 2
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 18,
+      "edge_count": 24,
+      "top_relations": {
+        "calls": 13,
+        "contains": 7,
+        "imports_from": 4
+      }
+    },
+    {
+      "source_community": 12,
+      "target_community": 7,
+      "edge_count": 24,
+      "top_relations": {
+        "inherits": 12,
+        "imports_from": 5,
+        "calls": 4,
+        "contains": 3
+      }
+    },
+    {
+      "source_community": 6,
+      "target_community": 9,
+      "edge_count": 24,
+      "top_relations": {
+        "calls": 22,
+        "imports": 1,
+        "contains": 1
+      }
+    },
+    {
+      "source_community": 13,
+      "target_community": 8,
+      "edge_count": 23,
+      "top_relations": {
+        "calls": 23
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 16,
+      "edge_count": 22,
+      "top_relations": {
+        "calls": 21,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 5,
+      "edge_count": 22,
+      "top_relations": {
+        "calls": 19,
+        "imports": 2,
+        "imports_from": 1
+      }
+    },
+    {
+      "source_community": 14,
+      "target_community": 8,
+      "edge_count": 21,
+      "top_relations": {
+        "calls": 20,
+        "imports_from": 1
+      }
+    },
+    {
+      "source_community": 4,
+      "target_community": 6,
+      "edge_count": 18,
+      "top_relations": {
+        "imports": 18
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 12,
+      "edge_count": 17,
+      "top_relations": {
+        "calls": 17
+      }
+    },
+    {
+      "source_community": 3,
+      "target_community": 9,
+      "edge_count": 16,
+      "top_relations": {
+        "calls": 13,
+        "imports": 2,
+        "imports_from": 1
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 5,
+      "edge_count": 15,
+      "top_relations": {
+        "calls": 15
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 3,
+      "edge_count": 15,
+      "top_relations": {
+        "calls": 12,
+        "imports": 1,
+        "contains": 1,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 7,
+      "target_community": 9,
+      "edge_count": 13,
+      "top_relations": {
+        "calls": 10,
+        "contains": 3
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 10,
+      "edge_count": 13,
+      "top_relations": {
+        "imports_from": 6,
+        "calls": 4,
+        "instantiates": 2,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 18,
+      "edge_count": 12,
+      "top_relations": {
+        "calls": 10,
+        "contains": 1,
+        "inherits": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 14,
+      "edge_count": 11,
+      "top_relations": {
+        "calls": 9,
+        "method": 2
+      }
+    },
+    {
+      "source_community": 14,
+      "target_community": 7,
+      "edge_count": 11,
+      "top_relations": {
+        "calls": 10,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 13,
+      "target_community": 9,
+      "edge_count": 10,
+      "top_relations": {
+        "calls": 5,
+        "imports_from": 2,
+        "contains": 2,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 2,
+      "target_community": 9,
+      "edge_count": 10,
+      "top_relations": {
+        "calls": 6,
+        "imports": 2,
+        "contains": 2
+      }
+    },
+    {
+      "source_community": 17,
+      "target_community": 3,
+      "edge_count": 10,
+      "top_relations": {
+        "calls": 6,
+        "contains": 4
+      }
+    },
+    {
+      "source_community": 18,
+      "target_community": 3,
+      "edge_count": 9,
+      "top_relations": {
+        "calls": 8,
+        "imports": 1
+      }
+    },
+    {
+      "source_community": 18,
+      "target_community": 9,
+      "edge_count": 9,
+      "top_relations": {
+        "calls": 9
+      }
+    },
+    {
+      "source_community": 6,
+      "target_community": 8,
+      "edge_count": 9,
+      "top_relations": {
+        "calls": 9
+      }
+    },
+    {
+      "source_community": 17,
+      "target_community": 5,
+      "edge_count": 9,
+      "top_relations": {
+        "calls": 9
+      }
+    },
+    {
+      "source_community": 16,
+      "target_community": 8,
+      "edge_count": 9,
+      "top_relations": {
+        "calls": 9
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 19,
+      "edge_count": 8,
+      "top_relations": {
+        "calls": 3,
+        "contains": 2,
+        "method": 2,
+        "inherits": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 19,
+      "edge_count": 7,
+      "top_relations": {
+        "calls": 7
+      }
+    },
+    {
+      "source_community": 12,
+      "target_community": 6,
+      "edge_count": 6,
+      "top_relations": {
+        "calls": 3,
+        "method": 3
+      }
+    },
+    {
+      "source_community": 16,
+      "target_community": 9,
+      "edge_count": 6,
+      "top_relations": {
+        "inherits": 4,
+        "calls": 1,
+        "contains": 1
+      }
+    },
+    {
+      "source_community": 2,
+      "target_community": 5,
+      "edge_count": 6,
+      "top_relations": {
+        "contains": 4,
+        "calls": 2
+      }
+    },
+    {
+      "source_community": 17,
+      "target_community": 9,
+      "edge_count": 6,
+      "top_relations": {
+        "calls": 6
+      }
+    },
+    {
+      "source_community": 4,
+      "target_community": 5,
+      "edge_count": 6,
+      "top_relations": {
+        "instantiates": 5,
+        "imports_from": 1
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 6,
+      "edge_count": 6,
+      "top_relations": {
+        "calls": 6
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 15,
+      "edge_count": 5,
+      "top_relations": {
+        "inherits": 3,
+        "calls": 2
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 7,
+      "edge_count": 5,
+      "top_relations": {
+        "calls": 4,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 10,
+      "target_community": 6,
+      "edge_count": 5,
+      "top_relations": {
+        "instantiates": 5
+      }
+    },
+    {
+      "source_community": 5,
+      "target_community": 7,
+      "edge_count": 5,
+      "top_relations": {
+        "calls": 4,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 5,
+      "target_community": 8,
+      "edge_count": 5,
+      "top_relations": {
+        "calls": 5
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 13,
+      "edge_count": 4,
+      "top_relations": {
+        "calls": 4
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 5,
+      "edge_count": 4,
+      "top_relations": {
+        "calls": 3,
+        "contains": 1
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 14,
+      "edge_count": 4,
+      "top_relations": {
+        "calls": 4
+      }
+    },
+    {
+      "source_community": 4,
+      "target_community": 9,
+      "edge_count": 4,
+      "top_relations": {
+        "instantiates": 2,
+        "imports_from": 2
+      }
+    },
+    {
+      "source_community": 12,
+      "target_community": 9,
+      "edge_count": 3,
+      "top_relations": {
+        "calls": 3
+      }
+    },
+    {
+      "source_community": 12,
+      "target_community": 16,
+      "edge_count": 3,
+      "top_relations": {
+        "imports_from": 1,
+        "inherits": 1,
+        "calls": 1
+      }
+    },
+    {
+      "source_community": 19,
+      "target_community": 8,
+      "edge_count": 3,
+      "top_relations": {
+        "calls": 3
+      }
+    },
+    {
+      "source_community": 18,
+      "target_community": 5,
+      "edge_count": 3,
+      "top_relations": {
+        "calls": 3
+      }
+    },
+    {
+      "source_community": 17,
+      "target_community": 2,
+      "edge_count": 3,
+      "top_relations": {
+        "calls": 3
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 2,
+      "edge_count": 3,
+      "top_relations": {
+        "calls": 3
+      }
+    },
+    {
+      "source_community": 10,
+      "target_community": 5,
+      "edge_count": 3,
+      "top_relations": {
+        "instantiates": 3
+      }
+    },
+    {
+      "source_community": 18,
+      "target_community": 2,
+      "edge_count": 2,
+      "top_relations": {
+        "calls": 2
+      }
+    },
+    {
+      "source_community": 13,
+      "target_community": 18,
+      "edge_count": 2,
+      "top_relations": {
+        "calls": 2
+      }
+    },
+    {
+      "source_community": 12,
+      "target_community": 15,
+      "edge_count": 2,
+      "top_relations": {
+        "calls": 1,
+        "method": 1
+      }
+    },
+    {
+      "source_community": 12,
+      "target_community": 14,
+      "edge_count": 2,
+      "top_relations": {
+        "calls": 2
+      }
+    },
+    {
+      "source_community": 15,
+      "target_community": 16,
+      "edge_count": 2,
+      "top_relations": {
+        "inherits": 2
+      }
+    },
+    {
+      "source_community": 13,
+      "target_community": 7,
+      "edge_count": 2,
+      "top_relations": {
+        "calls": 2
+      }
+    },
+    {
+      "source_community": 13,
+      "target_community": 4,
+      "edge_count": 2,
+      "top_relations": {
+        "instantiates": 2
+      }
+    },
+    {
+      "source_community": 3,
+      "target_community": 8,
+      "edge_count": 2,
+      "top_relations": {
+        "calls": 2
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 9,
+      "edge_count": 2,
+      "top_relations": {
+        "calls": 1,
+        "inherits": 1
+      }
+    },
+    {
+      "source_community": 10,
+      "target_community": 9,
+      "edge_count": 1,
+      "top_relations": {
+        "imports_from": 1
+      }
+    },
+    {
+      "source_community": 10,
+      "target_community": 13,
+      "edge_count": 1,
+      "top_relations": {
+        "instantiates": 1
+      }
+    },
+    {
+      "source_community": 18,
+      "target_community": 6,
+      "edge_count": 1,
+      "top_relations": {
+        "calls": 1
+      }
+    },
+    {
+      "source_community": 14,
+      "target_community": 9,
+      "edge_count": 1,
+      "top_relations": {
+        "calls": 1
+      }
+    },
+    {
+      "source_community": 19,
+      "target_community": 9,
+      "edge_count": 1,
+      "top_relations": {
+        "calls": 1
+      }
+    },
+    {
+      "source_community": 13,
+      "target_community": 15,
+      "edge_count": 1,
+      "top_relations": {
+        "calls": 1
+      }
+    },
+    {
+      "source_community": 12,
+      "target_community": 2,
+      "edge_count": 1,
+      "top_relations": {
+        "calls": 1
+      }
+    },
+    {
+      "source_community": 11,
+      "target_community": 3,
+      "edge_count": 1,
+      "top_relations": {
+        "calls": 1
+      }
+    },
+    {
+      "source_community": 3,
+      "target_community": 7,
+      "edge_count": 1,
+      "top_relations": {
+        "calls": 1
+      }
+    },
+    {
+      "source_community": 1,
+      "target_community": 4,
+      "edge_count": 1,
+      "top_relations": {
+        "instantiates": 1
+      }
+    },
+    {
+      "source_community": 18,
+      "target_community": 8,
+      "edge_count": 1,
+      "top_relations": {
+        "calls": 1
+      }
+    },
+    {
+      "source_community": 0,
+      "target_community": 10,
+      "edge_count": 1,
+      "top_relations": {
+        "calls": 1
+      }
+    }
+  ]
+}

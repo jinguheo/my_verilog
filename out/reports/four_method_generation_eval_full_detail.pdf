@@ -1,0 +1,953 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 2083 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Four-Method Verilog Generation Evaluation - Full Detail) Tj
+-50 -21 Td
+/F1 9 Tf
+50 731 Td (Generated: 2026-05-09T20:57:15) Tj
+-50 -12 Td
+/F1 13 Tf
+50 711 Td (Overall Metrics) Tj
+-50 -17 Td
+/F1 9 Tf
+50 694 Td (1. Parser + LSP: hit@1 0.9481, hit@3 1.0000, hit@5 1.0000, MRR 0.9675; HIT@1=73, HIT@3=4) Tj
+-50 -12 Td
+/F1 9 Tf
+50 682 Td (2. Parser + LSP + Manticore: hit@1 0.8312, hit@3 0.8961, hit@5 0.9481, MRR 0.8645; HIT@1=64, HIT@3=5, HIT@5=4,) Tj
+-50 -12 Td
+/F1 9 Tf
+50 670 Td (MISS=4) Tj
+-50 -12 Td
+/F1 9 Tf
+50 658 Td (3. KG: hit@1 0.9481, hit@3 0.9870, hit@5 1.0000, MRR 0.9658; HIT@1=73, HIT@3=3, HIT@5=1) Tj
+-50 -12 Td
+/F1 9 Tf
+50 646 Td (4. Graphify: hit@1 0.9740, hit@3 0.9740, hit@5 0.9740, MRR 0.9740; HIT@1=75, MISS=2) Tj
+-50 -12 Td
+/F1 13 Tf
+50 626 Td (Level Breakdown) Tj
+-50 -17 Td
+/F1 10 Tf
+50 609 Td (1. Parser + LSP) Tj
+-50 -13 Td
+/F1 9 Tf
+50 596 Td (L3: count 26, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-50 -12 Td
+/F1 9 Tf
+50 584 Td (L4: count 26, hit@1 0.8846, hit@3 1.0000, MRR 0.9295) Tj
+-50 -12 Td
+/F1 9 Tf
+50 572 Td (L5: count 25, hit@1 0.9600, hit@3 1.0000, MRR 0.9733) Tj
+-50 -12 Td
+/F1 10 Tf
+50 560 Td (2. Parser + LSP + Manticore) Tj
+-50 -13 Td
+/F1 9 Tf
+50 547 Td (L3: count 26, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-50 -12 Td
+/F1 9 Tf
+50 535 Td (L4: count 26, hit@1 0.6923, hit@3 0.8077, MRR 0.7654) Tj
+-50 -12 Td
+/F1 9 Tf
+50 523 Td (L5: count 25, hit@1 0.8000, hit@3 0.8800, MRR 0.8267) Tj
+-50 -12 Td
+/F1 10 Tf
+50 511 Td (3. KG) Tj
+-50 -13 Td
+/F1 9 Tf
+50 498 Td (L3: count 26, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-50 -12 Td
+/F1 9 Tf
+50 486 Td (L4: count 26, hit@1 0.8462, hit@3 0.9615, MRR 0.8987) Tj
+-50 -12 Td
+/F1 9 Tf
+50 474 Td (L5: count 25, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-50 -12 Td
+/F1 10 Tf
+50 462 Td (4. Graphify) Tj
+-50 -13 Td
+/F1 9 Tf
+50 449 Td (L3: count 26, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-50 -12 Td
+/F1 9 Tf
+50 437 Td (L4: count 26, hit@1 0.9615, hit@3 0.9615, MRR 0.9615) Tj
+-50 -12 Td
+/F1 9 Tf
+50 425 Td (L5: count 25, hit@1 0.9600, hit@3 0.9600, MRR 0.9600) Tj
+-50 -12 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Length 4546 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Per-Question Detail 1-14) Tj
+-50 -21 Td
+/F1 9 Tf
+50 731 Td (Task | L | Gold | P/LSP | Manticore | KG | Graphify) Tj
+-50 -12 Td
+/F1 8 Tf
+50 719 Td (--------------------------------------------------------------------------------------------------------) Tj
+-50 -10 Td
+/F1 8 Tf
+50 709 Td (genctx_001_top_darjeeling | L3 | top_darjeeling | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 699 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 689 Td (top1: P/LSP=top_darjeeling, Manticore=top_darjeeling, KG=top_darjeeling, Graphify=top_darjeeling) Tj
+-50 -9 Td
+/F1 8 Tf
+50 680 Td (genctx_002_top_earlgrey | L4 | top_earlgrey | P/LSP r1 HIT@1 | Manticore r5 HIT@5 | KG r5 HIT@5 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 670 Td (top1: P/LSP=top_earlgrey, Manticore=pinmux_jtag_breakout, KG=pinmux_jtag_breakout, Graphify=top_earlgrey) Tj
+-50 -9 Td
+/F1 8 Tf
+50 661 Td (genctx_003_chip_darjeeling_asic | L5 | chip_darjeeling_asic | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 |) Tj
+-50 -10 Td
+/F1 8 Tf
+50 651 Td (Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 641 Td (top1: P/LSP=chip_darjeeling_asic, Manticore=chip_darjeeling_asic, KG=chip_darjeeling_asic,) Tj
+-50 -9 Td
+/F1 7 Tf
+50 632 Td (Graphify=chip_darjeeling_asic) Tj
+-50 -9 Td
+/F1 8 Tf
+50 623 Td (genctx_004_top_englishbreakfast | L3 | top_englishbreakfast | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 |) Tj
+-50 -10 Td
+/F1 8 Tf
+50 613 Td (Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 603 Td (top1: P/LSP=top_englishbreakfast, Manticore=top_englishbreakfast, KG=top_englishbreakfast,) Tj
+-50 -9 Td
+/F1 7 Tf
+50 594 Td (Graphify=top_englishbreakfast) Tj
+-50 -9 Td
+/F1 8 Tf
+50 585 Td (genctx_005_spi_device | L4 | spi_device | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 575 Td (top1: P/LSP=spi_device, Manticore=spi_device, KG=spi_device, Graphify=spi_device) Tj
+-50 -9 Td
+/F1 8 Tf
+50 566 Td (genctx_006_ast | L5 | ast | P/LSP r1 HIT@1 | Manticore r3 HIT@3 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 556 Td (top1: P/LSP=ast, Manticore=prim_flop_2sync, KG=ast, Graphify=ast) Tj
+-50 -9 Td
+/F1 8 Tf
+50 547 Td (genctx_007_flash_ctrl | L3 | flash_ctrl | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 537 Td (top1: P/LSP=flash_ctrl, Manticore=flash_ctrl, KG=flash_ctrl, Graphify=flash_ctrl) Tj
+-50 -9 Td
+/F1 8 Tf
+50 528 Td (genctx_008_flash_ctrl | L4 | flash_ctrl | P/LSP r3 HIT@3 | Manticore r3 HIT@3 | KG r3 HIT@3 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 518 Td (top1: P/LSP=flash_ctrl_region_cfg, Manticore=flash_ctrl_region_cfg, KG=flash_ctrl_region_cfg, Graphify=flash_ctrl) Tj
+-50 -9 Td
+/F1 8 Tf
+50 509 Td (genctx_009_chip_earlgrey_cw310 | L5 | chip_earlgrey_cw310 | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 |) Tj
+-50 -10 Td
+/F1 8 Tf
+50 499 Td (Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 489 Td (top1: P/LSP=chip_earlgrey_cw310, Manticore=chip_earlgrey_cw310, KG=chip_earlgrey_cw310, Graphify=chip_earlgrey_cw310) Tj
+-50 -9 Td
+/F1 8 Tf
+50 480 Td (genctx_010_chip_earlgrey_cw340 | L3 | chip_earlgrey_cw340 | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 |) Tj
+-50 -10 Td
+/F1 8 Tf
+50 470 Td (Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 460 Td (top1: P/LSP=chip_earlgrey_cw340, Manticore=chip_earlgrey_cw340, KG=chip_earlgrey_cw340, Graphify=chip_earlgrey_cw340) Tj
+-50 -9 Td
+/F1 8 Tf
+50 451 Td (genctx_011_otp_ctrl | L4 | otp_ctrl | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 441 Td (top1: P/LSP=otp_ctrl, Manticore=otp_ctrl, KG=otp_ctrl, Graphify=otp_ctrl) Tj
+-50 -9 Td
+/F1 8 Tf
+50 432 Td (genctx_012_usb_fs_nb_pe | L5 | usb_fs_nb_pe | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 422 Td (top1: P/LSP=usb_fs_nb_pe, Manticore=usb_fs_nb_pe, KG=usb_fs_nb_pe, Graphify=usb_fs_nb_pe) Tj
+-50 -9 Td
+/F1 8 Tf
+50 413 Td (genctx_013_otp_ctrl | L3 | otp_ctrl | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 403 Td (top1: P/LSP=otp_ctrl, Manticore=otp_ctrl, KG=otp_ctrl, Graphify=otp_ctrl) Tj
+-50 -9 Td
+/F1 8 Tf
+50 394 Td (genctx_014_entropy_src_core | L4 | entropy_src_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 384 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 374 Td (top1: P/LSP=entropy_src_core, Manticore=entropy_src_core, KG=entropy_src_core, Graphify=entropy_src_core) Tj
+-50 -9 Td
+ET
+endstream
+endobj
+4 0 obj
+<< /Length 3930 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Per-Question Detail 15-28) Tj
+-50 -21 Td
+/F1 9 Tf
+50 731 Td (Task | L | Gold | P/LSP | Manticore | KG | Graphify) Tj
+-50 -12 Td
+/F1 8 Tf
+50 719 Td (--------------------------------------------------------------------------------------------------------) Tj
+-50 -10 Td
+/F1 8 Tf
+50 709 Td (genctx_015_rv_core_ibex | L5 | rv_core_ibex | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 699 Td (top1: P/LSP=rv_core_ibex, Manticore=rv_core_ibex, KG=rv_core_ibex, Graphify=rv_core_ibex) Tj
+-50 -9 Td
+/F1 8 Tf
+50 690 Td (genctx_016_rv_core_ibex | L3 | rv_core_ibex | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 680 Td (top1: P/LSP=rv_core_ibex, Manticore=rv_core_ibex, KG=rv_core_ibex, Graphify=rv_core_ibex) Tj
+-50 -9 Td
+/F1 8 Tf
+50 671 Td (genctx_017_rv_core_ibex | L4 | rv_core_ibex | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 661 Td (top1: P/LSP=rv_core_ibex, Manticore=rv_core_ibex, KG=rv_core_ibex, Graphify=rv_core_ibex) Tj
+-50 -9 Td
+/F1 8 Tf
+50 652 Td (genctx_018_ast | L5 | ast | P/LSP r1 HIT@1 | Manticore r3 HIT@3 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 642 Td (top1: P/LSP=ast, Manticore=prim_flop_2sync, KG=ast, Graphify=ast) Tj
+-50 -9 Td
+/F1 8 Tf
+50 633 Td (genctx_019_chip_earlgrey_asic | L3 | chip_earlgrey_asic | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify) Tj
+-50 -10 Td
+/F1 8 Tf
+50 623 Td (r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 613 Td (top1: P/LSP=chip_earlgrey_asic, Manticore=chip_earlgrey_asic, KG=chip_earlgrey_asic, Graphify=chip_earlgrey_asic) Tj
+-50 -9 Td
+/F1 8 Tf
+50 604 Td (genctx_020_usbdev | L4 | usbdev | P/LSP r1 HIT@1 | Manticore r3 HIT@3 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 594 Td (top1: P/LSP=usbdev, Manticore=prim_edge_detector, KG=usbdev, Graphify=usbdev) Tj
+-50 -9 Td
+/F1 8 Tf
+50 585 Td (genctx_021_pwrmgr | L5 | pwrmgr | P/LSP r1 HIT@1 | Manticore miss MISS | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 575 Td (top1: P/LSP=pwrmgr, Manticore=prim_esc_receiver, KG=pwrmgr, Graphify=pwrmgr) Tj
+-50 -9 Td
+/F1 8 Tf
+50 566 Td (genctx_022_otbn_core | L3 | otbn_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 556 Td (top1: P/LSP=otbn_core, Manticore=otbn_core, KG=otbn_core, Graphify=otbn_core) Tj
+-50 -9 Td
+/F1 8 Tf
+50 547 Td (genctx_023_clkmgr | L4 | clkmgr | P/LSP r1 HIT@1 | Manticore miss MISS | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 537 Td (top1: P/LSP=clkmgr, Manticore=prim_clock_div, KG=clkmgr, Graphify=clkmgr) Tj
+-50 -9 Td
+/F1 8 Tf
+50 528 Td (genctx_024_clkmgr | L5 | clkmgr | P/LSP r1 HIT@1 | Manticore miss MISS | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 518 Td (top1: P/LSP=clkmgr, Manticore=clkmgr_reg_top, KG=clkmgr, Graphify=clkmgr) Tj
+-50 -9 Td
+/F1 8 Tf
+50 509 Td (genctx_025_pwrmgr | L3 | pwrmgr | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 499 Td (top1: P/LSP=pwrmgr, Manticore=pwrmgr, KG=pwrmgr, Graphify=pwrmgr) Tj
+-50 -9 Td
+/F1 8 Tf
+50 490 Td (genctx_026_pwrmgr | L4 | pwrmgr | P/LSP r1 HIT@1 | Manticore r5 HIT@5 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 480 Td (top1: P/LSP=pwrmgr, Manticore=prim_esc_receiver, KG=pwrmgr, Graphify=pwrmgr) Tj
+-50 -9 Td
+/F1 8 Tf
+50 471 Td (genctx_027_rv_dm | L5 | rv_dm | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 461 Td (top1: P/LSP=rv_dm, Manticore=rv_dm, KG=rv_dm, Graphify=rv_dm) Tj
+-50 -9 Td
+/F1 8 Tf
+50 452 Td (genctx_028_sysrst_ctrl | L3 | sysrst_ctrl | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 442 Td (top1: P/LSP=sysrst_ctrl, Manticore=sysrst_ctrl, KG=sysrst_ctrl, Graphify=sysrst_ctrl) Tj
+-50 -9 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Length 4129 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Per-Question Detail 29-42) Tj
+-50 -21 Td
+/F1 9 Tf
+50 731 Td (Task | L | Gold | P/LSP | Manticore | KG | Graphify) Tj
+-50 -12 Td
+/F1 8 Tf
+50 719 Td (--------------------------------------------------------------------------------------------------------) Tj
+-50 -10 Td
+/F1 8 Tf
+50 709 Td (genctx_029_kmac | L4 | kmac | P/LSP r2 HIT@3 | Manticore r4 HIT@5 | KG r2 HIT@3 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 699 Td (top1: P/LSP=kmac_core, Manticore=prim_intr_hw, KG=kmac_core, Graphify=kmac) Tj
+-50 -9 Td
+/F1 8 Tf
+50 690 Td (genctx_030_keymgr_dpe | L5 | keymgr_dpe | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 680 Td (top1: P/LSP=keymgr_dpe, Manticore=keymgr_dpe, KG=keymgr_dpe, Graphify=keymgr_dpe) Tj
+-50 -9 Td
+/F1 8 Tf
+50 671 Td (genctx_031_keymgr | L3 | keymgr | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 661 Td (top1: P/LSP=keymgr, Manticore=keymgr, KG=keymgr, Graphify=keymgr) Tj
+-50 -9 Td
+/F1 8 Tf
+50 652 Td (genctx_032_flash_phy_core | L4 | flash_phy_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 642 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 632 Td (top1: P/LSP=flash_phy_core, Manticore=flash_phy_core, KG=flash_phy_core, Graphify=flash_phy_core) Tj
+-50 -9 Td
+/F1 8 Tf
+50 623 Td (genctx_033_flash_phy_core | L5 | flash_phy_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 613 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 603 Td (top1: P/LSP=flash_phy_core, Manticore=flash_phy_core, KG=flash_phy_core, Graphify=flash_phy_core) Tj
+-50 -9 Td
+/F1 8 Tf
+50 594 Td (genctx_034_flash_phy_core | L3 | flash_phy_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 584 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 574 Td (top1: P/LSP=flash_phy_core, Manticore=flash_phy_core, KG=flash_phy_core, Graphify=flash_phy_core) Tj
+-50 -9 Td
+/F1 8 Tf
+50 565 Td (genctx_035_flash_phy_rd | L4 | flash_phy_rd | P/LSP r1 HIT@1 | Manticore r4 HIT@5 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 555 Td (top1: P/LSP=flash_phy_rd, Manticore=flash_phy_rd_buf_dep, KG=flash_phy_rd, Graphify=flash_phy_rd) Tj
+-50 -9 Td
+/F1 8 Tf
+50 546 Td (genctx_036_flash_phy_rd | L5 | flash_phy_rd | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 536 Td (top1: P/LSP=flash_phy_rd, Manticore=flash_phy_rd, KG=flash_phy_rd, Graphify=flash_phy_rd) Tj
+-50 -9 Td
+/F1 8 Tf
+50 527 Td (genctx_037_flash_phy_rd | L3 | flash_phy_rd | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 517 Td (top1: P/LSP=flash_phy_rd, Manticore=flash_phy_rd, KG=flash_phy_rd, Graphify=flash_phy_rd) Tj
+-50 -9 Td
+/F1 8 Tf
+50 508 Td (genctx_038_kmac_reduced | L4 | kmac_reduced | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 498 Td (top1: P/LSP=kmac_reduced, Manticore=kmac_reduced, KG=kmac_reduced, Graphify=kmac_reduced) Tj
+-50 -9 Td
+/F1 8 Tf
+50 489 Td (genctx_039_lc_ctrl_fsm | L5 | lc_ctrl_fsm | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 479 Td (top1: P/LSP=lc_ctrl_fsm, Manticore=lc_ctrl_fsm, KG=lc_ctrl_fsm, Graphify=lc_ctrl_fsm) Tj
+-50 -9 Td
+/F1 8 Tf
+50 470 Td (genctx_040_sram_ctrl | L3 | sram_ctrl | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 460 Td (top1: P/LSP=sram_ctrl, Manticore=sram_ctrl, KG=sram_ctrl, Graphify=sram_ctrl) Tj
+-50 -9 Td
+/F1 8 Tf
+50 451 Td (genctx_041_aes_core | L4 | aes_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 441 Td (top1: P/LSP=aes_core, Manticore=aes_core, KG=aes_core, Graphify=aes_core) Tj
+-50 -9 Td
+/F1 8 Tf
+50 432 Td (genctx_042_i2c_core | L5 | i2c_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 422 Td (top1: P/LSP=i2c_core, Manticore=i2c_core, KG=i2c_core, Graphify=i2c_core) Tj
+-50 -9 Td
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 4299 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Per-Question Detail 43-56) Tj
+-50 -21 Td
+/F1 9 Tf
+50 731 Td (Task | L | Gold | P/LSP | Manticore | KG | Graphify) Tj
+-50 -12 Td
+/F1 8 Tf
+50 719 Td (--------------------------------------------------------------------------------------------------------) Tj
+-50 -10 Td
+/F1 8 Tf
+50 709 Td (genctx_043_otbn | L3 | otbn | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 699 Td (top1: P/LSP=otbn, Manticore=otbn, KG=otbn, Graphify=otbn) Tj
+-50 -9 Td
+/F1 8 Tf
+50 690 Td (genctx_044_csrng_core | L4 | csrng_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 680 Td (top1: P/LSP=csrng_core, Manticore=csrng_core, KG=csrng_core, Graphify=csrng_core) Tj
+-50 -9 Td
+/F1 8 Tf
+50 671 Td (genctx_045_otp_ctrl_dai | L5 | otp_ctrl_dai | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 661 Td (top1: P/LSP=otp_ctrl_dai, Manticore=otp_ctrl_dai, KG=otp_ctrl_dai, Graphify=otp_ctrl_dai) Tj
+-50 -9 Td
+/F1 8 Tf
+50 652 Td (genctx_046_otp_ctrl_dai | L3 | otp_ctrl_dai | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 642 Td (top1: P/LSP=otp_ctrl_dai, Manticore=otp_ctrl_dai, KG=otp_ctrl_dai, Graphify=otp_ctrl_dai) Tj
+-50 -9 Td
+/F1 8 Tf
+50 633 Td (genctx_047_otp_ctrl_dai | L4 | otp_ctrl_dai | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 623 Td (top1: P/LSP=otp_ctrl_dai, Manticore=otp_ctrl_dai, KG=otp_ctrl_dai, Graphify=otp_ctrl_dai) Tj
+-50 -9 Td
+/F1 8 Tf
+50 614 Td (genctx_048_lc_ctrl | L5 | lc_ctrl | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 604 Td (top1: P/LSP=lc_ctrl, Manticore=lc_ctrl, KG=lc_ctrl, Graphify=lc_ctrl) Tj
+-50 -9 Td
+/F1 8 Tf
+50 595 Td (genctx_049_otp_ctrl_part_buf | L3 | otp_ctrl_part_buf | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify) Tj
+-50 -10 Td
+/F1 8 Tf
+50 585 Td (r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 575 Td (top1: P/LSP=otp_ctrl_part_buf, Manticore=otp_ctrl_part_buf, KG=otp_ctrl_part_buf, Graphify=otp_ctrl_part_buf) Tj
+-50 -9 Td
+/F1 8 Tf
+50 566 Td (genctx_050_otp_ctrl_part_buf | L4 | otp_ctrl_part_buf | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify) Tj
+-50 -10 Td
+/F1 8 Tf
+50 556 Td (r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 546 Td (top1: P/LSP=otp_ctrl_part_buf, Manticore=otp_ctrl_part_buf, KG=otp_ctrl_part_buf, Graphify=otp_ctrl_part_buf) Tj
+-50 -9 Td
+/F1 8 Tf
+50 537 Td (genctx_051_otp_ctrl_part_buf | L5 | otp_ctrl_part_buf | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify) Tj
+-50 -10 Td
+/F1 8 Tf
+50 527 Td (r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 517 Td (top1: P/LSP=otp_ctrl_part_buf, Manticore=otp_ctrl_part_buf, KG=otp_ctrl_part_buf, Graphify=otp_ctrl_part_buf) Tj
+-50 -9 Td
+/F1 8 Tf
+50 508 Td (genctx_052_keymgr_dpe_ctrl | L3 | keymgr_dpe_ctrl | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 498 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 488 Td (top1: P/LSP=keymgr_dpe_ctrl, Manticore=keymgr_dpe_ctrl, KG=keymgr_dpe_ctrl, Graphify=keymgr_dpe_ctrl) Tj
+-50 -9 Td
+/F1 8 Tf
+50 479 Td (genctx_053_ast_clks_byp | L4 | ast_clks_byp | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 469 Td (top1: P/LSP=ast_clks_byp, Manticore=ast_clks_byp, KG=ast_clks_byp, Graphify=ast_clks_byp) Tj
+-50 -9 Td
+/F1 8 Tf
+50 460 Td (genctx_054_clkmgr | L5 | clkmgr | P/LSP r1 HIT@1 | Manticore miss MISS | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 450 Td (top1: P/LSP=clkmgr, Manticore=clkmgr_clk_status, KG=clkmgr, Graphify=clkmgr) Tj
+-50 -9 Td
+/F1 8 Tf
+50 441 Td (genctx_055_otbn_alu_bignum | L3 | otbn_alu_bignum | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 431 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 421 Td (top1: P/LSP=otbn_alu_bignum, Manticore=otbn_alu_bignum, KG=otbn_alu_bignum, Graphify=otbn_alu_bignum) Tj
+-50 -9 Td
+/F1 8 Tf
+50 412 Td (genctx_056_soc_proxy | L4 | soc_proxy | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 402 Td (top1: P/LSP=soc_proxy, Manticore=soc_proxy, KG=soc_proxy, Graphify=soc_proxy) Tj
+-50 -9 Td
+ET
+endstream
+endobj
+7 0 obj
+<< /Length 4421 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Per-Question Detail 57-70) Tj
+-50 -21 Td
+/F1 9 Tf
+50 731 Td (Task | L | Gold | P/LSP | Manticore | KG | Graphify) Tj
+-50 -12 Td
+/F1 8 Tf
+50 719 Td (--------------------------------------------------------------------------------------------------------) Tj
+-50 -10 Td
+/F1 8 Tf
+50 709 Td (genctx_057_chip_englishbreakfast_cw305 | L5 | chip_englishbreakfast_cw305 | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG) Tj
+-50 -10 Td
+/F1 8 Tf
+50 699 Td (r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 689 Td (top1: P/LSP=chip_englishbreakfast_cw305, Manticore=chip_englishbreakfast_cw305, KG=chip_englishbreakfast_cw305,) Tj
+-50 -9 Td
+/F1 7 Tf
+50 680 Td (Graphify=chip_englishbreakfast_cw305) Tj
+-50 -9 Td
+/F1 8 Tf
+50 671 Td (genctx_058_clkmgr_reg_top | L3 | clkmgr_reg_top | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 661 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 651 Td (top1: P/LSP=clkmgr_reg_top, Manticore=clkmgr_reg_top, KG=clkmgr_reg_top, Graphify=clkmgr_reg_top) Tj
+-50 -9 Td
+/F1 8 Tf
+50 642 Td (genctx_059_flash_ctrl_lcmgr | L4 | flash_ctrl_lcmgr | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 632 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 622 Td (top1: P/LSP=flash_ctrl_lcmgr, Manticore=flash_ctrl_lcmgr, KG=flash_ctrl_lcmgr, Graphify=flash_ctrl_lcmgr) Tj
+-50 -9 Td
+/F1 8 Tf
+50 613 Td (genctx_060_flash_ctrl_lcmgr | L5 | flash_ctrl_lcmgr | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1) Tj
+-50 -10 Td
+/F1 8 Tf
+50 603 Td (HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 593 Td (top1: P/LSP=flash_ctrl_lcmgr, Manticore=flash_ctrl_lcmgr, KG=flash_ctrl_lcmgr, Graphify=flash_ctrl_lcmgr) Tj
+-50 -9 Td
+/F1 8 Tf
+50 584 Td (genctx_061_dma | L3 | dma | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 574 Td (top1: P/LSP=dma, Manticore=dma, KG=dma, Graphify=dma) Tj
+-50 -9 Td
+/F1 8 Tf
+50 565 Td (genctx_062_uart | L4 | uart | P/LSP r3 HIT@3 | Manticore r3 HIT@3 | KG r3 HIT@3 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 555 Td (top1: P/LSP=uart_reg_top, Manticore=uart_reg_top, KG=uart_reg_top, Graphify=uart) Tj
+-50 -9 Td
+/F1 8 Tf
+50 546 Td (existing_063 | L3 | dma | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 536 Td (top1: P/LSP=dma, Manticore=dma, KG=dma, Graphify=dma) Tj
+-50 -9 Td
+/F1 8 Tf
+50 527 Td (existing_064 | L3 | ac_range_check_reg_top | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 517 Td (top1: P/LSP=ac_range_check_reg_top, Manticore=ac_range_check_reg_top, KG=ac_range_check_reg_top,) Tj
+-50 -9 Td
+/F1 7 Tf
+50 508 Td (Graphify=ac_range_check_reg_top) Tj
+-50 -9 Td
+/F1 8 Tf
+50 499 Td (existing_065 | L3 | ac_range_check | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 489 Td (top1: P/LSP=ac_range_check, Manticore=ac_range_check, KG=ac_range_check, Graphify=ac_range_check) Tj
+-50 -9 Td
+/F1 8 Tf
+50 480 Td (existing_066 | L3 | keymgr_dpe_reg_top | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 470 Td (top1: P/LSP=keymgr_dpe_reg_top, Manticore=keymgr_dpe_reg_top, KG=keymgr_dpe_reg_top, Graphify=keymgr_dpe_reg_top) Tj
+-50 -9 Td
+/F1 8 Tf
+50 461 Td (existing_067 | L3 | keymgr_reg_top | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 451 Td (top1: P/LSP=keymgr_reg_top, Manticore=keymgr_reg_top, KG=keymgr_reg_top, Graphify=keymgr_reg_top) Tj
+-50 -9 Td
+/F1 8 Tf
+50 442 Td (existing_068 | L4 | tlul_adapter_sram | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 432 Td (top1: P/LSP=tlul_adapter_sram, Manticore=tlul_adapter_sram, KG=tlul_adapter_sram, Graphify=tlul_adapter_sram) Tj
+-50 -9 Td
+/F1 8 Tf
+50 423 Td (existing_069 | L4 | uart_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 413 Td (top1: P/LSP=uart_core, Manticore=uart_core, KG=uart_core, Graphify=uart_core) Tj
+-50 -9 Td
+/F1 8 Tf
+50 404 Td (existing_070 | L4 | aes_dom_inverse_gf2p8 | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify miss MISS) Tj
+-50 -10 Td
+/F1 7 Tf
+50 394 Td (top1: P/LSP=aes_dom_inverse_gf2p8, Manticore=aes_dom_inverse_gf2p8, KG=aes_dom_inverse_gf2p8, Graphify=Extension) Tj
+-50 -9 Td
+ET
+endstream
+endobj
+8 0 obj
+<< /Length 2174 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Per-Question Detail 71-77) Tj
+-50 -21 Td
+/F1 9 Tf
+50 731 Td (Task | L | Gold | P/LSP | Manticore | KG | Graphify) Tj
+-50 -12 Td
+/F1 8 Tf
+50 719 Td (--------------------------------------------------------------------------------------------------------) Tj
+-50 -10 Td
+/F1 8 Tf
+50 709 Td (existing_071 | L4 | mbx | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 699 Td (top1: P/LSP=mbx, Manticore=mbx, KG=mbx, Graphify=mbx) Tj
+-50 -9 Td
+/F1 8 Tf
+50 690 Td (existing_072 | L4 | rv_dm_dmi_gate | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 680 Td (top1: P/LSP=rv_dm_dmi_gate, Manticore=rv_dm_dmi_gate, KG=rv_dm_dmi_gate, Graphify=rv_dm_dmi_gate) Tj
+-50 -9 Td
+/F1 8 Tf
+50 671 Td (existing_073 | L5 | adc_ctrl_core | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 661 Td (top1: P/LSP=adc_ctrl_core, Manticore=adc_ctrl_core, KG=adc_ctrl_core, Graphify=adc_ctrl_core) Tj
+-50 -9 Td
+/F1 8 Tf
+50 652 Td (existing_074 | L5 | ascon | P/LSP r3 HIT@3 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 642 Td (top1: P/LSP=prim_ascon_duplex, Manticore=ascon, KG=ascon, Graphify=ascon) Tj
+-50 -9 Td
+/F1 8 Tf
+50 633 Td (existing_075 | L5 | aes_dom_inverse_gf2p4 | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify miss MISS) Tj
+-50 -10 Td
+/F1 7 Tf
+50 623 Td (top1: P/LSP=aes_dom_inverse_gf2p4, Manticore=aes_dom_inverse_gf2p4, KG=aes_dom_inverse_gf2p4, Graphify=# NOTE: This) Tj
+-50 -9 Td
+/F1 7 Tf
+50 614 Td (list is likely to become out of date as the codebase evolves) Tj
+-50 -9 Td
+/F1 8 Tf
+50 605 Td (existing_076 | L5 | usb_clk | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 595 Td (top1: P/LSP=usb_clk, Manticore=usb_clk, KG=usb_clk, Graphify=usb_clk) Tj
+-50 -9 Td
+/F1 8 Tf
+50 586 Td (existing_077 | L5 | xbar_main | P/LSP r1 HIT@1 | Manticore r1 HIT@1 | KG r1 HIT@1 | Graphify r1 HIT@1) Tj
+-50 -10 Td
+/F1 7 Tf
+50 576 Td (top1: P/LSP=xbar_main, Manticore=xbar_main, KG=xbar_main, Graphify=xbar_main) Tj
+-50 -9 Td
+ET
+endstream
+endobj
+9 0 obj
+<< /Length 125 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Miss Details - 1. Parser + LSP) Tj
+-50 -21 Td
+/F1 10 Tf
+50 731 Td (No top-5 misses.) Tj
+-50 -13 Td
+ET
+endstream
+endobj
+10 0 obj
+<< /Length 3286 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Miss Details - 2. Parser + LSP + Manticore) Tj
+-50 -21 Td
+/F1 9 Tf
+50 731 Td (Task: genctx_021_pwrmgr | level L5 | gold pwrmgr | top1 prim_esc_receiver) Tj
+-50 -12 Td
+/F1 8 Tf
+50 719 Td (Question: Write a difficult spec-to-RTL generation brief for a module equivalent to `pwrmgr`. The generated RTL) Tj
+-50 -10 Td
+/F1 8 Tf
+50 709 Td (must preserve labels uart, child-role decomposition prim_flop_2sync, prim_clock_buf, prim_esc_receiver,) Tj
+-50 -10 Td
+/F1 8 Tf
+50 699 Td (prim_clock_timeout, and interface compatibility via clk_slow_i, clk_i, rst_slow_ni, rst_ni. Which existing) Tj
+-50 -10 Td
+/F1 8 Tf
+50 689 Td (module must anchor the context?) Tj
+-50 -10 Td
+/F1 8 Tf
+50 679 Td (Top-5: prim_esc_receiver score=454.795; prim_esc_receiver score=453.33; prim_clock_timeout score=396.819;) Tj
+-50 -10 Td
+/F1 8 Tf
+50 669 Td (prim_clock_timeout score=395.44; prim_flop_2sync score=385.346) Tj
+-50 -10 Td
+/F1 9 Tf
+50 651 Td (Task: genctx_023_clkmgr | level L4 | gold clkmgr | top1 prim_clock_div) Tj
+-50 -12 Td
+/F1 8 Tf
+50 639 Td (Question: Create an implementation plan for a replacement `clkmgr` block that preserves child dependencies) Tj
+-50 -10 Td
+/F1 8 Tf
+50 629 Td (prim_clock_buf, prim_mubi4_sync, prim_clock_div and the key ports clk_i, rst_ni, rst_shadowed_ni. Which RTL) Tj
+-50 -10 Td
+/F1 8 Tf
+50 619 Td (module is the primary source of truth?) Tj
+-50 -10 Td
+/F1 8 Tf
+50 609 Td (Top-5: prim_clock_div score=376.344; prim_clock_div score=375.153; prim_mubi4_sync score=368.187;) Tj
+-50 -10 Td
+/F1 8 Tf
+50 599 Td (prim_mubi4_sync score=366.869; prim_clock_div score=343.123) Tj
+-50 -10 Td
+/F1 9 Tf
+50 581 Td (Task: genctx_024_clkmgr | level L5 | gold clkmgr | top1 clkmgr_reg_top) Tj
+-50 -12 Td
+/F1 8 Tf
+50 569 Td (Question: Write a difficult spec-to-RTL generation brief for a module equivalent to `clkmgr`. The generated RTL) Tj
+-50 -10 Td
+/F1 8 Tf
+50 559 Td (must preserve labels uart, child-role decomposition prim_clock_buf, prim_mubi4_sync, prim_clock_div,) Tj
+-50 -10 Td
+/F1 8 Tf
+50 549 Td (clkmgr_reg_top, and interface compatibility via clk_i, rst_ni, rst_shadowed_ni, clk_main_i. Which existing) Tj
+-50 -10 Td
+/F1 8 Tf
+50 539 Td (module must anchor the context?) Tj
+-50 -10 Td
+/F1 8 Tf
+50 529 Td (Top-5: clkmgr_reg_top score=420.11; clkmgr_reg_top score=408.447; clkmgr_reg_top score=402.828; prim_clock_div) Tj
+-50 -10 Td
+/F1 8 Tf
+50 519 Td (score=376.344; prim_clock_div score=375.153) Tj
+-50 -10 Td
+/F1 9 Tf
+50 501 Td (Task: genctx_054_clkmgr | level L5 | gold clkmgr | top1 clkmgr_clk_status) Tj
+-50 -12 Td
+/F1 8 Tf
+50 489 Td (Question: Write a difficult spec-to-RTL generation brief for a module equivalent to `clkmgr`. The generated RTL) Tj
+-50 -10 Td
+/F1 8 Tf
+50 479 Td (must preserve labels uart, child-role decomposition prim_clock_buf, clkmgr_reg_top, clkmgr_root_ctrl,) Tj
+-50 -10 Td
+/F1 8 Tf
+50 469 Td (clkmgr_clk_status, and interface compatibility via clk_i, rst_ni, rst_shadowed_ni, clk_main_i. Which existing) Tj
+-50 -10 Td
+/F1 8 Tf
+50 459 Td (module must anchor the context?) Tj
+-50 -10 Td
+/F1 8 Tf
+50 449 Td (Top-5: clkmgr_clk_status score=427.167; clkmgr_clk_status score=426.224; clkmgr_clk_status score=426.224;) Tj
+-50 -10 Td
+/F1 8 Tf
+50 439 Td (clkmgr_clk_status score=426.224; clkmgr_reg_top score=416.049) Tj
+-50 -10 Td
+ET
+endstream
+endobj
+11 0 obj
+<< /Length 115 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Miss Details - 3. KG) Tj
+-50 -21 Td
+/F1 10 Tf
+50 731 Td (No top-5 misses.) Tj
+-50 -13 Td
+ET
+endstream
+endobj
+12 0 obj
+<< /Length 1602 >>
+stream
+BT
+/F1 16 Tf
+50 760 Td (Miss Details - 4. Graphify) Tj
+-50 -21 Td
+/F1 9 Tf
+50 731 Td (Task: existing_070 | level L4 | gold aes_dom_inverse_gf2p8 | top1 Extension) Tj
+-50 -12 Td
+/F1 8 Tf
+50 719 Td (Question: Prepare a generation plan for a replacement or extension of `aes_dom_inverse_gf2p8` that preserves) Tj
+-50 -10 Td
+/F1 8 Tf
+50 709 Td (hierarchy, interface intent, and likely child dependencies.) Tj
+-50 -10 Td
+/F1 8 Tf
+50 699 Td (Top-5: Extension score=13.5; extension score=13.5; Checks that loops will likely be properly cleared from loop) Tj
+-50 -10 Td
+/F1 8 Tf
+50 689 Td (stack score=13.0; prepare_verilogeval_generation score=13.0; Rewrite small SV constructs that current Icarus) Tj
+-50 -10 Td
+/F1 8 Tf
+50 679 Td (rejects in oracle refs score=9.5) Tj
+-50 -10 Td
+/F1 9 Tf
+50 661 Td (Task: existing_075 | level L5 | gold aes_dom_inverse_gf2p4 | top1 # NOTE: This list is likely to become out of) Tj
+-50 -12 Td
+/F1 9 Tf
+50 649 Td (date as the codebase evolves) Tj
+-50 -12 Td
+/F1 8 Tf
+50 637 Td (Question: Write a design-generation brief for building a new module inspired by `aes_dom_inverse_gf2p4`,) Tj
+-50 -10 Td
+/F1 8 Tf
+50 627 Td (including preserved interfaces, child-role decomposition, and likely review risks.) Tj
+-50 -10 Td
+/F1 8 Tf
+50 617 Td (Top-5: # NOTE: This list is likely to become out of date as the codebase evolves score=6.5; # TODO: This is an) Tj
+-50 -10 Td
+/F1 8 Tf
+50 607 Td (implicit assignment of alerts to reg interfaces score=6.5; # TODO: add new_node score=6.5; .__new__\(\) score=6.5;) Tj
+-50 -10 Td
+/F1 8 Tf
+50 597 Td (._interfaces\(\) score=6.5) Tj
+-50 -10 Td
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+14 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 3 0 R >>
+endobj
+15 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+16 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 5 0 R >>
+endobj
+17 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 6 0 R >>
+endobj
+18 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 7 0 R >>
+endobj
+19 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 8 0 R >>
+endobj
+20 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 9 0 R >>
+endobj
+21 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 10 0 R >>
+endobj
+22 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 11 0 R >>
+endobj
+23 0 obj
+<< /Type /Page /Parent 24 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 12 0 R >>
+endobj
+24 0 obj
+<< /Type /Pages /Kids [13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R] /Count 11 >>
+endobj
+25 0 obj
+<< /Type /Catalog /Pages 24 0 R >>
+endobj
+xref
+0 26
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000002214 00000 n 
+0000006812 00000 n 
+0000010794 00000 n 
+0000014975 00000 n 
+0000019326 00000 n 
+0000023799 00000 n 
+0000026025 00000 n 
+0000026201 00000 n 
+0000029540 00000 n 
+0000029707 00000 n 
+0000031362 00000 n 
+0000031490 00000 n 
+0000031618 00000 n 
+0000031746 00000 n 
+0000031874 00000 n 
+0000032002 00000 n 
+0000032130 00000 n 
+0000032258 00000 n 
+0000032386 00000 n 
+0000032515 00000 n 
+0000032644 00000 n 
+0000032773 00000 n 
+0000032903 00000 n 
+trailer << /Size 26 /Root 25 0 R >>
+startxref
+32954
+%%EOF

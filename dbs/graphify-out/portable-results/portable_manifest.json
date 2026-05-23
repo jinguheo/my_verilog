@@ -4,7 +4,8 @@
   "graph_views": [
     "html/spec-only.html",
     "html/code-only.html",
-    "html/spec-code.html"
+    "html/spec-code.html",
+    "html/verilog_module_schematic.html"
   ],
   "data": {
     "benchmark": [

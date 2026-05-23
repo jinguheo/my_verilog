@@ -1,0 +1,95 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 900 >>
+stream
+BT
+/F1 18 Tf
+72 760 Td (Hard Verilog Generation Context Evaluation) Tj
+-72 -26 Td
+/F1 11 Tf
+72 734 Td (Questions: 77) Tj
+-72 -15 Td
+/F1 14 Tf
+72 707 Td (Overall metrics) Tj
+-72 -20 Td
+/F1 10 Tf
+72 687 Td (parser_lsp: hit@1 0.9481, hit@3 1.0000, hit@5 1.0000, MRR 0.9675) Tj
+-72 -14 Td
+/F1 10 Tf
+72 673 Td (manticore_parser_lsp: hit@1 0.8312, hit@3 0.8961, hit@5 0.9481, MRR 0.8645) Tj
+-72 -14 Td
+/F1 10 Tf
+72 659 Td (kg: hit@1 0.9481, hit@3 0.9870, hit@5 1.0000, MRR 0.9658) Tj
+-72 -14 Td
+/F1 10 Tf
+72 645 Td (graphify: hit@1 0.9740, hit@3 0.9740, hit@5 0.9740, MRR 0.9740) Tj
+-72 -14 Td
+/F1 14 Tf
+72 619 Td (Meaning) Tj
+-72 -20 Td
+/F1 10 Tf
+72 599 Td (This measures context readiness for generation, not direct LLM-generated RTL pass rate.) Tj
+-72 -14 Td
+/F1 10 Tf
+72 585 Td (The generated questions require preserving ports, child dependencies, labels, and source-module behavior.) Tj
+-72 -14 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Length 598 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td (By level hit@1) Tj
+-72 -23 Td
+/F1 10 Tf
+72 737 Td (parser_lsp: L3 1.0000, L4 0.8846, L5 0.9600) Tj
+-72 -14 Td
+/F1 10 Tf
+72 723 Td (manticore_parser_lsp: L3 1.0000, L4 0.6923, L5 0.8000) Tj
+-72 -14 Td
+/F1 10 Tf
+72 709 Td (kg: L3 1.0000, L4 0.8462, L5 1.0000) Tj
+-72 -14 Td
+/F1 10 Tf
+72 695 Td (graphify: L3 1.0000, L4 0.9615, L5 0.9600) Tj
+-72 -14 Td
+/F1 14 Tf
+72 669 Td (Recommendation) Tj
+-72 -20 Td
+/F1 10 Tf
+72 649 Td (Use KG or parser/LSP retrieval as the first generation context pack, then add Graphify community context for architecture-level risks.) Tj
+-72 -14 Td
+ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 3 0 R >>
+endobj
+6 0 obj
+<< /Type /Pages /Kids [4 0 R 5 0 R] /Count 2 >>
+endobj
+7 0 obj
+<< /Type /Catalog /Pages 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000001030 00000 n 
+0000001679 00000 n 
+0000001805 00000 n 
+0000001931 00000 n 
+0000001994 00000 n 
+trailer << /Size 8 /Root 7 0 R >>
+startxref
+2043
+%%EOF

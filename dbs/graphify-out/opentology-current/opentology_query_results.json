@@ -1,0 +1,482 @@
+{
+  "triple_count": {
+    "returncode": 0,
+    "stdout": "{\n  \"head\": {\n    \"vars\": [\n      \"count\"\n    ]\n  },\n  \"results\": {\n    \"bindings\": [\n      {\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"385666\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      }\n    ]\n  }\n}\n",
+    "stderr": "",
+    "parsed": {
+      "head": {
+        "vars": [
+          "count"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "count": {
+              "type": "literal",
+              "value": "385666",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "type_counts": {
+    "returncode": 0,
+    "stdout": "{\n  \"head\": {\n    \"vars\": [\n      \"type\",\n      \"count\"\n    ]\n  },\n  \"results\": {\n    \"bindings\": [\n      {\n        \"type\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#Node\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"39694\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"type\": {\n          \"type\": \"uri\",\n          \"value\": \"https://opentology.dev/vocab#Module\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"3882\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      }\n    ]\n  }\n}\n",
+    "stderr": "",
+    "parsed": {
+      "head": {
+        "vars": [
+          "type",
+          "count"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "type": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#Node"
+            },
+            "count": {
+              "type": "literal",
+              "value": "39694",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "type": {
+              "type": "uri",
+              "value": "https://opentology.dev/vocab#Module"
+            },
+            "count": {
+              "type": "literal",
+              "value": "3882",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "top_predicates": {
+    "returncode": 0,
+    "stdout": "{\n  \"head\": {\n    \"vars\": [\n      \"p\",\n      \"count\"\n    ]\n  },\n  \"results\": {\n    \"bindings\": [\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://opentology.dev/vocab#calls\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"55446\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"43576\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#community\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"39694\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#graphifyId\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"39694\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://opentology.dev/vocab#title\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"39694\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#fileType\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"39694\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#sourceLocation\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"39639\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#sourceFile\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"39639\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://opentology.dev/vocab#contains\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"20512\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#confidenceScore\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"8075\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#method\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"5837\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://opentology.dev/vocab#dependsOn\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"3869\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://opentology.dev/vocab#defines\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"2965\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#instantiates\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"2755\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#rationaleFor\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"2538\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#uses\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"1325\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://opentology.dev/vocab#inherits\"\n        },\n        \"count\": {\n          \"type\": \"literal\",\n          \"value\": \"714\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      }\n    ]\n  }\n}\n",
+    "stderr": "",
+    "parsed": {
+      "head": {
+        "vars": [
+          "p",
+          "count"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://opentology.dev/vocab#calls"
+            },
+            "count": {
+              "type": "literal",
+              "value": "55446",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            "count": {
+              "type": "literal",
+              "value": "43576",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#community"
+            },
+            "count": {
+              "type": "literal",
+              "value": "39694",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#graphifyId"
+            },
+            "count": {
+              "type": "literal",
+              "value": "39694",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://opentology.dev/vocab#title"
+            },
+            "count": {
+              "type": "literal",
+              "value": "39694",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#fileType"
+            },
+            "count": {
+              "type": "literal",
+              "value": "39694",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#sourceLocation"
+            },
+            "count": {
+              "type": "literal",
+              "value": "39639",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#sourceFile"
+            },
+            "count": {
+              "type": "literal",
+              "value": "39639",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://opentology.dev/vocab#contains"
+            },
+            "count": {
+              "type": "literal",
+              "value": "20512",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#confidenceScore"
+            },
+            "count": {
+              "type": "literal",
+              "value": "8075",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#method"
+            },
+            "count": {
+              "type": "literal",
+              "value": "5837",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://opentology.dev/vocab#dependsOn"
+            },
+            "count": {
+              "type": "literal",
+              "value": "3869",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://opentology.dev/vocab#defines"
+            },
+            "count": {
+              "type": "literal",
+              "value": "2965",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#instantiates"
+            },
+            "count": {
+              "type": "literal",
+              "value": "2755",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#rationaleFor"
+            },
+            "count": {
+              "type": "literal",
+              "value": "2538",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#uses"
+            },
+            "count": {
+              "type": "literal",
+              "value": "1325",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://opentology.dev/vocab#inherits"
+            },
+            "count": {
+              "type": "literal",
+              "value": "714",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "ibex_core_neighborhood": {
+    "returncode": 0,
+    "stdout": "{\n  \"head\": {\n    \"vars\": [\n      \"p\",\n      \"o\"\n    ]\n  },\n  \"results\": {\n    \"bindings\": [\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#instantiates\"\n        },\n        \"o\": {\n          \"type\": \"uri\",\n          \"value\": \"urn:graphify-node:ibex_wb_stage\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#instantiates\"\n        },\n        \"o\": {\n          \"type\": \"uri\",\n          \"value\": \"urn:graphify-node:ibex_load_store_unit\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#instantiates\"\n        },\n        \"o\": {\n          \"type\": \"uri\",\n          \"value\": \"urn:graphify-node:ibex_ex_block\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#instantiates\"\n        },\n        \"o\": {\n          \"type\": \"uri\",\n          \"value\": \"urn:graphify-node:ibex_id_stage\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#instantiates\"\n        },\n        \"o\": {\n          \"type\": \"uri\",\n          \"value\": \"urn:graphify-node:ibex_if_stage\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#confidenceScore\"\n        },\n        \"o\": {\n          \"type\": \"literal\",\n          \"value\": \"1\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#double\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#community\"\n        },\n        \"o\": {\n          \"type\": \"literal\",\n          \"value\": \"10\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#fileType\"\n        },\n        \"o\": {\n          \"type\": \"literal\",\n          \"value\": \"code\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#sourceLocation\"\n        },\n        \"o\": {\n          \"type\": \"literal\",\n          \"value\": \"L16\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#sourceFile\"\n        },\n        \"o\": {\n          \"type\": \"literal\",\n          \"value\": \"ibex\\\\rtl\\\\ibex_core.sv\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#graphifyId\"\n        },\n        \"o\": {\n          \"type\": \"literal\",\n          \"value\": \"d_mywork_verilog_dbs_ibex_rtl_ibex_core_sv_ibex_core\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"https://opentology.dev/vocab#title\"\n        },\n        \"o\": {\n          \"type\": \"literal\",\n          \"value\": \"ibex_core\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\"\n        },\n        \"o\": {\n          \"type\": \"uri\",\n          \"value\": \"https://opentology.dev/vocab#Module\"\n        }\n      },\n      {\n        \"p\": {\n          \"type\": \"uri\",\n          \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\"\n        },\n        \"o\": {\n          \"type\": \"uri\",\n          \"value\": \"https://graphify.dev/vocab#Node\"\n        }\n      }\n    ]\n  }\n}\n",
+    "stderr": "",
+    "parsed": {
+      "head": {
+        "vars": [
+          "p",
+          "o"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#instantiates"
+            },
+            "o": {
+              "type": "uri",
+              "value": "urn:graphify-node:ibex_wb_stage"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#instantiates"
+            },
+            "o": {
+              "type": "uri",
+              "value": "urn:graphify-node:ibex_load_store_unit"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#instantiates"
+            },
+            "o": {
+              "type": "uri",
+              "value": "urn:graphify-node:ibex_ex_block"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#instantiates"
+            },
+            "o": {
+              "type": "uri",
+              "value": "urn:graphify-node:ibex_id_stage"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#instantiates"
+            },
+            "o": {
+              "type": "uri",
+              "value": "urn:graphify-node:ibex_if_stage"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#confidenceScore"
+            },
+            "o": {
+              "type": "literal",
+              "value": "1",
+              "datatype": "http://www.w3.org/2001/XMLSchema#double"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#community"
+            },
+            "o": {
+              "type": "literal",
+              "value": "10",
+              "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#fileType"
+            },
+            "o": {
+              "type": "literal",
+              "value": "code",
+              "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#sourceLocation"
+            },
+            "o": {
+              "type": "literal",
+              "value": "L16",
+              "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#sourceFile"
+            },
+            "o": {
+              "type": "literal",
+              "value": "ibex\\rtl\\ibex_core.sv",
+              "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#graphifyId"
+            },
+            "o": {
+              "type": "literal",
+              "value": "d_mywork_verilog_dbs_ibex_rtl_ibex_core_sv_ibex_core",
+              "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "https://opentology.dev/vocab#title"
+            },
+            "o": {
+              "type": "literal",
+              "value": "ibex_core",
+              "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            "o": {
+              "type": "uri",
+              "value": "https://opentology.dev/vocab#Module"
+            }
+          },
+          {
+            "p": {
+              "type": "uri",
+              "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            },
+            "o": {
+              "type": "uri",
+              "value": "https://graphify.dev/vocab#Node"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sha2_modules": {
+    "returncode": 0,
+    "stdout": "{\n  \"head\": {\n    \"vars\": [\n      \"s\",\n      \"title\",\n      \"file\"\n    ]\n  },\n  \"results\": {\n    \"bindings\": [\n      {\n        \"s\": {\n          \"type\": \"uri\",\n          \"value\": \"urn:graphify-node:d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_sha2_sv_prim_sha2\"\n        },\n        \"title\": {\n          \"type\": \"literal\",\n          \"value\": \"prim_sha2\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\"\n        },\n        \"file\": {\n          \"type\": \"literal\",\n          \"value\": \"ibex\\\\vendor\\\\lowrisc_ip\\\\ip\\\\prim\\\\rtl\\\\prim_sha2.sv\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\"\n        }\n      },\n      {\n        \"s\": {\n          \"type\": \"uri\",\n          \"value\": \"urn:graphify-node:prim_sha2_pad\"\n        },\n        \"title\": {\n          \"type\": \"literal\",\n          \"value\": \"prim_sha2_pad\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\"\n        },\n        \"file\": {\n          \"type\": \"literal\",\n          \"value\": \"opentitan\\\\hw\\\\ip\\\\prim\\\\rtl\\\\prim_sha2.sv\",\n          \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\"\n        }\n      }\n    ]\n  }\n}\n",
+    "stderr": "",
+    "parsed": {
+      "head": {
+        "vars": [
+          "s",
+          "title",
+          "file"
+        ]
+      },
+      "results": {
+        "bindings": [
+          {
+            "s": {
+              "type": "uri",
+              "value": "urn:graphify-node:d_mywork_verilog_dbs_ibex_vendor_lowrisc_ip_ip_prim_rtl_prim_sha2_sv_prim_sha2"
+            },
+            "title": {
+              "type": "literal",
+              "value": "prim_sha2",
+              "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            "file": {
+              "type": "literal",
+              "value": "ibex\\vendor\\lowrisc_ip\\ip\\prim\\rtl\\prim_sha2.sv",
+              "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          },
+          {
+            "s": {
+              "type": "uri",
+              "value": "urn:graphify-node:prim_sha2_pad"
+            },
+            "title": {
+              "type": "literal",
+              "value": "prim_sha2_pad",
+              "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            "file": {
+              "type": "literal",
+              "value": "opentitan\\hw\\ip\\prim\\rtl\\prim_sha2.sv",
+              "datatype": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

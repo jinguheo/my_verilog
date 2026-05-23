@@ -1,0 +1,233 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 1096 >>
+stream
+BT
+/F1 18 Tf
+72 760 Td (Four-Method Verilog Generation Evaluation) Tj
+-72 -26 Td
+/F1 10 Tf
+72 734 Td (Generated: 2026-05-09T20:55:03) Tj
+-72 -14 Td
+/F1 14 Tf
+72 708 Td (Direct Functional Harness) Tj
+-72 -20 Td
+/F1 10 Tf
+72 688 Td (Existing canonical candidate harness: 150/150 PASS, pass rate 1.0000.) Tj
+-72 -14 Td
+/F1 10 Tf
+72 674 Td (This validates the simulator/testbench path only because candidates are canonical RTL.) Tj
+-72 -14 Td
+/F1 14 Tf
+72 648 Td (Hard Generation Context Readiness) Tj
+-72 -20 Td
+/F1 10 Tf
+72 628 Td (Questions: 77. Metric: correct source RTL module appears in top-k context.) Tj
+-72 -14 Td
+/F1 14 Tf
+72 602 Td (Overall Results) Tj
+-72 -20 Td
+/F1 10 Tf
+72 582 Td (1. Parser + LSP: hit@1 0.9481, hit@3 1.0000, hit@5 1.0000, MRR 0.9675) Tj
+-72 -14 Td
+/F1 10 Tf
+72 568 Td (2. Parser + LSP + Manticore: hit@1 0.8312, hit@3 0.8961, hit@5 0.9481, MRR 0.8645) Tj
+-72 -14 Td
+/F1 10 Tf
+72 554 Td (3. KG: hit@1 0.9481, hit@3 0.9870, hit@5 1.0000, MRR 0.9658) Tj
+-72 -14 Td
+/F1 10 Tf
+72 540 Td (4. Graphify: hit@1 0.9740, hit@3 0.9740, hit@5 0.9740, MRR 0.9740) Tj
+-72 -14 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Length 1331 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td (Level Breakdown) Tj
+-72 -23 Td
+/F1 12 Tf
+72 725 Td (1. Parser + LSP) Tj
+-72 -17 Td
+/F1 10 Tf
+72 708 Td (L3: count 26, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-72 -14 Td
+/F1 10 Tf
+72 694 Td (L4: count 26, hit@1 0.8846, hit@3 1.0000, MRR 0.9295) Tj
+-72 -14 Td
+/F1 10 Tf
+72 680 Td (L5: count 25, hit@1 0.9600, hit@3 1.0000, MRR 0.9733) Tj
+-72 -14 Td
+/F1 12 Tf
+72 654 Td (2. Parser + LSP + Manticore) Tj
+-72 -17 Td
+/F1 10 Tf
+72 637 Td (L3: count 26, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-72 -14 Td
+/F1 10 Tf
+72 623 Td (L4: count 26, hit@1 0.6923, hit@3 0.8077, MRR 0.7654) Tj
+-72 -14 Td
+/F1 10 Tf
+72 609 Td (L5: count 25, hit@1 0.8000, hit@3 0.8800, MRR 0.8267) Tj
+-72 -14 Td
+/F1 12 Tf
+72 583 Td (3. KG) Tj
+-72 -17 Td
+/F1 10 Tf
+72 566 Td (L3: count 26, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-72 -14 Td
+/F1 10 Tf
+72 552 Td (L4: count 26, hit@1 0.8462, hit@3 0.9615, MRR 0.8987) Tj
+-72 -14 Td
+/F1 10 Tf
+72 538 Td (L5: count 25, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-72 -14 Td
+/F1 12 Tf
+72 512 Td (4. Graphify) Tj
+-72 -17 Td
+/F1 10 Tf
+72 495 Td (L3: count 26, hit@1 1.0000, hit@3 1.0000, MRR 1.0000) Tj
+-72 -14 Td
+/F1 10 Tf
+72 481 Td (L4: count 26, hit@1 0.9615, hit@3 0.9615, MRR 0.9615) Tj
+-72 -14 Td
+/F1 10 Tf
+72 467 Td (L5: count 25, hit@1 0.9600, hit@3 0.9600, MRR 0.9600) Tj
+-72 -14 Td
+ET
+endstream
+endobj
+4 0 obj
+<< /Length 1254 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td (Status Counts and Misses) Tj
+-72 -23 Td
+/F1 12 Tf
+72 725 Td (1. Parser + LSP) Tj
+-72 -17 Td
+/F1 10 Tf
+72 708 Td (Status counts: HIT@1=73, HIT@3=4) Tj
+-72 -14 Td
+/F1 9 Tf
+72 694 Td (No top-5 misses.) Tj
+-72 -13 Td
+/F1 12 Tf
+72 669 Td (2. Parser + LSP + Manticore) Tj
+-72 -17 Td
+/F1 10 Tf
+72 652 Td (Status counts: HIT@1=64, HIT@3=5, HIT@5=4, MISS=4) Tj
+-72 -14 Td
+/F1 9 Tf
+72 638 Td (Miss: genctx_021_pwrmgr; gold pwrmgr; top1 prim_esc_receiver) Tj
+-72 -13 Td
+/F1 9 Tf
+72 625 Td (Miss: genctx_023_clkmgr; gold clkmgr; top1 prim_clock_div) Tj
+-72 -13 Td
+/F1 9 Tf
+72 612 Td (Miss: genctx_024_clkmgr; gold clkmgr; top1 clkmgr_reg_top) Tj
+-72 -13 Td
+/F1 12 Tf
+72 587 Td (3. KG) Tj
+-72 -17 Td
+/F1 10 Tf
+72 570 Td (Status counts: HIT@1=73, HIT@3=3, HIT@5=1) Tj
+-72 -14 Td
+/F1 9 Tf
+72 556 Td (No top-5 misses.) Tj
+-72 -13 Td
+/F1 12 Tf
+72 531 Td (4. Graphify) Tj
+-72 -17 Td
+/F1 10 Tf
+72 514 Td (Status counts: HIT@1=75, MISS=2) Tj
+-72 -14 Td
+/F1 9 Tf
+72 500 Td (Miss: existing_070; gold aes_dom_inverse_gf2p8; top1 Extension) Tj
+-72 -13 Td
+/F1 9 Tf
+72 487 Td (Miss: existing_075; gold aes_dom_inverse_gf2p4; top1 # NOTE: This list is likely to become) Tj
+-72 -13 Td
+/F1 9 Tf
+72 474 Td (out of date as the codebase evolves) Tj
+-72 -13 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Length 883 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td (Interpretation) Tj
+-72 -23 Td
+/F1 10 Tf
+72 725 Td (Graphify has the best hit@1 on hard generation context prompts, so it is useful when the) Tj
+-72 -14 Td
+/F1 10 Tf
+72 711 Td (first context block matters most.) Tj
+-72 -14 Td
+/F1 10 Tf
+72 685 Td (Parser + LSP and KG are close and both reach 100% hit@5, which is strong for compact context) Tj
+-72 -14 Td
+/F1 10 Tf
+72 671 Td (packs passed to a generator.) Tj
+-72 -14 Td
+/F1 10 Tf
+72 645 Td (Manticore Parser/LSP is weaker on L4/L5 generation prompts; it needs generation-specific) Tj
+-72 -14 Td
+/F1 10 Tf
+72 631 Td (field weights before being used as the primary generator context source.) Tj
+-72 -14 Td
+/F1 10 Tf
+72 605 Td (The direct Verilog pass rate remains a harness sanity check until real generated candidates) Tj
+-72 -14 Td
+/F1 10 Tf
+72 591 Td (are evaluated instead of canonical RTL.) Tj
+-72 -14 Td
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 10 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 10 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 3 0 R >>
+endobj
+8 0 obj
+<< /Type /Page /Parent 10 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 10 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 5 0 R >>
+endobj
+10 0 obj
+<< /Type /Pages /Kids [6 0 R 7 0 R 8 0 R 9 0 R] /Count 4 >>
+endobj
+11 0 obj
+<< /Type /Catalog /Pages 10 0 R >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000001227 00000 n 
+0000002610 00000 n 
+0000003916 00000 n 
+0000004850 00000 n 
+0000004977 00000 n 
+0000005104 00000 n 
+0000005231 00000 n 
+0000005358 00000 n 
+0000005434 00000 n 
+trailer << /Size 12 /Root 11 0 R >>
+startxref
+5485
+%%EOF

@@ -1,0 +1,30 @@
+{
+  "spec-only": {
+    "summary": {
+      "kb_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-only\\kb",
+      "raw_files": 987,
+      "wiki_files": 3,
+      "source_files": 0,
+      "summary_files": 0,
+      "concept_files": 0,
+      "report_files": 0,
+      "hashes_file": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-only\\kb\\.openkb\\hashes.json"
+    },
+    "status": "Knowledge Base Status:\n  Directory            Files     \n  -------------------- ----------\n  sources              0         \n  summaries            0         \n  concepts             0         \n  reports              0         \n  raw                  2         \n\n  Total indexed: 0 document(s)\n",
+    "list": "No documents indexed yet.\n"
+  },
+  "spec-code": {
+    "summary": {
+      "kb_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-code\\kb",
+      "raw_files": 995,
+      "wiki_files": 3,
+      "source_files": 0,
+      "summary_files": 0,
+      "concept_files": 0,
+      "report_files": 0,
+      "hashes_file": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-code\\kb\\.openkb\\hashes.json"
+    },
+    "status": "Knowledge Base Status:\n  Directory            Files     \n  -------------------- ----------\n  sources              0         \n  summaries            0         \n  concepts             0         \n  reports              0         \n  raw                  2         \n\n  Total indexed: 0 document(s)\n",
+    "list": "No documents indexed yet.\n"
+  }
+}

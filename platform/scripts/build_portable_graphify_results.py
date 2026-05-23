@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 HTML_VIEWS = ROOT / "dbs" / "graphify-out" / "html-views"
+SCHEMATIC = ROOT / "dbs" / "graphify-out" / "schematic"
 OUT_DIR = ROOT / "dbs" / "graphify-out" / "portable-results"
 DATA_DIR = OUT_DIR / "data"
 
@@ -94,6 +95,7 @@ code{{background:#e8eef5;border-radius:4px;padding:2px 5px}}
   <a class="card" href="html/spec-only.html"><strong>spec-only graph</strong><p class="meta">Spec document KG view.</p></a>
   <a class="card" href="html/code-only.html"><strong>code-only graph</strong><p class="meta">Code KG view.</p></a>
   <a class="card" href="html/spec-code.html"><strong>spec-code graph</strong><p class="meta">Integrated spec/code graph with bridge edges.</p></a>
+  <a class="card" href="html/verilog_module_schematic.html"><strong>Verilog module schematic</strong><p class="meta">Top/module hierarchy and instantiation schematic from the code graph.</p></a>
 </div>
 
 <h2>Traceability Benchmark</h2>
@@ -149,6 +151,13 @@ def main() -> None:
 
     for name in ("index.html", "spec-only.html", "code-only.html", "spec-code.html"):
         shutil.copy2(HTML_VIEWS / name, OUT_DIR / "html" / name)
+    schematic_html = SCHEMATIC / "verilog_module_schematic.html"
+    schematic_data = SCHEMATIC / "verilog_module_schematic_data.json"
+    if schematic_html.exists():
+        shutil.copy2(schematic_html, OUT_DIR / "html" / "verilog_module_schematic.html")
+    if schematic_data.exists():
+        (DATA_DIR / "schematic").mkdir(parents=True, exist_ok=True)
+        shutil.copy2(schematic_data, DATA_DIR / "schematic" / "verilog_module_schematic_data.json")
 
     copied: dict[str, list[dict[str, object]]] = {}
     for group, paths in COPY_GROUPS.items():
@@ -165,6 +174,7 @@ def main() -> None:
             "html/spec-only.html",
             "html/code-only.html",
             "html/spec-code.html",
+            "html/verilog_module_schematic.html",
         ],
         "data": copied,
         "full_graph_json": [

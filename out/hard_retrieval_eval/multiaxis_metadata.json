@@ -1,0 +1,9 @@
+{
+  "modules_indexed": 1012,
+  "approved_labels": {
+    "path": "out\\label_approval\\auto_approved_labels.jsonl",
+    "module_labels_added": 22,
+    "ip_context_labels_added": 115
+  },
+  "kg_version_tag": null
+}

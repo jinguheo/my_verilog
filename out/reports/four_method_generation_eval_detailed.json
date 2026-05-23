@@ -1,0 +1,586 @@
+{
+  "summary": {
+    "generated_at": "2026-05-09T20:49:21",
+    "purpose": "Compare four context methods for Verilog generation evaluation.",
+    "direct_generation_harness": {
+      "note": "Existing generated candidates are canonical/oracle RTL, so pass rate validates simulator/testbench harness only.",
+      "summary": {
+        "total": 150,
+        "pass": 150,
+        "pass_rate": 1.0,
+        "attempted_with_simulator": 150,
+        "simulated_pass_rate": 1.0,
+        "status_counts": {
+          "PASS": 150
+        },
+        "by_level": {
+          "L1": {
+            "total": 30,
+            "pass": 30,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 30
+            }
+          },
+          "L2": {
+            "total": 30,
+            "pass": 30,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 30
+            }
+          },
+          "L3": {
+            "total": 30,
+            "pass": 30,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 30
+            }
+          },
+          "L4": {
+            "total": 30,
+            "pass": 30,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 30
+            }
+          },
+          "L5": {
+            "total": 30,
+            "pass": 30,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 30
+            }
+          }
+        },
+        "by_type": {
+          "generation_arbiter": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_bus_register": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_counter": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_credit_control": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_datapath_flags": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_decode": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_dma_controller": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_elastic_buffer": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_event_register": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_fifo": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_filter_fsm": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_fsm_sequence": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_handshake_comb": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_masking": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_packet_fields": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_packet_fsm": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_pipeline_stage": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_priority": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_pulse_control": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_pwm_controller": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_rate_limiter": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_sample_hold": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_scrambler": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_serial_controller": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_storage": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_stream_block": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_stream_fsm": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_timeout_fsm": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_timer": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          },
+          "generation_watchdog": {
+            "total": 5,
+            "pass": 5,
+            "pass_rate": 1.0,
+            "status_counts": {
+              "PASS": 5
+            }
+          }
+        }
+      }
+    },
+    "hard_generation_context_readiness": {
+      "generated_at": "2026-05-09T20:48:30",
+      "evaluation_type": "generation_context_readiness",
+      "note": "This evaluates whether each method retrieves the RTL context needed for hard Verilog generation prompts. It is not an LLM code-generation pass rate.",
+      "questions": 77,
+      "seed": "D:\\MyWork\\verilog\\out\\merged_ontology_seed.jsonl",
+      "approved_labels": {
+        "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+        "module_labels_added": 22,
+        "ip_context_labels_added": 115
+      },
+      "modes": {
+        "parser_lsp": {
+          "count": 77,
+          "hit_at_1": 0.9481,
+          "hit_at_3": 1.0,
+          "hit_at_5": 1.0,
+          "mrr": 0.9675,
+          "by_level": {
+            "L3": {
+              "count": 26,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "L4": {
+              "count": 26,
+              "hit_at_1": 0.8846,
+              "hit_at_3": 1.0,
+              "mrr": 0.9295
+            },
+            "L5": {
+              "count": 25,
+              "hit_at_1": 0.96,
+              "hit_at_3": 1.0,
+              "mrr": 0.9733
+            }
+          },
+          "status_counts": {
+            "HIT@1": 73,
+            "HIT@3": 4
+          }
+        },
+        "manticore_parser_lsp": {
+          "count": 77,
+          "hit_at_1": 0.8312,
+          "hit_at_3": 0.8961,
+          "hit_at_5": 0.9481,
+          "mrr": 0.8645,
+          "by_level": {
+            "L3": {
+              "count": 26,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "L4": {
+              "count": 26,
+              "hit_at_1": 0.6923,
+              "hit_at_3": 0.8077,
+              "mrr": 0.7654
+            },
+            "L5": {
+              "count": 25,
+              "hit_at_1": 0.8,
+              "hit_at_3": 0.88,
+              "mrr": 0.8267
+            }
+          },
+          "status_counts": {
+            "HIT@1": 64,
+            "HIT@3": 5,
+            "HIT@5": 4,
+            "MISS": 4
+          }
+        },
+        "kg": {
+          "count": 77,
+          "hit_at_1": 0.9481,
+          "hit_at_3": 0.987,
+          "hit_at_5": 1.0,
+          "mrr": 0.9658,
+          "by_level": {
+            "L3": {
+              "count": 26,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "L4": {
+              "count": 26,
+              "hit_at_1": 0.8462,
+              "hit_at_3": 0.9615,
+              "mrr": 0.8987
+            },
+            "L5": {
+              "count": 25,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "status_counts": {
+            "HIT@1": 73,
+            "HIT@3": 3,
+            "HIT@5": 1
+          }
+        },
+        "graphify": {
+          "count": 77,
+          "hit_at_1": 0.974,
+          "hit_at_3": 0.974,
+          "hit_at_5": 0.974,
+          "mrr": 0.974,
+          "by_level": {
+            "L3": {
+              "count": 26,
+              "hit_at_1": 1.0,
+              "hit_at_3": 1.0,
+              "mrr": 1.0
+            },
+            "L4": {
+              "count": 26,
+              "hit_at_1": 0.9615,
+              "hit_at_3": 0.9615,
+              "mrr": 0.9615
+            },
+            "L5": {
+              "count": 25,
+              "hit_at_1": 0.96,
+              "hit_at_3": 0.96,
+              "mrr": 0.96
+            }
+          },
+          "status_counts": {
+            "HIT@1": 75,
+            "MISS": 2
+          }
+        }
+      }
+    },
+    "recommendation": "For actual LLM generation, use parser_lsp or KG for exact RTL anchor retrieval, then add Graphify community context for architecture-level risks. Manticore needs generation-specific field weights before it is useful as the first context source."
+  },
+  "context_report": {
+    "generated_at": "2026-05-09T20:48:30",
+    "evaluation_type": "generation_context_readiness",
+    "note": "This evaluates whether each method retrieves the RTL context needed for hard Verilog generation prompts. It is not an LLM code-generation pass rate.",
+    "questions": 77,
+    "seed": "D:\\MyWork\\verilog\\out\\merged_ontology_seed.jsonl",
+    "approved_labels": {
+      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+      "module_labels_added": 22,
+      "ip_context_labels_added": 115
+    },
+    "modes": {
+      "parser_lsp": {
+        "count": 77,
+        "hit_at_1": 0.9481,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr": 0.9675,
+        "by_level": {
+          "L3": {
+            "count": 26,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L4": {
+            "count": 26,
+            "hit_at_1": 0.8846,
+            "hit_at_3": 1.0,
+            "mrr": 0.9295
+          },
+          "L5": {
+            "count": 25,
+            "hit_at_1": 0.96,
+            "hit_at_3": 1.0,
+            "mrr": 0.9733
+          }
+        },
+        "status_counts": {
+          "HIT@1": 73,
+          "HIT@3": 4
+        }
+      },
+      "manticore_parser_lsp": {
+        "count": 77,
+        "hit_at_1": 0.8312,
+        "hit_at_3": 0.8961,
+        "hit_at_5": 0.9481,
+        "mrr": 0.8645,
+        "by_level": {
+          "L3": {
+            "count": 26,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L4": {
+            "count": 26,
+            "hit_at_1": 0.6923,
+            "hit_at_3": 0.8077,
+            "mrr": 0.7654
+          },
+          "L5": {
+            "count": 25,
+            "hit_at_1": 0.8,
+            "hit_at_3": 0.88,
+            "mrr": 0.8267
+          }
+        },
+        "status_counts": {
+          "HIT@1": 64,
+          "HIT@3": 5,
+          "HIT@5": 4,
+          "MISS": 4
+        }
+      },
+      "kg": {
+        "count": 77,
+        "hit_at_1": 0.9481,
+        "hit_at_3": 0.987,
+        "hit_at_5": 1.0,
+        "mrr": 0.9658,
+        "by_level": {
+          "L3": {
+            "count": 26,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L4": {
+            "count": 26,
+            "hit_at_1": 0.8462,
+            "hit_at_3": 0.9615,
+            "mrr": 0.8987
+          },
+          "L5": {
+            "count": 25,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "status_counts": {
+          "HIT@1": 73,
+          "HIT@3": 3,
+          "HIT@5": 1
+        }
+      },
+      "graphify": {
+        "count": 77,
+        "hit_at_1": 0.974,
+        "hit_at_3": 0.974,
+        "hit_at_5": 0.974,
+        "mrr": 0.974,
+        "by_level": {
+          "L3": {
+            "count": 26,
+            "hit_at_1": 1.0,
+            "hit_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "L4": {
+            "count": 26,
+            "hit_at_1": 0.9615,
+            "hit_at_3": 0.9615,
+            "mrr": 0.9615
+          },
+          "L5": {
+            "count": 25,
+            "hit_at_1": 0.96,
+            "hit_at_3": 0.96,
+            "mrr": 0.96
+          }
+        },
+        "status_counts": {
+          "HIT@1": 75,
+          "MISS": 2
+        }
+      }
+    }
+  }
+}

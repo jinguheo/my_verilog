@@ -1,0 +1,27 @@
+# Spec Document: ibex/doc/02_user/index.rst
+
+- Project: `ibex`
+- Original source: `D:\MyWork\verilog\dbs\ibex\doc\02_user\index.rst`
+- Exported path: `D:\MyWork\verilog\out\spec_documents_20260514_204108\ibex\doc\02_user\index.rst`
+- Original extension: `.rst`
+- Original bytes: 387
+
+## Content
+
+```rst
+Ibex User Guide
+===============
+
+The Ibex User Guide provides all necessary information to use Ibex.
+It is aimed at hardware developers integrating Ibex into a design, and software developers writing software running on Ibex.
+
+.. toctree::
+   :maxdepth: 1
+   :caption: In this section
+
+   system_requirements
+   getting_started
+   configuration
+   integration
+   examples
+```

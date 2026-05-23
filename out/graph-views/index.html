@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Graphify Graph Views</title>
+<style>
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f7f4;color:#17202a}
+  header{background:#172033;color:#fff;padding:24px 28px}
+  header h1{font-size:26px;margin:0 0 6px}
+  header p{color:#94a3b8;font-size:14px;margin:0}
+  main{max-width:1060px;margin:0 auto;padding:32px 22px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:24px}
+  a{display:block;text-decoration:none;color:#17202a;background:#fff;border:1px solid rgba(0,0,0,.11);
+     border-radius:10px;padding:20px;transition:box-shadow .15s}
+  a:hover{box-shadow:0 4px 18px rgba(0,0,0,.10)}
+  h2{margin:0 0 8px;font-size:17px}
+  p{color:#475569;font-size:13px;line-height:1.5;margin:0 0 10px}
+  .stats{font-size:12px;color:#94a3b8}
+</style></head><body>
+<header>
+  <h1>Graphify Graph Views</h1>
+  <p>Four graph variants — code, AST, HDD, and spec — in interactive HTML</p>
+</header>
+<main>
+  <div class="grid">
+          <a href="code-only.html">
+            <h2>Code Only</h2>
+            <p>Graphify code graph — files, symbols, calls, instantiations</p>
+            <div class="stats">39,694 nodes · 95,961 links
+              · 2,000 displayed</div>
+          </a>
+          <a href="code-ast.html">
+            <h2>Code + AST</h2>
+            <p>Code graph enriched with tree-sitter AST nodes (ports, params, always blocks, functions)</p>
+            <div class="stats">43,863 nodes · 100,233 links
+              · 2,000 displayed · AST links: 4,272</div>
+          </a>
+          <a href="code-hdd.html">
+            <h2>Code + AST + HDD</h2>
+            <p>Code + AST + HDD document nodes with verification status</p>
+            <div class="stats">44,140 nodes · 100,598 links
+              · 2,000 displayed · AST links: 4,272 · HDD links: 365</div>
+          </a>
+          <a href="spec-hdd-code-ast.html">
+            <h2>Spec + HDD + Code + AST</h2>
+            <p>Full stack: spec documents, HDD docs, code symbols, and AST nodes</p>
+            <div class="stats">52,336 nodes · 113,743 links
+              · 2,000 displayed · Bridge: 13,145 · AST links: 4,272 · HDD links: 365</div>
+          </a></div>
+</main></body></html>

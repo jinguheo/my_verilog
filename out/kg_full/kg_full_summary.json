@@ -1,59 +1,59 @@
 {
-  "modules": 1544,
+  "modules": 1433,
   "ip_blocks": 38,
   "labels": 14,
-  "ports": 20196,
-  "instance_edges": 14698,
-  "total_nodes": 21792,
-  "total_edges": 39268,
+  "ports": 16766,
+  "instance_edges": 2103,
+  "total_nodes": 22965,
+  "total_edges": 27545,
   "projects": {
-    "opentitan": 1221,
-    "ibex": 323
+    "opentitan": 1142,
+    "ibex": 291
   },
   "top_labels": [
     [
-      "hierarchical",
-      1120
-    ],
-    [
       "clocked",
-      1067
+      1006
     ],
     [
       "resettable",
-      1026
+      966
+    ],
+    [
+      "hierarchical",
+      738
     ],
     [
       "uart",
-      341
+      317
     ],
     [
       "fifo",
-      268
+      220
     ],
     [
       "spi",
-      164
+      154
     ],
     [
       "crypto",
-      93
+      84
     ],
     [
       "controller",
-      57
+      56
     ],
     [
       "apb",
-      48
+      42
     ],
     [
       "i2c",
-      32
+      30
     ],
     [
       "ibex_core",
-      30
+      20
     ],
     [
       "counter",
@@ -70,7 +70,17 @@
   ],
   "approved_labels": {
     "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
-    "module_labels_added": 32,
-    "ip_context_labels_added": 176
+    "module_labels_added": 22,
+    "ip_context_labels_added": 166
+  },
+  "ast_enrichment": {
+    "ast_modules": 293,
+    "ast_ports": 2754,
+    "ast_params": 673,
+    "ast_always": 509,
+    "ast_functions": 80,
+    "ast_packages": 49,
+    "cross_links": 284,
+    "inst_edges": 259
   }
 }

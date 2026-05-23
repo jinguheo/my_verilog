@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Graphify Code/Spec Re-evaluation</title>
+<style>
+:root { color-scheme: light; --ink:#1f2937; --muted:#667085; --line:#d9dee7; --panel:#ffffff; --bg:#f6f7f9; --blue:#2f6fed; --green:#16875f; --amber:#b7791f; }
+body { margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--ink); }
+main { max-width:1180px; margin:0 auto; padding:30px 22px 48px; }
+h1 { margin:0 0 8px; font-size:28px; }
+h2 { margin:28px 0 10px; font-size:18px; }
+p { color:var(--muted); line-height:1.5; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; margin:18px 0; }
+.metric { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px; }
+.metric strong { display:block; font-size:24px; margin-top:4px; }
+table { width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+th,td { padding:10px 11px; border-bottom:1px solid var(--line); text-align:left; font-size:13px; vertical-align:top; }
+th { background:#eef2f7; color:#344054; }
+.chart { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; }
+.barrow { display:grid; grid-template-columns:220px 1fr 70px; align-items:center; gap:10px; margin:9px 0; }
+.track { height:18px; background:#eef2f7; border-radius:4px; overflow:hidden; }
+.bar { height:100%; background:var(--blue); }
+.bar.code { background:var(--green); }
+.bar.joint { background:var(--amber); }
+.links a { display:inline-block; margin-right:10px; color:#2457c5; }
+code { background:#eef2f7; padding:2px 4px; border-radius:4px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Graphify Code-Only vs Spec-Code Re-evaluation</h1>
+<p>Stored Graphify graph JSON files were used. No graphify update was run. This page compares the original propagation ranking with safer alternatives for code-side retrieval.</p>
+<div class="links">
+  <a href="../../dbs/graphify-out/html-views/code-only.html">Open code-only graph view</a>
+  <a href="../../dbs/graphify-out/html-views/spec-code.html">Open spec-code graph view</a>
+</div>
+<div class="grid">
+  <div class="metric">Code-only current code hit@5<strong>0.1267</strong></div>
+  <div class="metric">Code-only base code hit@5<strong>0.5533</strong></div>
+  <div class="metric">Spec-code current joint hit@5<strong>0.2533</strong></div>
+  <div class="metric">Spec-code base joint hit@5<strong>0.0533</strong></div>
+</div>
+<h2>Code hit@5</h2>
+<div class="chart" id="codeChart"></div>
+<h2>Joint hit@5</h2>
+<div class="chart" id="jointChart"></div>
+<h2>Overall Metrics</h2>
+<table><thead><tr><th>Variant</th><th>Mode</th><th>Spec hit@5</th><th>Code hit@5</th><th>Joint hit@5</th><th>Joint hit@10</th><th>Joint MRR</th></tr></thead><tbody><tr><td>code-only</td><td>current</td><td>0.0000</td><td>0.1267</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr><tr><td>code-only</td><td>base</td><td>0.0000</td><td>0.5533</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr><tr><td>code-only</td><td>degree_norm</td><td>0.0000</td><td>0.2200</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr><tr><td>spec-code</td><td>current</td><td>0.8933</td><td>0.3000</td><td>0.2533</td><td>0.3867</td><td>0.1132</td></tr><tr><td>spec-code</td><td>base</td><td>0.7467</td><td>0.2467</td><td>0.0533</td><td>0.1267</td><td>0.0383</td></tr><tr><td>spec-code</td><td>degree_norm</td><td>1.0000</td><td>0.0000</td><td>0.0000</td><td>0.0400</td><td>0.0314</td></tr></tbody></table>
+<h2>Gold Coverage</h2>
+<table><thead><tr><th>Variant</th><th>Gold code nodes</th><th>Missing paths</th><th>Missing exact nodes</th></tr></thead><tbody><tr><td>code-only</td><td>150</td><td>0</td><td>0</td></tr><tr><td>spec-code</td><td>150</td><td>0</td><td>0</td></tr></tbody></table>
+<h2>High-degree code-only hubs</h2>
+<p>These nodes explain why unrestricted graph propagation can push generic reused modules above the exact target.</p>
+<table><thead><tr><th>Label</th><th>Type</th><th>Degree</th><th>Source file</th></tr></thead><tbody><tr><td>.ok()</td><td>code</td><td>1852</td><td>opentitan\sw\host\opentitanlib\src\transport\mod.rs</td></tr><tr><td>.exit()</td><td>code</td><td>963</td><td>opentitan\util\dvsim\StatusPrinter.py</td></tr><tr><td>.len()</td><td>code</td><td>915</td><td>opentitan\sw\host\ot_certs\src\asn1\codegen.rs</td></tr><tr><td>tohost_exit()</td><td>code</td><td>748</td><td>ibex\vendor\riscv-tests\benchmarks\common\syscalls.c</td></tr><tr><td>Format</td><td>code</td><td>737</td><td>opentitan\sw\host\opentitantool\src\command\ownership.rs</td></tr><tr><td>.append()</td><td>code</td><td>619</td><td>opentitan\hw\vendor\lowrisc_ibex\dv\formal\conductor.py</td></tr><tr><td>.write()</td><td>code</td><td>593</td><td>opentitan\sw\host\penetrationtests\python\util\targets.py</td></tr><tr><td>.range()</td><td>code</td><td>542</td><td>opentitan\sw\host\ot_certs\src\template\mod.rs</td></tr><tr><td>.check()</td><td>code</td><td>510</td><td>opentitan\util\validate_testplans.py</td></tr><tr><td>.new()</td><td>code</td><td>495</td><td>opentitan\sw\host\tests\xmodem\xmodem.rs</td></tr><tr><td>mmio_region_read32()</td><td>code</td><td>479</td><td>opentitan\sw\device\lib\base\mock_mmio.cc</td></tr><tr><td>memcpy()</td><td>code</td><td>469</td><td>ibex\vendor\riscv-tests\benchmarks\common\syscalls.c</td></tr></tbody></table>
+</main>
+<script>
+const rows = [{"variant": "code-only", "mode": "current", "spec5": 0.0, "code5": 0.1267, "joint5": 0.0, "joint10": 0.0, "mrr": 0.0}, {"variant": "code-only", "mode": "base", "spec5": 0.0, "code5": 0.5533, "joint5": 0.0, "joint10": 0.0, "mrr": 0.0}, {"variant": "code-only", "mode": "degree_norm", "spec5": 0.0, "code5": 0.22, "joint5": 0.0, "joint10": 0.0, "mrr": 0.0}, {"variant": "spec-code", "mode": "current", "spec5": 0.8933, "code5": 0.3, "joint5": 0.2533, "joint10": 0.3867, "mrr": 0.1132}, {"variant": "spec-code", "mode": "base", "spec5": 0.7467, "code5": 0.2467, "joint5": 0.0533, "joint10": 0.1267, "mrr": 0.0383}, {"variant": "spec-code", "mode": "degree_norm", "spec5": 1.0, "code5": 0.0, "joint5": 0.0, "joint10": 0.04, "mrr": 0.0314}];
+function renderChart(id, key, cls) {
+  const root = document.getElementById(id);
+  root.innerHTML = rows.map(r => {
+    const v = r[key];
+    const label = `${r.variant} / ${r.mode}`;
+    return `<div class="barrow"><div>${label}</div><div class="track"><div class="bar ${cls}" style="width:${Math.max(1, v*100)}%"></div></div><div>${v.toFixed(4)}</div></div>`;
+  }).join("");
+}
+renderChart("codeChart", "code5", "code");
+renderChart("jointChart", "joint5", "joint");
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hardware Description Retrieval Evaluation</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;color:#17202a}main{max-width:1120px;margin:0 auto;padding:32px 22px 48px}h1{margin:0 0 8px;font-size:28px}p{color:#667085;line-height:1.5}table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d7dde7;border-radius:8px;overflow:hidden}th,td{padding:10px 12px;border-bottom:1px solid #d7dde7;text-align:left;font-size:13px}th{background:#eef2f7}.chart{background:#fff;border:1px solid #d7dde7;border-radius:8px;padding:16px;margin:18px 0}.barrow{display:grid;grid-template-columns:280px 1fr 70px;gap:10px;align-items:center;margin:9px 0}.track{height:18px;background:#eef2f7;border-radius:4px;overflow:hidden}.bar{height:100%;background:#b7791f}.code{background:#16875f}.spec{background:#2f6fed}a{color:#2457c5}
+</style></head><body><main>
+<h1>Hardware Description Retrieval Evaluation</h1>
+<p>This compares existing graph retrieval against retrieval after adding generated intermediate hardware-description documents.</p>
+<p><a href="../../dbs/graphify-out/hardware-descriptions/index.html">Open hardware descriptions</a> · <a href="../../dbs/graphify-out/hardware-descriptions/hardware-description-bridge.html">Open bridge graph</a></p>
+<h2>Code hit@5</h2><div class="chart" id="code"></div>
+<h2>Joint hit@5</h2><div class="chart" id="joint"></div>
+<h2>Overall</h2>
+<table><thead><tr><th>Method</th><th>Spec hit@5</th><th>Code hit@5</th><th>Joint hit@5</th><th>Joint hit@10</th><th>Joint MRR</th></tr></thead><tbody><tr><td>code-only current</td><td>0.0000</td><td>0.1267</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr><tr><td>code-only base</td><td>0.0000</td><td>0.5533</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr><tr><td>spec-code current</td><td>0.8933</td><td>0.3000</td><td>0.2533</td><td>0.3867</td><td>0.1132</td></tr><tr><td>hardware-description</td><td>0.2133</td><td>0.4933</td><td>0.0467</td><td>0.0600</td><td>0.0282</td></tr><tr><td>spec-code + hardware-description</td><td>0.8733</td><td>0.5533</td><td>0.4667</td><td>0.5533</td><td>0.1655</td></tr></tbody></table>
+</main><script>
+const rows=[{"method": "code-only current", "spec5": 0.0, "code5": 0.1267, "joint5": 0.0, "joint10": 0.0, "mrr": 0.0}, {"method": "code-only base", "spec5": 0.0, "code5": 0.5533, "joint5": 0.0, "joint10": 0.0, "mrr": 0.0}, {"method": "spec-code current", "spec5": 0.8933, "code5": 0.3, "joint5": 0.2533, "joint10": 0.3867, "mrr": 0.1132}, {"method": "hardware-description", "spec5": 0.2133, "code5": 0.4933, "joint5": 0.0467, "joint10": 0.06, "mrr": 0.0282}, {"method": "spec-code + hardware-description", "spec5": 0.8733, "code5": 0.5533, "joint5": 0.4667, "joint10": 0.5533, "mrr": 0.1655}];
+function render(id,key,cls){document.getElementById(id).innerHTML=rows.map(r=>`<div class="barrow"><div>${r.method}</div><div class="track"><div class="bar ${cls}" style="width:${Math.max(1,r[key]*100)}%"></div></div><div>${r[key].toFixed(4)}</div></div>`).join('')}
+render('code','code5','code'); render('joint','joint5','');
+</script></body></html>

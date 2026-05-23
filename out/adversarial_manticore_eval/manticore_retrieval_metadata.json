@@ -1,0 +1,32 @@
+{
+  "modules_indexed": 1012,
+  "questions": 117,
+  "seed": "out/merged_ontology_seed.jsonl",
+  "approved_labels": {
+    "path": "out\\label_approval\\auto_approved_labels.jsonl",
+    "module_labels_added": 22,
+    "ip_context_labels_added": 115
+  },
+  "manticore_repo": "tools/manticoresearch",
+  "manticore_source": "https://github.com/manticoresoftware/manticoresearch",
+  "index_build_ms": 1076.717,
+  "latency_ms": {
+    "baseline": {
+      "total_ms": 30338.069,
+      "avg_query_ms": 259.3
+    },
+    "kg": {
+      "total_ms": 33126.559,
+      "avg_query_ms": 283.133
+    },
+    "manticore_parser_lsp": {
+      "total_ms": 46307.223,
+      "avg_query_ms": 395.788
+    },
+    "manticore_hybrid": {
+      "total_ms": 51721.801,
+      "avg_query_ms": 442.067
+    }
+  },
+  "note": "Local BM25F model of Manticore Search over parser+LSP fields; schema/documents are emitted for real server loading."
+}

@@ -1,0 +1,66 @@
+{
+  "questions": "out\\adversarial_retrieval_benchmark\\questions_all.jsonl",
+  "graph": "D:\\MyWork\\verilog\\graphify-out\\graph.json",
+  "graphify_build": {
+    "source_files": 1534,
+    "nodes": 3748,
+    "edges": 5412,
+    "communities": 581,
+    "graph_path": "D:\\MyWork\\verilog\\graphify-out\\graph.json",
+    "report_path": "D:\\MyWork\\verilog\\graphify-out\\GRAPH_REPORT.md",
+    "html_path": "D:\\MyWork\\verilog\\graphify-out\\graph.html",
+    "verilog_patch": "module/instantiation fallback extraction plus path-qualified module ids"
+  },
+  "performance": {
+    "count": 117,
+    "hit_at_1": 0.0085,
+    "hit_at_3": 0.0342,
+    "hit_at_5": 0.0427,
+    "mrr": 0.0253,
+    "misses": 110,
+    "by_level": {
+      "L4": {
+        "count": 59,
+        "hit_at_1": 0.0169,
+        "hit_at_3": 0.0508,
+        "hit_at_5": 0.0678,
+        "mrr": 0.0417,
+        "misses": 53
+      },
+      "L5": {
+        "count": 58,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0172,
+        "hit_at_5": 0.0172,
+        "mrr": 0.0086,
+        "misses": 57
+      }
+    },
+    "by_type": {
+      "adversarial_label_ambiguity": {
+        "count": 22,
+        "hit_at_1": 0.0455,
+        "hit_at_3": 0.1364,
+        "hit_at_5": 0.1818,
+        "mrr": 0.1023,
+        "misses": 18
+      },
+      "adversarial_parent_from_shared_child": {
+        "count": 50,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0,
+        "hit_at_5": 0.0,
+        "mrr": 0.0,
+        "misses": 50
+      },
+      "adversarial_sibling_disambiguation": {
+        "count": 45,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.0222,
+        "hit_at_5": 0.0222,
+        "mrr": 0.0158,
+        "misses": 42
+      }
+    }
+  }
+}

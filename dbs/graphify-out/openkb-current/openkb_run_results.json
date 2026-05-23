@@ -1,0 +1,23 @@
+{
+  "llm_key_present": false,
+  "add_attempted": false,
+  "add_result": null,
+  "commands": {
+    "status": {
+      "returncode": null,
+      "stdout": "Knowledge Base Status:\n  Directory            Files     \n  -------------------- ----------\n  sources              0         \n  summaries            0         \n  concepts             0         \n  reports              0         \n  raw                  3         \n\n  Total indexed: 0 document(s)\n",
+      "stderr": "",
+      "timed_out": true,
+      "timeout_seconds": 5,
+      "fallback": "local_status"
+    },
+    "list": {
+      "returncode": null,
+      "stdout": "No documents indexed yet.\n",
+      "stderr": "",
+      "timed_out": true,
+      "timeout_seconds": 5,
+      "fallback": "local_list"
+    }
+  }
+}

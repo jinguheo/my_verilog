@@ -14,9 +14,21 @@ $ibexLabels = Join-Path $OutRoot "ibex_labels.jsonl"
 $mergedSeed = Join-Path $OutRoot "merged_ontology_seed.jsonl"
 $mergedLabels = Join-Path $OutRoot "merged_labels.jsonl"
 $embeddingRows = Join-Path $OutRoot "embedding_rows.json"
+$treeSitterPython = Join-Path $WorkspaceRoot ".venv-graphify\Scripts\python.exe"
+$seedPython = if (Test-Path -LiteralPath $treeSitterPython) { $treeSitterPython } else { "python" }
 
-Invoke-PythonScript (Join-Path $IngestRoot "generate_ontology_seed.py") @("--root", $opentitan, "--out", $opentitanSeed)
-Invoke-PythonScript (Join-Path $IngestRoot "generate_ontology_seed.py") @("--root", $ibex, "--out", $ibexSeed)
+function Invoke-SeedScript {
+  param([string]$RootPath, [string]$OutPath)
+  $script = Join-Path $IngestRoot "generate_ontology_seed.py"
+  Assert-PathExists $script "Python script"
+  & $seedPython $script --root $RootPath --out $OutPath --frontend auto
+  if ($LASTEXITCODE -ne 0) {
+    throw "Python script failed: $script"
+  }
+}
+
+Invoke-SeedScript $opentitan $opentitanSeed
+Invoke-SeedScript $ibex $ibexSeed
 
 Invoke-PythonScript (Join-Path $IngestRoot "extract_opentitan_labels.py") @("--root", $opentitan, "--out", $opentitanLabels)
 Invoke-PythonScript (Join-Path $IngestRoot "extract_ibex_labels.py") @("--root", $ibex, "--out", $ibexLabels)

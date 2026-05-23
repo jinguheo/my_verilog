@@ -1,6 +1,20 @@
 [
   {
     "mode": "baseline",
+    "id": "easy-name-ibex-bus",
+    "gold": "bus",
+    "prediction_top1": "bus",
+    "prediction_top5": [
+      "bus",
+      "i2c_bus_monitor",
+      "i2c_core",
+      "ibex_simple_system",
+      "ibex_if_stage"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
     "id": "easy-name-ibex-clkgen_xil7series",
     "gold": "clkgen_xil7series",
     "prediction_top1": "clkgen_xil7series",
@@ -8,8 +22,8 @@
       "clkgen_xil7series",
       "clkgen_xil7series",
       "clkgen_xil7series",
-      "chip_earlgrey_cw310",
-      "chip_englishbreakfast_cw305"
+      "usr_access_xil7series",
+      "clkgen_xil_ultrascale"
     ],
     "gold_rank": 1
   },
@@ -35,9 +49,23 @@
     "prediction_top5": [
       "ibex_branch_predict",
       "ibex_branch_predict",
+      "ibex_id_stage",
+      "ibex_id_stage",
+      "ibex_cs_registers"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-ibex_compressed_decoder",
+    "gold": "ibex_compressed_decoder",
+    "prediction_top1": "ibex_compressed_decoder",
+    "prediction_top5": [
+      "ibex_compressed_decoder",
+      "ibex_compressed_decoder",
       "ibex_if_stage",
       "ibex_if_stage",
-      "rv_core_ibex"
+      "ibex_decoder"
     ],
     "gold_rank": 1
   },
@@ -49,9 +77,9 @@
     "prediction_top5": [
       "ibex_controller",
       "ibex_controller",
-      "otbn_controller",
       "ibex_id_stage",
-      "ibex_id_stage"
+      "ibex_id_stage",
+      "i2c_controller_fsm"
     ],
     "gold_rank": 1
   },
@@ -65,7 +93,7 @@
       "ibex_counter",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "usbdev_counter"
+      "rom_ctrl_counter"
     ],
     "gold_rank": 1
   },
@@ -77,9 +105,9 @@
     "prediction_top5": [
       "ibex_cs_registers",
       "ibex_cs_registers",
+      "ibex_top_tracing",
       "ibex_ex_block",
-      "ibex_id_stage",
-      "ibex_ex_block"
+      "ibex_id_stage"
     ],
     "gold_rank": 1
   },
@@ -99,13 +127,27 @@
   },
   {
     "mode": "baseline",
+    "id": "easy-name-ibex-ibex_decoder",
+    "gold": "ibex_decoder",
+    "prediction_top1": "ibex_decoder",
+    "prediction_top5": [
+      "ibex_decoder",
+      "ibex_decoder",
+      "ibex_compressed_decoder",
+      "ibex_compressed_decoder",
+      "ibex_id_stage"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
     "id": "easy-name-ibex-ibex_dummy_instr",
     "gold": "ibex_dummy_instr",
     "prediction_top1": "ibex_dummy_instr",
     "prediction_top5": [
       "ibex_dummy_instr",
       "ibex_dummy_instr",
-      "ibex_if_stage",
+      "ibex_cs_registers",
       "ibex_if_stage",
       "ibex_cs_registers"
     ],
@@ -120,8 +162,8 @@
       "ibex_ex_block",
       "ibex_ex_block",
       "ibex_id_stage",
-      "ibex_id_stage",
-      "ibex_if_stage"
+      "csrng_block_encrypt",
+      "ibex_id_stage"
     ],
     "gold_rank": 1
   },
@@ -136,20 +178,6 @@
       "ibex_prefetch_buffer",
       "ibex_prefetch_buffer",
       "otbn_instruction_fetch"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-ibex_icache",
-    "gold": "ibex_icache",
-    "prediction_top1": "ibex_icache",
-    "prediction_top5": [
-      "ibex_icache",
-      "ibex_icache",
-      "ibex_if_stage",
-      "ibex_if_stage",
-      "ibex_cs_registers"
     ],
     "gold_rank": 1
   },
@@ -197,15 +225,29 @@
   },
   {
     "mode": "baseline",
+    "id": "easy-name-ibex-ibex_lockstep",
+    "gold": "ibex_lockstep",
+    "prediction_top1": "ibex_lockstep",
+    "prediction_top5": [
+      "ibex_lockstep",
+      "ibex_lockstep",
+      "ibex_top_tracing",
+      "ibex_cs_registers",
+      "ibex_ex_block"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
     "id": "easy-name-ibex-ibex_multdiv_fast",
     "gold": "ibex_multdiv_fast",
     "prediction_top1": "ibex_multdiv_fast",
     "prediction_top5": [
       "ibex_multdiv_fast",
       "ibex_multdiv_fast",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "ibex_multdiv_slow"
+      "ibex_multdiv_slow",
+      "ibex_multdiv_slow",
+      "prim_sync_slow_fast"
     ],
     "gold_rank": 1
   },
@@ -217,9 +259,9 @@
     "prediction_top5": [
       "ibex_multdiv_slow",
       "ibex_multdiv_slow",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "ibex_multdiv_fast"
+      "ibex_multdiv_fast",
+      "ibex_multdiv_fast",
+      "prim_sync_slow_fast"
     ],
     "gold_rank": 1
   },
@@ -245,23 +287,9 @@
     "prediction_top5": [
       "ibex_prefetch_buffer",
       "ibex_prefetch_buffer",
-      "ibex_if_stage",
-      "ibex_if_stage",
-      "ibex_cs_registers"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-ibex_register_file_ff",
-    "gold": "ibex_register_file_ff",
-    "prediction_top1": "ibex_register_file_ff",
-    "prediction_top5": [
-      "ibex_register_file_ff",
-      "ibex_register_file_ff",
-      "ibex_register_file_fpga",
-      "ibex_register_file_latch",
-      "ibex_register_file_fpga"
+      "ibex_top_tracing",
+      "ibex_cs_registers",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
@@ -273,9 +301,9 @@
     "prediction_top5": [
       "ibex_register_file_fpga",
       "ibex_register_file_fpga",
-      "ibex_register_file_ff",
       "ibex_register_file_latch",
-      "ibex_register_file_ff"
+      "ibex_register_file_latch",
+      "spi_host_shift_register"
     ],
     "gold_rank": 1
   },
@@ -287,9 +315,51 @@
     "prediction_top5": [
       "ibex_register_file_latch",
       "ibex_register_file_latch",
-      "ibex_register_file_ff",
       "ibex_register_file_fpga",
-      "ibex_register_file_ff"
+      "ibex_register_file_fpga",
+      "spi_host_shift_register"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-ibex_simple_system",
+    "gold": "ibex_simple_system",
+    "prediction_top1": "ibex_simple_system",
+    "prediction_top5": [
+      "ibex_simple_system",
+      "prim_fifo_async_simple",
+      "prim_fifo_async_simple",
+      "ibex_top_tracing",
+      "ibex_cs_registers"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-ibex_top",
+    "gold": "ibex_top",
+    "prediction_top1": "ibex_top",
+    "prediction_top5": [
+      "ibex_top",
+      "ibex_top",
+      "ibex_top_tracing",
+      "ibex_top_tracing",
+      "ibex_cs_registers"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-ibex_top_tracing",
+    "gold": "ibex_top_tracing",
+    "prediction_top1": "ibex_top_tracing",
+    "prediction_top5": [
+      "ibex_top_tracing",
+      "ibex_top_tracing",
+      "ibex_simple_system",
+      "ibex_cs_registers",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
@@ -301,9 +371,9 @@
     "prediction_top5": [
       "ibex_tracer",
       "ibex_tracer",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex"
+      "ibex_top_tracing",
+      "ibex_cs_registers",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
@@ -318,6 +388,34 @@
       "ibex_id_stage",
       "ibex_id_stage",
       "ibex_if_stage"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-prim_alert_receiver",
+    "gold": "prim_alert_receiver",
+    "prediction_top1": "prim_alert_receiver",
+    "prediction_top5": [
+      "prim_alert_receiver",
+      "prim_alert_receiver",
+      "prim_alert_to_diff",
+      "prim_alert_to_diff",
+      "prim_esc_receiver"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-prim_alert_to_diff",
+    "gold": "prim_alert_to_diff",
+    "prediction_top1": "prim_alert_to_diff",
+    "prediction_top5": [
+      "prim_alert_to_diff",
+      "prim_alert_to_diff",
+      "prim_diff_to_alert",
+      "prim_diff_to_alert",
+      "prim_diff_encode"
     ],
     "gold_rank": 1
   },
@@ -343,9 +441,51 @@
     "prediction_top5": [
       "prim_arbiter_fixed",
       "prim_arbiter_fixed",
-      "prim_sram_arbiter",
-      "prim_sram_arbiter",
-      "prim_racl_error_arb"
+      "prim_racl_error_arb",
+      "prim_racl_error_arb",
+      "prim_sram_arbiter"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-prim_arbiter_ppc",
+    "gold": "prim_arbiter_ppc",
+    "prediction_top1": "prim_arbiter_ppc",
+    "prediction_top5": [
+      "prim_arbiter_ppc",
+      "prim_arbiter_ppc",
+      "prim_leading_one_ppc",
+      "prim_leading_one_ppc",
+      "prim_sram_arbiter"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-prim_arbiter_tree",
+    "gold": "prim_arbiter_tree",
+    "prediction_top1": "prim_arbiter_tree",
+    "prediction_top5": [
+      "prim_arbiter_tree",
+      "prim_arbiter_tree",
+      "prim_arbiter_tree_dup",
+      "prim_arbiter_tree_dup",
+      "prim_arbiter_fixed"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-prim_arbiter_tree_dup",
+    "gold": "prim_arbiter_tree_dup",
+    "prediction_top1": "prim_arbiter_tree_dup",
+    "prediction_top5": [
+      "prim_arbiter_tree_dup",
+      "prim_arbiter_tree_dup",
+      "prim_arbiter_tree",
+      "prim_arbiter_tree",
+      "flash_phy_core"
     ],
     "gold_rank": 1
   },
@@ -379,20 +519,6 @@
   },
   {
     "mode": "baseline",
-    "id": "easy-name-ibex-prim_ascon_round",
-    "gold": "prim_ascon_round",
-    "prediction_top1": "prim_ascon_round",
-    "prediction_top5": [
-      "prim_ascon_round",
-      "prim_ascon_round",
-      "prim_ascon_round_tb",
-      "prim_ascon_round_tb",
-      "prim_ascon_duplex"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
     "id": "easy-name-ibex-prim_ascon_round_tb",
     "gold": "prim_ascon_round_tb",
     "prediction_top1": "prim_ascon_round_tb",
@@ -401,7 +527,7 @@
       "prim_ascon_round_tb",
       "prim_ascon_duplex",
       "prim_ascon_duplex",
-      "prim_ascon_round"
+      "ascon"
     ],
     "gold_rank": 1
   },
@@ -413,9 +539,23 @@
     "prediction_top5": [
       "prim_ascon_sbox",
       "prim_ascon_sbox",
-      "prim_ascon_round",
-      "prim_ascon_round",
-      "prim_ascon_duplex"
+      "prim_ascon_duplex",
+      "prim_ascon_duplex",
+      "ascon"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-prim_blanker",
+    "gold": "prim_blanker",
+    "prediction_top1": "prim_blanker",
+    "prediction_top5": [
+      "prim_blanker",
+      "prim_blanker",
+      "otbn",
+      "otbn_alu_bignum",
+      "otbn_mac_bignum"
     ],
     "gold_rank": 1
   },
@@ -430,6 +570,20 @@
       "prim_buf",
       "prim_buf",
       "prim_buf"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "easy-name-ibex-prim_cdc_rand_delay",
+    "gold": "prim_cdc_rand_delay",
+    "prediction_top1": "prim_cdc_rand_delay",
+    "prediction_top5": [
+      "prim_cdc_rand_delay",
+      "prim_cdc_rand_delay",
+      "prim_flop_2sync",
+      "prim_flop_2sync",
+      "prim_reg_cdc"
     ],
     "gold_rank": 1
   },
@@ -457,7 +611,7 @@
       "prim_clock_div",
       "prim_clock_div",
       "prim_clock_gating_sync",
-      "prim_clock_inv"
+      "prim_clock_gating_sync"
     ],
     "gold_rank": 1
   },
@@ -505,6 +659,20 @@
   },
   {
     "mode": "baseline",
+    "id": "easy-name-ibex-prim_clock_meas",
+    "gold": "prim_clock_meas",
+    "prediction_top1": "prim_clock_meas",
+    "prediction_top5": [
+      "prim_clock_meas",
+      "prim_clock_meas",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
     "id": "easy-name-ibex-prim_clock_mux2",
     "gold": "prim_clock_mux2",
     "prediction_top1": "prim_clock_mux2",
@@ -519,183 +687,15 @@
   },
   {
     "mode": "baseline",
-    "id": "easy-name-ibex-prim_count",
-    "gold": "prim_count",
-    "prediction_top1": "prim_count",
+    "id": "easy-name-ibex-prim_clock_timeout",
+    "gold": "prim_clock_timeout",
+    "prediction_top1": "prim_clock_timeout",
     "prediction_top5": [
-      "prim_count",
-      "prim_count",
-      "prim_ascon_duplex",
-      "prim_ascon_duplex",
-      "kmac_entropy"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_crc32_sim",
-    "gold": "prim_crc32_sim",
-    "prediction_top1": "prim_crc32_sim",
-    "prediction_top5": [
-      "prim_crc32_sim",
-      "prim_crc32_sim",
-      "ascon_sim",
-      "otbn",
-      "prim_ascon_duplex"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_dom_and_2share",
-    "gold": "prim_dom_and_2share",
-    "prediction_top1": "prim_dom_and_2share",
-    "prediction_top5": [
-      "prim_dom_and_2share",
-      "prim_dom_and_2share",
-      "aes_dom_inverse_gf2p8",
-      "aes_dom_dep_mul_gf2pn_unopt",
-      "aes_dom_inverse_gf2p4"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_edge_detector",
-    "gold": "prim_edge_detector",
-    "prediction_top1": "prim_edge_detector",
-    "prediction_top5": [
-      "prim_edge_detector",
-      "prim_edge_detector",
-      "csrng_core",
-      "entropy_src_core",
-      "spi_device"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_fifo_async",
-    "gold": "prim_fifo_async",
-    "prediction_top1": "prim_fifo_async",
-    "prediction_top5": [
-      "prim_fifo_async",
-      "prim_fifo_async",
-      "tlul_fifo_async",
-      "prim_fifo_async_simple",
-      "prim_fifo_async_simple"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_fifo_async_simple",
-    "gold": "prim_fifo_async_simple",
-    "prediction_top1": "prim_fifo_async_simple",
-    "prediction_top5": [
-      "prim_fifo_async_simple",
-      "prim_fifo_async_simple",
-      "tlul_fifo_async",
-      "prim_fifo_async",
-      "prim_fifo_async_sram_adapter"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_fifo_async_sram_adapter",
-    "gold": "prim_fifo_async_sram_adapter",
-    "prediction_top1": "prim_fifo_async_sram_adapter",
-    "prediction_top5": [
-      "prim_fifo_async_sram_adapter",
-      "prim_fifo_async_sram_adapter",
-      "tlul_fifo_async",
-      "prim_fifo_async_simple",
-      "prim_fifo_async_simple"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_fifo_sync",
-    "gold": "prim_fifo_sync",
-    "prediction_top1": "prim_fifo_sync",
-    "prediction_top5": [
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "tlul_fifo_sync",
-      "prim_fifo_sync_cnt",
-      "prim_fifo_sync_cnt"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_fifo_sync_cnt",
-    "gold": "prim_fifo_sync_cnt",
-    "prediction_top1": "prim_fifo_sync_cnt",
-    "prediction_top5": [
-      "prim_fifo_sync_cnt",
-      "prim_fifo_sync_cnt",
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "tlul_fifo_sync"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_filter",
-    "gold": "prim_filter",
-    "prediction_top1": "prim_filter",
-    "prediction_top5": [
-      "prim_filter",
-      "prim_filter",
-      "prim_filter_ctr",
-      "prim_filter_ctr",
-      "pinmux_wkup"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_filter_ctr",
-    "gold": "prim_filter_ctr",
-    "prediction_top1": "prim_filter_ctr",
-    "prediction_top5": [
-      "prim_filter_ctr",
-      "prim_filter_ctr",
-      "prim_filter",
-      "prim_filter",
-      "csrng_ctr_drbg"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_flash",
-    "gold": "prim_flash",
-    "prediction_top1": "prim_flash",
-    "prediction_top5": [
-      "prim_flash",
-      "prim_flash",
-      "flash_phy",
-      "flash_phy",
-      "flash_phy"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "easy-name-ibex-prim_flop",
-    "gold": "prim_flop",
-    "prediction_top1": "prim_flop",
-    "prediction_top5": [
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop"
+      "prim_clock_timeout",
+      "prim_clock_timeout",
+      "prim_clock_meas",
+      "prim_clock_meas",
+      "prim_clock_div"
     ],
     "gold_rank": 1
   },
@@ -703,15 +703,15 @@
     "mode": "baseline",
     "id": "medium-label-port-opentitan-top_earlgrey",
     "gold": "top_earlgrey",
-    "prediction_top1": "ibex_ex_block",
+    "prediction_top1": "pinmux",
     "prediction_top5": [
-      "ibex_ex_block",
       "pinmux",
       "pinmux",
       "pinmux",
-      "top_darjeeling"
+      "top_darjeeling",
+      "top_earlgrey"
     ],
-    "gold_rank": null
+    "gold_rank": 5
   },
   {
     "mode": "baseline",
@@ -731,13 +731,13 @@
     "mode": "baseline",
     "id": "medium-label-port-opentitan-top_englishbreakfast",
     "gold": "top_englishbreakfast",
-    "prediction_top1": "ibex_ex_block",
+    "prediction_top1": "pinmux",
     "prediction_top5": [
-      "ibex_ex_block",
       "pinmux",
       "pinmux",
       "pinmux",
-      "top_darjeeling"
+      "top_darjeeling",
+      "top_earlgrey"
     ],
     "gold_rank": null
   },
@@ -750,8 +750,8 @@
       "top_englishbreakfast",
       "top_earlgrey",
       "chip_englishbreakfast_cw305",
-      "pinmux_strap_sampling",
-      "pinmux"
+      "pinmux",
+      "pinmux_strap_sampling"
     ],
     "gold_rank": 1
   },
@@ -759,15 +759,15 @@
     "mode": "baseline",
     "id": "medium-label-port-opentitan-top_darjeeling",
     "gold": "top_darjeeling",
-    "prediction_top1": "ibex_ex_block",
+    "prediction_top1": "pinmux",
     "prediction_top5": [
-      "ibex_ex_block",
       "pinmux",
       "pinmux",
       "pinmux",
-      "top_darjeeling"
+      "top_darjeeling",
+      "top_earlgrey"
     ],
-    "gold_rank": 5
+    "gold_rank": 4
   },
   {
     "mode": "baseline",
@@ -790,8 +790,8 @@
     "prediction_top1": "chip_darjeeling_asic",
     "prediction_top5": [
       "chip_darjeeling_asic",
+      "dmi_jtag",
       "tlul_jtag_dtm",
-      "pinmux_jtag_breakout",
       "pinmux_jtag_breakout",
       "pinmux_jtag_breakout"
     ],
@@ -799,15 +799,15 @@
   },
   {
     "mode": "baseline",
-    "id": "medium-parent-child-opentitan-chip_darjeeling_asic-padring",
+    "id": "medium-parent-child-opentitan-chip_darjeeling_asic-ast",
     "gold": "chip_darjeeling_asic",
     "prediction_top1": "chip_darjeeling_asic",
     "prediction_top5": [
       "chip_darjeeling_asic",
       "chip_earlgrey_asic",
+      "chip_darjeeling_verilator",
       "chip_earlgrey_cw310",
-      "chip_earlgrey_cw340",
-      "chip_englishbreakfast_cw305"
+      "chip_earlgrey_cw340"
     ],
     "gold_rank": 1
   },
@@ -827,85 +827,29 @@
   },
   {
     "mode": "baseline",
-    "id": "medium-label-port-opentitan-i2c_target_fsm",
-    "gold": "i2c_target_fsm",
-    "prediction_top1": "spi_host_command_queue",
-    "prediction_top5": [
-      "spi_host_command_queue",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "spi_host",
-      "csrng_core"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-path-port-opentitan-i2c_target_fsm",
-    "gold": "i2c_target_fsm",
-    "prediction_top1": "i2c_target_fsm",
-    "prediction_top5": [
-      "i2c_target_fsm",
-      "i2c_core",
-      "i2c_controller_fsm",
-      "i2c_fifos",
-      "i2c_bus_monitor"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-label-port-opentitan-i2c_controller_fsm",
-    "gold": "i2c_controller_fsm",
-    "prediction_top1": "ibex_ex_block",
-    "prediction_top5": [
-      "ibex_ex_block",
-      "ibex_prefetch_buffer",
-      "ibex_ex_block",
-      "ibex_prefetch_buffer",
-      "csrng_core"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-path-port-opentitan-i2c_controller_fsm",
-    "gold": "i2c_controller_fsm",
-    "prediction_top1": "i2c_controller_fsm",
-    "prediction_top5": [
-      "i2c_controller_fsm",
-      "i2c_core",
-      "i2c_target_fsm",
-      "otbn_controller",
-      "i2c_fifos"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
     "id": "medium-label-port-opentitan-spi_device",
     "gold": "spi_device",
     "prediction_top1": "spi_host_command_queue",
     "prediction_top5": [
       "spi_host_command_queue",
+      "csrng_block_encrypt",
       "ibex_ex_block",
       "ibex_ex_block",
-      "spi_host",
-      "csrng_core"
+      "spi_host"
     ],
     "gold_rank": null
   },
   {
     "mode": "baseline",
-    "id": "medium-parent-child-opentitan-spi_device-prim_racl_error_arb",
+    "id": "medium-parent-child-opentitan-spi_device-prim_buf",
     "gold": "spi_device",
     "prediction_top1": "spi_device",
     "prediction_top5": [
       "spi_device",
+      "spi_device_reg_top",
       "spi_host",
-      "racl_ctrl",
-      "sram_ctrl",
-      "mbx"
+      "spi_s2p",
+      "spi_passthrough"
     ],
     "gold_rank": 1
   },
@@ -913,13 +857,13 @@
     "mode": "baseline",
     "id": "medium-label-port-opentitan-sha3",
     "gold": "sha3",
-    "prediction_top1": "ibex_ex_block",
+    "prediction_top1": "csrng_block_encrypt",
     "prediction_top5": [
+      "csrng_block_encrypt",
       "ibex_ex_block",
+      "ibex_prefetch_buffer",
       "ibex_ex_block",
-      "prim_fifo_sync",
-      "tlul_fifo_sync",
-      "prim_fifo_sync"
+      "ibex_prefetch_buffer"
     ],
     "gold_rank": null
   },
@@ -930,10 +874,10 @@
     "prediction_top1": "sha3",
     "prediction_top5": [
       "sha3",
+      "kmac_reduced",
       "entropy_src_core",
       "kmac",
-      "entropy_src_main_sm",
-      "kmac_app"
+      "entropy_src_enable_delay"
     ],
     "gold_rank": 1
   },
@@ -953,113 +897,15 @@
   },
   {
     "mode": "baseline",
-    "id": "medium-label-port-opentitan-i2c_fifos",
-    "gold": "i2c_fifos",
-    "prediction_top1": "ibex_ex_block",
-    "prediction_top5": [
-      "ibex_ex_block",
-      "ibex_prefetch_buffer",
-      "ibex_ex_block",
-      "ibex_prefetch_buffer",
-      "csrng_core"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-parent-child-opentitan-i2c_fifos-i2c_fifo_sync_sram_adapter",
-    "gold": "i2c_fifos",
-    "prediction_top1": "i2c_fifos",
-    "prediction_top5": [
-      "i2c_fifos",
-      "spi_host_data_fifos",
-      "i2c_core",
-      "spi_tpm",
-      "otp_ctrl"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-path-port-opentitan-i2c_fifos",
-    "gold": "i2c_fifos",
-    "prediction_top1": "i2c_fifos",
-    "prediction_top5": [
-      "i2c_fifos",
-      "i2c_core",
-      "i2c_target_fsm",
-      "spi_host_data_fifos",
-      "i2c_controller_fsm"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-label-port-opentitan-otp_ctrl",
-    "gold": "otp_ctrl",
-    "prediction_top1": "ibex_ex_block",
-    "prediction_top5": [
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "csrng_core",
-      "aes_ghash_wrap",
-      "csrng_ctr_drbg"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-parent-child-opentitan-otp_ctrl-otp_ctrl_core_reg_top",
-    "gold": "otp_ctrl",
-    "prediction_top1": "otp_ctrl",
-    "prediction_top5": [
-      "otp_ctrl",
-      "otp_ctrl",
-      "top_darjeeling",
-      "top_earlgrey",
-      "otp_ctrl_part_buf"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-label-port-opentitan-soc_proxy",
-    "gold": "soc_proxy",
-    "prediction_top1": "i2c_core",
-    "prediction_top5": [
-      "i2c_core",
-      "i2c_fifos",
-      "ibex_ex_block",
-      "i2c_bus_monitor",
-      "i2c_controller_fsm"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-parent-child-opentitan-soc_proxy-tlul_socket_m1",
-    "gold": "soc_proxy",
-    "prediction_top1": "soc_proxy",
-    "prediction_top5": [
-      "soc_proxy",
-      "chip_darjeeling_asic",
-      "soc_dbg_ctrl",
-      "chip_darjeeling_verilator",
-      "top_darjeeling"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
     "id": "medium-label-port-opentitan-i2c_core",
     "gold": "i2c_core",
     "prediction_top1": "spi_host_command_queue",
     "prediction_top5": [
       "spi_host_command_queue",
+      "csrng_block_encrypt",
       "ibex_ex_block",
       "ibex_ex_block",
-      "spi_host",
-      "csrng_core"
+      "spi_host"
     ],
     "gold_rank": null
   },
@@ -1084,7 +930,7 @@
     "prediction_top1": "i2c_core",
     "prediction_top5": [
       "i2c_core",
-      "i2c_fifos",
+      "i2c_reg_top",
       "flash_ctrl_region_cfg",
       "flash_ctrl_region_cfg",
       "flash_mp_data_region_sel"
@@ -1095,13 +941,13 @@
     "mode": "baseline",
     "id": "medium-label-port-opentitan-spi_host_data_fifos",
     "gold": "spi_host_data_fifos",
-    "prediction_top1": "ibex_ex_block",
+    "prediction_top1": "i2c_fifo_sync_sram_adapter",
     "prediction_top5": [
+      "i2c_fifo_sync_sram_adapter",
+      "csrng_block_encrypt",
       "ibex_ex_block",
       "ibex_ex_block",
-      "prim_fifo_sync",
-      "tlul_fifo_sync",
-      "prim_fifo_sync"
+      "tlul_fifo_sync"
     ],
     "gold_rank": null
   },
@@ -1114,8 +960,8 @@
       "spi_host_data_fifos",
       "spi_host",
       "spi_host_command_queue",
-      "spi_tpm",
-      "i2c_fifos"
+      "spi_host_core",
+      "spi_host_reg_top"
     ],
     "gold_rank": 1
   },
@@ -1127,9 +973,233 @@
     "prediction_top5": [
       "spi_host_data_fifos",
       "spi_host",
+      "spi_host_core",
       "spi_host_command_queue",
-      "spi_host_window",
-      "spi_host_shift_register"
+      "spi_host_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-label-port-opentitan-otp_ctrl",
+    "gold": "otp_ctrl",
+    "prediction_top1": "csrng_block_encrypt",
+    "prediction_top5": [
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "csrng_core",
+      "kmac_reduced"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-parent-child-opentitan-otp_ctrl-otp_ctrl_core_reg_top",
+    "gold": "otp_ctrl",
+    "prediction_top1": "otp_ctrl",
+    "prediction_top5": [
+      "otp_ctrl",
+      "otp_ctrl",
+      "top_darjeeling",
+      "top_earlgrey",
+      "otp_ctrl_part_buf"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-label-port-opentitan-spi_host_fsm",
+    "gold": "spi_host_fsm",
+    "prediction_top1": "csrng_block_encrypt",
+    "prediction_top5": [
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "ibex_prefetch_buffer",
+      "ibex_ex_block",
+      "ibex_prefetch_buffer"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-parent-child-opentitan-spi_host_fsm-prim_flop_en",
+    "gold": "spi_host_fsm",
+    "prediction_top1": "spi_host_fsm",
+    "prediction_top5": [
+      "spi_host_fsm",
+      "spi_host_core",
+      "spi_host",
+      "spi_host_command_queue",
+      "spi_host_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-path-port-opentitan-spi_host_fsm",
+    "gold": "spi_host_fsm",
+    "prediction_top1": "spi_host_fsm",
+    "prediction_top5": [
+      "spi_host_fsm",
+      "spi_host_core",
+      "spi_host",
+      "spi_host_command_queue",
+      "spi_host_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-label-port-opentitan-spi_host_core",
+    "gold": "spi_host_core",
+    "prediction_top1": "spi_host_command_queue",
+    "prediction_top5": [
+      "spi_host_command_queue",
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "spi_host"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-parent-child-opentitan-spi_host_core-spi_host_byte_merge",
+    "gold": "spi_host_core",
+    "prediction_top1": "spi_host_core",
+    "prediction_top5": [
+      "spi_host_core",
+      "spi_host",
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "rv_core_ibex"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-path-port-opentitan-spi_host_core",
+    "gold": "spi_host_core",
+    "prediction_top1": "spi_host_core",
+    "prediction_top5": [
+      "spi_host_core",
+      "spi_host",
+      "spi_host_fsm",
+      "spi_host_command_queue",
+      "spi_host_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-label-port-opentitan-soc_proxy",
+    "gold": "soc_proxy",
+    "prediction_top1": "i2c_bus_monitor",
+    "prediction_top5": [
+      "i2c_bus_monitor",
+      "bus",
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "ibex_ex_block"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-parent-child-opentitan-soc_proxy-tlul_socket_m1",
+    "gold": "soc_proxy",
+    "prediction_top1": "soc_proxy",
+    "prediction_top5": [
+      "soc_proxy",
+      "soc_proxy_core_reg_top",
+      "soc_proxy_ctn_reg_top",
+      "chip_darjeeling_asic",
+      "xbar_main"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-label-port-opentitan-tlul_adapter_sram_racl",
+    "gold": "tlul_adapter_sram_racl",
+    "prediction_top1": "i2c_fifo_sync_sram_adapter",
+    "prediction_top5": [
+      "i2c_fifo_sync_sram_adapter",
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "tlul_fifo_sync"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-parent-child-opentitan-tlul_adapter_sram_racl-tlul_adapter_racl",
+    "gold": "tlul_adapter_sram_racl",
+    "prediction_top1": "tlul_adapter_sram_racl",
+    "prediction_top5": [
+      "tlul_adapter_sram_racl",
+      "sram_ctrl",
+      "sram_ctrl_regs_reg_top",
+      "spi_device",
+      "sram_ctrl_ram_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-path-port-opentitan-tlul_adapter_sram_racl",
+    "gold": "tlul_adapter_sram_racl",
+    "prediction_top1": "tlul_adapter_sram_racl",
+    "prediction_top5": [
+      "tlul_adapter_sram_racl",
+      "sram_ctrl",
+      "tlul_adapter_reg_racl",
+      "tlul_adapter_racl",
+      "tlul_adapter_sram"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-label-port-opentitan-tlul_adapter_sram",
+    "gold": "tlul_adapter_sram",
+    "prediction_top1": "i2c_fifo_sync_sram_adapter",
+    "prediction_top5": [
+      "i2c_fifo_sync_sram_adapter",
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "tlul_fifo_sync"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-parent-child-opentitan-tlul_adapter_sram-tlul_err",
+    "gold": "tlul_adapter_sram",
+    "prediction_top1": "tlul_adapter_sram",
+    "prediction_top5": [
+      "tlul_adapter_sram",
+      "tlul_adapter_sram_racl",
+      "tlul_adapter_dmi",
+      "tlul_adapter_reg",
+      "i2c_fifo_sync_sram_adapter"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-path-port-opentitan-tlul_adapter_sram",
+    "gold": "tlul_adapter_sram",
+    "prediction_top1": "tlul_adapter_sram",
+    "prediction_top5": [
+      "tlul_adapter_sram",
+      "tlul_adapter_sram_racl",
+      "tlul_sram_byte",
+      "sram_ctrl",
+      "prim_fifo_async_sram_adapter"
     ],
     "gold_rank": 1
   },
@@ -1137,27 +1207,27 @@
     "mode": "baseline",
     "id": "medium-label-port-opentitan-spi_host",
     "gold": "spi_host",
-    "prediction_top1": "ibex_ex_block",
+    "prediction_top1": "spi_host_command_queue",
     "prediction_top5": [
+      "spi_host_command_queue",
+      "csrng_block_encrypt",
       "ibex_ex_block",
       "ibex_ex_block",
-      "prim_fifo_sync",
-      "tlul_fifo_sync",
-      "prim_fifo_sync"
+      "spi_host"
     ],
-    "gold_rank": null
+    "gold_rank": 5
   },
   {
     "mode": "baseline",
-    "id": "medium-parent-child-opentitan-spi_host-prim_racl_error_arb",
+    "id": "medium-parent-child-opentitan-spi_host-spi_host_reg_top",
     "gold": "spi_host",
     "prediction_top1": "spi_host",
     "prediction_top5": [
       "spi_host",
-      "spi_device",
-      "spi_host_command_queue",
-      "racl_ctrl",
-      "spi_host_window"
+      "spi_host_core",
+      "top_darjeeling",
+      "top_earlgrey",
+      "top_englishbreakfast"
     ],
     "gold_rank": 1
   },
@@ -1165,13 +1235,13 @@
     "mode": "baseline",
     "id": "medium-label-port-opentitan-chip_darjeeling_verilator",
     "gold": "chip_darjeeling_verilator",
-    "prediction_top1": "ibex_ex_block",
+    "prediction_top1": "i2c_core",
     "prediction_top5": [
-      "ibex_ex_block",
+      "i2c_core",
+      "i2c_reg_top",
       "i2c_bus_monitor",
-      "ibex_ex_block",
-      "csrng_core",
-      "i2c_core"
+      "i2c_controller_fsm",
+      "i2c_fifo_sync_sram_adapter"
     ],
     "gold_rank": null
   },
@@ -1184,7 +1254,7 @@
       "chip_darjeeling_verilator",
       "chip_earlgrey_verilator",
       "chip_darjeeling_asic",
-      "clkmgr",
+      "ast_clks_byp",
       "clkmgr"
     ],
     "gold_rank": 1
@@ -1199,7 +1269,7 @@
       "chip_earlgrey_verilator",
       "spi_device",
       "chip_darjeeling_asic",
-      "spi_host"
+      "spi_device_reg_top"
     ],
     "gold_rank": 1
   },
@@ -1210,10 +1280,10 @@
     "prediction_top1": "spi_host_command_queue",
     "prediction_top5": [
       "spi_host_command_queue",
+      "csrng_block_encrypt",
       "ibex_ex_block",
       "ibex_ex_block",
-      "spi_host",
-      "csrng_core"
+      "spi_host"
     ],
     "gold_rank": null
   },
@@ -1225,9 +1295,9 @@
     "prediction_top5": [
       "spi_host_window",
       "spi_host",
-      "spi_device",
-      "mbx_sysif",
-      "spi_host_command_queue"
+      "spi_host_reg_top",
+      "spi_host_core",
+      "spi_device"
     ],
     "gold_rank": 1
   },
@@ -1239,232 +1309,120 @@
     "prediction_top5": [
       "spi_host_window",
       "spi_host",
-      "spi_device",
-      "spi_host_command_queue",
-      "racl_ctrl"
+      "spi_host_core",
+      "spi_host_reg_top",
+      "spi_device"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "medium-label-port-opentitan-spi_p2s",
-    "gold": "spi_p2s",
-    "prediction_top1": "spi_host_command_queue",
+    "id": "medium-label-port-opentitan-xbar_peri",
+    "gold": "xbar_peri",
+    "prediction_top1": "xbar_peri",
     "prediction_top5": [
-      "spi_host_command_queue",
+      "xbar_peri",
+      "xbar_peri",
+      "xbar_peri",
+      "spi_device",
+      "rv_core_ibex_peri"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-parent-child-opentitan-xbar_peri-tlul_socket_1n",
+    "gold": "xbar_peri",
+    "prediction_top1": "xbar_peri",
+    "prediction_top5": [
+      "xbar_peri",
+      "xbar_peri",
+      "xbar_peri",
+      "xbar_dbg",
+      "xbar_main"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-label-port-opentitan-uart_reg_top",
+    "gold": "uart_reg_top",
+    "prediction_top1": "i2c_fifo_sync_sram_adapter",
+    "prediction_top5": [
+      "i2c_fifo_sync_sram_adapter",
+      "csrng_block_encrypt",
       "ibex_ex_block",
       "ibex_ex_block",
-      "spi_host",
-      "csrng_core"
+      "tlul_fifo_sync"
     ],
     "gold_rank": null
   },
   {
     "mode": "baseline",
-    "id": "medium-path-port-opentitan-spi_p2s",
-    "gold": "spi_p2s",
-    "prediction_top1": "spi_p2s",
+    "id": "medium-parent-child-opentitan-uart_reg_top-tlul_cmd_intg_chk",
+    "gold": "uart_reg_top",
+    "prediction_top1": "uart_reg_top",
     "prediction_top5": [
-      "spi_p2s",
-      "spi_device",
-      "spi_tpm",
-      "spi_host",
-      "io_clk"
+      "uart_reg_top",
+      "ac_range_check_reg_top",
+      "adc_ctrl_reg_top",
+      "aes_reg_top",
+      "alert_handler_reg_top"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "medium-label-port-opentitan-usb_fs_nb_pe",
-    "gold": "usb_fs_nb_pe",
-    "prediction_top1": "ibex_ex_block",
+    "id": "medium-path-port-opentitan-uart_reg_top",
+    "gold": "uart_reg_top",
+    "prediction_top1": "uart_reg_top",
     "prediction_top5": [
+      "uart_reg_top",
+      "uart",
+      "uart_core",
+      "ac_range_check_reg_top",
+      "adc_ctrl_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "medium-label-port-opentitan-i2c_reg_top",
+    "gold": "i2c_reg_top",
+    "prediction_top1": "i2c_bus_monitor",
+    "prediction_top5": [
+      "i2c_bus_monitor",
+      "bus",
+      "csrng_block_encrypt",
       "ibex_ex_block",
-      "ibex_prefetch_buffer",
-      "ibex_ex_block",
-      "ibex_prefetch_buffer",
-      "usb_fs_nb_in_pe"
+      "ibex_ex_block"
     ],
     "gold_rank": null
   },
   {
     "mode": "baseline",
-    "id": "medium-parent-child-opentitan-usb_fs_nb_pe-usb_fs_nb_in_pe",
-    "gold": "usb_fs_nb_pe",
-    "prediction_top1": "usb_fs_nb_pe",
+    "id": "hard-reverse-opentitan-clkmgr_meas_chk-prim_clock_meas",
+    "gold": "clkmgr_meas_chk",
+    "prediction_top1": "clkmgr_meas_chk",
     "prediction_top5": [
-      "usb_fs_nb_pe",
-      "ast",
-      "chip_earlgrey_asic",
-      "usb_clk",
-      "ast_clks_byp"
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "csrng_block_encrypt"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "medium-path-port-opentitan-usb_fs_nb_pe",
-    "gold": "usb_fs_nb_pe",
-    "prediction_top1": "usb_fs_nb_pe",
-    "prediction_top5": [
-      "usb_fs_nb_pe",
-      "usb_fs_nb_in_pe",
-      "usb_fs_nb_out_pe",
-      "usb_fs_tx",
-      "usb_fs_rx"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-label-port-opentitan-ast",
-    "gold": "ast",
-    "prediction_top1": "tlul_assert_multiple",
-    "prediction_top5": [
-      "tlul_assert_multiple",
-      "tlul_jtag_dtm",
-      "ibex_ex_block",
-      "tlul_adapter_racl",
-      "tlul_err_resp"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-parent-child-opentitan-ast-prim_clock_buf",
-    "gold": "ast",
-    "prediction_top1": "ast",
-    "prediction_top5": [
-      "ast",
-      "ast",
-      "ast_clks_byp",
-      "usb_clk",
-      "pwrmgr"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-label-port-opentitan-spi_tpm",
-    "gold": "spi_tpm",
-    "prediction_top1": "spi_host_command_queue",
-    "prediction_top5": [
-      "spi_host_command_queue",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "spi_tpm",
-      "usb_fs_nb_out_pe"
-    ],
-    "gold_rank": 4
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-parent-child-opentitan-spi_tpm-prim_edge_detector",
-    "gold": "spi_tpm",
-    "prediction_top1": "spi_tpm",
-    "prediction_top5": [
-      "spi_tpm",
-      "spi_device",
-      "csrng_core",
-      "entropy_src_core",
-      "spi_host"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-path-port-opentitan-spi_tpm",
-    "gold": "spi_tpm",
-    "prediction_top1": "spi_tpm",
-    "prediction_top5": [
-      "spi_tpm",
-      "spi_device",
-      "spi_host",
-      "spi_host_command_queue",
-      "flash_ctrl_region_cfg"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "medium-label-port-opentitan-usbdev",
-    "gold": "usbdev",
-    "prediction_top1": "ibex_ex_block",
-    "prediction_top5": [
-      "ibex_ex_block",
-      "ibex_prefetch_buffer",
-      "ibex_ex_block",
-      "ibex_prefetch_buffer",
-      "csrng_core"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-reverse-ibex-ibex_cs_registers-ibex_csr",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
-    "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "ibex_id_stage"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-reverse-opentitan-ast-ast_alert",
-    "gold": "ast",
-    "prediction_top1": "ast",
-    "prediction_top5": [
-      "ast",
-      "ast",
-      "csrng_core",
-      "adc_ctrl",
-      "flash_ctrl"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-reverse-opentitan-entropy_src_core-entropy_src_cntr_reg",
-    "gold": "entropy_src_core",
-    "prediction_top1": "entropy_src_core",
-    "prediction_top5": [
-      "entropy_src_core",
-      "spi_host_command_queue",
-      "entropy_src",
-      "ibex_ex_block",
-      "csrng_core"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-reverse-opentitan-clkmgr-clkmgr_root_ctrl",
+    "id": "hard-reverse-opentitan-clkmgr-clkmgr_clk_status",
     "gold": "clkmgr",
     "prediction_top1": "clkmgr",
     "prediction_top5": [
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "ibex_ex_block",
-      "ibex_ex_block"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-reverse-opentitan-rv_core_ibex-rv_core_ibex_addr_trans",
-    "gold": "rv_core_ibex",
-    "prediction_top1": "rv_core_ibex",
-    "prediction_top5": [
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "ibex_ex_block",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
@@ -1478,36 +1436,36 @@
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "ibex_ex_block",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-reverse-opentitan-entropy_src_core-entropy_src_watermark_reg",
-    "gold": "entropy_src_core",
-    "prediction_top1": "entropy_src_core",
+    "id": "hard-reverse-opentitan-clkmgr-clkmgr_reg_top",
+    "gold": "clkmgr",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "entropy_src_core",
-      "entropy_src",
-      "ibex_ex_block",
-      "ibex_prefetch_buffer",
-      "csrng_core"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "csrng_block_encrypt",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-reverse-opentitan-top_darjeeling-mbx",
-    "gold": "top_darjeeling",
-    "prediction_top1": "top_darjeeling",
+    "id": "hard-reverse-opentitan-clkmgr-clkmgr_root_ctrl",
+    "gold": "clkmgr",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
       "top_darjeeling",
-      "mbx_imbx",
-      "mbx_ombx",
-      "csrng_core",
-      "mbx_hostif"
+      "top_earlgrey"
     ],
     "gold_rank": 1
   },
@@ -1520,7 +1478,77 @@
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "ibex_ex_block",
+      "csrng_block_encrypt",
+      "ibex_ex_block"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-reverse-opentitan-flash_phy_core-flash_phy_erase",
+    "gold": "flash_phy_core",
+    "prediction_top1": "flash_phy_core",
+    "prediction_top5": [
+      "flash_phy_core",
+      "flash_phy_core",
+      "flash_phy_core",
+      "flash_ctrl",
+      "flash_ctrl"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-reverse-opentitan-flash_phy_core-flash_phy_rd",
+    "gold": "flash_phy_core",
+    "prediction_top1": "flash_phy_core",
+    "prediction_top5": [
+      "flash_phy_core",
+      "flash_phy_core",
+      "flash_phy_core",
+      "flash_ctrl",
+      "flash_ctrl"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-reverse-opentitan-flash_phy_rd-flash_phy_rd_buf_dep",
+    "gold": "flash_phy_rd",
+    "prediction_top1": "flash_phy_rd",
+    "prediction_top5": [
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "spi_host_command_queue",
+      "flash_phy_core"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-reverse-opentitan-gpio-gpio_reg_top",
+    "gold": "gpio",
+    "prediction_top1": "gpio",
+    "prediction_top5": [
+      "gpio",
+      "gpio",
+      "gpio",
+      "csrng_block_encrypt",
+      "ibex_ex_block"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-reverse-opentitan-otp_ctrl_part_buf-otp_ctrl_ecc_reg",
+    "gold": "otp_ctrl_part_buf",
+    "prediction_top1": "otp_ctrl_part_buf",
+    "prediction_top5": [
+      "otp_ctrl_part_buf",
+      "otp_ctrl_part_buf",
+      "otp_ctrl_part_buf",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
@@ -1534,218 +1562,120 @@
       "pinmux_strap_sampling",
       "pinmux_strap_sampling",
       "pinmux_strap_sampling",
-      "ibex_ex_block",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-reverse-opentitan-clkmgr-clkmgr_clk_status",
-    "gold": "clkmgr",
-    "prediction_top1": "clkmgr",
+    "id": "hard-reverse-opentitan-pwrmgr-prim_clock_timeout",
+    "gold": "pwrmgr",
+    "prediction_top1": "pwrmgr",
     "prediction_top5": [
-      "clkmgr",
-      "clkmgr",
-      "clkmgr",
-      "ibex_ex_block",
+      "pwrmgr",
+      "pwrmgr",
+      "pwrmgr",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-reverse-ibex-ibex_cs_registers-ibex_counter",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
+    "id": "hard-reverse-opentitan-flash_phy-prim_flash",
+    "gold": "flash_phy",
+    "prediction_top1": "flash_phy",
     "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "csrng_core"
+      "flash_phy",
+      "flash_phy",
+      "flash_phy",
+      "i2c_fifo_sync_sram_adapter",
+      "csrng_block_encrypt"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-reverse-opentitan-pinmux-prim_pad_attr",
-    "gold": "pinmux",
-    "prediction_top1": "pinmux",
+    "id": "hard-reverse-opentitan-otp_ctrl_scrmbl-prim_present",
+    "gold": "otp_ctrl_scrmbl",
+    "prediction_top1": "otp_ctrl_scrmbl",
     "prediction_top5": [
-      "pinmux",
-      "pinmux",
-      "pinmux",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-reverse-opentitan-rv_core_ibex-rv_core_ibex_cfg_reg_top",
-    "gold": "rv_core_ibex",
-    "prediction_top1": "rv_core_ibex",
-    "prediction_top5": [
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "ibex_ex_block",
+      "otp_ctrl_scrmbl",
+      "otp_ctrl_scrmbl",
+      "otp_ctrl_scrmbl",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-reverse-opentitan-ast_clks_byp-gfr_clk_mux2",
-    "gold": "ast_clks_byp",
-    "prediction_top1": "ast_clks_byp",
+    "id": "hard-reverse-opentitan-flash_phy_rd-prim_secded_hamming_76_68_dec",
+    "gold": "flash_phy_rd",
+    "prediction_top1": "flash_phy_rd",
     "prediction_top5": [
-      "ast_clks_byp",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "csrng_core",
-      "lc_ctrl"
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "flash_phy_prog",
+      "flash_phy_prog"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-reverse-opentitan-i2c_fifos-i2c_fifo_sync_sram_adapter",
-    "gold": "i2c_fifos",
-    "prediction_top1": "i2c_fifos",
+    "id": "hard-reverse-opentitan-flash_phy_prog-prim_secded_hamming_76_68_enc",
+    "gold": "flash_phy_prog",
+    "prediction_top1": "flash_phy_prog",
     "prediction_top5": [
-      "i2c_fifos",
-      "spi_tpm",
-      "otp_ctrl",
-      "otp_ctrl",
+      "flash_phy_prog",
+      "flash_phy_prog",
+      "flash_phy_prog",
+      "spi_host_command_queue",
+      "flash_phy_rd"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-reverse-opentitan-otp_ctrl_ecc_reg-prim_secded_inv_72_64_enc",
+    "gold": "otp_ctrl_ecc_reg",
+    "prediction_top1": "otp_ctrl_ecc_reg",
+    "prediction_top5": [
+      "otp_ctrl_ecc_reg",
+      "otp_ctrl_ecc_reg",
+      "otp_ctrl_ecc_reg",
+      "flash_phy_prog",
+      "flash_phy_prog"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-reverse-opentitan-pwrmgr-pwrmgr_cdc",
+    "gold": "pwrmgr",
+    "prediction_top1": "pwrmgr",
+    "prediction_top5": [
+      "pwrmgr",
+      "pwrmgr",
+      "pwrmgr",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-reverse-opentitan-otp_ctrl-otp_ctrl_part_buf",
-    "gold": "otp_ctrl",
-    "prediction_top1": "otp_ctrl",
+    "id": "hard-reverse-opentitan-pwrmgr-pwrmgr_fsm",
+    "gold": "pwrmgr",
+    "prediction_top1": "pwrmgr",
     "prediction_top5": [
-      "otp_ctrl",
-      "otp_ctrl",
-      "otp_ctrl_part_unbuf",
-      "otp_ctrl_part_unbuf",
-      "otp_ctrl_part_unbuf"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-reverse-opentitan-clkmgr_root_ctrl-prim_clock_gating_sync",
-    "gold": "clkmgr_root_ctrl",
-    "prediction_top1": "clkmgr_root_ctrl",
-    "prediction_top5": [
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
+      "pwrmgr",
+      "pwrmgr",
+      "pwrmgr",
+      "csrng_block_encrypt",
       "ibex_ex_block"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-reverse-opentitan-clkmgr_meas_chk-prim_clock_meas",
-    "gold": "clkmgr_meas_chk",
-    "prediction_top1": "clkmgr_meas_chk",
-    "prediction_top5": [
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "ibex_ex_block"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-reverse-ibex-prim_sha2_32-prim_sha2",
-    "gold": "prim_sha2_32",
-    "prediction_top1": "ibex_ex_block",
-    "prediction_top5": [
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "prim_sha2_32",
-      "prim_sha2_32",
-      "ibex_if_stage"
-    ],
-    "gold_rank": 3
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-multihop-opentitan-entropy_src_core",
-    "gold": "entropy_src_core",
-    "prediction_top1": "clkmgr",
-    "prediction_top5": [
-      "clkmgr",
-      "clkmgr",
-      "clkmgr",
-      "clkmgr_trans",
-      "clkmgr_trans"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-multihop-opentitan-clkmgr",
-    "gold": "clkmgr",
-    "prediction_top1": "spi_device",
-    "prediction_top5": [
-      "spi_device",
-      "clkmgr",
-      "clkmgr",
-      "clkmgr",
-      "aon_clk"
-    ],
-    "gold_rank": 2
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-multihop-opentitan-ast_clks_byp",
-    "gold": "ast_clks_byp",
-    "prediction_top1": "ast_clks_byp",
-    "prediction_top5": [
-      "ast_clks_byp",
-      "ast",
-      "ast",
-      "spi_device",
-      "aon_clk"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-multihop-opentitan-spi_device",
-    "gold": "spi_device",
-    "prediction_top1": "spi_device",
-    "prediction_top5": [
-      "spi_device",
-      "racl_ctrl",
-      "sram_ctrl",
-      "spi_host",
-      "mbx"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-multihop-opentitan-top_darjeeling",
-    "gold": "top_darjeeling",
-    "prediction_top1": "top_darjeeling",
-    "prediction_top5": [
-      "top_darjeeling",
-      "top_earlgrey",
-      "top_englishbreakfast",
-      "aes_sbox_masked_wrapper",
-      "prim_pad_wrapper"
     ],
     "gold_rank": 1
   },
@@ -1765,31 +1695,73 @@
   },
   {
     "mode": "baseline",
-    "id": "hard-multihop-opentitan-dma",
-    "gold": "dma",
-    "prediction_top1": "flash_ctrl_lcmgr",
+    "id": "hard-multihop-opentitan-top_darjeeling",
+    "gold": "top_darjeeling",
+    "prediction_top1": "top_darjeeling",
     "prediction_top5": [
-      "flash_ctrl_lcmgr",
-      "flash_ctrl_lcmgr",
-      "flash_ctrl_lcmgr",
-      "otp_ctrl_dai",
-      "otp_ctrl_dai"
+      "top_darjeeling",
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "aes_sbox_masked_wrapper",
+      "prim_pad_wrapper"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-multihop-opentitan-ast",
-    "gold": "ast",
+    "id": "hard-multihop-opentitan-spi_device",
+    "gold": "spi_device",
     "prediction_top1": "spi_device",
     "prediction_top5": [
       "spi_device",
-      "clkmgr",
-      "clkmgr",
-      "clkmgr",
-      "pwrmgr"
+      "entropy_src_core",
+      "sensor_ctrl",
+      "aon_timer",
+      "csrng_core"
     ],
-    "gold_rank": null
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-multihop-opentitan-top_englishbreakfast",
+    "gold": "top_englishbreakfast",
+    "prediction_top1": "top_earlgrey",
+    "prediction_top5": [
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "top_darjeeling",
+      "pinmux",
+      "pinmux"
+    ],
+    "gold_rank": 2
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-multihop-opentitan-flash_ctrl",
+    "gold": "flash_ctrl",
+    "prediction_top1": "flash_ctrl",
+    "prediction_top5": [
+      "flash_ctrl",
+      "flash_ctrl",
+      "flash_mp",
+      "flash_mp",
+      "flash_mp"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-multihop-opentitan-entropy_src_core",
+    "gold": "entropy_src_core",
+    "prediction_top1": "entropy_src_core",
+    "prediction_top5": [
+      "entropy_src_core",
+      "csrng_core",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk"
+    ],
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
@@ -1809,67 +1781,53 @@
     "mode": "baseline",
     "id": "hard-multihop-opentitan-rv_core_ibex",
     "gold": "rv_core_ibex",
-    "prediction_top1": "lc_ctrl",
+    "prediction_top1": "pwrmgr",
     "prediction_top5": [
+      "pwrmgr",
+      "pwrmgr",
+      "pwrmgr",
       "lc_ctrl",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "pwrmgr"
+      "rv_core_ibex"
     ],
-    "gold_rank": 2
+    "gold_rank": 5
   },
   {
     "mode": "baseline",
-    "id": "hard-multihop-opentitan-usbdev",
-    "gold": "usbdev",
-    "prediction_top1": "entropy_src_core",
+    "id": "hard-multihop-opentitan-rv_dm",
+    "gold": "rv_dm",
+    "prediction_top1": "rv_dm",
     "prediction_top5": [
-      "entropy_src_core",
-      "hmac",
-      "flash_ctrl",
-      "flash_ctrl",
-      "otp_ctrl"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-multihop-opentitan-flash_ctrl",
-    "gold": "flash_ctrl",
-    "prediction_top1": "flash_ctrl",
-    "prediction_top5": [
-      "flash_ctrl",
-      "flash_ctrl",
-      "flash_phy",
-      "flash_phy",
-      "flash_phy"
+      "rv_dm",
+      "lc_ctrl",
+      "sram_ctrl",
+      "aes",
+      "rv_core_ibex"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-multihop-opentitan-otbn_alu_bignum",
-    "gold": "otbn_alu_bignum",
-    "prediction_top1": "otbn_rf_bignum_ff",
+    "id": "hard-multihop-opentitan-keymgr_dpe",
+    "gold": "keymgr_dpe",
+    "prediction_top1": "keymgr_dpe",
     "prediction_top5": [
-      "otbn_rf_bignum_ff",
-      "otbn_alu_bignum",
-      "otbn_vec_shifter",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper"
+      "keymgr_dpe",
+      "keymgr",
+      "keymgr_dpe_ctrl",
+      "sensor_ctrl",
+      "kmac_app"
     ],
-    "gold_rank": 2
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-multihop-opentitan-ibex_cs_registers",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
+    "id": "hard-multihop-opentitan-prim_sdc_example",
+    "gold": "prim_sdc_example",
+    "prediction_top1": "prim_sdc_example",
     "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "prim_pad_wrapper",
+      "prim_sdc_example",
+      "prim_sec_anchor_const",
+      "lc_ctrl",
       "prim_pad_wrapper",
       "prim_pad_wrapper"
     ],
@@ -1877,71 +1835,57 @@
   },
   {
     "mode": "baseline",
-    "id": "hard-multihop-ibex-ibex_cs_registers",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
-    "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-semantic-opentitan-entropy_src_core-prim_buf",
-    "gold": "entropy_src_core",
-    "prediction_top1": "entropy_src_core",
-    "prediction_top5": [
-      "entropy_src_core",
-      "pinmux_strap_sampling",
-      "pinmux_strap_sampling",
-      "pinmux_strap_sampling",
-      "pwrmgr"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-semantic-opentitan-clkmgr-clkmgr_trans",
+    "id": "hard-multihop-opentitan-clkmgr",
     "gold": "clkmgr",
     "prediction_top1": "clkmgr",
     "prediction_top5": [
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "top_darjeeling",
-      "top_earlgrey"
+      "spi_device",
+      "ast_clks_byp"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-semantic-opentitan-spi_device-prim_alert_sender",
-    "gold": "spi_device",
-    "prediction_top1": "uart",
+    "id": "hard-multihop-opentitan-keymgr",
+    "gold": "keymgr",
+    "prediction_top1": "keymgr",
     "prediction_top5": [
-      "uart",
-      "soc_proxy",
-      "uart_core",
-      "ac_range_check",
-      "adc_ctrl"
+      "keymgr",
+      "keymgr_dpe",
+      "sensor_ctrl",
+      "kmac_app",
+      "aes_core"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-semantic-opentitan-top_darjeeling-xbar_dbg",
-    "gold": "top_darjeeling",
-    "prediction_top1": "top_darjeeling",
+    "id": "hard-multihop-opentitan-otbn",
+    "gold": "otbn",
+    "prediction_top1": "clkmgr_byp",
     "prediction_top5": [
-      "top_darjeeling",
-      "uart_tx",
-      "usb_fs_tx",
-      "usb_fs_tx_mux",
-      "top_earlgrey"
+      "clkmgr_byp",
+      "clkmgr_byp",
+      "clkmgr_byp",
+      "clkmgr_byp",
+      "otbn"
+    ],
+    "gold_rank": 5
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-multihop-opentitan-sram_ctrl",
+    "gold": "sram_ctrl",
+    "prediction_top1": "sram_ctrl",
+    "prediction_top5": [
+      "sram_ctrl",
+      "sensor_ctrl",
+      "aes_core",
+      "rv_core_ibex",
+      "rv_core_ibex"
     ],
     "gold_rank": 1
   },
@@ -1961,36 +1905,134 @@
   },
   {
     "mode": "baseline",
-    "id": "hard-semantic-opentitan-dma-prim_flop",
-    "gold": "dma",
-    "prediction_top1": "flash_ctrl_lcmgr",
+    "id": "hard-semantic-opentitan-top_darjeeling-xbar_dbg",
+    "gold": "top_darjeeling",
+    "prediction_top1": "top_darjeeling",
     "prediction_top5": [
-      "flash_ctrl_lcmgr",
-      "flash_ctrl_lcmgr",
-      "flash_ctrl_lcmgr",
-      "otp_ctrl_dai",
-      "otp_ctrl_dai"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-semantic-opentitan-ast-ast_dft",
-    "gold": "ast",
-    "prediction_top1": "ast",
-    "prediction_top5": [
-      "ast",
-      "ast",
+      "top_darjeeling",
+      "soc_dbg_ctrl",
       "top_earlgrey",
       "top_englishbreakfast",
-      "usb_clk"
+      "chip_darjeeling_asic"
     ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-semantic-opentitan-otp_ctrl-prim_lc_sender",
+    "id": "hard-semantic-opentitan-spi_device-spi_device_reg_top",
+    "gold": "spi_device",
+    "prediction_top1": "spi_device",
+    "prediction_top5": [
+      "spi_device",
+      "spi_host",
+      "top_darjeeling",
+      "top_earlgrey",
+      "top_englishbreakfast"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-semantic-opentitan-top_englishbreakfast-xbar_peri",
+    "gold": "top_englishbreakfast",
+    "prediction_top1": "top_darjeeling",
+    "prediction_top5": [
+      "top_darjeeling",
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "rv_core_ibex_peri",
+      "rv_core_ibex_peri"
+    ],
+    "gold_rank": 3
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-semantic-opentitan-flash_ctrl-tlul_rsp_intg_chk",
+    "gold": "flash_ctrl",
+    "prediction_top1": "uart_reg_top",
+    "prediction_top5": [
+      "uart_reg_top",
+      "uart",
+      "flash_ctrl",
+      "flash_ctrl",
+      "sram_ctrl"
+    ],
+    "gold_rank": 3
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-semantic-opentitan-entropy_src_core-prim_buf",
+    "gold": "entropy_src_core",
+    "prediction_top1": "otbn_loop_controller",
+    "prediction_top5": [
+      "otbn_loop_controller",
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "prim_sec_anchor_buf"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-semantic-opentitan-otp_ctrl-prim_flop",
     "gold": "otp_ctrl",
+    "prediction_top1": "prim_diff_encode",
+    "prediction_top5": [
+      "prim_diff_encode",
+      "prim_diff_encode",
+      "flash_ctrl",
+      "flash_ctrl",
+      "prim_sec_anchor_flop"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-semantic-opentitan-rv_core_ibex-tlul_err_resp",
+    "gold": "rv_core_ibex",
+    "prediction_top1": "tlul_lc_gate",
+    "prediction_top5": [
+      "tlul_lc_gate",
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "mbx_sramrwarb"
+    ],
+    "gold_rank": 2
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-semantic-opentitan-rv_dm-dm_top",
+    "gold": "rv_dm",
+    "prediction_top1": "rv_dm",
+    "prediction_top5": [
+      "rv_dm",
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "top_darjeeling"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-semantic-opentitan-keymgr_dpe-prim_alert_sender",
+    "gold": "keymgr_dpe",
+    "prediction_top1": "sensor_ctrl",
+    "prediction_top5": [
+      "sensor_ctrl",
+      "keymgr",
+      "keymgr_dpe",
+      "prim_diff_to_alert",
+      "soc_proxy"
+    ],
+    "gold_rank": 3
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-semantic-opentitan-prim_sdc_example-prim_lc_sender",
+    "gold": "prim_sdc_example",
     "prediction_top1": "otp_ctrl",
     "prediction_top5": [
       "otp_ctrl",
@@ -1999,29 +2041,43 @@
       "pinmux_strap_sampling",
       "pinmux_strap_sampling"
     ],
+    "gold_rank": null
+  },
+  {
+    "mode": "baseline",
+    "id": "hard-semantic-opentitan-clkmgr-clkmgr_trans",
+    "gold": "clkmgr",
+    "prediction_top1": "clkmgr",
+    "prediction_top5": [
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "top_darjeeling",
+      "top_earlgrey"
+    ],
     "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-semantic-opentitan-rv_core_ibex-tlul_err_resp",
-    "gold": "rv_core_ibex",
-    "prediction_top1": "usbdev",
+    "id": "hard-semantic-opentitan-keymgr-prim_alert_sender",
+    "gold": "keymgr",
+    "prediction_top1": "keymgr",
     "prediction_top5": [
-      "usbdev",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "aes_sbox_masked_wrapper"
+      "keymgr",
+      "keymgr_dpe",
+      "prim_diff_to_alert",
+      "sensor_ctrl",
+      "soc_proxy"
     ],
-    "gold_rank": 2
+    "gold_rank": 1
   },
   {
     "mode": "baseline",
-    "id": "hard-semantic-opentitan-usbdev-usbdev_counter",
-    "gold": "usbdev",
-    "prediction_top1": "usbdev",
+    "id": "hard-semantic-opentitan-otbn-otbn_core",
+    "gold": "otbn",
+    "prediction_top1": "otbn",
     "prediction_top5": [
-      "usbdev",
+      "otbn",
       "uart_tx",
       "usb_fs_tx",
       "usb_fs_tx_mux",
@@ -2031,73 +2087,31 @@
   },
   {
     "mode": "baseline",
-    "id": "hard-semantic-opentitan-flash_ctrl-tlul_rsp_intg_chk",
-    "gold": "flash_ctrl",
-    "prediction_top1": "flash_ctrl",
+    "id": "hard-semantic-opentitan-sram_ctrl-tlul_rsp_intg_chk",
+    "gold": "sram_ctrl",
+    "prediction_top1": "sram_ctrl",
     "prediction_top5": [
+      "sram_ctrl",
       "flash_ctrl",
       "flash_ctrl",
       "tlul_adapter_host",
-      "sram_ctrl",
       "tlul_adapter_tb_reqs"
     ],
     "gold_rank": 1
   },
   {
-    "mode": "baseline",
-    "id": "hard-semantic-opentitan-otbn_alu_bignum-otbn_vec_transposer",
-    "gold": "otbn_alu_bignum",
-    "prediction_top1": "otbn_alu_bignum",
+    "mode": "kg",
+    "id": "easy-name-ibex-bus",
+    "gold": "bus",
+    "prediction_top1": "i2c_bus_monitor",
     "prediction_top5": [
-      "otbn_alu_bignum",
-      "otbn",
-      "otbn_loop_controller",
-      "otbn_controller",
-      "otbn_rf_base"
+      "i2c_bus_monitor",
+      "bus",
+      "i2c_core",
+      "i2c_controller_fsm",
+      "i2c_target_fsm"
     ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-semantic-opentitan-ibex_cs_registers-ibex_csr",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
-    "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "ibex_id_stage",
-      "ibex_id_stage",
-      "ibex_if_stage"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-semantic-ibex-ibex_cs_registers-ibex_csr",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
-    "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "ibex_id_stage",
-      "ibex_id_stage",
-      "ibex_if_stage"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "baseline",
-    "id": "hard-semantic-opentitan-keymgr_dpe-prim_alert_sender",
-    "gold": "keymgr_dpe",
-    "prediction_top1": "ac_range_check",
-    "prediction_top5": [
-      "ac_range_check",
-      "adc_ctrl",
-      "aes",
-      "ascon",
-      "clkmgr"
-    ],
-    "gold_rank": null
+    "gold_rank": 2
   },
   {
     "mode": "kg",
@@ -2108,8 +2122,8 @@
       "clkgen_xil7series",
       "clkgen_xil7series",
       "clkgen_xil7series",
-      "chip_earlgrey_cw310",
-      "chip_englishbreakfast_cw305"
+      "usr_access_xil7series",
+      "clkgen_xil_ultrascale"
     ],
     "gold_rank": 1
   },
@@ -2135,9 +2149,23 @@
     "prediction_top5": [
       "ibex_branch_predict",
       "ibex_branch_predict",
+      "ibex_id_stage",
+      "ibex_cs_registers",
+      "ibex_ex_block"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-ibex_compressed_decoder",
+    "gold": "ibex_compressed_decoder",
+    "prediction_top1": "ibex_compressed_decoder",
+    "prediction_top5": [
+      "ibex_compressed_decoder",
+      "ibex_compressed_decoder",
       "ibex_if_stage",
       "ibex_if_stage",
-      "ibex_cs_registers"
+      "ibex_decoder"
     ],
     "gold_rank": 1
   },
@@ -2151,7 +2179,7 @@
       "ibex_controller",
       "ibex_id_stage",
       "ibex_id_stage",
-      "otbn_controller"
+      "i2c_controller_fsm"
     ],
     "gold_rank": 1
   },
@@ -2165,7 +2193,7 @@
       "ibex_counter",
       "ibex_cs_registers",
       "ibex_cs_registers",
-      "usbdev_counter"
+      "rom_ctrl_counter"
     ],
     "gold_rank": 1
   },
@@ -2179,7 +2207,7 @@
       "ibex_cs_registers",
       "ibex_counter",
       "ibex_csr",
-      "ibex_ex_block"
+      "ibex_top_tracing"
     ],
     "gold_rank": 1
   },
@@ -2199,15 +2227,29 @@
   },
   {
     "mode": "kg",
+    "id": "easy-name-ibex-ibex_decoder",
+    "gold": "ibex_decoder",
+    "prediction_top1": "ibex_decoder",
+    "prediction_top5": [
+      "ibex_decoder",
+      "ibex_decoder",
+      "ibex_compressed_decoder",
+      "ibex_compressed_decoder",
+      "ibex_id_stage"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
     "id": "easy-name-ibex-ibex_dummy_instr",
     "gold": "ibex_dummy_instr",
     "prediction_top1": "ibex_dummy_instr",
     "prediction_top5": [
       "ibex_dummy_instr",
       "ibex_dummy_instr",
+      "ibex_cs_registers",
       "ibex_if_stage",
-      "ibex_if_stage",
-      "ibex_cs_registers"
+      "ibex_wb_stage"
     ],
     "gold_rank": 1
   },
@@ -2221,7 +2263,7 @@
       "ibex_ex_block",
       "ibex_id_stage",
       "ibex_alu",
-      "ibex_multdiv_fast"
+      "ibex_if_stage"
     ],
     "gold_rank": 1
   },
@@ -2236,20 +2278,6 @@
       "ibex_prefetch_buffer",
       "ibex_prefetch_buffer",
       "otbn_instruction_fetch"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-ibex_icache",
-    "gold": "ibex_icache",
-    "prediction_top1": "ibex_icache",
-    "prediction_top5": [
-      "ibex_icache",
-      "ibex_icache",
-      "ibex_if_stage",
-      "ibex_if_stage",
-      "ibex_cs_registers"
     ],
     "gold_rank": 1
   },
@@ -2297,15 +2325,29 @@
   },
   {
     "mode": "kg",
+    "id": "easy-name-ibex-ibex_lockstep",
+    "gold": "ibex_lockstep",
+    "prediction_top1": "ibex_lockstep",
+    "prediction_top5": [
+      "ibex_lockstep",
+      "ibex_lockstep",
+      "ibex_top_tracing",
+      "ibex_cs_registers",
+      "ibex_ex_block"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
     "id": "easy-name-ibex-ibex_multdiv_fast",
     "gold": "ibex_multdiv_fast",
     "prediction_top1": "ibex_multdiv_fast",
     "prediction_top5": [
       "ibex_multdiv_fast",
       "ibex_multdiv_fast",
-      "ibex_ex_block",
       "ibex_multdiv_slow",
-      "ibex_ex_block"
+      "ibex_multdiv_slow",
+      "prim_sync_slow_fast"
     ],
     "gold_rank": 1
   },
@@ -2317,9 +2359,9 @@
     "prediction_top5": [
       "ibex_multdiv_slow",
       "ibex_multdiv_slow",
-      "ibex_ex_block",
       "ibex_multdiv_fast",
-      "ibex_ex_block"
+      "ibex_multdiv_fast",
+      "prim_sync_slow_fast"
     ],
     "gold_rank": 1
   },
@@ -2332,8 +2374,8 @@
       "ibex_pmp",
       "ibex_pmp",
       "ibex_cs_registers",
-      "ibex_cs_registers",
-      "ibex_if_stage"
+      "ibex_if_stage",
+      "ibex_cs_registers"
     ],
     "gold_rank": 1
   },
@@ -2345,23 +2387,9 @@
     "prediction_top5": [
       "ibex_prefetch_buffer",
       "ibex_prefetch_buffer",
-      "ibex_if_stage",
-      "ibex_if_stage",
-      "ibex_fetch_fifo"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-ibex_register_file_ff",
-    "gold": "ibex_register_file_ff",
-    "prediction_top1": "ibex_register_file_ff",
-    "prediction_top5": [
-      "ibex_register_file_ff",
-      "ibex_register_file_ff",
-      "ibex_register_file_fpga",
-      "ibex_register_file_latch",
-      "ibex_register_file_fpga"
+      "ibex_fetch_fifo",
+      "ibex_fetch_fifo",
+      "ibex_top_tracing"
     ],
     "gold_rank": 1
   },
@@ -2373,9 +2401,9 @@
     "prediction_top5": [
       "ibex_register_file_fpga",
       "ibex_register_file_fpga",
-      "ibex_register_file_ff",
       "ibex_register_file_latch",
-      "ibex_register_file_ff"
+      "ibex_register_file_latch",
+      "otbn_rf_base_fpga"
     ],
     "gold_rank": 1
   },
@@ -2387,9 +2415,51 @@
     "prediction_top5": [
       "ibex_register_file_latch",
       "ibex_register_file_latch",
-      "ibex_register_file_ff",
       "ibex_register_file_fpga",
-      "ibex_register_file_ff"
+      "ibex_register_file_fpga",
+      "spi_host_shift_register"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-ibex_simple_system",
+    "gold": "ibex_simple_system",
+    "prediction_top1": "ibex_simple_system",
+    "prediction_top5": [
+      "ibex_simple_system",
+      "prim_fifo_async_simple",
+      "ibex_top_tracing",
+      "ibex_top_tracing",
+      "prim_fifo_async_simple"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-ibex_top",
+    "gold": "ibex_top",
+    "prediction_top1": "ibex_top",
+    "prediction_top5": [
+      "ibex_top",
+      "ibex_top",
+      "ibex_top_tracing",
+      "ibex_top_tracing",
+      "ibex_cs_registers"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-ibex_top_tracing",
+    "gold": "ibex_top_tracing",
+    "prediction_top1": "ibex_top_tracing",
+    "prediction_top5": [
+      "ibex_top_tracing",
+      "ibex_top_tracing",
+      "ibex_simple_system",
+      "ibex_top",
+      "ibex_top"
     ],
     "gold_rank": 1
   },
@@ -2401,9 +2471,9 @@
     "prediction_top5": [
       "ibex_tracer",
       "ibex_tracer",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex"
+      "ibex_top_tracing",
+      "ibex_cs_registers",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
@@ -2418,6 +2488,34 @@
       "ibex_id_stage",
       "ibex_id_stage",
       "ibex_if_stage"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-prim_alert_receiver",
+    "gold": "prim_alert_receiver",
+    "prediction_top1": "prim_alert_receiver",
+    "prediction_top5": [
+      "prim_alert_receiver",
+      "prim_alert_receiver",
+      "prim_alert_to_diff",
+      "prim_alert_to_diff",
+      "prim_diff_to_alert"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-prim_alert_to_diff",
+    "gold": "prim_alert_to_diff",
+    "prediction_top1": "prim_alert_to_diff",
+    "prediction_top5": [
+      "prim_alert_to_diff",
+      "prim_alert_to_diff",
+      "prim_diff_to_alert",
+      "prim_diff_to_alert",
+      "prim_diff_encode"
     ],
     "gold_rank": 1
   },
@@ -2443,9 +2541,51 @@
     "prediction_top5": [
       "prim_arbiter_fixed",
       "prim_arbiter_fixed",
-      "prim_sram_arbiter",
-      "prim_sram_arbiter",
-      "prim_racl_error_arb"
+      "prim_racl_error_arb",
+      "prim_racl_error_arb",
+      "prim_sram_arbiter"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-prim_arbiter_ppc",
+    "gold": "prim_arbiter_ppc",
+    "prediction_top1": "prim_arbiter_ppc",
+    "prediction_top5": [
+      "prim_arbiter_ppc",
+      "prim_arbiter_ppc",
+      "prim_leading_one_ppc",
+      "prim_leading_one_ppc",
+      "prim_sram_arbiter"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-prim_arbiter_tree",
+    "gold": "prim_arbiter_tree",
+    "prediction_top1": "prim_arbiter_tree",
+    "prediction_top5": [
+      "prim_arbiter_tree",
+      "prim_arbiter_tree",
+      "prim_arbiter_tree_dup",
+      "prim_arbiter_tree_dup",
+      "prim_arbiter_fixed"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-prim_arbiter_tree_dup",
+    "gold": "prim_arbiter_tree_dup",
+    "prediction_top1": "prim_arbiter_tree_dup",
+    "prediction_top5": [
+      "prim_arbiter_tree_dup",
+      "prim_arbiter_tree_dup",
+      "prim_arbiter_tree",
+      "prim_arbiter_tree",
+      "prim_arbiter_fixed"
     ],
     "gold_rank": 1
   },
@@ -2479,29 +2619,15 @@
   },
   {
     "mode": "kg",
-    "id": "easy-name-ibex-prim_ascon_round",
-    "gold": "prim_ascon_round",
-    "prediction_top1": "prim_ascon_round",
-    "prediction_top5": [
-      "prim_ascon_round",
-      "prim_ascon_round",
-      "prim_ascon_round_tb",
-      "prim_ascon_round_tb",
-      "prim_ascon_duplex"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
     "id": "easy-name-ibex-prim_ascon_round_tb",
     "gold": "prim_ascon_round_tb",
     "prediction_top1": "prim_ascon_round_tb",
     "prediction_top5": [
       "prim_ascon_round_tb",
       "prim_ascon_round_tb",
-      "prim_ascon_round",
-      "prim_ascon_round",
-      "prim_ascon_duplex"
+      "prim_ascon_duplex",
+      "prim_ascon_duplex",
+      "ascon"
     ],
     "gold_rank": 1
   },
@@ -2513,9 +2639,23 @@
     "prediction_top5": [
       "prim_ascon_sbox",
       "prim_ascon_sbox",
-      "prim_ascon_round",
-      "prim_ascon_round",
-      "prim_ascon_duplex"
+      "prim_ascon_duplex",
+      "prim_ascon_duplex",
+      "ascon"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-prim_blanker",
+    "gold": "prim_blanker",
+    "prediction_top1": "prim_blanker",
+    "prediction_top5": [
+      "prim_blanker",
+      "prim_blanker",
+      "otbn",
+      "otbn_alu_bignum",
+      "otbn_mac_bignum"
     ],
     "gold_rank": 1
   },
@@ -2530,6 +2670,20 @@
       "prim_buf",
       "prim_buf",
       "prim_buf"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "easy-name-ibex-prim_cdc_rand_delay",
+    "gold": "prim_cdc_rand_delay",
+    "prediction_top1": "prim_cdc_rand_delay",
+    "prediction_top5": [
+      "prim_cdc_rand_delay",
+      "prim_cdc_rand_delay",
+      "prim_flop_2sync",
+      "prim_flop_2sync",
+      "prim_reg_cdc"
     ],
     "gold_rank": 1
   },
@@ -2556,8 +2710,8 @@
       "prim_clock_div",
       "prim_clock_div",
       "prim_clock_div",
-      "prim_clock_inv",
-      "prim_clock_inv"
+      "prim_clock_mux2",
+      "prim_clock_mux2"
     ],
     "gold_rank": 1
   },
@@ -2605,6 +2759,20 @@
   },
   {
     "mode": "kg",
+    "id": "easy-name-ibex-prim_clock_meas",
+    "gold": "prim_clock_meas",
+    "prediction_top1": "prim_clock_meas",
+    "prediction_top5": [
+      "prim_clock_meas",
+      "prim_clock_meas",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
     "id": "easy-name-ibex-prim_clock_mux2",
     "gold": "prim_clock_mux2",
     "prediction_top1": "prim_clock_mux2",
@@ -2619,183 +2787,15 @@
   },
   {
     "mode": "kg",
-    "id": "easy-name-ibex-prim_count",
-    "gold": "prim_count",
-    "prediction_top1": "prim_count",
+    "id": "easy-name-ibex-prim_clock_timeout",
+    "gold": "prim_clock_timeout",
+    "prediction_top1": "prim_clock_timeout",
     "prediction_top5": [
-      "prim_count",
-      "prim_count",
-      "prim_ascon_duplex",
-      "prim_ascon_duplex",
-      "kmac_entropy"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_crc32_sim",
-    "gold": "prim_crc32_sim",
-    "prediction_top1": "prim_crc32_sim",
-    "prediction_top5": [
-      "prim_crc32_sim",
-      "prim_crc32_sim",
-      "ascon_sim",
-      "otbn",
-      "prim_ascon_duplex"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_dom_and_2share",
-    "gold": "prim_dom_and_2share",
-    "prediction_top1": "prim_dom_and_2share",
-    "prediction_top5": [
-      "prim_dom_and_2share",
-      "prim_dom_and_2share",
-      "aes_dom_inverse_gf2p8",
-      "aes_dom_inverse_gf2p4",
-      "aes_dom_dep_mul_gf2pn_unopt"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_edge_detector",
-    "gold": "prim_edge_detector",
-    "prediction_top1": "prim_edge_detector",
-    "prediction_top5": [
-      "prim_edge_detector",
-      "prim_edge_detector",
-      "csrng_core",
-      "entropy_src_core",
-      "spi_device"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_fifo_async",
-    "gold": "prim_fifo_async",
-    "prediction_top1": "prim_fifo_async",
-    "prediction_top5": [
-      "prim_fifo_async",
-      "prim_fifo_async",
-      "tlul_fifo_async",
-      "prim_fifo_async_simple",
-      "prim_fifo_async_simple"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_fifo_async_simple",
-    "gold": "prim_fifo_async_simple",
-    "prediction_top1": "prim_fifo_async_simple",
-    "prediction_top5": [
-      "prim_fifo_async_simple",
-      "prim_fifo_async_simple",
-      "prim_fifo_async",
-      "prim_fifo_async",
-      "tlul_fifo_async"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_fifo_async_sram_adapter",
-    "gold": "prim_fifo_async_sram_adapter",
-    "prediction_top1": "prim_fifo_async_sram_adapter",
-    "prediction_top5": [
-      "prim_fifo_async_sram_adapter",
-      "prim_fifo_async_sram_adapter",
-      "prim_fifo_async",
-      "prim_fifo_async",
-      "tlul_fifo_async"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_fifo_sync",
-    "gold": "prim_fifo_sync",
-    "prediction_top1": "prim_fifo_sync",
-    "prediction_top5": [
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "tlul_fifo_sync",
-      "prim_fifo_sync_cnt",
-      "prim_fifo_sync_cnt"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_fifo_sync_cnt",
-    "gold": "prim_fifo_sync_cnt",
-    "prediction_top1": "prim_fifo_sync_cnt",
-    "prediction_top5": [
-      "prim_fifo_sync_cnt",
-      "prim_fifo_sync_cnt",
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "tlul_fifo_sync"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_filter",
-    "gold": "prim_filter",
-    "prediction_top1": "prim_filter",
-    "prediction_top5": [
-      "prim_filter",
-      "prim_filter",
-      "prim_filter_ctr",
-      "prim_filter_ctr",
-      "pinmux_wkup"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_filter_ctr",
-    "gold": "prim_filter_ctr",
-    "prediction_top1": "prim_filter_ctr",
-    "prediction_top5": [
-      "prim_filter_ctr",
-      "prim_filter_ctr",
-      "prim_filter",
-      "prim_filter",
-      "csrng_ctr_drbg"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_flash",
-    "gold": "prim_flash",
-    "prediction_top1": "prim_flash",
-    "prediction_top5": [
-      "prim_flash",
-      "prim_flash",
-      "flash_phy",
-      "flash_phy",
-      "flash_phy"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "easy-name-ibex-prim_flop",
-    "gold": "prim_flop",
-    "prediction_top1": "prim_flop",
-    "prediction_top5": [
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop",
-      "prim_flop"
+      "prim_clock_timeout",
+      "prim_clock_timeout",
+      "prim_clock_meas",
+      "prim_clock_meas",
+      "prim_clock_div"
     ],
     "gold_rank": 1
   },
@@ -2892,22 +2892,22 @@
       "chip_darjeeling_asic",
       "i2c_bus_monitor",
       "tlul_jtag_dtm",
-      "i2c_core",
+      "dmi_jtag",
       "pinmux_jtag_breakout"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "medium-parent-child-opentitan-chip_darjeeling_asic-padring",
+    "id": "medium-parent-child-opentitan-chip_darjeeling_asic-ast",
     "gold": "chip_darjeeling_asic",
     "prediction_top1": "chip_darjeeling_asic",
     "prediction_top5": [
       "chip_darjeeling_asic",
       "chip_earlgrey_asic",
+      "chip_darjeeling_verilator",
       "chip_earlgrey_cw310",
-      "chip_earlgrey_cw340",
-      "chip_englishbreakfast_cw305"
+      "chip_earlgrey_cw340"
     ],
     "gold_rank": 1
   },
@@ -2927,85 +2927,29 @@
   },
   {
     "mode": "kg",
-    "id": "medium-label-port-opentitan-i2c_target_fsm",
-    "gold": "i2c_target_fsm",
-    "prediction_top1": "spi_host_command_queue",
-    "prediction_top5": [
-      "spi_host_command_queue",
-      "ibex_ex_block",
-      "spi_host",
-      "ibex_ex_block",
-      "ibex_prefetch_buffer"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "kg",
-    "id": "medium-path-port-opentitan-i2c_target_fsm",
-    "gold": "i2c_target_fsm",
-    "prediction_top1": "i2c_target_fsm",
-    "prediction_top5": [
-      "i2c_target_fsm",
-      "i2c_core",
-      "i2c_controller_fsm",
-      "i2c_fifos",
-      "i2c_bus_monitor"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-label-port-opentitan-i2c_controller_fsm",
-    "gold": "i2c_controller_fsm",
-    "prediction_top1": "ibex_prefetch_buffer",
-    "prediction_top5": [
-      "ibex_prefetch_buffer",
-      "ibex_prefetch_buffer",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "spi_host_command_queue"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "kg",
-    "id": "medium-path-port-opentitan-i2c_controller_fsm",
-    "gold": "i2c_controller_fsm",
-    "prediction_top1": "i2c_controller_fsm",
-    "prediction_top5": [
-      "i2c_controller_fsm",
-      "i2c_core",
-      "i2c_target_fsm",
-      "i2c_fifos",
-      "flash_ctrl_region_cfg"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
     "id": "medium-label-port-opentitan-spi_device",
     "gold": "spi_device",
     "prediction_top1": "spi_host_command_queue",
     "prediction_top5": [
       "spi_host_command_queue",
+      "csrng_block_encrypt",
       "ibex_ex_block",
-      "spi_host",
       "ibex_ex_block",
-      "ibex_prefetch_buffer"
+      "spi_host"
     ],
     "gold_rank": null
   },
   {
     "mode": "kg",
-    "id": "medium-parent-child-opentitan-spi_device-prim_racl_error_arb",
+    "id": "medium-parent-child-opentitan-spi_device-prim_buf",
     "gold": "spi_device",
     "prediction_top1": "spi_device",
     "prediction_top5": [
       "spi_device",
+      "spi_device_reg_top",
+      "spi_s2p",
       "spi_host",
-      "racl_ctrl",
-      "sram_ctrl",
-      "mbx"
+      "spi_passthrough"
     ],
     "gold_rank": 1
   },
@@ -3013,13 +2957,13 @@
     "mode": "kg",
     "id": "medium-label-port-opentitan-sha3",
     "gold": "sha3",
-    "prediction_top1": "prim_fifo_sync",
+    "prediction_top1": "ibex_prefetch_buffer",
     "prediction_top5": [
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "tlul_fifo_sync",
-      "prim_fifo_sync_cnt",
-      "ibex_fetch_fifo"
+      "ibex_prefetch_buffer",
+      "ibex_prefetch_buffer",
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "i2c_fifo_sync_sram_adapter"
     ],
     "gold_rank": null
   },
@@ -3030,9 +2974,9 @@
     "prediction_top1": "sha3",
     "prediction_top5": [
       "sha3",
+      "kmac_reduced",
       "entropy_src_core",
       "kmac",
-      "entropy_src_main_sm",
       "kmac_app"
     ],
     "gold_rank": 1
@@ -3053,43 +2997,85 @@
   },
   {
     "mode": "kg",
-    "id": "medium-label-port-opentitan-i2c_fifos",
-    "gold": "i2c_fifos",
-    "prediction_top1": "ibex_prefetch_buffer",
+    "id": "medium-label-port-opentitan-i2c_core",
+    "gold": "i2c_core",
+    "prediction_top1": "spi_host_command_queue",
     "prediction_top5": [
-      "ibex_prefetch_buffer",
-      "ibex_prefetch_buffer",
+      "spi_host_command_queue",
+      "csrng_block_encrypt",
       "ibex_ex_block",
       "ibex_ex_block",
-      "spi_host_command_queue"
+      "spi_host"
     ],
     "gold_rank": null
   },
   {
     "mode": "kg",
-    "id": "medium-parent-child-opentitan-i2c_fifos-i2c_fifo_sync_sram_adapter",
-    "gold": "i2c_fifos",
-    "prediction_top1": "i2c_fifos",
+    "id": "medium-parent-child-opentitan-i2c_core-i2c_fifos",
+    "gold": "i2c_core",
+    "prediction_top1": "i2c_core",
     "prediction_top5": [
-      "i2c_fifos",
       "i2c_core",
-      "spi_host_data_fifos",
-      "spi_tpm",
-      "otp_ctrl"
+      "rv_core_ibex_cfg_reg_top",
+      "rv_core_ibex_cfg_reg_top",
+      "rv_core_ibex_cfg_reg_top",
+      "aes_core"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "medium-path-port-opentitan-i2c_fifos",
-    "gold": "i2c_fifos",
-    "prediction_top1": "i2c_fifos",
+    "id": "medium-path-port-opentitan-i2c_core",
+    "gold": "i2c_core",
+    "prediction_top1": "i2c_core",
     "prediction_top5": [
-      "i2c_fifos",
       "i2c_core",
-      "i2c_target_fsm",
+      "flash_ctrl_region_cfg",
+      "flash_ctrl_region_cfg",
+      "flash_mp_data_region_sel",
+      "flash_mp_data_region_sel"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-label-port-opentitan-spi_host_data_fifos",
+    "gold": "spi_host_data_fifos",
+    "prediction_top1": "i2c_fifo_sync_sram_adapter",
+    "prediction_top5": [
+      "i2c_fifo_sync_sram_adapter",
+      "tlul_fifo_sync",
+      "prim_fifo_sync",
+      "ibex_fetch_fifo",
+      "prim_packer_fifo"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "kg",
+    "id": "medium-parent-child-opentitan-spi_host_data_fifos-prim_fifo_sync",
+    "gold": "spi_host_data_fifos",
+    "prediction_top1": "spi_host_data_fifos",
+    "prediction_top5": [
       "spi_host_data_fifos",
-      "i2c_controller_fsm"
+      "spi_host_command_queue",
+      "spi_host",
+      "spi_host_core",
+      "spi_host_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-path-port-opentitan-spi_host_data_fifos",
+    "gold": "spi_host_data_fifos",
+    "prediction_top1": "spi_host_data_fifos",
+    "prediction_top5": [
+      "spi_host_data_fifos",
+      "spi_host",
+      "spi_host_core",
+      "spi_host_command_queue",
+      "spi_host_reg_top"
     ],
     "gold_rank": 1
   },
@@ -3097,13 +3083,13 @@
     "mode": "kg",
     "id": "medium-label-port-opentitan-otp_ctrl",
     "gold": "otp_ctrl",
-    "prediction_top1": "ibex_ex_block",
+    "prediction_top1": "csrng_block_encrypt",
     "prediction_top5": [
+      "csrng_block_encrypt",
       "ibex_ex_block",
       "ibex_ex_block",
-      "pinmux_strap_sampling",
-      "pinmux_strap_sampling",
-      "pinmux_strap_sampling"
+      "ibex_lockstep",
+      "ibex_top"
     ],
     "gold_rank": null
   },
@@ -3123,13 +3109,97 @@
   },
   {
     "mode": "kg",
+    "id": "medium-label-port-opentitan-spi_host_fsm",
+    "gold": "spi_host_fsm",
+    "prediction_top1": "ibex_prefetch_buffer",
+    "prediction_top5": [
+      "ibex_prefetch_buffer",
+      "ibex_prefetch_buffer",
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "i2c_fifo_sync_sram_adapter"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "kg",
+    "id": "medium-parent-child-opentitan-spi_host_fsm-prim_flop_en",
+    "gold": "spi_host_fsm",
+    "prediction_top1": "spi_host_fsm",
+    "prediction_top5": [
+      "spi_host_fsm",
+      "spi_host_core",
+      "spi_host",
+      "spi_host_command_queue",
+      "spi_host_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-path-port-opentitan-spi_host_fsm",
+    "gold": "spi_host_fsm",
+    "prediction_top1": "spi_host_fsm",
+    "prediction_top5": [
+      "spi_host_fsm",
+      "spi_host_core",
+      "spi_host",
+      "spi_host_command_queue",
+      "spi_host_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-label-port-opentitan-spi_host_core",
+    "gold": "spi_host_core",
+    "prediction_top1": "spi_host_command_queue",
+    "prediction_top5": [
+      "spi_host_command_queue",
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "spi_host"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "kg",
+    "id": "medium-parent-child-opentitan-spi_host_core-spi_host_byte_merge",
+    "gold": "spi_host_core",
+    "prediction_top1": "spi_host_core",
+    "prediction_top5": [
+      "spi_host_core",
+      "spi_host",
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "rv_core_ibex"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-path-port-opentitan-spi_host_core",
+    "gold": "spi_host_core",
+    "prediction_top1": "spi_host_core",
+    "prediction_top5": [
+      "spi_host_core",
+      "spi_host",
+      "spi_host_fsm",
+      "spi_host_command_queue",
+      "spi_host_reg_top"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
     "id": "medium-label-port-opentitan-soc_proxy",
     "gold": "soc_proxy",
-    "prediction_top1": "i2c_core",
+    "prediction_top1": "i2c_bus_monitor",
     "prediction_top5": [
-      "i2c_core",
-      "i2c_fifos",
       "i2c_bus_monitor",
+      "bus",
+      "i2c_core",
       "i2c_controller_fsm",
       "i2c_target_fsm"
     ],
@@ -3142,94 +3212,94 @@
     "prediction_top1": "soc_proxy",
     "prediction_top5": [
       "soc_proxy",
+      "soc_proxy_core_reg_top",
+      "soc_proxy_ctn_reg_top",
       "chip_darjeeling_asic",
-      "chip_darjeeling_verilator",
-      "soc_dbg_ctrl",
-      "top_darjeeling"
+      "xbar_main"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "medium-label-port-opentitan-i2c_core",
-    "gold": "i2c_core",
-    "prediction_top1": "spi_host_command_queue",
+    "id": "medium-label-port-opentitan-tlul_adapter_sram_racl",
+    "gold": "tlul_adapter_sram_racl",
+    "prediction_top1": "i2c_fifo_sync_sram_adapter",
     "prediction_top5": [
-      "spi_host_command_queue",
-      "ibex_ex_block",
-      "spi_host",
-      "ibex_ex_block",
-      "ibex_prefetch_buffer"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "kg",
-    "id": "medium-parent-child-opentitan-i2c_core-i2c_fifos",
-    "gold": "i2c_core",
-    "prediction_top1": "i2c_core",
-    "prediction_top5": [
-      "i2c_core",
-      "aes_core",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-path-port-opentitan-i2c_core",
-    "gold": "i2c_core",
-    "prediction_top1": "i2c_core",
-    "prediction_top5": [
-      "i2c_core",
-      "i2c_fifos",
-      "i2c_bus_monitor",
-      "i2c_controller_fsm",
-      "i2c_target_fsm"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-label-port-opentitan-spi_host_data_fifos",
-    "gold": "spi_host_data_fifos",
-    "prediction_top1": "prim_fifo_sync",
-    "prediction_top5": [
-      "prim_fifo_sync",
-      "prim_fifo_sync",
+      "i2c_fifo_sync_sram_adapter",
       "tlul_fifo_sync",
-      "prim_fifo_sync_cnt",
-      "ibex_fetch_fifo"
+      "prim_fifo_sync",
+      "ibex_fetch_fifo",
+      "prim_packer_fifo"
     ],
     "gold_rank": null
   },
   {
     "mode": "kg",
-    "id": "medium-parent-child-opentitan-spi_host_data_fifos-prim_fifo_sync",
-    "gold": "spi_host_data_fifos",
-    "prediction_top1": "spi_host_data_fifos",
+    "id": "medium-parent-child-opentitan-tlul_adapter_sram_racl-tlul_adapter_racl",
+    "gold": "tlul_adapter_sram_racl",
+    "prediction_top1": "tlul_adapter_sram_racl",
     "prediction_top5": [
-      "spi_host_data_fifos",
-      "spi_host",
-      "spi_host_command_queue",
-      "spi_tpm",
-      "spi_host_window"
+      "tlul_adapter_sram_racl",
+      "sram_ctrl",
+      "sram_ctrl_regs_reg_top",
+      "spi_device",
+      "tlul_adapter_sram"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "medium-path-port-opentitan-spi_host_data_fifos",
-    "gold": "spi_host_data_fifos",
-    "prediction_top1": "spi_host_data_fifos",
+    "id": "medium-path-port-opentitan-tlul_adapter_sram_racl",
+    "gold": "tlul_adapter_sram_racl",
+    "prediction_top1": "tlul_adapter_sram_racl",
     "prediction_top5": [
-      "spi_host_data_fifos",
-      "spi_host",
-      "spi_host_window",
-      "spi_host_command_queue",
-      "spi_host_shift_register"
+      "tlul_adapter_sram_racl",
+      "tlul_adapter_racl",
+      "sram_ctrl",
+      "tlul_adapter_reg_racl",
+      "tlul_adapter_sram"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-label-port-opentitan-tlul_adapter_sram",
+    "gold": "tlul_adapter_sram",
+    "prediction_top1": "i2c_fifo_sync_sram_adapter",
+    "prediction_top5": [
+      "i2c_fifo_sync_sram_adapter",
+      "tlul_fifo_sync",
+      "prim_fifo_sync",
+      "ibex_fetch_fifo",
+      "prim_packer_fifo"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "kg",
+    "id": "medium-parent-child-opentitan-tlul_adapter_sram-tlul_err",
+    "gold": "tlul_adapter_sram",
+    "prediction_top1": "tlul_adapter_sram",
+    "prediction_top5": [
+      "tlul_adapter_sram",
+      "tlul_adapter_sram_racl",
+      "tlul_adapter_reg",
+      "tlul_adapter_dmi",
+      "i2c_fifo_sync_sram_adapter"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-path-port-opentitan-tlul_adapter_sram",
+    "gold": "tlul_adapter_sram",
+    "prediction_top1": "tlul_adapter_sram",
+    "prediction_top5": [
+      "tlul_adapter_sram",
+      "tlul_adapter_sram_racl",
+      "tlul_sram_byte",
+      "prim_fifo_async_sram_adapter",
+      "i2c_fifo_sync_sram_adapter"
     ],
     "gold_rank": 1
   },
@@ -3237,27 +3307,27 @@
     "mode": "kg",
     "id": "medium-label-port-opentitan-spi_host",
     "gold": "spi_host",
-    "prediction_top1": "prim_fifo_sync",
+    "prediction_top1": "spi_host_command_queue",
     "prediction_top5": [
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "tlul_fifo_sync",
-      "prim_fifo_sync_cnt",
-      "ibex_fetch_fifo"
+      "spi_host_command_queue",
+      "csrng_block_encrypt",
+      "ibex_ex_block",
+      "ibex_ex_block",
+      "spi_host"
     ],
-    "gold_rank": null
+    "gold_rank": 5
   },
   {
     "mode": "kg",
-    "id": "medium-parent-child-opentitan-spi_host-prim_racl_error_arb",
+    "id": "medium-parent-child-opentitan-spi_host-spi_host_reg_top",
     "gold": "spi_host",
     "prediction_top1": "spi_host",
     "prediction_top5": [
       "spi_host",
-      "spi_device",
-      "spi_host_command_queue",
-      "spi_host_window",
-      "racl_ctrl"
+      "spi_host_core",
+      "top_darjeeling",
+      "top_earlgrey",
+      "top_englishbreakfast"
     ],
     "gold_rank": 1
   },
@@ -3265,13 +3335,13 @@
     "mode": "kg",
     "id": "medium-label-port-opentitan-chip_darjeeling_verilator",
     "gold": "chip_darjeeling_verilator",
-    "prediction_top1": "i2c_bus_monitor",
+    "prediction_top1": "i2c_core",
     "prediction_top5": [
-      "i2c_bus_monitor",
       "i2c_core",
+      "i2c_reg_top",
+      "i2c_bus_monitor",
       "i2c_controller_fsm",
-      "i2c_target_fsm",
-      "i2c_fifos"
+      "i2c_target_fsm"
     ],
     "gold_rank": null
   },
@@ -3299,7 +3369,7 @@
       "chip_earlgrey_verilator",
       "spi_device",
       "chip_darjeeling_asic",
-      "top_darjeeling"
+      "spi_device_reg_top"
     ],
     "gold_rank": 1
   },
@@ -3310,10 +3380,10 @@
     "prediction_top1": "spi_host_command_queue",
     "prediction_top5": [
       "spi_host_command_queue",
+      "csrng_block_encrypt",
       "ibex_ex_block",
-      "spi_host",
       "ibex_ex_block",
-      "ibex_prefetch_buffer"
+      "spi_host"
     ],
     "gold_rank": null
   },
@@ -3325,9 +3395,9 @@
     "prediction_top5": [
       "spi_host_window",
       "spi_host",
-      "spi_device",
-      "spi_host_command_queue",
-      "mbx_sysif"
+      "spi_host_reg_top",
+      "spi_host_core",
+      "spi_device"
     ],
     "gold_rank": 1
   },
@@ -3339,233 +3409,121 @@
     "prediction_top5": [
       "spi_host_window",
       "spi_host",
-      "spi_host_command_queue",
-      "tlul_adapter_reg_racl",
-      "spi_device"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-label-port-opentitan-spi_p2s",
-    "gold": "spi_p2s",
-    "prediction_top1": "spi_host_command_queue",
-    "prediction_top5": [
-      "spi_host_command_queue",
-      "ibex_ex_block",
-      "spi_host",
-      "ibex_ex_block",
-      "ibex_prefetch_buffer"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "kg",
-    "id": "medium-path-port-opentitan-spi_p2s",
-    "gold": "spi_p2s",
-    "prediction_top1": "spi_p2s",
-    "prediction_top5": [
-      "spi_p2s",
-      "spi_device",
-      "spi_tpm",
-      "spid_jedec",
-      "spid_status"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-label-port-opentitan-usb_fs_nb_pe",
-    "gold": "usb_fs_nb_pe",
-    "prediction_top1": "ibex_prefetch_buffer",
-    "prediction_top5": [
-      "ibex_prefetch_buffer",
-      "ibex_prefetch_buffer",
-      "usb_fs_nb_out_pe",
-      "usb_fs_nb_pe",
-      "usb_fs_nb_in_pe"
-    ],
-    "gold_rank": 4
-  },
-  {
-    "mode": "kg",
-    "id": "medium-parent-child-opentitan-usb_fs_nb_pe-usb_fs_nb_in_pe",
-    "gold": "usb_fs_nb_pe",
-    "prediction_top1": "usb_fs_nb_pe",
-    "prediction_top5": [
-      "usb_fs_nb_pe",
-      "ast",
-      "usb_clk",
-      "chip_earlgrey_asic",
-      "usb_fs_tx"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-path-port-opentitan-usb_fs_nb_pe",
-    "gold": "usb_fs_nb_pe",
-    "prediction_top1": "usb_fs_nb_pe",
-    "prediction_top5": [
-      "usb_fs_nb_pe",
-      "usb_fs_nb_in_pe",
-      "usb_fs_nb_out_pe",
-      "usb_fs_tx",
-      "usb_fs_rx"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-label-port-opentitan-ast",
-    "gold": "ast",
-    "prediction_top1": "tlul_assert_multiple",
-    "prediction_top5": [
-      "tlul_assert_multiple",
-      "tlul_jtag_dtm",
-      "tlul_request_loopback",
-      "tlul_adapter_racl",
-      "tlul_err_resp"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "kg",
-    "id": "medium-parent-child-opentitan-ast-prim_clock_buf",
-    "gold": "ast",
-    "prediction_top1": "ast",
-    "prediction_top5": [
-      "ast",
-      "ast",
-      "ast_clks_byp",
-      "usb_clk",
-      "spi_device"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-label-port-opentitan-spi_tpm",
-    "gold": "spi_tpm",
-    "prediction_top1": "spi_host_command_queue",
-    "prediction_top5": [
-      "spi_host_command_queue",
-      "spi_tpm",
-      "usb_fs_nb_out_pe",
-      "spid_status",
-      "ibex_ex_block"
-    ],
-    "gold_rank": 2
-  },
-  {
-    "mode": "kg",
-    "id": "medium-parent-child-opentitan-spi_tpm-prim_edge_detector",
-    "gold": "spi_tpm",
-    "prediction_top1": "spi_tpm",
-    "prediction_top5": [
-      "spi_tpm",
-      "spi_device",
-      "csrng_core",
-      "entropy_src_core",
-      "sensor_ctrl"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-path-port-opentitan-spi_tpm",
-    "gold": "spi_tpm",
-    "prediction_top1": "spi_tpm",
-    "prediction_top5": [
-      "spi_tpm",
-      "spi_device",
-      "spi_host_command_queue",
-      "spi_host",
-      "spi_host_data_fifos"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "medium-label-port-opentitan-usbdev",
-    "gold": "usbdev",
-    "prediction_top1": "ibex_prefetch_buffer",
-    "prediction_top5": [
-      "ibex_prefetch_buffer",
-      "ibex_prefetch_buffer",
-      "ibex_ex_block",
-      "ibex_ex_block",
+      "spi_host_reg_top",
+      "spi_host_core",
       "spi_host_command_queue"
     ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-label-port-opentitan-xbar_peri",
+    "gold": "xbar_peri",
+    "prediction_top1": "xbar_peri",
+    "prediction_top5": [
+      "xbar_peri",
+      "xbar_peri",
+      "xbar_peri",
+      "rv_core_ibex_peri",
+      "rv_core_ibex_peri"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-parent-child-opentitan-xbar_peri-tlul_socket_1n",
+    "gold": "xbar_peri",
+    "prediction_top1": "xbar_peri",
+    "prediction_top5": [
+      "xbar_peri",
+      "xbar_peri",
+      "xbar_peri",
+      "xbar_dbg",
+      "xbar_main"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "medium-label-port-opentitan-uart_reg_top",
+    "gold": "uart_reg_top",
+    "prediction_top1": "i2c_fifo_sync_sram_adapter",
+    "prediction_top5": [
+      "i2c_fifo_sync_sram_adapter",
+      "tlul_fifo_sync",
+      "prim_fifo_sync",
+      "ibex_fetch_fifo",
+      "prim_packer_fifo"
+    ],
     "gold_rank": null
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-ibex-ibex_cs_registers-ibex_csr",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
+    "id": "medium-parent-child-opentitan-uart_reg_top-tlul_cmd_intg_chk",
+    "gold": "uart_reg_top",
+    "prediction_top1": "uart_reg_top",
     "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "ibex_id_stage"
+      "uart_reg_top",
+      "i2c_reg_top",
+      "alert_handler_reg_top",
+      "alert_handler_reg_top",
+      "ac_range_check_reg_top"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-opentitan-ast-ast_alert",
-    "gold": "ast",
-    "prediction_top1": "ast",
+    "id": "medium-path-port-opentitan-uart_reg_top",
+    "gold": "uart_reg_top",
+    "prediction_top1": "uart_reg_top",
     "prediction_top5": [
-      "ast",
-      "ast",
-      "adc_ctrl",
-      "flash_ctrl",
-      "flash_ctrl"
+      "uart_reg_top",
+      "uart",
+      "i2c_reg_top",
+      "alert_handler_reg_top",
+      "alert_handler_reg_top"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-opentitan-entropy_src_core-entropy_src_cntr_reg",
-    "gold": "entropy_src_core",
-    "prediction_top1": "entropy_src_core",
+    "id": "medium-label-port-opentitan-i2c_reg_top",
+    "gold": "i2c_reg_top",
+    "prediction_top1": "i2c_bus_monitor",
     "prediction_top5": [
-      "entropy_src_core",
-      "spi_host_command_queue",
-      "entropy_src",
-      "csrng_core",
-      "ast"
+      "i2c_bus_monitor",
+      "bus",
+      "i2c_core",
+      "i2c_controller_fsm",
+      "i2c_target_fsm"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "kg",
+    "id": "hard-reverse-opentitan-clkmgr_meas_chk-prim_clock_meas",
+    "gold": "clkmgr_meas_chk",
+    "prediction_top1": "clkmgr_meas_chk",
+    "prediction_top5": [
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "clkmgr"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-opentitan-clkmgr-clkmgr_root_ctrl",
+    "id": "hard-reverse-opentitan-clkmgr-clkmgr_clk_status",
     "gold": "clkmgr",
     "prediction_top1": "clkmgr",
     "prediction_top5": [
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "top_darjeeling",
-      "top_earlgrey"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-reverse-opentitan-rv_core_ibex-rv_core_ibex_addr_trans",
-    "gold": "rv_core_ibex",
-    "prediction_top1": "rv_core_ibex",
-    "prediction_top5": [
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "ibex_ex_block",
-      "top_darjeeling"
+      "csrng_block_encrypt",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
@@ -3578,36 +3536,36 @@
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "ibex_ex_block",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-opentitan-entropy_src_core-entropy_src_watermark_reg",
-    "gold": "entropy_src_core",
-    "prediction_top1": "entropy_src_core",
+    "id": "hard-reverse-opentitan-clkmgr-clkmgr_reg_top",
+    "gold": "clkmgr",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "entropy_src_core",
-      "entropy_src",
-      "ibex_prefetch_buffer",
-      "ibex_prefetch_buffer",
-      "csrng_core"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "csrng_block_encrypt",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-opentitan-top_darjeeling-mbx",
-    "gold": "top_darjeeling",
-    "prediction_top1": "top_darjeeling",
+    "id": "hard-reverse-opentitan-clkmgr-clkmgr_root_ctrl",
+    "gold": "clkmgr",
+    "prediction_top1": "clkmgr",
     "prediction_top5": [
-      "top_darjeeling",
-      "mbx_imbx",
-      "mbx_ombx",
-      "mbx_hostif",
-      "mbx_sysif"
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
     ],
     "gold_rank": 1
   },
@@ -3620,8 +3578,78 @@
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "ibex_ex_block",
+      "csrng_block_encrypt",
       "ibex_ex_block"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-reverse-opentitan-flash_phy_core-flash_phy_erase",
+    "gold": "flash_phy_core",
+    "prediction_top1": "flash_phy_core",
+    "prediction_top5": [
+      "flash_phy_core",
+      "flash_phy_core",
+      "flash_phy_core",
+      "flash_ctrl",
+      "flash_ctrl"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-reverse-opentitan-flash_phy_core-flash_phy_rd",
+    "gold": "flash_phy_core",
+    "prediction_top1": "flash_phy_core",
+    "prediction_top5": [
+      "flash_phy_core",
+      "flash_phy_core",
+      "flash_phy_core",
+      "flash_ctrl",
+      "flash_ctrl"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-reverse-opentitan-flash_phy_rd-flash_phy_rd_buf_dep",
+    "gold": "flash_phy_rd",
+    "prediction_top1": "flash_phy_rd",
+    "prediction_top5": [
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "spi_host_command_queue",
+      "flash_phy_core"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-reverse-opentitan-gpio-gpio_reg_top",
+    "gold": "gpio",
+    "prediction_top1": "gpio",
+    "prediction_top5": [
+      "gpio",
+      "gpio",
+      "gpio",
+      "csrng_block_encrypt",
+      "ibex_ex_block"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-reverse-opentitan-otp_ctrl_part_buf-otp_ctrl_ecc_reg",
+    "gold": "otp_ctrl_part_buf",
+    "prediction_top1": "otp_ctrl_part_buf",
+    "prediction_top5": [
+      "otp_ctrl_part_buf",
+      "otp_ctrl_part_buf",
+      "otp_ctrl_part_buf",
+      "otp_ctrl",
+      "otp_ctrl"
     ],
     "gold_rank": 1
   },
@@ -3641,211 +3669,113 @@
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-opentitan-clkmgr-clkmgr_clk_status",
-    "gold": "clkmgr",
-    "prediction_top1": "clkmgr",
+    "id": "hard-reverse-opentitan-pwrmgr-prim_clock_timeout",
+    "gold": "pwrmgr",
+    "prediction_top1": "pwrmgr",
     "prediction_top5": [
-      "clkmgr",
-      "clkmgr",
-      "clkmgr",
-      "ibex_ex_block",
+      "pwrmgr",
+      "pwrmgr",
+      "pwrmgr",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-reverse-opentitan-flash_phy-prim_flash",
+    "gold": "flash_phy",
+    "prediction_top1": "flash_phy",
+    "prediction_top5": [
+      "flash_phy",
+      "flash_phy",
+      "flash_phy",
+      "i2c_fifo_sync_sram_adapter",
+      "tlul_fifo_async"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-reverse-opentitan-otp_ctrl_scrmbl-prim_present",
+    "gold": "otp_ctrl_scrmbl",
+    "prediction_top1": "otp_ctrl_scrmbl",
+    "prediction_top5": [
+      "otp_ctrl_scrmbl",
+      "otp_ctrl_scrmbl",
+      "otp_ctrl_scrmbl",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-ibex-ibex_cs_registers-ibex_counter",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
+    "id": "hard-reverse-opentitan-flash_phy_rd-prim_secded_hamming_76_68_dec",
+    "gold": "flash_phy_rd",
+    "prediction_top1": "flash_phy_rd",
     "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "rom_ctrl_fsm"
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "flash_phy_prog",
+      "flash_phy_prog"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-opentitan-pinmux-prim_pad_attr",
-    "gold": "pinmux",
-    "prediction_top1": "pinmux",
+    "id": "hard-reverse-opentitan-flash_phy_prog-prim_secded_hamming_76_68_enc",
+    "gold": "flash_phy_prog",
+    "prediction_top1": "flash_phy_prog",
     "prediction_top5": [
-      "pinmux",
-      "pinmux",
-      "pinmux",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper"
+      "flash_phy_prog",
+      "flash_phy_prog",
+      "flash_phy_prog",
+      "spi_host_command_queue",
+      "flash_phy_rd"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-opentitan-rv_core_ibex-rv_core_ibex_cfg_reg_top",
-    "gold": "rv_core_ibex",
-    "prediction_top1": "rv_core_ibex",
+    "id": "hard-reverse-opentitan-otp_ctrl_ecc_reg-prim_secded_inv_72_64_enc",
+    "gold": "otp_ctrl_ecc_reg",
+    "prediction_top1": "otp_ctrl_ecc_reg",
     "prediction_top5": [
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "ibex_ex_block",
-      "top_darjeeling"
+      "otp_ctrl_ecc_reg",
+      "otp_ctrl_ecc_reg",
+      "otp_ctrl_ecc_reg",
+      "flash_phy_prog",
+      "flash_phy_prog"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-reverse-opentitan-ast_clks_byp-gfr_clk_mux2",
-    "gold": "ast_clks_byp",
-    "prediction_top1": "ast_clks_byp",
+    "id": "hard-reverse-opentitan-pwrmgr-pwrmgr_cdc",
+    "gold": "pwrmgr",
+    "prediction_top1": "pwrmgr",
     "prediction_top5": [
-      "ast_clks_byp",
-      "ibex_ex_block",
-      "ibex_ex_block",
-      "lc_ctrl",
-      "tlul_jtag_dtm"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-reverse-opentitan-i2c_fifos-i2c_fifo_sync_sram_adapter",
-    "gold": "i2c_fifos",
-    "prediction_top1": "i2c_fifos",
-    "prediction_top5": [
-      "i2c_fifos",
-      "spi_tpm",
-      "otp_ctrl",
-      "otp_ctrl",
-      "kmac"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-reverse-opentitan-otp_ctrl-otp_ctrl_part_buf",
-    "gold": "otp_ctrl",
-    "prediction_top1": "otp_ctrl",
-    "prediction_top5": [
-      "otp_ctrl",
-      "otp_ctrl",
-      "otp_ctrl_part_unbuf",
-      "otp_ctrl_part_unbuf",
-      "otp_ctrl_part_unbuf"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-reverse-opentitan-clkmgr_root_ctrl-prim_clock_gating_sync",
-    "gold": "clkmgr_root_ctrl",
-    "prediction_top1": "clkmgr_root_ctrl",
-    "prediction_top5": [
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "clkmgr_root_ctrl",
-      "ast_clks_byp"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-reverse-opentitan-clkmgr_meas_chk-prim_clock_meas",
-    "gold": "clkmgr_meas_chk",
-    "prediction_top1": "clkmgr_meas_chk",
-    "prediction_top5": [
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr_meas_chk",
-      "clkmgr"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-reverse-ibex-prim_sha2_32-prim_sha2",
-    "gold": "prim_sha2_32",
-    "prediction_top1": "prim_sha2_32",
-    "prediction_top5": [
-      "prim_sha2_32",
-      "prim_sha2_32",
-      "ibex_ex_block",
-      "ibex_if_stage",
+      "pwrmgr",
+      "pwrmgr",
+      "pwrmgr",
+      "csrng_block_encrypt",
       "ibex_ex_block"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-multihop-opentitan-entropy_src_core",
-    "gold": "entropy_src_core",
-    "prediction_top1": "clkmgr",
+    "id": "hard-reverse-opentitan-pwrmgr-pwrmgr_fsm",
+    "gold": "pwrmgr",
+    "prediction_top1": "pwrmgr",
     "prediction_top5": [
-      "clkmgr",
-      "clkmgr",
-      "clkmgr",
-      "clkmgr_trans",
-      "clkmgr_trans"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "kg",
-    "id": "hard-multihop-opentitan-clkmgr",
-    "gold": "clkmgr",
-    "prediction_top1": "spi_device",
-    "prediction_top5": [
-      "spi_device",
-      "clkmgr",
-      "clkmgr",
-      "clkmgr",
-      "aon_clk"
-    ],
-    "gold_rank": 2
-  },
-  {
-    "mode": "kg",
-    "id": "hard-multihop-opentitan-ast_clks_byp",
-    "gold": "ast_clks_byp",
-    "prediction_top1": "ast_clks_byp",
-    "prediction_top5": [
-      "ast_clks_byp",
-      "ast",
-      "ast",
-      "aon_clk",
-      "aon_clk"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-multihop-opentitan-spi_device",
-    "gold": "spi_device",
-    "prediction_top1": "spi_device",
-    "prediction_top5": [
-      "spi_device",
-      "racl_ctrl",
-      "sram_ctrl",
-      "spi_host",
-      "mbx"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-multihop-opentitan-top_darjeeling",
-    "gold": "top_darjeeling",
-    "prediction_top1": "top_darjeeling",
-    "prediction_top5": [
-      "top_darjeeling",
-      "top_earlgrey",
-      "top_englishbreakfast",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper"
+      "pwrmgr",
+      "pwrmgr",
+      "pwrmgr",
+      "csrng_block_encrypt",
+      "ibex_ex_block"
     ],
     "gold_rank": 1
   },
@@ -3865,31 +3795,73 @@
   },
   {
     "mode": "kg",
-    "id": "hard-multihop-opentitan-dma",
-    "gold": "dma",
-    "prediction_top1": "flash_ctrl_lcmgr",
+    "id": "hard-multihop-opentitan-top_darjeeling",
+    "gold": "top_darjeeling",
+    "prediction_top1": "top_darjeeling",
     "prediction_top5": [
-      "flash_ctrl_lcmgr",
-      "flash_ctrl_lcmgr",
-      "flash_ctrl_lcmgr",
-      "otp_ctrl_dai",
-      "otp_ctrl_dai"
+      "top_darjeeling",
+      "top_earlgrey",
+      "top_englishbreakfast",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-multihop-opentitan-ast",
-    "gold": "ast",
+    "id": "hard-multihop-opentitan-spi_device",
+    "gold": "spi_device",
     "prediction_top1": "spi_device",
     "prediction_top5": [
       "spi_device",
-      "clkmgr",
-      "clkmgr",
-      "clkmgr",
-      "pwrmgr"
+      "entropy_src_core",
+      "sensor_ctrl",
+      "aon_timer",
+      "csrng_core"
     ],
-    "gold_rank": null
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-multihop-opentitan-top_englishbreakfast",
+    "gold": "top_englishbreakfast",
+    "prediction_top1": "top_englishbreakfast",
+    "prediction_top5": [
+      "top_englishbreakfast",
+      "top_earlgrey",
+      "top_darjeeling",
+      "pinmux",
+      "pinmux"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-multihop-opentitan-flash_ctrl",
+    "gold": "flash_ctrl",
+    "prediction_top1": "flash_ctrl",
+    "prediction_top5": [
+      "flash_ctrl",
+      "flash_ctrl",
+      "flash_mp",
+      "flash_mp",
+      "flash_mp"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-multihop-opentitan-entropy_src_core",
+    "gold": "entropy_src_core",
+    "prediction_top1": "entropy_src_core",
+    "prediction_top5": [
+      "entropy_src_core",
+      "csrng_core",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk",
+      "clkmgr_meas_chk"
+    ],
+    "gold_rank": 1
   },
   {
     "mode": "kg",
@@ -3914,78 +3886,176 @@
       "rv_core_ibex",
       "rv_core_ibex",
       "rv_core_ibex",
-      "lc_ctrl",
+      "pwrmgr",
       "pwrmgr"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-multihop-opentitan-usbdev",
-    "gold": "usbdev",
-    "prediction_top1": "entropy_src_core",
+    "id": "hard-multihop-opentitan-rv_dm",
+    "gold": "rv_dm",
+    "prediction_top1": "rv_dm",
     "prediction_top5": [
-      "entropy_src_core",
-      "hmac",
-      "flash_ctrl",
-      "flash_ctrl",
-      "otp_ctrl"
+      "rv_dm",
+      "aes",
+      "lc_ctrl",
+      "sram_ctrl",
+      "rv_core_ibex"
     ],
-    "gold_rank": null
+    "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-multihop-opentitan-flash_ctrl",
+    "id": "hard-multihop-opentitan-keymgr_dpe",
+    "gold": "keymgr_dpe",
+    "prediction_top1": "keymgr_dpe",
+    "prediction_top5": [
+      "keymgr_dpe",
+      "keymgr",
+      "sensor_ctrl",
+      "keymgr_dpe_ctrl",
+      "prim_pad_wrapper"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-multihop-opentitan-prim_sdc_example",
+    "gold": "prim_sdc_example",
+    "prediction_top1": "prim_sdc_example",
+    "prediction_top5": [
+      "prim_sdc_example",
+      "prim_sec_anchor_const",
+      "lc_ctrl",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-multihop-opentitan-clkmgr",
+    "gold": "clkmgr",
+    "prediction_top1": "clkmgr",
+    "prediction_top5": [
+      "clkmgr",
+      "clkmgr",
+      "clkmgr",
+      "spi_device",
+      "ast_clks_byp"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-multihop-opentitan-keymgr",
+    "gold": "keymgr",
+    "prediction_top1": "keymgr",
+    "prediction_top5": [
+      "keymgr",
+      "keymgr_dpe",
+      "sensor_ctrl",
+      "prim_pad_wrapper",
+      "prim_pad_wrapper"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-multihop-opentitan-otbn",
+    "gold": "otbn",
+    "prediction_top1": "clkmgr_byp",
+    "prediction_top5": [
+      "clkmgr_byp",
+      "clkmgr_byp",
+      "clkmgr_byp",
+      "clkmgr_byp",
+      "otbn"
+    ],
+    "gold_rank": 5
+  },
+  {
+    "mode": "kg",
+    "id": "hard-multihop-opentitan-sram_ctrl",
+    "gold": "sram_ctrl",
+    "prediction_top1": "sram_ctrl",
+    "prediction_top5": [
+      "sram_ctrl",
+      "sensor_ctrl",
+      "aes_core",
+      "rv_core_ibex",
+      "rv_core_ibex"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-top_earlgrey-xbar_peri",
+    "gold": "top_earlgrey",
+    "prediction_top1": "top_earlgrey",
+    "prediction_top5": [
+      "top_earlgrey",
+      "top_darjeeling",
+      "top_englishbreakfast",
+      "i2c_fifo_sync_sram_adapter",
+      "i2c_core"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-top_darjeeling-xbar_dbg",
+    "gold": "top_darjeeling",
+    "prediction_top1": "top_darjeeling",
+    "prediction_top5": [
+      "top_darjeeling",
+      "i2c_fifo_sync_sram_adapter",
+      "prim_fifo_async_sram_adapter",
+      "tlul_fifo_async",
+      "prim_fifo_async_sram_adapter"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-spi_device-spi_device_reg_top",
+    "gold": "spi_device",
+    "prediction_top1": "spi_device",
+    "prediction_top5": [
+      "spi_device",
+      "i2c_fifo_sync_sram_adapter",
+      "i2c_core",
+      "top_earlgrey",
+      "spi_host"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-top_englishbreakfast-xbar_peri",
+    "gold": "top_englishbreakfast",
+    "prediction_top1": "top_englishbreakfast",
+    "prediction_top5": [
+      "top_englishbreakfast",
+      "top_darjeeling",
+      "top_earlgrey",
+      "i2c_fifo_sync_sram_adapter",
+      "pwrmgr_cdc"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-flash_ctrl-tlul_rsp_intg_chk",
     "gold": "flash_ctrl",
     "prediction_top1": "flash_ctrl",
     "prediction_top5": [
       "flash_ctrl",
       "flash_ctrl",
-      "flash_phy",
-      "flash_phy",
-      "flash_phy"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-multihop-opentitan-otbn_alu_bignum",
-    "gold": "otbn_alu_bignum",
-    "prediction_top1": "otbn_rf_bignum_ff",
-    "prediction_top5": [
-      "otbn_rf_bignum_ff",
-      "otbn_vec_shifter",
-      "otbn_alu_bignum",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper"
-    ],
-    "gold_rank": 3
-  },
-  {
-    "mode": "kg",
-    "id": "hard-multihop-opentitan-ibex_cs_registers",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
-    "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-multihop-ibex-ibex_cs_registers",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
-    "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper",
-      "prim_pad_wrapper"
+      "sram_ctrl",
+      "tlul_adapter_host",
+      "uart_reg_top"
     ],
     "gold_rank": 1
   },
@@ -3996,12 +4066,82 @@
     "prediction_top1": "tlul_fifo_sync",
     "prediction_top5": [
       "tlul_fifo_sync",
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "flash_phy_rd",
+      "rv_core_ibex"
+    ],
+    "gold_rank": null
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-otp_ctrl-prim_flop",
+    "gold": "otp_ctrl",
+    "prediction_top1": "otp_ctrl",
+    "prediction_top5": [
+      "otp_ctrl",
+      "otp_ctrl",
+      "prim_diff_encode",
+      "otp_ctrl_dai",
+      "otp_ctrl_dai"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-rv_core_ibex-tlul_err_resp",
+    "gold": "rv_core_ibex",
+    "prediction_top1": "tlul_lc_gate",
+    "prediction_top5": [
+      "tlul_lc_gate",
       "rv_core_ibex",
       "rv_core_ibex",
       "rv_core_ibex",
-      "entropy_src_core"
+      "i2c_fifo_sync_sram_adapter"
+    ],
+    "gold_rank": 2
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-rv_dm-dm_top",
+    "gold": "rv_dm",
+    "prediction_top1": "rv_dm",
+    "prediction_top5": [
+      "rv_dm",
+      "i2c_fifo_sync_sram_adapter",
+      "dmi_cdc",
+      "prim_fifo_async_sram_adapter",
+      "csrng_block_encrypt"
+    ],
+    "gold_rank": 1
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-keymgr_dpe-prim_alert_sender",
+    "gold": "keymgr_dpe",
+    "prediction_top1": "sensor_ctrl",
+    "prediction_top5": [
+      "sensor_ctrl",
+      "sram_ctrl",
+      "soc_proxy",
+      "keymgr",
+      "keymgr_dpe"
     ],
     "gold_rank": 5
+  },
+  {
+    "mode": "kg",
+    "id": "hard-semantic-opentitan-prim_sdc_example-prim_lc_sender",
+    "gold": "prim_sdc_example",
+    "prediction_top1": "otp_ctrl",
+    "prediction_top5": [
+      "otp_ctrl",
+      "otp_ctrl",
+      "rv_core_ibex",
+      "rv_core_ibex",
+      "rv_core_ibex"
+    ],
+    "gold_rank": null
   },
   {
     "mode": "kg",
@@ -4012,191 +4152,51 @@
       "clkmgr",
       "clkmgr",
       "clkmgr",
-      "prim_fifo_async_sram_adapter",
+      "i2c_fifo_sync_sram_adapter",
       "prim_fifo_async_sram_adapter"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-semantic-opentitan-spi_device-prim_alert_sender",
-    "gold": "spi_device",
-    "prediction_top1": "uart",
+    "id": "hard-semantic-opentitan-keymgr-prim_alert_sender",
+    "gold": "keymgr",
+    "prediction_top1": "sram_ctrl",
     "prediction_top5": [
-      "uart",
-      "kmac",
-      "hmac",
+      "sram_ctrl",
       "soc_proxy",
-      "flash_ctrl"
+      "keymgr",
+      "keymgr_dpe",
+      "sensor_ctrl"
     ],
-    "gold_rank": null
+    "gold_rank": 3
   },
   {
     "mode": "kg",
-    "id": "hard-semantic-opentitan-top_darjeeling-xbar_dbg",
-    "gold": "top_darjeeling",
-    "prediction_top1": "top_darjeeling",
+    "id": "hard-semantic-opentitan-otbn-otbn_core",
+    "gold": "otbn",
+    "prediction_top1": "otbn",
     "prediction_top5": [
-      "top_darjeeling",
+      "otbn",
       "uart_tx",
       "usb_fs_tx",
       "usb_fs_tx_mux",
-      "top_earlgrey"
+      "uart_core"
     ],
     "gold_rank": 1
   },
   {
     "mode": "kg",
-    "id": "hard-semantic-opentitan-top_earlgrey-xbar_peri",
-    "gold": "top_earlgrey",
-    "prediction_top1": "top_darjeeling",
+    "id": "hard-semantic-opentitan-sram_ctrl-tlul_rsp_intg_chk",
+    "gold": "sram_ctrl",
+    "prediction_top1": "sram_ctrl",
     "prediction_top5": [
-      "top_darjeeling",
-      "top_earlgrey",
-      "top_englishbreakfast",
-      "pwrmgr_cdc",
-      "pwrmgr_cdc"
-    ],
-    "gold_rank": 2
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-dma-prim_flop",
-    "gold": "dma",
-    "prediction_top1": "prim_fifo_sync",
-    "prediction_top5": [
-      "prim_fifo_sync",
-      "prim_fifo_sync",
-      "flash_ctrl",
-      "flash_ctrl",
-      "otp_ctrl"
-    ],
-    "gold_rank": null
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-ast-ast_dft",
-    "gold": "ast",
-    "prediction_top1": "ast",
-    "prediction_top5": [
-      "ast",
-      "ast",
-      "prim_fifo_async_sram_adapter",
-      "pwrmgr_cdc",
-      "pwrmgr_cdc"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-otp_ctrl-prim_lc_sender",
-    "gold": "otp_ctrl",
-    "prediction_top1": "otp_ctrl",
-    "prediction_top5": [
-      "otp_ctrl",
-      "otp_ctrl",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-rv_core_ibex-tlul_err_resp",
-    "gold": "rv_core_ibex",
-    "prediction_top1": "usbdev",
-    "prediction_top5": [
-      "usbdev",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "rv_core_ibex",
-      "aes_sbox_masked_wrapper"
-    ],
-    "gold_rank": 2
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-usbdev-usbdev_counter",
-    "gold": "usbdev",
-    "prediction_top1": "usbdev",
-    "prediction_top5": [
-      "usbdev",
-      "uart_tx",
-      "usb_fs_tx",
-      "usb_fs_tx_mux",
-      "top_earlgrey"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-flash_ctrl-tlul_rsp_intg_chk",
-    "gold": "flash_ctrl",
-    "prediction_top1": "tlul_adapter_host",
-    "prediction_top5": [
+      "sram_ctrl",
       "tlul_adapter_host",
       "flash_ctrl",
       "flash_ctrl",
-      "tlul_adapter_tb_reqs",
-      "tlul_adapter_vh"
-    ],
-    "gold_rank": 2
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-otbn_alu_bignum-otbn_vec_transposer",
-    "gold": "otbn_alu_bignum",
-    "prediction_top1": "otbn_alu_bignum",
-    "prediction_top5": [
-      "otbn_alu_bignum",
-      "otbn",
-      "prim_fifo_async_sram_adapter",
-      "pwrmgr_cdc",
-      "pwrmgr_cdc"
+      "tlul_adapter_tb_reqs"
     ],
     "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-ibex_cs_registers-ibex_csr",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
-    "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "prim_fifo_async_sram_adapter",
-      "prim_fifo_async_sram_adapter",
-      "ibex_id_stage"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-ibex-ibex_cs_registers-ibex_csr",
-    "gold": "ibex_cs_registers",
-    "prediction_top1": "ibex_cs_registers",
-    "prediction_top5": [
-      "ibex_cs_registers",
-      "ibex_cs_registers",
-      "prim_fifo_async_sram_adapter",
-      "rv_core_ibex",
-      "rv_core_ibex"
-    ],
-    "gold_rank": 1
-  },
-  {
-    "mode": "kg",
-    "id": "hard-semantic-opentitan-keymgr_dpe-prim_alert_sender",
-    "gold": "keymgr_dpe",
-    "prediction_top1": "kmac",
-    "prediction_top5": [
-      "kmac",
-      "hmac",
-      "flash_ctrl",
-      "flash_ctrl",
-      "otp_ctrl"
-    ],
-    "gold_rank": null
   }
 ]

@@ -3,11 +3,11 @@
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 2 0 obj
-<< /Length 6425 >>
+<< /Length 6396 >>
 stream
 0.120 0.160 0.220 rg BT /F1 18 Tf 42.00 558.00 Td (RTL Retrieval Methods: Performance Comparison) Tj ET
-0.350 0.380 0.420 rg BT /F1 10 Tf 42.00 538.00 Td (Dataset: 175 multi-axis questions, 732 indexed modules) Tj ET
-0.350 0.380 0.420 rg BT /F1 8 Tf 42.00 523.00 Td (Source: https://github.com/manticoresoftware/manticoresearch | generated 2026-05-09T20:02:34) Tj ET
+0.350 0.380 0.420 rg BT /F1 10 Tf 42.00 538.00 Td (Frontend updated: methods 1-3 now use tree-sitter-verilog generated seed.) Tj ET
+0.350 0.380 0.420 rg BT /F1 8 Tf 42.00 523.00 Td (Dataset: 175 questions, 1012 indexed modules) Tj ET
 0.120 0.160 0.220 rg 42.00 474.00 615.00 22.00 re f
 1.000 1.000 1.000 rg BT /F1 8.5 Tf 48.00 481.00 Td (Method) Tj ET
 1.000 1.000 1.000 rg BT /F1 8.5 Tf 238.00 481.00 Td (Hit@1) Tj ET
@@ -17,40 +17,40 @@ stream
 1.000 1.000 1.000 rg BT /F1 8.5 Tf 568.00 481.00 Td (Avg query ms) Tj ET
 0.980 0.990 1.000 rg 42.00 450.00 615.00 24.00 re f
 0.820 0.850 0.880 RG 0.60 w 42.00 450.00 615.00 24.00 re S
-0.302 0.475 0.655 rg 48.00 457.00 8.00 8.00 re f
+0.300 0.480 0.660 rg 48.00 457.00 8.00 8.00 re f
 0.120 0.160 0.220 rg BT /F1 8.5 Tf 62.00 458.00 Td (Baseline) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 240.00 458.00 Td (0.8514) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 315.00 458.00 Td (0.8629) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 390.00 458.00 Td (0.8686) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 465.00 458.00 Td (0.8393) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 570.00 458.00 Td (28.171) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 240.00 458.00 Td (0.8629) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 315.00 458.00 Td (0.8743) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 390.00 458.00 Td (0.8824) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 465.00 458.00 Td (0.8601) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 570.00 458.00 Td (39.480) Tj ET
 1.000 1.000 1.000 rg 42.00 426.00 615.00 24.00 re f
 0.820 0.850 0.880 RG 0.60 w 42.00 426.00 615.00 24.00 re S
-0.894 0.408 0.322 rg 48.00 433.00 8.00 8.00 re f
+0.890 0.410 0.320 rg 48.00 433.00 8.00 8.00 re f
 0.120 0.160 0.220 rg BT /F1 8.5 Tf 62.00 434.00 Td (KG) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 240.00 434.00 Td (0.8514) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 315.00 434.00 Td (0.8629) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 390.00 434.00 Td (0.8562) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 465.00 434.00 Td (0.8423) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 570.00 434.00 Td (34.284) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 240.00 434.00 Td (0.8686) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 315.00 434.00 Td (0.8800) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 390.00 434.00 Td (0.8733) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 465.00 434.00 Td (0.8683) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 570.00 434.00 Td (49.629) Tj ET
 0.980 0.990 1.000 rg 42.00 402.00 615.00 24.00 re f
 0.820 0.850 0.880 RG 0.60 w 42.00 402.00 615.00 24.00 re S
-0.345 0.631 0.459 rg 48.00 409.00 8.00 8.00 re f
+0.350 0.630 0.460 rg 48.00 409.00 8.00 8.00 re f
 0.120 0.160 0.220 rg BT /F1 8.5 Tf 62.00 410.00 Td (Manticore Parser/LSP) Tj ET
 0.120 0.160 0.220 rg BT /F1 8.5 Tf 240.00 410.00 Td (0.8629) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 315.00 410.00 Td (0.8914) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 390.00 410.00 Td (0.8857) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 465.00 410.00 Td (0.8401) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 570.00 410.00 Td (37.386) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 315.00 410.00 Td (0.8971) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 390.00 410.00 Td (0.8935) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 465.00 410.00 Td (0.8423) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 570.00 410.00 Td (46.801) Tj ET
 1.000 1.000 1.000 rg 42.00 378.00 615.00 24.00 re f
 0.820 0.850 0.880 RG 0.60 w 42.00 378.00 615.00 24.00 re S
-0.624 0.439 0.686 rg 48.00 385.00 8.00 8.00 re f
+0.620 0.440 0.690 rg 48.00 385.00 8.00 8.00 re f
 0.120 0.160 0.220 rg BT /F1 8.5 Tf 62.00 386.00 Td (Manticore Hybrid) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 240.00 386.00 Td (0.8686) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 315.00 386.00 Td (0.8914) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 240.00 386.00 Td (0.8629) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 315.00 386.00 Td (0.8971) Tj ET
 0.120 0.160 0.220 rg BT /F1 8.5 Tf 390.00 386.00 Td (0.8781) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 465.00 386.00 Td (0.8479) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 570.00 386.00 Td (46.418) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 465.00 386.00 Td (0.8423) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 570.00 386.00 Td (53.774) Tj ET
 0.120 0.160 0.220 rg BT /F1 13 Tf 42.00 356.00 Td (Core Retrieval Metrics) Tj ET
 0.860 0.880 0.900 RG 0.40 w 42.00 110.00 m 777.00 110.00 l S
 0.350 0.380 0.420 rg BT /F1 7 Tf 14.00 107.00 Td (0.6) Tj ET
@@ -63,48 +63,48 @@ stream
 0.860 0.880 0.900 RG 0.40 w 42.00 330.00 m 777.00 330.00 l S
 0.350 0.380 0.420 rg BT /F1 7 Tf 14.00 327.00 Td (1.0) Tj ET
 0.120 0.160 0.220 rg BT /F1 8 Tf 88.00 92.00 Td (Hit@1) Tj ET
-0.302 0.475 0.655 rg 70.00 110.00 22.00 138.27 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 69.00 253.27 Td (0.851) Tj ET
-0.894 0.408 0.322 rg 97.00 110.00 22.00 138.27 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 96.00 253.27 Td (0.851) Tj ET
-0.345 0.631 0.459 rg 124.00 110.00 22.00 144.59 re f
+0.300 0.480 0.660 rg 70.00 110.00 22.00 144.59 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 69.00 259.60 Td (0.863) Tj ET
+0.890 0.410 0.320 rg 97.00 110.00 22.00 147.73 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 96.00 262.73 Td (0.869) Tj ET
+0.350 0.630 0.460 rg 124.00 110.00 22.00 144.59 re f
 0.350 0.380 0.420 rg BT /F1 6.5 Tf 123.00 259.60 Td (0.863) Tj ET
-0.624 0.439 0.686 rg 151.00 110.00 22.00 147.73 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 150.00 262.73 Td (0.869) Tj ET
+0.620 0.440 0.690 rg 151.00 110.00 22.00 144.59 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 150.00 259.60 Td (0.863) Tj ET
 0.120 0.160 0.220 rg BT /F1 8 Tf 271.75 92.00 Td (Hit@3) Tj ET
-0.302 0.475 0.655 rg 253.75 110.00 22.00 144.59 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 252.75 259.60 Td (0.863) Tj ET
-0.894 0.408 0.322 rg 280.75 110.00 22.00 144.59 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 279.75 259.60 Td (0.863) Tj ET
-0.345 0.631 0.459 rg 307.75 110.00 22.00 160.27 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 306.75 275.27 Td (0.891) Tj ET
-0.624 0.439 0.686 rg 334.75 110.00 22.00 160.27 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 333.75 275.27 Td (0.891) Tj ET
+0.300 0.480 0.660 rg 253.75 110.00 22.00 150.86 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 252.75 265.87 Td (0.874) Tj ET
+0.890 0.410 0.320 rg 280.75 110.00 22.00 154.00 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 279.75 269.00 Td (0.880) Tj ET
+0.350 0.630 0.460 rg 307.75 110.00 22.00 163.41 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 306.75 278.40 Td (0.897) Tj ET
+0.620 0.440 0.690 rg 334.75 110.00 22.00 163.41 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 333.75 278.40 Td (0.897) Tj ET
 0.120 0.160 0.220 rg BT /F1 8 Tf 455.50 92.00 Td (MRR) Tj ET
-0.302 0.475 0.655 rg 437.50 110.00 22.00 147.73 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 436.50 262.73 Td (0.869) Tj ET
-0.894 0.408 0.322 rg 464.50 110.00 22.00 140.91 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 463.50 255.91 Td (0.856) Tj ET
-0.345 0.631 0.459 rg 491.50 110.00 22.00 157.14 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 490.50 272.14 Td (0.886) Tj ET
-0.624 0.439 0.686 rg 518.50 110.00 22.00 152.96 re f
+0.300 0.480 0.660 rg 437.50 110.00 22.00 155.32 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 436.50 270.32 Td (0.882) Tj ET
+0.890 0.410 0.320 rg 464.50 110.00 22.00 150.31 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 463.50 265.31 Td (0.873) Tj ET
+0.350 0.630 0.460 rg 491.50 110.00 22.00 161.42 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 490.50 276.42 Td (0.893) Tj ET
+0.620 0.440 0.690 rg 518.50 110.00 22.00 152.96 re f
 0.350 0.380 0.420 rg BT /F1 6.5 Tf 517.50 267.96 Td (0.878) Tj ET
 0.120 0.160 0.220 rg BT /F1 8 Tf 639.25 92.00 Td (Weighted Hit@1) Tj ET
-0.302 0.475 0.655 rg 621.25 110.00 22.00 131.62 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 620.25 246.62 Td (0.839) Tj ET
-0.894 0.408 0.322 rg 648.25 110.00 22.00 133.27 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 647.25 248.27 Td (0.842) Tj ET
-0.345 0.631 0.459 rg 675.25 110.00 22.00 132.05 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 674.25 247.05 Td (0.840) Tj ET
-0.624 0.439 0.686 rg 702.25 110.00 22.00 136.34 re f
-0.350 0.380 0.420 rg BT /F1 6.5 Tf 701.25 251.34 Td (0.848) Tj ET
-0.302 0.475 0.655 rg 497.00 346.00 8.00 8.00 re f
+0.300 0.480 0.660 rg 621.25 110.00 22.00 143.06 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 620.25 258.06 Td (0.860) Tj ET
+0.890 0.410 0.320 rg 648.25 110.00 22.00 147.56 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 647.25 262.56 Td (0.868) Tj ET
+0.350 0.630 0.460 rg 675.25 110.00 22.00 133.27 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 674.25 248.27 Td (0.842) Tj ET
+0.620 0.440 0.690 rg 702.25 110.00 22.00 133.27 re f
+0.350 0.380 0.420 rg BT /F1 6.5 Tf 701.25 248.27 Td (0.842) Tj ET
+0.300 0.480 0.660 rg 497.00 346.00 8.00 8.00 re f
 0.350 0.380 0.420 rg BT /F1 7.2 Tf 509.00 346.00 Td (Baseline) Tj ET
-0.894 0.408 0.322 rg 585.00 346.00 8.00 8.00 re f
+0.890 0.410 0.320 rg 585.00 346.00 8.00 8.00 re f
 0.350 0.380 0.420 rg BT /F1 7.2 Tf 597.00 346.00 Td (KG) Tj ET
-0.345 0.631 0.459 rg 673.00 346.00 8.00 8.00 re f
+0.350 0.630 0.460 rg 673.00 346.00 8.00 8.00 re f
 0.350 0.380 0.420 rg BT /F1 7.2 Tf 685.00 346.00 Td (Manticore Pars) Tj ET
-0.624 0.439 0.686 rg 761.00 346.00 8.00 8.00 re f
+0.620 0.440 0.690 rg 761.00 346.00 8.00 8.00 re f
 0.350 0.380 0.420 rg BT /F1 7.2 Tf 773.00 346.00 Td (Manticore Hybr) Tj ET
 endstream
 endobj
@@ -112,115 +112,102 @@ endobj
 << /Type /Page /Parent 6 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
 endobj
 4 0 obj
-<< /Length 7653 >>
+<< /Length 6811 >>
 stream
-0.120 0.160 0.220 rg BT /F1 18 Tf 42.00 558.00 Td (Method Characteristics and Difficulty Breakdown) Tj ET
-0.350 0.380 0.420 rg BT /F1 9 Tf 42.00 538.00 Td (The Manticore rows use a local BM25F proxy and emit load-ready Manticore documents/schema.) Tj ET
+0.120 0.160 0.220 rg BT /F1 18 Tf 42.00 558.00 Td (Method Characteristics) Tj ET
+0.350 0.380 0.420 rg BT /F1 9 Tf 42.00 538.00 Td (All four methods are now comparable around a tree-sitter frontend, except Graphify keeps its own AST graph model.) Tj ET
 0.120 0.160 0.220 rg 42.00 480.00 770.00 24.00 re f
 1.000 1.000 1.000 rg BT /F1 8 Tf 47.00 488.00 Td (Method) Tj ET
 1.000 1.000 1.000 rg BT /F1 8 Tf 169.00 488.00 Td (Input signals) Tj ET
 1.000 1.000 1.000 rg BT /F1 8 Tf 343.00 488.00 Td (Ranking) Tj ET
 1.000 1.000 1.000 rg BT /F1 8 Tf 517.00 488.00 Td (Strength) Tj ET
 1.000 1.000 1.000 rg BT /F1 8 Tf 667.00 488.00 Td (Tradeoff) Tj ET
-0.980 0.990 1.000 rg 42.00 432.00 770.00 48.00 re f
-0.820 0.850 0.880 RG 0.60 w 42.00 432.00 770.00 48.00 re S
-0.120 0.160 0.220 rg BT /F1 7.3 Tf 47.00 467.00 Td (Baseline) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 169.00 467.00 Td (Module name, file path, ports,) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 169.00 457.00 Td (instances) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 343.00 467.00 Td (Parser/LSP lexical overlap with) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 343.00 457.00 Td (exact anchors) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 517.00 467.00 Td (Fast simple lookup,) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 517.00 457.00 Td (transparent evidence) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 667.00 467.00 Td (Weak on semantic paraphrase) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 667.00 457.00 Td (and function similarity) Tj ET
-1.000 1.000 1.000 rg 42.00 384.00 770.00 48.00 re f
-0.820 0.850 0.880 RG 0.60 w 42.00 384.00 770.00 48.00 re S
-0.120 0.160 0.220 rg BT /F1 7.3 Tf 47.00 419.00 Td (KG) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 169.00 419.00 Td (Baseline fields plus labels,) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 169.00 409.00 Td (summaries, graph context) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 343.00 419.00 Td (KG-aware scorer with semantic) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 343.00 409.00 Td (expansion) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 517.00 419.00 Td (Uses ontology and reverse) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 517.00 409.00 Td (graph relationships) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 667.00 419.00 Td (Can add noise when labels are) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 667.00 409.00 Td (broad or sparse) Tj ET
-0.980 0.990 1.000 rg 42.00 336.00 770.00 48.00 re f
-0.820 0.850 0.880 RG 0.60 w 42.00 336.00 770.00 48.00 re S
-0.120 0.160 0.220 rg BT /F1 7.3 Tf 47.00 371.00 Td (Manticore Parser/LSP) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 169.00 371.00 Td (Parser/LSP fields only) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 343.00 371.00 Td (Manticore-style BM25F full-text) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 343.00 361.00 Td (field weighting) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 517.00 371.00 Td (Best text ranking without KG) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 517.00 361.00 Td (dependency) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 667.00 371.00 Td (Still blind to ontology-only) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 667.00 361.00 Td (relationships) Tj ET
-1.000 1.000 1.000 rg 42.00 288.00 770.00 48.00 re f
-0.820 0.850 0.880 RG 0.60 w 42.00 288.00 770.00 48.00 re S
-0.120 0.160 0.220 rg BT /F1 7.3 Tf 47.00 323.00 Td (Manticore Hybrid) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 169.00 323.00 Td (Parser/LSP fields plus KG labels,) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 169.00 313.00 Td (summaries, parents) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 343.00 323.00 Td (BM25F with KG field boosts) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 517.00 323.00 Td (Best overall Hit@1 in this) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 517.00 313.00 Td (run) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 667.00 323.00 Td (Slowest local proxy query) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.3 Tf 667.00 313.00 Td (latency) Tj ET
-0.120 0.160 0.220 rg BT /F1 13 Tf 42.00 246.00 Td (Hit@1 by Difficulty Level) Tj ET
-0.120 0.160 0.220 rg 42.00 214.00 565.00 22.00 re f
-1.000 1.000 1.000 rg BT /F1 8 Tf 48.00 221.00 Td (Method) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 238.00 221.00 Td (L1) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 313.00 221.00 Td (L2) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 388.00 221.00 Td (L3) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 463.00 221.00 Td (L4) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 538.00 221.00 Td (L5) Tj ET
-0.980 0.990 1.000 rg 42.00 192.00 565.00 22.00 re f
-0.820 0.850 0.880 RG 0.60 w 42.00 192.00 565.00 22.00 re S
-0.120 0.160 0.220 rg BT /F1 8 Tf 48.00 199.00 Td (Baseline) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 238.00 199.00 Td (0.8571) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 313.00 199.00 Td (1.0000) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 388.00 199.00 Td (0.8571) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 463.00 199.00 Td (0.6857) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 538.00 199.00 Td (0.8571) Tj ET
-1.000 1.000 1.000 rg 42.00 170.00 565.00 22.00 re f
-0.820 0.850 0.880 RG 0.60 w 42.00 170.00 565.00 22.00 re S
-0.120 0.160 0.220 rg BT /F1 8 Tf 48.00 177.00 Td (KG) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 238.00 177.00 Td (0.8286) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 313.00 177.00 Td (1.0000) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 388.00 177.00 Td (0.8571) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 463.00 177.00 Td (0.7143) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 538.00 177.00 Td (0.8571) Tj ET
-0.980 0.990 1.000 rg 42.00 148.00 565.00 22.00 re f
-0.820 0.850 0.880 RG 0.60 w 42.00 148.00 565.00 22.00 re S
-0.120 0.160 0.220 rg BT /F1 8 Tf 48.00 155.00 Td (Manticore Parser/LSP) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 238.00 155.00 Td (1.0000) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 313.00 155.00 Td (1.0000) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 388.00 155.00 Td (0.8000) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 463.00 155.00 Td (0.6571) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 538.00 155.00 Td (0.8571) Tj ET
-1.000 1.000 1.000 rg 42.00 126.00 565.00 22.00 re f
-0.820 0.850 0.880 RG 0.60 w 42.00 126.00 565.00 22.00 re S
-0.120 0.160 0.220 rg BT /F1 8 Tf 48.00 133.00 Td (Manticore Hybrid) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 238.00 133.00 Td (1.0000) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 313.00 133.00 Td (1.0000) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 388.00 133.00 Td (0.7714) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 463.00 133.00 Td (0.7143) Tj ET
-0.120 0.160 0.220 rg BT /F1 8 Tf 538.00 133.00 Td (0.8571) Tj ET
-0.120 0.160 0.220 rg BT /F1 12 Tf 565.00 234.00 Td (Avg Query Latency \(ms\)) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.2 Tf 565.00 187.00 Td (Baseline) Tj ET
-0.302 0.475 0.655 rg 651.00 184.00 88.00 12.00 re f
-0.350 0.380 0.420 rg BT /F1 7.2 Tf 745.00 187.00 Td (28.2) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.2 Tf 565.00 159.00 Td (KG) Tj ET
-0.894 0.408 0.322 rg 651.00 156.00 107.10 12.00 re f
-0.350 0.380 0.420 rg BT /F1 7.2 Tf 764.10 159.00 Td (34.3) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.2 Tf 565.00 131.00 Td (Manticore Parser/L) Tj ET
-0.345 0.631 0.459 rg 651.00 128.00 116.79 12.00 re f
-0.350 0.380 0.420 rg BT /F1 7.2 Tf 773.79 131.00 Td (37.4) Tj ET
-0.350 0.380 0.420 rg BT /F1 7.2 Tf 565.00 103.00 Td (Manticore Hybrid) Tj ET
-0.624 0.439 0.686 rg 651.00 100.00 145.00 12.00 re f
-0.350 0.380 0.420 rg BT /F1 7.2 Tf 802.00 103.00 Td (46.4) Tj ET
+0.980 0.990 1.000 rg 42.00 428.00 770.00 52.00 re f
+0.820 0.850 0.880 RG 0.60 w 42.00 428.00 770.00 52.00 re S
+0.120 0.160 0.220 rg BT /F1 7.2 Tf 47.00 467.00 Td (Baseline) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 169.00 467.00 Td (tree-sitter seed: module name,) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 169.00 457.00 Td (file path, ports, instances) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 343.00 467.00 Td (Parser/LSP-style lexical overlap) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 343.00 457.00 Td (with exact anchors) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 517.00 467.00 Td (Fast simple lookup on) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 517.00 457.00 Td (structural RTL fields) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 667.00 467.00 Td (No ontology-only graph) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 667.00 457.00 Td (reasoning) Tj ET
+1.000 1.000 1.000 rg 42.00 376.00 770.00 52.00 re f
+0.820 0.850 0.880 RG 0.60 w 42.00 376.00 770.00 52.00 re S
+0.120 0.160 0.220 rg BT /F1 7.2 Tf 47.00 415.00 Td (KG) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 169.00 415.00 Td (tree-sitter seed plus labels,) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 169.00 405.00 Td (summaries, reverse parents) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 343.00 415.00 Td (KG-aware scorer with semantic) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 343.00 405.00 Td (expansion) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 517.00 415.00 Td (Best Hit@1 in this) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 517.00 405.00 Td (tree-sitter run) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 667.00 415.00 Td (Depends on label quality and) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 667.00 405.00 Td (seed coverage) Tj ET
+0.980 0.990 1.000 rg 42.00 324.00 770.00 52.00 re f
+0.820 0.850 0.880 RG 0.60 w 42.00 324.00 770.00 52.00 re S
+0.120 0.160 0.220 rg BT /F1 7.2 Tf 47.00 363.00 Td (Manticore Parser/LSP) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 169.00 363.00 Td (tree-sitter parser/LSP fields only) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 343.00 363.00 Td (Manticore-style BM25F full-text) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 343.00 353.00 Td (field weighting) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 517.00 363.00 Td (Full-text ranking without KG) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 517.00 353.00 Td (dependency) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 667.00 363.00 Td (No KG-only relationship) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 667.00 353.00 Td (context) Tj ET
+1.000 1.000 1.000 rg 42.00 272.00 770.00 52.00 re f
+0.820 0.850 0.880 RG 0.60 w 42.00 272.00 770.00 52.00 re S
+0.120 0.160 0.220 rg BT /F1 7.2 Tf 47.00 311.00 Td (Manticore Hybrid) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 169.00 311.00 Td (tree-sitter parser/LSP fields plus) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 169.00 301.00 Td (KG labels/summaries/parents) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 343.00 311.00 Td (BM25F with KG field boosts) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 517.00 311.00 Td (Combines text ranker and KG) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 517.00 301.00 Td (fields) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 667.00 311.00 Td (Slowest local proxy query) Tj ET
+0.350 0.380 0.420 rg BT /F1 7.2 Tf 667.00 301.00 Td (latency) Tj ET
+0.120 0.160 0.220 rg BT /F1 13 Tf 42.00 230.00 Td (Hit@1 by Difficulty Level) Tj ET
+0.120 0.160 0.220 rg 42.00 198.00 565.00 22.00 re f
+1.000 1.000 1.000 rg BT /F1 8 Tf 48.00 205.00 Td (Method) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 238.00 205.00 Td (L1) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 313.00 205.00 Td (L2) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 388.00 205.00 Td (L3) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 463.00 205.00 Td (L4) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 538.00 205.00 Td (L5) Tj ET
+0.980 0.990 1.000 rg 42.00 176.00 565.00 22.00 re f
+0.820 0.850 0.880 RG 0.60 w 42.00 176.00 565.00 22.00 re S
+0.120 0.160 0.220 rg BT /F1 8 Tf 48.00 183.00 Td (Baseline) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 238.00 183.00 Td (0.8000) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 313.00 183.00 Td (1.0000) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 388.00 183.00 Td (0.8571) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 463.00 183.00 Td (0.7714) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 538.00 183.00 Td (0.8857) Tj ET
+1.000 1.000 1.000 rg 42.00 154.00 565.00 22.00 re f
+0.820 0.850 0.880 RG 0.60 w 42.00 154.00 565.00 22.00 re S
+0.120 0.160 0.220 rg BT /F1 8 Tf 48.00 161.00 Td (KG) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 238.00 161.00 Td (0.8000) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 313.00 161.00 Td (1.0000) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 388.00 161.00 Td (0.8571) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 463.00 161.00 Td (0.7714) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 538.00 161.00 Td (0.9143) Tj ET
+0.980 0.990 1.000 rg 42.00 132.00 565.00 22.00 re f
+0.820 0.850 0.880 RG 0.60 w 42.00 132.00 565.00 22.00 re S
+0.120 0.160 0.220 rg BT /F1 8 Tf 48.00 139.00 Td (Manticore Parser/LSP) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 238.00 139.00 Td (1.0000) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 313.00 139.00 Td (1.0000) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 388.00 139.00 Td (0.7429) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 463.00 139.00 Td (0.7143) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 538.00 139.00 Td (0.8571) Tj ET
+1.000 1.000 1.000 rg 42.00 110.00 565.00 22.00 re f
+0.820 0.850 0.880 RG 0.60 w 42.00 110.00 565.00 22.00 re S
+0.120 0.160 0.220 rg BT /F1 8 Tf 48.00 117.00 Td (Manticore Hybrid) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 238.00 117.00 Td (1.0000) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 313.00 117.00 Td (1.0000) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 388.00 117.00 Td (0.7429) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 463.00 117.00 Td (0.7143) Tj ET
+0.120 0.160 0.220 rg BT /F1 8 Tf 538.00 117.00 Td (0.8571) Tj ET
 0.880 0.930 0.980 rg 42.00 34.00 735.00 44.00 re f
 0.720 0.780 0.860 RG 0.60 w 42.00 34.00 735.00 44.00 re S
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 54.00 62.00 Td (Reading: Manticore Hybrid has the best Hit@1 and weighted Hit@1, while Manticore Parser/LSP has the best MRR.) Tj ET
-0.120 0.160 0.220 rg BT /F1 8.5 Tf 54.00 48.00 Td (The hardest band is L4 across all methods; KG improves L4 Hit@1 over baseline, but hybrid ranking wins overall.) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 54.00 62.00 Td (Reading: KG has the best Hit@1 in this tree-sitter run; all methods now share a stronger structural seed.) Tj ET
+0.120 0.160 0.220 rg BT /F1 8.5 Tf 54.00 48.00 Td (Manticore remains a local BM25F proxy and writes load-ready schema/documents for a real server-backed run.) Tj ET
 endstream
 endobj
 5 0 obj
@@ -237,13 +224,13 @@ xref
 0000000000 65535 f
 0000000009 00000 n
 0000000079 00000 n
-0000006556 00000 n
-0000006682 00000 n
-0000014387 00000 n
-0000014513 00000 n
-0000014578 00000 n
+0000006527 00000 n
+0000006653 00000 n
+0000013516 00000 n
+0000013642 00000 n
+0000013707 00000 n
 trailer
 << /Size 8 /Root 7 0 R >>
 startxref
-14627
+13756
 %%EOF

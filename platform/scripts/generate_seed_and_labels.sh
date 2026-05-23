@@ -12,12 +12,18 @@ IBEX_LABELS="$OUT_ROOT/ibex_labels.jsonl"
 MERGED_SEED="$OUT_ROOT/merged_ontology_seed.jsonl"
 MERGED_LABELS="$OUT_ROOT/merged_labels.jsonl"
 EMBEDDING_ROWS="$OUT_ROOT/embedding_rows.json"
+TREE_SITTER_PYTHON="$WORKSPACE_ROOT/.venv-graphify/Scripts/python.exe"
+if [[ -x "$TREE_SITTER_PYTHON" ]]; then
+    SEED_PYTHON="$TREE_SITTER_PYTHON"
+else
+    SEED_PYTHON="$PYTHON"
+fi
 
 step "1/7" "OpenTitan 온톨로지 시드 생성"
-run_python "$INGEST_ROOT/generate_ontology_seed.py" --root "$DB_ROOT/opentitan" --out "$OPENTITAN_SEED"
+"$SEED_PYTHON" "$INGEST_ROOT/generate_ontology_seed.py" --root "$DB_ROOT/opentitan" --out "$OPENTITAN_SEED" --frontend auto
 
 step "2/7" "Ibex 온톨로지 시드 생성"
-run_python "$INGEST_ROOT/generate_ontology_seed.py" --root "$DB_ROOT/ibex" --out "$IBEX_SEED"
+"$SEED_PYTHON" "$INGEST_ROOT/generate_ontology_seed.py" --root "$DB_ROOT/ibex" --out "$IBEX_SEED" --frontend auto
 
 step "3/7" "OpenTitan 레이블 추출"
 run_python "$INGEST_ROOT/extract_opentitan_labels.py" --root "$DB_ROOT/opentitan" --out "$OPENTITAN_LABELS"

@@ -1,0 +1,19 @@
+{
+  "projectId": "verilog-current-graph",
+  "mode": "embedded",
+  "graphUri": "https://opentology.dev/verilog-current-graph",
+  "graphs": {
+    "context": "https://opentology.dev/verilog-current-graph/context"
+  },
+  "files": {
+    "https://opentology.dev/verilog-current-graph/context": [
+      ".opentology/data/current_graph.ttl"
+    ]
+  },
+  "prefixes": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "otx": "https://opentology.dev/vocab#",
+    "gfy": "https://graphify.dev/vocab#"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "questions": 117,
+  "question_file": "out\\adversarial_retrieval_benchmark\\questions_all.jsonl",
+  "fusion": {
+    "type": "weighted reciprocal rank fusion plus light normalized score",
+    "rrf_k": 60,
+    "score_alpha": 0.015,
+    "weights": {
+      "parser_lsp": 1.0,
+      "kg": 1.25,
+      "manticore": 0.45,
+      "graphify": 0.35
+    },
+    "combinations": {
+      "hybrid_parser_kg_manticore": [
+        "parser_lsp",
+        "kg",
+        "manticore"
+      ],
+      "hybrid_parser_kg_graphify": [
+        "parser_lsp",
+        "kg",
+        "graphify"
+      ],
+      "hybrid_kg_manticore_graphify": [
+        "kg",
+        "manticore",
+        "graphify"
+      ],
+      "hybrid_all_4": [
+        "parser_lsp",
+        "kg",
+        "manticore",
+        "graphify"
+      ]
+    }
+  },
+  "performance": {
+    "by_mode": {
+      "hybrid_parser_kg_manticore": {
+        "count": 117,
+        "hit_at_1": 0.2991,
+        "hit_at_3": 0.6838,
+        "hit_at_5": 0.7521,
+        "mrr": 0.4745,
+        "weighted_hit_at_1": 0.2968,
+        "misses": 29,
+        "by_level": {
+          "L4": {
+            "count": 59,
+            "hit_at_1": 0.322,
+            "hit_at_3": 0.6949,
+            "hit_at_5": 0.7627,
+            "mrr": 0.4935
+          },
+          "L5": {
+            "count": 58,
+            "hit_at_1": 0.2759,
+            "hit_at_3": 0.6724,
+            "hit_at_5": 0.7414,
+            "mrr": 0.4552
+          }
+        },
+        "by_type": {
+          "adversarial_label_ambiguity": {
+            "count": 22,
+            "hit_at_1": 0.1818,
+            "hit_at_3": 0.6818,
+            "hit_at_5": 0.7273,
+            "mrr": 0.4129
+          },
+          "adversarial_parent_from_shared_child": {
+            "count": 50,
+            "hit_at_1": 0.46,
+            "hit_at_3": 0.74,
+            "hit_at_5": 0.82,
+            "mrr": 0.5947
+          },
+          "adversarial_sibling_disambiguation": {
+            "count": 45,
+            "hit_at_1": 0.1778,
+            "hit_at_3": 0.6222,
+            "hit_at_5": 0.6889,
+            "mrr": 0.3711
+          }
+        }
+      },
+      "hybrid_parser_kg_graphify": {
+        "count": 117,
+        "hit_at_1": 0.3333,
+        "hit_at_3": 0.7009,
+        "hit_at_5": 0.7692,
+        "mrr": 0.504,
+        "weighted_hit_at_1": 0.3311,
+        "misses": 27,
+        "by_level": {
+          "L4": {
+            "count": 59,
+            "hit_at_1": 0.3559,
+            "hit_at_3": 0.7119,
+            "hit_at_5": 0.7797,
+            "mrr": 0.5209
+          },
+          "L5": {
+            "count": 58,
+            "hit_at_1": 0.3103,
+            "hit_at_3": 0.6897,
+            "hit_at_5": 0.7586,
+            "mrr": 0.4868
+          }
+        },
+        "by_type": {
+          "adversarial_label_ambiguity": {
+            "count": 22,
+            "hit_at_1": 0.1818,
+            "hit_at_3": 0.7727,
+            "hit_at_5": 0.8182,
+            "mrr": 0.4508
+          },
+          "adversarial_parent_from_shared_child": {
+            "count": 50,
+            "hit_at_1": 0.48,
+            "hit_at_3": 0.76,
+            "hit_at_5": 0.82,
+            "mrr": 0.614
+          },
+          "adversarial_sibling_disambiguation": {
+            "count": 45,
+            "hit_at_1": 0.2444,
+            "hit_at_3": 0.6,
+            "hit_at_5": 0.6889,
+            "mrr": 0.4078
+          }
+        }
+      },
+      "hybrid_kg_manticore_graphify": {
+        "count": 117,
+        "hit_at_1": 0.2991,
+        "hit_at_3": 0.641,
+        "hit_at_5": 0.7607,
+        "mrr": 0.4745,
+        "weighted_hit_at_1": 0.2951,
+        "misses": 28,
+        "by_level": {
+          "L4": {
+            "count": 59,
+            "hit_at_1": 0.339,
+            "hit_at_3": 0.6949,
+            "hit_at_5": 0.7627,
+            "mrr": 0.5011
+          },
+          "L5": {
+            "count": 58,
+            "hit_at_1": 0.2586,
+            "hit_at_3": 0.5862,
+            "hit_at_5": 0.7586,
+            "mrr": 0.4474
+          }
+        },
+        "by_type": {
+          "adversarial_label_ambiguity": {
+            "count": 22,
+            "hit_at_1": 0.1818,
+            "hit_at_3": 0.7727,
+            "hit_at_5": 0.8182,
+            "mrr": 0.4356
+          },
+          "adversarial_parent_from_shared_child": {
+            "count": 50,
+            "hit_at_1": 0.46,
+            "hit_at_3": 0.74,
+            "hit_at_5": 0.82,
+            "mrr": 0.5957
+          },
+          "adversarial_sibling_disambiguation": {
+            "count": 45,
+            "hit_at_1": 0.1778,
+            "hit_at_3": 0.4667,
+            "hit_at_5": 0.6667,
+            "mrr": 0.3589
+          }
+        }
+      },
+      "hybrid_all_4": {
+        "count": 117,
+        "hit_at_1": 0.2991,
+        "hit_at_3": 0.6838,
+        "hit_at_5": 0.7692,
+        "mrr": 0.4798,
+        "weighted_hit_at_1": 0.2968,
+        "misses": 27,
+        "by_level": {
+          "L4": {
+            "count": 59,
+            "hit_at_1": 0.322,
+            "hit_at_3": 0.7119,
+            "hit_at_5": 0.7797,
+            "mrr": 0.5011
+          },
+          "L5": {
+            "count": 58,
+            "hit_at_1": 0.2759,
+            "hit_at_3": 0.6552,
+            "hit_at_5": 0.7586,
+            "mrr": 0.458
+          }
+        },
+        "by_type": {
+          "adversarial_label_ambiguity": {
+            "count": 22,
+            "hit_at_1": 0.1818,
+            "hit_at_3": 0.7273,
+            "hit_at_5": 0.8182,
+            "mrr": 0.4394
+          },
+          "adversarial_parent_from_shared_child": {
+            "count": 50,
+            "hit_at_1": 0.46,
+            "hit_at_3": 0.74,
+            "hit_at_5": 0.82,
+            "mrr": 0.598
+          },
+          "adversarial_sibling_disambiguation": {
+            "count": 45,
+            "hit_at_1": 0.1778,
+            "hit_at_3": 0.6,
+            "hit_at_5": 0.6889,
+            "mrr": 0.3681
+          }
+        }
+      }
+    }
+  },
+  "sources": {
+    "manticore_runs": "out\\adversarial_manticore_eval\\manticore_detailed_runs.json",
+    "graphify_runs": "out\\adversarial_graphify_module_card_eval\\graphify_predictions.json"
+  }
+}

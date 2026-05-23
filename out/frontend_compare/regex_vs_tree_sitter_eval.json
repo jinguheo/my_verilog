@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-05-09T20:40:07",
+  "question_set": "D:\\MyWork\\verilog\\out\\multiaxis_benchmark\\questions_all.jsonl",
+  "questions": 175,
+  "frontends": {
+    "regex": {
+      "seed": "D:\\MyWork\\verilog\\out\\frontend_compare\\regex_merged_ontology_seed.jsonl",
+      "raw_modules": 1544,
+      "indexed_modules": 1088
+    },
+    "tree-sitter": {
+      "seed": "D:\\MyWork\\verilog\\out\\frontend_compare\\tree-sitter_merged_ontology_seed.jsonl",
+      "raw_modules": 1433,
+      "indexed_modules": 1012
+    }
+  },
+  "metrics": {
+    "baseline": {
+      "regex": {
+        "hit_at_1": 0.8514,
+        "hit_at_3": 0.8629,
+        "mrr": 0.8576,
+        "weighted_hit_at_1": 0.8453
+      },
+      "tree-sitter": {
+        "hit_at_1": 0.8629,
+        "hit_at_3": 0.8743,
+        "mrr": 0.8824,
+        "weighted_hit_at_1": 0.8601
+      }
+    },
+    "kg": {
+      "regex": {
+        "hit_at_1": 0.8571,
+        "hit_at_3": 0.8686,
+        "mrr": 0.8629,
+        "weighted_hit_at_1": 0.8534
+      },
+      "tree-sitter": {
+        "hit_at_1": 0.8686,
+        "hit_at_3": 0.88,
+        "mrr": 0.8733,
+        "weighted_hit_at_1": 0.8683
+      }
+    },
+    "manticore_parser_lsp": {
+      "regex": {
+        "hit_at_1": 0.8571,
+        "hit_at_3": 0.9029,
+        "mrr": 0.88,
+        "weighted_hit_at_1": 0.8404
+      },
+      "tree-sitter": {
+        "hit_at_1": 0.8629,
+        "hit_at_3": 0.8971,
+        "mrr": 0.8935,
+        "weighted_hit_at_1": 0.8423
+      }
+    },
+    "manticore_hybrid": {
+      "regex": {
+        "hit_at_1": 0.8514,
+        "hit_at_3": 0.9029,
+        "mrr": 0.8754,
+        "weighted_hit_at_1": 0.8323
+      },
+      "tree-sitter": {
+        "hit_at_1": 0.8629,
+        "hit_at_3": 0.8971,
+        "mrr": 0.8781,
+        "weighted_hit_at_1": 0.8423
+      }
+    }
+  },
+  "delta_tree_sitter_minus_regex": {
+    "baseline": {
+      "hit_at_1": 0.0115,
+      "hit_at_3": 0.0114,
+      "mrr": 0.0248,
+      "weighted_hit_at_1": 0.0148
+    },
+    "kg": {
+      "hit_at_1": 0.0115,
+      "hit_at_3": 0.0114,
+      "mrr": 0.0104,
+      "weighted_hit_at_1": 0.0149
+    },
+    "manticore_parser_lsp": {
+      "hit_at_1": 0.0058,
+      "hit_at_3": -0.0058,
+      "mrr": 0.0135,
+      "weighted_hit_at_1": 0.0019
+    },
+    "manticore_hybrid": {
+      "hit_at_1": 0.0115,
+      "hit_at_3": -0.0058,
+      "mrr": 0.0027,
+      "weighted_hit_at_1": 0.01
+    }
+  },
+  "winner": {
+    "baseline": {
+      "hit_at_1": "tree-sitter",
+      "hit_at_3": "tree-sitter",
+      "mrr": "tree-sitter",
+      "weighted_hit_at_1": "tree-sitter"
+    },
+    "kg": {
+      "hit_at_1": "tree-sitter",
+      "hit_at_3": "tree-sitter",
+      "mrr": "tree-sitter",
+      "weighted_hit_at_1": "tree-sitter"
+    },
+    "manticore_parser_lsp": {
+      "hit_at_1": "tree-sitter",
+      "hit_at_3": "regex",
+      "mrr": "tree-sitter",
+      "weighted_hit_at_1": "tree-sitter"
+    },
+    "manticore_hybrid": {
+      "hit_at_1": "tree-sitter",
+      "hit_at_3": "regex",
+      "mrr": "tree-sitter",
+      "weighted_hit_at_1": "tree-sitter"
+    }
+  }
+}

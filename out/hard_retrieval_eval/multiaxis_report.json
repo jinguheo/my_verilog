@@ -1,0 +1,134 @@
+{
+  "by_mode": {
+    "baseline": {
+      "count": 175,
+      "hit_at_1": 0.8457,
+      "hit_at_3": 0.9714,
+      "mrr": 0.9067,
+      "weighted_hit_at_1": 0.8443,
+      "by_level": {
+        "L4": {
+          "count": 105,
+          "hit_at_1": 0.8571,
+          "hit_at_3": 0.9714,
+          "mrr": 0.9143
+        },
+        "L5": {
+          "count": 70,
+          "hit_at_1": 0.8286,
+          "hit_at_3": 0.9714,
+          "mrr": 0.8952
+        }
+      },
+      "by_type": {
+        "hard_retrieval_blind_code_explanation": {
+          "count": 25,
+          "hit_at_1": 0.84,
+          "hit_at_3": 1.0,
+          "mrr": 0.9067
+        },
+        "hard_retrieval_blind_comparison_similarity": {
+          "count": 25,
+          "hit_at_1": 0.8,
+          "hit_at_3": 1.0,
+          "mrr": 0.9
+        },
+        "hard_retrieval_blind_documentation_summary": {
+          "count": 25,
+          "hit_at_1": 0.92,
+          "hit_at_3": 1.0,
+          "mrr": 0.96
+        },
+        "hard_retrieval_blind_function_similarity": {
+          "count": 25,
+          "hit_at_1": 0.76,
+          "hit_at_3": 0.84,
+          "mrr": 0.8
+        },
+        "hard_retrieval_blind_generation_design": {
+          "count": 25,
+          "hit_at_1": 0.88,
+          "hit_at_3": 0.96,
+          "mrr": 0.92
+        },
+        "hard_retrieval_blind_search_navigation": {
+          "count": 25,
+          "hit_at_1": 0.84,
+          "hit_at_3": 1.0,
+          "mrr": 0.92
+        },
+        "hard_retrieval_blind_structure_understanding": {
+          "count": 25,
+          "hit_at_1": 0.88,
+          "hit_at_3": 1.0,
+          "mrr": 0.94
+        }
+      }
+    },
+    "kg": {
+      "count": 175,
+      "hit_at_1": 0.84,
+      "hit_at_3": 0.9714,
+      "mrr": 0.9019,
+      "weighted_hit_at_1": 0.8379,
+      "by_level": {
+        "L4": {
+          "count": 105,
+          "hit_at_1": 0.8571,
+          "hit_at_3": 0.9714,
+          "mrr": 0.9095
+        },
+        "L5": {
+          "count": 70,
+          "hit_at_1": 0.8143,
+          "hit_at_3": 0.9714,
+          "mrr": 0.8905
+        }
+      },
+      "by_type": {
+        "hard_retrieval_blind_code_explanation": {
+          "count": 25,
+          "hit_at_1": 0.84,
+          "hit_at_3": 0.96,
+          "mrr": 0.8933
+        },
+        "hard_retrieval_blind_comparison_similarity": {
+          "count": 25,
+          "hit_at_1": 0.68,
+          "hit_at_3": 1.0,
+          "mrr": 0.84
+        },
+        "hard_retrieval_blind_documentation_summary": {
+          "count": 25,
+          "hit_at_1": 0.92,
+          "hit_at_3": 1.0,
+          "mrr": 0.96
+        },
+        "hard_retrieval_blind_function_similarity": {
+          "count": 25,
+          "hit_at_1": 0.8,
+          "hit_at_3": 0.88,
+          "mrr": 0.84
+        },
+        "hard_retrieval_blind_generation_design": {
+          "count": 25,
+          "hit_at_1": 0.76,
+          "hit_at_3": 0.96,
+          "mrr": 0.84
+        },
+        "hard_retrieval_blind_search_navigation": {
+          "count": 25,
+          "hit_at_1": 0.88,
+          "hit_at_3": 1.0,
+          "mrr": 0.94
+        },
+        "hard_retrieval_blind_structure_understanding": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        }
+      }
+    }
+  }
+}

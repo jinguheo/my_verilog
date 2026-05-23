@@ -347,15 +347,18 @@ def build_markdown(report: dict[str, Any], metadata: dict[str, Any]) -> str:
         "",
         "## By Level",
         "",
-        "| Mode | L1 | L2 | L3 | L4 | L5 |",
-        "|---|---:|---:|---:|---:|---:|",
     ]
+    levels_seen = sorted({
+        level
+        for metrics in report["by_mode"].values()
+        for level in metrics.get("by_level", {})
+    })
+    lines.append("| Mode | " + " | ".join(levels_seen) + " |")
+    lines.append("|---" + "|---:" * len(levels_seen) + "|")
     for mode, metrics in report["by_mode"].items():
         levels = metrics["by_level"]
-        lines.append(
-            f"| {mode} | {levels['L1']['hit_at_1']} | {levels['L2']['hit_at_1']} | "
-            f"{levels['L3']['hit_at_1']} | {levels['L4']['hit_at_1']} | {levels['L5']['hit_at_1']} |"
-        )
+        values = [str(levels.get(level, {}).get("hit_at_1", "n/a")) for level in levels_seen]
+        lines.append("| " + mode + " | " + " | ".join(values) + " |")
     lines += [
         "",
         "## Interpretation",

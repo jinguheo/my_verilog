@@ -1,0 +1,498 @@
+{
+  "title": "Retrieval Software Blocks Comparison",
+  "generated_at": "2026-05-09T20:31:34",
+  "frontend_change": "Methods 1, 2, and 3 now use tree-sitter-verilog through generate_ontology_seed.py --frontend auto. Regex is retained as fallback.",
+  "kg_summary": {
+    "modules": 1433,
+    "ip_blocks": 38,
+    "labels": 14,
+    "ports": 16766,
+    "instance_edges": 2103,
+    "total_nodes": 18251,
+    "total_edges": 22630,
+    "projects": {
+      "opentitan": 1142,
+      "ibex": 291
+    },
+    "top_labels": [
+      [
+        "clocked",
+        1006
+      ],
+      [
+        "resettable",
+        966
+      ],
+      [
+        "hierarchical",
+        738
+      ],
+      [
+        "uart",
+        317
+      ],
+      [
+        "fifo",
+        220
+      ],
+      [
+        "spi",
+        154
+      ],
+      [
+        "crypto",
+        84
+      ],
+      [
+        "controller",
+        56
+      ],
+      [
+        "apb",
+        42
+      ],
+      [
+        "i2c",
+        30
+      ],
+      [
+        "ibex_core",
+        20
+      ],
+      [
+        "counter",
+        13
+      ],
+      [
+        "timer",
+        13
+      ],
+      [
+        "alu",
+        1
+      ]
+    ],
+    "approved_labels": {
+      "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+      "module_labels_added": 22,
+      "ip_context_labels_added": 166
+    }
+  },
+  "metrics": {
+    "baseline": {
+      "count": 175,
+      "hit_at_1": 0.8629,
+      "hit_at_3": 0.8743,
+      "mrr": 0.8824,
+      "weighted_hit_at_1": 0.8601,
+      "by_level": {
+        "L1": {
+          "count": 35,
+          "hit_at_1": 0.8,
+          "hit_at_3": 0.8286,
+          "mrr": 0.8167
+        },
+        "L2": {
+          "count": 35,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L3": {
+          "count": 35,
+          "hit_at_1": 0.8571,
+          "hit_at_3": 0.8571,
+          "mrr": 0.8929
+        },
+        "L4": {
+          "count": 35,
+          "hit_at_1": 0.7714,
+          "hit_at_3": 0.7714,
+          "mrr": 0.8071
+        },
+        "L5": {
+          "count": 35,
+          "hit_at_1": 0.8857,
+          "hit_at_3": 0.9143,
+          "mrr": 0.8952
+        }
+      },
+      "by_type": {
+        "code_explanation": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "comparison_similarity": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "documentation_summary": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "function_similarity": {
+          "count": 25,
+          "hit_at_1": 0.52,
+          "hit_at_3": 0.56,
+          "mrr": 0.6433
+        },
+        "generation_design": {
+          "count": 25,
+          "hit_at_1": 0.96,
+          "hit_at_3": 1.0,
+          "mrr": 0.9733
+        },
+        "search_navigation": {
+          "count": 25,
+          "hit_at_1": 0.76,
+          "hit_at_3": 0.76,
+          "mrr": 0.76
+        },
+        "structure_understanding": {
+          "count": 25,
+          "hit_at_1": 0.8,
+          "hit_at_3": 0.8,
+          "mrr": 0.8
+        }
+      }
+    },
+    "kg": {
+      "count": 175,
+      "hit_at_1": 0.8686,
+      "hit_at_3": 0.88,
+      "mrr": 0.8733,
+      "weighted_hit_at_1": 0.8683,
+      "by_level": {
+        "L1": {
+          "count": 35,
+          "hit_at_1": 0.8,
+          "hit_at_3": 0.8571,
+          "mrr": 0.8238
+        },
+        "L2": {
+          "count": 35,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L3": {
+          "count": 35,
+          "hit_at_1": 0.8571,
+          "hit_at_3": 0.8571,
+          "mrr": 0.8571
+        },
+        "L4": {
+          "count": 35,
+          "hit_at_1": 0.7714,
+          "hit_at_3": 0.7714,
+          "mrr": 0.7714
+        },
+        "L5": {
+          "count": 35,
+          "hit_at_1": 0.9143,
+          "hit_at_3": 0.9143,
+          "mrr": 0.9143
+        }
+      },
+      "by_type": {
+        "code_explanation": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "comparison_similarity": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "documentation_summary": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "function_similarity": {
+          "count": 25,
+          "hit_at_1": 0.56,
+          "hit_at_3": 0.6,
+          "mrr": 0.5733
+        },
+        "generation_design": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "search_navigation": {
+          "count": 25,
+          "hit_at_1": 0.72,
+          "hit_at_3": 0.76,
+          "mrr": 0.74
+        },
+        "structure_understanding": {
+          "count": 25,
+          "hit_at_1": 0.8,
+          "hit_at_3": 0.8,
+          "mrr": 0.8
+        }
+      }
+    },
+    "manticore_parser_lsp": {
+      "count": 175,
+      "hit_at_1": 0.8629,
+      "hit_at_3": 0.8971,
+      "mrr": 0.8935,
+      "weighted_hit_at_1": 0.8423,
+      "by_level": {
+        "L1": {
+          "count": 35,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L2": {
+          "count": 35,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L3": {
+          "count": 35,
+          "hit_at_1": 0.7429,
+          "hit_at_3": 0.8,
+          "mrr": 0.8129
+        },
+        "L4": {
+          "count": 35,
+          "hit_at_1": 0.7143,
+          "hit_at_3": 0.7714,
+          "mrr": 0.7738
+        },
+        "L5": {
+          "count": 35,
+          "hit_at_1": 0.8571,
+          "hit_at_3": 0.9143,
+          "mrr": 0.881
+        }
+      },
+      "by_type": {
+        "code_explanation": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "comparison_similarity": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "documentation_summary": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "function_similarity": {
+          "count": 25,
+          "hit_at_1": 0.6,
+          "hit_at_3": 0.6,
+          "mrr": 0.7
+        },
+        "generation_design": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "search_navigation": {
+          "count": 25,
+          "hit_at_1": 0.44,
+          "hit_at_3": 0.68,
+          "mrr": 0.5547
+        },
+        "structure_understanding": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        }
+      }
+    },
+    "manticore_hybrid": {
+      "count": 175,
+      "hit_at_1": 0.8629,
+      "hit_at_3": 0.8971,
+      "mrr": 0.8781,
+      "weighted_hit_at_1": 0.8423,
+      "by_level": {
+        "L1": {
+          "count": 35,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L2": {
+          "count": 35,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L3": {
+          "count": 35,
+          "hit_at_1": 0.7429,
+          "hit_at_3": 0.8,
+          "mrr": 0.7714
+        },
+        "L4": {
+          "count": 35,
+          "hit_at_1": 0.7143,
+          "hit_at_3": 0.7714,
+          "mrr": 0.7381
+        },
+        "L5": {
+          "count": 35,
+          "hit_at_1": 0.8571,
+          "hit_at_3": 0.9143,
+          "mrr": 0.881
+        }
+      },
+      "by_type": {
+        "code_explanation": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "comparison_similarity": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "documentation_summary": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "function_similarity": {
+          "count": 25,
+          "hit_at_1": 0.6,
+          "hit_at_3": 0.6,
+          "mrr": 0.6
+        },
+        "generation_design": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "search_navigation": {
+          "count": 25,
+          "hit_at_1": 0.44,
+          "hit_at_3": 0.68,
+          "mrr": 0.5467
+        },
+        "structure_understanding": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        }
+      }
+    }
+  },
+  "methods": [
+    {
+      "id": "1",
+      "name": "Parser + LSP Baseline",
+      "frontend": "tree-sitter-verilog seed extractor, with regex fallback only when the Python tree-sitter package is unavailable",
+      "modules": [
+        "platform/ingest/generate_ontology_seed.py",
+        "tree_sitter.Parser + tree_sitter_verilog.language()",
+        "find_modules_tree_sitter(): module_declaration nodes",
+        "module_instantiation AST nodes for child module links",
+        "PORT_RE inside each AST module body for input/output/inout ports",
+        "platform/eval/retrieval_common.py baseline scorer"
+      ],
+      "processing": [
+        "Walk RTL files under dbs/opentitan and dbs/ibex.",
+        "Parse each Verilog/SystemVerilog file with tree-sitter-verilog.",
+        "Extract module name, file path, ports, instances, and instance names into JSONL seed rows.",
+        "Rank benchmark queries by parser/LSP-style lexical overlap over module name, path, ports, and instances."
+      ],
+      "strength": "Fast structural lookup from AST-derived RTL facts.",
+      "limit": "No KG-only semantic expansion or graph traversal."
+    },
+    {
+      "id": "2",
+      "name": "Parser + LSP + Manticore",
+      "frontend": "Same tree-sitter-verilog seed as method 1",
+      "modules": [
+        "platform/eval/run_manticore_retrieval_analysis.py",
+        "BM25FIndex local Manticore-style ranker",
+        "manticore_documents.jsonl loader-ready full-text documents",
+        "manticore_schema.sql for later real Manticore Search loading",
+        "tools/manticoresearch local source checkout reference"
+      ],
+      "processing": [
+        "Reuse tree-sitter module facts from merged_ontology_seed.jsonl.",
+        "Convert parser/LSP fields into weighted full-text documents.",
+        "Rank queries with BM25F-style field weighting over module, path, ports, instances, and instance names.",
+        "Emit documents and SQL schema so the same representation can be loaded into Manticore Search later."
+      ],
+      "strength": "Full-text ranking over parser/LSP fields without requiring KG context.",
+      "limit": "The current benchmark uses a local Manticore-style ranker, not a live searchd server."
+    },
+    {
+      "id": "3",
+      "name": "Knowledge Graph (Neo4j-style KG snapshot)",
+      "frontend": "Same tree-sitter-verilog seed as method 1, plus labels and graph context",
+      "modules": [
+        "platform/eval/build_full_kg_snapshot.py",
+        "out/merged_ontology_seed.jsonl",
+        "out/merged_labels.jsonl",
+        "out/kg_full/kg_full_nodes_edges.json",
+        "platform/eval/retrieval_common.py KG scorer"
+      ],
+      "processing": [
+        "Start from tree-sitter-extracted modules, ports, and instance edges.",
+        "Attach labels, summaries, IP block context, reverse parent hints, and inferred graph relationships.",
+        "Build a node/edge snapshot that can be mapped to a Neo4j-style graph model.",
+        "Rank queries with KG-aware expansion and graph-context signals."
+      ],
+      "strength": "Best Hit@1 in the current tree-sitter run because labels and graph context help disambiguation.",
+      "limit": "Quality depends on label coverage and graph extraction completeness."
+    },
+    {
+      "id": "4",
+      "name": "Graphify",
+      "frontend": "Graphify AST and knowledge-graph extraction; independent graph builder with tree-sitter-style code structure extraction",
+      "modules": [
+        "graphify update .",
+        "graphify-out/graph.json",
+        "graphify-out/GRAPH_REPORT.md",
+        "graphify-out/graph_top_communities.html",
+        "graphify-out/wiki/index.md when present"
+      ],
+      "processing": [
+        "Scan the whole workspace, including code, docs, scripts, generated reports, and Verilog assets.",
+        "Extract entities and EXTRACTED plus INFERRED relationships into a large knowledge graph.",
+        "Cluster communities and identify god nodes, bridges, and cross-module structure.",
+        "Generate HTML/JSON/Markdown audit artifacts for architecture browsing rather than benchmark-only retrieval."
+      ],
+      "strength": "Broad workspace-level architecture and community discovery.",
+      "limit": "Large graphs can exceed HTML visualization limits; use reports and JSON when the graph is too large."
+    }
+  ]
+}

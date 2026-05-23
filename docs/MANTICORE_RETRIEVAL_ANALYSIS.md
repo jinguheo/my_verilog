@@ -1,7 +1,7 @@
 # Manticore Retrieval Analysis
 
-Use this flow to analyze parser+LSP retrieval after indexing the extracted RTL
-module facts with a Manticore Search-style full-text ranker.
+Use this flow to add Manticore Search as the fourth retrieval evaluation method
+after parser+LSP processing.
 
 ## What It Compares
 
@@ -12,9 +12,16 @@ module facts with a Manticore Search-style full-text ranker.
 | `manticore_parser_lsp` | BM25F-style full-text ranker over parser+LSP fields only |
 | `manticore_hybrid` | BM25F-style full-text ranker over parser+LSP fields plus KG labels, summaries, and parents |
 
-The current runner models Manticore Search ranking locally so it does not need a
-running `searchd` service. It also writes load-ready Manticore documents and a
-SQL schema for later server-backed experiments.
+The standalone Manticore runner models Manticore Search ranking locally so it
+does not need a running `searchd` service. It also writes load-ready Manticore
+documents and a SQL schema for later server-backed experiments.
+
+The final comparison report uses exactly four methods:
+
+1. `parser_lsp`
+2. `kg`
+3. `graphify`
+4. `manticore`
 
 ## Command
 
@@ -24,6 +31,8 @@ SQL schema for later server-backed experiments.
   --questions out\multiaxis_benchmark\questions_all.jsonl `
   --out-dir out\manticore_analysis `
   --manticore-repo tools\manticoresearch
+
+.\.venv-graphify\Scripts\python.exe platform\eval\run_four_method_retrieval_comparison.py
 ```
 
 ## Outputs
@@ -35,20 +44,31 @@ SQL schema for later server-backed experiments.
 | `out\manticore_analysis\manticore_detailed_runs.json` | Top-k results and reasons per question |
 | `out\manticore_analysis\manticore_documents.jsonl` | Parser+LSP documents that can be loaded into Manticore |
 | `out\manticore_analysis\manticore_schema.sql` | Manticore table schema and example query |
+| `out\reports\retrieval_methods_comparison.md` | Final four-method comparison report |
+| `out\reports\retrieval_methods_comparison.json` | Final four-method comparison data |
 
 ## Current Result
 
-On the 175-question multiaxis benchmark with 732 indexed modules:
+On the 175-question multiaxis benchmark with 1012 indexed modules from the
+tree-sitter-verilog seed frontend:
 
 | Mode | hit@1 | hit@3 | MRR | weighted hit@1 |
 |---|---:|---:|---:|---:|
-| `baseline` | 0.8514 | 0.8629 | 0.8686 | 0.8393 |
-| `kg` | 0.8514 | 0.8629 | 0.8562 | 0.8423 |
-| `manticore_parser_lsp` | 0.8629 | 0.8914 | 0.8857 | 0.8401 |
-| `manticore_hybrid` | 0.8686 | 0.8914 | 0.8781 | 0.8479 |
+| `baseline` | 0.8629 | 0.8743 | 0.8824 | 0.8601 |
+| `kg` | 0.8686 | 0.8800 | 0.8733 | 0.8683 |
+| `manticore_parser_lsp` | 0.8629 | 0.8971 | 0.8935 | 0.8423 |
+| `manticore_hybrid` | 0.8629 | 0.8971 | 0.8781 | 0.8423 |
 
-The parser+LSP fields benefit from BM25F-style ranking: `manticore_parser_lsp`
-improves hit@1 over the baseline by 1.15 percentage points and hit@3 by 2.85
-points. Adding KG fields into the Manticore-style ranker improves hit@1 a bit
-more, but still leaves difficult L4 function/structure questions as the main
-weak point.
+The final four-method comparison is:
+
+| Method | hit@1 | hit@3 | MRR | weighted hit@1 |
+|---|---:|---:|---:|---:|
+| `parser_lsp` | 0.8629 | 0.8743 | 0.8824 | 0.8601 |
+| `kg` | 0.8686 | 0.8800 | 0.8733 | 0.8683 |
+| `graphify` | 0.6914 | 0.8971 | 0.7950 | 0.6913 |
+| `manticore` | 0.8629 | 0.8971 | 0.8935 | 0.8423 |
+
+In this run, the KG scorer has the best weighted hit@1, while the Manticore
+parser/LSP ranker has the best hit@3 and MRR. Graphify is still useful for broad
+codebase navigation, but it is weaker for exact Verilog module retrieval in this
+benchmark.

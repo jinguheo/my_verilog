@@ -1,0 +1,34 @@
+# Spec Document: opentitan/hw/top_darjeeling/ip_autogen/pinmux/data/top_darjeeling_pinmux.ipconfig.hjson
+
+- Project: `opentitan`
+- Original source: `D:\MyWork\verilog\dbs\opentitan\hw\top_darjeeling\ip_autogen\pinmux\data\top_darjeeling_pinmux.ipconfig.hjson`
+- Exported path: `D:\MyWork\verilog\out\spec_documents_20260514_204108\opentitan\hw\top_darjeeling\ip_autogen\pinmux\data\top_darjeeling_pinmux.ipconfig.hjson`
+- Original extension: `.hjson`
+- Original bytes: 582
+
+## Content
+
+```hjson
+// Copyright lowRISC contributors (OpenTitan project).
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+{
+  instance_name: top_darjeeling_pinmux
+  param_values:
+  {
+    n_wkup_detect: 8
+    wkup_cnt_width: 8
+    n_mio_pads: 12
+    n_mio_periph_in: 4
+    n_mio_periph_out: 5
+    n_dio_pads: 73
+    n_dio_periph_in: 58
+    n_dio_periph_out: 57
+    enable_usb_wakeup: false
+    enable_strap_sampling: false
+    topname: darjeeling
+    uniquified_modules: {}
+    module_instance_name: pinmux
+  }
+}
+```

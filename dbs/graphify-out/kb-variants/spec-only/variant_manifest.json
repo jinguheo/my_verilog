@@ -1,0 +1,31 @@
+{
+  "variant": "spec-only",
+  "generated_at": "2026-05-16T16:40:31",
+  "kb_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-only\\kb",
+  "raw_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-only\\kb\\raw",
+  "raw_files": 987,
+  "includes": {
+    "spec_documents": true,
+    "code_graph": false
+  },
+  "spec": {
+    "source": "D:\\MyWork\\verilog\\out\\spec_documents_20260514_204108",
+    "documents": 985,
+    "bytes": 16339006,
+    "by_project": {
+      "opentitan": 933,
+      "ibex": 52
+    },
+    "by_extension": {
+      ".md": 545,
+      ".hjson": 367,
+      ".rst": 70,
+      ".txt": 3
+    },
+    "raw_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-only\\kb\\raw\\spec_documents",
+    "manifest": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-only\\kb\\raw\\spec_documents_manifest.json"
+  },
+  "code": null,
+  "status": "prepared_offline",
+  "note": "OpenKB add/query are LLM-backed and are intentionally not run here."
+}

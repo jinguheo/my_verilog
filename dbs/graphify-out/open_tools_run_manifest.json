@@ -1,0 +1,191 @@
+{
+  "status": "ok",
+  "generated_at": "2026-05-16T16:09:48",
+  "graph": "D:\\MyWork\\verilog\\dbs\\graphify-out\\graph.json",
+  "summary": {
+    "nodes": 39694,
+    "links": 95961,
+    "file_types": {
+      "code": 37193,
+      "rationale": 2501
+    },
+    "relations": {
+      "contains": 20512,
+      "calls": 55446,
+      "defines": 2965,
+      "instantiates": 2755,
+      "method": 5837,
+      "imports_from": 2847,
+      "rationale_for": 2538,
+      "uses": 1325,
+      "inherits": 714,
+      "imports": 1022
+    },
+    "communities": 4187,
+    "source_projects": {
+      "opentitan": 27979,
+      "ibex": 8538,
+      "sv-tests": 2221,
+      "RTLLM": 901
+    },
+    "source_extensions": {
+      ".c": 13594,
+      ".py": 10107,
+      ".sv": 7168,
+      ".rs": 4894,
+      ".cc": 1625,
+      ".h": 1056,
+      ".v": 907,
+      ".hpp": 165,
+      ".js": 92,
+      ".scala": 19,
+      ".cpp": 12
+    },
+    "sample_labels": [
+      "__init__.py",
+      "conf.py",
+      "cosim.h",
+      "Cosim()",
+      "cosim_dpi.cc",
+      "riscv_cosim_step()",
+      "riscv_cosim_set_mip()",
+      "riscv_cosim_set_nmi()",
+      "riscv_cosim_set_nmi_int()",
+      "riscv_cosim_set_debug_req()"
+    ]
+  },
+  "opentology": {
+    "generated_at": "2026-05-16T15:55:46",
+    "graph": "D:\\MyWork\\verilog\\dbs\\graphify-out\\graph.json",
+    "workspace": "D:\\MyWork\\verilog\\dbs\\graphify-out\\opentology-current",
+    "config": "D:\\MyWork\\verilog\\dbs\\graphify-out\\opentology-current\\.opentology.json",
+    "summary": {
+      "nodes": 39694,
+      "links": 95961,
+      "file_types": {
+        "code": 37193,
+        "rationale": 2501
+      },
+      "relations": {
+        "contains": 20512,
+        "calls": 55446,
+        "defines": 2965,
+        "instantiates": 2755,
+        "method": 5837,
+        "imports_from": 2847,
+        "rationale_for": 2538,
+        "uses": 1325,
+        "inherits": 714,
+        "imports": 1022
+      },
+      "communities": 4187,
+      "source_projects": {
+        "opentitan": 27979,
+        "ibex": 8538,
+        "sv-tests": 2221,
+        "RTLLM": 901
+      },
+      "source_extensions": {
+        ".c": 13594,
+        ".py": 10107,
+        ".sv": 7168,
+        ".rs": 4894,
+        ".cc": 1625,
+        ".h": 1056,
+        ".v": 907,
+        ".hpp": 165,
+        ".js": 92,
+        ".scala": 19,
+        ".cpp": 12
+      },
+      "sample_labels": [
+        "__init__.py",
+        "conf.py",
+        "cosim.h",
+        "Cosim()",
+        "cosim_dpi.cc",
+        "riscv_cosim_step()",
+        "riscv_cosim_set_mip()",
+        "riscv_cosim_set_nmi()",
+        "riscv_cosim_set_nmi_int()",
+        "riscv_cosim_set_debug_req()"
+      ]
+    },
+    "turtle": {
+      "turtle": "D:\\MyWork\\verilog\\dbs\\graphify-out\\opentology-current\\.opentology\\data\\current_graph.ttl",
+      "nodes_exported": 39694,
+      "links_exported": 95961,
+      "module_like_nodes": 3882
+    },
+    "query_results": "D:\\MyWork\\verilog\\dbs\\graphify-out\\opentology-current\\opentology_query_results.json"
+  },
+  "openkb": {
+    "generated_at": "2026-05-16T16:09:48",
+    "graph": "D:\\MyWork\\verilog\\dbs\\graphify-out\\graph.json",
+    "workspace": "D:\\MyWork\\verilog\\dbs\\graphify-out\\openkb-current",
+    "summary": {
+      "nodes": 39694,
+      "links": 95961,
+      "file_types": {
+        "code": 37193,
+        "rationale": 2501
+      },
+      "relations": {
+        "contains": 20512,
+        "calls": 55446,
+        "defines": 2965,
+        "instantiates": 2755,
+        "method": 5837,
+        "imports_from": 2847,
+        "rationale_for": 2538,
+        "uses": 1325,
+        "inherits": 714,
+        "imports": 1022
+      },
+      "communities": 4187,
+      "source_projects": {
+        "opentitan": 27979,
+        "ibex": 8538,
+        "sv-tests": 2221,
+        "RTLLM": 901
+      },
+      "source_extensions": {
+        ".c": 13594,
+        ".py": 10107,
+        ".sv": 7168,
+        ".rs": 4894,
+        ".cc": 1625,
+        ".h": 1056,
+        ".v": 907,
+        ".hpp": 165,
+        ".js": 92,
+        ".scala": 19,
+        ".cpp": 12
+      },
+      "sample_labels": [
+        "__init__.py",
+        "conf.py",
+        "cosim.h",
+        "Cosim()",
+        "cosim_dpi.cc",
+        "riscv_cosim_step()",
+        "riscv_cosim_set_mip()",
+        "riscv_cosim_set_nmi()",
+        "riscv_cosim_set_nmi_int()",
+        "riscv_cosim_set_debug_req()"
+      ]
+    },
+    "kb": {
+      "kb_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\openkb-current\\kb",
+      "raw_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\openkb-current\\kb\\raw",
+      "raw_files": [
+        "current_db_inventory.md",
+        "current_graph_report.md",
+        "current_graph_summary.md"
+      ]
+    },
+    "run_results": "D:\\MyWork\\verilog\\dbs\\graphify-out\\openkb-current\\openkb_run_results.json",
+    "status": "prepared_offline",
+    "note": "OpenKB add/query require an LLM API key; status/list were run without LLM calls."
+  }
+}

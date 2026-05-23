@@ -1,0 +1,228 @@
+{
+  "variant": "code-hdd",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\code-hdd-graphify\\graph.json",
+  "total_nodes": 44140,
+  "total_links": 100510,
+  "view_nodes": 1800,
+  "view_links": 8120,
+  "file_types": [
+    {
+      "name": "code",
+      "count": 37193
+    },
+    {
+      "name": "ast_port",
+      "count": 2689
+    },
+    {
+      "name": "rationale",
+      "count": 2501
+    },
+    {
+      "name": "ast_param",
+      "count": 629
+    },
+    {
+      "name": "ast_always",
+      "count": 494
+    },
+    {
+      "name": "ast_module",
+      "count": 277
+    },
+    {
+      "name": "hdd_module",
+      "count": 277
+    },
+    {
+      "name": "ast_function",
+      "count": 80
+    }
+  ],
+  "roles": [
+    {
+      "name": "<none>",
+      "count": 43863
+    },
+    {
+      "name": "hdd",
+      "count": 277
+    }
+  ],
+  "relations": [
+    {
+      "name": "calls",
+      "count": 55446
+    },
+    {
+      "name": "contains",
+      "count": 20512
+    },
+    {
+      "name": "method",
+      "count": 5837
+    },
+    {
+      "name": "defines",
+      "count": 2965
+    },
+    {
+      "name": "imports_from",
+      "count": 2847
+    },
+    {
+      "name": "instantiates",
+      "count": 2755
+    },
+    {
+      "name": "ast_has_port",
+      "count": 2734
+    },
+    {
+      "name": "rationale_for",
+      "count": 2538
+    },
+    {
+      "name": "uses",
+      "count": 1325
+    },
+    {
+      "name": "imports",
+      "count": 1022
+    },
+    {
+      "name": "inherits",
+      "count": 714
+    },
+    {
+      "name": "ast_has_param",
+      "count": 664
+    },
+    {
+      "name": "ast_has_always",
+      "count": 507
+    },
+    {
+      "name": "has_ast",
+      "count": 287
+    },
+    {
+      "name": "HAS_HDD",
+      "count": 277
+    },
+    {
+      "name": "ast_has_fn",
+      "count": 80
+    }
+  ],
+  "projects": [
+    {
+      "name": "opentitan",
+      "count": 27979
+    },
+    {
+      "name": "ibex",
+      "count": 8538
+    },
+    {
+      "name": "dbs",
+      "count": 4446
+    },
+    {
+      "name": "sv-tests",
+      "count": 2221
+    },
+    {
+      "name": "RTLLM",
+      "count": 901
+    },
+    {
+      "name": "unknown",
+      "count": 55
+    }
+  ],
+  "communities": 4188,
+  "top_communities": [
+    {
+      "name": "0",
+      "count": 4551
+    },
+    {
+      "name": "1",
+      "count": 4320
+    },
+    {
+      "name": "2",
+      "count": 3770
+    },
+    {
+      "name": "4",
+      "count": 3661
+    },
+    {
+      "name": "3",
+      "count": 3613
+    },
+    {
+      "name": "10",
+      "count": 1973
+    },
+    {
+      "name": "5",
+      "count": 1732
+    },
+    {
+      "name": "6",
+      "count": 1300
+    },
+    {
+      "name": "7",
+      "count": 1144
+    },
+    {
+      "name": "8",
+      "count": 1129
+    },
+    {
+      "name": "9",
+      "count": 1081
+    },
+    {
+      "name": "11",
+      "count": 724
+    },
+    {
+      "name": "12",
+      "count": 651
+    },
+    {
+      "name": "13",
+      "count": 500
+    },
+    {
+      "name": "14",
+      "count": 422
+    },
+    {
+      "name": "15",
+      "count": 377
+    },
+    {
+      "name": "16",
+      "count": 294
+    },
+    {
+      "name": "",
+      "count": 277
+    },
+    {
+      "name": "17",
+      "count": 254
+    },
+    {
+      "name": "33",
+      "count": 196
+    }
+  ],
+  "bridge_links": 0
+}

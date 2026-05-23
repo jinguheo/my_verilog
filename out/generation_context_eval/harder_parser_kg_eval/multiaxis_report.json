@@ -1,0 +1,62 @@
+{
+  "by_mode": {
+    "baseline": {
+      "count": 77,
+      "hit_at_1": 0.7532,
+      "hit_at_3": 0.9481,
+      "mrr": 0.8457,
+      "weighted_hit_at_1": 0.7497,
+      "by_level": {
+        "L4": {
+          "count": 26,
+          "hit_at_1": 0.8077,
+          "hit_at_3": 0.9615,
+          "mrr": 0.8859
+        },
+        "L5": {
+          "count": 51,
+          "hit_at_1": 0.7255,
+          "hit_at_3": 0.9412,
+          "mrr": 0.8252
+        }
+      },
+      "by_type": {
+        "hard_generation_context_blind_anchor": {
+          "count": 77,
+          "hit_at_1": 0.7532,
+          "hit_at_3": 0.9481,
+          "mrr": 0.8457
+        }
+      }
+    },
+    "kg": {
+      "count": 77,
+      "hit_at_1": 0.7662,
+      "hit_at_3": 0.9481,
+      "mrr": 0.8478,
+      "weighted_hit_at_1": 0.761,
+      "by_level": {
+        "L4": {
+          "count": 26,
+          "hit_at_1": 0.8462,
+          "hit_at_3": 0.9615,
+          "mrr": 0.8987
+        },
+        "L5": {
+          "count": 51,
+          "hit_at_1": 0.7255,
+          "hit_at_3": 0.9412,
+          "mrr": 0.8219
+        }
+      },
+      "by_type": {
+        "hard_generation_context_blind_anchor": {
+          "count": 77,
+          "hit_at_1": 0.7662,
+          "hit_at_3": 0.9481,
+          "mrr": 0.8478
+        }
+      }
+    }
+  }
+}

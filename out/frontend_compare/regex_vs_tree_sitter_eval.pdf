@@ -1,0 +1,128 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 1423 >>
+stream
+BT
+/F1 18 Tf
+72 760 Td (Regex vs Tree-Sitter Retrieval Evaluation) Tj
+-72 -26 Td
+/F1 11 Tf
+72 734 Td (Same 175-question benchmark; only seed frontend changes) Tj
+-72 -15 Td
+/F1 10 Tf
+72 707 Td (regex: raw 1544 modules, indexed 1088) Tj
+-72 -14 Td
+/F1 10 Tf
+72 693 Td (tree-sitter: raw 1433 modules, indexed 1012) Tj
+-72 -14 Td
+/F1 14 Tf
+72 667 Td (Metrics) Tj
+-72 -20 Td
+/F1 12 Tf
+72 647 Td (baseline) Tj
+-72 -17 Td
+/F1 9 Tf
+72 630 Td (regex: hit@1 0.8514, hit@3 0.8629, MRR 0.8576, weighted hit@1 0.8453) Tj
+-72 -13 Td
+/F1 9 Tf
+72 617 Td (tree-sitter: hit@1 0.8629, hit@3 0.8743, MRR 0.8824, weighted hit@1 0.8601) Tj
+-72 -13 Td
+/F1 12 Tf
+72 604 Td (kg) Tj
+-72 -17 Td
+/F1 9 Tf
+72 587 Td (regex: hit@1 0.8571, hit@3 0.8686, MRR 0.8629, weighted hit@1 0.8534) Tj
+-72 -13 Td
+/F1 9 Tf
+72 574 Td (tree-sitter: hit@1 0.8686, hit@3 0.8800, MRR 0.8733, weighted hit@1 0.8683) Tj
+-72 -13 Td
+/F1 12 Tf
+72 561 Td (manticore_parser_lsp) Tj
+-72 -17 Td
+/F1 9 Tf
+72 544 Td (regex: hit@1 0.8571, hit@3 0.9029, MRR 0.8800, weighted hit@1 0.8404) Tj
+-72 -13 Td
+/F1 9 Tf
+72 531 Td (tree-sitter: hit@1 0.8629, hit@3 0.8971, MRR 0.8935, weighted hit@1 0.8423) Tj
+-72 -13 Td
+/F1 12 Tf
+72 518 Td (manticore_hybrid) Tj
+-72 -17 Td
+/F1 9 Tf
+72 501 Td (regex: hit@1 0.8514, hit@3 0.9029, MRR 0.8754, weighted hit@1 0.8323) Tj
+-72 -13 Td
+/F1 9 Tf
+72 488 Td (tree-sitter: hit@1 0.8629, hit@3 0.8971, MRR 0.8781, weighted hit@1 0.8423) Tj
+-72 -13 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Length 1051 >>
+stream
+BT
+/F1 16 Tf
+72 760 Td (Delta: tree-sitter minus regex) Tj
+-72 -23 Td
+/F1 10 Tf
+72 737 Td (baseline: hit@1 +0.0115, hit@3 +0.0114, MRR +0.0248, weighted hit@1 +0.0148) Tj
+-72 -14 Td
+/F1 10 Tf
+72 723 Td (kg: hit@1 +0.0115, hit@3 +0.0114, MRR +0.0104, weighted hit@1 +0.0149) Tj
+-72 -14 Td
+/F1 10 Tf
+72 709 Td (manticore_parser_lsp: hit@1 +0.0058, hit@3 -0.0058, MRR +0.0135, weighted hit@1 +0.0019) Tj
+-72 -14 Td
+/F1 10 Tf
+72 695 Td (manticore_hybrid: hit@1 +0.0115, hit@3 -0.0058, MRR +0.0027, weighted hit@1 +0.0100) Tj
+-72 -14 Td
+/F1 14 Tf
+72 669 Td (Interpretation) Tj
+-72 -20 Td
+/F1 10 Tf
+72 649 Td (Tree-sitter is better on precision-oriented metrics: baseline hit@1, KG hit@1, and most) Tj
+-72 -14 Td
+/F1 10 Tf
+72 635 Td (MRR results.) Tj
+-72 -14 Td
+/F1 10 Tf
+72 621 Td (Regex indexes more modules, which can help Manticore hit@3, but it also adds) Tj
+-72 -14 Td
+/F1 10 Tf
+72 607 Td (false-positive retrieval candidates.) Tj
+-72 -14 Td
+/F1 10 Tf
+72 593 Td (Recommended default: tree-sitter frontend with regex only as fallback.) Tj
+-72 -14 Td
+ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 3 0 R >>
+endobj
+6 0 obj
+<< /Type /Pages /Kids [4 0 R 5 0 R] /Count 2 >>
+endobj
+7 0 obj
+<< /Type /Catalog /Pages 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000001554 00000 n 
+0000002657 00000 n 
+0000002783 00000 n 
+0000002909 00000 n 
+0000002972 00000 n 
+trailer << /Size 8 /Root 7 0 R >>
+startxref
+3021
+%%EOF

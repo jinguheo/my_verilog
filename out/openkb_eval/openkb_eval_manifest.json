@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-09T21:10:47",
+  "openkb_repo": "https://github.com/VectifyAI/OpenKB",
+  "local_checkout": "D:\\MyWork\\verilog\\tools\\OpenKB",
+  "kb_dir": "D:\\MyWork\\verilog\\out\\openkb_eval\\kb",
+  "raw_dir": "D:\\MyWork\\verilog\\out\\openkb_eval\\kb\\raw",
+  "skeleton": {
+    "kb_dir": "D:\\MyWork\\verilog\\out\\openkb_eval\\kb",
+    "config": "D:\\MyWork\\verilog\\out\\openkb_eval\\kb\\.openkb\\config.yaml",
+    "wiki_index": "D:\\MyWork\\verilog\\out\\openkb_eval\\kb\\wiki\\index.md",
+    "env_example": "D:\\MyWork\\verilog\\out\\openkb_eval\\kb\\.env.example"
+  },
+  "seed_info": {
+    "kg_summary": "D:\\MyWork\\verilog\\out\\kg_full\\kg_full_summary.json",
+    "retrieval_report": "D:\\MyWork\\verilog\\out\\manticore_analysis\\manticore_retrieval_report.json",
+    "frontend_report": "D:\\MyWork\\verilog\\out\\frontend_compare\\regex_vs_tree_sitter_eval.json",
+    "raw_file": "D:\\MyWork\\verilog\\out\\openkb_eval\\kb\\raw\\verilog_kb_eval_snapshot.md"
+  },
+  "generation_info": {
+    "copied": true,
+    "source": "D:\\MyWork\\verilog\\out\\reports\\four_method_generation_eval_full_detail.md",
+    "raw_file": "D:\\MyWork\\verilog\\out\\openkb_eval\\kb\\raw\\four_method_generation_eval_full_detail.md",
+    "questions": 77
+  },
+  "graphify_info": {
+    "copied": true,
+    "source": "D:\\MyWork\\verilog\\graphify-out\\GRAPH_REPORT.md",
+    "raw_file": "D:\\MyWork\\verilog\\out\\openkb_eval\\kb\\raw\\graphify_graph_report.md"
+  },
+  "questions": {
+    "jsonl": "D:\\MyWork\\verilog\\out\\openkb_eval\\openkb_eval_questions.jsonl",
+    "markdown": "D:\\MyWork\\verilog\\out\\openkb_eval\\openkb_eval_questions.md",
+    "count": 80
+  },
+  "runbook": "D:\\MyWork\\verilog\\out\\openkb_eval\\OPENKB_EVAL_RUNBOOK.md",
+  "status": "prepared_offline; run openkb add/query after setting LLM_API_KEY"
+}

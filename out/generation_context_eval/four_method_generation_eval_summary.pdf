@@ -1,0 +1,68 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 1095 >>
+stream
+BT
+/F1 18 Tf
+72 760 Td (Four-Method Verilog Generation Evaluation) Tj
+-72 -26 Td
+/F1 14 Tf
+72 722 Td (Direct functional harness) Tj
+-72 -20 Td
+/F1 10 Tf
+72 702 Td (Canonical RTL candidates: 150/150 PASS; pass rate 1.0000) Tj
+-72 -14 Td
+/F1 10 Tf
+72 688 Td (This validates the testbench/simulator path, not method quality.) Tj
+-72 -14 Td
+/F1 14 Tf
+72 662 Td (Hard generation context readiness) Tj
+-72 -20 Td
+/F1 10 Tf
+72 642 Td (parser_lsp: hit@1 0.9481, hit@3 1.0000, hit@5 1.0000, MRR 0.9675) Tj
+-72 -14 Td
+/F1 10 Tf
+72 628 Td (manticore_parser_lsp: hit@1 0.8312, hit@3 0.8961, hit@5 0.9481, MRR 0.8645) Tj
+-72 -14 Td
+/F1 10 Tf
+72 614 Td (kg: hit@1 0.9481, hit@3 0.9870, hit@5 1.0000, MRR 0.9658) Tj
+-72 -14 Td
+/F1 10 Tf
+72 600 Td (graphify: hit@1 0.9740, hit@3 0.9740, hit@5 0.9740, MRR 0.9740) Tj
+-72 -14 Td
+/F1 14 Tf
+72 574 Td (Conclusion) Tj
+-72 -20 Td
+/F1 10 Tf
+72 554 Td (Graphify has the strongest hit@1 on hard generation-context prompts.) Tj
+-72 -14 Td
+/F1 10 Tf
+72 540 Td (Parser/LSP and KG are close and perfect at hit@5; Manticore needs generation-specific tuning.) Tj
+-72 -14 Td
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000001226 00000 n 
+0000001352 00000 n 
+0000001409 00000 n 
+trailer << /Size 6 /Root 5 0 R >>
+startxref
+1458
+%%EOF

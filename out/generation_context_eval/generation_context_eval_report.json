@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-05-09T20:48:30",
+  "evaluation_type": "generation_context_readiness",
+  "note": "This evaluates whether each method retrieves the RTL context needed for hard Verilog generation prompts. It is not an LLM code-generation pass rate.",
+  "questions": 77,
+  "seed": "D:\\MyWork\\verilog\\out\\merged_ontology_seed.jsonl",
+  "approved_labels": {
+    "path": "D:\\MyWork\\verilog\\out\\label_approval\\auto_approved_labels.jsonl",
+    "module_labels_added": 22,
+    "ip_context_labels_added": 115
+  },
+  "modes": {
+    "parser_lsp": {
+      "count": 77,
+      "hit_at_1": 0.9481,
+      "hit_at_3": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.9675,
+      "by_level": {
+        "L3": {
+          "count": 26,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L4": {
+          "count": 26,
+          "hit_at_1": 0.8846,
+          "hit_at_3": 1.0,
+          "mrr": 0.9295
+        },
+        "L5": {
+          "count": 25,
+          "hit_at_1": 0.96,
+          "hit_at_3": 1.0,
+          "mrr": 0.9733
+        }
+      },
+      "status_counts": {
+        "HIT@1": 73,
+        "HIT@3": 4
+      }
+    },
+    "manticore_parser_lsp": {
+      "count": 77,
+      "hit_at_1": 0.8312,
+      "hit_at_3": 0.8961,
+      "hit_at_5": 0.9481,
+      "mrr": 0.8645,
+      "by_level": {
+        "L3": {
+          "count": 26,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L4": {
+          "count": 26,
+          "hit_at_1": 0.6923,
+          "hit_at_3": 0.8077,
+          "mrr": 0.7654
+        },
+        "L5": {
+          "count": 25,
+          "hit_at_1": 0.8,
+          "hit_at_3": 0.88,
+          "mrr": 0.8267
+        }
+      },
+      "status_counts": {
+        "HIT@1": 64,
+        "HIT@3": 5,
+        "HIT@5": 4,
+        "MISS": 4
+      }
+    },
+    "kg": {
+      "count": 77,
+      "hit_at_1": 0.9481,
+      "hit_at_3": 0.987,
+      "hit_at_5": 1.0,
+      "mrr": 0.9658,
+      "by_level": {
+        "L3": {
+          "count": 26,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L4": {
+          "count": 26,
+          "hit_at_1": 0.8462,
+          "hit_at_3": 0.9615,
+          "mrr": 0.8987
+        },
+        "L5": {
+          "count": 25,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        }
+      },
+      "status_counts": {
+        "HIT@1": 73,
+        "HIT@3": 3,
+        "HIT@5": 1
+      }
+    },
+    "graphify": {
+      "count": 77,
+      "hit_at_1": 0.974,
+      "hit_at_3": 0.974,
+      "hit_at_5": 0.974,
+      "mrr": 0.974,
+      "by_level": {
+        "L3": {
+          "count": 26,
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "L4": {
+          "count": 26,
+          "hit_at_1": 0.9615,
+          "hit_at_3": 0.9615,
+          "mrr": 0.9615
+        },
+        "L5": {
+          "count": 25,
+          "hit_at_1": 0.96,
+          "hit_at_3": 0.96,
+          "mrr": 0.96
+        }
+      },
+      "status_counts": {
+        "HIT@1": 75,
+        "MISS": 2
+      }
+    }
+  }
+}

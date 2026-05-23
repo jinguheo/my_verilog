@@ -37,3 +37,7 @@ artifacts/
 out/ast/
 out/hdd/
 tools/
+
+# large backup / cache directories
+graphify-out.backup_*/
+dbs/graphify-out/cache/

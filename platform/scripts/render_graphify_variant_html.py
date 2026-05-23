@@ -21,9 +21,12 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_GRAPHIFY_ROOT = ROOT / "dbs" / "graphify-out"
 
 VARIANTS = {
-    "spec-only": DEFAULT_GRAPHIFY_ROOT / "spec-only-graphify" / "graph.json",
-    "code-only": DEFAULT_GRAPHIFY_ROOT / "code-only-graphify" / "graph.json",
-    "spec-code": DEFAULT_GRAPHIFY_ROOT / "spec-code-graphify" / "graph.json",
+    "spec-only":          DEFAULT_GRAPHIFY_ROOT / "spec-only-graphify"          / "graph.json",
+    "code-only":          DEFAULT_GRAPHIFY_ROOT / "code-only-graphify"          / "graph.json",
+    "spec-code":          DEFAULT_GRAPHIFY_ROOT / "spec-code-graphify"          / "graph.json",
+    "code-ast":           DEFAULT_GRAPHIFY_ROOT / "code-ast-graphify"           / "graph.json",
+    "code-hdd":           DEFAULT_GRAPHIFY_ROOT / "code-hdd-graphify"           / "graph.json",
+    "spec-hdd-code-ast":  DEFAULT_GRAPHIFY_ROOT / "spec-hdd-code-ast-graphify"  / "graph.json",
 }
 
 BRIDGE_RELATIONS = {"spec_component_matches_code", "spec_path_matches_code_path"}
@@ -257,18 +260,51 @@ def write_html(path: Path, view: dict[str, Any]) -> None:
 </div>
 <script>
 const data = {payload};
+/* ── 카테고리별 색상 ────────────────────────────────────────────────
+   BLUE  계열 = Code  (graphify 추출 코드 심볼)
+   TEAL  계열 = AST   (tree-sitter 파싱 구조)
+   GREEN 계열 = HDD   (검증 가능한 설계 문서)
+   DARK  계열 = Spec  (사양 문서)
+   ──────────────────────────────────────────────────────────────── */
 const colors = {{
-  code:"#2563eb", document:"#111827", rationale:"#7c3aed", "<none>":"#64748b"
+  /* Code */
+  "code":         "#2563eb",   /* 파란색  — graphify 코드 심볼 */
+  "rationale":    "#7c3aed",   /* 보라색  — graphify 추론 노드 */
+  /* AST (teal 계열) */
+  "ast_module":   "#0f766e",   /* 진한 teal */
+  "ast_port":     "#0891b2",   /* 하늘색  — 포트 */
+  "ast_param":    "#0d9488",   /* 중간 teal — 파라미터 */
+  "ast_always":   "#f59e0b",   /* 앰버   — always 블록 */
+  "ast_function": "#db2777",   /* 핑크   — 함수 */
+  "ast_package":  "#8b5cf6",   /* 연보라 — 패키지 */
+  /* HDD (green 계열) */
+  "hdd_module":   "#16a34a",   /* 초록색  — HDD 문서 (PASS) */
+  /* Spec (dark 계열) */
+  "document":     "#1e3a5f",   /* 남색   — spec 문서 */
+  "<none>":       "#94a3b8",   /* 회색   — 미분류 */
 }};
 const relationColors = {{
-  spec_component_matches_code:"rgba(220,38,38,.7)",
-  spec_path_matches_code_path:"rgba(249,115,22,.58)",
-  instantiates:"rgba(37,99,235,.58)",
-  calls:"rgba(37,99,235,.25)",
-  contains:"rgba(100,116,139,.24)",
-  references_component:"rgba(22,163,74,.32)",
-  documents_component:"rgba(22,163,74,.28)",
-  mentions_topic:"rgba(124,58,237,.28)"
+  /* Spec bridge */
+  spec_component_matches_code:  "rgba(220,38,38,.75)",
+  spec_path_matches_code_path:  "rgba(249,115,22,.60)",
+  /* Code */
+  instantiates:       "rgba(37,99,235,.60)",
+  calls:              "rgba(37,99,235,.22)",
+  contains:           "rgba(100,116,139,.22)",
+  defines:            "rgba(37,99,235,.35)",
+  imports_from:       "rgba(37,99,235,.18)",
+  /* Spec */
+  references_component: "rgba(30,58,95,.35)",
+  documents_component:  "rgba(30,58,95,.28)",
+  mentions_topic:       "rgba(124,58,237,.28)",
+  /* AST */
+  has_ast:            "rgba(15,118,110,.70)",
+  ast_has_port:       "rgba(8,145,178,.45)",
+  ast_has_param:      "rgba(13,148,136,.45)",
+  ast_has_always:     "rgba(245,158,11,.50)",
+  ast_has_fn:         "rgba(219,39,119,.45)",
+  /* HDD */
+  HAS_HDD:            "rgba(22,163,74,.75)",
 }};
 const nodesById = new Map(data.nodes.map(n => [n.id, n]));
 let enabledTypes = new Set([...new Set(data.nodes.map(n => n.file_type))]);
@@ -334,7 +370,9 @@ function draw() {{
     const a = positions.get(e.source), b = positions.get(e.target);
     ctx.beginPath();
     ctx.strokeStyle = relationColors[e.relation] || "rgba(80,80,80,.18)";
-    ctx.lineWidth = e.relation.startsWith("spec_") ? 1.7 : 0.75;
+    ctx.lineWidth = (e.relation.startsWith("spec_") || e.relation === "HAS_HDD") ? 2.0
+                  : e.relation.startsWith("ast_") || e.relation === "has_ast" ? 1.2
+                  : 0.75;
     ctx.moveTo(sx(a.x), sy(a.y)); ctx.lineTo(sx(b.x), sy(b.y)); ctx.stroke();
   }}
   for (const id of ids) {{
@@ -342,7 +380,12 @@ function draw() {{
     ctx.beginPath();
     ctx.fillStyle = selected === id ? "#000" : (colors[n.file_type] || "#64748b");
     ctx.arc(sx(p.x), sy(p.y), r, 0, Math.PI*2); ctx.fill();
-    if (search || n.degree > 80 || n.file_type === "document" && n.degree > 40) {{
+    const showLabel = search
+      || n.degree > 80
+      || (n.file_type === "document"   && n.degree > 40)
+      || n.file_type === "hdd_module"
+      || n.file_type === "ast_module";
+    if (showLabel) {{
       ctx.font = "12px Arial"; ctx.fillStyle = "#17202a";
       ctx.fillText(n.label.slice(0,56), sx(p.x)+r+4, sy(p.y)+4);
     }}

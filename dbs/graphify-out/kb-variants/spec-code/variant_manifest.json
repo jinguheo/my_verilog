@@ -1,0 +1,91 @@
+{
+  "variant": "spec-code",
+  "generated_at": "2026-05-16T16:40:35",
+  "kb_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-code\\kb",
+  "raw_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-code\\kb\\raw",
+  "raw_files": 995,
+  "includes": {
+    "spec_documents": true,
+    "code_graph": true
+  },
+  "spec": {
+    "source": "D:\\MyWork\\verilog\\out\\spec_documents_20260514_204108",
+    "documents": 985,
+    "bytes": 16339006,
+    "by_project": {
+      "opentitan": 933,
+      "ibex": 52
+    },
+    "by_extension": {
+      ".md": 545,
+      ".hjson": 367,
+      ".rst": 70,
+      ".txt": 3
+    },
+    "raw_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-code\\kb\\raw\\spec_documents",
+    "manifest": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-code\\kb\\raw\\spec_documents_manifest.json"
+  },
+  "code": {
+    "graph": "D:\\MyWork\\verilog\\dbs\\graphify-out\\graph.json",
+    "summary": {
+      "nodes": 39694,
+      "links": 95961,
+      "communities": 4187,
+      "file_types": {
+        "code": 37193,
+        "rationale": 2501
+      },
+      "relations": {
+        "calls": 55446,
+        "contains": 20512,
+        "method": 5837,
+        "defines": 2965,
+        "imports_from": 2847,
+        "instantiates": 2755,
+        "rationale_for": 2538,
+        "uses": 1325,
+        "imports": 1022,
+        "inherits": 714
+      },
+      "source_projects": {
+        "opentitan": 27979,
+        "ibex": 8538,
+        "sv-tests": 2221,
+        "RTLLM": 901
+      },
+      "source_extensions": {
+        ".c": 13594,
+        ".py": 10107,
+        ".sv": 7168,
+        ".rs": 4894,
+        ".cc": 1625,
+        ".h": 1056,
+        ".v": 907,
+        ".hpp": 165,
+        ".js": 92,
+        ".scala": 19,
+        ".cpp": 12
+      },
+      "module_like_nodes": 3882
+    },
+    "raw_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\kb-variants\\spec-code\\kb\\raw\\code_graph",
+    "raw_files": [
+      "code_graph\\GRAPH_REPORT.md",
+      "code_graph\\code_graph_summary.md",
+      "code_graph\\code_relation_samples.md",
+      "code_graph\\rtl_module_index_01.md",
+      "code_graph\\rtl_module_index_02.md",
+      "code_graph\\rtl_module_index_03.md",
+      "code_graph\\rtl_module_index_04.md",
+      "code_graph\\top20_large_communities_report.md"
+    ],
+    "module_index_files": [
+      "code_graph\\rtl_module_index_01.md",
+      "code_graph\\rtl_module_index_02.md",
+      "code_graph\\rtl_module_index_03.md",
+      "code_graph\\rtl_module_index_04.md"
+    ]
+  },
+  "status": "prepared_offline",
+  "note": "OpenKB add/query are LLM-backed and are intentionally not run here."
+}

@@ -1,54 +1,76 @@
 # Knowledge DB Evaluation
 
-이 문서는 현재 구성된 RTL knowledge DB를 기준으로 질문 세트와 retrieval 평가를 만드는 방법을 설명합니다.
+This document describes how the RTL knowledge DB retrieval benchmark is built
+and evaluated in this workspace.
 
-## 목적
+## Purpose
 
-두 조건을 비교합니다.
+The benchmark compares four retrieval modes:
 
-1. `kg`
-   - inferred labels
-   - summary
-   - reverse graph hint
-   - semantic query expansion
-
-2. `baseline`
+1. `baseline`
+   - tree-sitter-verilog seed extraction
    - module name
    - file path
    - ports
    - instances
-   - parser/LSP 수준의 file-local signal
+   - parser/LSP-style local structural signals
 
-즉 `baseline`은 tree-sitter AST + LSP 기반 질의의 근사치이고, `kg`는 ontology/knowledge graph를 활용하는 조건입니다.
+2. `kg`
+   - the same tree-sitter seed
+   - inferred labels
+   - summaries
+   - reverse graph hints
+   - semantic query expansion
 
-## 생성되는 문항
+3. `graphify`
+   - Graphify AST graph
+   - BFS query subgraph context
+   - graph node matches mapped back to RTL modules
 
-자동으로 아래 세트를 만듭니다.
+4. `manticore`
+   - the same tree-sitter seed
+   - Manticore Search-style BM25F ranking over parser/LSP fields
+
+Methods 1, 2, and 4 share the same parser/LSP frontend:
+
+```text
+platform/ingest/generate_ontology_seed.py --frontend auto
+```
+
+When `.venv-graphify\Scripts\python.exe` is available, the workflow uses that
+interpreter so `tree_sitter` and `tree_sitter_verilog` are available. Regex
+module extraction remains as a fallback for environments without tree-sitter.
+
+## Generated Questions
+
+The benchmark creates 150 standard questions:
 
 - easy 50
 - medium 50
 - hard 50
 
-총 150문항입니다.
+The multiaxis benchmark creates 175 questions across five levels and seven
+question types.
 
-질문 유형 예시:
+Question examples include:
 
 - exact module lookup
 - unique port lookup
-- label + port combined lookup
+- label plus port combined lookup
 - parent-child retrieval
-- path + interface clue
+- path plus interface clue
 - reverse graph query
 - multi-hop wrapper query
 - semantic bridge query
 
-## 실행
+## Run
 
 ```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\workflow.ps1 -Step seed
 powershell -NoProfile -ExecutionPolicy Bypass -File .\workflow.ps1 -Step benchmark
 ```
 
-## 산출물
+## Outputs
 
 ```text
 out\eval_benchmark\benchmark_easy.jsonl
@@ -63,6 +85,9 @@ out\eval_results\detailed_runs.json
 out\eval_results\predictions_for_verilogeval.json
 out\eval_results\verilogeval_adapter.json
 
+out\multiaxis_benchmark\questions_all.jsonl
+out\multiaxis_eval_results\multiaxis_report.json
+
 out\manticore_analysis\manticore_retrieval_report.json
 out\manticore_analysis\manticore_retrieval_report.md
 out\manticore_analysis\manticore_detailed_runs.json
@@ -70,54 +95,37 @@ out\manticore_analysis\manticore_documents.jsonl
 out\manticore_analysis\manticore_schema.sql
 
 out\reports\kg_eval_report.pdf
-out\reports\kg_eval_report.json
+out\reports\retrieval_methods_comparison.pdf
+out\reports\retrieval_software_blocks_comparison.pdf
 ```
 
-## Manticore Search Evaluation
+## Current Tree-Sitter Run
 
-`workflow.ps1 -Step benchmark` also runs a Manticore Search-style retrieval
-evaluation. The repository is expected at:
+The current KG snapshot contains:
 
-```text
-tools\manticoresearch
-```
+- 1433 modules
+- 16766 ports
+- 2103 instance edges
+- 18251 nodes
+- 22630 edges
 
-That directory is a local checkout of:
+Current multiaxis retrieval metrics:
 
-```text
-https://github.com/manticoresoftware/manticoresearch
-```
-
-The current runner does not require a running `searchd` service. It models the
-Manticore full-text behavior used for this benchmark with a local BM25F ranker,
-then writes both load-ready documents and a Manticore SQL schema for a later
-server-backed run.
-
-Compared methods:
-
-- `baseline`: existing parser/LSP overlap retrieval
-- `kg`: KG-aware retrieval with labels, summaries, and graph context
-- `manticore_parser_lsp`: BM25F over parser/LSP fields
-- `manticore_hybrid`: BM25F over parser/LSP plus KG fields
+| Mode | hit@1 | hit@3 | MRR | weighted hit@1 |
+|---|---:|---:|---:|---:|
+| `baseline` | 0.8629 | 0.8743 | 0.8824 | 0.8601 |
+| `kg` | 0.8686 | 0.8800 | 0.8733 | 0.8683 |
+| `graphify` | 0.6914 | 0.8971 | 0.7950 | 0.6913 |
+| `manticore` | 0.8629 | 0.8971 | 0.8935 | 0.8423 |
 
 ## VerilogEval
 
-현재 이 workspace에서는 `verilogeval` 패키지나 공식 runner를 직접 찾지 못했습니다. 그래서 두 가지를 제공합니다.
+The official VerilogEval runner is not bundled in this workspace. The benchmark
+therefore provides two local artifacts:
 
-1. 공식 runner가 생겼을 때 바로 연결할 수 있는 adapter 파일
-2. 지금 바로 비교 가능한 `proxy VerilogEval score`
+1. an adapter-style prediction file that can be connected to an official runner
+   later
+2. a local proxy VerilogEval readiness score based on retrieval quality
 
-주의:
-
-- `proxy VerilogEval score`는 공식 VerilogEval 점수가 아닙니다.
-- 로컬 retrieval quality를 100점 스케일로 정규화한 readiness score입니다.
-
-## 해석
-
-보통 아래처럼 해석하면 됩니다.
-
-- easy: exact lookup이 잘 되는지
-- medium: label + interface 조합 질의가 잘 되는지
-- hard: reverse graph, semantic paraphrase, wrapper reasoning이 되는지
-
-실무적으로 중요한 건 `hard` 구간에서 `kg`가 `baseline`보다 얼마나 더 잘 맞는지입니다.
+The proxy score is not an official VerilogEval score. It is a normalized
+readiness indicator for local retrieval quality.

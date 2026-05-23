@@ -1,0 +1,38 @@
+{
+  "regex": {
+    "projects": {
+      "opentitan": {
+        "status": "ok",
+        "modules": 1221,
+        "out": "D:\\MyWork\\verilog\\out\\frontend_compare\\regex_opentitan_ontology_seed.jsonl",
+        "frontend": "regex"
+      },
+      "ibex": {
+        "status": "ok",
+        "modules": 323,
+        "out": "D:\\MyWork\\verilog\\out\\frontend_compare\\regex_ibex_ontology_seed.jsonl",
+        "frontend": "regex"
+      }
+    },
+    "merged_seed": "D:\\MyWork\\verilog\\out\\frontend_compare\\regex_merged_ontology_seed.jsonl",
+    "modules": 1544
+  },
+  "tree-sitter": {
+    "projects": {
+      "opentitan": {
+        "status": "ok",
+        "modules": 1142,
+        "out": "D:\\MyWork\\verilog\\out\\frontend_compare\\tree-sitter_opentitan_ontology_seed.jsonl",
+        "frontend": "tree-sitter"
+      },
+      "ibex": {
+        "status": "ok",
+        "modules": 291,
+        "out": "D:\\MyWork\\verilog\\out\\frontend_compare\\tree-sitter_ibex_ontology_seed.jsonl",
+        "frontend": "tree-sitter"
+      }
+    },
+    "merged_seed": "D:\\MyWork\\verilog\\out\\frontend_compare\\tree-sitter_merged_ontology_seed.jsonl",
+    "modules": 1433
+  }
+}
