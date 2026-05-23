@@ -1,4 +1,4 @@
-# Graph Report - D:\MyWork\verilog\out\spec_documents_20260514_204108  (2026-05-16)
+# Graph Report - D:\MyWork\verilog\out\spec_documents_20260514_204108  (2026-05-23)
 
 ## Corpus Check
 - Spec-only graph built deterministically from exported spec documents; no LLM/OpenKB ingest was run.
