@@ -1,0 +1,86 @@
+{
+  "status": "ok",
+  "created_at": "2026-05-23T16:42:22",
+  "spec_root": "D:\\MyWork\\verilog\\out\\ibex_openkb_raw\\wiki",
+  "out_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-openkb-raw-graphify",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-openkb-raw-graphify\\graph.json",
+  "report": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-openkb-raw-graphify\\GRAPH_REPORT.md",
+  "html": "written",
+  "nodes": 77,
+  "edges": 187,
+  "communities": 7,
+  "documents": 10,
+  "sections": 38,
+  "components": 11,
+  "topics": 1,
+  "total_words": 3553,
+  "extensions": {
+    ".md": 10
+  },
+  "projects": {
+    "concepts": 3,
+    "sources": 2,
+    "summaries": 2,
+    "agents_md": 1,
+    "index_md": 1,
+    "log_md": 1
+  },
+  "relations": {
+    "contains": 68,
+    "references_component": 60,
+    "documents_component": 59,
+    "mentions_topic": 4
+  },
+  "top_components": [
+    [
+      "fetch",
+      8
+    ],
+    [
+      "instruction",
+      8
+    ],
+    [
+      "branch",
+      7
+    ],
+    [
+      "instruction_fetch",
+      7
+    ],
+    [
+      "memory",
+      7
+    ],
+    [
+      "pipeline",
+      5
+    ],
+    [
+      "prediction",
+      5
+    ],
+    [
+      "protocol",
+      5
+    ],
+    [
+      "pipeline_details",
+      4
+    ],
+    [
+      "log",
+      2
+    ],
+    [
+      "agents",
+      1
+    ]
+  ],
+  "top_topics": [
+    [
+      "memory",
+      4
+    ]
+  ]
+}

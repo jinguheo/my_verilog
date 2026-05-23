@@ -1,0 +1,12 @@
+{
+  "root": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki",
+  "total_files": 22,
+  "total_words": 3053,
+  "files": {
+    "documents": 22,
+    "code": 0,
+    "paper": 0,
+    "image": 0
+  },
+  "warning": "Spec-only graph built deterministically from exported spec documents; no LLM/OpenKB ingest was run."
+}

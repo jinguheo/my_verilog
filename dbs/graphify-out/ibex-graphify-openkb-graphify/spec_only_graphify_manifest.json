@@ -1,0 +1,121 @@
+{
+  "status": "ok",
+  "created_at": "2026-05-23T16:42:23",
+  "spec_root": "D:\\MyWork\\verilog\\out\\ibex_graphify_openkb\\kb\\wiki",
+  "out_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-graphify-openkb-graphify",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-graphify-openkb-graphify\\graph.json",
+  "report": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-graphify-openkb-graphify\\GRAPH_REPORT.md",
+  "html": "written",
+  "nodes": 191,
+  "edges": 524,
+  "communities": 10,
+  "documents": 22,
+  "sections": 120,
+  "components": 20,
+  "topics": 1,
+  "total_words": 3053,
+  "extensions": {
+    ".md": 22
+  },
+  "projects": {
+    "concepts": 8,
+    "sources": 6,
+    "summaries": 6,
+    "index_md": 1,
+    "log_md": 1
+  },
+  "relations": {
+    "contains": 186,
+    "references_component": 182,
+    "documents_component": 155,
+    "mentions_topic": 18
+  },
+  "top_components": [
+    [
+      "instruction",
+      13
+    ],
+    [
+      "memory",
+      13
+    ],
+    [
+      "anchors",
+      11
+    ],
+    [
+      "fetch",
+      11
+    ],
+    [
+      "instruction_fetch_rst",
+      10
+    ],
+    [
+      "instruction_fetch",
+      9
+    ],
+    [
+      "protocol",
+      9
+    ],
+    [
+      "side",
+      9
+    ],
+    [
+      "branch",
+      8
+    ],
+    [
+      "pipeline",
+      8
+    ],
+    [
+      "pipeline_details_rst",
+      8
+    ],
+    [
+      "prediction",
+      8
+    ],
+    [
+      "accesses",
+      6
+    ],
+    [
+      "misaligned",
+      6
+    ],
+    [
+      "topic",
+      6
+    ],
+    [
+      "knowledge",
+      5
+    ],
+    [
+      "pipeline_details",
+      5
+    ],
+    [
+      "stages",
+      5
+    ],
+    [
+      "00_graphify_spec_wiki_index",
+      4
+    ],
+    [
+      "log",
+      1
+    ]
+  ],
+  "top_topics": [
+    [
+      "memory",
+      18
+    ]
+  ]
+}

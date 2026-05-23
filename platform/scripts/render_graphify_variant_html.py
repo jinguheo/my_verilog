@@ -21,12 +21,16 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_GRAPHIFY_ROOT = ROOT / "dbs" / "graphify-out"
 
 VARIANTS = {
-    "spec-only":          DEFAULT_GRAPHIFY_ROOT / "spec-only-graphify"          / "graph.json",
-    "code-only":          DEFAULT_GRAPHIFY_ROOT / "code-only-graphify"          / "graph.json",
-    "spec-code":          DEFAULT_GRAPHIFY_ROOT / "spec-code-graphify"          / "graph.json",
-    "code-ast":           DEFAULT_GRAPHIFY_ROOT / "code-ast-graphify"           / "graph.json",
-    "code-hdd":           DEFAULT_GRAPHIFY_ROOT / "code-hdd-graphify"           / "graph.json",
-    "spec-hdd-code-ast":  DEFAULT_GRAPHIFY_ROOT / "spec-hdd-code-ast-graphify"  / "graph.json",
+    "spec-only":              DEFAULT_GRAPHIFY_ROOT / "spec-only-graphify"              / "graph.json",
+    "code-only":              DEFAULT_GRAPHIFY_ROOT / "code-only-graphify"              / "graph.json",
+    "spec-code":              DEFAULT_GRAPHIFY_ROOT / "spec-code-graphify"              / "graph.json",
+    "code-ast":               DEFAULT_GRAPHIFY_ROOT / "code-ast-graphify"               / "graph.json",
+    "code-hdd":               DEFAULT_GRAPHIFY_ROOT / "code-hdd-graphify"               / "graph.json",
+    "spec-hdd-code-ast":      DEFAULT_GRAPHIFY_ROOT / "spec-hdd-code-ast-graphify"      / "graph.json",
+    # ibex mini comparison variants
+    "ibex-mini-A":            DEFAULT_GRAPHIFY_ROOT / "ibex-mini-A"                     / "graph.json",
+    "ibex-openkb-raw":        DEFAULT_GRAPHIFY_ROOT / "ibex-openkb-raw-graphify"        / "graph.json",
+    "ibex-graphify-openkb":   DEFAULT_GRAPHIFY_ROOT / "ibex-graphify-openkb-graphify"   / "graph.json",
 }
 
 BRIDGE_RELATIONS = {"spec_component_matches_code", "spec_path_matches_code_path"}
@@ -509,12 +513,19 @@ def main() -> None:
     parser.add_argument("--graphify-root", type=Path, default=DEFAULT_GRAPHIFY_ROOT)
     parser.add_argument("--out-dir", type=Path, default=DEFAULT_GRAPHIFY_ROOT / "html-views")
     parser.add_argument("--max-nodes", type=int, default=1800)
+    parser.add_argument("--variants", nargs="+", default=None,
+                        help="Render only these variant names (default: all)")
     args = parser.parse_args()
+
+    selected_variants = {
+        k: v for k, v in VARIANTS.items()
+        if args.variants is None or k in args.variants
+    }
 
     out_dir = args.out_dir.resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
     views = []
-    for variant, default_path in VARIANTS.items():
+    for variant, default_path in selected_variants.items():
         graph_path = args.graphify_root / default_path.relative_to(DEFAULT_GRAPHIFY_ROOT)
         view = build_view(variant, graph_path.resolve(), args.max_nodes)
         write_html(out_dir / f"{variant}.html", view)

@@ -1,0 +1,124 @@
+{
+  "variant": "ibex-openkb-raw",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-openkb-raw-graphify\\graph.json",
+  "total_nodes": 77,
+  "total_links": 187,
+  "view_nodes": 77,
+  "view_links": 187,
+  "file_types": [
+    {
+      "name": "document",
+      "count": 77
+    }
+  ],
+  "roles": [
+    {
+      "name": "section",
+      "count": 38
+    },
+    {
+      "name": "component",
+      "count": 11
+    },
+    {
+      "name": "category",
+      "count": 10
+    },
+    {
+      "name": "document",
+      "count": 10
+    },
+    {
+      "name": "project",
+      "count": 6
+    },
+    {
+      "name": "corpus",
+      "count": 1
+    },
+    {
+      "name": "topic",
+      "count": 1
+    }
+  ],
+  "relations": [
+    {
+      "name": "contains",
+      "count": 64
+    },
+    {
+      "name": "references_component",
+      "count": 60
+    },
+    {
+      "name": "documents_component",
+      "count": 59
+    },
+    {
+      "name": "mentions_topic",
+      "count": 4
+    }
+  ],
+  "projects": [
+    {
+      "name": "__graphify_spec_only__",
+      "count": 29
+    },
+    {
+      "name": "concepts",
+      "count": 22
+    },
+    {
+      "name": "AGENTS.md",
+      "count": 8
+    },
+    {
+      "name": "summaries",
+      "count": 7
+    },
+    {
+      "name": "index.md",
+      "count": 5
+    },
+    {
+      "name": "log.md",
+      "count": 4
+    },
+    {
+      "name": "sources",
+      "count": 2
+    }
+  ],
+  "communities": 7,
+  "top_communities": [
+    {
+      "name": "0",
+      "count": 14
+    },
+    {
+      "name": "1",
+      "count": 12
+    },
+    {
+      "name": "2",
+      "count": 12
+    },
+    {
+      "name": "3",
+      "count": 12
+    },
+    {
+      "name": "4",
+      "count": 11
+    },
+    {
+      "name": "5",
+      "count": 9
+    },
+    {
+      "name": "6",
+      "count": 7
+    }
+  ],
+  "bridge_links": 0
+}

@@ -1,0 +1,132 @@
+{
+  "variant": "ibex-graphify-openkb",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-graphify-openkb-graphify\\graph.json",
+  "total_nodes": 191,
+  "total_links": 524,
+  "view_nodes": 191,
+  "view_links": 524,
+  "file_types": [
+    {
+      "name": "document",
+      "count": 191
+    }
+  ],
+  "roles": [
+    {
+      "name": "section",
+      "count": 120
+    },
+    {
+      "name": "category",
+      "count": 22
+    },
+    {
+      "name": "document",
+      "count": 22
+    },
+    {
+      "name": "component",
+      "count": 20
+    },
+    {
+      "name": "project",
+      "count": 5
+    },
+    {
+      "name": "corpus",
+      "count": 1
+    },
+    {
+      "name": "topic",
+      "count": 1
+    }
+  ],
+  "relations": [
+    {
+      "name": "references_component",
+      "count": 182
+    },
+    {
+      "name": "contains",
+      "count": 169
+    },
+    {
+      "name": "documents_component",
+      "count": 155
+    },
+    {
+      "name": "mentions_topic",
+      "count": 18
+    }
+  ],
+  "projects": [
+    {
+      "name": "concepts",
+      "count": 59
+    },
+    {
+      "name": "__graphify_spec_only__",
+      "count": 49
+    },
+    {
+      "name": "summaries",
+      "count": 36
+    },
+    {
+      "name": "sources",
+      "count": 34
+    },
+    {
+      "name": "log.md",
+      "count": 8
+    },
+    {
+      "name": "index.md",
+      "count": 5
+    }
+  ],
+  "communities": 10,
+  "top_communities": [
+    {
+      "name": "0",
+      "count": 37
+    },
+    {
+      "name": "1",
+      "count": 27
+    },
+    {
+      "name": "2",
+      "count": 24
+    },
+    {
+      "name": "3",
+      "count": 20
+    },
+    {
+      "name": "4",
+      "count": 19
+    },
+    {
+      "name": "5",
+      "count": 15
+    },
+    {
+      "name": "6",
+      "count": 13
+    },
+    {
+      "name": "7",
+      "count": 13
+    },
+    {
+      "name": "8",
+      "count": 12
+    },
+    {
+      "name": "9",
+      "count": 11
+    }
+  ],
+  "bridge_links": 0
+}

@@ -1,0 +1,92 @@
+{
+  "variant": "ibex-mini-A",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-mini-A\\graph.json",
+  "total_nodes": 18,
+  "total_links": 26,
+  "view_nodes": 18,
+  "view_links": 26,
+  "file_types": [
+    {
+      "name": "document",
+      "count": 18
+    }
+  ],
+  "roles": [
+    {
+      "name": "section",
+      "count": 8
+    },
+    {
+      "name": "component",
+      "count": 2
+    },
+    {
+      "name": "project",
+      "count": 2
+    },
+    {
+      "name": "category",
+      "count": 2
+    },
+    {
+      "name": "document",
+      "count": 2
+    },
+    {
+      "name": "corpus",
+      "count": 1
+    },
+    {
+      "name": "topic",
+      "count": 1
+    }
+  ],
+  "relations": [
+    {
+      "name": "contains",
+      "count": 14
+    },
+    {
+      "name": "references_component",
+      "count": 8
+    },
+    {
+      "name": "documents_component",
+      "count": 2
+    },
+    {
+      "name": "mentions_topic",
+      "count": 2
+    }
+  ],
+  "projects": [
+    {
+      "name": "__graphify_spec_only__",
+      "count": 8
+    },
+    {
+      "name": "instruction_fetch.rst",
+      "count": 6
+    },
+    {
+      "name": "pipeline_details.rst",
+      "count": 4
+    }
+  ],
+  "communities": 3,
+  "top_communities": [
+    {
+      "name": "0",
+      "count": 8
+    },
+    {
+      "name": "1",
+      "count": 5
+    },
+    {
+      "name": "2",
+      "count": 5
+    }
+  ],
+  "bridge_links": 0
+}

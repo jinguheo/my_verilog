@@ -1,0 +1,2613 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d17" for="edge" attr.name="_tgt" attr.type="string"/>
+<key id="d16" for="edge" attr.name="_src" attr.type="string"/>
+<key id="d15" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d14" for="edge" attr.name="source_location" attr.type="string"/>
+<key id="d13" for="edge" attr.name="source_file" attr.type="string"/>
+<key id="d12" for="edge" attr.name="confidence_score" attr.type="double"/>
+<key id="d11" for="edge" attr.name="confidence" attr.type="string"/>
+<key id="d10" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d9" for="node" attr.name="bytes" attr.type="long"/>
+<key id="d8" for="node" attr.name="original_source" attr.type="string"/>
+<key id="d7" for="node" attr.name="project" attr.type="string"/>
+<key id="d6" for="node" attr.name="community" attr.type="long"/>
+<key id="d5" for="node" attr.name="role" attr.type="string"/>
+<key id="d4" for="node" attr.name="confidence_score" attr.type="double"/>
+<key id="d3" for="node" attr.name="source_location" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_file" attr.type="string"/>
+<key id="d1" for="node" attr.name="file_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="undirected"><node id="spec_corpus">
+  <data key="d0">Spec Documents Corpus</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/index.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">corpus</data>
+  <data key="d6">1</data>
+</node>
+<node id="component_agents">
+  <data key="d0">component:agents</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">0</data>
+</node>
+<node id="component_branch">
+  <data key="d0">component:branch</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">4</data>
+</node>
+<node id="component_fetch">
+  <data key="d0">component:fetch</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">2</data>
+</node>
+<node id="component_instruction">
+  <data key="d0">component:instruction</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">2</data>
+</node>
+<node id="component_instruction_fetch">
+  <data key="d0">component:instruction_fetch</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">4</data>
+</node>
+<node id="component_log">
+  <data key="d0">component:log</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">0</data>
+</node>
+<node id="component_memory">
+  <data key="d0">component:memory</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">3</data>
+</node>
+<node id="component_pipeline">
+  <data key="d0">component:pipeline</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">2</data>
+</node>
+<node id="component_pipeline_details">
+  <data key="d0">component:pipeline_details</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">5</data>
+</node>
+<node id="component_prediction">
+  <data key="d0">component:prediction</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">4</data>
+</node>
+<node id="component_protocol">
+  <data key="d0">component:protocol</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">3</data>
+</node>
+<node id="project_agents_md">
+  <data key="d0">project:agents_md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/projects.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">project</data>
+  <data key="d6">1</data>
+</node>
+<node id="category_agents_md_root">
+  <data key="d0">agents_md/root</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">1</data>
+</node>
+<node id="doc_agents_md">
+  <data key="d0">AGENTS.md</data>
+  <data key="d1">document</data>
+  <data key="d2">AGENTS.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">agents_md</data>
+  <data key="d8"></data>
+  <data key="d9">1748</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_agents_md_1_wiki_schema">
+  <data key="d0">Wiki Schema</data>
+  <data key="d1">document</data>
+  <data key="d2">AGENTS.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_agents_md_3_directory_structure">
+  <data key="d0">Directory Structure</data>
+  <data key="d1">document</data>
+  <data key="d2">AGENTS.md</data>
+  <data key="d3">L3</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_agents_md_11_special_files">
+  <data key="d0">Special Files</data>
+  <data key="d1">document</data>
+  <data key="d2">AGENTS.md</data>
+  <data key="d3">L11</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_agents_md_15_page_types">
+  <data key="d0">Page Types</data>
+  <data key="d1">document</data>
+  <data key="d2">AGENTS.md</data>
+  <data key="d3">L15</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_agents_md_21_index_page_format">
+  <data key="d0">Index Page Format</data>
+  <data key="d1">document</data>
+  <data key="d2">AGENTS.md</data>
+  <data key="d3">L21</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_agents_md_27_log_format">
+  <data key="d0">Log Format</data>
+  <data key="d1">document</data>
+  <data key="d2">AGENTS.md</data>
+  <data key="d3">L27</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_agents_md_31_format">
+  <data key="d0">Format</data>
+  <data key="d1">document</data>
+  <data key="d2">AGENTS.md</data>
+  <data key="d3">L31</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="project_concepts">
+  <data key="d0">project:concepts</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/projects.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">project</data>
+  <data key="d6">1</data>
+</node>
+<node id="category_concepts_branch_prediction_md">
+  <data key="d0">concepts/branch-prediction.md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">1</data>
+</node>
+<node id="doc_concepts_branch_prediction_md">
+  <data key="d0">branch-prediction.md</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/branch-prediction.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">concepts</data>
+  <data key="d8"></data>
+  <data key="d9">1443</data>
+  <data key="d6">4</data>
+</node>
+<node id="section_concepts_branch_prediction_md_6_branch_prediction">
+  <data key="d0">Branch Prediction</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/branch-prediction.md</data>
+  <data key="d3">L6</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">4</data>
+</node>
+<node id="section_concepts_branch_prediction_md_10_mechanism_and_goal">
+  <data key="d0">Mechanism and Goal</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/branch-prediction.md</data>
+  <data key="d3">L10</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">4</data>
+</node>
+<node id="section_concepts_branch_prediction_md_17_mis_prediction_penalty">
+  <data key="d0">Mis-prediction Penalty</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/branch-prediction.md</data>
+  <data key="d3">L17</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">4</data>
+</node>
+<node id="section_concepts_branch_prediction_md_24_status">
+  <data key="d0">Status</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/branch-prediction.md</data>
+  <data key="d3">L24</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">4</data>
+</node>
+<node id="category_concepts_instruction_fetch_pipeline_md">
+  <data key="d0">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">1</data>
+</node>
+<node id="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d0">instruction-fetch-pipeline.md</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">concepts</data>
+  <data key="d8"></data>
+  <data key="d9">2277</data>
+  <data key="d6">2</data>
+</node>
+<node id="topic_memory">
+  <data key="d0">topic:memory</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/topics.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">topic</data>
+  <data key="d6">3</data>
+</node>
+<node id="section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline">
+  <data key="d0">Instruction Fetch Pipeline</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d3">L6</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<node id="section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering">
+  <data key="d0">Instruction Flow and Buffering</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d3">L10</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<node id="section_concepts_instruction_fetch_pipeline_md_16_instruction_handling">
+  <data key="d0">Instruction Handling</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d3">L16</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<node id="section_concepts_instruction_fetch_pipeline_md_20_instruction_caching">
+  <data key="d0">Instruction Caching</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d3">L20</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<node id="section_concepts_instruction_fetch_pipeline_md_24_branch_prediction">
+  <data key="d0">Branch Prediction</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d3">L24</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<node id="section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface">
+  <data key="d0">Instruction-Side Memory Interface</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d3">L28</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<node id="section_concepts_instruction_fetch_pipeline_md_37_related_documents">
+  <data key="d0">Related Documents</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d3">L37</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<node id="category_concepts_memory_interface_protocol_md">
+  <data key="d0">concepts/memory-interface-protocol.md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">1</data>
+</node>
+<node id="doc_concepts_memory_interface_protocol_md">
+  <data key="d0">memory-interface-protocol.md</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/memory-interface-protocol.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">concepts</data>
+  <data key="d8"></data>
+  <data key="d9">2423</data>
+  <data key="d6">3</data>
+</node>
+<node id="section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol">
+  <data key="d0">Instruction Memory Interface Protocol</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/memory-interface-protocol.md</data>
+  <data key="d3">L6</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">3</data>
+</node>
+<node id="section_concepts_memory_interface_protocol_md_10_interface_overview">
+  <data key="d0">Interface Overview</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/memory-interface-protocol.md</data>
+  <data key="d3">L10</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">3</data>
+</node>
+<node id="section_concepts_memory_interface_protocol_md_14_protocol_similarity">
+  <data key="d0">Protocol Similarity</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/memory-interface-protocol.md</data>
+  <data key="d3">L14</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">3</data>
+</node>
+<node id="section_concepts_memory_interface_protocol_md_21_instruction_fetch_interface">
+  <data key="d0">Instruction Fetch Interface</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/memory-interface-protocol.md</data>
+  <data key="d3">L21</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">3</data>
+</node>
+<node id="section_concepts_memory_interface_protocol_md_25_key_signals">
+  <data key="d0">Key Signals</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/memory-interface-protocol.md</data>
+  <data key="d3">L25</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">3</data>
+</node>
+<node id="section_concepts_memory_interface_protocol_md_39_alignment_handling">
+  <data key="d0">Alignment Handling</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/memory-interface-protocol.md</data>
+  <data key="d3">L39</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">3</data>
+</node>
+<node id="section_concepts_memory_interface_protocol_md_41_external_alignment">
+  <data key="d0">External Alignment</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/memory-interface-protocol.md</data>
+  <data key="d3">L41</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">3</data>
+</node>
+<node id="section_concepts_memory_interface_protocol_md_45_internal_alignment">
+  <data key="d0">Internal Alignment</data>
+  <data key="d1">document</data>
+  <data key="d2">concepts/memory-interface-protocol.md</data>
+  <data key="d3">L45</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">3</data>
+</node>
+<node id="project_index_md">
+  <data key="d0">project:index_md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/projects.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">project</data>
+  <data key="d6">6</data>
+</node>
+<node id="category_index_md_root">
+  <data key="d0">index_md/root</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">6</data>
+</node>
+<node id="doc_index_md">
+  <data key="d0">index.md</data>
+  <data key="d1">document</data>
+  <data key="d2">index.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">index_md</data>
+  <data key="d8"></data>
+  <data key="d9">1004</data>
+  <data key="d6">6</data>
+</node>
+<node id="section_index_md_1_knowledge_base_index">
+  <data key="d0">Knowledge Base Index</data>
+  <data key="d1">document</data>
+  <data key="d2">index.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">6</data>
+</node>
+<node id="section_index_md_3_documents">
+  <data key="d0">Documents</data>
+  <data key="d1">document</data>
+  <data key="d2">index.md</data>
+  <data key="d3">L3</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">6</data>
+</node>
+<node id="section_index_md_7_concepts">
+  <data key="d0">Concepts</data>
+  <data key="d1">document</data>
+  <data key="d2">index.md</data>
+  <data key="d3">L7</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">6</data>
+</node>
+<node id="section_index_md_12_explorations">
+  <data key="d0">Explorations</data>
+  <data key="d1">document</data>
+  <data key="d2">index.md</data>
+  <data key="d3">L12</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">6</data>
+</node>
+<node id="project_log_md">
+  <data key="d0">project:log_md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/projects.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">project</data>
+  <data key="d6">1</data>
+</node>
+<node id="category_log_md_root">
+  <data key="d0">log_md/root</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">1</data>
+</node>
+<node id="doc_log_md">
+  <data key="d0">log.md</data>
+  <data key="d1">document</data>
+  <data key="d2">log.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">log_md</data>
+  <data key="d8"></data>
+  <data key="d9">137</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_log_md_1_operations_log">
+  <data key="d0">Operations Log</data>
+  <data key="d1">document</data>
+  <data key="d2">log.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_log_md_3_2026_05_23_16_34_22_ingest_pipeline_details_txt">
+  <data key="d0">2026-05-23 16:34:22 ingest | pipeline details.txt</data>
+  <data key="d1">document</data>
+  <data key="d2">log.md</data>
+  <data key="d3">L3</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_log_md_5_2026_05_23_16_35_24_ingest_instruction_fetch_txt">
+  <data key="d0">2026-05-23 16:35:24 ingest | instruction fetch.txt</data>
+  <data key="d1">document</data>
+  <data key="d2">log.md</data>
+  <data key="d3">L5</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="project_sources">
+  <data key="d0">project:sources</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/projects.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">project</data>
+  <data key="d6">1</data>
+</node>
+<node id="category_sources_instruction_fetch_md">
+  <data key="d0">sources/instruction_fetch.md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">1</data>
+</node>
+<node id="doc_sources_instruction_fetch_md">
+  <data key="d0">instruction_fetch.md</data>
+  <data key="d1">document</data>
+  <data key="d2">sources/instruction_fetch.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">sources</data>
+  <data key="d8"></data>
+  <data key="d9">5805</data>
+  <data key="d6">4</data>
+</node>
+<node id="category_sources_pipeline_details_md">
+  <data key="d0">sources/pipeline_details.md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">1</data>
+</node>
+<node id="doc_sources_pipeline_details_md">
+  <data key="d0">pipeline_details.md</data>
+  <data key="d1">document</data>
+  <data key="d2">sources/pipeline_details.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">sources</data>
+  <data key="d8"></data>
+  <data key="d9">10483</data>
+  <data key="d6">2</data>
+</node>
+<node id="project_summaries">
+  <data key="d0">project:summaries</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/projects.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">project</data>
+  <data key="d6">5</data>
+</node>
+<node id="category_summaries_instruction_fetch_md">
+  <data key="d0">summaries/instruction_fetch.md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">5</data>
+</node>
+<node id="doc_summaries_instruction_fetch_md">
+  <data key="d0">instruction_fetch.md</data>
+  <data key="d1">document</data>
+  <data key="d2">summaries/instruction_fetch.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">summaries</data>
+  <data key="d8"></data>
+  <data key="d9">1771</data>
+  <data key="d6">4</data>
+</node>
+<node id="section_summaries_instruction_fetch_md_20_related_concepts">
+  <data key="d0">Related Concepts</data>
+  <data key="d1">document</data>
+  <data key="d2">summaries/instruction_fetch.md</data>
+  <data key="d3">L20</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">4</data>
+</node>
+<node id="category_summaries_pipeline_details_md">
+  <data key="d0">summaries/pipeline_details.md</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">5</data>
+</node>
+<node id="doc_summaries_pipeline_details_md">
+  <data key="d0">pipeline_details.md</data>
+  <data key="d1">document</data>
+  <data key="d2">summaries/pipeline_details.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">summaries</data>
+  <data key="d8"></data>
+  <data key="d9">2745</data>
+  <data key="d6">5</data>
+</node>
+<node id="section_summaries_pipeline_details_md_6_ibex_pipeline_details">
+  <data key="d0">Ibex Pipeline Details</data>
+  <data key="d1">document</data>
+  <data key="d2">summaries/pipeline_details.md</data>
+  <data key="d3">L6</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">5</data>
+</node>
+<node id="section_summaries_pipeline_details_md_10_pipeline_stages">
+  <data key="d0">Pipeline Stages</data>
+  <data key="d1">document</data>
+  <data key="d2">summaries/pipeline_details.md</data>
+  <data key="d3">L10</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">5</data>
+</node>
+<node id="section_summaries_pipeline_details_md_17_performance_and_stalls">
+  <data key="d0">Performance and Stalls</data>
+  <data key="d1">document</data>
+  <data key="d2">summaries/pipeline_details.md</data>
+  <data key="d3">L17</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">5</data>
+</node>
+<node id="section_summaries_pipeline_details_md_21_instruction_stall_characteristics">
+  <data key="d0">Instruction Stall Characteristics</data>
+  <data key="d1">document</data>
+  <data key="d2">summaries/pipeline_details.md</data>
+  <data key="d3">L21</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">5</data>
+</node>
+<edge source="spec_corpus" target="project_agents_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">spec_corpus</data>
+  <data key="d17">project_agents_md</data>
+</edge>
+<edge source="spec_corpus" target="project_concepts">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">spec_corpus</data>
+  <data key="d17">project_concepts</data>
+</edge>
+<edge source="spec_corpus" target="project_index_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">spec_corpus</data>
+  <data key="d17">project_index_md</data>
+</edge>
+<edge source="spec_corpus" target="project_log_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">spec_corpus</data>
+  <data key="d17">project_log_md</data>
+</edge>
+<edge source="spec_corpus" target="project_sources">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">spec_corpus</data>
+  <data key="d17">project_sources</data>
+</edge>
+<edge source="spec_corpus" target="project_summaries">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">spec_corpus</data>
+  <data key="d17">project_summaries</data>
+</edge>
+<edge source="component_agents" target="doc_agents_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_agents_md</data>
+  <data key="d17">component_agents</data>
+</edge>
+<edge source="component_agents" target="section_agents_md_1_wiki_schema">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_agents_md_1_wiki_schema</data>
+  <data key="d17">component_agents</data>
+</edge>
+<edge source="component_agents" target="section_agents_md_3_directory_structure">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L3</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_agents_md_3_directory_structure</data>
+  <data key="d17">component_agents</data>
+</edge>
+<edge source="component_agents" target="section_agents_md_11_special_files">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L11</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_agents_md_11_special_files</data>
+  <data key="d17">component_agents</data>
+</edge>
+<edge source="component_agents" target="section_agents_md_15_page_types">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L15</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_agents_md_15_page_types</data>
+  <data key="d17">component_agents</data>
+</edge>
+<edge source="component_agents" target="section_agents_md_21_index_page_format">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L21</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_agents_md_21_index_page_format</data>
+  <data key="d17">component_agents</data>
+</edge>
+<edge source="component_agents" target="section_agents_md_27_log_format">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L27</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_agents_md_27_log_format</data>
+  <data key="d17">component_agents</data>
+</edge>
+<edge source="component_agents" target="section_agents_md_31_format">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L31</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_agents_md_31_format</data>
+  <data key="d17">component_agents</data>
+</edge>
+<edge source="component_branch" target="doc_concepts_branch_prediction_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_branch_prediction_md</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="section_concepts_branch_prediction_md_6_branch_prediction">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_branch_prediction_md_6_branch_prediction</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="section_concepts_branch_prediction_md_10_mechanism_and_goal">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_branch_prediction_md_10_mechanism_and_goal</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="section_concepts_branch_prediction_md_17_mis_prediction_penalty">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L17</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_branch_prediction_md_17_mis_prediction_penalty</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="section_concepts_branch_prediction_md_24_status">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L24</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_branch_prediction_md_24_status</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="doc_index_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="doc_sources_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_instruction_fetch_md</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="doc_sources_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_pipeline_details_md</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="doc_summaries_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_instruction_fetch_md</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_branch" target="doc_summaries_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">component_branch</data>
+</edge>
+<edge source="component_fetch" target="doc_concepts_branch_prediction_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_branch_prediction_md</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="section_concepts_instruction_fetch_pipeline_md_16_instruction_handling">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L16</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_16_instruction_handling</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="section_concepts_instruction_fetch_pipeline_md_20_instruction_caching">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L20</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_20_instruction_caching</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="section_concepts_instruction_fetch_pipeline_md_24_branch_prediction">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L24</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_24_branch_prediction</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L28</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="section_concepts_instruction_fetch_pipeline_md_37_related_documents">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L37</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_37_related_documents</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="doc_concepts_memory_interface_protocol_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="doc_index_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="doc_sources_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_instruction_fetch_md</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="doc_sources_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_pipeline_details_md</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="doc_summaries_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_instruction_fetch_md</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_fetch" target="doc_summaries_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">component_fetch</data>
+</edge>
+<edge source="component_instruction" target="doc_concepts_branch_prediction_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_branch_prediction_md</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="section_concepts_instruction_fetch_pipeline_md_16_instruction_handling">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L16</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_16_instruction_handling</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="section_concepts_instruction_fetch_pipeline_md_20_instruction_caching">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L20</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_20_instruction_caching</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="section_concepts_instruction_fetch_pipeline_md_24_branch_prediction">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L24</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_24_branch_prediction</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L28</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="section_concepts_instruction_fetch_pipeline_md_37_related_documents">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L37</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_37_related_documents</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="doc_concepts_memory_interface_protocol_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="doc_index_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="doc_sources_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_instruction_fetch_md</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="doc_sources_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_pipeline_details_md</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="doc_summaries_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_instruction_fetch_md</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction" target="doc_summaries_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">component_instruction</data>
+</edge>
+<edge source="component_instruction_fetch" target="doc_concepts_branch_prediction_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_branch_prediction_md</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="doc_concepts_memory_interface_protocol_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="doc_index_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="doc_log_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_log_md</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="doc_sources_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_instruction_fetch_md</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="doc_summaries_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_instruction_fetch_md</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="section_summaries_instruction_fetch_md_20_related_concepts">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L20</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_summaries_instruction_fetch_md_20_related_concepts</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_log" target="doc_agents_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_agents_md</data>
+  <data key="d17">component_log</data>
+</edge>
+<edge source="component_log" target="doc_log_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_log_md</data>
+  <data key="d17">component_log</data>
+</edge>
+<edge source="component_log" target="section_log_md_1_operations_log">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_log_md_1_operations_log</data>
+  <data key="d17">component_log</data>
+</edge>
+<edge source="component_log" target="section_log_md_3_2026_05_23_16_34_22_ingest_pipeline_details_txt">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L3</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_log_md_3_2026_05_23_16_34_22_ingest_pipeline_details_txt</data>
+  <data key="d17">component_log</data>
+</edge>
+<edge source="component_log" target="section_log_md_5_2026_05_23_16_35_24_ingest_instruction_fetch_txt">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L5</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_log_md_5_2026_05_23_16_35_24_ingest_instruction_fetch_txt</data>
+  <data key="d17">component_log</data>
+</edge>
+<edge source="component_memory" target="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="doc_concepts_memory_interface_protocol_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="section_concepts_memory_interface_protocol_md_10_interface_overview">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_10_interface_overview</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="section_concepts_memory_interface_protocol_md_14_protocol_similarity">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L14</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_14_protocol_similarity</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="section_concepts_memory_interface_protocol_md_21_instruction_fetch_interface">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L21</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_21_instruction_fetch_interface</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="section_concepts_memory_interface_protocol_md_25_key_signals">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L25</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_25_key_signals</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="section_concepts_memory_interface_protocol_md_39_alignment_handling">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L39</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_39_alignment_handling</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="section_concepts_memory_interface_protocol_md_41_external_alignment">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L41</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_41_external_alignment</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="section_concepts_memory_interface_protocol_md_45_internal_alignment">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L45</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_45_internal_alignment</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="doc_index_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="doc_sources_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_instruction_fetch_md</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="doc_sources_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_pipeline_details_md</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="doc_summaries_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_instruction_fetch_md</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_memory" target="doc_summaries_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">component_memory</data>
+</edge>
+<edge source="component_pipeline" target="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="section_concepts_instruction_fetch_pipeline_md_16_instruction_handling">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L16</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_16_instruction_handling</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="section_concepts_instruction_fetch_pipeline_md_20_instruction_caching">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L20</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_20_instruction_caching</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="section_concepts_instruction_fetch_pipeline_md_24_branch_prediction">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L24</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_24_branch_prediction</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L28</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="section_concepts_instruction_fetch_pipeline_md_37_related_documents">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L37</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_37_related_documents</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="doc_index_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="doc_sources_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_pipeline_details_md</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="doc_summaries_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_instruction_fetch_md</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline" target="doc_summaries_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">component_pipeline</data>
+</edge>
+<edge source="component_pipeline_details" target="doc_index_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="doc_log_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_log_md</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="doc_sources_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_pipeline_details_md</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="doc_summaries_pipeline_details_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="section_summaries_pipeline_details_md_6_ibex_pipeline_details">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_summaries_pipeline_details_md_6_ibex_pipeline_details</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="section_summaries_pipeline_details_md_10_pipeline_stages">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_summaries_pipeline_details_md_10_pipeline_stages</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="section_summaries_pipeline_details_md_17_performance_and_stalls">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L17</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_summaries_pipeline_details_md_17_performance_and_stalls</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="section_summaries_pipeline_details_md_21_instruction_stall_characteristics">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L21</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_summaries_pipeline_details_md_21_instruction_stall_characteristics</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_prediction" target="doc_concepts_branch_prediction_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_branch_prediction_md</data>
+  <data key="d17">component_prediction</data>
+</edge>
+<edge source="component_prediction" target="section_concepts_branch_prediction_md_6_branch_prediction">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_branch_prediction_md_6_branch_prediction</data>
+  <data key="d17">component_prediction</data>
+</edge>
+<edge source="component_prediction" target="section_concepts_branch_prediction_md_10_mechanism_and_goal">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_branch_prediction_md_10_mechanism_and_goal</data>
+  <data key="d17">component_prediction</data>
+</edge>
+<edge source="component_prediction" target="section_concepts_branch_prediction_md_17_mis_prediction_penalty">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L17</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_branch_prediction_md_17_mis_prediction_penalty</data>
+  <data key="d17">component_prediction</data>
+</edge>
+<edge source="component_prediction" target="section_concepts_branch_prediction_md_24_status">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L24</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_branch_prediction_md_24_status</data>
+  <data key="d17">component_prediction</data>
+</edge>
+<edge source="component_prediction" target="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">component_prediction</data>
+</edge>
+<edge source="component_prediction" target="doc_index_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">component_prediction</data>
+</edge>
+<edge source="component_prediction" target="doc_sources_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_instruction_fetch_md</data>
+  <data key="d17">component_prediction</data>
+</edge>
+<edge source="component_prediction" target="doc_summaries_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_instruction_fetch_md</data>
+  <data key="d17">component_prediction</data>
+</edge>
+<edge source="component_protocol" target="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="doc_concepts_memory_interface_protocol_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="section_concepts_memory_interface_protocol_md_10_interface_overview">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_10_interface_overview</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="section_concepts_memory_interface_protocol_md_14_protocol_similarity">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L14</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_14_protocol_similarity</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="section_concepts_memory_interface_protocol_md_21_instruction_fetch_interface">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L21</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_21_instruction_fetch_interface</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="section_concepts_memory_interface_protocol_md_25_key_signals">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L25</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_25_key_signals</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="section_concepts_memory_interface_protocol_md_39_alignment_handling">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L39</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_39_alignment_handling</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="section_concepts_memory_interface_protocol_md_41_external_alignment">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L41</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_41_external_alignment</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="section_concepts_memory_interface_protocol_md_45_internal_alignment">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L45</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_45_internal_alignment</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="doc_index_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="doc_sources_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_sources_instruction_fetch_md</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="component_protocol" target="doc_summaries_instruction_fetch_md">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_summaries_instruction_fetch_md</data>
+  <data key="d17">component_protocol</data>
+</edge>
+<edge source="project_agents_md" target="category_agents_md_root">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_agents_md</data>
+  <data key="d17">category_agents_md_root</data>
+</edge>
+<edge source="category_agents_md_root" target="doc_agents_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_agents_md_root</data>
+  <data key="d17">doc_agents_md</data>
+</edge>
+<edge source="doc_agents_md" target="section_agents_md_1_wiki_schema">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_agents_md</data>
+  <data key="d17">section_agents_md_1_wiki_schema</data>
+</edge>
+<edge source="doc_agents_md" target="section_agents_md_3_directory_structure">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L3</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_agents_md</data>
+  <data key="d17">section_agents_md_3_directory_structure</data>
+</edge>
+<edge source="doc_agents_md" target="section_agents_md_11_special_files">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L11</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_agents_md</data>
+  <data key="d17">section_agents_md_11_special_files</data>
+</edge>
+<edge source="doc_agents_md" target="section_agents_md_15_page_types">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L15</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_agents_md</data>
+  <data key="d17">section_agents_md_15_page_types</data>
+</edge>
+<edge source="doc_agents_md" target="section_agents_md_21_index_page_format">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L21</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_agents_md</data>
+  <data key="d17">section_agents_md_21_index_page_format</data>
+</edge>
+<edge source="doc_agents_md" target="section_agents_md_27_log_format">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L27</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_agents_md</data>
+  <data key="d17">section_agents_md_27_log_format</data>
+</edge>
+<edge source="doc_agents_md" target="section_agents_md_31_format">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">AGENTS.md</data>
+  <data key="d14">L31</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_agents_md</data>
+  <data key="d17">section_agents_md_31_format</data>
+</edge>
+<edge source="project_concepts" target="category_concepts_branch_prediction_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_concepts</data>
+  <data key="d17">category_concepts_branch_prediction_md</data>
+</edge>
+<edge source="project_concepts" target="category_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_concepts</data>
+  <data key="d17">category_concepts_instruction_fetch_pipeline_md</data>
+</edge>
+<edge source="project_concepts" target="category_concepts_memory_interface_protocol_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_concepts</data>
+  <data key="d17">category_concepts_memory_interface_protocol_md</data>
+</edge>
+<edge source="category_concepts_branch_prediction_md" target="doc_concepts_branch_prediction_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_concepts_branch_prediction_md</data>
+  <data key="d17">doc_concepts_branch_prediction_md</data>
+</edge>
+<edge source="doc_concepts_branch_prediction_md" target="section_concepts_branch_prediction_md_6_branch_prediction">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_branch_prediction_md</data>
+  <data key="d17">section_concepts_branch_prediction_md_6_branch_prediction</data>
+</edge>
+<edge source="doc_concepts_branch_prediction_md" target="section_concepts_branch_prediction_md_10_mechanism_and_goal">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_branch_prediction_md</data>
+  <data key="d17">section_concepts_branch_prediction_md_10_mechanism_and_goal</data>
+</edge>
+<edge source="doc_concepts_branch_prediction_md" target="section_concepts_branch_prediction_md_17_mis_prediction_penalty">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L17</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_branch_prediction_md</data>
+  <data key="d17">section_concepts_branch_prediction_md_17_mis_prediction_penalty</data>
+</edge>
+<edge source="doc_concepts_branch_prediction_md" target="section_concepts_branch_prediction_md_24_status">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/branch-prediction.md</data>
+  <data key="d14">L24</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_branch_prediction_md</data>
+  <data key="d17">section_concepts_branch_prediction_md_24_status</data>
+</edge>
+<edge source="category_concepts_instruction_fetch_pipeline_md" target="doc_concepts_instruction_fetch_pipeline_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">doc_concepts_instruction_fetch_pipeline_md</data>
+</edge>
+<edge source="doc_concepts_instruction_fetch_pipeline_md" target="topic_memory">
+  <data key="d10">mentions_topic</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">topic_memory</data>
+</edge>
+<edge source="doc_concepts_instruction_fetch_pipeline_md" target="section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">section_concepts_instruction_fetch_pipeline_md_6_instruction_fetch_pipeline</data>
+</edge>
+<edge source="doc_concepts_instruction_fetch_pipeline_md" target="section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">section_concepts_instruction_fetch_pipeline_md_10_instruction_flow_and_buffering</data>
+</edge>
+<edge source="doc_concepts_instruction_fetch_pipeline_md" target="section_concepts_instruction_fetch_pipeline_md_16_instruction_handling">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L16</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">section_concepts_instruction_fetch_pipeline_md_16_instruction_handling</data>
+</edge>
+<edge source="doc_concepts_instruction_fetch_pipeline_md" target="section_concepts_instruction_fetch_pipeline_md_20_instruction_caching">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L20</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">section_concepts_instruction_fetch_pipeline_md_20_instruction_caching</data>
+</edge>
+<edge source="doc_concepts_instruction_fetch_pipeline_md" target="section_concepts_instruction_fetch_pipeline_md_24_branch_prediction">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L24</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">section_concepts_instruction_fetch_pipeline_md_24_branch_prediction</data>
+</edge>
+<edge source="doc_concepts_instruction_fetch_pipeline_md" target="section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L28</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface</data>
+</edge>
+<edge source="doc_concepts_instruction_fetch_pipeline_md" target="section_concepts_instruction_fetch_pipeline_md_37_related_documents">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L37</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_instruction_fetch_pipeline_md</data>
+  <data key="d17">section_concepts_instruction_fetch_pipeline_md_37_related_documents</data>
+</edge>
+<edge source="topic_memory" target="section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface">
+  <data key="d10">mentions_topic</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/instruction-fetch-pipeline.md</data>
+  <data key="d14">L28</data>
+  <data key="d15">1.0</data>
+  <data key="d16">section_concepts_instruction_fetch_pipeline_md_28_instruction_side_memory_interface</data>
+  <data key="d17">topic_memory</data>
+</edge>
+<edge source="topic_memory" target="doc_concepts_memory_interface_protocol_md">
+  <data key="d10">mentions_topic</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">topic_memory</data>
+</edge>
+<edge source="topic_memory" target="section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol">
+  <data key="d10">mentions_topic</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">1.0</data>
+  <data key="d16">section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol</data>
+  <data key="d17">topic_memory</data>
+</edge>
+<edge source="category_concepts_memory_interface_protocol_md" target="doc_concepts_memory_interface_protocol_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_concepts_memory_interface_protocol_md</data>
+  <data key="d17">doc_concepts_memory_interface_protocol_md</data>
+</edge>
+<edge source="doc_concepts_memory_interface_protocol_md" target="section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">section_concepts_memory_interface_protocol_md_6_instruction_memory_interface_protocol</data>
+</edge>
+<edge source="doc_concepts_memory_interface_protocol_md" target="section_concepts_memory_interface_protocol_md_10_interface_overview">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">section_concepts_memory_interface_protocol_md_10_interface_overview</data>
+</edge>
+<edge source="doc_concepts_memory_interface_protocol_md" target="section_concepts_memory_interface_protocol_md_14_protocol_similarity">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L14</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">section_concepts_memory_interface_protocol_md_14_protocol_similarity</data>
+</edge>
+<edge source="doc_concepts_memory_interface_protocol_md" target="section_concepts_memory_interface_protocol_md_21_instruction_fetch_interface">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L21</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">section_concepts_memory_interface_protocol_md_21_instruction_fetch_interface</data>
+</edge>
+<edge source="doc_concepts_memory_interface_protocol_md" target="section_concepts_memory_interface_protocol_md_25_key_signals">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L25</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">section_concepts_memory_interface_protocol_md_25_key_signals</data>
+</edge>
+<edge source="doc_concepts_memory_interface_protocol_md" target="section_concepts_memory_interface_protocol_md_39_alignment_handling">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L39</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">section_concepts_memory_interface_protocol_md_39_alignment_handling</data>
+</edge>
+<edge source="doc_concepts_memory_interface_protocol_md" target="section_concepts_memory_interface_protocol_md_41_external_alignment">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L41</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">section_concepts_memory_interface_protocol_md_41_external_alignment</data>
+</edge>
+<edge source="doc_concepts_memory_interface_protocol_md" target="section_concepts_memory_interface_protocol_md_45_internal_alignment">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">concepts/memory-interface-protocol.md</data>
+  <data key="d14">L45</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_concepts_memory_interface_protocol_md</data>
+  <data key="d17">section_concepts_memory_interface_protocol_md_45_internal_alignment</data>
+</edge>
+<edge source="project_index_md" target="category_index_md_root">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_index_md</data>
+  <data key="d17">category_index_md_root</data>
+</edge>
+<edge source="category_index_md_root" target="doc_index_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_index_md_root</data>
+  <data key="d17">doc_index_md</data>
+</edge>
+<edge source="doc_index_md" target="section_index_md_1_knowledge_base_index">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">section_index_md_1_knowledge_base_index</data>
+</edge>
+<edge source="doc_index_md" target="section_index_md_3_documents">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L3</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">section_index_md_3_documents</data>
+</edge>
+<edge source="doc_index_md" target="section_index_md_7_concepts">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L7</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">section_index_md_7_concepts</data>
+</edge>
+<edge source="doc_index_md" target="section_index_md_12_explorations">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">index.md</data>
+  <data key="d14">L12</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_index_md</data>
+  <data key="d17">section_index_md_12_explorations</data>
+</edge>
+<edge source="project_log_md" target="category_log_md_root">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_log_md</data>
+  <data key="d17">category_log_md_root</data>
+</edge>
+<edge source="category_log_md_root" target="doc_log_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_log_md_root</data>
+  <data key="d17">doc_log_md</data>
+</edge>
+<edge source="doc_log_md" target="section_log_md_1_operations_log">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_log_md</data>
+  <data key="d17">section_log_md_1_operations_log</data>
+</edge>
+<edge source="doc_log_md" target="section_log_md_3_2026_05_23_16_34_22_ingest_pipeline_details_txt">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L3</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_log_md</data>
+  <data key="d17">section_log_md_3_2026_05_23_16_34_22_ingest_pipeline_details_txt</data>
+</edge>
+<edge source="doc_log_md" target="section_log_md_5_2026_05_23_16_35_24_ingest_instruction_fetch_txt">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">log.md</data>
+  <data key="d14">L5</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_log_md</data>
+  <data key="d17">section_log_md_5_2026_05_23_16_35_24_ingest_instruction_fetch_txt</data>
+</edge>
+<edge source="project_sources" target="category_sources_instruction_fetch_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_sources</data>
+  <data key="d17">category_sources_instruction_fetch_md</data>
+</edge>
+<edge source="project_sources" target="category_sources_pipeline_details_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_sources</data>
+  <data key="d17">category_sources_pipeline_details_md</data>
+</edge>
+<edge source="category_sources_instruction_fetch_md" target="doc_sources_instruction_fetch_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_sources_instruction_fetch_md</data>
+  <data key="d17">doc_sources_instruction_fetch_md</data>
+</edge>
+<edge source="category_sources_pipeline_details_md" target="doc_sources_pipeline_details_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">sources/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_sources_pipeline_details_md</data>
+  <data key="d17">doc_sources_pipeline_details_md</data>
+</edge>
+<edge source="project_summaries" target="category_summaries_instruction_fetch_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_summaries</data>
+  <data key="d17">category_summaries_instruction_fetch_md</data>
+</edge>
+<edge source="project_summaries" target="category_summaries_pipeline_details_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_summaries</data>
+  <data key="d17">category_summaries_pipeline_details_md</data>
+</edge>
+<edge source="category_summaries_instruction_fetch_md" target="doc_summaries_instruction_fetch_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_summaries_instruction_fetch_md</data>
+  <data key="d17">doc_summaries_instruction_fetch_md</data>
+</edge>
+<edge source="doc_summaries_instruction_fetch_md" target="section_summaries_instruction_fetch_md_20_related_concepts">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/instruction_fetch.md</data>
+  <data key="d14">L20</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_summaries_instruction_fetch_md</data>
+  <data key="d17">section_summaries_instruction_fetch_md_20_related_concepts</data>
+</edge>
+<edge source="category_summaries_pipeline_details_md" target="doc_summaries_pipeline_details_md">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_summaries_pipeline_details_md</data>
+  <data key="d17">doc_summaries_pipeline_details_md</data>
+</edge>
+<edge source="doc_summaries_pipeline_details_md" target="section_summaries_pipeline_details_md_6_ibex_pipeline_details">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L6</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">section_summaries_pipeline_details_md_6_ibex_pipeline_details</data>
+</edge>
+<edge source="doc_summaries_pipeline_details_md" target="section_summaries_pipeline_details_md_10_pipeline_stages">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L10</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">section_summaries_pipeline_details_md_10_pipeline_stages</data>
+</edge>
+<edge source="doc_summaries_pipeline_details_md" target="section_summaries_pipeline_details_md_17_performance_and_stalls">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L17</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">section_summaries_pipeline_details_md_17_performance_and_stalls</data>
+</edge>
+<edge source="doc_summaries_pipeline_details_md" target="section_summaries_pipeline_details_md_21_instruction_stall_characteristics">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">summaries/pipeline_details.md</data>
+  <data key="d14">L21</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_summaries_pipeline_details_md</data>
+  <data key="d17">section_summaries_pipeline_details_md_21_instruction_stall_characteristics</data>
+</edge>
+</graph></graphml>

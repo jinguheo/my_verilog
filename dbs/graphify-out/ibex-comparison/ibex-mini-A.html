@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Graphify ibex-mini-A KG</title>
+<style>
+  :root {
+    --bg:#f7f7f4; --panel:#fff; --ink:#17202a; --muted:#64748b; --line:rgba(23,32,42,.14);
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:16px 22px 12px; background:var(--panel); border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 8px; font-size:22px; letter-spacing:0; }
+  .meta { display:flex; flex-wrap:wrap; gap:12px; color:var(--muted); font-size:13px; }
+  .shell { display:grid; grid-template-columns:340px 1fr; height:calc(100vh - 76px); min-height:680px; }
+  aside { overflow:auto; background:var(--panel); border-right:1px solid var(--line); padding:14px; }
+  main { position:relative; overflow:hidden; }
+  canvas { display:block; width:100%; height:100%; background:#fbfaf7; }
+  h2 { margin:16px 0 8px; color:var(--muted); font-size:12px; text-transform:uppercase; }
+  h2:first-child { margin-top:0; }
+  input { width:100%; padding:8px 9px; border:1px solid var(--line); border-radius:6px; }
+  label { display:flex; align-items:center; gap:7px; margin:7px 0; font-size:13px; }
+  .row { display:grid; grid-template-columns:1fr auto; gap:8px; padding:4px 0; font-size:13px; }
+  .top { border-bottom:1px solid var(--line); padding:6px 0; font-size:12px; cursor:pointer; }
+  .top strong { display:block; font-size:13px; }
+  .swatch { display:inline-block; width:11px; height:11px; border-radius:50%; }
+  #tip { position:absolute; display:none; pointer-events:none; background:#fff; border:1px solid var(--line); border-radius:6px; padding:8px 10px; box-shadow:0 8px 22px rgba(0,0,0,.14); max-width:460px; font-size:12px; }
+  #detail { position:absolute; right:14px; top:14px; width:min(480px,calc(100% - 28px)); max-height:calc(100% - 28px); overflow:auto; background:rgba(255,255,255,.97); border:1px solid var(--line); border-radius:8px; padding:12px; display:none; box-shadow:0 8px 26px rgba(0,0,0,.16); }
+  #detail h3 { margin:0 0 8px; font-size:15px; }
+  #detail pre { white-space:pre-wrap; word-break:break-word; font-size:11px; color:#334155; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Graphify ibex-mini-A KG</h1>
+  <div class="meta">
+    <span>Total nodes: 18</span>
+    <span>Total links: 26</span>
+    <span>Displayed nodes: 18</span>
+    <span>Displayed links: 26</span>
+    <span>Bridge links: 0</span>
+  </div>
+</header>
+<div class="shell">
+  <aside>
+    <h2>Search</h2>
+    <input id="search" placeholder="label, source file, relation">
+    <h2>Node Types</h2>
+    <div id="typeFilters"></div>
+    <h2>Relations</h2>
+    <div id="relationFilters"></div>
+    <h2>Counts</h2>
+    <div id="counts"></div>
+    <h2>Top Nodes</h2>
+    <div id="topNodes"></div>
+  </aside>
+  <main>
+    <canvas id="graph"></canvas>
+    <div id="tip"></div>
+    <div id="detail"></div>
+  </main>
+</div>
+<script>
+const data = {"summary": {"variant": "ibex-mini-A", "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-mini-A\\graph.json", "total_nodes": 18, "total_links": 26, "view_nodes": 18, "view_links": 26, "file_types": [{"name": "document", "count": 18}], "roles": [{"name": "section", "count": 8}, {"name": "component", "count": 2}, {"name": "project", "count": 2}, {"name": "category", "count": 2}, {"name": "document", "count": 2}, {"name": "corpus", "count": 1}, {"name": "topic", "count": 1}], "relations": [{"name": "contains", "count": 14}, {"name": "references_component", "count": 8}, {"name": "documents_component", "count": 2}, {"name": "mentions_topic", "count": 2}], "projects": [{"name": "__graphify_spec_only__", "count": 8}, {"name": "instruction_fetch.rst", "count": 6}, {"name": "pipeline_details.rst", "count": 4}], "communities": 3, "top_communities": [{"name": "0", "count": 8}, {"name": "1", "count": 5}, {"name": "2", "count": 5}], "bridge_links": 0}, "nodes": [{"id": "project_instruction_fetch_rst", "label": "project:instruction_fetch_rst", "file_type": "document", "role": "project", "source_file": "__graphify_spec_only__/projects.md", "source_location": "L1", "community": "1", "variant": "ibex-mini-A", "degree": 2}, {"id": "section_instruction_fetch_rst_3_instruction_fetch", "label": "Instruction Fetch", "file_type": "document", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L3", "community": "0", "variant": "ibex-mini-A", "degree": 2}, {"id": "section_pipeline_details_rst_9_pipeline_details", "label": "Pipeline Details", "file_type": "document", "role": "section", "source_file": "pipeline_details.rst", "source_location": "L9", "community": "2", "variant": "ibex-mini-A", "degree": 2}, {"id": "component_pipeline_details", "label": "component:pipeline_details", "file_type": "document", "role": "component", "source_file": "__graphify_spec_only__/components.md", "source_location": "L1", "community": "2", "variant": "ibex-mini-A", "degree": 4}, {"id": "topic_memory", "label": "topic:memory", "file_type": "document", "role": "topic", "source_file": "__graphify_spec_only__/topics.md", "source_location": "L1", "community": "0", "variant": "ibex-mini-A", "degree": 2}, {"id": "category_pipeline_details_rst_root", "label": "pipeline_details_rst/root", "file_type": "document", "role": "category", "source_file": "__graphify_spec_only__/categories.md", "source_location": "L1", "community": "1", "variant": "ibex-mini-A", "degree": 2}, {"id": "section_pipeline_details_rst_26_third_pipeline_stage", "label": "Third Pipeline Stage", "file_type": "document", "role": "section", "source_file": "pipeline_details.rst", "source_location": "L26", "community": "2", "variant": "ibex-mini-A", "degree": 2}, {"id": "section_instruction_fetch_rst_31_branch_prediction", "label": "Branch Prediction", "file_type": "document", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L31", "community": "0", "variant": "ibex-mini-A", "degree": 2}, {"id": "section_instruction_fetch_rst_74_misaligned_accesses", "label": "Misaligned Accesses", "file_type": "document", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L74", "community": "0", "variant": "ibex-mini-A", "degree": 2}, {"id": "section_pipeline_details_rst_32_multi_and_single_cycle_instructions", "label": "Multi- and Single-Cycle Instructions", "file_type": "document", "role": "section", "source_file": "pipeline_details.rst", "source_location": "L32", "community": "2", "variant": "ibex-mini-A", "degree": 2}, {"id": "component_instruction_fetch", "label": "component:instruction_fetch", "file_type": "document", "role": "component", "source_file": "__graphify_spec_only__/components.md", "source_location": "L1", "community": "0", "variant": "ibex-mini-A", "degree": 6}, {"id": "section_instruction_fetch_rst_83_protocol", "label": "Protocol", "file_type": "document", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L83", "community": "0", "variant": "ibex-mini-A", "degree": 2}, {"id": "project_pipeline_details_rst", "label": "project:pipeline_details_rst", "file_type": "document", "role": "project", "source_file": "__graphify_spec_only__/projects.md", "source_location": "L1", "community": "1", "variant": "ibex-mini-A", "degree": 2}, {"id": "doc_pipeline_details_rst", "label": "pipeline_details.rst", "file_type": "document", "role": "document", "source_file": "pipeline_details.rst", "source_location": "L1", "community": "2", "variant": "ibex-mini-A", "degree": 5}, {"id": "doc_instruction_fetch_rst", "label": "instruction_fetch.rst", "file_type": "document", "role": "document", "source_file": "instruction_fetch.rst", "source_location": "L1", "community": "0", "variant": "ibex-mini-A", "degree": 8}, {"id": "category_instruction_fetch_rst_root", "label": "instruction_fetch_rst/root", "file_type": "document", "role": "category", "source_file": "__graphify_spec_only__/categories.md", "source_location": "L1", "community": "1", "variant": "ibex-mini-A", "degree": 2}, {"id": "section_instruction_fetch_rst_41_instruction_side_memory_interface", "label": "Instruction-Side Memory Interface", "file_type": "document", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L41", "community": "0", "variant": "ibex-mini-A", "degree": 3}, {"id": "spec_corpus", "label": "Spec Documents Corpus", "file_type": "document", "role": "corpus", "source_file": "__graphify_spec_only__/index.md", "source_location": "L1", "community": "1", "variant": "ibex-mini-A", "degree": 2}], "links": [{"source": "spec_corpus", "target": "project_instruction_fetch_rst", "relation": "contains", "confidence": "EXTRACTED", "source_file": "__graphify_spec_only__/index.md", "weight": 1.0}, {"source": "spec_corpus", "target": "project_pipeline_details_rst", "relation": "contains", "confidence": "EXTRACTED", "source_file": "__graphify_spec_only__/index.md", "weight": 1.0}, {"source": "component_instruction_fetch", "target": "doc_instruction_fetch_rst", "relation": "documents_component", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 1.4}, {"source": "component_instruction_fetch", "target": "section_instruction_fetch_rst_3_instruction_fetch", "relation": "references_component", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 0.8}, {"source": "component_instruction_fetch", "target": "section_instruction_fetch_rst_31_branch_prediction", "relation": "references_component", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 0.8}, {"source": "component_instruction_fetch", "target": "section_instruction_fetch_rst_41_instruction_side_memory_interface", "relation": "references_component", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 0.8}, {"source": "component_instruction_fetch", "target": "section_instruction_fetch_rst_74_misaligned_accesses", "relation": "references_component", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 0.8}, {"source": "component_instruction_fetch", "target": "section_instruction_fetch_rst_83_protocol", "relation": "references_component", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 0.8}, {"source": "component_pipeline_details", "target": "doc_pipeline_details_rst", "relation": "documents_component", "confidence": "EXTRACTED", "source_file": "pipeline_details.rst", "weight": 1.4}, {"source": "component_pipeline_details", "target": "section_pipeline_details_rst_9_pipeline_details", "relation": "references_component", "confidence": "EXTRACTED", "source_file": "pipeline_details.rst", "weight": 0.8}, {"source": "component_pipeline_details", "target": "section_pipeline_details_rst_26_third_pipeline_stage", "relation": "references_component", "confidence": "EXTRACTED", "source_file": "pipeline_details.rst", "weight": 0.8}, {"source": "component_pipeline_details", "target": "section_pipeline_details_rst_32_multi_and_single_cycle_instructions", "relation": "references_component", "confidence": "EXTRACTED", "source_file": "pipeline_details.rst", "weight": 0.8}, {"source": "project_instruction_fetch_rst", "target": "category_instruction_fetch_rst_root", "relation": "contains", "confidence": "EXTRACTED", "source_file": "__graphify_spec_only__/projects.md", "weight": 1.0}, {"source": "category_instruction_fetch_rst_root", "target": "doc_instruction_fetch_rst", "relation": "contains", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 1.0}, {"source": "doc_instruction_fetch_rst", "target": "topic_memory", "relation": "mentions_topic", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 1.0}, {"source": "doc_instruction_fetch_rst", "target": "section_instruction_fetch_rst_3_instruction_fetch", "relation": "contains", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 1.2}, {"source": "doc_instruction_fetch_rst", "target": "section_instruction_fetch_rst_31_branch_prediction", "relation": "contains", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 1.2}, {"source": "doc_instruction_fetch_rst", "target": "section_instruction_fetch_rst_41_instruction_side_memory_interface", "relation": "contains", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 1.2}, {"source": "doc_instruction_fetch_rst", "target": "section_instruction_fetch_rst_74_misaligned_accesses", "relation": "contains", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 1.2}, {"source": "doc_instruction_fetch_rst", "target": "section_instruction_fetch_rst_83_protocol", "relation": "contains", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 1.2}, {"source": "topic_memory", "target": "section_instruction_fetch_rst_41_instruction_side_memory_interface", "relation": "mentions_topic", "confidence": "EXTRACTED", "source_file": "instruction_fetch.rst", "weight": 1.0}, {"source": "project_pipeline_details_rst", "target": "category_pipeline_details_rst_root", "relation": "contains", "confidence": "EXTRACTED", "source_file": "__graphify_spec_only__/projects.md", "weight": 1.0}, {"source": "category_pipeline_details_rst_root", "target": "doc_pipeline_details_rst", "relation": "contains", "confidence": "EXTRACTED", "source_file": "pipeline_details.rst", "weight": 1.0}, {"source": "doc_pipeline_details_rst", "target": "section_pipeline_details_rst_9_pipeline_details", "relation": "contains", "confidence": "EXTRACTED", "source_file": "pipeline_details.rst", "weight": 1.2}, {"source": "doc_pipeline_details_rst", "target": "section_pipeline_details_rst_26_third_pipeline_stage", "relation": "contains", "confidence": "EXTRACTED", "source_file": "pipeline_details.rst", "weight": 1.2}, {"source": "doc_pipeline_details_rst", "target": "section_pipeline_details_rst_32_multi_and_single_cycle_instructions", "relation": "contains", "confidence": "EXTRACTED", "source_file": "pipeline_details.rst", "weight": 1.2}]};
+/* ── 카테고리별 색상 ────────────────────────────────────────────────
+   BLUE  계열 = Code  (graphify 추출 코드 심볼)
+   TEAL  계열 = AST   (tree-sitter 파싱 구조)
+   GREEN 계열 = HDD   (검증 가능한 설계 문서)
+   DARK  계열 = Spec  (사양 문서)
+   ──────────────────────────────────────────────────────────────── */
+const colors = {
+  /* Code */
+  "code":         "#2563eb",   /* 파란색  — graphify 코드 심볼 */
+  "rationale":    "#7c3aed",   /* 보라색  — graphify 추론 노드 */
+  /* AST (teal 계열) */
+  "ast_module":   "#0f766e",   /* 진한 teal */
+  "ast_port":     "#0891b2",   /* 하늘색  — 포트 */
+  "ast_param":    "#0d9488",   /* 중간 teal — 파라미터 */
+  "ast_always":   "#f59e0b",   /* 앰버   — always 블록 */
+  "ast_function": "#db2777",   /* 핑크   — 함수 */
+  "ast_package":  "#8b5cf6",   /* 연보라 — 패키지 */
+  /* HDD (green 계열) */
+  "hdd_module":   "#16a34a",   /* 초록색  — HDD 문서 (PASS) */
+  /* Spec (dark 계열) */
+  "document":     "#1e3a5f",   /* 남색   — spec 문서 */
+  "<none>":       "#94a3b8",   /* 회색   — 미분류 */
+};
+const relationColors = {
+  /* Spec bridge */
+  spec_component_matches_code:  "rgba(220,38,38,.75)",
+  spec_path_matches_code_path:  "rgba(249,115,22,.60)",
+  /* Code */
+  instantiates:       "rgba(37,99,235,.60)",
+  calls:              "rgba(37,99,235,.22)",
+  contains:           "rgba(100,116,139,.22)",
+  defines:            "rgba(37,99,235,.35)",
+  imports_from:       "rgba(37,99,235,.18)",
+  /* Spec */
+  references_component: "rgba(30,58,95,.35)",
+  documents_component:  "rgba(30,58,95,.28)",
+  mentions_topic:       "rgba(124,58,237,.28)",
+  /* AST */
+  has_ast:            "rgba(15,118,110,.70)",
+  ast_has_port:       "rgba(8,145,178,.45)",
+  ast_has_param:      "rgba(13,148,136,.45)",
+  ast_has_always:     "rgba(245,158,11,.50)",
+  ast_has_fn:         "rgba(219,39,119,.45)",
+  /* HDD */
+  HAS_HDD:            "rgba(22,163,74,.75)",
+};
+const nodesById = new Map(data.nodes.map(n => [n.id, n]));
+let enabledTypes = new Set([...new Set(data.nodes.map(n => n.file_type))]);
+let enabledRelations = new Set([...new Set(data.links.map(e => e.relation))]);
+let search = "";
+let selected = null;
+let positions = new Map();
+let transform = {x:0,y:0,scale:1};
+const canvas = document.getElementById("graph");
+const ctx = canvas.getContext("2d");
+const tip = document.getElementById("tip");
+const detail = document.getElementById("detail");
+
+function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function visibleNode(n) {
+  if (!enabledTypes.has(n.file_type)) return false;
+  if (!search) return true;
+  const hay = `${n.label} ${n.file_type} ${n.role} ${n.source_file} ${n.community} ${n.variant}`.toLowerCase();
+  return hay.includes(search);
+}
+function visibleIds() {
+  const ids = new Set(data.nodes.filter(visibleNode).map(n => n.id));
+  if (!search) return ids;
+  for (const e of data.links) {
+    if (!enabledRelations.has(e.relation)) continue;
+    if (ids.has(e.source)) ids.add(e.target);
+    if (ids.has(e.target)) ids.add(e.source);
+  }
+  return ids;
+}
+function layout() {
+  const ids = visibleIds();
+  const nodes = data.nodes.filter(n => ids.has(n.id) && enabledTypes.has(n.file_type));
+  const rect = canvas.getBoundingClientRect();
+  const w = Math.max(rect.width, 900), h = Math.max(rect.height, 680);
+  const groups = {};
+  for (const n of nodes) {
+    const key = n.variant || n.file_type;
+    (groups[key] ||= []).push(n);
+  }
+  const keys = Object.keys(groups).sort();
+  positions = new Map();
+  keys.forEach((key, gi) => {
+    const cx = w * (0.24 + 0.52 * (gi / Math.max(1, keys.length - 1)));
+    const cy = h * 0.5;
+    const arr = groups[key].sort((a,b) => b.degree - a.degree);
+    for (let i=0;i<arr.length;i++) {
+      const a = Math.PI * 2 * i / Math.max(1, arr.length) - Math.PI/2;
+      const r = 80 + Math.sqrt(i + 1) * 20;
+      positions.set(arr[i].id, {x:cx + Math.cos(a)*r, y:cy + Math.sin(a)*r});
+    }
+  });
+}
+function sx(x) { return x * transform.scale + transform.x; }
+function sy(y) { return y * transform.scale + transform.y; }
+function radius(n) { return 3 + Math.min(14, Math.sqrt(n.degree || 1) * 0.7); }
+function draw() {
+  const rect = canvas.getBoundingClientRect();
+  ctx.clearRect(0,0,rect.width,rect.height);
+  const ids = new Set([...positions.keys()]);
+  for (const e of data.links) {
+    if (!enabledRelations.has(e.relation) || !ids.has(e.source) || !ids.has(e.target)) continue;
+    const a = positions.get(e.source), b = positions.get(e.target);
+    ctx.beginPath();
+    ctx.strokeStyle = relationColors[e.relation] || "rgba(80,80,80,.18)";
+    ctx.lineWidth = (e.relation.startsWith("spec_") || e.relation === "HAS_HDD") ? 2.0
+                  : e.relation.startsWith("ast_") || e.relation === "has_ast" ? 1.2
+                  : 0.75;
+    ctx.moveTo(sx(a.x), sy(a.y)); ctx.lineTo(sx(b.x), sy(b.y)); ctx.stroke();
+  }
+  for (const id of ids) {
+    const n = nodesById.get(id), p = positions.get(id), r = radius(n);
+    ctx.beginPath();
+    ctx.fillStyle = selected === id ? "#000" : (colors[n.file_type] || "#64748b");
+    ctx.arc(sx(p.x), sy(p.y), r, 0, Math.PI*2); ctx.fill();
+    const showLabel = search
+      || n.degree > 80
+      || (n.file_type === "document"   && n.degree > 40)
+      || n.file_type === "hdd_module"
+      || n.file_type === "ast_module";
+    if (showLabel) {
+      ctx.font = "12px Arial"; ctx.fillStyle = "#17202a";
+      ctx.fillText(n.label.slice(0,56), sx(p.x)+r+4, sy(p.y)+4);
+    }
+  }
+}
+function relayout() { layout(); draw(); }
+function resize() {
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = Math.floor(rect.width * devicePixelRatio);
+  canvas.height = Math.floor(rect.height * devicePixelRatio);
+  ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+  relayout();
+}
+function initControls() {
+  const typeCounts = new Map();
+  for (const n of data.nodes) typeCounts.set(n.file_type, (typeCounts.get(n.file_type)||0)+1);
+  for (const [type,count] of [...typeCounts.entries()].sort()) {
+    document.getElementById("typeFilters").insertAdjacentHTML("beforeend", `<label><input type="checkbox" data-type="${esc(type)}" checked><span class="swatch" style="background:${colors[type]||"#64748b"}"></span>${esc(type)} (${count})</label>`);
+  }
+  document.getElementById("typeFilters").addEventListener("change", e => {
+    const type = e.target.dataset.type; if (!type) return;
+    if (e.target.checked) enabledTypes.add(type); else enabledTypes.delete(type);
+    relayout();
+  });
+  const relCounts = new Map();
+  for (const e of data.links) relCounts.set(e.relation, (relCounts.get(e.relation)||0)+1);
+  for (const [rel,count] of [...relCounts.entries()].sort((a,b)=>b[1]-a[1]).slice(0,28)) {
+    document.getElementById("relationFilters").insertAdjacentHTML("beforeend", `<label><input type="checkbox" data-rel="${esc(rel)}" checked>${esc(rel)} (${count})</label>`);
+  }
+  document.getElementById("relationFilters").addEventListener("change", e => {
+    const rel = e.target.dataset.rel; if (!rel) return;
+    if (e.target.checked) enabledRelations.add(rel); else enabledRelations.delete(rel);
+    draw();
+  });
+  document.getElementById("search").addEventListener("input", e => { search = e.target.value.trim().toLowerCase(); relayout(); });
+  const counts = document.getElementById("counts");
+  counts.innerHTML = `
+    <div class="row"><span>Total nodes</span><strong>${data.summary.total_nodes}</strong></div>
+    <div class="row"><span>Total links</span><strong>${data.summary.total_links}</strong></div>
+    <div class="row"><span>Displayed nodes</span><strong>${data.summary.view_nodes}</strong></div>
+    <div class="row"><span>Displayed links</span><strong>${data.summary.view_links}</strong></div>
+    <div class="row"><span>Communities</span><strong>${data.summary.communities}</strong></div>
+  `;
+  for (const n of [...data.nodes].sort((a,b)=>b.degree-a.degree).slice(0,30)) {
+    const div = document.createElement("div");
+    div.className = "top";
+    div.innerHTML = `<strong>${esc(n.label)}</strong>${esc(n.file_type)} · degree ${n.degree} · community ${esc(n.community)}`;
+    div.onclick = () => { selected = n.id; search = n.label.toLowerCase(); document.getElementById("search").value = n.label; showDetail(n); relayout(); };
+    document.getElementById("topNodes").appendChild(div);
+  }
+}
+function hitTest(e) {
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left, y = e.clientY - rect.top;
+  for (const [id,p] of positions) {
+    const n = nodesById.get(id);
+    if (Math.hypot(sx(p.x)-x, sy(p.y)-y) <= radius(n)+4) return n;
+  }
+  return null;
+}
+function showDetail(n) {
+  if (!n) { detail.style.display = "none"; return; }
+  const related = data.links.filter(e => e.source === n.id || e.target === n.id).slice(0,80).map(e => {
+    const other = nodesById.get(e.source === n.id ? e.target : e.source);
+    return `${e.relation} -> ${other ? other.label : "unknown"}`;
+  });
+  detail.style.display = "block";
+  detail.innerHTML = `<h3>${esc(n.label)}</h3><pre>${esc(JSON.stringify({
+    file_type:n.file_type, role:n.role, variant:n.variant, community:n.community,
+    source_file:n.source_file, source_location:n.source_location, degree:n.degree,
+    related
+  }, null, 2))}</pre>`;
+}
+canvas.addEventListener("mousemove", e => {
+  const n = hitTest(e), rect = canvas.getBoundingClientRect();
+  if (!n) { tip.style.display = "none"; return; }
+  tip.style.display = "block"; tip.style.left = `${e.clientX-rect.left+12}px`; tip.style.top = `${e.clientY-rect.top+12}px`;
+  tip.innerHTML = `<strong>${esc(n.file_type)}</strong><br>${esc(n.label)}<br>degree: ${n.degree}<br>${esc(n.source_file)}`;
+});
+canvas.addEventListener("click", e => { const n = hitTest(e); selected = n?.id || null; showDetail(n); draw(); });
+canvas.addEventListener("wheel", e => { e.preventDefault(); transform.scale = Math.max(.18, Math.min(4, transform.scale * (e.deltaY < 0 ? 1.08 : .92))); draw(); }, {passive:false});
+let drag = null;
+canvas.addEventListener("mousedown", e => { drag = {x:e.clientX,y:e.clientY,tx:transform.x,ty:transform.y}; });
+window.addEventListener("mouseup", () => { drag = null; });
+window.addEventListener("mousemove", e => { if (!drag) return; transform.x = drag.tx + e.clientX - drag.x; transform.y = drag.ty + e.clientY - drag.y; draw(); });
+initControls(); resize(); window.addEventListener("resize", resize);
+</script>
+</body>
+</html>
