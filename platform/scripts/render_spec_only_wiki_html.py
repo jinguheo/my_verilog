@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import html
 import json
 import re
@@ -12,8 +13,24 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[2]
-GRAPH_PATH = ROOT / "dbs" / "graphify-out" / "spec-only-graphify" / "graph.json"
-OUT_DIR = ROOT / "dbs" / "graphify-out" / "spec-only-wiki"
+_DEFAULT_GRAPH = ROOT / "dbs" / "graphify-out" / "spec-only-graphify" / "graph.json"
+_DEFAULT_OUT   = ROOT / "dbs" / "graphify-out" / "spec-only-wiki"
+
+# resolved at runtime via _parse_args()
+GRAPH_PATH: Path
+OUT_DIR: Path
+
+
+def _parse_args() -> None:
+    global GRAPH_PATH, OUT_DIR
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--graph", type=Path, default=_DEFAULT_GRAPH,
+                        help="Path to graph.json (default: spec-only-graphify/graph.json)")
+    parser.add_argument("--out", type=Path, default=_DEFAULT_OUT,
+                        help="Output directory for wiki files")
+    args = parser.parse_args()
+    GRAPH_PATH = args.graph
+    OUT_DIR = args.out
 
 
 def read_json(path: Path) -> dict[str, Any]:
@@ -295,6 +312,7 @@ renderList();
 
 
 def main() -> None:
+    _parse_args()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     data = build_wiki()
     (OUT_DIR / "spec_only_wiki.json").write_text(

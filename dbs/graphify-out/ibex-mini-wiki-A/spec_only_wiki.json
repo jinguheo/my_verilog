@@ -1,0 +1,230 @@
+{
+  "summary": {
+    "source_graph": "dbs\\graphify-out\\ibex-mini-A\\graph.json",
+    "documents": 2,
+    "sections": 8,
+    "components": 2,
+    "topics": 1,
+    "roles": [
+      [
+        "section",
+        8
+      ],
+      [
+        "component",
+        2
+      ],
+      [
+        "project",
+        2
+      ],
+      [
+        "category",
+        2
+      ],
+      [
+        "document",
+        2
+      ],
+      [
+        "corpus",
+        1
+      ],
+      [
+        "topic",
+        1
+      ]
+    ],
+    "document_kinds": [
+      [
+        "doc",
+        2
+      ]
+    ],
+    "projects": [
+      [
+        "instruction_fetch_rst",
+        1
+      ],
+      [
+        "pipeline_details_rst",
+        1
+      ]
+    ],
+    "relations": [
+      [
+        "contains",
+        14
+      ],
+      [
+        "references_component",
+        8
+      ],
+      [
+        "documents_component",
+        2
+      ],
+      [
+        "mentions_topic",
+        2
+      ]
+    ]
+  },
+  "pages": [
+    {
+      "id": "doc_instruction_fetch_rst",
+      "label": "instruction_fetch.rst",
+      "role": "document",
+      "source_file": "instruction_fetch.rst",
+      "source_location": "L1",
+      "community": "",
+      "project": "instruction_fetch_rst",
+      "kind": "doc",
+      "bytes": 5809,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_instruction_fetch_rst_3_instruction_fetch",
+          "label": "Instruction Fetch",
+          "role": "section",
+          "source_file": "instruction_fetch.rst",
+          "source_location": "L3",
+          "community": "",
+          "line": 3,
+          "snippet": ""
+        },
+        {
+          "id": "section_instruction_fetch_rst_31_branch_prediction",
+          "label": "Branch Prediction",
+          "role": "section",
+          "source_file": "instruction_fetch.rst",
+          "source_location": "L31",
+          "community": "",
+          "line": 31,
+          "snippet": ""
+        },
+        {
+          "id": "section_instruction_fetch_rst_41_instruction_side_memory_interface",
+          "label": "Instruction-Side Memory Interface",
+          "role": "section",
+          "source_file": "instruction_fetch.rst",
+          "source_location": "L41",
+          "community": "",
+          "line": 41,
+          "snippet": ""
+        },
+        {
+          "id": "section_instruction_fetch_rst_74_misaligned_accesses",
+          "label": "Misaligned Accesses",
+          "role": "section",
+          "source_file": "instruction_fetch.rst",
+          "source_location": "L74",
+          "community": "",
+          "line": 74,
+          "snippet": ""
+        },
+        {
+          "id": "section_instruction_fetch_rst_83_protocol",
+          "label": "Protocol",
+          "role": "section",
+          "source_file": "instruction_fetch.rst",
+          "source_location": "L83",
+          "community": "",
+          "line": 83,
+          "snippet": ""
+        }
+      ],
+      "components": [
+        {
+          "label": "component:instruction_fetch",
+          "count": 6
+        }
+      ],
+      "topics": [
+        {
+          "label": "topic:memory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "doc_pipeline_details_rst",
+      "label": "pipeline_details.rst",
+      "role": "document",
+      "source_file": "pipeline_details.rst",
+      "source_location": "L1",
+      "community": "2",
+      "project": "pipeline_details_rst",
+      "kind": "doc",
+      "bytes": 10483,
+      "original_source": "",
+      "sections": [
+        {
+          "id": "section_pipeline_details_rst_9_pipeline_details",
+          "label": "Pipeline Details",
+          "role": "section",
+          "source_file": "pipeline_details.rst",
+          "source_location": "L9",
+          "community": "2",
+          "line": 9,
+          "snippet": ""
+        },
+        {
+          "id": "section_pipeline_details_rst_26_third_pipeline_stage",
+          "label": "Third Pipeline Stage",
+          "role": "section",
+          "source_file": "pipeline_details.rst",
+          "source_location": "L26",
+          "community": "2",
+          "line": 26,
+          "snippet": ""
+        },
+        {
+          "id": "section_pipeline_details_rst_32_multi_and_single_cycle_instructions",
+          "label": "Multi- and Single-Cycle Instructions",
+          "role": "section",
+          "source_file": "pipeline_details.rst",
+          "source_location": "L32",
+          "community": "2",
+          "line": 32,
+          "snippet": ""
+        }
+      ],
+      "components": [
+        {
+          "label": "component:pipeline_details",
+          "count": 4
+        }
+      ],
+      "topics": []
+    }
+  ],
+  "components": [
+    {
+      "id": "component_instruction_fetch",
+      "label": "component:instruction_fetch",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": ""
+    },
+    {
+      "id": "component_pipeline_details",
+      "label": "component:pipeline_details",
+      "role": "component",
+      "source_file": "__graphify_spec_only__/components.md",
+      "source_location": "L1",
+      "community": "2"
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic_memory",
+      "label": "topic:memory",
+      "role": "topic",
+      "source_file": "__graphify_spec_only__/topics.md",
+      "source_location": "L1",
+      "community": ""
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spec-Only Wiki</title>
+<style>
+:root{--bg:#f6f7f9;--panel:#fff;--ink:#17202a;--muted:#667085;--line:#d7dde7;--blue:#2f6fed;--green:#16875f;--amber:#b7791f}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:16px 20px 12px;background:var(--panel);border-bottom:1px solid var(--line)}
+h1{margin:0 0 7px;font-size:23px}.meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+.shell{display:grid;grid-template-columns:390px 1fr;height:calc(100vh - 76px);min-height:720px}
+aside{overflow:auto;background:var(--panel);border-right:1px solid var(--line);padding:14px}
+main{overflow:auto;padding:18px 24px 48px}
+input,select{width:100%;padding:8px;border:1px solid var(--line);border-radius:6px;background:#fff;margin-bottom:8px}
+h2{font-size:13px;text-transform:uppercase;color:var(--muted);margin:16px 0 8px}h3{font-size:20px;margin:0 0 8px}
+.doc{border-bottom:1px solid var(--line);padding:8px 4px;cursor:pointer}.doc:hover{background:#f1f5f9}.doc strong{display:block;font-size:13px}.doc span{display:block;color:var(--muted);font-size:12px;line-height:1.35}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 8px;margin:2px;font-size:12px;background:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:10px 0 18px}.metric{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px}.metric strong{display:block;font-size:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px;margin:12px 0}pre{white-space:pre-wrap;word-break:break-word;background:#0f172a;color:#dbeafe;border-radius:8px;padding:10px;font-size:12px;line-height:1.35;max-height:280px;overflow:auto}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:top}th{background:#eef2f7}
+a{color:#2457c5}.muted{color:var(--muted)}code{background:#eef2f7;padding:2px 4px;border-radius:4px}
+@media(max-width:900px){.shell{grid-template-columns:1fr;height:auto}aside{max-height:460px}main{padding:16px}}
+</style>
+</head>
+<body>
+<header>
+<h1>Spec-Only Wiki</h1>
+<div class="meta" id="meta"></div>
+</header>
+<div class="shell">
+<aside>
+  <input id="q" placeholder="Search file, section, component, topic">
+  <select id="kind"></select>
+  <select id="project"></select>
+  <h2>Documents</h2>
+  <div id="list"></div>
+</aside>
+<main id="content"></main>
+</div>
+<script>
+const data={"summary": {"source_graph": "dbs\\graphify-out\\ibex-mini-A\\graph.json", "documents": 2, "sections": 8, "components": 2, "topics": 1, "roles": [["section", 8], ["component", 2], ["project", 2], ["category", 2], ["document", 2], ["corpus", 1], ["topic", 1]], "document_kinds": [["doc", 2]], "projects": [["instruction_fetch_rst", 1], ["pipeline_details_rst", 1]], "relations": [["contains", 14], ["references_component", 8], ["documents_component", 2], ["mentions_topic", 2]]}, "pages": [{"id": "doc_instruction_fetch_rst", "label": "instruction_fetch.rst", "role": "document", "source_file": "instruction_fetch.rst", "source_location": "L1", "community": "", "project": "instruction_fetch_rst", "kind": "doc", "bytes": 5809, "original_source": "", "sections": [{"id": "section_instruction_fetch_rst_3_instruction_fetch", "label": "Instruction Fetch", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L3", "community": "", "line": 3, "snippet": ""}, {"id": "section_instruction_fetch_rst_31_branch_prediction", "label": "Branch Prediction", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L31", "community": "", "line": 31, "snippet": ""}, {"id": "section_instruction_fetch_rst_41_instruction_side_memory_interface", "label": "Instruction-Side Memory Interface", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L41", "community": "", "line": 41, "snippet": ""}, {"id": "section_instruction_fetch_rst_74_misaligned_accesses", "label": "Misaligned Accesses", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L74", "community": "", "line": 74, "snippet": ""}, {"id": "section_instruction_fetch_rst_83_protocol", "label": "Protocol", "role": "section", "source_file": "instruction_fetch.rst", "source_location": "L83", "community": "", "line": 83, "snippet": ""}], "components": [{"label": "component:instruction_fetch", "count": 6}], "topics": [{"label": "topic:memory", "count": 2}]}, {"id": "doc_pipeline_details_rst", "label": "pipeline_details.rst", "role": "document", "source_file": "pipeline_details.rst", "source_location": "L1", "community": "2", "project": "pipeline_details_rst", "kind": "doc", "bytes": 10483, "original_source": "", "sections": [{"id": "section_pipeline_details_rst_9_pipeline_details", "label": "Pipeline Details", "role": "section", "source_file": "pipeline_details.rst", "source_location": "L9", "community": "2", "line": 9, "snippet": ""}, {"id": "section_pipeline_details_rst_26_third_pipeline_stage", "label": "Third Pipeline Stage", "role": "section", "source_file": "pipeline_details.rst", "source_location": "L26", "community": "2", "line": 26, "snippet": ""}, {"id": "section_pipeline_details_rst_32_multi_and_single_cycle_instructions", "label": "Multi- and Single-Cycle Instructions", "role": "section", "source_file": "pipeline_details.rst", "source_location": "L32", "community": "2", "line": 32, "snippet": ""}], "components": [{"label": "component:pipeline_details", "count": 4}], "topics": []}], "components": [{"id": "component_instruction_fetch", "label": "component:instruction_fetch", "role": "component", "source_file": "__graphify_spec_only__/components.md", "source_location": "L1", "community": ""}, {"id": "component_pipeline_details", "label": "component:pipeline_details", "role": "component", "source_file": "__graphify_spec_only__/components.md", "source_location": "L1", "community": "2"}], "topics": [{"id": "topic_memory", "label": "topic:memory", "role": "topic", "source_file": "__graphify_spec_only__/topics.md", "source_location": "L1", "community": ""}]};
+const q=document.getElementById('q'), kind=document.getElementById('kind'), project=document.getElementById('project'), list=document.getElementById('list'), content=document.getElementById('content');
+function esc(s){return String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
+function textOf(p){return [p.label,p.source_file,p.project,p.kind,...p.sections.map(s=>s.label),...p.components.map(c=>c.label),...p.topics.map(t=>t.label)].join(' ').toLowerCase()}
+document.getElementById('meta').innerHTML=`<span>Documents: ${data.summary.documents}</span><span>Sections: ${data.summary.sections}</span><span>Components: ${data.summary.components}</span><span>Topics: ${data.summary.topics}</span>`;
+function fillSelect(el,label,values){el.innerHTML=`<option value="">${label}: all</option>`+values.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join('')}
+fillSelect(kind,'Kind',[...new Set(data.pages.map(p=>p.kind))].sort());
+fillSelect(project,'Project',[...new Set(data.pages.map(p=>p.project))].sort());
+function filtered(){const term=q.value.trim().toLowerCase();return data.pages.filter(p=>(!kind.value||p.kind===kind.value)&&(!project.value||p.project===project.value)&&(!term||textOf(p).includes(term))).sort((a,b)=>b.sections.length-a.sections.length||a.source_file.localeCompare(b.source_file))}
+function renderList(){const pages=filtered().slice(0,400);list.innerHTML=pages.map((p,i)=>`<div class="doc" data-i="${data.pages.indexOf(p)}"><strong>${esc(p.label)}</strong><span>${esc(p.project)} · ${esc(p.kind)} · sections ${p.sections.length} · components ${p.components.length}</span><span>${esc(p.source_file)}</span></div>`).join('')||'<p class="muted">No matches</p>'}
+function renderPage(p){const comps=p.components.map(c=>`<span class="pill">${esc(c.label)} · ${c.count}</span>`).join('')||'<span class="muted">None</span>';const topics=p.topics.map(t=>`<span class="pill">${esc(t.label)} · ${t.count}</span>`).join('')||'<span class="muted">None</span>';const rows=p.sections.map(s=>`<tr><td>${esc(s.source_location)}</td><td><strong>${esc(s.label)}</strong>${s.snippet?`<pre>${esc(s.snippet)}</pre>`:''}</td></tr>`).join('');
+content.innerHTML=`<h3>${esc(p.label)}</h3><p class="muted">${esc(p.source_file)}<br>${esc(p.original_source)}</p><div class="grid"><div class="metric">Sections<strong>${p.sections.length}</strong></div><div class="metric">Components<strong>${p.components.length}</strong></div><div class="metric">Topics<strong>${p.topics.length}</strong></div><div class="metric">Bytes<strong>${p.bytes||0}</strong></div></div><div class="card"><h2>Components</h2>${comps}<h2>Topics</h2>${topics}</div><div class="card"><h2>Internal Sections and Source Snippets</h2><table><thead><tr><th>Line</th><th>Section / snippet</th></tr></thead><tbody>${rows}</tbody></table></div>`}
+list.addEventListener('click',e=>{const item=e.target.closest('.doc');if(!item)return;renderPage(data.pages[Number(item.dataset.i)])});
+q.addEventListener('input',renderList);kind.addEventListener('change',renderList);project.addEventListener('change',renderList);
+content.innerHTML=`<h3>Spec document internals</h3><p>This view proves spec-only is not just filenames: it shows extracted document sections, component/topic references, and snippets from original files.</p><div class="grid"><div class="metric">Documents<strong>${data.summary.documents}</strong></div><div class="metric">Sections<strong>${data.summary.sections}</strong></div><div class="metric">Components<strong>${data.summary.components}</strong></div><div class="metric">Topics<strong>${data.summary.topics}</strong></div></div><p class="muted">Select a document on the left or search for terms such as rstmgr, testpoints, checklist, covergroups, interfaces.</p>`;
+renderList();
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "created_at": "2026-05-23T16:20:04",
+  "spec_root": "D:\\MyWork\\verilog\\out\\ibex_mini_docs",
+  "out_dir": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-mini-A",
+  "graph_json": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-mini-A\\graph.json",
+  "report": "D:\\MyWork\\verilog\\dbs\\graphify-out\\ibex-mini-A\\GRAPH_REPORT.md",
+  "html": "written",
+  "nodes": 18,
+  "edges": 26,
+  "communities": 3,
+  "documents": 2,
+  "sections": 8,
+  "components": 2,
+  "topics": 1,
+  "total_words": 1642,
+  "extensions": {
+    ".rst": 2
+  },
+  "projects": {
+    "instruction_fetch_rst": 1,
+    "pipeline_details_rst": 1
+  },
+  "relations": {
+    "contains": 14,
+    "references_component": 8,
+    "documents_component": 2,
+    "mentions_topic": 2
+  },
+  "top_components": [
+    [
+      "instruction_fetch",
+      1
+    ],
+    [
+      "pipeline_details",
+      1
+    ]
+  ],
+  "top_topics": [
+    [
+      "memory",
+      2
+    ]
+  ]
+}

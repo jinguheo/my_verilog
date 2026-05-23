@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import shutil
@@ -11,11 +12,30 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-GRAPH_JSON = REPO_ROOT / "dbs" / "graphify-out" / "spec-only-graphify" / "graph.json"
-OUT_ROOT = REPO_ROOT / "dbs" / "graphify-out" / "kb-variants" / "spec-graphify-wiki" / "kb"
-RAW_ROOT = OUT_ROOT / "raw"
-WIKI_EXPORT = REPO_ROOT / "dbs" / "graphify-out" / "graphify-openkb-bridge"
-HTML_OUT = WIKI_EXPORT / "graphify_derived_spec_wiki.html"
+_DEFAULT_GRAPH = REPO_ROOT / "dbs" / "graphify-out" / "spec-only-graphify" / "graph.json"
+_DEFAULT_OUT   = REPO_ROOT / "dbs" / "graphify-out" / "kb-variants" / "spec-graphify-wiki" / "kb"
+
+# resolved at runtime via _parse_args()
+GRAPH_JSON: Path
+OUT_ROOT: Path
+RAW_ROOT: Path
+WIKI_EXPORT: Path
+HTML_OUT: Path
+
+
+def _parse_args() -> None:
+    global GRAPH_JSON, OUT_ROOT, RAW_ROOT, WIKI_EXPORT, HTML_OUT
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--graph", type=Path, default=_DEFAULT_GRAPH,
+                        help="Path to graph.json (default: spec-only-graphify/graph.json)")
+    parser.add_argument("--out", type=Path, default=_DEFAULT_OUT,
+                        help="Output OpenKB kb root directory")
+    args = parser.parse_args()
+    GRAPH_JSON = args.graph
+    OUT_ROOT   = args.out
+    RAW_ROOT   = OUT_ROOT / "raw"
+    WIKI_EXPORT = OUT_ROOT.parent / "html-preview"
+    HTML_OUT    = WIKI_EXPORT / "graphify_derived_wiki.html"
 
 
 def slug(text: str) -> str:
@@ -213,6 +233,7 @@ def escape(text: str) -> str:
 
 
 def main() -> None:
+    _parse_args()
     nodes, links = load_graph()
     by_id, outgoing, incoming = build_indexes(nodes, links)
 

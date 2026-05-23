@@ -1,12 +1,12 @@
-# Component: rv core ibex
+# Component: pipeline details
 
 ## OpenKB Purpose
 This page is a compact Graphify-derived view of a spec/code entity candidate. It is intended as lower-token OpenKB input, not as raw source truth.
 
 ## Graphify Identity
-- Node id: `component_rv_core_ibex`
+- Node id: `component_pipeline_details`
 - Role: `component`
-- Community: `5`
+- Community: `2`
 - Confidence score: `1.0`
 
 ## Referencing Documents

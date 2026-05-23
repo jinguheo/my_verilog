@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d17" for="edge" attr.name="_tgt" attr.type="string"/>
+<key id="d16" for="edge" attr.name="_src" attr.type="string"/>
+<key id="d15" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d14" for="edge" attr.name="source_location" attr.type="string"/>
+<key id="d13" for="edge" attr.name="source_file" attr.type="string"/>
+<key id="d12" for="edge" attr.name="confidence_score" attr.type="double"/>
+<key id="d11" for="edge" attr.name="confidence" attr.type="string"/>
+<key id="d10" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d9" for="node" attr.name="bytes" attr.type="long"/>
+<key id="d8" for="node" attr.name="original_source" attr.type="string"/>
+<key id="d7" for="node" attr.name="project" attr.type="string"/>
+<key id="d6" for="node" attr.name="community" attr.type="long"/>
+<key id="d5" for="node" attr.name="role" attr.type="string"/>
+<key id="d4" for="node" attr.name="confidence_score" attr.type="double"/>
+<key id="d3" for="node" attr.name="source_location" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_file" attr.type="string"/>
+<key id="d1" for="node" attr.name="file_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="undirected"><node id="spec_corpus">
+  <data key="d0">Spec Documents Corpus</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/index.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">corpus</data>
+  <data key="d6">1</data>
+</node>
+<node id="component_instruction_fetch">
+  <data key="d0">component:instruction_fetch</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">0</data>
+</node>
+<node id="component_pipeline_details">
+  <data key="d0">component:pipeline_details</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/components.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">component</data>
+  <data key="d6">2</data>
+</node>
+<node id="project_instruction_fetch_rst">
+  <data key="d0">project:instruction_fetch_rst</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/projects.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">project</data>
+  <data key="d6">1</data>
+</node>
+<node id="category_instruction_fetch_rst_root">
+  <data key="d0">instruction_fetch_rst/root</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">1</data>
+</node>
+<node id="doc_instruction_fetch_rst">
+  <data key="d0">instruction_fetch.rst</data>
+  <data key="d1">document</data>
+  <data key="d2">instruction_fetch.rst</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">instruction_fetch_rst</data>
+  <data key="d8"></data>
+  <data key="d9">5809</data>
+  <data key="d6">0</data>
+</node>
+<node id="topic_memory">
+  <data key="d0">topic:memory</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/topics.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">topic</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_instruction_fetch_rst_3_instruction_fetch">
+  <data key="d0">Instruction Fetch</data>
+  <data key="d1">document</data>
+  <data key="d2">instruction_fetch.rst</data>
+  <data key="d3">L3</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_instruction_fetch_rst_31_branch_prediction">
+  <data key="d0">Branch Prediction</data>
+  <data key="d1">document</data>
+  <data key="d2">instruction_fetch.rst</data>
+  <data key="d3">L31</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_instruction_fetch_rst_41_instruction_side_memory_interface">
+  <data key="d0">Instruction-Side Memory Interface</data>
+  <data key="d1">document</data>
+  <data key="d2">instruction_fetch.rst</data>
+  <data key="d3">L41</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_instruction_fetch_rst_74_misaligned_accesses">
+  <data key="d0">Misaligned Accesses</data>
+  <data key="d1">document</data>
+  <data key="d2">instruction_fetch.rst</data>
+  <data key="d3">L74</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="section_instruction_fetch_rst_83_protocol">
+  <data key="d0">Protocol</data>
+  <data key="d1">document</data>
+  <data key="d2">instruction_fetch.rst</data>
+  <data key="d3">L83</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">0</data>
+</node>
+<node id="project_pipeline_details_rst">
+  <data key="d0">project:pipeline_details_rst</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/projects.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">project</data>
+  <data key="d6">1</data>
+</node>
+<node id="category_pipeline_details_rst_root">
+  <data key="d0">pipeline_details_rst/root</data>
+  <data key="d1">document</data>
+  <data key="d2">__graphify_spec_only__/categories.md</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">category</data>
+  <data key="d6">1</data>
+</node>
+<node id="doc_pipeline_details_rst">
+  <data key="d0">pipeline_details.rst</data>
+  <data key="d1">document</data>
+  <data key="d2">pipeline_details.rst</data>
+  <data key="d3">L1</data>
+  <data key="d4">1.0</data>
+  <data key="d5">document</data>
+  <data key="d7">pipeline_details_rst</data>
+  <data key="d8"></data>
+  <data key="d9">10483</data>
+  <data key="d6">2</data>
+</node>
+<node id="section_pipeline_details_rst_9_pipeline_details">
+  <data key="d0">Pipeline Details</data>
+  <data key="d1">document</data>
+  <data key="d2">pipeline_details.rst</data>
+  <data key="d3">L9</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<node id="section_pipeline_details_rst_26_third_pipeline_stage">
+  <data key="d0">Third Pipeline Stage</data>
+  <data key="d1">document</data>
+  <data key="d2">pipeline_details.rst</data>
+  <data key="d3">L26</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<node id="section_pipeline_details_rst_32_multi_and_single_cycle_instructions">
+  <data key="d0">Multi- and Single-Cycle Instructions</data>
+  <data key="d1">document</data>
+  <data key="d2">pipeline_details.rst</data>
+  <data key="d3">L32</data>
+  <data key="d4">1.0</data>
+  <data key="d5">section</data>
+  <data key="d6">2</data>
+</node>
+<edge source="spec_corpus" target="project_instruction_fetch_rst">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">spec_corpus</data>
+  <data key="d17">project_instruction_fetch_rst</data>
+</edge>
+<edge source="spec_corpus" target="project_pipeline_details_rst">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/index.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">spec_corpus</data>
+  <data key="d17">project_pipeline_details_rst</data>
+</edge>
+<edge source="component_instruction_fetch" target="doc_instruction_fetch_rst">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_instruction_fetch_rst</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="section_instruction_fetch_rst_3_instruction_fetch">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L3</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_instruction_fetch_rst_3_instruction_fetch</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="section_instruction_fetch_rst_31_branch_prediction">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L31</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_instruction_fetch_rst_31_branch_prediction</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="section_instruction_fetch_rst_41_instruction_side_memory_interface">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L41</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_instruction_fetch_rst_41_instruction_side_memory_interface</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="section_instruction_fetch_rst_74_misaligned_accesses">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L74</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_instruction_fetch_rst_74_misaligned_accesses</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_instruction_fetch" target="section_instruction_fetch_rst_83_protocol">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L83</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_instruction_fetch_rst_83_protocol</data>
+  <data key="d17">component_instruction_fetch</data>
+</edge>
+<edge source="component_pipeline_details" target="doc_pipeline_details_rst">
+  <data key="d10">documents_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">pipeline_details.rst</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.4</data>
+  <data key="d16">doc_pipeline_details_rst</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="section_pipeline_details_rst_9_pipeline_details">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">pipeline_details.rst</data>
+  <data key="d14">L9</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_pipeline_details_rst_9_pipeline_details</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="section_pipeline_details_rst_26_third_pipeline_stage">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">pipeline_details.rst</data>
+  <data key="d14">L26</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_pipeline_details_rst_26_third_pipeline_stage</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="component_pipeline_details" target="section_pipeline_details_rst_32_multi_and_single_cycle_instructions">
+  <data key="d10">references_component</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">pipeline_details.rst</data>
+  <data key="d14">L32</data>
+  <data key="d15">0.8</data>
+  <data key="d16">section_pipeline_details_rst_32_multi_and_single_cycle_instructions</data>
+  <data key="d17">component_pipeline_details</data>
+</edge>
+<edge source="project_instruction_fetch_rst" target="category_instruction_fetch_rst_root">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_instruction_fetch_rst</data>
+  <data key="d17">category_instruction_fetch_rst_root</data>
+</edge>
+<edge source="category_instruction_fetch_rst_root" target="doc_instruction_fetch_rst">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_instruction_fetch_rst_root</data>
+  <data key="d17">doc_instruction_fetch_rst</data>
+</edge>
+<edge source="doc_instruction_fetch_rst" target="topic_memory">
+  <data key="d10">mentions_topic</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">doc_instruction_fetch_rst</data>
+  <data key="d17">topic_memory</data>
+</edge>
+<edge source="doc_instruction_fetch_rst" target="section_instruction_fetch_rst_3_instruction_fetch">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L3</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_instruction_fetch_rst</data>
+  <data key="d17">section_instruction_fetch_rst_3_instruction_fetch</data>
+</edge>
+<edge source="doc_instruction_fetch_rst" target="section_instruction_fetch_rst_31_branch_prediction">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L31</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_instruction_fetch_rst</data>
+  <data key="d17">section_instruction_fetch_rst_31_branch_prediction</data>
+</edge>
+<edge source="doc_instruction_fetch_rst" target="section_instruction_fetch_rst_41_instruction_side_memory_interface">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L41</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_instruction_fetch_rst</data>
+  <data key="d17">section_instruction_fetch_rst_41_instruction_side_memory_interface</data>
+</edge>
+<edge source="doc_instruction_fetch_rst" target="section_instruction_fetch_rst_74_misaligned_accesses">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L74</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_instruction_fetch_rst</data>
+  <data key="d17">section_instruction_fetch_rst_74_misaligned_accesses</data>
+</edge>
+<edge source="doc_instruction_fetch_rst" target="section_instruction_fetch_rst_83_protocol">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L83</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_instruction_fetch_rst</data>
+  <data key="d17">section_instruction_fetch_rst_83_protocol</data>
+</edge>
+<edge source="topic_memory" target="section_instruction_fetch_rst_41_instruction_side_memory_interface">
+  <data key="d10">mentions_topic</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">instruction_fetch.rst</data>
+  <data key="d14">L41</data>
+  <data key="d15">1.0</data>
+  <data key="d16">section_instruction_fetch_rst_41_instruction_side_memory_interface</data>
+  <data key="d17">topic_memory</data>
+</edge>
+<edge source="project_pipeline_details_rst" target="category_pipeline_details_rst_root">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">__graphify_spec_only__/projects.md</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">project_pipeline_details_rst</data>
+  <data key="d17">category_pipeline_details_rst_root</data>
+</edge>
+<edge source="category_pipeline_details_rst_root" target="doc_pipeline_details_rst">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">pipeline_details.rst</data>
+  <data key="d14">L1</data>
+  <data key="d15">1.0</data>
+  <data key="d16">category_pipeline_details_rst_root</data>
+  <data key="d17">doc_pipeline_details_rst</data>
+</edge>
+<edge source="doc_pipeline_details_rst" target="section_pipeline_details_rst_9_pipeline_details">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">pipeline_details.rst</data>
+  <data key="d14">L9</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_pipeline_details_rst</data>
+  <data key="d17">section_pipeline_details_rst_9_pipeline_details</data>
+</edge>
+<edge source="doc_pipeline_details_rst" target="section_pipeline_details_rst_26_third_pipeline_stage">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">pipeline_details.rst</data>
+  <data key="d14">L26</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_pipeline_details_rst</data>
+  <data key="d17">section_pipeline_details_rst_26_third_pipeline_stage</data>
+</edge>
+<edge source="doc_pipeline_details_rst" target="section_pipeline_details_rst_32_multi_and_single_cycle_instructions">
+  <data key="d10">contains</data>
+  <data key="d11">EXTRACTED</data>
+  <data key="d12">1.0</data>
+  <data key="d13">pipeline_details.rst</data>
+  <data key="d14">L32</data>
+  <data key="d15">1.2</data>
+  <data key="d16">doc_pipeline_details_rst</data>
+  <data key="d17">section_pipeline_details_rst_32_multi_and_single_cycle_instructions</data>
+</edge>
+</graph></graphml>

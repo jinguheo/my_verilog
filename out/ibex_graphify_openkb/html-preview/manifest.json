@@ -1,0 +1,10 @@
+{
+  "source_graph": "dbs\\graphify-out\\ibex-mini-A\\graph.json",
+  "openkb_kb": "out\\ibex_graphify_openkb\\kb",
+  "raw_dir": "out\\ibex_graphify_openkb\\kb\\raw",
+  "html_preview": "out\\ibex_graphify_openkb\\html-preview\\graphify_derived_wiki.html",
+  "pages": 6,
+  "components": 2,
+  "topics": 1,
+  "documents": 2
+}

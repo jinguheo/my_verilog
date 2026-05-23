@@ -1,0 +1,26 @@
+{
+  "7bb9a26481d8017543da467940a482570be20845ed5e2b11c967f91018810f6e": {
+    "name": "00_graphify_spec_wiki_index.md",
+    "type": "md"
+  },
+  "7e6809511657d3b42362ec15889add376ad1b8056a34e8b48b17ec5922f2269a": {
+    "name": "instruction_fetch.md",
+    "type": "md"
+  },
+  "45a7b27c5097ca350522ce9da867b97929e4f1564142948bd393f807a995bb54": {
+    "name": "pipeline_details.md",
+    "type": "md"
+  },
+  "de175d327fcd0fd5d796c8fe38329a64cbe4577709ede8b87276e491d5f418a7": {
+    "name": "instruction_fetch_rst.md",
+    "type": "md"
+  },
+  "447c21cfd8db7a04dcdd7e1b439e96387e886ffbdfb35789e99bb9dc64a7d993": {
+    "name": "pipeline_details_rst.md",
+    "type": "md"
+  },
+  "04c52c89ee7c5e91980e8148466deb6cdce1b118f64bd67c91e86e643e0af103": {
+    "name": "memory.md",
+    "type": "md"
+  }
+}

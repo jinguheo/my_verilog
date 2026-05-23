@@ -1,0 +1,3 @@
+﻿model: ollama/gemma4:e2b
+language: en
+pageindex_threshold: 20

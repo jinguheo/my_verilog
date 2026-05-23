@@ -1,0 +1,10 @@
+{
+  "d36c8b722f3f108d900a2155e327487ea0bce3c0771995e6ff1165feafea9dc7": {
+    "name": "pipeline_details.txt",
+    "type": "txt"
+  },
+  "e32768f87e0331287dd092e802d3eb89b8dd825ba8a25b1d9896788d49cb3776": {
+    "name": "instruction_fetch.txt",
+    "type": "txt"
+  }
+}

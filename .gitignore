@@ -41,3 +41,6 @@ tools/
 # large backup / cache directories
 graphify-out.backup_*/
 dbs/graphify-out/cache/
+
+# Claude Code project settings
+.claude/
