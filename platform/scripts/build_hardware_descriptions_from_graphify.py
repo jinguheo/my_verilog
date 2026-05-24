@@ -25,6 +25,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[2]
 GRAPH_PATH = ROOT / "dbs" / "graphify-out" / "spec-code-graphify" / "graph.json"
 SPEC_ONLY_GRAPH = ROOT / "dbs" / "graphify-out" / "spec-only-graphify" / "graph.json"
+SVA_MANIFEST = ROOT / "dbs" / "graphify-out" / "sva-manifest" / "sva_manifest.json"
 OUT_DIR = ROOT / "dbs" / "graphify-out" / "hardware-descriptions"
 BRIDGE_RELATIONS = {"spec_component_matches_code", "spec_path_matches_code_path"}
 CODE_RELATIONS = {"defines", "instantiates", "imports_from", "imports", "contains", "uses", "calls", "method"}
@@ -131,6 +132,49 @@ def node_ref(node: dict[str, Any]) -> dict[str, Any]:
 def add_limited(bucket: list[dict[str, Any]], item: dict[str, Any], limit: int = 80) -> None:
     if len(bucket) < limit and item not in bucket:
         bucket.append(item)
+
+
+# ---------------------------------------------------------------------------
+# SVA manifest: component -> list of assertion dicts
+# ---------------------------------------------------------------------------
+
+def load_sva_manifest() -> dict[str, list[dict[str, Any]]]:
+    """Load SVA manifest and return {component: [assertion, ...]}."""
+    if not SVA_MANIFEST.exists():
+        return {}
+    data = read_json(SVA_MANIFEST)
+    return {
+        comp["component"]: comp["assertions"]
+        for comp in data.get("components", [])
+    }
+
+
+def md_sva_section(assertions: list[dict[str, Any]]) -> list[str]:
+    """Render the ## Verification Coverage (SVA) section for an HDD page."""
+    if not assertions:
+        return []
+    asserts = [a for a in assertions if a["kind"] == "assert"]
+    covers  = [a for a in assertions if a["kind"] == "cover"]
+    assumes = [a for a in assertions if a["kind"] == "assume"]
+
+    lines = [
+        "## Verification Coverage (SVA)",
+        "",
+        f"**{len(asserts)} assert** · **{len(covers)} cover**"
+        + (f" · **{len(assumes)} assume**" if assumes else ""),
+        "",
+        "| Kind | Property ID | Spec reference | File:line |",
+        "|------|-------------|----------------|-----------|",
+    ]
+    for a in assertions:
+        sva_id = a.get("sva_id") or a.get("prop_name", "")
+        spec   = (a.get("spec") or "")[:90]
+        fname  = Path(a["file"]).name
+        lines.append(
+            f"| `{a['kind']}` | `{sva_id}` | {spec} | `{fname}:{a['line_no']}` |"
+        )
+    lines.append("")
+    return lines
 
 
 # ---------------------------------------------------------------------------
@@ -376,7 +420,7 @@ def md_code_by_category(code_nodes: list[dict[str, Any]], limit: int = 50) -> li
     return lines
 
 
-def write_component_md(out: Path, row: dict[str, Any]) -> None:
+def write_component_md(out: Path, row: dict[str, Any], sva_manifest: dict[str, list[dict[str, Any]]] | None = None) -> None:
     comp = row["component"]
     bridge_count = sum(row["bridge_relations"].values())
     code_cats = ", ".join(f"{k}: {v}" for k, v in row["code_categories"].most_common())
@@ -444,6 +488,10 @@ def write_component_md(out: Path, row: dict[str, Any]) -> None:
         lines += ["## Neighbor Components", ""]
         lines += neighbor_lines
         lines += [""]
+
+    # SVA coverage
+    sva_assertions = (sva_manifest or {}).get(comp, [])
+    lines += md_sva_section(sva_assertions)
 
     # Bridge table
     lines += [
@@ -652,14 +700,19 @@ def main() -> None:
     snippet_index = load_spec_snippets()
     print(f"  Loaded snippets for {len(snippet_index)} source files")
 
+    print("Loading SVA manifest...")
+    sva_manifest = load_sva_manifest()
+    print(f"  SVA coverage for {len(sva_manifest)} component(s): {list(sva_manifest.keys())}")
+
     print("Building component data from spec-code graph...")
     data = build(snippet_index)
 
     with_snippets = sum(1 for row in data["components"] if row.get("spec_snippets"))
-    print(f"  {data['summary']['components']} components, {with_snippets} have spec snippets")
+    with_sva = sum(1 for row in data["components"] if row["component"] in sva_manifest)
+    print(f"  {data['summary']['components']} components, {with_snippets} with snippets, {with_sva} with SVA coverage")
 
     for row in data["components"]:
-        write_component_md(OUT_DIR / "blocks" / f"{slug(row['component'])}.md", row)
+        write_component_md(OUT_DIR / "blocks" / f"{slug(row['component'])}.md", row, sva_manifest)
 
     (OUT_DIR / "hardware_descriptions.json").write_text(
         json.dumps(data, indent=2, ensure_ascii=False, default=str) + "\n",
@@ -675,6 +728,7 @@ def main() -> None:
         "index_html": str(OUT_DIR / "index.html"),
         "components": data["summary"]["components"],
         "with_spec_snippets": with_snippets,
+        "with_sva_coverage": with_sva,
         "bridge_edges": data["summary"]["total_bridge_edges"],
     }, indent=2, ensure_ascii=False))
 

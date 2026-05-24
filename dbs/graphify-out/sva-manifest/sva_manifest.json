@@ -1,0 +1,136 @@
+{
+  "sva_dir": "D:\\MyWork\\verilog\\platform\\sva",
+  "components": [
+    {
+      "component": "gpio",
+      "files": [
+        "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv",
+        "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_bind.sv"
+      ],
+      "bind_targets": [
+        "gpio"
+      ],
+      "totals": {
+        "assert": 8,
+        "cover": 4,
+        "assume": 0,
+        "total": 12
+      },
+      "assertions": [
+        {
+          "kind": "assert",
+          "prop_name": "p_rst_outputs_zero",
+          "sva_id": "sva.gpio.rst.outputs_clear",
+          "spec": "\"After reset all outputs shall be 0 and output-enables deasserted.\"",
+          "ref": "gpio/doc/README.md §Reset Behaviour",
+          "line_no": 40,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "assert",
+          "prop_name": "p_rst_oe_zero",
+          "sva_id": "sva.gpio.rst.oe_clear",
+          "spec": "",
+          "ref": "",
+          "line_no": 48,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "assert",
+          "prop_name": "p_rst_intr_zero",
+          "sva_id": "sva.gpio.rst.intr_clear",
+          "spec": "",
+          "ref": "",
+          "line_no": 56,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "assert",
+          "prop_name": "p_oe_asserted",
+          "sva_id": "sva.gpio.oe.asserted_when_reg_set",
+          "spec": "",
+          "ref": "",
+          "line_no": 75,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "assert",
+          "prop_name": "p_oe_deasserted",
+          "sva_id": "sva.gpio.oe.deasserted_when_reg_clear",
+          "spec": "",
+          "ref": "",
+          "line_no": 84,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "assert",
+          "prop_name": "p_out_matches_reg",
+          "sva_id": "sva.gpio.out.matches_reg_when_oe",
+          "spec": "",
+          "ref": "",
+          "line_no": 106,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "assert",
+          "prop_name": "p_masked_lower_bit_stability",
+          "sva_id": "sva.gpio.masked.lower_unchanged_bits_stable",
+          "spec": "\"MASKED_OUT_LOWER write only changes bits whose mask bit is set.\"",
+          "ref": "gpio/doc/README.md §Masked Output",
+          "line_no": 129,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "assert",
+          "prop_name": "p_intr_gated",
+          "sva_id": "sva.gpio.intr.gated_by_enable",
+          "spec": "",
+          "ref": "",
+          "line_no": 150,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "cover",
+          "prop_name": "any_output_driven",
+          "sva_id": "sva.gpio.cover.any_output_driven",
+          "spec": "",
+          "ref": "",
+          "line_no": 163,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "cover",
+          "prop_name": "all_outputs_driven",
+          "sva_id": "sva.gpio.cover.all_outputs_driven",
+          "spec": "",
+          "ref": "",
+          "line_no": 167,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "cover",
+          "prop_name": "any_interrupt_fired",
+          "sva_id": "sva.gpio.cover.any_interrupt_fired",
+          "spec": "",
+          "ref": "",
+          "line_no": 171,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        },
+        {
+          "kind": "cover",
+          "prop_name": "anon_ln176",
+          "sva_id": "",
+          "spec": "",
+          "ref": "",
+          "line_no": 176,
+          "file": "D:\\MyWork\\verilog\\platform\\sva\\gpio\\gpio_assert.sv"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "component_count": 1,
+    "total_assertions": 8,
+    "total_covers": 4
+  }
+}
