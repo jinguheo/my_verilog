@@ -1,71 +1,46 @@
 # Hardware Description: testplan
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+_No spec snippet available. Derived from bridge evidence only._
+
+## Identity
 
 - `ip_block`: `testplan`
-- `approved_label`: `pending:testplan`
-- `doc_anchor`: `testplan`
-- `module_name_prefix`: `testplan`
 - `bridge_edge_count`: 40
-
-## Inferred Hardware Role
-
-`testplan` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: testplan: 41
 - Code categories: other_code: 40
 - Bridge relations: spec_component_matches_code: 40
 
 ## Spec Anchors
 
-- `component:testplan` (L1) - `__graphify_spec_only__/components.md`
+- `component:testplan` (L1) — `__graphify_spec_only__/components.md`
 
 ## Code Evidence
 
-- `Testplan` (L14) - `opentitan\util\testplantool\testplanlib\lib.py`
-- `Testplan.py` (L1) - `ibex\vendor\lowrisc_ip\util\dvsim\Testplan.py`
-- `Testplan` (L40) - `opentitan\util\py\scripts\gh_testplan.py`
-- `Testplan` (L235) - `opentitan\util\dvsim\Testplan.py`
-- `_create_testplan_elements()` (L256) - `opentitan\util\dvsim\Testplan.py`
-- `_get_imported_testplan_paths()` (L362) - `opentitan\util\dvsim\Testplan.py`
-- `._parse_testplan()` (L407) - `opentitan\util\dvsim\Testplan.py`
-- `.write_testplan_doc()` (L485) - `opentitan\util\dvsim\Testplan.py`
-- `An element of the testplan.      This is either a testpoint or a covergroup.` (L37) - `opentitan\util\dvsim\Testplan.py`
-- `Initialize the testplan element.          raw_dict is the dictionary parsed fr` (L48) - `opentitan\util\dvsim\Testplan.py`
-- `An testcase entry in the testplan.      A testpoint maps to a unique design fe` (L128) - `opentitan\util\dvsim\Testplan.py`
-- `The full testplan      The list of Testpoints and Covergroups make up the test` (L236) - `opentitan\util\dvsim\Testplan.py`
-- `Creates testplan elements from the list of raw dicts.          kind is either` (L257) - `opentitan\util\dvsim\Testplan.py`
-- `Initialize the testplan.          filename is the HJson file that captures the` (L320) - `opentitan\util\dvsim\Testplan.py`
-- `Parse imported testplans with correctly set paths.          Paths of the impor` (L365) - `opentitan\util\dvsim\Testplan.py`
-- `Parse testplan Hjson file and create the testplan elements.          It create` (L408) - `opentitan\util\dvsim\Testplan.py`
-- `Write testplan documentation in markdown from the hjson testplan.` (L486) - `opentitan\util\dvsim\Testplan.py`
-- `Map the covergroups found from simulation to the testplan.          For now, t` (L605) - `opentitan\util\dvsim\Testplan.py`
-- `Returns the current progress of the effort towards the testplan.` (L671) - `opentitan\util\dvsim\Testplan.py`
-- `Testplan.py` (L1) - `opentitan\util\dvsim\Testplan.py`
-- `Result` (L19) - `opentitan\util\dvsim\Testplan.py`
-- `.__init__()` (L22) - `opentitan\util\dvsim\Testplan.py`
-- `Element` (L36) - `opentitan\util\dvsim\Testplan.py`
-- `.__init__()` (L47) - `opentitan\util\dvsim\Testplan.py`
-- `.__str__()` (L70) - `opentitan\util\dvsim\Testplan.py`
-- `._validate()` (L77) - `opentitan\util\dvsim\Testplan.py`
-- `.has_tags()` (L87) - `opentitan\util\dvsim\Testplan.py`
-- `Covergroup` (L110) - `opentitan\util\dvsim\Testplan.py`
-- `._validate()` (L120) - `opentitan\util\dvsim\Testplan.py`
-- `Testpoint` (L127) - `opentitan\util\dvsim\Testplan.py`
-- `.__init__()` (L143) - `opentitan\util\dvsim\Testplan.py`
-- `.__str__()` (L156) - `opentitan\util\dvsim\Testplan.py`
-- `._validate()` (L160) - `opentitan\util\dvsim\Testplan.py`
-- `.do_substitutions()` (L171) - `opentitan\util\dvsim\Testplan.py`
-- `.map_test_results()` (L202) - `opentitan\util\dvsim\Testplan.py`
-- `_parse_hjson()` (L245) - `opentitan\util\dvsim\Testplan.py`
-- `_get_percentage()` (L286) - `opentitan\util\dvsim\Testplan.py`
-- `get_dv_style_css()` (L294) - `opentitan\util\dvsim\Testplan.py`
-- `.__str__()` (L311) - `opentitan\util\dvsim\Testplan.py`
-- `.__init__()` (L319) - `opentitan\util\dvsim\Testplan.py`
+**OTHER_CODE** (40)
+  - `Testplan`:L14 — `opentitan\util\testplantool\testplanlib\lib.py`
+  - `Testplan.py`:L1 — `ibex\vendor\lowrisc_ip\util\dvsim\Testplan.py`
+  - `Testplan`:L40 — `opentitan\util\py\scripts\gh_testplan.py`
+  - `Testplan`:L235 — `opentitan\util\dvsim\Testplan.py`
+  - `_create_testplan_elements()`:L256 — `opentitan\util\dvsim\Testplan.py`
+  - `_get_imported_testplan_paths()`:L362 — `opentitan\util\dvsim\Testplan.py`
+  - `._parse_testplan()`:L407 — `opentitan\util\dvsim\Testplan.py`
+  - `.write_testplan_doc()`:L485 — `opentitan\util\dvsim\Testplan.py`
+  - `An element of the testplan.      This is either a testpoint or a covergroup.`:L37 — `opentitan\util\dvsim\Testplan.py`
+  - `Initialize the testplan element.          raw_dict is the dictionary parsed fr`:L48 — `opentitan\util\dvsim\Testplan.py`
+  - `An testcase entry in the testplan.      A testpoint maps to a unique design fe`:L128 — `opentitan\util\dvsim\Testplan.py`
+  - `The full testplan      The list of Testpoints and Covergroups make up the test`:L236 — `opentitan\util\dvsim\Testplan.py`
+  - `Creates testplan elements from the list of raw dicts.          kind is either`:L257 — `opentitan\util\dvsim\Testplan.py`
+  - `Initialize the testplan.          filename is the HJson file that captures the`:L320 — `opentitan\util\dvsim\Testplan.py`
+  - `Parse imported testplans with correctly set paths.          Paths of the impor`:L365 — `opentitan\util\dvsim\Testplan.py`
+  - `Parse testplan Hjson file and create the testplan elements.          It create`:L408 — `opentitan\util\dvsim\Testplan.py`
+  - `Write testplan documentation in markdown from the hjson testplan.`:L486 — `opentitan\util\dvsim\Testplan.py`
+  - `Map the covergroups found from simulation to the testplan.          For now, t`:L605 — `opentitan\util\dvsim\Testplan.py`
+  - `Returns the current progress of the effort towards the testplan.`:L671 — `opentitan\util\dvsim\Testplan.py`
+  - `Testplan.py`:L1 — `opentitan\util\dvsim\Testplan.py`
 
 ## Direct Spec-Code Bridges
 
@@ -114,6 +89,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `testplan`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `testplan`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `testplan`.

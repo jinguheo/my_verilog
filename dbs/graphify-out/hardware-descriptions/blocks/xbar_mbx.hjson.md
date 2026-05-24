@@ -1,57 +1,105 @@
 # Hardware Description: xbar_mbx.hjson
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+- **clock primary**: type: "xbar",
+- **other clock list**: type: "xbar",
+- **reset primary**: type: "xbar",
+
+## Identity
 
 - `ip_block`: `xbar_mbx.hjson`
-- `approved_label`: `pending:xbar_mbx.hjson`
-- `doc_anchor`: `xbar_mbx.hjson`
-- `module_name_prefix`: `xbar_mbx.hjson`
 - `bridge_edge_count`: 16
-
-## Inferred Hardware Role
-
-`xbar_mbx.hjson` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: document: 27
 - Code categories: rtl: 12, dv: 4
 - Bridge relations: spec_path_matches_code_path: 16
 
+## Spec Excerpts
+
+### clock primary
+_Source: `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`_
+
+```
+// Copyright lowRISC contributors (OpenTitan project).
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+{ name: "mbx",
+  type: "xbar",
+  clock_primary: "clk_mbx_i", // Main clock, used in sockets
+  other_clock_list: [], // Secondary clocks used by specific nodes
+  reset_primary: "rst_mbx_ni", // Main reset, used in sockets
+  other_r
+…
+```
+
+### other clock list
+_Source: `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`_
+
+```
+// Copyright lowRISC contributors (OpenTitan project).
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+{ name: "mbx",
+  type: "xbar",
+  clock_primary: "clk_mbx_i", // Main clock, used in sockets
+  other_clock_list: [], // Secondary clocks used by specific nodes
+  reset_primary: "rst_mbx_ni", // Main reset, used in sockets
+  other_r
+…
+```
+
+### reset primary
+_Source: `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`_
+
+```
+// Copyright lowRISC contributors (OpenTitan project).
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+{ name: "mbx",
+  type: "xbar",
+  clock_primary: "clk_mbx_i", // Main clock, used in sockets
+  other_clock_list: [], // Secondary clocks used by specific nodes
+  reset_primary: "rst_mbx_ni", // Main reset, used in sockets
+  other_r
+…
+```
+
 ## Spec Anchors
 
-- `xbar_mbx.hjson` (L1) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `clock primary` (L6) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `other clock list` (L7) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `reset primary` (L8) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `other reset list` (L9) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `nodes` (L11) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `addr space` (L14) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `clock` (L15) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `xbar` (L17) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `pipeline` (L18) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
-- `connections` (L99) - `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `xbar_mbx.hjson` (L1) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `clock primary` (L6) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `other clock list` (L7) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `reset primary` (L8) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `other reset list` (L9) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `nodes` (L11) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `addr space` (L14) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `clock` (L15) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `xbar` (L17) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `pipeline` (L18) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
+- `connections` (L99) — `opentitan/hw/top_darjeeling/data/xbar_mbx.hjson`
 
 ## Code Evidence
 
-- `prim_flop_en` (L269) - `opentitan\hw\top_darjeeling\ip_autogen\ac_range_check\rtl\ac_range_check.sv`
-- `prim_ram_1p_adv` (L1487) - `opentitan\hw\top_darjeeling\rtl\autogen\chip_darjeeling_asic.sv`
-- `tlul_cmd_intg_gen` (L46) - `opentitan\hw\top_darjeeling\ip\soc_proxy\rtl\bat.sv`
-- `dma` (L2221) - `opentitan\hw\top_darjeeling\rtl\autogen\top_darjeeling.sv`
-- `keymgr_dpe` (L1905) - `opentitan\hw\top_darjeeling\rtl\autogen\top_darjeeling.sv`
-- `tlul_jtag_dtm` (L1340) - `opentitan\hw\top_darjeeling\rtl\autogen\chip_darjeeling_asic.sv`
-- `mbx` (L2257) - `opentitan\hw\top_darjeeling\rtl\autogen\top_darjeeling.sv`
-- `prim_onehot_enc` (L128) - `opentitan\hw\top_darjeeling\ip_autogen\ac_range_check\rtl\ac_range_check.sv`
-- `tb__xbar_connect.sv` (L1) - `opentitan\hw\top_darjeeling\ip\xbar_mbx\dv\autogen\tb__xbar_connect.sv`
-- `xbar_env_pkg__params.sv` (L1) - `opentitan\hw\top_darjeeling\ip\xbar_mbx\dv\autogen\xbar_env_pkg__params.sv`
-- `xbar_mbx_bind.sv` (L1) - `opentitan\hw\top_darjeeling\ip\xbar_mbx\dv\autogen\xbar_mbx_bind.sv`
-- `xbar_mbx_bind` (L6) - `opentitan\hw\top_darjeeling\ip\xbar_mbx\dv\autogen\xbar_mbx_bind.sv`
-- `tl_mbx_pkg.sv` (L1) - `opentitan\hw\top_darjeeling\ip\xbar_mbx\rtl\autogen\tl_mbx_pkg.sv`
-- `xbar_mbx.sv` (L1) - `opentitan\hw\top_darjeeling\ip\xbar_mbx\rtl\autogen\xbar_mbx.sv`
-- `xbar_mbx` (L23) - `opentitan\hw\top_darjeeling\ip\xbar_mbx\rtl\autogen\xbar_mbx.sv`
-- `tl_mbx_pkg` (L59) - `opentitan\hw\top_darjeeling\ip\xbar_mbx\rtl\autogen\xbar_mbx.sv`
+**RTL** (12)
+  - `prim_flop_en`:L269 — `opentitan\hw\top_darjeeling\ip_autogen\ac_range_check\rtl\ac_range_check.sv`
+  - `prim_ram_1p_adv`:L1487 — `opentitan\hw\top_darjeeling\rtl\autogen\chip_darjeeling_asic.sv`
+  - `tlul_cmd_intg_gen`:L46 — `opentitan\hw\top_darjeeling\ip\soc_proxy\rtl\bat.sv`
+  - `dma`:L2221 — `opentitan\hw\top_darjeeling\rtl\autogen\top_darjeeling.sv`
+  - `keymgr_dpe`:L1905 — `opentitan\hw\top_darjeeling\rtl\autogen\top_darjeeling.sv`
+  - `tlul_jtag_dtm`:L1340 — `opentitan\hw\top_darjeeling\rtl\autogen\chip_darjeeling_asic.sv`
+  - `mbx`:L2257 — `opentitan\hw\top_darjeeling\rtl\autogen\top_darjeeling.sv`
+  - `prim_onehot_enc`:L128 — `opentitan\hw\top_darjeeling\ip_autogen\ac_range_check\rtl\ac_range_check.sv`
+  - `tl_mbx_pkg.sv`:L1 — `opentitan\hw\top_darjeeling\ip\xbar_mbx\rtl\autogen\tl_mbx_pkg.sv`
+  - `xbar_mbx.sv`:L1 — `opentitan\hw\top_darjeeling\ip\xbar_mbx\rtl\autogen\xbar_mbx.sv`
+  - `xbar_mbx`:L23 — `opentitan\hw\top_darjeeling\ip\xbar_mbx\rtl\autogen\xbar_mbx.sv`
+  - `tl_mbx_pkg`:L59 — `opentitan\hw\top_darjeeling\ip\xbar_mbx\rtl\autogen\xbar_mbx.sv`
+**DV** (4)
+  - `tb__xbar_connect.sv`:L1 — `opentitan\hw\top_darjeeling\ip\xbar_mbx\dv\autogen\tb__xbar_connect.sv`
+  - `xbar_env_pkg__params.sv`:L1 — `opentitan\hw\top_darjeeling\ip\xbar_mbx\dv\autogen\xbar_env_pkg__params.sv`
+  - `xbar_mbx_bind.sv`:L1 — `opentitan\hw\top_darjeeling\ip\xbar_mbx\dv\autogen\xbar_mbx_bind.sv`
+  - `xbar_mbx_bind`:L6 — `opentitan\hw\top_darjeeling\ip\xbar_mbx\dv\autogen\xbar_mbx_bind.sv`
 
 ## Direct Spec-Code Bridges
 
@@ -76,6 +124,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `xbar_mbx.hjson`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `xbar_mbx.hjson`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `xbar_mbx.hjson`.

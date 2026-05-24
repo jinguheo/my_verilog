@@ -1,67 +1,52 @@
 # Hardware Description: prim_prince
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+_No spec snippet available. Derived from bridge evidence only._
+
+## Identity
 
 - `ip_block`: `prim_prince`
-- `approved_label`: `pending:prim_prince`
-- `doc_anchor`: `prim_prince`
-- `module_name_prefix`: `prim_prince`
 - `bridge_edge_count`: 36
-
-## Inferred Hardware Role
-
-`prim_prince` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: component: 37
 - Code categories: dv: 31, rtl: 5
 - Bridge relations: spec_component_matches_code: 36
 
 ## Spec Anchors
 
-- `component:prim_prince` (L1) - `__graphify_spec_only__/components.md`
+- `component:prim_prince` (L1) — `__graphify_spec_only__/components.md`
 
 ## Code Evidence
 
-- `prim_prince_tb.sv` (L1) - `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\tb\prim_prince_tb.sv`
-- `prim_prince_tb` (L13) - `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\tb\prim_prince_tb.sv`
-- `prim_prince_tb.sv` (L1) - `opentitan\hw\ip\prim\dv\prim_prince\tb\prim_prince_tb.sv`
-- `prim_prince_tb` (L13) - `opentitan\hw\ip\prim\dv\prim_prince\tb\prim_prince_tb.sv`
-- `prim_prince` (L108) - `opentitan\hw\ip\rom_ctrl\rtl\rom_ctrl_scrambled_rom.sv`
-- `prim_prince.sv` (L1) - `ibex\vendor\lowrisc_ip\ip\prim\rtl\prim_prince.sv`
-- `prim_prince` (L26) - `ibex\vendor\lowrisc_ip\ip\prim\rtl\prim_prince.sv`
-- `prim_prince.sv` (L1) - `opentitan\hw\ip\prim\rtl\prim_prince.sv`
-- `prim_prince` (L26) - `opentitan\hw\ip\prim\rtl\prim_prince.sv`
-- `crypto_dpi_prince_pkg.sv` (L1) - `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince_pkg.sv`
-- `crypto_dpi_prince_pkg.sv` (L1) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince_pkg.sv`
-- `crypto_dpi_prince.c` (L1) - `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince.c`
-- `prince_ref.h` (L1) - `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `c_dpi_prince_encrypt()` (L16) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince.c`
-- `c_dpi_prince_decrypt()` (L23) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince.c`
-- `crypto_dpi_prince.c` (L1) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince.c`
-- `bytes_to_uint64()` (L52) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `uint64_to_bytes()` (L65) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_k0_to_k0_prime()` (L74) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_round_constant()` (L80) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_sbox()` (L93) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_sbox_inv()` (L104) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_s_layer()` (L113) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_s_inv_layer()` (L127) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `gf2_mat_mult16_1()` (L138) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_m16_matrices()` (L150) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_m_prime_layer()` (L175) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_shift_rows()` (L198) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_m_layer()` (L212) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_m_inv_layer()` (L221) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_core()` (L230) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_enc_dec_uint64()` (L275) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_enc_dec()` (L302) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_encrypt()` (L320) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_decrypt()` (L334) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
-- `prince_ref.h` (L1) - `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+**RTL** (5)
+  - `prim_prince`:L108 — `opentitan\hw\ip\rom_ctrl\rtl\rom_ctrl_scrambled_rom.sv`
+  - `prim_prince.sv`:L1 — `ibex\vendor\lowrisc_ip\ip\prim\rtl\prim_prince.sv`
+  - `prim_prince`:L26 — `ibex\vendor\lowrisc_ip\ip\prim\rtl\prim_prince.sv`
+  - `prim_prince.sv`:L1 — `opentitan\hw\ip\prim\rtl\prim_prince.sv`
+  - `prim_prince`:L26 — `opentitan\hw\ip\prim\rtl\prim_prince.sv`
+**DV** (31)
+  - `prim_prince_tb.sv`:L1 — `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\tb\prim_prince_tb.sv`
+  - `prim_prince_tb`:L13 — `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\tb\prim_prince_tb.sv`
+  - `prim_prince_tb.sv`:L1 — `opentitan\hw\ip\prim\dv\prim_prince\tb\prim_prince_tb.sv`
+  - `prim_prince_tb`:L13 — `opentitan\hw\ip\prim\dv\prim_prince\tb\prim_prince_tb.sv`
+  - `crypto_dpi_prince_pkg.sv`:L1 — `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince_pkg.sv`
+  - `crypto_dpi_prince_pkg.sv`:L1 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince_pkg.sv`
+  - `crypto_dpi_prince.c`:L1 — `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince.c`
+  - `prince_ref.h`:L1 — `ibex\vendor\lowrisc_ip\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+  - `c_dpi_prince_encrypt()`:L16 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince.c`
+  - `c_dpi_prince_decrypt()`:L23 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince.c`
+  - `crypto_dpi_prince.c`:L1 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\crypto_dpi_prince.c`
+  - `bytes_to_uint64()`:L52 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+  - `uint64_to_bytes()`:L65 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+  - `prince_k0_to_k0_prime()`:L74 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+  - `prince_round_constant()`:L80 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+  - `prince_sbox()`:L93 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+  - `prince_sbox_inv()`:L104 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+  - `prince_s_layer()`:L113 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+  - `prince_s_inv_layer()`:L127 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
+  - `gf2_mat_mult16_1()`:L138 — `opentitan\hw\ip\prim\dv\prim_prince\crypto_dpi_prince\prince_ref.h`
 
 ## Direct Spec-Code Bridges
 
@@ -106,6 +91,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `prim_prince`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `prim_prince`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `prim_prince`.

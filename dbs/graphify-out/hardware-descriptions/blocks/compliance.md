@@ -1,33 +1,28 @@
 # Hardware Description: compliance
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+_No spec snippet available. Derived from bridge evidence only._
+
+## Identity
 
 - `ip_block`: `compliance`
-- `approved_label`: `pending:compliance`
-- `doc_anchor`: `compliance`
-- `module_name_prefix`: `compliance`
 - `bridge_edge_count`: 2
-
-## Inferred Hardware Role
-
-`compliance` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: component: 3
 - Code categories: other_code: 2
 - Bridge relations: spec_component_matches_code: 2
 
 ## Spec Anchors
 
-- `component:compliance` (L1) - `__graphify_spec_only__/components.md`
+- `component:compliance` (L1) — `__graphify_spec_only__/components.md`
 
 ## Code Evidence
 
-- `compliance_main.c` (L1) - `opentitan\third_party\riscv-compliance\compliance_main.c`
-- `test_main()` (L23) - `opentitan\third_party\riscv-compliance\compliance_main.c`
+**OTHER_CODE** (2)
+  - `compliance_main.c`:L1 — `opentitan\third_party\riscv-compliance\compliance_main.c`
+  - `test_main()`:L23 — `opentitan\third_party\riscv-compliance\compliance_main.c`
 
 ## Direct Spec-Code Bridges
 
@@ -38,6 +33,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `compliance`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `compliance`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `compliance`.

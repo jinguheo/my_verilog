@@ -1,71 +1,52 @@
 # Hardware Description: rom
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+_No spec snippet available. Derived from bridge evidence only._
+
+## Identity
 
 - `ip_block`: `rom`
-- `approved_label`: `pending:rom`
-- `doc_anchor`: `rom`
-- `module_name_prefix`: `rom`
 - `bridge_edge_count`: 40
-
-## Inferred Hardware Role
-
-`rom` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: component: 41
 - Code categories: other_code: 35, rtl: 5
 - Bridge relations: spec_component_matches_code: 40
 
 ## Spec Anchors
 
-- `component:rom` (L1) - `__graphify_spec_only__/components.md`
+- `component:rom` (L1) — `__graphify_spec_only__/components.md`
 
 ## Code Evidence
 
-- `verified_ROM.v` (L1) - `RTLLM\Miscellaneous\RISC-V\ROM\verified_ROM.v`
-- `ROM` (L1) - `RTLLM\Miscellaneous\RISC-V\ROM\verified_ROM.v`
-- `rom_tb` (L1) - `RTLLM\Miscellaneous\RISC-V\ROM\testbench.v`
-- `ROM` (L6) - `RTLLM\Miscellaneous\RISC-V\ROM\testbench.v`
-- `testbench.v` (L1) - `RTLLM\Miscellaneous\RISC-V\ROM\testbench.v`
-- `immutable_rom_ext_section_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\immutable_rom_ext_section\immutable_rom_ext_section_test.c`
-- `rom_ext_non_mutable()` (L32) - `opentitan\sw\device\silicon_creator\rom\e2e\immutable_rom_ext_section\immutable_rom_ext_section_test.c`
-- `rom_ext_upgrade_interrupt.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\rom_ext_upgrade_interrupt\rom_ext_upgrade_interrupt.c`
-- `rom_e2e_shutdown_alert_config_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\shutdown_alert\rom_e2e_shutdown_alert_config_test.c`
-- `corrupt_rom_ext_word()` (L230) - `opentitan\sw\device\silicon_creator\rom\e2e\boot_policy_flash_ecc_error\flash_ecc_error_test.c`
-- `rom_e2e_alert_config_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\shutdown_alert\rom_e2e_alert_config_test.c`
-- `rom_e2e_ret_ram_init_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\retention_ram\rom_e2e_ret_ram_init_test.c`
-- `rom_e2e_ret_ram_keep_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\retention_ram\rom_e2e_ret_ram_keep_test.c`
-- `rom_e2e_bootstrap_rma_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\bootstrap\rom_e2e_bootstrap_rma_test.c`
-- `rom_e2e_shutdown_exception_c_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\rom_e2e_shutdown_exception_c_test.c`
-- `rom_e2e_keymgr_init_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\keymgr\rom_e2e_keymgr_init_test.c`
-- `rom_e2e_self_hash_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\release\rom_e2e_self_hash_test.c`
-- `hash_rom()` (L58) - `opentitan\sw\device\silicon_creator\rom\e2e\release\rom_e2e_self_hash_test.c`
-- `rom_e2e_flash_ctrl_init_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\rom_e2e_flash_ctrl_init_test.c`
-- `rom_e2e_static_critical_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\rom_e2e_static_critical_test.c`
-- `rom_ext_upgrade_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\rom_ext_upgrade_test.c`
-- `rom_e2e_c_init_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\e2e\rom_e2e_c_init_test.c`
-- `default_rom_hooks.c` (L1) - `opentitan\sw\device\silicon_creator\rom\hooks\default_rom_hooks.c`
-- `rom_test()` (L12) - `opentitan\sw\device\silicon_creator\rom\mock_boot_policy_ptrs.h`
-- `dummy_rom_hooks.c` (L1) - `opentitan\sw\device\silicon_creator\rom\hooks\dummy_rom_hooks.c`
-- `dummy_rom_init_pre_hook()` (L12) - `opentitan\sw\device\silicon_creator\rom\hooks\dummy_rom_hooks.c`
-- `RomMockGroup` (L22) - `opentitan\sw\device\silicon_creator\rom\bootstrap_fuzz_test.cc`
-- `.RomMockGroup()` (L24) - `opentitan\sw\device\silicon_creator\rom\bootstrap_fuzz_test.cc`
-- `rom_epmp_test.c` (L1) - `opentitan\sw\device\silicon_creator\rom\rom_epmp_test.c`
-- `rom_nmi_handler()` (L80) - `opentitan\sw\device\silicon_creator\rom\rom_epmp_test.c`
-- `rom_interrupt_handler()` (L81) - `opentitan\sw\device\silicon_creator\rom\rom_epmp_test.c`
-- `rom_exception_handler()` (L111) - `opentitan\sw\device\silicon_creator\rom\rom_epmp_test.c`
-- `rom_main()` (L353) - `opentitan\sw\device\silicon_creator\rom\rom_epmp_test.c`
-- `gen-otp-immutable-rom-ext-json.py` (L1) - `opentitan\util\design\gen-otp-immutable-rom-ext-json.py`
-- `RomExtImmutableSectionOtpFields` (L25) - `opentitan\util\design\gen-otp-immutable-rom-ext-json.py`
-- `.update_json_with_immutable_rom_ext_section_data()` (L59) - `opentitan\util\design\gen-otp-immutable-rom-ext-json.py`
-- `.immutable_rom_ext_enable()` (L71) - `opentitan\util\design\gen-otp-immutable-rom-ext-json.py`
-- `Update the JSON with the ROM_EXT immutable section data.         Args:` (L60) - `opentitan\util\design\gen-otp-immutable-rom-ext-json.py`
-- `Checks if immutable ROM extension is enabled.          This method retrieves t` (L72) - `opentitan\util\design\gen-otp-immutable-rom-ext-json.py`
-- `rom_state.c` (L1) - `opentitan\sw\device\silicon_creator\rom\rom_state.c`
+**RTL** (5)
+  - `verified_ROM.v`:L1 — `RTLLM\Miscellaneous\RISC-V\ROM\verified_ROM.v`
+  - `ROM`:L1 — `RTLLM\Miscellaneous\RISC-V\ROM\verified_ROM.v`
+  - `rom_tb`:L1 — `RTLLM\Miscellaneous\RISC-V\ROM\testbench.v`
+  - `ROM`:L6 — `RTLLM\Miscellaneous\RISC-V\ROM\testbench.v`
+  - `testbench.v`:L1 — `RTLLM\Miscellaneous\RISC-V\ROM\testbench.v`
+**OTHER_CODE** (35)
+  - `immutable_rom_ext_section_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\immutable_rom_ext_section\immutable_rom_ext_section_test.c`
+  - `rom_ext_non_mutable()`:L32 — `opentitan\sw\device\silicon_creator\rom\e2e\immutable_rom_ext_section\immutable_rom_ext_section_test.c`
+  - `rom_ext_upgrade_interrupt.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\rom_ext_upgrade_interrupt\rom_ext_upgrade_interrupt.c`
+  - `rom_e2e_shutdown_alert_config_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\shutdown_alert\rom_e2e_shutdown_alert_config_test.c`
+  - `corrupt_rom_ext_word()`:L230 — `opentitan\sw\device\silicon_creator\rom\e2e\boot_policy_flash_ecc_error\flash_ecc_error_test.c`
+  - `rom_e2e_alert_config_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\shutdown_alert\rom_e2e_alert_config_test.c`
+  - `rom_e2e_ret_ram_init_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\retention_ram\rom_e2e_ret_ram_init_test.c`
+  - `rom_e2e_ret_ram_keep_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\retention_ram\rom_e2e_ret_ram_keep_test.c`
+  - `rom_e2e_bootstrap_rma_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\bootstrap\rom_e2e_bootstrap_rma_test.c`
+  - `rom_e2e_shutdown_exception_c_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\rom_e2e_shutdown_exception_c_test.c`
+  - `rom_e2e_keymgr_init_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\keymgr\rom_e2e_keymgr_init_test.c`
+  - `rom_e2e_self_hash_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\release\rom_e2e_self_hash_test.c`
+  - `hash_rom()`:L58 — `opentitan\sw\device\silicon_creator\rom\e2e\release\rom_e2e_self_hash_test.c`
+  - `rom_e2e_flash_ctrl_init_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\rom_e2e_flash_ctrl_init_test.c`
+  - `rom_e2e_static_critical_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\rom_e2e_static_critical_test.c`
+  - `rom_ext_upgrade_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\rom_ext_upgrade_test.c`
+  - `rom_e2e_c_init_test.c`:L1 — `opentitan\sw\device\silicon_creator\rom\e2e\rom_e2e_c_init_test.c`
+  - `default_rom_hooks.c`:L1 — `opentitan\sw\device\silicon_creator\rom\hooks\default_rom_hooks.c`
+  - `rom_test()`:L12 — `opentitan\sw\device\silicon_creator\rom\mock_boot_policy_ptrs.h`
+  - `dummy_rom_hooks.c`:L1 — `opentitan\sw\device\silicon_creator\rom\hooks\dummy_rom_hooks.c`
 
 ## Direct Spec-Code Bridges
 
@@ -114,6 +95,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `rom`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `rom`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `rom`.

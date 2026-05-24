@@ -1,66 +1,46 @@
 # Hardware Description: pmp
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+_No spec snippet available. Derived from bridge evidence only._
+
+## Identity
 
 - `ip_block`: `pmp`
-- `approved_label`: `pending:pmp`
-- `doc_anchor`: `pmp`
-- `module_name_prefix`: `pmp`
 - `bridge_edge_count`: 35
-
-## Inferred Hardware Role
-
-`pmp` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: component: 36
 - Code categories: other_code: 35
 - Bridge relations: spec_component_matches_code: 35
 
 ## Spec Anchors
 
-- `component:pmp` (L1) - `__graphify_spec_only__/components.md`
+- `component:pmp` (L1) — `__graphify_spec_only__/components.md`
 
 ## Code Evidence
 
-- `pmp.c` (L1) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `pmp_ok()` (L65) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `set_pmp()` (L132) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `set_pmp_range()` (L143) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `set_pmp_napot()` (L152) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `pmp.c` (L1) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_cfg_csr_read()` (L90) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_cfg_csr_write()` (L116) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_addr_csr_read()` (L139) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_addr_csr_write()` (L161) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_csr_cfg_field_read()` (L185) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_csr_cfg_field_write()` (L213) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_csr_address_write()` (L264) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_cfg_permissions_set()` (L290) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_cfg_mode_lock_set()` (L329) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_address_aligned()` (L347) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_napot_address_construct()` (L364) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_region_configure_off()` (L391) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_region_configure_na4()` (L417) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_region_configure_napot()` (L456) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_region_configure_tor()` (L496) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_region_is_configured()` (L549) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp_region_lock_status_get()` (L571) - `opentitan\sw\device\lib\runtime\pmp.c`
-- `pmp.h` (L1) - `opentitan\sw\device\lib\runtime\pmp.h`
-- `handle_trap()` (L15) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `init_pt()` (L36) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `va2pa()` (L52) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `test_one()` (L100) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `test_all_sizes()` (L114) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `test_range_once()` (L126) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `test_range()` (L161) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `test_ranges()` (L172) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `exhaustive_test()` (L178) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `detect_granule()` (L184) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
-- `main()` (L198) - `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
+**OTHER_CODE** (35)
+  - `pmp.c`:L1 — `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
+  - `pmp_ok()`:L65 — `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
+  - `set_pmp()`:L132 — `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
+  - `set_pmp_range()`:L143 — `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
+  - `set_pmp_napot()`:L152 — `ibex\vendor\riscv-tests\benchmarks\pmp\pmp.c`
+  - `pmp.c`:L1 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_cfg_csr_read()`:L90 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_cfg_csr_write()`:L116 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_addr_csr_read()`:L139 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_addr_csr_write()`:L161 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_csr_cfg_field_read()`:L185 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_csr_cfg_field_write()`:L213 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_csr_address_write()`:L264 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_cfg_permissions_set()`:L290 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_cfg_mode_lock_set()`:L329 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_address_aligned()`:L347 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_napot_address_construct()`:L364 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_region_configure_off()`:L391 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_region_configure_na4()`:L417 — `opentitan\sw\device\lib\runtime\pmp.c`
+  - `pmp_region_configure_napot()`:L456 — `opentitan\sw\device\lib\runtime\pmp.c`
 
 ## Direct Spec-Code Bridges
 
@@ -104,6 +84,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `pmp`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `pmp`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `pmp`.

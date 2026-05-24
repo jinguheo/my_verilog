@@ -1,110 +1,238 @@
 # Hardware Description: rv_dm
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+- **Hardware Interfaces**: All hardware interfaces of the debug system are documented in the [PULP RISC-V Debug System Documentation](https://github.com/lowRISC/opentitan/blob/master/hw/vendor/pulp_riscv_dbg/doc/debug-system.md), with the…
+- **Signals**: All hardware interfaces of the debug system are documented in the [PULP RISC-V Debug System Documentation](https://github.com/lowRISC/opentitan/blob/master/hw/vendor/pulp_riscv_dbg/doc/debug-system.md), with the…
+- **Inter-Module Signals**: Referring to the [Comportable guideline for peripheral device functionality](https://opentitan.org/book/doc/contributing/hw/comportability), the module **`rv_dm`** has the following hardware interfaces defined
+
+## Identity
 
 - `ip_block`: `rv_dm`
-- `approved_label`: `pending:rv_dm`
-- `doc_anchor`: `rv_dm`
-- `module_name_prefix`: `rv_dm`
 - `bridge_edge_count`: 112
-
-## Inferred Hardware Role
-
-`rv_dm` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: document: 79, component: 41, testplan: 29, interface: 21, theory: 15
 - Code categories: dv: 59, other_code: 53, rtl: 50, sva: 26
 - Bridge relations: spec_path_matches_code_path: 72, spec_component_matches_code: 40
 
+## Spec Excerpts
+
+### Hardware Interfaces
+_Source: `opentitan/hw/ip/rv_dm/doc/interfaces.md`_
+
+```
+# Hardware Interfaces
+
+All hardware interfaces of the debug system are documented in the [PULP RISC-V Debug System Documentation](https://github.com/lowRISC/opentitan/blob/master/hw/vendor/pulp_riscv_dbg/doc/debug-system.md), with the exception of the bus interfaces, which are converted to TL-UL by this wrapper.
+
+## Signals
+
+<!-- BEGIN CMDGEN util/regtool.py --interfaces ./hw/ip/rv_dm/data/rv_dm.h
+…
+```
+
+### Signals
+_Source: `opentitan/hw/ip/rv_dm/doc/interfaces.md`_
+
+```
+# Hardware Interfaces
+
+All hardware interfaces of the debug system are documented in the [PULP RISC-V Debug System Documentation](https://github.com/lowRISC/opentitan/blob/master/hw/vendor/pulp_riscv_dbg/doc/debug-system.md), with the exception of the bus interfaces, which are converted to TL-UL by this wrapper.
+
+## Signals
+
+<!-- BEGIN CMDGEN util/regtool.py --interfaces ./hw/ip/rv_dm/data/rv_dm.h
+…
+```
+
+### Inter-Module Signals
+_Source: `opentitan/hw/ip/rv_dm/doc/interfaces.md`_
+
+```
+Referring to the [Comportable guideline for peripheral device functionality](https://opentitan.org/book/doc/contributing/hw/comportability), the module **`rv_dm`** has the following hardware interfaces defined
+- Primary Clock: **`clk_i`**
+- Other Clocks: **`clk_lc_i`**
+- Bus Device Interfaces (TL-UL): **`regs_tl_d`**, **`mem_tl_d`**, **`dbg_tl_d`**
+- Bus Host Interfaces (TL-UL): **`sba_tl_h`**
+- P
+…
+```
+
+### Programmer's Guide
+_Source: `opentitan/hw/ip/rv_dm/doc/programmers_guide.md`_
+
+```
+# Programmer's Guide
+```
+
+### Summary of the regs interface's registers
+_Source: `opentitan/hw/ip/rv_dm/doc/registers.md`_
+
+```
+# Registers
+
+<!-- BEGIN CMDGEN util/regtool.py -d ./hw/ip/rv_dm/data/rv_dm.hjson -->
+## Summary of the **`regs`** interface's registers
+
+| Name                                                          | Offset   |   Length | Description                                                      |
+|:--------------------------------------------------------------|:---------|---------:|:--------------------
+…
+```
+
+### ALERT TEST
+_Source: `opentitan/hw/ip/rv_dm/doc/registers.md`_
+
+```
+## Summary of the **`regs`** interface's registers
+
+| Name                                                          | Offset   |   Length | Description                                                      |
+|:--------------------------------------------------------------|:---------|---------:|:-----------------------------------------------------------------|
+| rv_dm.[`ALERT_TEST`](#alert_test)
+…
+```
+
+### Fields
+_Source: `opentitan/hw/ip/rv_dm/doc/registers.md`_
+
+```
+| rv_dm.[`LATE_DEBUG_ENABLE`](#late_debug_enable)               | 0x8      |        4 | Debug enable register.                                           |
+
+## ALERT_TEST
+Alert Test Register
+- Offset: `0x0`
+- Reset default: `0x0`
+- Reset mask: `0x1`
+
+### Fields
+
+```wavejson
+{"reg": [{"name": "fatal_fault", "bits": 1, "attr": ["wo"], "rotate": -90}, {"bits": 31}], "config": {"lanes": 1, "fontsize":
+…
+```
+
+### Theory of Operation
+_Source: `opentitan/hw/ip/rv_dm/doc/theory_of_operation.md`_
+
+```
+# Theory of Operation
+
+## Memory Maps
+
+### TL-UL device
+The memory map accessible over the TL-UL device interface is documented in the [Debug Memory](https://github.com/lowRISC/opentitan/blob/master/hw/vendor/pulp_riscv_dbg/doc/debug-system.md#debug-memory) section of the [PULP RISC-V Debug System Documentation](https://github.com/lowRISC/opentitan/blob/master/hw/vendor/pulp_riscv_dbg/doc/debug-sy
+…
+```
+
 ## Spec Anchors
 
-- `component:rv_dm` (L1) - `__graphify_spec_only__/components.md`
-- `rv_dm.hjson` (L1) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `human name` (L6) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `one line desc` (L7) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `one paragraph desc` (L8) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `cip id` (L14) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `design spec` (L15) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `dv doc` (L16) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `hw checklist` (L17) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `sw checklist` (L18) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `version` (L19) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `life stage` (L20) - `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
-- `rv_dm_sec_cm_testplan.hjson` (L1) - `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
-- `testpoints` (L25) - `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
-- `desc` (L28) - `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
-- `stage` (L29) - `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
-- `tests` (L30) - `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
-- `rv_dm_testplan.hjson` (L1) - `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
-- `import testplans` (L7) - `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
-- `testpoints` (L13) - `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
-- `desc` (L18) - `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
-- `stage` (L32) - `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
-- `tests` (L33) - `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
-- `ways` (L227) - `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
-- `covergroups` (L557) - `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
-- `checklist.md` (L1) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
-- `RV DM Checklist` (L1) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
-- `Design Checklist` (L6) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
-- `D1` (L8) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
-- `D2` (L32) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
-- `D2S` (L75) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
-- `D3` (L95) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
-- `Verification Checklist` (L121) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
-- `V1` (L123) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
-- `V2` (L173) - `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `component:rv_dm` (L1) — `__graphify_spec_only__/components.md`
+- `rv_dm.hjson` (L1) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `human name` (L6) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `one line desc` (L7) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `one paragraph desc` (L8) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `cip id` (L14) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `design spec` (L15) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `dv doc` (L16) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `hw checklist` (L17) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `sw checklist` (L18) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `version` (L19) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `life stage` (L20) — `opentitan/hw/ip/rv_dm/data/rv_dm.hjson`
+- `rv_dm_sec_cm_testplan.hjson` (L1) — `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
+- `testpoints` (L25) — `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
+- `desc` (L28) — `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
+- `stage` (L29) — `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
+- `tests` (L30) — `opentitan/hw/ip/rv_dm/data/rv_dm_sec_cm_testplan.hjson`
+- `rv_dm_testplan.hjson` (L1) — `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
+- `import testplans` (L7) — `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
+- `testpoints` (L13) — `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
+- `desc` (L18) — `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
+- `stage` (L32) — `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
+- `tests` (L33) — `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
+- `ways` (L227) — `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
+- `covergroups` (L557) — `opentitan/hw/ip/rv_dm/data/rv_dm_testplan.hjson`
+- `checklist.md` (L1) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `RV DM Checklist` (L1) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `Design Checklist` (L6) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `D1` (L8) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `D2` (L32) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `D2S` (L75) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `D3` (L95) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `Verification Checklist` (L121) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `V1` (L123) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
+- `V2` (L173) — `opentitan/hw/ip/rv_dm/doc/checklist.md`
 
 ## Code Evidence
 
-- `prim_mubi8_sync` (L232) - `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
-- `tb.sv` (L1) - `opentitan\hw\ip\rv_dm\dv\tb.sv`
-- `tb` (L5) - `opentitan\hw\ip\rv_dm\dv\tb.sv`
-- `rv_dm_env_pkg` (L9) - `opentitan\hw\ip\rv_dm\dv\tests\rv_dm_test_pkg.sv`
-- `rv_dm_test_pkg` (L10) - `opentitan\hw\ip\rv_dm\dv\tb.sv`
-- `rv_dm_if` (L29) - `opentitan\hw\ip\rv_dm\dv\tb.sv`
-- `rv_dm_bind.sv` (L1) - `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv`
-- `rv_dm_bind` (L5) - `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv`
-- `rv_dm_enable_checker.sv` (L1) - `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_enable_checker.sv`
-- `rv_dm_enable_checker` (L5) - `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_enable_checker.sv`
-- `rv_dm_reg_pkg` (L31) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_regs_reg_top.sv`
-- `rv_dm_base_test.sv` (L1) - `opentitan\hw\ip\rv_dm\dv\tests\rv_dm_base_test.sv`
-- `rv_dm_test_pkg.sv` (L1) - `opentitan\hw\ip\rv_dm\dv\tests\rv_dm_test_pkg.sv`
-- `jtag_pkg.sv` (L1) - `opentitan\hw\ip\rv_dm\rtl\jtag_pkg.sv`
-- `rv_dm.sv` (L1) - `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
-- `rv_dm` (L15) - `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
-- `rv_dm_regs_reg_top` (L133) - `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
-- `prim_mubi32_sync` (L242) - `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
-- `rv_dm_dbg_reg_top` (L493) - `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
-- `rv_dm_dmi_gate` (L503) - `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
-- `rv_dm_dbg_reg_top.sv` (L1) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_dbg_reg_top.sv`
-- `rv_dm_dbg_reg_top` (L9) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_dbg_reg_top.sv`
-- `rv_dm_dmi_gate.sv` (L1) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_dmi_gate.sv`
-- `rv_dm_dmi_gate` (L13) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_dmi_gate.sv`
-- `tlul_adapter_dmi` (L250) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_dmi_gate.sv`
-- `rv_dm_mem_reg_top.sv` (L1) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_mem_reg_top.sv`
-- `rv_dm_mem_reg_top` (L9) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_mem_reg_top.sv`
-- `rv_dm_pkg.sv` (L1) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_pkg.sv`
-- `rv_dm_regs_reg_top.sv` (L1) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_regs_reg_top.sv`
-- `rv_dm_regs_reg_top` (L9) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_regs_reg_top.sv`
-- `rv_dm_reg_pkg.sv` (L1) - `opentitan\hw\ip\rv_dm\rtl\rv_dm_reg_pkg.sv`
-- `access_after_hw_reset.rs` (L1) - `opentitan\sw\host\tests\chip\rv_dm\src\access_after_hw_reset.rs`
-- `Opts` (L20) - `opentitan\sw\host\tests\chip\rv_dm\src\access_after_hw_reset.rs`
-- `test_access_after_hw_reset()` (L33) - `opentitan\sw\host\tests\chip\rv_dm\src\access_after_hw_reset.rs`
-- `main()` (L79) - `opentitan\sw\host\tests\chip\rv_dm\src\access_after_hw_reset.rs`
-- `access_after_wakeup.rs` (L1) - `opentitan\sw\host\tests\chip\rv_dm\src\access_after_wakeup.rs`
-- `Opts` (L21) - `opentitan\sw\host\tests\chip\rv_dm\src\access_after_wakeup.rs`
-- `test_access_after_wakeup()` (L34) - `opentitan\sw\host\tests\chip\rv_dm\src\access_after_wakeup.rs`
-- `main()` (L149) - `opentitan\sw\host\tests\chip\rv_dm\src\access_after_wakeup.rs`
-- `control_status.rs` (L1) - `opentitan\sw\host\tests\chip\rv_dm\src\control_status.rs`
-- `Opts` (L14) - `opentitan\sw\host\tests\chip\rv_dm\src\control_status.rs`
-- `test_control_status()` (L22) - `opentitan\sw\host\tests\chip\rv_dm\src\control_status.rs`
-- `main()` (L63) - `opentitan\sw\host\tests\chip\rv_dm\src\control_status.rs`
-- `csr_rw.rs` (L1) - `opentitan\sw\host\tests\chip\rv_dm\src\csr_rw.rs`
-- `Opts` (L21) - `opentitan\sw\host\tests\chip\rv_dm\src\csr_rw.rs`
+**RTL** (20)
+  - `prim_mubi8_sync`:L232 — `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
+  - `rv_dm_reg_pkg`:L31 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_regs_reg_top.sv`
+  - `jtag_pkg.sv`:L1 — `opentitan\hw\ip\rv_dm\rtl\jtag_pkg.sv`
+  - `rv_dm.sv`:L1 — `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
+  - `rv_dm`:L15 — `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
+  - `rv_dm_regs_reg_top`:L133 — `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
+  - `prim_mubi32_sync`:L242 — `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
+  - `rv_dm_dbg_reg_top`:L493 — `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
+  - `rv_dm_dmi_gate`:L503 — `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv`
+  - `rv_dm_dbg_reg_top.sv`:L1 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_dbg_reg_top.sv`
+  - `rv_dm_dbg_reg_top`:L9 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_dbg_reg_top.sv`
+  - `rv_dm_dmi_gate.sv`:L1 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_dmi_gate.sv`
+  - `rv_dm_dmi_gate`:L13 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_dmi_gate.sv`
+  - `tlul_adapter_dmi`:L250 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_dmi_gate.sv`
+  - `rv_dm_mem_reg_top.sv`:L1 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_mem_reg_top.sv`
+  - `rv_dm_mem_reg_top`:L9 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_mem_reg_top.sv`
+  - `rv_dm_pkg.sv`:L1 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_pkg.sv`
+  - `rv_dm_regs_reg_top.sv`:L1 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_regs_reg_top.sv`
+  - `rv_dm_regs_reg_top`:L9 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_regs_reg_top.sv`
+  - `rv_dm_reg_pkg.sv`:L1 — `opentitan\hw\ip\rv_dm\rtl\rv_dm_reg_pkg.sv`
+**DV** (7)
+  - `tb.sv`:L1 — `opentitan\hw\ip\rv_dm\dv\tb.sv`
+  - `tb`:L5 — `opentitan\hw\ip\rv_dm\dv\tb.sv`
+  - `rv_dm_env_pkg`:L9 — `opentitan\hw\ip\rv_dm\dv\tests\rv_dm_test_pkg.sv`
+  - `rv_dm_test_pkg`:L10 — `opentitan\hw\ip\rv_dm\dv\tb.sv`
+  - `rv_dm_if`:L29 — `opentitan\hw\ip\rv_dm\dv\tb.sv`
+  - `rv_dm_base_test.sv`:L1 — `opentitan\hw\ip\rv_dm\dv\tests\rv_dm_base_test.sv`
+  - `rv_dm_test_pkg.sv`:L1 — `opentitan\hw\ip\rv_dm\dv\tests\rv_dm_test_pkg.sv`
+**SVA** (4)
+  - `rv_dm_bind.sv`:L1 — `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv`
+  - `rv_dm_bind`:L5 — `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv`
+  - `rv_dm_enable_checker.sv`:L1 — `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_enable_checker.sv`
+  - `rv_dm_enable_checker`:L5 — `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_enable_checker.sv`
+**OTHER_CODE** (19)
+  - `access_after_hw_reset.rs`:L1 — `opentitan\sw\host\tests\chip\rv_dm\src\access_after_hw_reset.rs`
+  - `Opts`:L20 — `opentitan\sw\host\tests\chip\rv_dm\src\access_after_hw_reset.rs`
+  - `test_access_after_hw_reset()`:L33 — `opentitan\sw\host\tests\chip\rv_dm\src\access_after_hw_reset.rs`
+  - `main()`:L79 — `opentitan\sw\host\tests\chip\rv_dm\src\access_after_hw_reset.rs`
+  - `access_after_wakeup.rs`:L1 — `opentitan\sw\host\tests\chip\rv_dm\src\access_after_wakeup.rs`
+  - `Opts`:L21 — `opentitan\sw\host\tests\chip\rv_dm\src\access_after_wakeup.rs`
+  - `test_access_after_wakeup()`:L34 — `opentitan\sw\host\tests\chip\rv_dm\src\access_after_wakeup.rs`
+  - `main()`:L149 — `opentitan\sw\host\tests\chip\rv_dm\src\access_after_wakeup.rs`
+  - `control_status.rs`:L1 — `opentitan\sw\host\tests\chip\rv_dm\src\control_status.rs`
+  - `Opts`:L14 — `opentitan\sw\host\tests\chip\rv_dm\src\control_status.rs`
+  - `test_control_status()`:L22 — `opentitan\sw\host\tests\chip\rv_dm\src\control_status.rs`
+  - `main()`:L63 — `opentitan\sw\host\tests\chip\rv_dm\src\control_status.rs`
+  - `csr_rw.rs`:L1 — `opentitan\sw\host\tests\chip\rv_dm\src\csr_rw.rs`
+  - `Opts`:L21 — `opentitan\sw\host\tests\chip\rv_dm\src\csr_rw.rs`
+  - `test()`:L37 — `opentitan\sw\host\tests\chip\rv_dm\src\csr_rw.rs`
+  - `test_csr_rw()`:L56 — `opentitan\sw\host\tests\chip\rv_dm\src\csr_rw.rs`
+  - `main()`:L260 — `opentitan\sw\host\tests\chip\rv_dm\src\csr_rw.rs`
+  - `dtm.rs`:L1 — `opentitan\sw\host\tests\chip\rv_dm\src\dtm.rs`
+  - `Opts`:L14 — `opentitan\sw\host\tests\chip\rv_dm\src\dtm.rs`
+
+## Neighbor Components
+
+- `rv_plic` (13 refs; instantiates×13)
+- `spi_passthru.rs` (11 refs; calls×11)
+- `rv_core_ibex` (9 refs; instantiates×7, imports_from×2)
+- `uart` (7 refs; calls×7)
+- `uart.rs` (6 refs; calls×6)
+- `lowrisc_ibex` (5 refs; calls×3, instantiates×1, imports_from×1)
+- `pulp_riscv_dbg` (4 refs; instantiates×4)
+- `pwrmgr` (4 refs; imports_from×3, instantiates×1)
+- `rstmgr` (1 refs; imports_from×1)
+- `csrng` (1 refs; instantiates×1)
+- `entropy_src` (1 refs; instantiates×1)
+- `pinmux` (1 refs; instantiates×1)
 
 ## Direct Spec-Code Bridges
 
@@ -170,29 +298,10 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 | `spec_path_matches_code_path` | `rv_dm_testplan.hjson` | `tb.sv` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
 | `spec_path_matches_code_path` | `rv_dm_testplan.hjson` | `tb` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
 | `spec_path_matches_code_path` | `rv_dm_testplan.hjson` | `rv_dm_env_pkg` | `opentitan\hw\ip\rv_dm\dv\tests\rv_dm_test_pkg.sv` |
-| `spec_path_matches_code_path` | `rv_dm_testplan.hjson` | `rv_dm_test_pkg` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `rv_dm_testplan.hjson` | `rv_dm_if` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `rv_dm_testplan.hjson` | `rv_dm_bind.sv` | `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv` |
-| `spec_path_matches_code_path` | `rv_dm_testplan.hjson` | `rv_dm_bind` | `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv` |
-| `spec_path_matches_code_path` | `checklist.md` | `prim_mubi8_sync` | `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv` |
-| `spec_path_matches_code_path` | `checklist.md` | `tb.sv` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `checklist.md` | `tb` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `checklist.md` | `rv_dm_env_pkg` | `opentitan\hw\ip\rv_dm\dv\tests\rv_dm_test_pkg.sv` |
-| `spec_path_matches_code_path` | `checklist.md` | `rv_dm_test_pkg` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `checklist.md` | `rv_dm_if` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `checklist.md` | `rv_dm_bind.sv` | `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv` |
-| `spec_path_matches_code_path` | `checklist.md` | `rv_dm_bind` | `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv` |
-| `spec_path_matches_code_path` | `interfaces.md` | `prim_mubi8_sync` | `opentitan\hw\ip\rv_dm\rtl\rv_dm.sv` |
-| `spec_path_matches_code_path` | `interfaces.md` | `tb.sv` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `interfaces.md` | `tb` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `interfaces.md` | `rv_dm_env_pkg` | `opentitan\hw\ip\rv_dm\dv\tests\rv_dm_test_pkg.sv` |
-| `spec_path_matches_code_path` | `interfaces.md` | `rv_dm_test_pkg` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `interfaces.md` | `rv_dm_if` | `opentitan\hw\ip\rv_dm\dv\tb.sv` |
-| `spec_path_matches_code_path` | `interfaces.md` | `rv_dm_bind.sv` | `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv` |
-| `spec_path_matches_code_path` | `interfaces.md` | `rv_dm_bind` | `opentitan\hw\ip\rv_dm\dv\sva\rv_dm_bind.sv` |
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `rv_dm`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `rv_dm`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `rv_dm`.

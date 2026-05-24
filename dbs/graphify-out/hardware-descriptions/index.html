@@ -1,140 +1,149 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hardware Descriptions</title>
-<style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;color:#17202a}
-main{max-width:1180px;margin:0 auto;padding:32px 22px 48px}
-h1{margin:0 0 8px;font-size:28px}p{color:#667085;line-height:1.5}
-.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:18px 0}
-.metric,.card{background:#fff;border:1px solid #d7dde7;border-radius:8px;padding:14px}
-.metric strong{display:block;font-size:25px;margin-top:4px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:16px}
-a.card{display:block;text-decoration:none;color:#17202a;min-height:150px}
-.card:hover{background:#f1f5f9}.card strong{font-size:18px;display:block;margin-bottom:8px}
-.card span{display:block;color:#344054;font-size:13px;margin-bottom:8px}.card small{color:#667085;line-height:1.4}
-.links a{margin-right:12px;color:#2457c5}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hardware Descriptions</title>
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f6f7f9; color: #17202a; }
+    main { max-width: 1180px; margin: 0 auto; padding: 32px 22px 48px; }
+    h1 { margin: 0 0 8px; font-size: 28px; } p { color: #667085; line-height: 1.5; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 18px 0; }
+    .metric, .card { background: #fff; border: 1px solid #d7dde7; border-radius: 8px; padding: 14px; }
+    .metric strong { display: block; font-size: 25px; margin-top: 4px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 16px; }
+    a.card { display: block; text-decoration: none; color: #17202a; min-height: 130px; position: relative; }
+    .card:hover { background: #f1f5f9; }
+    .card strong { font-size: 17px; display: block; margin-bottom: 6px; }
+    .card span { display: block; color: #344054; font-size: 13px; margin-bottom: 6px; }
+    .card small { color: #667085; line-height: 1.4; }
+    .badge { background: #16875f; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px;
+              margin-left: 8px; vertical-align: middle; }
+    .links a { margin-right: 12px; color: #2457c5; }
+  </style>
 </head>
 <body><main>
-<h1>Intermediate Hardware Descriptions</h1>
-<p>Generated from Graphify spec-code bridge evidence. These pages act as a middle layer so code-only retrieval can infer likely spec anchors.</p>
-<div class="links"><a href="../html-views/spec-code-bridge-only.html">Spec-code bridge graph</a><a href="hardware-description-bridge.html">Hardware description bridge graph</a><a href="index.md">Markdown index</a><a href="hardware_descriptions.json">JSON data</a></div>
-<div class="metrics">
-<div class="metric">Components<strong>129</strong></div>
-<div class="metric">Bridge edges<strong>12598</strong></div>
-<div class="metric">Code refs<strong>4517</strong></div>
-<div class="metric">Spec refs<strong>4280</strong></div>
-</div>
-<div class="grid"><a class="card" href="blocks/rstmgr.md"><strong>rstmgr</strong>
+  <h1>Hardware Descriptions</h1>
+  <p>Generated from Graphify spec-code bridge evidence. <span class="badge">snippets</span> = spec text excerpts available.</p>
+  <div class="links">
+    <a href="../html-views/spec-code-bridge-only.html">Spec-code bridge graph</a>
+    <a href="hardware-description-bridge.html">Bridge visualization</a>
+    <a href="index.md">Markdown index</a>
+    <a href="hardware_descriptions.json">JSON</a>
+  </div>
+  <div class="metrics">
+    <div class="metric">Components<strong>129</strong></div>
+    <div class="metric">Bridge edges<strong>12598</strong></div>
+    <div class="metric">Code refs<strong>4517</strong></div>
+    <div class="metric">Spec refs<strong>4280</strong></div>
+  </div>
+  <div class="grid"><a class="card" href="blocks/rstmgr.md"><strong>rstmgr</strong><span class="badge">snippets</span>
 <span>680 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:rstmgr, rstmgr.cfg.example.hjson, resets<br>Code: prim_sync_reqack, prim_mubi4_sender, prim_mubi4_sync, cip_base_pkg</small></a><a class="card" href="blocks/pinmux.md"><strong>pinmux</strong>
+<small>Spec: component:rstmgr, rstmgr.cfg.example.hjson, resets<br>Code: prim_sync_reqack, prim_mubi4_sender, prim_mubi4_sync, cip_base_pkg</small></a><a class="card" href="blocks/pinmux.md"><strong>pinmux</strong><span class="badge">snippets</span>
 <span>664 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:pinmux, pinmux.hjson, human name<br>Code: prim_reg_cdc, prim_lc_or_hardened, usbdev_aon_wake, prim_filter</small></a><a class="card" href="blocks/rv_core_ibex.md"><strong>rv_core_ibex</strong>
+<small>Spec: component:pinmux, pinmux.hjson, human name<br>Code: prim_reg_cdc, prim_lc_or_hardened, usbdev_aon_wake, prim_filter</small></a><a class="card" href="blocks/rv_core_ibex.md"><strong>rv_core_ibex</strong><span class="badge">snippets</span>
 <span>585 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:rv_core_ibex, rv_core_ibex.tpldesc.hjson, template param list<br>Code: prim_mubi_pkg, prim_esc_receiver, prim_arbiter_fixed, prim_sync_reqack_data</small></a><a class="card" href="blocks/pwrmgr.md"><strong>pwrmgr</strong>
+<small>Spec: component:rv_core_ibex, rv_core_ibex.tpldesc.hjson, template param list<br>Code: prim_mubi_pkg, prim_esc_receiver, prim_arbiter_fixed, prim_sync_reqack_data</small></a><a class="card" href="blocks/pwrmgr.md"><strong>pwrmgr</strong><span class="badge">snippets</span>
 <span>568 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:pwrmgr, pwrmgr.tpldesc.hjson, template param list<br>Code: prim_pulse_sync, lc_ctrl_pkg, pins_if, tl_if</small></a><a class="card" href="blocks/clkmgr.md"><strong>clkmgr</strong>
+<small>Spec: component:pwrmgr, pwrmgr.tpldesc.hjson, template param list<br>Code: prim_pulse_sync, lc_ctrl_pkg, pins_if, tl_if</small></a><a class="card" href="blocks/clkmgr.md"><strong>clkmgr</strong><span class="badge">snippets</span>
 <span>563 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:clkmgr, clkmgr.tpldesc.hjson, template param list<br>Code: prim_edge_detector, clkmgr_aon_cg_en_sva_if.sv, clkmgr_cg_en_sva_if.sv, clkmgr_div_sva_if.sv</small></a><a class="card" href="blocks/otp_ctrl.md"><strong>otp_ctrl</strong>
+<small>Spec: component:clkmgr, clkmgr.tpldesc.hjson, template param list<br>Code: prim_edge_detector, clkmgr_aon_cg_en_sva_if.sv, clkmgr_cg_en_sva_if.sv, clkmgr_div_sva_if.sv</small></a><a class="card" href="blocks/otp_ctrl.md"><strong>otp_ctrl</strong><span class="badge">snippets</span>
 <span>528 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:otp_ctrl, otp_ctrl.tpldesc.hjson, template param list<br>Code: prim_secded_inv_72_64_enc, prim_sec_anchor_flop, prim_sum_tree, otp_ctrl_pkg</small></a><a class="card" href="blocks/gpio.md"><strong>gpio</strong>
+<small>Spec: component:otp_ctrl, otp_ctrl.tpldesc.hjson, template param list<br>Code: prim_secded_inv_72_64_enc, prim_sec_anchor_flop, prim_sum_tree, otp_ctrl_pkg</small></a><a class="card" href="blocks/gpio.md"><strong>gpio</strong><span class="badge">snippets</span>
 <span>520 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:gpio, gpio.tpldesc.hjson, template param list<br>Code: tl_agent_pkg, gpio_straps_if.sv, gpio_pkg, gpio_bind.sv</small></a><a class="card" href="blocks/rv_plic.md"><strong>rv_plic</strong>
+<small>Spec: component:gpio, gpio.tpldesc.hjson, template param list<br>Code: tl_agent_pkg, gpio_straps_if.sv, gpio_pkg, gpio_bind.sv</small></a><a class="card" href="blocks/rv_plic.md"><strong>rv_plic</strong><span class="badge">snippets</span>
 <span>456 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:rv_plic, rv_plic.tpldesc.hjson, template param list<br>Code: prim_subreg, tlul_cmd_intg_chk, prim_reg_we_check, tlul_rsp_intg_gen</small></a><a class="card" href="blocks/flash_ctrl.md"><strong>flash_ctrl</strong>
+<small>Spec: component:rv_plic, rv_plic.tpldesc.hjson, template param list<br>Code: prim_subreg, tlul_cmd_intg_chk, prim_reg_we_check, tlul_rsp_intg_gen</small></a><a class="card" href="blocks/flash_ctrl.md"><strong>flash_ctrl</strong><span class="badge">snippets</span>
 <span>408 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:flash_ctrl, flash_ctrl.tpldesc.hjson, template param list<br>Code: prim_arbiter_tree, prim_count, prim_secded_hamming_72_64_enc, prim_secded_hamming_76_68_enc</small></a><a class="card" href="blocks/ibex.md"><strong>ibex</strong>
+<small>Spec: component:flash_ctrl, flash_ctrl.tpldesc.hjson, template param list<br>Code: prim_arbiter_tree, prim_count, prim_secded_hamming_72_64_enc, prim_secded_hamming_76_68_enc</small></a><a class="card" href="blocks/ibex.md"><strong>ibex</strong><span class="badge">snippets</span>
 <span>370 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: compliance.rst, Standards Compliance, index.rst<br>Code: __init__.py, conf.py, cosim.h, cosim_dpi.cc</small></a><a class="card" href="blocks/prim.md"><strong>prim</strong>
+<small>Spec: compliance.rst, Standards Compliance, index.rst<br>Code: __init__.py, conf.py, cosim.h, cosim_dpi.cc</small></a><a class="card" href="blocks/prim.md"><strong>prim</strong><span class="badge">snippets</span>
 <span>365 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:prim, prim_flash.md, Primitive Component: Flash Wrapper<br>Code: prim_ram_2p, prim_alert_tb.sv, prim_alert_tb, prim_alert_receiver</small></a><a class="card" href="blocks/lowrisc_ibex.md"><strong>lowrisc_ibex</strong>
+<small>Spec: component:prim, prim_flash.md, Primitive Component: Flash Wrapper<br>Code: prim_ram_2p, prim_alert_tb.sv, prim_alert_tb, prim_alert_receiver</small></a><a class="card" href="blocks/lowrisc_ibex.md"><strong>lowrisc_ibex</strong><span class="badge">snippets</span>
 <span>343 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: compliance.rst, Standards Compliance, index.rst<br>Code: Cosim(), riscv_cosim_step(), riscv_cosim_set_mip(), riscv_cosim_set_nmi()</small></a><a class="card" href="blocks/alert_handler.md"><strong>alert_handler</strong>
+<small>Spec: compliance.rst, Standards Compliance, index.rst<br>Code: Cosim(), riscv_cosim_step(), riscv_cosim_set_mip(), riscv_cosim_set_nmi()</small></a><a class="card" href="blocks/alert_handler.md"><strong>alert_handler</strong><span class="badge">snippets</span>
 <span>332 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:alert_handler, alert_handler.tpldesc.hjson, template param list<br>Code: prim_alert_pkg, prim_esc_pkg, alert_handler_cov_bind.sv, alert_handler_cov_bind</small></a><a class="card" href="blocks/pwm.md"><strong>pwm</strong>
+<small>Spec: component:alert_handler, alert_handler.tpldesc.hjson, template param list<br>Code: prim_alert_pkg, prim_esc_pkg, alert_handler_cov_bind.sv, alert_handler_cov_bind</small></a><a class="card" href="blocks/pwm.md"><strong>pwm</strong><span class="badge">snippets</span>
 <span>272 bridge edges · 48 code refs · 80 spec refs</span>
-<small>Spec: component:pwm, pwm.tpldesc.hjson, template param list<br>Code: tb.sv, pwm_env_pkg, pwm_test_pkg, pwm_monitor_pkg</small></a><a class="card" href="blocks/otp.md"><strong>otp</strong>
+<small>Spec: component:pwm, pwm.tpldesc.hjson, template param list<br>Code: tb.sv, pwm_env_pkg, pwm_test_pkg, pwm_monitor_pkg</small></a><a class="card" href="blocks/otp.md"><strong>otp</strong><span class="badge">snippets</span>
 <span>208 bridge edges · 75 code refs · 80 spec refs</span>
-<small>Spec: otp_ctrl_img_creator_sw_cfg.hjson, partitions, items<br>Code: alert_handler.rs, AlertClassRegs, AlertRegs, AlertClass</small></a><a class="card" href="blocks/racl_ctrl.md"><strong>racl_ctrl</strong>
+<small>Spec: otp_ctrl_img_creator_sw_cfg.hjson, partitions, items<br>Code: alert_handler.rs, AlertClassRegs, AlertRegs, AlertClass</small></a><a class="card" href="blocks/racl_ctrl.md"><strong>racl_ctrl</strong><span class="badge">snippets</span>
 <span>206 bridge edges · 38 code refs · 80 spec refs</span>
-<small>Spec: component:racl_ctrl, racl_ctrl_testplan.hjson, import testplans<br>Code: racl_ctrl_base_test.sv, racl_ctrl_test_pkg.sv, racl_ctrl_base_env_pkg, racl_ctrl_env_cfg.sv</small></a><a class="card" href="blocks/unknown.md"><strong>unknown</strong>
+<small>Spec: component:racl_ctrl, racl_ctrl_testplan.hjson, import testplans<br>Code: racl_ctrl_base_test.sv, racl_ctrl_test_pkg.sv, racl_ctrl_base_env_pkg, racl_ctrl_env_cfg.sv</small></a><a class="card" href="blocks/unknown.md"><strong>unknown</strong><span class="badge">snippets</span>
 <span>196 bridge edges · 25 code refs · 44 spec refs</span>
-<small>Spec: mem_access_testplan.hjson, pinmux.tpldesc.hjson, pinmux_fpv_testplan.hjson<br>Code: mem_bkdr_scb.sv, mem_bkdr_scb_pkg.sv, pinmux_jtag_breakout.sv, pinmux_jtag_breakout</small></a><a class="card" href="blocks/lc_ctrl.md"><strong>lc_ctrl</strong>
+<small>Spec: mem_access_testplan.hjson, pinmux.tpldesc.hjson, pinmux_fpv_testplan.hjson<br>Code: mem_bkdr_scb.sv, mem_bkdr_scb_pkg.sv, pinmux_jtag_breakout.sv, pinmux_jtag_breakout</small></a><a class="card" href="blocks/lc_ctrl.md"><strong>lc_ctrl</strong><span class="badge">snippets</span>
 <span>192 bridge edges · 44 code refs · 80 spec refs</span>
-<small>Spec: component:lc_ctrl, lc_ctrl.hjson, human name<br>Code: lc_ctrl_state_pkg, tb.sv, tb, lc_ctrl_reg_pkg</small></a><a class="card" href="blocks/ac_range_check.md"><strong>ac_range_check</strong>
+<small>Spec: component:lc_ctrl, lc_ctrl.hjson, human name<br>Code: lc_ctrl_state_pkg, tb.sv, tb, lc_ctrl_reg_pkg</small></a><a class="card" href="blocks/ac_range_check.md"><strong>ac_range_check</strong><span class="badge">snippets</span>
 <span>174 bridge edges · 26 code refs · 78 spec refs</span>
-<small>Spec: component:ac_range_check, ac_range_check.hjson, human name<br>Code: prim_flop_en, prim_onehot_enc, ac_range_check_bind.sv, ac_range_check_bind</small></a><a class="card" href="blocks/otbn.md"><strong>otbn</strong>
+<small>Spec: component:ac_range_check, ac_range_check.hjson, human name<br>Code: prim_flop_en, prim_onehot_enc, ac_range_check_bind.sv, ac_range_check_bind</small></a><a class="card" href="blocks/otbn.md"><strong>otbn</strong><span class="badge">snippets</span>
 <span>160 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:otbn, otbn.hjson, human name<br>Code: keymgr_pkg, key_sideload_if, edn_pkg, otbn_memutil.cc</small></a><a class="card" href="blocks/usbdev.md"><strong>usbdev</strong>
+<small>Spec: component:otbn, otbn.hjson, human name<br>Code: keymgr_pkg, key_sideload_if, edn_pkg, otbn_memutil.cc</small></a><a class="card" href="blocks/usbdev.md"><strong>usbdev</strong><span class="badge">snippets</span>
 <span>120 bridge edges · 56 code refs · 80 spec refs</span>
-<small>Spec: component:usbdev, usbdev.hjson, human name<br>Code: usbdev_bind.sv, usbdev_bind, tb.sv, tb</small></a><a class="card" href="blocks/xbar_main.md"><strong>xbar_main</strong>
+<small>Spec: component:usbdev, usbdev.hjson, human name<br>Code: usbdev_bind.sv, usbdev_bind, tb.sv, tb</small></a><a class="card" href="blocks/xbar_main.md"><strong>xbar_main</strong><span class="badge">snippets</span>
 <span>119 bridge edges · 46 code refs · 58 spec refs</span>
-<small>Spec: component:xbar_main, xbar_main.gen.hjson, clock srcs<br>Code: tlul_socket_m1, tb__xbar_connect.sv, xbar_env_pkg__params.sv, xbar_main_bind.sv</small></a><a class="card" href="blocks/mbx.md"><strong>mbx</strong>
+<small>Spec: component:xbar_main, xbar_main.gen.hjson, clock srcs<br>Code: tlul_socket_m1, tb__xbar_connect.sv, xbar_env_pkg__params.sv, xbar_main_bind.sv</small></a><a class="card" href="blocks/mbx.md"><strong>mbx</strong><span class="badge">snippets</span>
 <span>117 bridge edges · 37 code refs · 80 spec refs</span>
-<small>Spec: component:mbx, mbx.hjson, human name<br>Code: tb.sv, tb, mbx_env_pkg, mbx_test_pkg</small></a><a class="card" href="blocks/xbar_peri.md"><strong>xbar_peri</strong>
+<small>Spec: component:mbx, mbx.hjson, human name<br>Code: tb.sv, tb, mbx_env_pkg, mbx_test_pkg</small></a><a class="card" href="blocks/xbar_peri.md"><strong>xbar_peri</strong><span class="badge">snippets</span>
 <span>114 bridge edges · 53 code refs · 58 spec refs</span>
-<small>Spec: component:xbar_peri, xbar_peri.gen.hjson, clock srcs<br>Code: tlul_fifo_async, tb__xbar_connect.sv, xbar_env_pkg__params.sv, xbar_peri_bind.sv</small></a><a class="card" href="blocks/sensor_ctrl.md"><strong>sensor_ctrl</strong>
+<small>Spec: component:xbar_peri, xbar_peri.gen.hjson, clock srcs<br>Code: tlul_fifo_async, tb__xbar_connect.sv, xbar_env_pkg__params.sv, xbar_peri_bind.sv</small></a><a class="card" href="blocks/sensor_ctrl.md"><strong>sensor_ctrl</strong><span class="badge">snippets</span>
 <span>113 bridge edges · 21 code refs · 54 spec refs</span>
-<small>Spec: component:sensor_ctrl, sensor_ctrl.hjson, cip id<br>Code: prim_alert_sender, sensor_ctrl.sv, sensor_ctrl, sensor_ctrl_pkg</small></a><a class="card" href="blocks/aes.md"><strong>aes</strong>
+<small>Spec: component:sensor_ctrl, sensor_ctrl.hjson, cip id<br>Code: prim_alert_sender, sensor_ctrl.sv, sensor_ctrl, sensor_ctrl_pkg</small></a><a class="card" href="blocks/aes.md"><strong>aes</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 80 code refs · 79 spec refs</span>
-<small>Spec: component:aes, aes.hjson, human name<br>Code: aes_model_dpi.c, c_dpi_aes_crypt_block(), c_dpi_aes_crypt_message(), c_dpi_aes_sub_bytes()</small></a><a class="card" href="blocks/csrng.md"><strong>csrng</strong>
+<small>Spec: component:aes, aes.hjson, human name<br>Code: aes_model_dpi.c, c_dpi_aes_crypt_block(), c_dpi_aes_crypt_message(), c_dpi_aes_sub_bytes()</small></a><a class="card" href="blocks/csrng.md"><strong>csrng</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 47 code refs · 80 spec refs</span>
-<small>Spec: component:csrng, csrng.hjson, human name<br>Code: csrng_pkg, aes_cipher_core, tb.sv, csrng_env_pkg</small></a><a class="card" href="blocks/edn.md"><strong>edn</strong>
+<small>Spec: component:csrng, csrng.hjson, human name<br>Code: csrng_pkg, aes_cipher_core, tb.sv, csrng_env_pkg</small></a><a class="card" href="blocks/edn.md"><strong>edn</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 42 code refs · 78 spec refs</span>
-<small>Spec: component:edn, edn.hjson, human name<br>Code: csrng_agent_pkg, tb.sv, edn_env_pkg, edn_test_pkg</small></a><a class="card" href="blocks/entropy_src.md"><strong>entropy_src</strong>
+<small>Spec: component:edn, edn.hjson, human name<br>Code: csrng_agent_pkg, tb.sv, edn_env_pkg, edn_test_pkg</small></a><a class="card" href="blocks/entropy_src.md"><strong>entropy_src</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 75 code refs · 80 spec refs</span>
-<small>Spec: component:entropy_src, entropy_src.hjson, human name<br>Code: entropy_src_pkg, entropy_src_cov_bind.sv, entropy_src_cov_bind, entropy_src_cov_if.sv</small></a><a class="card" href="blocks/hmac.md"><strong>hmac</strong>
+<small>Spec: component:entropy_src, entropy_src.hjson, human name<br>Code: entropy_src_pkg, entropy_src_cov_bind.sv, entropy_src_cov_bind, entropy_src_cov_if.sv</small></a><a class="card" href="blocks/hmac.md"><strong>hmac</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 80 code refs · 76 spec refs</span>
-<small>Spec: component:hmac, hmac.hjson, human name<br>Code: prim_sha2_32, cryptoc_dpi.c, collect_bytes(), c_dpi_SHA_hash()</small></a><a class="card" href="blocks/i2c.md"><strong>i2c</strong>
+<small>Spec: component:hmac, hmac.hjson, human name<br>Code: prim_sha2_32, cryptoc_dpi.c, collect_bytes(), c_dpi_SHA_hash()</small></a><a class="card" href="blocks/i2c.md"><strong>i2c</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 44 code refs · 80 spec refs</span>
-<small>Spec: component:i2c, i2c.hjson, human name<br>Code: i2c_pkg, i2c_bind.sv, i2c_bind, i2c_protocol_cov.sv</small></a><a class="card" href="blocks/keymgr.md"><strong>keymgr</strong>
+<small>Spec: component:i2c, i2c.hjson, human name<br>Code: i2c_pkg, i2c_bind.sv, i2c_bind, i2c_protocol_cov.sv</small></a><a class="card" href="blocks/keymgr.md"><strong>keymgr</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 46 code refs · 76 spec refs</span>
-<small>Spec: component:keymgr, keymgr.hjson, human name<br>Code: tb.sv, tb, keymgr_env_pkg, keymgr_test_pkg</small></a><a class="card" href="blocks/kmac.md"><strong>kmac</strong>
+<small>Spec: component:keymgr, keymgr.hjson, human name<br>Code: tb.sv, tb, keymgr_env_pkg, keymgr_test_pkg</small></a><a class="card" href="blocks/kmac.md"><strong>kmac</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 80 code refs · 79 spec refs</span>
-<small>Spec: component:kmac, kmac.hjson, human name<br>Code: sha3, tb.sv, kmac_env_pkg, kmac_test_pkg</small></a><a class="card" href="blocks/pattgen.md"><strong>pattgen</strong>
+<small>Spec: component:kmac, kmac.hjson, human name<br>Code: sha3, tb.sv, kmac_env_pkg, kmac_test_pkg</small></a><a class="card" href="blocks/pattgen.md"><strong>pattgen</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 40 code refs · 75 spec refs</span>
-<small>Spec: component:pattgen, pattgen.hjson, human name<br>Code: tb.sv, tb, pattgen_env_pkg, pattgen_test_pkg</small></a><a class="card" href="blocks/rom_ctrl.md"><strong>rom_ctrl</strong>
+<small>Spec: component:pattgen, pattgen.hjson, human name<br>Code: tb.sv, tb, pattgen_env_pkg, pattgen_test_pkg</small></a><a class="card" href="blocks/rom_ctrl.md"><strong>rom_ctrl</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 80 code refs · 66 spec refs</span>
-<small>Spec: component:rom_ctrl, rom_ctrl.hjson, human name<br>Code: prim_prince, prim_rom_pkg, kmac_app_intf, rom_ctrl_cov_bind.sv</small></a><a class="card" href="blocks/rv_dm.md"><strong>rv_dm</strong>
+<small>Spec: component:rom_ctrl, rom_ctrl.hjson, human name<br>Code: prim_prince, prim_rom_pkg, kmac_app_intf, rom_ctrl_cov_bind.sv</small></a><a class="card" href="blocks/rv_dm.md"><strong>rv_dm</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 77 code refs · 73 spec refs</span>
-<small>Spec: component:rv_dm, rv_dm.hjson, human name<br>Code: prim_mubi8_sync, tb.sv, tb, rv_dm_env_pkg</small></a><a class="card" href="blocks/spi_device.md"><strong>spi_device</strong>
+<small>Spec: component:rv_dm, rv_dm.hjson, human name<br>Code: prim_mubi8_sync, tb.sv, tb, rv_dm_env_pkg</small></a><a class="card" href="blocks/spi_device.md"><strong>spi_device</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 80 code refs · 80 spec refs</span>
-<small>Spec: component:spi_device, spi_device.hjson, human name<br>Code: prim_fifo_async_sram_adapter, prim_ram_2p_pkg, prim_ram_2p_async_adv, prim_slicer</small></a><a class="card" href="blocks/spi_host.md"><strong>spi_host</strong>
+<small>Spec: component:spi_device, spi_device.hjson, human name<br>Code: prim_fifo_async_sram_adapter, prim_ram_2p_pkg, prim_ram_2p_async_adv, prim_slicer</small></a><a class="card" href="blocks/spi_host.md"><strong>spi_host</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 54 code refs · 80 spec refs</span>
-<small>Spec: component:spi_host, spi_host.hjson, human name<br>Code: tlul_adapter_reg_racl, spi_if, spi_device_pkg, spi_host_fsm_if.sv</small></a><a class="card" href="blocks/uart.md"><strong>uart</strong>
+<small>Spec: component:spi_host, spi_host.hjson, human name<br>Code: tlul_adapter_reg_racl, spi_if, spi_device_pkg, spi_host_fsm_if.sv</small></a><a class="card" href="blocks/uart.md"><strong>uart</strong><span class="badge">snippets</span>
 <span>112 bridge edges · 80 code refs · 76 spec refs</span>
-<small>Spec: component:uart, uart.hjson, human name<br>Code: uart_bind.sv, uart_bind, tb.sv, tb</small></a><a class="card" href="blocks/keymgr_dpe.md"><strong>keymgr_dpe</strong>
+<small>Spec: component:uart, uart.hjson, human name<br>Code: uart_bind.sv, uart_bind, tb.sv, tb</small></a><a class="card" href="blocks/keymgr_dpe.md"><strong>keymgr_dpe</strong><span class="badge">snippets</span>
 <span>107 bridge edges · 35 code refs · 74 spec refs</span>
-<small>Spec: component:keymgr_dpe, keymgr_dpe.hjson, human name<br>Code: prim_sec_anchor_const, keymgr_reseed_ctrl, keymgr_cfg_en, keymgr_input_checks</small></a><a class="card" href="blocks/adc_ctrl.md"><strong>adc_ctrl</strong>
+<small>Spec: component:keymgr_dpe, keymgr_dpe.hjson, human name<br>Code: prim_sec_anchor_const, keymgr_reseed_ctrl, keymgr_cfg_en, keymgr_input_checks</small></a><a class="card" href="blocks/adc_ctrl.md"><strong>adc_ctrl</strong><span class="badge">snippets</span>
 <span>104 bridge edges · 32 code refs · 75 spec refs</span>
-<small>Spec: component:adc_ctrl, adc_ctrl.hjson, human name<br>Code: tb.sv, adc_ctrl_env_pkg, adc_ctrl_test_pkg, tb</small></a><a class="card" href="blocks/sysrst_ctrl.md"><strong>sysrst_ctrl</strong>
+<small>Spec: component:adc_ctrl, adc_ctrl.hjson, human name<br>Code: tb.sv, adc_ctrl_env_pkg, adc_ctrl_test_pkg, tb</small></a><a class="card" href="blocks/sysrst_ctrl.md"><strong>sysrst_ctrl</strong><span class="badge">snippets</span>
 <span>104 bridge edges · 80 code refs · 70 spec refs</span>
-<small>Spec: component:sysrst_ctrl, sysrst_ctrl.hjson, human name<br>Code: tb.sv, tb, sysrst_ctrl_env_pkg, sysrst_ctrl_test_pkg</small></a><a class="card" href="blocks/sram_ctrl.md"><strong>sram_ctrl</strong>
+<small>Spec: component:sysrst_ctrl, sysrst_ctrl.hjson, human name<br>Code: tb.sv, tb, sysrst_ctrl_env_pkg, sysrst_ctrl_test_pkg</small></a><a class="card" href="blocks/sram_ctrl.md"><strong>sram_ctrl</strong><span class="badge">snippets</span>
 <span>102 bridge edges · 30 code refs · 73 spec refs</span>
-<small>Spec: component:sram_ctrl, sram_ctrl.hjson, human name<br>Code: prim_ram_1p_scr, tlul_adapter_sram_racl, tb.sv, tb</small></a><a class="card" href="blocks/rv_timer.md"><strong>rv_timer</strong>
+<small>Spec: component:sram_ctrl, sram_ctrl.hjson, human name<br>Code: prim_ram_1p_scr, tlul_adapter_sram_racl, tb.sv, tb</small></a><a class="card" href="blocks/rv_timer.md"><strong>rv_timer</strong><span class="badge">snippets</span>
 <span>98 bridge edges · 26 code refs · 72 spec refs</span>
-<small>Spec: component:rv_timer, rv_timer.hjson, human name<br>Code: rv_timer_bind.sv, rv_timer_bind, tb.sv, tb</small></a><a class="card" href="blocks/ast.md"><strong>ast</strong>
+<small>Spec: component:rv_timer, rv_timer.hjson, human name<br>Code: rv_timer_bind.sv, rv_timer_bind, tb.sv, tb</small></a><a class="card" href="blocks/ast.md"><strong>ast</strong><span class="badge">snippets</span>
 <span>95 bridge edges · 80 code refs · 38 spec refs</span>
-<small>Spec: component:ast, ast.hjson, cip id<br>Code: prim_packer_fifo, aon_clk.sv, aon_clk, aon_osc.sv</small></a><a class="card" href="blocks/dma.md"><strong>dma</strong>
+<small>Spec: component:ast, ast.hjson, cip id<br>Code: prim_packer_fifo, aon_clk.sv, aon_clk, aon_osc.sv</small></a><a class="card" href="blocks/dma.md"><strong>dma</strong><span class="badge">snippets</span>
 <span>95 bridge edges · 23 code refs · 80 spec refs</span>
-<small>Spec: component:dma, dma.hjson, human name<br>Code: dma_cov_bind.sv, dma_cov_bind, dma_cov_if.sv, dma_reg_pkg</small></a><a class="card" href="blocks/soc_dbg_ctrl.md"><strong>soc_dbg_ctrl</strong>
+<small>Spec: component:dma, dma.hjson, human name<br>Code: dma_cov_bind.sv, dma_cov_bind, dma_cov_if.sv, dma_reg_pkg</small></a><a class="card" href="blocks/soc_dbg_ctrl.md"><strong>soc_dbg_ctrl</strong><span class="badge">snippets</span>
 <span>95 bridge edges · 23 code refs · 62 spec refs</span>
-<small>Spec: component:soc_dbg_ctrl, soc_dbg_ctrl.hjson, human name<br>Code: tb.sv, tb, soc_dbg_ctrl_env_pkg, soc_dbg_ctrl_test_pkg</small></a><a class="card" href="blocks/aon_timer.md"><strong>aon_timer</strong>
+<small>Spec: component:soc_dbg_ctrl, soc_dbg_ctrl.hjson, human name<br>Code: tb.sv, tb, soc_dbg_ctrl_env_pkg, soc_dbg_ctrl_test_pkg</small></a><a class="card" href="blocks/aon_timer.md"><strong>aon_timer</strong><span class="badge">snippets</span>
 <span>93 bridge edges · 21 code refs · 74 spec refs</span>
-<small>Spec: component:aon_timer, aon_timer.hjson, human name<br>Code: tb.sv, tb, aon_timer_env_pkg, aon_timer_test_pkg</small></a><a class="card" href="blocks/ascon.md"><strong>ascon</strong>
+<small>Spec: component:aon_timer, aon_timer.hjson, human name<br>Code: tb.sv, tb, aon_timer_env_pkg, aon_timer_test_pkg</small></a><a class="card" href="blocks/ascon.md"><strong>ascon</strong><span class="badge">snippets</span>
 <span>92 bridge edges · 28 code refs · 65 spec refs</span>
-<small>Spec: component:ascon, ascon.hjson, human name<br>Code: ascon_tb.cc, AsconSim, OnClock(), main()</small></a><a class="card" href="blocks/tlul.md"><strong>tlul</strong>
+<small>Spec: component:ascon, ascon.hjson, human name<br>Code: ascon_tb.cc, AsconSim, OnClock(), main()</small></a><a class="card" href="blocks/tlul.md"><strong>tlul</strong><span class="badge">snippets</span>
 <span>80 bridge edges · 70 code refs · 46 spec refs</span>
-<small>Spec: component:tlul, tlul.prj.hjson, design spec<br>Code: prim_secded_inv_39_32_enc, prim_secded_inv_39_32_dec, prim_secded_inv_64_57_enc, prim_secded_inv_64_57_dec</small></a><a class="card" href="blocks/lowrisc_ip.md"><strong>lowrisc_ip</strong>
+<small>Spec: component:tlul, tlul.prj.hjson, design spec<br>Code: prim_secded_inv_39_32_enc, prim_secded_inv_39_32_dec, prim_secded_inv_64_57_enc, prim_secded_inv_64_57_dec</small></a><a class="card" href="blocks/lowrisc_ip.md"><strong>lowrisc_ip</strong><span class="badge">snippets</span>
 <span>48 bridge edges · 80 code refs · 33 spec refs</span>
-<small>Spec: design_doc.md, DVSim design doc, Context<br>Code: clk_if.sv, clk_rst_if.sv, common_ifs_pkg.sv, entropy_subsys_fifo_exception_if.sv</small></a><a class="card" href="blocks/xbar_main.hjson.md"><strong>xbar_main.hjson</strong>
+<small>Spec: design_doc.md, DVSim design doc, Context<br>Code: clk_if.sv, clk_rst_if.sv, common_ifs_pkg.sv, entropy_subsys_fifo_exception_if.sv</small></a><a class="card" href="blocks/xbar_main.hjson.md"><strong>xbar_main.hjson</strong><span class="badge">snippets</span>
 <span>48 bridge edges · 32 code refs · 33 spec refs</span>
-<small>Spec: xbar_main.hjson, clock primary, other clock list<br>Code: prim_flop_en, prim_ram_1p_adv, tlul_cmd_intg_gen, dma</small></a><a class="card" href="blocks/xbar_peri.hjson.md"><strong>xbar_peri.hjson</strong>
+<small>Spec: xbar_main.hjson, clock primary, other clock list<br>Code: prim_flop_en, prim_ram_1p_adv, tlul_cmd_intg_gen, dma</small></a><a class="card" href="blocks/xbar_peri.hjson.md"><strong>xbar_peri.hjson</strong><span class="badge">snippets</span>
 <span>48 bridge edges · 32 code refs · 33 spec refs</span>
-<small>Spec: xbar_peri.hjson, clock primary, other clock list<br>Code: prim_flop_en, prim_ram_1p_adv, tlul_cmd_intg_gen, dma</small></a><a class="card" href="blocks/soc_proxy.md"><strong>soc_proxy</strong>
+<small>Spec: xbar_peri.hjson, clock primary, other clock list<br>Code: prim_flop_en, prim_ram_1p_adv, tlul_cmd_intg_gen, dma</small></a><a class="card" href="blocks/soc_proxy.md"><strong>soc_proxy</strong><span class="badge">snippets</span>
 <span>43 bridge edges · 23 code refs · 24 spec refs</span>
 <small>Spec: component:soc_proxy, soc_proxy.hjson, human name<br>Code: tlul_cmd_intg_gen, bat.sv, bat, soc_proxy.sv</small></a><a class="card" href="blocks/bitbanging.md"><strong>bitbanging</strong>
 <span>40 bridge edges · 40 code refs · 1 spec refs</span>
@@ -170,9 +179,9 @@ a.card{display:block;text-decoration:none;color:#17202a;min-height:150px}
 <span>40 bridge edges · 40 code refs · 1 spec refs</span>
 <small>Spec: component:top_englishbreakfast<br>Code: top_englishbreakfast_rnd_cnst_pkg.sv, top_englishbreakfast_racl_pkg.sv, top_englishbreakfast, top_englishbreakfast_pkg.sv</small></a><a class="card" href="blocks/vendor.md"><strong>vendor</strong>
 <span>40 bridge edges · 40 code refs · 1 spec refs</span>
-<small>Spec: component:vendor<br>Code: ibex_icache_core_back_line_seq.sv, ibex_mem_intf_response_agent_cfg.sv, ibex_mem_intf_response_sequencer.sv, ibex_mem_intf_response_seq_lib.sv</small></a><a class="card" href="blocks/xbar_dbg.md"><strong>xbar_dbg</strong>
+<small>Spec: component:vendor<br>Code: ibex_icache_core_back_line_seq.sv, ibex_mem_intf_response_agent_cfg.sv, ibex_mem_intf_response_sequencer.sv, ibex_mem_intf_response_seq_lib.sv</small></a><a class="card" href="blocks/xbar_dbg.md"><strong>xbar_dbg</strong><span class="badge">snippets</span>
 <span>39 bridge edges · 24 code refs · 20 spec refs</span>
-<small>Spec: component:xbar_dbg, xbar_dbg.gen.hjson, clock srcs<br>Code: tb__xbar_connect.sv, xbar_dbg_bind.sv, xbar_dbg_bind, xbar_env_pkg__params.sv</small></a><a class="card" href="blocks/xbar_mbx.md"><strong>xbar_mbx</strong>
+<small>Spec: component:xbar_dbg, xbar_dbg.gen.hjson, clock srcs<br>Code: tb__xbar_connect.sv, xbar_dbg_bind.sv, xbar_dbg_bind, xbar_env_pkg__params.sv</small></a><a class="card" href="blocks/xbar_mbx.md"><strong>xbar_mbx</strong><span class="badge">snippets</span>
 <span>39 bridge edges · 24 code refs · 20 spec refs</span>
 <small>Spec: component:xbar_mbx, xbar_mbx.gen.hjson, clock srcs<br>Code: tb__xbar_connect.sv, xbar_env_pkg__params.sv, xbar_mbx_bind.sv, xbar_mbx_bind</small></a><a class="card" href="blocks/prim_prince.md"><strong>prim_prince</strong>
 <span>36 bridge edges · 36 code refs · 1 spec refs</span>
@@ -180,23 +189,23 @@ a.card{display:block;text-decoration:none;color:#17202a;min-height:150px}
 <span>35 bridge edges · 35 code refs · 1 spec refs</span>
 <small>Spec: component:pmp<br>Code: pmp.c, pmp_ok(), set_pmp(), set_pmp_range()</small></a><a class="card" href="blocks/manifest.md"><strong>manifest</strong>
 <span>33 bridge edges · 33 code refs · 1 spec refs</span>
-<small>Spec: component:manifest<br>Code: manifest.rs, Manifest, ManifestVersion, ManifestExtHeader</small></a><a class="card" href="blocks/otp_macro.md"><strong>otp_macro</strong>
+<small>Spec: component:manifest<br>Code: manifest.rs, Manifest, ManifestVersion, ManifestExtHeader</small></a><a class="card" href="blocks/otp_macro.md"><strong>otp_macro</strong><span class="badge">snippets</span>
 <span>33 bridge edges · 9 code refs · 21 spec refs</span>
-<small>Spec: component:otp_macro, otp_macro.hjson, human name<br>Code: otp_macro.sv, otp_macro, otp_macro_reg_pkg, otp_macro_prim_reg_top</small></a><a class="card" href="blocks/alert_esc_agent.md"><strong>alert_esc_agent</strong>
+<small>Spec: component:otp_macro, otp_macro.hjson, human name<br>Code: otp_macro.sv, otp_macro, otp_macro_reg_pkg, otp_macro_prim_reg_top</small></a><a class="card" href="blocks/alert_esc_agent.md"><strong>alert_esc_agent</strong><span class="badge">snippets</span>
 <span>32 bridge edges · 25 code refs · 12 spec refs</span>
-<small>Spec: alert_agent_additional_testplan.hjson, covergroups, desc<br>Code: alert_base_driver.sv, alert_esc_agent.sv, alert_esc_agent_cfg.sv, alert_esc_agent_cov.sv</small></a><a class="card" href="blocks/xbar.md"><strong>xbar</strong>
+<small>Spec: alert_agent_additional_testplan.hjson, covergroups, desc<br>Code: alert_base_driver.sv, alert_esc_agent.sv, alert_esc_agent_cfg.sv, alert_esc_agent_cov.sv</small></a><a class="card" href="blocks/xbar.md"><strong>xbar</strong><span class="badge">snippets</span>
 <span>31 bridge edges · 31 code refs · 12 spec refs</span>
 <small>Spec: component:xbar, checklist.md, TL-UL Checklist<br>Code: xbar.py, Xbar, Xbar contains configurations to generate TL-UL crossbar., .__init__()</small></a><a class="card" href="blocks/prim_present.md"><strong>prim_present</strong>
 <span>26 bridge edges · 26 code refs · 1 spec refs</span>
 <small>Spec: component:prim_present<br>Code: prim_present_tb.sv, prim_present_tb, prim_present, prim_present_tb.sv</small></a><a class="card" href="blocks/tracer.md"><strong>tracer</strong>
 <span>17 bridge edges · 17 code refs · 1 spec refs</span>
-<small>Spec: component:tracer<br>Code: otbn_tracer.sv, otbn_tracer, otbn_trace_if.sv, log_trace_listener.cc</small></a><a class="card" href="blocks/outgoing_alerts_englishbreakfast.hjson.md"><strong>outgoing_alerts_englishbreakfast.hjson</strong>
+<small>Spec: component:tracer<br>Code: otbn_tracer.sv, otbn_tracer, otbn_trace_if.sv, log_trace_listener.cc</small></a><a class="card" href="blocks/outgoing_alerts_englishbreakfast.hjson.md"><strong>outgoing_alerts_englishbreakfast.hjson</strong><span class="badge">snippets</span>
 <span>16 bridge edges · 16 code refs · 6 spec refs</span>
-<small>Spec: outgoing_alerts_englishbreakfast.hjson, englishbreakfast, module name<br>Code: BUFG, prim_mubi_pkg, prim_esc_receiver, prim_arbiter_fixed</small></a><a class="card" href="blocks/pulp_riscv_dbg.md"><strong>pulp_riscv_dbg</strong>
+<small>Spec: outgoing_alerts_englishbreakfast.hjson, englishbreakfast, module name<br>Code: BUFG, prim_mubi_pkg, prim_esc_receiver, prim_arbiter_fixed</small></a><a class="card" href="blocks/pulp_riscv_dbg.md"><strong>pulp_riscv_dbg</strong><span class="badge">snippets</span>
 <span>16 bridge edges · 80 code refs · 11 spec refs</span>
-<small>Spec: debug-system.md, Overview, Features<br>Code: prim_clock_mux2, prim_fifo_sync, prim_flop_2sync, _exit()</small></a><a class="card" href="blocks/xbar_dbg.hjson.md"><strong>xbar_dbg.hjson</strong>
+<small>Spec: debug-system.md, Overview, Features<br>Code: prim_clock_mux2, prim_fifo_sync, prim_flop_2sync, _exit()</small></a><a class="card" href="blocks/xbar_dbg.hjson.md"><strong>xbar_dbg.hjson</strong><span class="badge">snippets</span>
 <span>16 bridge edges · 16 code refs · 11 spec refs</span>
-<small>Spec: xbar_dbg.hjson, clock primary, other clock list<br>Code: prim_flop_en, prim_ram_1p_adv, tlul_cmd_intg_gen, dma</small></a><a class="card" href="blocks/xbar_mbx.hjson.md"><strong>xbar_mbx.hjson</strong>
+<small>Spec: xbar_dbg.hjson, clock primary, other clock list<br>Code: prim_flop_en, prim_ram_1p_adv, tlul_cmd_intg_gen, dma</small></a><a class="card" href="blocks/xbar_mbx.hjson.md"><strong>xbar_mbx.hjson</strong><span class="badge">snippets</span>
 <span>16 bridge edges · 16 code refs · 11 spec refs</span>
 <small>Spec: xbar_mbx.hjson, clock primary, other clock list<br>Code: prim_flop_en, prim_ram_1p_adv, tlul_cmd_intg_gen, dma</small></a><a class="card" href="blocks/fcov.md"><strong>fcov</strong>
 <span>14 bridge edges · 14 code refs · 1 spec refs</span>
@@ -208,65 +217,65 @@ a.card{display:block;text-decoration:none;color:#17202a;min-height:150px}
 <span>10 bridge edges · 10 code refs · 1 spec refs</span>
 <small>Spec: component:ipconfig<br>Code: ipconfig.py, OtpCtrlIpConfig, Initialize an `IpConfig` from an already loaded and parsed `ipconfig.hjson`, ipconfig.py</small></a><a class="card" href="blocks/prim_lfsr.md"><strong>prim_lfsr</strong>
 <span>9 bridge edges · 9 code refs · 1 spec refs</span>
-<small>Spec: component:prim_lfsr<br>Code: prim_lfsr_tb.sv, prim_lfsr_tb, prim_lfsr, prim_lfsr_tb.sv</small></a><a class="card" href="blocks/chip_adc_ctrl_testplan.hjson.md"><strong>chip_adc_ctrl_testplan.hjson</strong>
+<small>Spec: component:prim_lfsr<br>Code: prim_lfsr_tb.sv, prim_lfsr_tb, prim_lfsr, prim_lfsr_tb.sv</small></a><a class="card" href="blocks/chip_adc_ctrl_testplan.hjson.md"><strong>chip_adc_ctrl_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_adc_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_aes_testplan.hjson.md"><strong>chip_aes_testplan.hjson</strong>
+<small>Spec: chip_adc_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_aes_testplan.hjson.md"><strong>chip_aes_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_aes_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_alert_handler_testplan.hjson.md"><strong>chip_alert_handler_testplan.hjson</strong>
+<small>Spec: chip_aes_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_alert_handler_testplan.hjson.md"><strong>chip_alert_handler_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 11 spec refs</span>
-<small>Spec: chip_alert_handler_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_aon_timer_testplan.hjson.md"><strong>chip_aon_timer_testplan.hjson</strong>
+<small>Spec: chip_alert_handler_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_aon_timer_testplan.hjson.md"><strong>chip_aon_timer_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_aon_timer_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_clkmgr_testplan.hjson.md"><strong>chip_clkmgr_testplan.hjson</strong>
+<small>Spec: chip_aon_timer_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_clkmgr_testplan.hjson.md"><strong>chip_clkmgr_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_clkmgr_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_csrng_testplan.hjson.md"><strong>chip_csrng_testplan.hjson</strong>
+<small>Spec: chip_clkmgr_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_csrng_testplan.hjson.md"><strong>chip_csrng_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_csrng_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_edn_testplan.hjson.md"><strong>chip_edn_testplan.hjson</strong>
+<small>Spec: chip_csrng_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_edn_testplan.hjson.md"><strong>chip_edn_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 11 spec refs</span>
-<small>Spec: chip_edn_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_entropy_src_testplan.hjson.md"><strong>chip_entropy_src_testplan.hjson</strong>
+<small>Spec: chip_edn_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_entropy_src_testplan.hjson.md"><strong>chip_entropy_src_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_entropy_src_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_flash_ctrl_testplan.hjson.md"><strong>chip_flash_ctrl_testplan.hjson</strong>
+<small>Spec: chip_entropy_src_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_flash_ctrl_testplan.hjson.md"><strong>chip_flash_ctrl_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_flash_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_gpio_testplan.hjson.md"><strong>chip_gpio_testplan.hjson</strong>
+<small>Spec: chip_flash_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_gpio_testplan.hjson.md"><strong>chip_gpio_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_gpio_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_hmac_testplan.hjson.md"><strong>chip_hmac_testplan.hjson</strong>
+<small>Spec: chip_gpio_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_hmac_testplan.hjson.md"><strong>chip_hmac_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_hmac_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_i2c_testplan.hjson.md"><strong>chip_i2c_testplan.hjson</strong>
+<small>Spec: chip_hmac_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_i2c_testplan.hjson.md"><strong>chip_i2c_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_i2c_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_keymgr_testplan.hjson.md"><strong>chip_keymgr_testplan.hjson</strong>
+<small>Spec: chip_i2c_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_keymgr_testplan.hjson.md"><strong>chip_keymgr_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_keymgr_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_kmac_testplan.hjson.md"><strong>chip_kmac_testplan.hjson</strong>
+<small>Spec: chip_keymgr_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_kmac_testplan.hjson.md"><strong>chip_kmac_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 11 spec refs</span>
-<small>Spec: chip_kmac_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_lc_ctrl_testplan.hjson.md"><strong>chip_lc_ctrl_testplan.hjson</strong>
+<small>Spec: chip_kmac_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_lc_ctrl_testplan.hjson.md"><strong>chip_lc_ctrl_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 11 spec refs</span>
-<small>Spec: chip_lc_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_otbn_testplan.hjson.md"><strong>chip_otbn_testplan.hjson</strong>
+<small>Spec: chip_lc_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_otbn_testplan.hjson.md"><strong>chip_otbn_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_otbn_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_otp_ctrl_testplan.hjson.md"><strong>chip_otp_ctrl_testplan.hjson</strong>
+<small>Spec: chip_otbn_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_otp_ctrl_testplan.hjson.md"><strong>chip_otp_ctrl_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_otp_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_pwm_testplan.hjson.md"><strong>chip_pwm_testplan.hjson</strong>
+<small>Spec: chip_otp_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_pwm_testplan.hjson.md"><strong>chip_pwm_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_pwm_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_pwrmgr_testplan.hjson.md"><strong>chip_pwrmgr_testplan.hjson</strong>
+<small>Spec: chip_pwm_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_pwrmgr_testplan.hjson.md"><strong>chip_pwrmgr_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_pwrmgr_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rom_ctrl_testplan.hjson.md"><strong>chip_rom_ctrl_testplan.hjson</strong>
+<small>Spec: chip_pwrmgr_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rom_ctrl_testplan.hjson.md"><strong>chip_rom_ctrl_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_rom_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rstmgr_testplan.hjson.md"><strong>chip_rstmgr_testplan.hjson</strong>
+<small>Spec: chip_rom_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rstmgr_testplan.hjson.md"><strong>chip_rstmgr_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_rstmgr_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rv_core_ibex_testplan.hjson.md"><strong>chip_rv_core_ibex_testplan.hjson</strong>
+<small>Spec: chip_rstmgr_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rv_core_ibex_testplan.hjson.md"><strong>chip_rv_core_ibex_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_rv_core_ibex_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rv_dm_testplan.hjson.md"><strong>chip_rv_dm_testplan.hjson</strong>
+<small>Spec: chip_rv_core_ibex_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rv_dm_testplan.hjson.md"><strong>chip_rv_dm_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
-<small>Spec: chip_rv_dm_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rv_plic_testplan.hjson.md"><strong>chip_rv_plic_testplan.hjson</strong>
+<small>Spec: chip_rv_dm_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rv_plic_testplan.hjson.md"><strong>chip_rv_plic_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_rv_plic_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rv_timer_testplan.hjson.md"><strong>chip_rv_timer_testplan.hjson</strong>
+<small>Spec: chip_rv_plic_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_rv_timer_testplan.hjson.md"><strong>chip_rv_timer_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_rv_timer_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_spi_device_testplan.hjson.md"><strong>chip_spi_device_testplan.hjson</strong>
+<small>Spec: chip_rv_timer_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_spi_device_testplan.hjson.md"><strong>chip_spi_device_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_spi_device_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_spi_host_testplan.hjson.md"><strong>chip_spi_host_testplan.hjson</strong>
+<small>Spec: chip_spi_device_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_spi_host_testplan.hjson.md"><strong>chip_spi_host_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_spi_host_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_sram_ctrl_testplan.hjson.md"><strong>chip_sram_ctrl_testplan.hjson</strong>
+<small>Spec: chip_spi_host_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_sram_ctrl_testplan.hjson.md"><strong>chip_sram_ctrl_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_sram_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_sysrst_ctrl_testplan.hjson.md"><strong>chip_sysrst_ctrl_testplan.hjson</strong>
+<small>Spec: chip_sram_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_sysrst_ctrl_testplan.hjson.md"><strong>chip_sysrst_ctrl_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 9 spec refs</span>
-<small>Spec: chip_sysrst_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_uart_testplan.hjson.md"><strong>chip_uart_testplan.hjson</strong>
+<small>Spec: chip_sysrst_ctrl_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a><a class="card" href="blocks/chip_uart_testplan.hjson.md"><strong>chip_uart_testplan.hjson</strong><span class="badge">snippets</span>
 <span>8 bridge edges · 8 code refs · 10 spec refs</span>
 <small>Spec: chip_uart_testplan.hjson, testpoints, desc<br>Code: prim_alert_sender, prim_alert_pkg, prim_esc_pkg, prim_secded_inv_72_64_enc</small></a></div>
 </main></body></html>

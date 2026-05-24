@@ -1,48 +1,101 @@
 # Hardware Description: chip_rv_dm_testplan.hjson
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+- **testpoints**: name: rv_dm
+- **desc**: name: rv_dm
+- **stage**: - Write all CSRs via JTAG interface with a random value.
+
+## Identity
 
 - `ip_block`: `chip_rv_dm_testplan.hjson`
-- `approved_label`: `pending:chip_rv_dm_testplan.hjson`
-- `doc_anchor`: `chip_rv_dm_testplan.hjson`
-- `module_name_prefix`: `chip_rv_dm_testplan.hjson`
 - `bridge_edge_count`: 8
-
-## Inferred Hardware Role
-
-`chip_rv_dm_testplan.hjson` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: testplan: 18
 - Code categories: rtl: 8
 - Bridge relations: spec_path_matches_code_path: 8
 
+## Spec Excerpts
+
+### testpoints
+_Source: `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`_
+
+```
+// Copyright lowRISC contributors (OpenTitan project).
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+{
+  name: rv_dm
+  testpoints: [
+    // RV_DM (JTAG) tests:
+    {
+      name: chip_jtag_csr_rw
+      desc: '''
+            Verify accessibility of all the CSRs in the chip over JTAG.
+
+            - Shuffle the list of CSRs first to
+…
+```
+
+### desc
+_Source: `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`_
+
+```
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+{
+  name: rv_dm
+  testpoints: [
+    // RV_DM (JTAG) tests:
+    {
+      name: chip_jtag_csr_rw
+      desc: '''
+            Verify accessibility of all the CSRs in the chip over JTAG.
+
+            - Shuffle the list of CSRs first to remove the effect of ordering.
+            - Write all
+…
+```
+
+### stage
+_Source: `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`_
+
+```
+- Write all CSRs via JTAG interface with a random value.
+            - Shuffle the list of CSRs yet again.
+            - Read all CSRs back and check their values for correctness while adhering to the CSR's
+              access policies.
+            - Accesses to CSRs external to `rv_dm` go through RV_DM SBA interface into the `xbar`.
+
+            For silicon validation, instead of randomised test
+…
+```
+
 ## Spec Anchors
 
-- `chip_rv_dm_testplan.hjson` (L1) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
-- `testpoints` (L6) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
-- `desc` (L10) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
-- `stage` (L22) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
-- `si stage` (L23) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
-- `tests` (L24) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
-- `bazel` (L25) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
-- `lc states` (L29) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
-- `host support` (L30) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
-- `features` (L31) - `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `chip_rv_dm_testplan.hjson` (L1) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `testpoints` (L6) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `desc` (L10) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `stage` (L22) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `si stage` (L23) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `tests` (L24) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `bazel` (L25) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `lc states` (L29) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `host support` (L30) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
+- `features` (L31) — `opentitan/hw/top_earlgrey/data/ip/chip_rv_dm_testplan.hjson`
 
 ## Code Evidence
 
-- `prim_alert_sender` (L268) - `opentitan\hw\top_earlgrey\ip\sensor_ctrl\rtl\sensor_ctrl.sv`
-- `prim_alert_pkg` (L11) - `opentitan\hw\top_earlgrey\ip_autogen\alert_handler\rtl\alert_handler.sv`
-- `prim_esc_pkg` (L12) - `opentitan\hw\top_earlgrey\ip_autogen\alert_handler\rtl\alert_handler.sv`
-- `prim_secded_inv_72_64_enc` (L39) - `opentitan\hw\top_earlgrey\ip_autogen\otp_ctrl\rtl\otp_ctrl_ecc_reg.sv`
-- `prim_sec_anchor_flop` (L275) - `opentitan\hw\top_earlgrey\ip_autogen\otp_ctrl\rtl\otp_ctrl_kdi.sv`
-- `prim_packer_fifo` (L233) - `opentitan\hw\top_earlgrey\ip\ast\rtl\dev_entropy.sv`
-- `adc_ctrl` (L2047) - `opentitan\hw\top_earlgrey\rtl\autogen\top_earlgrey.sv`
-- `csrng` (L2617) - `opentitan\hw\top_earlgrey\rtl\autogen\top_earlgrey.sv`
+**RTL** (8)
+  - `prim_alert_sender`:L268 — `opentitan\hw\top_earlgrey\ip\sensor_ctrl\rtl\sensor_ctrl.sv`
+  - `prim_alert_pkg`:L11 — `opentitan\hw\top_earlgrey\ip_autogen\alert_handler\rtl\alert_handler.sv`
+  - `prim_esc_pkg`:L12 — `opentitan\hw\top_earlgrey\ip_autogen\alert_handler\rtl\alert_handler.sv`
+  - `prim_secded_inv_72_64_enc`:L39 — `opentitan\hw\top_earlgrey\ip_autogen\otp_ctrl\rtl\otp_ctrl_ecc_reg.sv`
+  - `prim_sec_anchor_flop`:L275 — `opentitan\hw\top_earlgrey\ip_autogen\otp_ctrl\rtl\otp_ctrl_kdi.sv`
+  - `prim_packer_fifo`:L233 — `opentitan\hw\top_earlgrey\ip\ast\rtl\dev_entropy.sv`
+  - `adc_ctrl`:L2047 — `opentitan\hw\top_earlgrey\rtl\autogen\top_earlgrey.sv`
+  - `csrng`:L2617 — `opentitan\hw\top_earlgrey\rtl\autogen\top_earlgrey.sv`
 
 ## Direct Spec-Code Bridges
 
@@ -59,6 +112,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `chip_rv_dm_testplan.hjson`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `chip_rv_dm_testplan.hjson`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `chip_rv_dm_testplan.hjson`.

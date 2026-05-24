@@ -1,34 +1,29 @@
 # Hardware Description: testplanner
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+_No spec snippet available. Derived from bridge evidence only._
+
+## Identity
 
 - `ip_block`: `testplanner`
-- `approved_label`: `pending:testplanner`
-- `doc_anchor`: `testplanner`
-- `module_name_prefix`: `testplanner`
 - `bridge_edge_count`: 3
-
-## Inferred Hardware Role
-
-`testplanner` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: testplan: 4
 - Code categories: other_code: 3
 - Bridge relations: spec_component_matches_code: 3
 
 ## Spec Anchors
 
-- `component:testplanner` (L1) - `__graphify_spec_only__/components.md`
+- `component:testplanner` (L1) — `__graphify_spec_only__/components.md`
 
 ## Code Evidence
 
-- `testplanner.py` (L1) - `ibex\vendor\lowrisc_ip\util\dvsim\testplanner.py`
-- `testplanner.py` (L1) - `opentitan\util\dvsim\testplanner.py`
-- `main()` (L14) - `opentitan\util\dvsim\testplanner.py`
+**OTHER_CODE** (3)
+  - `testplanner.py`:L1 — `ibex\vendor\lowrisc_ip\util\dvsim\testplanner.py`
+  - `testplanner.py`:L1 — `opentitan\util\dvsim\testplanner.py`
+  - `main()`:L14 — `opentitan\util\dvsim\testplanner.py`
 
 ## Direct Spec-Code Bridges
 
@@ -40,6 +35,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `testplanner`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `testplanner`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `testplanner`.

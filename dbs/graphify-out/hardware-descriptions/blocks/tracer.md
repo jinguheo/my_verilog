@@ -1,48 +1,43 @@
 # Hardware Description: tracer
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+_No spec snippet available. Derived from bridge evidence only._
+
+## Identity
 
 - `ip_block`: `tracer`
-- `approved_label`: `pending:tracer`
-- `doc_anchor`: `tracer`
-- `module_name_prefix`: `tracer`
 - `bridge_edge_count`: 17
-
-## Inferred Hardware Role
-
-`tracer` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: component: 18
 - Code categories: dv: 17
 - Bridge relations: spec_component_matches_code: 17
 
 ## Spec Anchors
 
-- `component:tracer` (L1) - `__graphify_spec_only__/components.md`
+- `component:tracer` (L1) — `__graphify_spec_only__/components.md`
 
 ## Code Evidence
 
-- `otbn_tracer.sv` (L1) - `opentitan\hw\ip\otbn\dv\tracer\rtl\otbn_tracer.sv`
-- `otbn_tracer` (L12) - `opentitan\hw\ip\otbn\dv\tracer\rtl\otbn_tracer.sv`
-- `otbn_trace_if.sv` (L1) - `opentitan\hw\ip\otbn\dv\tracer\rtl\otbn_trace_if.sv`
-- `log_trace_listener.cc` (L1) - `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.cc`
-- `LogTraceListener()` (L14) - `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.cc`
-- `AcceptTraceString()` (L23) - `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.cc`
-- `otbn_trace_listener.h` (L1) - `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_listener.h`
-- `OtbnTraceListener()` (L17) - `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_listener.h`
-- `log_trace_listener.h` (L1) - `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.h`
-- `OtbnTraceListener()` (L26) - `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.h`
-- `otbn_trace_source.cc` (L1) - `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
-- `AddListener()` (L20) - `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
-- `RemoveListener()` (L24) - `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
-- `Broadcast()` (L30) - `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
-- `accept_otbn_trace_string()` (L37) - `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
-- `otbn_trace_source.h` (L1) - `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.h`
-- `OtbnTraceSource()` (L20) - `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.h`
+**DV** (17)
+  - `otbn_tracer.sv`:L1 — `opentitan\hw\ip\otbn\dv\tracer\rtl\otbn_tracer.sv`
+  - `otbn_tracer`:L12 — `opentitan\hw\ip\otbn\dv\tracer\rtl\otbn_tracer.sv`
+  - `otbn_trace_if.sv`:L1 — `opentitan\hw\ip\otbn\dv\tracer\rtl\otbn_trace_if.sv`
+  - `log_trace_listener.cc`:L1 — `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.cc`
+  - `LogTraceListener()`:L14 — `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.cc`
+  - `AcceptTraceString()`:L23 — `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.cc`
+  - `otbn_trace_listener.h`:L1 — `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_listener.h`
+  - `OtbnTraceListener()`:L17 — `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_listener.h`
+  - `log_trace_listener.h`:L1 — `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.h`
+  - `OtbnTraceListener()`:L26 — `opentitan\hw\ip\otbn\dv\tracer\cpp\log_trace_listener.h`
+  - `otbn_trace_source.cc`:L1 — `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
+  - `AddListener()`:L20 — `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
+  - `RemoveListener()`:L24 — `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
+  - `Broadcast()`:L30 — `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
+  - `accept_otbn_trace_string()`:L37 — `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.cc`
+  - `otbn_trace_source.h`:L1 — `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.h`
+  - `OtbnTraceSource()`:L20 — `opentitan\hw\ip\otbn\dv\tracer\cpp\otbn_trace_source.h`
 
 ## Direct Spec-Code Bridges
 
@@ -68,6 +63,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `tracer`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `tracer`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `tracer`.

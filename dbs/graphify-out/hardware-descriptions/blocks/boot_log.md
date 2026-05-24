@@ -1,41 +1,36 @@
 # Hardware Description: boot_log
 
-This document is generated from the Graphify spec-code graph. It is an intermediate anchor that helps connect code-only evidence to spec documents.
+_Generated from Graphify spec-code graph. Middle layer connecting RTL/DV code to specification sections._
 
-## Bridge Keys
+## Functional Summary
+
+_No spec snippet available. Derived from bridge evidence only._
+
+## Identity
 
 - `ip_block`: `boot_log`
-- `approved_label`: `pending:boot_log`
-- `doc_anchor`: `boot_log`
-- `module_name_prefix`: `boot_log`
 - `bridge_edge_count`: 10
-
-## Inferred Hardware Role
-
-`boot_log` appears as a hardware/IP block with code evidence and spec/document anchors. Use this page as the linking surface between RTL/DV/SVA files and specification sections.
-
-## Evidence Summary
-
 - Spec categories: component: 11
 - Code categories: other_code: 10
 - Bridge relations: spec_component_matches_code: 10
 
 ## Spec Anchors
 
-- `component:boot_log` (L1) - `__graphify_spec_only__/components.md`
+- `component:boot_log` (L1) — `__graphify_spec_only__/components.md`
 
 ## Code Evidence
 
-- `boot_log.rs` (L1) - `opentitan\sw\host\opentitanlib\src\chip\boot_log.rs`
-- `boot_log.c` (L1) - `opentitan\sw\device\silicon_creator\lib\boot_log.c`
-- `boot_log_digest_compute()` (L10) - `opentitan\sw\device\silicon_creator\lib\boot_log.c`
-- `boot_log_digest_update()` (L22) - `opentitan\sw\device\silicon_creator\lib\boot_log.c`
-- `boot_log_check()` (L49) - `opentitan\sw\device\silicon_creator\lib\boot_log.c`
-- `boot_log_check_or_init()` (L74) - `opentitan\sw\device\silicon_creator\lib\boot_log.c`
-- `boot_log.h` (L1) - `opentitan\sw\device\silicon_creator\lib\boot_log.h`
-- `BootLog` (L29) - `opentitan\sw\host\opentitanlib\src\chip\boot_log.rs`
-- `.try_from()` (L62) - `opentitan\sw\host\opentitanlib\src\chip\boot_log.rs`
-- `.valid_digest()` (L90) - `opentitan\sw\host\opentitanlib\src\chip\boot_log.rs`
+**OTHER_CODE** (10)
+  - `boot_log.rs`:L1 — `opentitan\sw\host\opentitanlib\src\chip\boot_log.rs`
+  - `boot_log.c`:L1 — `opentitan\sw\device\silicon_creator\lib\boot_log.c`
+  - `boot_log_digest_compute()`:L10 — `opentitan\sw\device\silicon_creator\lib\boot_log.c`
+  - `boot_log_digest_update()`:L22 — `opentitan\sw\device\silicon_creator\lib\boot_log.c`
+  - `boot_log_check()`:L49 — `opentitan\sw\device\silicon_creator\lib\boot_log.c`
+  - `boot_log_check_or_init()`:L74 — `opentitan\sw\device\silicon_creator\lib\boot_log.c`
+  - `boot_log.h`:L1 — `opentitan\sw\device\silicon_creator\lib\boot_log.h`
+  - `BootLog`:L29 — `opentitan\sw\host\opentitanlib\src\chip\boot_log.rs`
+  - `.try_from()`:L62 — `opentitan\sw\host\opentitanlib\src\chip\boot_log.rs`
+  - `.valid_digest()`:L90 — `opentitan\sw\host\opentitanlib\src\chip\boot_log.rs`
 
 ## Direct Spec-Code Bridges
 
@@ -54,6 +49,7 @@ This document is generated from the Graphify spec-code graph. It is an intermedi
 
 ## Retrieval Guidance
 
-- When a code-only query mentions `boot_log`, use this hardware description to expand toward spec anchors.
-- Prefer exact module/file evidence first, then bridge to matching spec components, testplans, theory docs, and interface docs.
-- Human review can replace `pending:*` with an approved label after validating the connection.
+- For code-only queries mentioning `boot_log`, expand toward spec anchors via this description.
+- Spec Excerpts above show primary functional context — prefer these over raw file lists.
+- Bridge table maps the exact spec ↔ code correspondences found by Graphify.
+- Neighbor components listed above share code-level relationships with `boot_log`.
